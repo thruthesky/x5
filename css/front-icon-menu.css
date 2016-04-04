@@ -1,0 +1,73 @@
+/** Override bootstrap */
+.bottom-icon-menus .label {
+    white-space: normal;
+}
+
+/** menu */
+
+.bottom-icon-menus {
+    background-color:#1abc9c;
+}
+
+.bottom-icon-menus .label {
+    width: 100%;
+}
+.bottom-icon-menus .inner {
+    padding:50px 0 45px 0;
+    max-width: 980px;;
+    margin:auto;
+    box-sizing:border-box;
+}
+
+.bottom-icon-menus > .inner:after {
+    display:block;
+    content:'';
+    clear:both;
+}
+
+.bottom-icon-menus > .inner > .item {
+    display:block;
+    float:left;
+    width:33.33%;
+    text-decoration:none;
+}
+
+.bottom-icon-menus > .inner > .item a.image {
+    display:block;
+    width:45.5%;
+    margin:auto;
+}
+
+.bottom-icon-menus > .inner > .item a.image:hover img.default{
+    display:none;
+}
+
+.bottom-icon-menus > .inner > .item a.image:hover img.active {
+    display:block;
+}
+
+.bottom-icon-menus > .inner > .item  img{
+    display:block;
+    width:100%;
+    margin:0 auto 10px auto;
+}
+
+.bottom-icon-menus > .inner > .item  img.active {
+    display:none;
+}
+
+.bottom-icon-menus > .inner > .item.talk,
+.bottom-icon-menus > .inner > .item.grad,
+.bottom-icon-menus > .inner > .item.date {
+    margin-bottom:40px;
+}
+
+.bottom-icon-menus > .inner > .item .label {
+    height: 38px;
+    font-size: 1.1em;
+    font-weight: normal;
+    color: #fff;
+    text-align: center;
+    overflow: hidden;
+    line-height: 110%;
+}

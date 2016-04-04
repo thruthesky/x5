@@ -1,0 +1,51 @@
+header {
+    z-index: 1234567891;
+}
+.header-inner {
+    position: relative;
+    margin: 0 auto;
+    max-width: 980px;
+}
+
+section.content {
+    position: relative;
+    margin: 0 auto;
+    max-width: 980px;
+}
+
+body.home section.content {
+    max-width: 4096px;
+}
+
+
+.content section.info > div,
+.content section.desc > div,
+.content section.gallery > div,
+.content section.book > div,
+.content section.book1 > div,
+.content section.testimonial > div {
+    margin: 0 auto;
+    max-width: 980px;
+}
+
+@media all and ( min-width: 600px ) { /** 600px and above */
+    header {
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        overflow: hidden;
+    }
+    .header-inner {
+        height: 120px;
+    }
+    section.content {
+        margin: 120px auto 0;
+    }
+}
+
+@media all and ( min-width: 900px ) { /** 900px and above */
+    section.content {
+        min-height: 800px;
+    }
+}

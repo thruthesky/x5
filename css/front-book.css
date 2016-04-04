@@ -1,0 +1,51 @@
+
+
+
+/** */
+.home .book {
+
+}
+
+.home.front .content .data > .book {
+    background: url("../img/book_bg.jpg") #F4F4F4 no-repeat;
+}
+
+.home.front .content .data > .book > div {
+    padding: 6vw 0;
+    text-align: center;
+}
+
+.home.front .content .data > .book {
+
+}
+
+.home.front .content .data > .book .text {
+    color: #fff;
+}
+
+.home.front .content .data > .book div .text.info {
+    font-size: 2.75vw;;
+    margin-bottom: 3.5vw;
+}
+
+.home.front .content .data > .book .more.text {
+    display: inline-block;
+    padding: .4em;
+    font-size: 1.1em;
+    letter-spacing: 2px;
+    border: 2px solid #F4F4F4;
+    border-radius: 5px;
+    margin-bottom: 6vw;
+}
+
+
+.home.front .content .data > .book .collection {
+    padding: 30px;
+    border-radius: 5px;
+    background-color: #F4F4F4;
+}
+
+.home.front .content .data > .book .collection img {
+   border-radius: 5px;
+}
+

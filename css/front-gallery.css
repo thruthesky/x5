@@ -1,0 +1,41 @@
+
+
+
+/** */
+.home .gallery {
+
+}
+
+.home.front .content .data > .gallery {
+    background-color: #F39C11;
+}
+
+.home.front .content .data > .gallery > div {
+    text-align: center;
+}
+.home.front .content .data > .gallery  h2 {
+    font-family: "Malgun Gothic", "AppleGothic", "Gulim", serif;
+    font-size: 2em;
+    font-weight: bold;
+    color: #fff;
+}
+
+.home.front .content .data > .gallery {
+    padding: 8vw 0;
+}
+
+.home.front .content .data > .gallery .info.text {
+
+}
+
+.home.front .content .data > .gallery div .text.info {
+    font-family: "Malgun Gothic", "AppleGothic", "Gulim", serif;
+    font-size: 20px;
+    padding: 4vw 0;
+    color: #fff;
+}
+
+.home.front .content .data > .gallery > div img {
+    padding: 0 6vw;
+}
+

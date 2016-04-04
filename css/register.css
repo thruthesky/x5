@@ -1,0 +1,6 @@
+.register .submit input {
+    display:block;
+    margin: .4em 0;
+    padding: .6em;
+    width: 100%;
+}

@@ -1,0 +1,16 @@
+/* Overrides Bootstrap*/
+.home .my-slider {
+    /*margin-bottom: .3em;*/
+}
+.home .my-slider nav img:first-child {
+    left: 10vw;
+}
+.home .my-slider nav img:last-child {
+    right: 10vw;
+}
+
+.home .my-slider .text-info.one,
+.home .my-slider .text-info.three,
+.home .my-slider .text-info.five {
+    color: #000!important;
+}

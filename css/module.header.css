@@ -1,0 +1,136 @@
+/** Follow Strict SMACSS */
+header {
+    background-color: #34495e;
+}
+
+/** Logo */
+header .logo img {
+    max-width: 100%;
+    max-height: 120px;
+}
+
+@media all and ( max-width: 600px ) {
+    header div.logo {
+        text-align: center;
+    }
+}
+/** EO Logo */
+
+
+
+/** Nav.Top-Menu module */
+header nav.menu, nav.top-menu {
+    overflow:auto;
+    overflow-y: hidden;
+}
+
+nav.top-menu {
+    border-radius: 0 0 5px 5px;
+    color:white;
+}
+
+nav.top-menu .menu-icon {
+    font-size: 38px;
+    padding: .1em .6em .1em .2em;
+}
+
+nav.top-menu ul {
+    margin: 0;
+    padding: 0;
+    list-style : none;
+}
+
+nav.top-menu ul li {
+    float: left;
+    display:block;
+}
+nav.top-menu ul li:last-child {
+    float:right;
+}
+
+header .top-menu ul li:nth-child(2):after,
+header .top-menu ul li:nth-child(3):after {
+    content: '|';
+}
+
+nav.top-menu ul li a {
+    display:inline-block;
+    color: inherit;
+    padding: .6em .8em;
+}
+
+
+@media all and ( min-width: 600px ) {
+    .top-menu {
+        position: absolute;
+        top: 0;
+        right: 0;
+    }
+    .top-menu .menu-icon {
+        display:none;
+    }
+}
+
+
+/** EO ( End Of ) top menu module */
+
+
+/** nav.menu      Main Menu */
+
+header .menu {
+    display:none;
+    overflow:auto;
+}
+header nav.menu {
+    /*bottom: 44px;*/
+}
+
+header .menu ul {
+    margin: 0;
+    padding: 0;
+    list-style : none;
+}
+
+header .menu ul li {
+
+}
+
+header .menu ul li a {
+    font-size: 1.1em;
+    display: block;
+    padding: .4em .6em;
+    /*background-color: #06112d;*/
+    text-decoration: none;
+    color:white;
+}
+
+
+header .menu ul li a:hover {
+    background-color: #2c3e50;
+    border-radius: 5px;
+}
+
+@media all and ( min-width: 600px ) {
+    header .menu {
+        position: absolute;
+        display: block !important;
+        bottom: 0;
+        right: 0;
+    }
+    header .menu ul li {
+        float: left;
+    }
+    .menu .close {
+        display:none;
+    }
+}
+
+
+
+
+/** eo nav.menu */
+
+
+
+
+
