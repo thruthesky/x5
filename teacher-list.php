@@ -1,4 +1,4 @@
-<h2>Teacher</h2>
+<h2>X5 Teacher</h2>
 
 <?php
 

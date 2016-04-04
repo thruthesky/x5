@@ -8,7 +8,7 @@
  */
 
 if ( ! defined('ABC_LIBRARY') ) {
-    echo "whizeng/functions.php: Activate ABC-Library";
+    echo "x5/functions.php: Activate ABC-Library";
     return;
 }
 
@@ -32,14 +32,9 @@ add_action( 'wp_enqueue_scripts', function () {
     wp_enqueue_style( 'state.header', td() . '/css/state.header.css' );
     wp_enqueue_style( 'theme', td() . '/css/theme.css' );
     wp_enqueue_style( 'register', td() . '/css/register.css' );
-
-
-
     wp_enqueue_script( 'theme', td() . '/js/theme.js', array('jquery') );
-
     wp_enqueue_style( 'my-slider-v3', td() . '/css/my-slider-v3.css' );
     wp_enqueue_script( 'my-slider-v3', td() . '/js/my-slider-v3.js', array('jquery') );
-
 });
 
 
@@ -60,51 +55,11 @@ abc()->registerRoute(
         'curriculum',
         'reservation',
         'teacher-list',
+        'reservation',
+        'past'
     ]
 );
 
-
-/**
- * @return array|mixed|object
- *
-
-[idx] => 18070
-[id] => Pia
-[name] => Pia Joy Soriano
-[nickname] => Manager Pia
-[classid] => ontue.teacher.135
-[url_youtube] => http://youtu.be/bXM3FP6iL1Q
-[photo] => ./data/teacher/primary_photo_18070
-[teaching_year] => 5
-[birthday] => 19881121
-[greeting] =>
-Hello there!! ..This is Manager Pia.  If you have any problems in the class, I'm willing to help you.
-
-
-[major] => Bachelor of Science in Nursing
-[gender] => F
- */
-function teacher_list() {
-    $url = 'http://onlineenglish.kr/ajax.php?';
-    $url .= 'id=' . user()->user_login;
-    $url .= '&nickname=' . user()->nickname;
-    $url .= '&name=' . user()->name;
-    $url .= '&email=' . user()->user_email;
-    $url .= '&mobile=' . user()->mobile;
-    $url .= '&landline=' . user()->landline;
-    $url .= '&classid=' . user()->skype;
-    $url .= '&function=teacher_list';
-
-
-    $cid = 'teacher-list' + time() ;
-    $response = get_transient( $cid );
-    if( false === $response ) {
-        $response = wp_remote_get( $url );
-        set_transient( $cid, $response, 60 * 60 ); // 1시간 동안 캐시
-    }
-    $body = json_decode( $response['body'], true );
-    return $body;
-}
 
 function youtube_tag($url, $w=640, $h=390) {
     $arr = explode('/', $url);
