@@ -44,11 +44,12 @@
 .home.front .content .data >  .info div .text.info {
     font-family: "Malgun Gothic", "AppleGothic", "Gulim", serif;
     font-size: 20px;
-    padding: 4vw 0;
+    padding: 2.5em 0;
     color: #fff;
 }
 
 .home.front .content .data >  .info > div img {
-    padding: 0 6vw;
+    padding: 0 5%;
+    margin-bottom: 5em;
 }
 

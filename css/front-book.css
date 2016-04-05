@@ -1,6 +1,3 @@
-
-
-
 /** */
 .home .book {
 
@@ -24,8 +21,8 @@
 }
 
 .home.front .content .data > .book div .text.info {
-    font-size: 2.75vw;;
-    margin-bottom: 3.5vw;
+    font-size: 2em;;
+    margin-bottom: 2em;
 }
 
 .home.front .content .data > .book .more.text {
@@ -35,7 +32,7 @@
     letter-spacing: 2px;
     border: 2px solid #F4F4F4;
     border-radius: 5px;
-    margin-bottom: 6vw;
+    margin-bottom: 3em;
 }
 
 
