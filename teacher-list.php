@@ -10,8 +10,12 @@ if ( $re['code'] ) {
 }
 
 
-
 $teachers = $re['data'];
+
+if ( empty($teachers)  ) {
+    echo "<h2>No teachers</h2>";
+    return;
+}
 
 
 
