@@ -12,5 +12,6 @@ wp_enqueue_style('book', td() . '/css/front-book.css');
         <div class="collection">
             <img src="<?php img_e() ?>book.png" >
         </div>
+
     </div>
 </section>

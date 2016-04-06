@@ -27,15 +27,15 @@ aside.sidebar {
 
 @media all and ( min-width: 600px ) {
     .sidebar {
-        position: absolute;
-        top: 100px;
+        position: fixed;
+        bottom: 0;
         right: 0;
     }
     .sidebar ul{
 
     }
     .sidebar ul li {
-        float: none;
+        float: left;
         margin-bottom: .2em;
         border: 0;
         width: 100px;
@@ -49,10 +49,15 @@ aside.sidebar {
 
 @media all and ( min-width: 1200px ) {
     .sidebar {
+        position: absolute;
+        top: 0px;
         left: -100px;
         right: auto;
     }
     .home .sidebar {
         left: .6em; /* content padding */
+    }
+    .sidebar ul li {
+        float: none;
     }
 }
