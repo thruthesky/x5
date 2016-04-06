@@ -26,13 +26,10 @@ aside.sidebar {
 }
 
 @media all and ( min-width: 600px ) {
-    .sidebar {
-        position: fixed;
-        bottom: 0;
+    .sidebar ul {
+        position:fixed;
         right: 0;
-    }
-    .sidebar ul{
-
+        bottom: 0;
     }
     .sidebar ul li {
         float: left;
@@ -50,14 +47,22 @@ aside.sidebar {
 @media all and ( min-width: 1200px ) {
     .sidebar {
         position: absolute;
-        top: 0px;
+        top: 100px;
         left: -100px;
         right: auto;
+        bottom: auto;
     }
-    .home .sidebar {
-        left: .6em; /* content padding */
+    .sidebar ul {
+
+        position:relative;
     }
     .sidebar ul li {
         float: none;
+        margin-bottom: .2em;
+    }
+
+
+    .home .sidebar {
+        left: .6em; /* content padding */
     }
 }

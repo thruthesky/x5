@@ -22,9 +22,10 @@ jQuery(function($) {
         //var p = $sidebar.position();
         var t = $('body').scrollTop();
         var g = t + 100;
-        if ($(window).width() > 1200) {
+
+        //if ($(window).width() > 1200) {
             $sidebar.animate({ top: g}, 800);
-        }
+        //}
     }
 
 
