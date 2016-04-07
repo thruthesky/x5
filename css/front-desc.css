@@ -1,0 +1,60 @@
+.home.front .content .data >  .desc > div {
+    text-align: center;
+}
+
+.home.front .content .data >  .desc h2 {
+    display: inline-block;
+    margin: 100px 0 45px;
+    color: #000;
+    font-family: "Malgun Gothic", "AppleGothic", "Gulim", serif;
+    font-size: 35px;
+    font-weight: bold;
+}
+
+.home.front .content .data >  .desc {
+    padding: 0;
+}
+
+.home.front .content .data >  .desc > div img {
+    margin-bottom: 100px;
+}
+
+.home.front .content .data >  .desc div.col-sm-3 > div > img {
+    max-height: 78px;
+    width: auto;
+    margin-bottom: 34px;
+}
+
+.home.front .content .data >  .desc div.col-sm-3 > .title {
+    font-size: 20px;
+    font-weight: bold;
+    color: #2c3e50;
+}
+
+.home.front .content .data >  .desc div.col-sm-3 > .desc {
+    font-size: 16px;
+    color: #2c3e50;
+}
+
+.home.front .content .data >  .desc div > div.col-sm-3 {
+    border-right: 2px solid #2c3e50;
+    padding: 25px 25px;
+}
+
+.home.front .content .data >  .desc div > div.col-sm-3:last-child {
+    border-right: none;
+}
+
+.home.front .content .data >  .desc div .text.info {
+    margin-bottom: 68px;
+    font-family: "Malgun Gothic", "AppleGothic", "Gulim", serif;
+    font-size: 22px;
+    color: #000;
+}
+
+.home.front .content .data >  .desc > div img {
+    margin-bottom: 100px;
+}
+
+
+
