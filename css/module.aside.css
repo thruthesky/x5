@@ -18,12 +18,24 @@ aside.sidebar {
 }
 .sidebar ul li a {
     display: block;
+    position: relative;
+    overflow: auto;
 }
 .sidebar ul li img {
     display: block;
     width: 100%;
     height: auto;
 }
+.sidebar ul li a > span {
+    text-decoration: none;
+    position: absolute;
+    font-size: 0.9em;
+    right:0;
+    left: 0;
+    bottom: .4em;
+    color: #fff;
+}
+
 
 @media all and ( min-width: 600px ) {
     .sidebar ul {
