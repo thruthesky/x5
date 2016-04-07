@@ -1,0 +1,45 @@
+.calendar {
+    width: 100%;
+    background-color: #fbfbfb;
+}
+.calendar td {
+    height: 32px;
+    text-align: center;
+}
+@media all and (  min-width: 600px ) {
+    .calendar td {
+        height: 64px;
+    }
+}
+@media all and (  min-width: 800px ) {
+    .calendar td {
+        height: 82px;
+    }
+}
+.calendar-day-np {
+    background-color: #f0f0f0;
+}
+
+.calendar .books {
+    background-color: #eec188;
+}
+.calendar .books .book .icon {
+    display:inline-block;
+    width: 25px;
+    height: 26px;
+    overflow: hidden;
+    border-radius: 50%;
+}
+
+
+
+.tooltip-inner {
+    padding: 6px 12px;
+    background-color: #9c9c9c;
+    border-radius: 2px;
+}
+.tooltip-arrow {
+    border-top-color: #9c9c9c!important;
+    color: #9c9c9c;
+}
+
