@@ -7,21 +7,23 @@
 }
 
 .home.front .content .data > .gallery {
-    background-color: #F39C11;
+    background-color: #eb6e28;
 }
 
 .home.front .content .data > .gallery > div {
     text-align: center;
 }
 .home.front .content .data > .gallery  h2 {
+    display: inline-block;
+    margin: 100px 0 45px;
     font-family: "Malgun Gothic", "AppleGothic", "Gulim", serif;
-    font-size: 2em;
+    font-size: 35px;
     font-weight: bold;
     color: #fff;
 }
 
 .home.front .content .data > .gallery {
-    padding: 8vw 0;
+    padding: 0;
 }
 
 .home.front .content .data > .gallery .info.text {
@@ -30,12 +32,13 @@
 
 .home.front .content .data > .gallery div .text.info {
     font-family: "Malgun Gothic", "AppleGothic", "Gulim", serif;
-    font-size: 20px;
-    padding: 4vw 0;
+    font-size: 22px;
+    margin-bottom: 68px;
     color: #fff;
 }
 
 .home.front .content .data > .gallery > div img {
-    padding: 0 6vw;
+    padding: 0 45px;
+    margin-bottom: 100px;
 }
 

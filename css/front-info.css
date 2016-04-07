@@ -3,7 +3,7 @@
     padding-left: 0;
     padding-right: 0;
     max-width: 100% !important;
-    background-color: #3598DB;
+    background-color: #2980b9;
 }
 .front .info .col-sm-6 {
     padding-left: 0;
@@ -30,7 +30,7 @@
 }
 .home.front .content .data >  .info h2 {
     display: inline-block;
-    margin: 100px 0 54px;
+    margin: 100px 0 45px;
     color: #fff;
     font-family: "Malgun Gothic", "AppleGothic", "Gulim", serif;
     font-size: 40px;
@@ -42,7 +42,6 @@
 }
 
 .home.front .content .data >  .info div .text.info {
-    /*padding: 0 45px;*/
     margin-bottom: 68px;
     font-family: "Malgun Gothic", "AppleGothic", "Gulim", serif;
     font-size: 22px;
