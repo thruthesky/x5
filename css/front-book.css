@@ -8,12 +8,7 @@
 }
 
 .home.front .content .data > .book > div {
-    padding: 6vw 0;
     text-align: center;
-}
-
-.home.front .content .data > .book {
-
 }
 
 .home.front .content .data > .book .text {
@@ -41,12 +36,10 @@
     background-color: #45b29d;
 }
 
-
 .home.front .content .data > .book .collection {
-    padding: 10px;
+    padding: 10px 10px 100px;
     border-radius: 5px;
     background-color: #ededed;
-    margin-bottom: 50px;
 }
 
 .home.front .content .data > .book .collection .row {
@@ -81,7 +74,6 @@
     font-size: 15px;
     color: #838383;
 }
-
 
 .home.front .content .data > .book .collection .inner.row img {
     width: 100%;

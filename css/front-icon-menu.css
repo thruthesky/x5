@@ -6,14 +6,14 @@
 /** menu */
 
 .bottom-icon-menus {
-    background-color:#1abc9c;
+    background-color: #2C4877;
 }
 
 .bottom-icon-menus .label {
     width: 100%;
 }
 .bottom-icon-menus .inner {
-    padding:50px 0 45px 0;
+    padding:100px 0 100px 0;
     max-width: 980px;;
     margin:auto;
     box-sizing:border-box;

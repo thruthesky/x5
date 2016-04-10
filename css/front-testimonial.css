@@ -1,19 +1,10 @@
 /** */
-.home .book {
+.home .testimonial {
 
 }
 
 .home.front .content .data > .testimonial {
     background-color: #f6cd47;
-}
-
-.home.front .content .data > .testimonial > div {
-
-}
-
-
-.home.front .content .data > .testimonial {
-
 }
 
 .home.front .content .data > .testimonial .text {
@@ -27,11 +18,9 @@
     margin: 100px 0 30px;
 }
 
-.home.front .content .data > .testimonial .more.text {
-
-}
 .home.front .content .data > .testimonial .collection {
     text-align: left;
+    padding-bottom: 100px;
 }
 
 .home.front .content .data > .testimonial .collection .inner {
@@ -60,9 +49,5 @@
 
 .home.front .content .data > .testimonial .collection .inner .picture img {
     border-radius: 100%;
-}
-
-.home.front .content .data > .testimonial .collection img {
-
 }
 

@@ -1,6 +1,3 @@
-
-
-
 /** */
 .home .gallery {
 
@@ -24,10 +21,6 @@
 
 .home.front .content .data > .gallery {
     padding: 0;
-}
-
-.home.front .content .data > .gallery .info.text {
-
 }
 
 .home.front .content .data > .gallery div .text.info {
