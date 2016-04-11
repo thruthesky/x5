@@ -4,3 +4,14 @@
     padding: .6em;
     width: 100%;
 }
+
+.register .line {
+    padding: 10px;
+    clear: both;
+}
+
+.register .line label {
+    float: left;
+    width: 120px;
+}
+
