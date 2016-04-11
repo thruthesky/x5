@@ -4,9 +4,32 @@ header {
 }
 
 /** Logo */
+header .logo{
+    height: 100%;
+    padding-top: 30px;
+}
+
+header .logo a {
+    text-decoration: none;
+}
+
 header .logo img {
     max-width: 100%;
     max-height: 120px;
+
+}
+
+header .logo .title {
+    padding-top: 13px;
+    font-family: "Malgun Gothic", "AppleGothic", "Gulim", serif;
+    font-weight: bold;
+    font-size: 33px;
+    color: #fff;
+}
+
+
+header .logo .title:hover {
+    text-decoration: none;
 }
 
 @media all and ( max-width: 600px ) {

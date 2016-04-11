@@ -19,7 +19,10 @@
 
             ?>
             <div class="logo">
-                <a href="<?php echo home_url()?>"><img src="<?php opt('lms[logo]', img() . 'logo.jpg')?>"></a>
+                <a href="<?php echo home_url()?>">
+                    <img src="<?php opt('lms[logo]', img() . 'logo.jpg')?>">
+                    <span class="title">위즈잉글리시</span>
+                </a>
             </div>
             <nav class="top-menu">
                 <ul>
