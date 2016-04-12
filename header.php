@@ -79,7 +79,7 @@
                         <div><a href="<?php hd()?>reservation"><?php _e('Reservation', 'whizeng')?></a></div>
                     </li>
                     <li>
-                        <div><a href="<?php hd()?>forums/forum/qna/"><?php _e('QnA', 'whizeng')?></a></div>
+                        <div><a href="<?php hd()?>category/forum/qna/"><?php _e('QnA', 'whizeng')?></a></div>
                     </li>
                     <li class="close">
                         <div><a href="#"><?php _e('Close', 'whizeng')?></a></div>
