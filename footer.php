@@ -2,7 +2,7 @@
 </section><!--/content-->
 <footer>
     <div class="copyright">
-        <?php option('lms', 'copyright', false)?>
+        <?php echo nl2br(get_opt('lms[copyright]', null, false))?>
     </div>
 </footer>
 </div><!--/layout-->

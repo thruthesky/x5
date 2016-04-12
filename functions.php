@@ -41,7 +41,7 @@ add_action( 'wp_enqueue_scripts', function () {
 
 add_action('after_setup_theme', function () {
     if ( function_exists('remove_admin_bar') ) remove_admin_bar(true);
-    load_theme_textdomain('whizeng', get_template_directory());
+    load_theme_textdomain('x5', get_template_directory());
 });
 
 

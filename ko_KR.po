@@ -1,0 +1,193 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: X5 Withcenter LMS Theme\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: Tue Apr 12 2016 22:17:24 GMT+0900 (Korea Standard Time)\n"
+"PO-Revision-Date: Tue Apr 12 2016 22:22:38 GMT+0900 (Korea Standard Time)\n"
+"Last-Translator: admin <thruthesky@gmail.com>\n"
+"Language-Team: \n"
+"Language: Korean\n"
+"Plural-Forms: nplurals=1; plural=0\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-Basepath: .\n"
+"X-Poedit-SearchPath-0: .\n"
+"X-Poedit-KeywordsList: _:1;gettext:1;dgettext:2;ngettext:1,2;dngettext:2,3;"
+"__:1;_e:1;_c:1;_n:1,2;_n_noop:1,2;_nc:1,2;__ngettext:1,2;__ngettext_noop:1,2;"
+"_x:1,2c;_ex:1,2c;_nx:1,2,4c;_nx_noop:1,2,3c;_n_js:1,2;_nx_js:1,2,3c;"
+"esc_attr__:1;esc_html__:1;esc_attr_e:1;esc_html_e:1;esc_attr_x:1,2c;"
+"esc_html_x:1,2c;comments_number_link:2,3;t:1;st:1;trans:1;transChoice:1,2\n"
+"X-Generator: Loco - https://localise.biz/\n"
+"X-Loco-Target-Locale: ko_KR"
+
+#: comments.php:31
+#, php-format
+msgctxt "comments title"
+msgid "One thought on &ldquo;%s&rdquo;"
+msgstr ""
+
+#. translators: 1: number of comments, 2: post title
+#: comments.php:35
+#, php-format
+msgctxt "comments title"
+msgid "%1$s thought on &ldquo;%2$s&rdquo;"
+msgid_plural "%1$s thoughts on &ldquo;%2$s&rdquo;"
+msgstr[0] ""
+msgstr[1] ""
+
+#: comments.php:69
+msgid "Comments are closed."
+msgstr ""
+
+#: header.php:36
+msgid "ADMIN"
+msgstr "관리자"
+
+#: header.php:40
+msgid "PROFILE UPDATE"
+msgstr "회원정보 수정"
+
+#: header.php:45
+msgid "LOGIN"
+msgstr "로그인"
+
+#: header.php:52
+msgid "LOGOUT"
+msgstr "로그아웃"
+
+#: header.php:56
+msgid "REGISTER"
+msgstr "회원가입"
+
+#: header.php:62
+msgid "ALL MENU"
+msgstr "전체메뉴"
+
+#: header.php:70
+msgid "About  Us"
+msgstr "인사말"
+
+#: header.php:73
+msgid "Level Test"
+msgstr "레벨테스트"
+
+#: header.php:76
+msgid "Enrollment"
+msgstr "수업신청"
+
+#: header.php:79
+msgid "Curriculum"
+msgstr "수업과정"
+
+#: header.php:82
+msgid "Reservation"
+msgstr "예약"
+
+#: header.php:85
+msgid "QnA"
+msgstr "질문과답변"
+
+#: header.php:88
+msgid "Close"
+msgstr "닫기"
+
+#: past.php:11
+msgid "You have no past classes"
+msgstr "수업이 없습니다."
+
+#: past.php:15
+msgid "No. of Past classes : "
+msgstr "지난 수업 수 :"
+
+#: past.php:23
+msgid "Class No."
+msgstr "번호"
+
+#: past.php:25
+msgid "Teachers"
+msgstr ""
+
+#: past.php:26
+msgid "Date"
+msgstr ""
+
+#: past.php:27
+msgid "Class Begin"
+msgstr ""
+
+#: past.php:28 /part/front-icon-menu.php:47
+msgid "Class Comment"
+msgstr ""
+
+#: reservation.php:17
+msgid "Class Reservation"
+msgstr ""
+
+#: reservation.php:20
+msgid "You have no reservations"
+msgstr ""
+
+#: reservation.php:23
+msgid "No. of Reservations"
+msgstr ""
+
+#: user-log-in.php:10
+msgid "Password reset link has been sent to your email."
+msgstr ""
+
+#: user-password-lost.php:11
+msgid "Password reset link has been sent to your email. Please check your email."
+msgstr ""
+
+#: forum/template/biography.php:28 /x-korean-style-forum-
+#: template/template/biography.php:28
+msgid "Author:"
+msgstr ""
+
+#: forum/template/biography.php:33 /x-korean-style-forum-
+#: template/template/biography.php:33
+#, php-format
+msgid "View all posts by %s"
+msgstr ""
+
+#: part/aside.php:3
+msgid "Skype"
+msgstr ""
+
+#: part/aside.php:4
+msgid "VE Testing"
+msgstr ""
+
+#: part/aside.php:5
+msgid "Team Viewer"
+msgstr ""
+
+#: part/aside.php:6
+msgid "Video English"
+msgstr ""
+
+#: part/front-icon-menu.php:12
+msgid "Enter Class Room"
+msgstr ""
+
+#: part/front-icon-menu.php:19
+msgid "Reservations"
+msgstr ""
+
+#: part/front-icon-menu.php:26
+msgid "Past Classes"
+msgstr ""
+
+#: part/front-icon-menu.php:33
+msgid "Enrollment Fee"
+msgstr ""
+
+#: part/front-icon-menu.php:40
+msgid "Q & A"
+msgstr ""
+
+#. Name of the theme
+msgid "X5 Withcenter LMS Theme"
+msgstr ""
