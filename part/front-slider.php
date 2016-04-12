@@ -13,17 +13,9 @@ wp_enqueue_script('front-slider', td() . '/js/front-slider.js');
             <div class="text-info one">
                 <div class="inner">
                     <div class="wrapper">
-                        <div class="text top">방문과외전문 + 화상영어</div><br>
-                        <div class="text bottom">
-                            화상영어와 방문과외로 두 마리 토끼(내신과 회화)를 다 잡는 국내 유일의 교육 전문 업체!<br>
-                            <div style="font-size:84%; padding-top:0.6em;">
-                                영어에 가장 많은 시간을 들이고 있는데도 121등인 우리나라와 세계3위인 핀란드, 생각해 보셨나요?<br>
-                                생각(일본식)을 바꾸면 방법이 보이고, 방법을 바꾸면 우리도 달라질 수 있습니다.<br>
-                                영어가 언어가 되려면 원어민과 매일 문법적인 대화를 하는 것이 <b style="color:red;">유일한 해결책과 방법입니다.</b><br>
-                                화상만으로는 놓치거나 부족한 부분이 많이 있는데, 방문교사가 부족한 부분을 해결해주는 잉글리쉬월드
-                            </div>
-                        </div><br>
-                        <div class="text more"><a href="/introduction/1">자세히 보기<div class="triangle"></div></a></div>
+                        <div class="text top"><?php opt('lms[banner_1_title]')?></div><br>
+                        <div class="text bottom"><?php opt('lms[banner_1_content]')?></div>
+                        <div class="text more"><a href="/introduction/1"><?php opt('lms[banner_1_more]')?><div class="triangle"></div></a></div>
                     </div>
                 </div>
             </div>
@@ -34,9 +26,9 @@ wp_enqueue_script('front-slider', td() . '/js/front-slider.js');
                 <div class="inner">
                     <div class="wrapper">
                         <div class="text-items">
-                            <div class="text top">대한민국 영어 121등 ??</div>
-                            <div class="text bottom">매일 원어민과 화상영어를 통해서 121등에서 1등 영어를 하십시오.</div>
-                            <div class="text more"><a href="/introduction/3">자세히 보기<div class="triangle"></div></a></div>
+                            <div class="text top"><?php opt('lms[banner_2_title]')?></div>
+                            <div class="text bottom"><?php opt('lms[banner_2_content]')?></div>
+                            <div class="text more"><a href="/introduction/3"><?php opt('lms[banner_2_more]')?><div class="triangle"></div></a></div>
                         </div>
                     </div>
                 </div>

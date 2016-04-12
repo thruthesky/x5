@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: X5 Withcenter LMS Theme\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: Tue Apr 12 2016 22:17:24 GMT+0900 (Korea Standard Time)\n"
-"PO-Revision-Date: Tue Apr 12 2016 22:22:38 GMT+0900 (Korea Standard Time)\n"
+"PO-Revision-Date: Tue Apr 12 2016 22:35:05 GMT+0900 (Korea Standard Time)\n"
 "Last-Translator: admin <thruthesky@gmail.com>\n"
 "Language-Team: \n"
 "Language: Korean\n"
@@ -39,6 +39,93 @@ msgstr[1] ""
 
 #: comments.php:69
 msgid "Comments are closed."
+msgstr ""
+
+#: past.php:25
+msgid "Teachers"
+msgstr ""
+
+#: past.php:26
+msgid "Date"
+msgstr "날짜"
+
+#: past.php:27
+msgid "Class Begin"
+msgstr "수업시간"
+
+#: past.php:28 /part/front-icon-menu.php:47
+msgid "Class Comment"
+msgstr "코멘트"
+
+#: reservation.php:17
+msgid "Class Reservation"
+msgstr "수업 예약"
+
+#: reservation.php:20
+msgid "You have no reservations"
+msgstr "예약된 수업이 없습니다."
+
+#: reservation.php:23
+msgid "No. of Reservations"
+msgstr "예약 된 수업 수"
+
+#: user-log-in.php:10
+msgid "Password reset link has been sent to your email."
+msgstr "비밀번호 변경 주소가 이메일로 전송되었습니다."
+
+#: user-password-lost.php:11
+msgid "Password reset link has been sent to your email. Please check your email."
+msgstr "비밀번호 변경 주소가 이메일로 전송되었습니다. 메일 함을 확인해 주십시오."
+
+#: forum/template/biography.php:28 /x-korean-style-forum-
+#: template/template/biography.php:28
+msgid "Author:"
+msgstr "작성자:"
+
+#: forum/template/biography.php:33 /x-korean-style-forum-
+#: template/template/biography.php:33
+#, php-format
+msgid "View all posts by %s"
+msgstr ""
+
+#: part/aside.php:3
+msgid "Skype"
+msgstr "스카이프"
+
+#: part/aside.php:4
+msgid "VE Testing"
+msgstr "장치테스트"
+
+#: part/aside.php:5
+msgid "Team Viewer"
+msgstr "원격지원"
+
+#: part/aside.php:6
+msgid "Video English"
+msgstr "강의실입장"
+
+#: part/front-icon-menu.php:12
+msgid "Enter Class Room"
+msgstr "강의실입장"
+
+#: part/front-icon-menu.php:19
+msgid "Reservations"
+msgstr "예약된 수업"
+
+#: part/front-icon-menu.php:26
+msgid "Past Classes"
+msgstr "지난수업"
+
+#: part/front-icon-menu.php:33
+msgid "Enrollment Fee"
+msgstr "수강료"
+
+#: part/front-icon-menu.php:40
+msgid "Q & A"
+msgstr "질문과답변"
+
+#. Name of the theme
+msgid "X5 Withcenter LMS Theme"
 msgstr ""
 
 #: header.php:36
@@ -104,90 +191,3 @@ msgstr "지난 수업 수 :"
 #: past.php:23
 msgid "Class No."
 msgstr "번호"
-
-#: past.php:25
-msgid "Teachers"
-msgstr ""
-
-#: past.php:26
-msgid "Date"
-msgstr ""
-
-#: past.php:27
-msgid "Class Begin"
-msgstr ""
-
-#: past.php:28 /part/front-icon-menu.php:47
-msgid "Class Comment"
-msgstr ""
-
-#: reservation.php:17
-msgid "Class Reservation"
-msgstr ""
-
-#: reservation.php:20
-msgid "You have no reservations"
-msgstr ""
-
-#: reservation.php:23
-msgid "No. of Reservations"
-msgstr ""
-
-#: user-log-in.php:10
-msgid "Password reset link has been sent to your email."
-msgstr ""
-
-#: user-password-lost.php:11
-msgid "Password reset link has been sent to your email. Please check your email."
-msgstr ""
-
-#: forum/template/biography.php:28 /x-korean-style-forum-
-#: template/template/biography.php:28
-msgid "Author:"
-msgstr ""
-
-#: forum/template/biography.php:33 /x-korean-style-forum-
-#: template/template/biography.php:33
-#, php-format
-msgid "View all posts by %s"
-msgstr ""
-
-#: part/aside.php:3
-msgid "Skype"
-msgstr ""
-
-#: part/aside.php:4
-msgid "VE Testing"
-msgstr ""
-
-#: part/aside.php:5
-msgid "Team Viewer"
-msgstr ""
-
-#: part/aside.php:6
-msgid "Video English"
-msgstr ""
-
-#: part/front-icon-menu.php:12
-msgid "Enter Class Room"
-msgstr ""
-
-#: part/front-icon-menu.php:19
-msgid "Reservations"
-msgstr ""
-
-#: part/front-icon-menu.php:26
-msgid "Past Classes"
-msgstr ""
-
-#: part/front-icon-menu.php:33
-msgid "Enrollment Fee"
-msgstr ""
-
-#: part/front-icon-menu.php:40
-msgid "Q & A"
-msgstr ""
-
-#. Name of the theme
-msgid "X5 Withcenter LMS Theme"
-msgstr ""

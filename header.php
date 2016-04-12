@@ -3,7 +3,6 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Whiz English</title>
     <?php wp_head();?>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.2/css/bootstrap.min.css" integrity="sha384-y3tfxAZXuh4HwSYylfB+J125MxIs6mR5FOHamPBG064zB+AFeWH94NdvaCBm8qnd" crossorigin="anonymous">
     <script>
@@ -21,7 +20,7 @@
             <div class="logo">
                 <a href="<?php echo home_url()?>">
                     <img src="<?php opt('lms[logo]', img() . 'logo.jpg')?>">
-                    <span class="title">위즈잉글리시</span>
+                    <span class="title"><?php opt('lms[company_name]')?></span>
                 </a>
             </div>
             <nav class="top-menu">
