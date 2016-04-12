@@ -14,7 +14,7 @@ $data = $books ? prepare_books_by_date( $books ) : [];
 ?>
 
 <section class="reservation">
-    <h2><?php _e('Class Reservation')?></h2>
+    <h2><?php _e("Class Reservation", 'x5')?></h2>
     <?php include 'reservation-header.php'?>
     <?php if ( empty( $books ) ) : ?>
         <?php _e("You have no reservations", 'x5'); ?>

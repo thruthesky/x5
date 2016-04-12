@@ -4,16 +4,11 @@
 }
 
 .home.front .content .data > .book {
-    background: url("../img/book_bg.jpg") #F4F4F4 no-repeat;
+    background: url("../img/book_bg.jpg") #ededed no-repeat;
 }
 
 .home.front .content .data > .book > div {
-    padding: 6vw 0;
     text-align: center;
-}
-
-.home.front .content .data > .book {
-
 }
 
 .home.front .content .data > .book .text {
@@ -21,28 +16,68 @@
 }
 
 .home.front .content .data > .book div .text.info {
-    font-size: 2em;;
-    margin-bottom: 2em;
+    display: inline-block;
+    color: #2b2b2b;
+    font-size: 35px;
+    margin: 100px 0 30px;
+    padding: 23px 75px;
+    border-radius: 5px;
+    background-color: rgba(255,255,255,.75);
 }
 
 .home.front .content .data > .book .more.text {
     display: inline-block;
-    padding: .4em;
-    font-size: 1.1em;
-    letter-spacing: 2px;
-    border: 2px solid #F4F4F4;
+    padding: 14px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    letter-spacing: 3px;
     border-radius: 5px;
-    margin-bottom: 3em;
+    margin-bottom: 50px;
+    background-color: #45b29d;
 }
-
 
 .home.front .content .data > .book .collection {
-    padding: 30px;
+    padding: 10px 10px 100px;
     border-radius: 5px;
-    background-color: #F4F4F4;
+    background-color: #ededed;
 }
 
-.home.front .content .data > .book .collection img {
-   border-radius: 5px;
+.home.front .content .data > .book .collection .row {
+    margin: 10px 10px 20px;
+    border-radius: 5px;
 }
+
+.home.front .content .data > .book .collection .row > .col-sm-3 {
+    padding: 0;
+}
+
+.home.front .content .data > .book .collection .row > .col-sm-3 .inner.row {
+    background-color: #fff;
+    text-align: left;
+}
+
+.home.front .content .data > .book .collection .inner.row img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 26px;
+}
+
+.home.front .content .data > .book .collection .row > .col-sm-3 .inner.row > .title {
+    padding: 0 13px;
+    margin-bottom: 17px;
+    font-size: 18px;
+    color: #2b2b2b;
+}
+.home.front .content .data > .book .collection .row > .col-sm-3 .inner.row > .desc {
+    padding: 0 13px;
+    margin-bottom: 31px;
+    font-size: 15px;
+    color: #838383;
+}
+
+.home.front .content .data > .book .collection .inner.row img {
+    width: 100%;
+    height: auto;
+}
+
 

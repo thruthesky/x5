@@ -1,7 +1,8 @@
 <?php
 wp_enqueue_script( 'register', td() . '/js/register.js', array('jquery') );
 ?>
-<h2>Register</h2>
+<h2>Sign Up</h2>
+<hr>
 <section class="register">
     <form action="<?php echo home_url('/user/registerSubmit')?>" method="POST">
         <?php wp_nonce_field('register'); ?>
@@ -12,16 +13,16 @@ wp_enqueue_script( 'register', td() . '/js/register.js', array('jquery') );
         <div class="line">
             <label for="user_login">User ID</label>
             <div class="text">
-                    <input type="text" name="user_login" maxlength="64" id="user_login" tabindex="101">
+                <input type="text" name="user_login" maxlength="64" id="user_login" tabindex="101">
             </div>
         </div>
 
-            <div class="line">
-                <label for="user_pass">Password</label>
-                <div class="text">
-                    <input type="password" name="user_pass" maxlength="64" id="user_pass" tabindex="101" placeholder="Input password ...">
-                </div>
+        <div class="line">
+            <label for="user_pass">Password</label>
+            <div class="text">
+                <input type="password" name="user_pass" maxlength="64" id="user_pass" tabindex="101" placeholder="Input password ...">
             </div>
+        </div>
 
 
 

@@ -6,7 +6,7 @@ $re = wp_remote_get('http://onlineenglish.kr/ajax.php');
 $body = $re['body'];
 
 
-di($body);
+//di($body);
 
 
 

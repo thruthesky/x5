@@ -1,9 +1,9 @@
-/** Overriding bootsrap */
+    /** Overriding bootsrap */
 .front .info.container {
     padding-left: 0;
     padding-right: 0;
     max-width: 100% !important;
-    background-color: #3598DB;
+    background-color: #2980b9;
 }
 .front .info .col-sm-6 {
     padding-left: 0;
@@ -30,10 +30,10 @@
 }
 .home.front .content .data >  .info h2 {
     display: inline-block;
+    margin: 100px 0 45px;
     color: #fff;
-    margin-top: 10%;
     font-family: "Malgun Gothic", "AppleGothic", "Gulim", serif;
-    font-size: 2em;
+    font-size: 40px;
     font-weight: bold;
 }
 
@@ -42,14 +42,14 @@
 }
 
 .home.front .content .data >  .info div .text.info {
+    margin-bottom: 68px;
     font-family: "Malgun Gothic", "AppleGothic", "Gulim", serif;
-    font-size: 20px;
-    padding: 2.5em 0;
+    font-size: 22px;
     color: #fff;
 }
 
 .home.front .content .data >  .info > div img {
-    padding: 0 5%;
-    margin-bottom: 5em;
+    padding: 0 45px;
+    margin-bottom: 100px;
 }
 

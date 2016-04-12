@@ -1,0 +1,68 @@
+.data .log-in {
+    text-align: center;
+}
+.data .log-in h2 {
+    padding: 50px 0 10px;
+}
+
+
+.data .log-in .inner {
+    display: inline-block;
+    padding: 10px 40px;
+    border: .5px solid #c6c6c6;
+    border-radius: 5px;
+}
+
+.data .log-in .inner img {
+    margin-bottom: 15px;
+}
+
+.data .log-in .inner .form-group .info {
+    display: inline-block;
+}
+
+.data .log-in .inner .form-group .info.user {
+    border: 1px solid #c9c9c9;
+    border-radius: 5px 5px 0 0;
+}
+
+.data .log-in .inner .form-group .info.password {
+        border: 1px solid #c9c9c9;
+    border-radius: 0 0 5px 5px;
+}
+
+.data .log-in .inner .form-group .info .fa.fa-user,
+.data .log-in .inner .form-group .info .fa.fa-key {
+    float: left;
+    padding: 10px;;
+}
+
+.data .log-in .inner .form-group .info .text,
+.data .log-in .inner .form-group .info .caption {
+    float: left;
+}
+
+.data .log-in .inner .form-group .info.keep .text {
+    padding-right: 10px;
+}
+
+.data .log-in .inner .form-group .info #user_login,
+.data .log-in .inner .form-group .info #user_pass {
+    border: none;
+    outline: 0;
+    padding: 5px 5px;
+}
+.data .log-in .inner .btn.btn-primary {
+    padding: 5px 60px;
+    margin-bottom: 10px;
+}
+
+.data .log-in .inner .lost-password-button {
+    font-weight: bold;
+    color: #000000;
+}
+
+.data .log-in .inner .register {
+    font-weight: bold;
+    color: #04a4cc;
+}
