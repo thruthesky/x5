@@ -1,5 +1,6 @@
 .data .log-in {
     text-align: center;
+    background-color: #efefef;
 }
 .data .log-in h2 {
     padding: 50px 0 10px;
@@ -9,7 +10,7 @@
 .data .log-in .inner {
     display: inline-block;
     padding: 10px 40px;
-    border: .5px solid #c6c6c6;
+    /*border: .5px solid #c6c6c6;*/
     border-radius: 5px;
 }
 
