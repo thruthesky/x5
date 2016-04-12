@@ -5,6 +5,7 @@ aside.sidebar {
 }
 
 .sidebar ul {
+    z-index: 1234567890;
     position:relative;
     list-style: none;
     margin: 0;

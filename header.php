@@ -33,33 +33,33 @@
                         <?php if ( user()->login() ) : ?>
                             <?php if ( user()->admin() ) : ?>
                                 <a href="<?php hd()?>wp-admin">
-                                    <span><?php _e('Admin', 'whizeng')?></span>
+                                    <span><?php _e('ADMIN', 'whizeng')?></span>
                                 </a>
                             <?php else : ?>
                                 <a href="<?php hd()?>user-update">
-                                    <span><?php _e('Profile Update', 'whizeng')?></span>
+                                    <span><?php _e('PROFILE UPDATE', 'whizeng')?></span>
                                 </a>
                             <?php endif ?>
                         <?php else : ?>
                             <a href="<?php hd()?>user-log-in">
-                                <span><?php _e('Login', 'whizeng')?></span>
+                                <span><?php _e('LOGIN', 'whizeng')?></span>
                             </a>
                         <?php endif ?>
                     </li>
                     <li>
                         <?php if ( user()->login() ) : ?>
                             <a href="<?php echo wp_logout_url( home_url() ); ?>">
-                                <span><?php _e('Logout', 'whizeng')?></span>
+                                <span><?php _e('LOGOUT', 'whizeng')?></span>
                             </a>
                         <?php else : ?>
                             <a href="<?php hd()?>user-register">
-                                <span><?php _e('Register', 'whizeng')?></span>
+                                <span><?php _e('REGISTER', 'whizeng')?></span>
                             </a>
                         <?php endif ?>
                     </li>
                     <li>
                         <a href="<?php hd()?>menu-all">
-                            <span><?php _e('All Menu', 'whizeng')?></span>
+                            <span><?php _e('ALL MENU', 'whizeng')?></span>
                         </a>
                     </li>
                 </ul>

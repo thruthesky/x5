@@ -1,11 +1,48 @@
+.reservation {
+    text-align: center;
+}
+
+.reservation .prev-month,
+.reservation .next-month {
+    font-size: 21px;
+    font-weight: bold;
+    color: #28cd8d;
+}
+
+.reservation .prev-month {
+    float: left;
+}
+
+.reservation .this-month {
+    font-size: 26px;
+    color: #fd1e42;
+}
+
+.reservation .next-month {
+    float: right;
+}
 .calendar {
     width: 100%;
-    background-color: #fbfbfb;
 }
+
+.calendar, th, td {
+ border: 3px solid #fff;
+}
+
 .calendar td {
     height: 32px;
     text-align: center;
+    background-color: #f1f1f1;
 }
+.calendar td.calendar-day-head {
+    background-color: #7d7d7d;
+}
+.calendar td.calendar-day-head:first-child,
+.calendar td.calendar-day-head:last-child {
+    background-color: #f1f1f1;
+}
+
+
 @media all and (  min-width: 600px ) {
     .calendar td {
         height: 64px;
@@ -21,7 +58,7 @@
 }
 
 .calendar .books {
-    background-color: #eec188;
+    /*background-color: #eec188;*/
 }
 .calendar .books .book .icon {
     display:inline-block;
