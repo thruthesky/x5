@@ -46,6 +46,6 @@ body.home section.content {
 
 @media all and ( min-width: 900px ) { /** 900px and above */
     section.content {
-        min-height: 800px;
+        min-height: 500px;
     }
 }

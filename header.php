@@ -26,7 +26,9 @@
             <nav class="top-menu">
                 <ul>
                     <li>
+                        <a class="icon" >
                         <span class="dashicons dashicons-menu menu-icon"></span>
+                        </a>
                     </li>
                     <li>
                         <?php if ( user()->login() ) : ?>
@@ -93,7 +95,7 @@
 
     <section class="content">
 
-        <?php include 'part/aside.php'; ?>
+
 
         <section class="data">
-
+            <?php include 'part/aside.php'; ?>

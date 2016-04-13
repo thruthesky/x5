@@ -1,6 +1,7 @@
 /** Follow Strict SMACSS */
 header {
     background-color: #fff;
+    border-bottom: 2px solid #9d9d9d;
 }
 
 /** Logo */
@@ -55,7 +56,6 @@ nav.top-menu {
 
 nav.top-menu .menu-icon {
     font-size: 38px;
-    padding: .1em .6em .1em .2em;
 }
 
 nav.top-menu ul {
@@ -88,8 +88,44 @@ nav.top-menu ul li a span {
   font-size: 13px;
 }
 
+nav.top-menu ul li a.icon {
+    margin: 0;
+    padding: 3px 10px 0 0;
+}
+
 nav.top-menu ul li a:hover {
  border-bottom: 1px solid #000;
+}
+nav.top-menu ul li a:first-child:hover {
+    border-bottom: none;
+}
+
+@media all and ( max-width: 599px ) {
+    nav.top-menu, nav.menu {
+        border-radius: 0;
+        background-color: #2980b9;
+        color: #fff;
+        border: 0;
+    }
+    nav.top-menu ul li a {
+        display:inline-block;
+        color: inherit;
+        padding: 8px 10px;
+        text-decoration: none;
+        border-bottom: 1px hidden;
+    }
+
+    header .menu ul li a,
+    nav.top-menu ul li a:hover {
+        border: none!important;
+    }
+
+    nav.top-menu ul li a span {
+        font-size: 15px;
+    }
+    div.collection div.row div.col-sm-4:first-child img {
+        display: none;
+    }
 }
 
 @media all and ( min-width: 600px ) {

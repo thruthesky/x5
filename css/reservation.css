@@ -25,6 +25,10 @@
     width: 100%;
 }
 
+.calendar-day {
+    min-width: 40px;
+}
+
 .calendar, th, td {
  border: 3px solid #fff;
 }
@@ -34,12 +38,20 @@
     text-align: center;
     background-color: #f1f1f1;
 }
+
+.calendar tr > td:first-child,
+.calendar tr > td:last-child {
+    background-color: #eaeaea;
+}
+
 .calendar td.calendar-day-head {
+    height: 40px;
     background-color: #7d7d7d;
 }
+
 .calendar td.calendar-day-head:first-child,
 .calendar td.calendar-day-head:last-child {
-    background-color: #f1f1f1;
+    background-color: #eaeaea;
 }
 
 
@@ -57,6 +69,15 @@
     background-color: #f0f0f0;
 }
 
+.day-number {
+    position: absolute;
+    padding: 15px 0 0 10px;
+}
+.calendar-day > .books {
+    position: relative;
+    padding: 15px 0 0 34px;
+}
+
 .calendar .books {
     /*background-color: #eec188;*/
 }
@@ -68,15 +89,14 @@
     border-radius: 50%;
 }
 
-
-
 .tooltip-inner {
     padding: 6px 12px;
-    background-color: #9c9c9c;
+    background-color: #fd0e35;
     border-radius: 2px;
+    color: #fff;
 }
 .tooltip-arrow {
-    border-top-color: #9c9c9c!important;
-    color: #9c9c9c;
+    border-top-color: #fd0e35!important;
+    color: #fd0e35;
 }
 

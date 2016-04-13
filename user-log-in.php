@@ -4,8 +4,8 @@ wp_enqueue_style('info', td() . '/css/log-in.css');
 
 ?>
 <section class="log-in">
-    <h2>User Login</h2>
     <div class="inner">
+        <h2>User Login</h2>
 <?php if ( in('action') == 'lostpassword' ) { ?>
     <?php _e('Password reset link has been sent to your email.') ?>
 <?php } ?>
