@@ -1,5 +1,8 @@
 <?php
 get_header();
+
+
+
 include 'part/front-slider.php';
 include 'part/front-info.php';
 include 'part/front-desc.php';
