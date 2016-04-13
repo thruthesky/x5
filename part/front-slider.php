@@ -13,9 +13,9 @@ wp_enqueue_script('front-slider', td() . '/js/front-slider.js');
             <div class="text-info one">
                 <div class="inner">
                     <div class="wrapper">
-                        <div class="text top"><?php opt('lms[banner_1_title]')?></div><br>
-                        <div class="text bottom"><?php opt('lms[banner_1_content]')?></div>
-                        <div class="text more"><a href="/introduction/1"><?php opt('lms[banner_1_more]')?><div class="triangle"></div></a></div>
+                        <div class="text top"><?php opt('lms[banner_1_title]','Title 1...')?></div><br>
+                        <div class="text bottom"><?php opt('lms[banner_1_content]', 'Content 1...')?></div>
+                        <div class="text more"><a href="/introduction/1"><?php opt('lms[banner_1_more]', 'More...')?><div class="triangle"></div></a></div>
                     </div>
                 </div>
             </div>
@@ -26,9 +26,9 @@ wp_enqueue_script('front-slider', td() . '/js/front-slider.js');
                 <div class="inner">
                     <div class="wrapper">
                         <div class="text-items">
-                            <div class="text top"><?php opt('lms[banner_2_title]')?></div>
-                            <div class="text bottom"><?php opt('lms[banner_2_content]')?></div>
-                            <div class="text more"><a href="/introduction/3"><?php opt('lms[banner_2_more]')?><div class="triangle"></div></a></div>
+                            <div class="text top"><?php opt('lms[banner_2_title]','Title 2....')?></div>
+                            <div class="text bottom"><?php opt('lms[banner_2_content]','Content 2....')?></div>
+                            <div class="text more"><a href="/introduction/3"><?php opt('lms[banner_2_more]','More....')?><div class="triangle"></div></a></div>
                         </div>
                     </div>
                 </div>
@@ -39,9 +39,9 @@ wp_enqueue_script('front-slider', td() . '/js/front-slider.js');
             <div class="text-info three">
                 <div class="inner">
                     <div class="wrapper">
-                        <div class="text top">잉글리쉬월드의 자랑. 최고의 화상영어 선생님과 알찬 수업 과정.</div><br>
-                        <div class="text bottom">품격, 자질, 교육 !! 모든 면에서 뛰어난 잉글리쉬월드 화상 콜센터 선생님을 만나보세요.</div><br>
-                        <div class="text more"><a href="/ve?page=teacher_list">자세히 보기<div class="triangle"></div></a></div>
+                        <div class="text top"><?php opt('lms[banner_3_title]','Title 3....')?></div><br>
+                        <div class="text bottom"><?php opt('lms[banner_3_content]','Content 3....')?></div><br>
+                        <div class="text more"><a href="/ve?page=teacher_list"><?php opt('lms[banner_3_more]','More....')?><div class="triangle"></div></a></div>
                     </div>
                 </div>
             </div>
@@ -51,9 +51,9 @@ wp_enqueue_script('front-slider', td() . '/js/front-slider.js');
             <div class="text-info four">
                 <div class="inner">
                     <div class="wrapper">
-                        <div class="text top">영어는 암기가 아닌 생활 습관! 지겨운 공부는 시간 낭비!</div><br>
-                        <div class="text bottom">잉글리쉬월드 화상영어로 진정한 배움의 시간을 가지세요.</div><br>
-                        <div class="text more"><a href="/junior/1">무료 체험 설명</a></div>
+                        <div class="text top"><?php opt('lms[banner_4_title]','Title 4....')?></div><br>
+                        <div class="text bottom"><?php opt('lms[banner_4_content]','Content 4....')?></div><br>
+                        <div class="text more"><a href="/junior/1"><?php opt('lms[banner_4_more]','More....')?></a></div>
                     </div>
                 </div>
             </div>
@@ -63,9 +63,9 @@ wp_enqueue_script('front-slider', td() . '/js/front-slider.js');
             <div class="text-info five">
                 <div class="inner">
                     <div class="wrapper">
-                        <div class="text top">2015년 주니어 겨울 영어 캠프</div><br>
-                        <div class="text bottom">즐거운 방학, 파인스 영어와 함께 영어 정복을 할 주니어 학생을 모집합니다.</div><br>
-                        <div class="text more"><a href="http://pineseg.com/pinesjr/event_camp.html" target="_blank">자세히 보기<div class="triangle"></div></a></div>
+                        <div class="text top"><?php opt('lms[banner_5_title]','Title 5....')?></div><br>
+                        <div class="text bottom"><?php opt('lms[banner_5_content]','Content 5....')?></div><br>
+                        <div class="text more"><a href="http://pineseg.com/pinesjr/event_camp.html" target="_blank"><?php opt('lms[banner_5_more]','More....')?><div class="triangle"></div></a></div>
                     </div>
                 </div>
             </div>

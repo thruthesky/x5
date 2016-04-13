@@ -4,8 +4,8 @@ wp_enqueue_style('info', td() . '/css/log-in.css');
 
 ?>
 <section class="log-in">
-    <h2>User Login</h2>
     <div class="inner">
+        <h2>User Login</h2>
 <?php if ( in('action') == 'lostpassword' ) { ?>
     <?php _e('Password reset link has been sent to your email.') ?>
 <?php } ?>
@@ -30,6 +30,10 @@ wp_enqueue_style('info', td() . '/css/log-in.css');
                 </div>
             </fieldset>
 
+            <div class="lost-password-button">
+                <a href="<?php echo home_url('/user-password-lost')?>">Lost Password?</a>
+            </div>
+
             <fieldset class="form-group">
                 <div class="info keep">
                     <div class="text"><input type="checkbox" name="rememberme" id="rememberme" tabindex="101"></div>
@@ -47,11 +51,6 @@ wp_enqueue_style('info', td() . '/css/log-in.css');
             <input class="btn btn-primary" type="submit" value="Log In" tabindex="121">
 
         </form>
-
-
-        <div class="lost-password-button">
-            <a href="<?php echo home_url('/user-password-lost')?>">Lost Password?</a>
-        </div>
 
         <a class="register" href="<?php echo home_url('/user-register')?>">Create an Account</a>
     </div>

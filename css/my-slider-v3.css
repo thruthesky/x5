@@ -211,6 +211,7 @@
 
 .text-info.two > .inner .text.more > a {
     color: #2ecc71;
+    position: inherit;
 }
 
 .text-info.two > .inner .text.more .triangle {
