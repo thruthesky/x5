@@ -2,6 +2,10 @@
     text-align: center;
 }
 
+.reservation .desc {
+    margin-bottom: 20px;
+}
+
 .reservation .prev-month,
 .reservation .next-month {
     font-size: 21px;
@@ -44,16 +48,24 @@
     background-color: #eaeaea;
 }
 
+.calendar tr td:first-child,
+.calendar tr td:last-child {
+    color: #fd0e35;
+}
+
 .calendar td.calendar-day-head {
     height: 40px;
+    font-size: 14px;
+    font-weight: bold;
     background-color: #7d7d7d;
+    color: #eaeaea;
 }
 
 .calendar td.calendar-day-head:first-child,
 .calendar td.calendar-day-head:last-child {
     background-color: #eaeaea;
+    color: #000;
 }
-
 
 @media all and (  min-width: 600px ) {
     .calendar td {
@@ -70,23 +82,50 @@
 }
 
 .day-number {
+    font-size: 14px;
+    font-weight: bold;
     position: absolute;
     padding: 15px 0 0 10px;
 }
+
 .calendar-day > .books {
     position: relative;
     padding: 15px 0 0 34px;
 }
 
-.calendar .books {
-    /*background-color: #eec188;*/
+.calendar .book {
+    display: inline-block;
+    margin-bottom: 10px;
 }
+
 .calendar .books .book .icon {
+    float: left;
     display:inline-block;
-    width: 25px;
-    height: 26px;
+    width: 35px;
+    height: 35px;
     overflow: hidden;
     border-radius: 50%;
+}
+
+.calendar .books .book .icon img {
+    width: 100%;
+    height: auto;
+}
+
+.calendar .books .book .name {
+    display: table-cell;
+    margin: 0;
+    padding-left: 10px;
+    font-size: 13px;
+    line-height: 10px;
+    font-weight: bold;
+}
+
+.calendar .books .book .time {
+    display: flex;
+    margin: 0;
+    padding-left: 10px;
+    font-size: 13px;
 }
 
 .tooltip-inner {
@@ -99,4 +138,20 @@
     border-top-color: #fd0e35!important;
     color: #fd0e35;
 }
+
+.reservation nav i {
+    line-height: 35px;
+}
+
+.reservation nav div,
+.reservation nav i {
+    float: left;
+    display: inline-block;
+    font-size: 20px;
+    padding-left: 10px;
+    font-weight: bold;
+    color: #28cd8d;
+}
+
+
 

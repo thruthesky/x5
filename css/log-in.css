@@ -1,6 +1,6 @@
 .data .log-in {
     text-align: center;
-    background-color: #efefef;
+
 }
 .data .log-in h2 {
     padding: 50px 0 10px;
@@ -23,6 +23,7 @@
 }
 
 .data .log-in .inner .form-group .info.user {
+    width: 203px;
     border: 1px solid #c9c9c9;
     border-radius: 5px 5px 0 0;
 }
@@ -38,8 +39,12 @@
     padding: 10px;;
 }
 
-.data .log-in .inner .form-group .info .text,
-.data .log-in .inner .form-group .info .caption {
+.data .log-in .inner .form-group .info.user .text,
+.data .log-in .inner .form-group .info.password .text {
+    float: right;
+}
+
+.data .log-in .inner .form-group .info .text {
     float: left;
 }
 
@@ -59,12 +64,22 @@
 }
 
 .data .log-in .inner .lost-password-button {
-    font-weight: bold;
-    color: #000000;
+    text-align: right;
     padding-bottom: 10px;
+}
+
+.data .log-in .inner .lost-password-button a {
+    color: #ff0000;
+    font-size: 13px;
+    margin: 0;
+    border: 0;
 }
 
 .data .log-in .inner .register {
     font-weight: bold;
     color: #04a4cc;
+}
+
+section.log-in .form-group {
+    margin: 5px;
 }
