@@ -20,7 +20,7 @@
             <div class="logo">
                 <a href="<?php echo home_url()?>">
                     <img src="<?php opt('lms[logo]', img() . 'logo.jpg')?>">
-                    <span class="title"><?php opt('lms[company_name]')?></span>
+                    <div class="title"><?php opt('lms[company_name]')?></div>
                 </a>
             </div>
             <nav class="top-menu">
