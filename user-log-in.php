@@ -18,7 +18,7 @@ wp_enqueue_style('info', td() . '/css/log-in.css');
                 <div class="info user">
                     <label class="caption" for="user_login" hidden>User ID</label>
                     <i class="fa fa-user"></i>
-                    <div class="text"><input type="text" name="user_login" maxlength="64" id="user_login" tabindex="100" placeholder="Username"></div>
+                    <div class="text"><input type="text" name="user_login" maxlength="64" id="user_login" tabindex="200" placeholder="Username"></div>
                 </div>
             </fieldset>
 
@@ -26,7 +26,7 @@ wp_enqueue_style('info', td() . '/css/log-in.css');
                 <div class="info password">
                     <label class="caption" for="user_pass" hidden>Password</label>
                     <i class="fa fa-key"></i>
-                    <div class="text"><input type="password" name="user_pass" maxlength="64" id="user_pass" tabindex="101" placeholder="Password"></div>
+                    <div class="text"><input type="password" name="user_pass" maxlength="64" id="user_pass" tabindex="201" placeholder="Password"></div>
                 </div>
             </fieldset>
 
@@ -36,7 +36,7 @@ wp_enqueue_style('info', td() . '/css/log-in.css');
 
             <fieldset class="form-group">
                 <div class="info keep">
-                    <div class="text"><input type="checkbox" name="rememberme" id="rememberme" tabindex="101"></div>
+                    <div class="text"><input type="checkbox" name="rememberme" id="rememberme" tabindex="203"></div>
                     <label class="caption" for="rememberme">Keep me logged in</label>
                 </div>
             </fieldset>

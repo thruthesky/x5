@@ -71,7 +71,7 @@
 .data .log-in .inner .lost-password-button a {
     color: #ff0000;
     font-size: 13px;
-    margin: 0;
+    margin-right: 5px;
     border: 0;
 }
 
