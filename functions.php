@@ -12,9 +12,18 @@ if ( ! defined('ABC_LIBRARY') ) {
     return;
 }
 
+/*
 
-
-
+add_action('init', function() {
+    add_rewrite_rule(
+        '^forum/([a-zA-Z0-9\-]+)/?$',
+        'index.php?category_name=$matches[1]',
+        'top'
+    );
+    //add_rewrite_tag('%val%','([^/]*)');
+    //flush_rewrite_rules();
+});
+*/
 /**
  *
  */
@@ -43,6 +52,7 @@ add_action('after_setup_theme', function () {
     if ( function_exists('remove_admin_bar') ) remove_admin_bar(true);
     load_theme_textdomain('x5', get_template_directory());
 });
+
 
 
 
