@@ -2,7 +2,7 @@
 wp_enqueue_style('front-slider', td() . '/css/front-slider.css');
 wp_enqueue_script('front-slider', td() . '/js/front-slider.js');
 ?>
-<div class="my-slider">
+<section class="my-slider">
     <nav>
         <img src="<?php img_e()?>/banner/top_arrow_left.png">
         <img src="<?php img_e()?>/banner/top_arrow_right.png">
@@ -71,6 +71,6 @@ wp_enqueue_script('front-slider', td() . '/js/front-slider.js');
             </div>
         </li>
     </ul>
-</div>
+</section>
 
 

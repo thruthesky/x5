@@ -1,0 +1,5 @@
+section .about-us.content-five {
+    background: url("../img/about_us_banner3.png") #ededed no-repeat;
+    height: 350px;
+    overflow-x: hidden;
+}

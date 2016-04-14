@@ -1,0 +1,9 @@
+section .about-us.content-one {
+    background: url("../img/about_us_banner1.png") #ededed no-repeat;
+    height: 260px;
+    overflow-x: hidden;
+}
+
+section .about-us.content-one h2 {
+
+}
