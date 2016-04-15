@@ -1,0 +1,87 @@
+section .level-test.content-two {
+    min-height: 300px;
+    overflow-x: hidden;
+}
+
+section .level-test.content-two hr {
+    position: absolute;
+    top: 625px;
+    left: 0;
+    right: 0;
+    border: 5px solid #dbdbdb;
+}
+
+section .level-test.content-two h2 {
+    margin: 100px 20px 66px;
+    font-size: 34px;
+    text-align: center;
+    line-height: 38px;
+}
+
+
+
+section .level-test .content.row .cover {
+    text-align: center;
+}
+
+section .level-test .content.row .cover .picture {
+    margin-bottom: 30px;
+}
+
+section .level-test .content.row .cover .picture img {
+    width: 100%;
+    height: auto;
+}
+
+section .level-test .content.row .cover .desc {
+    font-size: 24px;
+    line-height: 38px;
+    text-align: center;
+    padding: 0 10px;
+    margin-bottom: 36px;
+}
+
+section .level-test .content.row .cover .level {
+    position: relative;
+    display: inline-block;
+    text-align: center;
+    height: 170px;
+    width: 170px;
+    border-radius: 100%;
+    border: 10px solid #dbdbdb;
+    margin-bottom: 48px;
+}
+
+section .level-test .content.row .cover .level.one {
+    background-color: #37DBD0;
+}
+
+section .level-test .content.row .cover .level.two {
+    background-color: #2ECC71;
+}
+
+section .level-test .content.row .cover .level.three {
+    background-color: #F75C4C;
+}
+
+
+section .level-test .content.row .cover .level h4 {
+    display: block;
+    font-size: 30px;
+    margin-top:36px;
+    line-height: 22px;
+}
+
+section .level-test .content.row .cover .level p {
+    font-size: 50px;
+    font-weight: bold;
+}
+
+section .level-test .content.row {
+    margin-bottom: 100px;
+}
+
+section .level-test .content.row > div.col-sm-4 {
+    padding: 0 20px;
+
+}
