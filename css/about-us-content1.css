@@ -1,9 +1,16 @@
 section .about-us.content-one {
-    background: url("../img/about_us_banner1.png") #ededed no-repeat;
+    background: url("../img/about_us_banner1.png") no-repeat;
+    background-size: cover;
+    background-position: center center;
     height: 260px;
-    overflow-x: hidden;
 }
 
 section .about-us.content-one h2 {
-
+    position: relative;
+    display: inline-block;
+    color: #FFFFFF;
+    text-align: center;
+    line-height: 45px;
+    margin: 0;
+    padding: 76px 0 0 33px;
 }
