@@ -1,0 +1,6 @@
+section .enrollment.content-one {
+    background: url("../img/enrollment-banner1.png") no-repeat;
+    background-size: cover;
+    background-position: center center;
+    height: 260px;
+}

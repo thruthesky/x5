@@ -1,0 +1,54 @@
+section .enrollment.content-two {
+    min-height: 300px;
+    overflow-x: hidden;
+}
+
+section .enrollment.content-two h2 {
+    margin: 100px 20px 66px;
+    font-size: 34px;
+    text-align: center;
+    line-height: 38px;
+}
+
+section .enrollment .content.row .cover {
+    text-align: center;
+    background-color: #f5f5f5;
+    margin-bottom: -9999px;
+    padding-bottom: 9999px;
+}
+
+section .enrollment .content.row .cover .picture {
+    display: inline-block;
+    margin-bottom: 30px;
+}
+
+section .enrollment .content.row .cover .picture img {
+    width: 100%;
+    height: auto;
+}
+
+section .enrollment .content.row .cover .desc {
+    font-size: 24px;
+    line-height: 38px;
+    text-align: center;
+    padding: 0 10px;
+    margin-bottom: 36px;
+}
+
+section .enrollment .content.row .cover .radio {
+    position: relative;
+    display: block;
+    text-align: left;
+    margin: 0 0 20px 50px;
+}
+
+section .enrollment .content.row {
+    min-height: 100%;
+    overflow: hidden;
+    margin-bottom: 100px;
+}
+
+section .enrollment .content.row > div.col-sm-4 {
+    padding: 0 15px;
+    display: table-cell;
+}
