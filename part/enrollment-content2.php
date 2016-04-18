@@ -55,6 +55,26 @@ wp_enqueue_style('enrollment-content2', td() . '/css/enrollment-content2.css');
                     </div>
                 </div>
             </div>
+            <div class="summary">
+                <div class="row">
+                    <div class="result time col-sm-4">
+                        <label>오늘 등록하고</label>
+                        <label>20mins</label>
+                    </div>
+                    <div class="result month col-sm-4">
+                        <label>오늘 등록하고</label>
+                        <label>1months</label>
+                    </div>
+                    <div class="result day col-sm-4">
+                        <label>오늘 등록하고</label>
+                        <label>Monday-Friday</label>
+                    </div>
+                </div>
+            </div>
+            <nav>
+                <div class="total">Total: 1,188,000</div>
+                <div class="submit">ENROLL NOW</div>
+            </nav>
         </form>
     </div>
 </section>

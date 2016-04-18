@@ -13,13 +13,13 @@ section .enrollment.content-two h2 {
 section .enrollment .content.row .cover {
     text-align: center;
     background-color: #f5f5f5;
-    margin-bottom: -9999px;
-    padding-bottom: 9999px;
+    min-height: 300px;
+    border-radius: 5px;
 }
 
 section .enrollment .content.row .cover .picture {
     display: inline-block;
-    margin-bottom: 30px;
+    padding: 20px;
 }
 
 section .enrollment .content.row .cover .picture img {
@@ -45,10 +45,58 @@ section .enrollment .content.row .cover .radio {
 section .enrollment .content.row {
     min-height: 100%;
     overflow: hidden;
-    margin-bottom: 100px;
+    margin-bottom: 5px;
 }
 
 section .enrollment .content.row > div.col-sm-4 {
     padding: 0 15px;
-    display: table-cell;
+}
+
+section .enrollment .summary {
+    background-color: #00a0d2;
+    text-align: center;
+    color: #FFFFFF;
+    border-radius: 5px;
+}
+
+section .enrollment .summary .result {
+    padding: 20px;
+}
+
+section .enrollment .summary label {
+    display: block;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+section .enrollment nav {
+    display: inline-block;
+    margin: 20px 0;
+    float: right;
+}
+
+section .enrollment .total {
+    display: block;
+    background-image: url(../img/enrollment-icon14.png);
+    width: 315px;
+    height: 60px;
+    text-align: right;
+    font-size: 24px;
+    color: #FFFFFF;
+    padding: 10px 20px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+section .enrollment .submit {
+    background-color: orange;
+    display: block;
+    width: 315px;
+    height: 60px;
+    text-align: center;
+    font-size: 24px;
+    color: #FFFFFF;
+    padding: 10px 20px;
+    border-radius: 5px;
+    margin-bottom: 10px;
 }
