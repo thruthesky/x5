@@ -2,7 +2,7 @@
 wp_enqueue_style('front-slider', td() . '/css/front-slider.css');
 wp_enqueue_script('front-slider', td() . '/js/front-slider.js');
 ?>
-<div class="my-slider">
+<section class="my-slider">
     <nav>
         <img src="<?php img_e()?>/banner/top_arrow_left.png">
         <img src="<?php img_e()?>/banner/top_arrow_right.png">
@@ -14,7 +14,7 @@ wp_enqueue_script('front-slider', td() . '/js/front-slider.js');
                 <div class="inner">
                     <div class="wrapper">
                         <div class="text top"><?php opt('lms[banner_1_title]','Title 1...')?></div><br>
-                        <div class="text bottom"><?php opt('lms[banner_1_content]', 'Content 1...')?></div>
+                        <div class="text bottom"><?php opt('lms[banner_1_content]', 'Content 1...')?></div><br>
                         <div class="text more"><a href="/introduction/1"><?php opt('lms[banner_1_more]', 'More...')?><div class="triangle"></div></a></div>
                     </div>
                 </div>
@@ -71,6 +71,6 @@ wp_enqueue_script('front-slider', td() . '/js/front-slider.js');
             </div>
         </li>
     </ul>
-</div>
+</section>
 
 

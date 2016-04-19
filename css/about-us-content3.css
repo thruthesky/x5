@@ -1,0 +1,17 @@
+section .about-us.content-three {
+    background: url("../img/about_us_banner2.png") #ededed no-repeat;
+    background-size: cover;
+    background-position: center center;
+    height: 350px;
+}
+
+section .about-us.content-three h2 {
+    float: right;
+    position: relative;
+    font-size: 46px;
+    color: #FFFFFF;
+    text-align: right;
+    line-height: 50px;
+    margin: 0;
+    padding: 75px 34px 0 0;
+}

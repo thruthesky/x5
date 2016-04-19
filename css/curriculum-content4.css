@@ -1,0 +1,28 @@
+section .curriculum.content-four {
+    min-height: 300px;
+    overflow-x: hidden;
+}
+
+section .curriculum.content-four h2 {
+    margin: 100px 0 39px;
+    text-align: center;
+    line-height: 45px;
+}
+
+section .curriculum .desc {
+    text-align: center;
+    padding: 0 10px;
+    margin-bottom: 50px;
+}
+
+section .curriculum.content-four .key {
+    text-align: center;
+}
+
+section .curriculum.content-four .key img {
+    width: 100%;
+    height: auto;
+    padding: 0 50px;
+    margin-bottom: 100px
+
+}

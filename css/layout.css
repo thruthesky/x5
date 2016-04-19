@@ -7,16 +7,15 @@ header {
     max-width: 980px;
 }
 
-section.content {
+body section.content {
+    max-width: 4096px;
+}
+
+body section.content section > div {
     position: relative;
     margin: 0 auto;
     max-width: 980px;
 }
-
-body.home section.content {
-    max-width: 4096px;
-}
-
 
 .content section.info > div,
 .content section.desc > div,

@@ -1,0 +1,45 @@
+section .level-test.content-one {
+    background: url("../img/level_test_banner1.png") no-repeat;
+    background-size: cover;
+    background-position: center center;
+    height: 338px;
+}
+
+section .level-test.content-one div {
+    text-align: center;
+}
+
+section .level-test.content-one h2 {
+    position: relative;
+    display: inline-block;
+    color: #FFFFFF;
+    font-size: 32px;
+    text-align: center;
+    margin: 73px 0 18px;
+}
+
+section .level-test.content-one .desc {
+    position: relative;
+    color: #FFFFFF;
+    text-align: center;
+    margin: 0;
+    font-size: 18px;
+    line-height: 27px;
+    margin-bottom: 47px;
+}
+
+section .level-test.content-one .button {
+    position: relative;
+    display: inline-block;
+    margin:  0 15px;
+    width: 260px;
+    border-radius: 5px;
+    background-color: #f46515;
+}
+
+section .level-test.content-one .button a {
+    display: block;
+    color: #fff;
+    font-size: 18px;
+    padding: 10px;
+}

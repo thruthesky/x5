@@ -1,0 +1,24 @@
+section .curriculum.content-two {
+    min-height: 300px;
+    overflow-x: hidden;
+    background-color: #ebebeb;
+}
+
+section .curriculum.content-two h2 {
+    margin: 100px 20px 80px;
+    font-size: 32px;
+    text-align: center;
+    line-height: 45px;
+}
+
+section .curriculum img {
+    width: 100%;
+    height: auto;
+    padding: 0 50px;
+    margin-bottom: 100px;
+}
+
+section .curriculum .content.row .cover .desc {
+    text-align: center;
+    padding: 0 10px;
+}

@@ -1,0 +1,17 @@
+section .curriculum.content-three {
+    background: url("../img/curriculum_banner2.jpg") #ededed no-repeat;
+    background-size: cover;
+    background-position: center center;
+    height: 260px;
+}
+
+section .curriculum.content-three h2 {
+    float: right;
+    position: relative;
+    font-size: 46px;
+    color: #FFFFFF;
+    text-align: right;
+    line-height: 50px;
+    margin: 0;
+    padding: 75px 34px 0 0;
+}

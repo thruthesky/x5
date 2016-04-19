@@ -1,0 +1,16 @@
+section .level-test.content-three {
+    background: url("../img/level_test_banner2.png") no-repeat;
+    background-size: cover;
+    background-position: center center;
+    height: 787px;
+}
+
+section .level-test.content-three h2 {
+    position: relative;
+    display: inline-block;
+    margin-top: 280px;
+    color: #FFFFFF;
+    font-size: 44px;
+    text-align: center;
+    line-height: 68px;
+}
