@@ -22,3 +22,49 @@ section .curriculum .content.row .cover .desc {
     text-align: center;
     padding: 0 10px;
 }
+
+
+/* Test Style */
+.container-level {
+    padding: 0;
+}
+.container-level .row {
+    margin: 0;
+}
+.container-level .row div {
+    padding: 0;
+}
+.container-level .row div img {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+.container-level .row .beginner .title,
+.container-level .row .intermediate .title,
+.container-level .row .advanced .title {
+    padding: 1em;
+    font-size: 2em;
+}
+.beginner {
+    background: orange;
+}
+.intermediate {
+    background-color: darkorange;
+}
+.advanced {
+    background-color: orangered;
+}
+
+@media all and ( min-width: 34em ) {
+
+    .beginner {
+        background: transparent url('../tmp/1.png') no-repeat;
+    }
+    .intermediate {
+        background: transparent url('../tmp/2.png') no-repeat;
+    }
+    .advanced {
+        background: transparent url('../tmp/3.png') no-repeat;
+    }
+}
+/* eo Test Style */

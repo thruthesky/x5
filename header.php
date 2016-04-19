@@ -9,7 +9,14 @@
         var home_url = "<?php echo home_url()?>";
     </script>
 </head>
-<body <?php body_class( is_front_page() ? 'front' : '' ); ?>>
+
+
+<body
+    <?php body_class( is_front_page() ? 'front' : '' ); ?>
+    <?php if ( segment(0) == 'curriculum' ) echo 'data-spy="scroll" data-target="#nav-link"'; ?>
+>
+
+
 
 <div class="layout">
     <header>
