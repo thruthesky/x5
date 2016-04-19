@@ -1,0 +1,18 @@
+section .curriculum.content-five {
+    background: url("../img/curriculum_banner3.png") #ededed no-repeat;
+    background-size: auto;
+    background-position: center 80%;
+    background-color: firebrick;
+    height: 670px;
+}
+
+section .curriculum.content-five h2 {
+    position: relative;
+    display: inline-block;
+    color: #FFFFFF;
+    font-size: 46px;
+    text-align: center;
+    line-height: 60px;
+    margin: 0;
+    padding: 129px 0 0 4px;
+}

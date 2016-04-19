@@ -1,0 +1,10 @@
+section .curriculum.content-one {
+    background: url("../img/curriculum_banner1.png") no-repeat;
+    background-size: cover;
+    background-position: center center;
+    height: 260px;
+}
+
+section .curriculum.content-one h2 {
+
+}
