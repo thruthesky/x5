@@ -15,11 +15,11 @@ section .curriculum .desc {
     margin-bottom: 50px;
 }
 
-section .curriculum.content-four .key {
+section .curriculum.content-four .keys {
     text-align: center;
 }
 
-section .curriculum.content-four .key img {
+section .curriculum.content-four .keys img {
     width: 100%;
     height: auto;
     padding: 0 50px;
