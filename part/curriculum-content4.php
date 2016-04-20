@@ -13,6 +13,12 @@ wp_enqueue_style('curriculum-content4', td() . '/css/curriculum-content4.css');
             <div class="key">
                 <img src="<?php img_e() ?>curriculum_key.png">
             </div>
+            <!--div>Career</div>
+            <div>Preparation</div>
+            <div>Role Play</div>
+            <div>Resume</div>
+            <div>Interview</div>
+            <div>Organization</div-->
         </div>
         <div>
             <div class="keys">
