@@ -39,32 +39,130 @@ section .curriculum .content.row .cover .desc {
     margin: 0;
     padding: 0;
 }
+
+.container.container-level {
+    margin-bottom: 100px;
+}
+
 .container-level .row .beginner .title,
 .container-level .row .intermediate .title,
 .container-level .row .advanced .title {
-    padding: 1em;
-    font-size: 2em;
+    padding: 20px;
+    color: #FFFFFF;
+    font-size: 21px;
+    font-weight: bold;
 }
-.beginner {
+
+.beg.title {
     background: orange;
+    text-align: center;
 }
-.intermediate {
+.inter.title {
     background-color: darkorange;
+    text-align: center;
 }
-.advanced {
+.adv.title {
     background-color: orangered;
+    text-align: center;
 }
+
+.curriculum .container .level.one {
+    background-color: #1C8B73;
+}
+.curriculum .container .level.two {
+    background-color: #177269;
+}
+.curriculum .container .level.three {
+    background-color: #005A5B;
+}
+.curriculum .container .level.four {
+    background-color: #268BAF;
+}
+.curriculum .container .level.five {
+    background-color: #1E647D;
+}
+.curriculum .container .level.six {
+    background-color: #153F4D;
+}
+.curriculum .container .level.seven {
+    background-color: #5DA6A6;
+}
+.curriculum .container .level.eight {
+    background-color: #4A8282;
+}
+.curriculum .container .level.nine {
+    background-color: #315858;
+}
+
+.curriculum .container .level {
+    padding: 15px;
+    text-align: center;
+    color: #FFFFFF;
+    background-color: #d1ccc7;
+}
+
+.curriculum .container .title-desc,
+.curriculum .container .level-desc {
+    padding: 20px 25px 30px;
+    margin-bottom: 5px;
+    text-align: center;
+    font-size: 15px;
+    color: #000;
+    background-color: #FFFFFF;
+}
+
+.curriculum .container .beginner .level,
+.curriculum .container .beginner .title-desc,
+.curriculum .container .beginner .level-desc {
+    margin-right: 2px;
+}
+
+.curriculum .container .intermediate .level,
+.curriculum .container .intermediate .title-desc,
+.curriculum .container .intermediate .level-desc {
+    margin-left: 3px;
+    margin-right: 1px;
+}
+
+.curriculum .container .advanced .level,
+.curriculum .container .advanced .title-desc,
+.curriculum .container .advanced .level-desc {
+    margin-left: 3px;
+}
+
+@media all and ( max-width: 543px ) {
+    .curriculum .container.container-level div.level,
+    .curriculum .container.container-level div.title-desc,
+    .curriculum .container.container-level div.level-desc {
+        margin-left: 5px;
+        margin-right: 5px;
+    }
+}
+
+@media all and ( max-width: 1199px ) {
+    .curriculum .container.container-level div.level,
+    .curriculum .container.container-level div.title-desc,
+    .curriculum .container.container-level div.level-desc {
+        margin-right: 0;
+    }
+}
+
 
 @media all and ( min-width: 34em ) {
 
-    .beginner {
-        background: transparent url('../tmp/1.png') no-repeat;
+    .beg.title {
+        background: transparent url('../img/curriculum_begginer.png') no-repeat;
+        background-size: cover;
     }
-    .intermediate {
-        background: transparent url('../tmp/2.png') no-repeat;
+    .inter.title {
+        background: transparent url('../img/curriculum_intermediate.png') no-repeat;
+        background-size: cover;
     }
-    .advanced {
-        background: transparent url('../tmp/3.png') no-repeat;
+    .adv.title {
+        background: transparent url('../img/curriculum_advanced.png') no-repeat;
+        background-size: cover;
     }
+
+
 }
 /* eo Test Style */
