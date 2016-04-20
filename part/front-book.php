@@ -4,21 +4,21 @@ wp_enqueue_style('book', td() . '/css/front-book.css');
 <section class="book">
     <div>
         <div class="info text">
-         소담스러운 용기가 끓는다. .
+         <?php _e('Our Books', 'x5')?>
         </div>
         <br />
         <div class="more text">
-            LEARN MORE
+            <?php _e('LEARN MORE', 'x5')?>
         </div>
         <div class="collection">
             <div class="row">
                 <div class="col-sm-3">
                     <div class="inner row">
                         <img src="<?php img_e() ?>content_book1.png">
-                        <div class="title">잉글리쉬월드의</div>
-                        <div class="desc">학생들이 영어를 두렵고
-                            어려워하지 않고 재미있고
-                            즐기며 학습하고.</div>
+                        <div class="title"><?php _e('English Time', 'x5')?></div>
+                        <div class="desc">
+                            <?php _e("English Time develops your students' speaking, listening, reading, and writing skills through art, stories, conversation, and games.", 'x5')?>'
+                        </div>
                     </div>
                     <div class="inner row">
                         <img src="<?php img_e() ?>content_book2.png">

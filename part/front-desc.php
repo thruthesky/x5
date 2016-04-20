@@ -3,10 +3,9 @@ wp_enqueue_style('desc', td() . '/css/front-desc.css');
 ?>
 <section class="desc">
     <div class="row">
-        <h2>Why Choose Us?</h2>
+        <h2><?php _e('Why Choose Us?', 'x5')?></h2>
         <div class="info text">
-            청춘의 지혜는 고행을 소담스러운 용기가 끓는다. 끓는 예가 아니더면, 청춘 소담스러운 그와 봄바람을 것이다.
-            얼마나 힘차게 가지에 끝까지 우리 끓는 바이며, 사랑의 것이다. 청춘 긴지라 따뜻한 물방아 이상, 그들의 뭇 것이 것이다.
+            <?php _e('We provides the best quality service on Online Video English Tutorial. Practice your listening, reading, speaking and writing skills and interact with our international community of native speakers.', 'x5')?>
         </div>
         <div>
             <img src="<?php img_e() ?>whychooseus.png" >
@@ -14,23 +13,23 @@ wp_enqueue_style('desc', td() . '/css/front-desc.css');
         <div class="row">
             <div class="col-sm-3">
                 <div><img src="<?php img_e() ?>device.png" ></div>
-                <div class="title">Any Device</div>
-                <div class="desc">청춘의 지혜는 고행을 소담스러운 용기가 끓는다. </div>
+                <div class="title"><?php _e('Any Device', 'x5')?></div>
+                <div class="desc">You can use any device for the video class.</div>
             </div>
             <div class="col-sm-3">
                 <div><img src="<?php img_e() ?>time.png" ></div>
                 <div class="title">Any Time</div>
-                <div class="desc">청춘의 지혜는 고행을 소담스러운 용기가 끓는다. </div>
+                <div class="desc">You can choose class time on your convenience.</div>
             </div>
             <div class="col-sm-3">
                 <div><img src="<?php img_e() ?>location.png" ></div>
                 <div class="title">Any Where</div>
-                <div class="desc">청춘의 지혜는 고행을 소담스러운 용기가 끓는다. </div>
+                <div class="desc">With your mobile device, you can get your class from any where.</div>
             </div>
             <div class="col-sm-3">
                 <div><img src="<?php img_e() ?>option.png" ></div>
                 <div class="title">Any Option</div>
-                <div class="desc">청춘의 지혜는 고행을 소담스러운 용기가 끓는다. </div>
+                <div class="desc">You can have MWF, TTH or M~F class.</div>
             </div>
         </div>
     </div>

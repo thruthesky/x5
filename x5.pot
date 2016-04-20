@@ -5,7 +5,7 @@ msgstr ""
 "Project-Id-Version: X5 Withcenter LMS Theme\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: Tue Apr 12 2016 22:17:24 GMT+0900 (Korea Standard Time)\n"
-"POT-Revision-Date: Tue Apr 12 2016 22:17:34 GMT+0900 (Korea Standard Time)\n"
+"POT-Revision-Date: Wed Apr 20 2016 21:49:44 GMT+0900 (Korea Standard Time)\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: \n"
 "Language-Team: \n"
@@ -43,56 +43,60 @@ msgstr[1] ""
 msgid "Comments are closed."
 msgstr ""
 
-#: /header.php:36
+#: /header.php:44
 msgid "ADMIN"
 msgstr ""
 
-#: /header.php:40
+#: /header.php:48
 msgid "PROFILE UPDATE"
 msgstr ""
 
-#: /header.php:45
+#: /header.php:53
 msgid "LOGIN"
 msgstr ""
 
-#: /header.php:52
+#: /header.php:60
 msgid "LOGOUT"
 msgstr ""
 
-#: /header.php:56
+#: /header.php:64
 msgid "REGISTER"
 msgstr ""
 
-#: /header.php:62
+#: /header.php:70
 msgid "ALL MENU"
 msgstr ""
 
-#: /header.php:70
+#: /header.php:78
 msgid "About  Us"
 msgstr ""
 
-#: /header.php:73
+#: /header.php:81
 msgid "Level Test"
 msgstr ""
 
-#: /header.php:76
+#: /header.php:84
 msgid "Enrollment"
 msgstr ""
 
-#: /header.php:79
+#: /header.php:87
 msgid "Curriculum"
 msgstr ""
 
-#: /header.php:82
+#: /header.php:90
 msgid "Reservation"
 msgstr ""
 
-#: /header.php:85
+#: /header.php:93 /menu-all.php:3
 msgid "QnA"
 msgstr ""
 
-#: /header.php:88
+#: /header.php:96
 msgid "Close"
+msgstr ""
+
+#: /menu-all.php:4
+msgid "Discussion"
 msgstr ""
 
 #: /past.php:11
@@ -123,35 +127,24 @@ msgstr ""
 msgid "Class Comment"
 msgstr ""
 
-#: /reservation.php:17
+#: /reservation.php:18
 msgid "Class Reservation"
 msgstr ""
 
-#: /reservation.php:20
+#: /reservation.php:21
 msgid "You have no reservations"
 msgstr ""
 
-#: /reservation.php:23
+#: /reservation.php:24
 msgid "No. of Reservations"
 msgstr ""
 
-#: /user-log-in.php:10
+#: /user-log-in.php:11
 msgid "Password reset link has been sent to your email."
 msgstr ""
 
 #: /user-password-lost.php:11
 msgid "Password reset link has been sent to your email. Please check your email."
-msgstr ""
-
-#: /forum/template/biography.php:28 /x-korean-style-forum-
-#: template/template/biography.php:28
-msgid "Author:"
-msgstr ""
-
-#: /forum/template/biography.php:33 /x-korean-style-forum-
-#: template/template/biography.php:33
-#, php-format
-msgid "View all posts by %s"
 msgstr ""
 
 #: /part/aside.php:3
@@ -188,6 +181,21 @@ msgstr ""
 
 #: /part/front-icon-menu.php:40
 msgid "Q & A"
+msgstr ""
+
+#: /part/front-info.php:6
+msgid "Welcome to Our Company"
+msgstr ""
+
+#: /part/front-info.php:8
+msgid "Let us introduce our call center."
+msgstr ""
+
+#: /part/front-info.php:10
+msgid ""
+"Mr. Song had published Withcenter, inc. on 2007. Since then, the company "
+"grew every year and now it is located in Angeles city, Pampanga, Philippines."
+" We have 40 Englisg teachers."
 msgstr ""
 
 #. Name of the theme

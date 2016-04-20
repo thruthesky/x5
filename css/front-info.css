@@ -30,11 +30,11 @@
 }
 .home.front .content .data >  .info h2 {
     display: inline-block;
-    margin: 100px 0 45px;
+    margin: 3em 0 1.5em;
     color: #fff;
     font-family: "Malgun Gothic", "AppleGothic", "Gulim", serif;
-    font-size: 40px;
-    font-weight: bold;
+    font-size: 2.2em;
+    font-weight: 200;
 }
 
 .home.front .content .data >  .info.container {
