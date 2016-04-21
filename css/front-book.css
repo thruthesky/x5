@@ -18,6 +18,11 @@
 
 .home.front .content .data > .book nav {
     padding: 0 30px;
+    cursor: pointer;
+}
+
+.home.front .content .data > .book .load-sub {
+    display: none;
 }
 
 .home.front .content .data > .book div .text.info {

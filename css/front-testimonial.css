@@ -23,7 +23,9 @@
 }
 
 .home.front .content .data > .testimonial .collection .inner {
-    margin-bottom: 35px;
+    height: 190px;
+    overflow-y: hidden;
+    margin-bottom: 25px;
 }
 
 .home.front .content .data > .testimonial .collection .inner .picture {
