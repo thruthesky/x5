@@ -29,8 +29,9 @@ wp_enqueue_script('front-book', td() . '/js/front-book.js');
                         <div class="title"><?php _e('Lets', 'x5')?></div>
                         <div class="desc">
                             <?php _e(
-                                "English Time develops your students' speaking, listening, reading,
-                                 and writing skills through art, stories, conversation, and games.", 'x5'
+                                "Maximise children’s talking time in class through dialogues, pair work and
+                                communicative games. This combined with the rhythm and melody of the acclaimed
+                                Carolyn Graham songs makes the language memorable.", 'x5'
                             )?>
                         </div>
                     </div>
@@ -81,8 +82,10 @@ wp_enqueue_script('front-book', td() . '/js/front-book.js');
                         <div class="title"><?php _e('Bricks Reading', 'x5')?></div>
                         <div class="desc">
                             <?php _e(
-                                "English Time develops your students' speaking, listening, reading,
-                                 and writing skills through art, stories, conversation, and games.", 'x5'
+                                "Offers interesting and informative theme-based
+                                units with various format and genres: fiction, nonfiction, letters, news articles,
+                                journals, plus more. The formats are designed to optimize understanding of the reading
+                                contents.", 'x5'
                             )?>
                         </div>
                     </div>
@@ -135,8 +138,11 @@ wp_enqueue_script('front-book', td() . '/js/front-book.js');
                         <div class="title"><?php _e('Can You Beleive It', 'x5')?></div>
                         <div class="desc">
                             <?php _e(
-                                "English Time develops your students' speaking, listening, reading,
-                                 and writing skills through art, stories, conversation, and games.", 'x5'
+                                "Is a three-level reading series that combines highly unusual news stories with
+                                high-frequency idioms, phrasal verbs, and fixed expressions.
+                                Students read and listen to a story (which progresses in length and difficulty
+                                throughout each text) as they look at a sequence of comic-strip
+                                style illustrations. ", 'x5'
                             )?>
                         </div>
                     </div>
