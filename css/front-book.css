@@ -9,15 +9,20 @@
 
 .home.front .content .data > .book > div {
     text-align: center;
+    padding-bottom: 100px;
 }
 
 .home.front .content .data > .book .text {
     color: #fff;
 }
 
+.home.front .content .data > .book nav {
+    padding: 0 30px;
+}
+
 .home.front .content .data > .book div .text.info {
     display: inline-block;
-    color: #2b2b2b;
+    color: #334353;
     font-size: 35px;
     margin: 100px 0 30px;
     padding: 23px 75px;
@@ -33,11 +38,22 @@
     letter-spacing: 3px;
     border-radius: 5px;
     margin-bottom: 50px;
-    background-color: #45b29d;
+    background-color: #F46516;
+}
+
+.home.front .content .data > .book .load-more {
+    display: block;
+    padding: 14px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    letter-spacing: 3px;
+    border-radius: 5px;
+    color: #FFFFFF;
+    background-color: #3598DC;
 }
 
 .home.front .content .data > .book .collection {
-    padding: 10px 10px 100px;
+    padding: 10px 10px 0;
     border-radius: 5px;
     background-color: #ededed;
 }
@@ -52,6 +68,8 @@
 }
 
 .home.front .content .data > .book .collection .row > .col-sm-3 .inner.row {
+    height: 400px;
+    overflow-y: hidden;
     background-color: #fff;
     text-align: left;
 }
@@ -70,7 +88,7 @@
 }
 .home.front .content .data > .book .collection .row > .col-sm-3 .inner.row > .desc {
     padding: 0 13px;
-    margin-bottom: 31px;
+    margin-bottom: 1.5em;
     font-size: 15px;
     color: #838383;
 }

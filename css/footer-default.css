@@ -1,0 +1,36 @@
+.default-footer .logo-picture,
+.default-footer .footer-content {
+    position: relative;
+    display: inline-block;
+    float: left;
+    width: 50%;
+}
+
+.default-footer .logo-picture {
+    padding: 1em;
+    text-align: right;
+}
+
+.default-footer .logo-picture .logo,
+.default-footer .logo-picture .title {
+    display: inline-block;
+}
+
+.default-footer .logo-picture .logo {
+    vertical-align: top;
+}
+
+
+.default-footer .footer-content {
+    text-align: left;
+    padding-left: 1em;
+    border-left: 3px solid #d9d9d9;
+}
+
+.default-footer .logo-picture .title {
+    padding-left: 10px;
+    font-family: "Malgun Gothic", "AppleGothic", "Gulim", serif;
+    font-weight: bold;
+    font-size: 33px;
+    color: #000;
+}

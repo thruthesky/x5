@@ -5,12 +5,16 @@ wp_enqueue_style('desc', td() . '/css/front-desc.css');
     <div class="row">
         <h2><?php _e('Why Choose Us?', 'x5')?></h2>
         <div class="info text">
-            <?php _e('We provides the best quality service on Online Video English Tutorial. Practice your listening, reading, speaking and writing skills and interact with our international community of native speakers.', 'x5')?>
+            <?php _e(
+                'We provides the best quality service on Online Video English Tutorial.
+                 Practice your listening, reading, speaking and writing skills and interact with
+                  our international community of native speakers.', 'x5'
+            )?>
         </div>
         <div>
             <img src="<?php img_e() ?>whychooseus.png" >
         </div>
-        <div class="row">
+        <div class="inner row">
             <div class="col-sm-3">
                 <div><img src="<?php img_e() ?>device.png" ></div>
                 <div class="title"><?php _e('Any Device', 'x5')?></div>
