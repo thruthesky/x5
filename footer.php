@@ -2,8 +2,11 @@
 </section><!--/content-->
 <footer>
     <div class="copyright">
-        <?php echo nl2br(get_opt('lms[copyright]', null, false))?>
-        <?php include 'part/footer-default.php'; ?>
+        <?php if(get_opt('lms[copyright]', null, false)){
+            echo nl2br(get_opt('lms[copyright]', null, false));
+        }else {
+            include 'part/footer-default.php';
+        } ?>
     </div>
 </footer>
 </div><!--/layout-->
