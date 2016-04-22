@@ -22,6 +22,10 @@
     text-align: left;
 }
 
+.home.front .content .data > .testimonial .collection .row {
+    margin: 0;
+}
+
 .home.front .content .data > .testimonial .collection .inner {
     height: 190px;
     overflow-y: hidden;

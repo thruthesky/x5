@@ -2,6 +2,12 @@
     position: relative;
 }
 
+.my-slider img{
+    width: 100%;
+    height: auto;
+}
+
+/*
 .my-slider ul {
     list-style:none;
     margin:0;
@@ -76,7 +82,7 @@
     right: 1rem;
 }
 
-/* EO of Slider Images */
+/* EO of Slider Images
 
 .my-slider .text-info {
     position: absolute;
@@ -141,7 +147,7 @@
     border-left: 5px solid #444;
 }
 
-/* Slider Text Info One */
+/* Slider Text Info One
 
 .text-info.one {
     top: 5%;
@@ -156,9 +162,9 @@
     font-size: 1em;
 }
 
-/* EO Slider Text Info One */
+ EO Slider Text Info One */
 
-/* Slider Text Info Two */
+/* Slider Text Info Two
 .text-info.two {
     top:5%;
 }
@@ -218,9 +224,9 @@
     display: none;
 }
 
-/* EO Slider Text Info Two */
+EO Slider Text Info Two */
 
-/* Slider Text Info Three */
+/* Slider Text Info Three
 
 .text-info.three {
     right: 0;
@@ -236,9 +242,9 @@
     font-size: 1em;
 }
 
-/* EO Slider Text Info Three */
+ EO Slider Text Info Three */
 
-/* Slider Text Info Four */
+/* Slider Text Info Four
 .text-info.four {
     top:5%;
 }
@@ -301,9 +307,9 @@
     display: none;
 }
 
-/* EO Slider Text Info Four */
+EO Slider Text Info Four */
 
-/* Slider Text Info Five */
+/* Slider Text Info Five
 
 .text-info.five {
     right: 0;
@@ -320,11 +326,10 @@
     font-size: 1em;
 }
 
-/* EO Slider Text Info Five */
+ EO Slider Text Info Five */
 
 
-/* @media */
-
+/* @media
 
 @media all and ( min-width: 420px ) {
 
@@ -413,3 +418,5 @@
 @media all and ( min-width: 1300px ) {
 
 }
+
+*/

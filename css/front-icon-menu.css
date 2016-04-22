@@ -13,8 +13,8 @@
     width: 100%;
 }
 .bottom-icon-menus .inner {
-    padding:100px 0 100px 0;
-    max-width: 980px;;
+    padding: 140px 0 130px 0;
+    max-width: 890px;;
     margin:auto;
     box-sizing:border-box;
 }
@@ -34,7 +34,7 @@
 
 .bottom-icon-menus > .inner > .item a.image {
     display:block;
-    width:45.5%;
+    width:42.15%;
     margin:auto;
 }
 

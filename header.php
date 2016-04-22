@@ -66,8 +66,13 @@
                         <?php endif ?>
                     </li>
                     <li>
+                        <a href="<?php hd()?>help">
+                            <span><?php _e('HELP', 'x5')?></span>
+                        </a>
+                    </li>
+                    <li>
                         <a href="<?php hd()?>menu-all">
-                            <span><?php _e('ALL MENU', 'x5')?></span>
+                            <span><?php _e('SITEMAP', 'x5')?></span>
                         </a>
                     </li>
                 </ul>

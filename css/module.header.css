@@ -26,7 +26,7 @@ header .logo .title {
     font-family: "Malgun Gothic", "AppleGothic", "Gulim", serif;
     font-weight: bold;
     font-size: 33px;
-    color: #000;
+    color: #2d3e52;
 }
 
 
@@ -50,8 +50,8 @@ header nav.menu, nav.top-menu {
 }
 
 nav.top-menu {
-    border-radius: 0 0 5px 5px;
-    color: #000;
+    top: 1em;
+    color: #6e849a;
 }
 
 nav.top-menu .menu-icon {
@@ -67,23 +67,29 @@ nav.top-menu ul {
 nav.top-menu ul li {
     float: left;
     display:block;
-}
-nav.top-menu ul li:last-child {
-    float:right;
+    margin-left: 12px;
 }
 
-header .top-menu ul li:nth-child(2):after,
-header .top-menu ul li:nth-child(4):before {
-    content: '|';
+nav.top-menu ul li:last-child {
+    float:right;
+
 }
 
 nav.top-menu ul li a {
     display:inline-block;
+    padding: 5px 3px 5px;
     color: inherit;
-    padding: 9px 12px 2px;
     text-decoration: none;
-    border-bottom: 1px hidden;
 }
+
+nav.top-menu ul li:last-child a {
+    padding-right: 0;
+}
+
+nav.top-menu ul li a:hover {
+   border-bottom: 2px solid #b0acac;
+}
+
 nav.top-menu ul li a span {
   font-size: 13px;
 }
@@ -91,13 +97,6 @@ nav.top-menu ul li a span {
 nav.top-menu ul li a.icon {
     margin: 0;
     padding: 3px 10px 0 0;
-}
-
-nav.top-menu ul li a:hover {
- border-bottom: 1px solid #000;
-}
-nav.top-menu ul li a:first-child:hover {
-    border-bottom: none;
 }
 
 @media all and ( max-width: 599px ) {
@@ -160,28 +159,32 @@ header .menu ul {
 }
 
 header .menu ul li {
-
+    margin-left: 1px;
 }
 
 header .menu ul li a {
     font-size: 1.1em;
     display: block;
-    padding: 2px 10px;
+    padding: 10px 10px;
     text-decoration: none;
-    border-bottom: 2px solid #fff;
-    color: #000;
+    color: #2d3e52;
 }
 
+header .menu ul li:nth-child(6) a {
+    padding-right: 0;
+}
 
 header .menu ul li a:hover {
-    border-bottom: 2px solid #000;
+    background-color: #b0acac;
+    color: #FFFFFF;
+    border-radius: 3px;
 }
 
 @media all and ( min-width: 600px ) {
     header .menu {
         position: absolute;
         display: block !important;
-        bottom: 18px;
+        bottom: 15px;
         right: 0;
     }
     header .menu ul li {
