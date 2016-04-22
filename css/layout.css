@@ -28,6 +28,11 @@ body section.content section > div {
 }
 
 
+footer {
+    background-color: #ecf0f1;
+    clear: both;
+}
+
 @media all and ( min-width: 600px ) { /** 600px and above */
     header {
         position: fixed;
