@@ -8,10 +8,10 @@
 
 .home.front .content .data >  .desc h2 {
     display: inline-block;
-    margin: 100px 0 30px;
+    margin: 4.5625rem 0 1.875rem;
     color: #2c3e50;
     font-family: "Malgun Gothic", "AppleGothic", "Gulim", serif;
-    font-size: 35px;
+    font-size: 2.1875em;
 }
 
 .home.front .content .data >  .desc {
@@ -23,25 +23,25 @@
 }
 
 .home.front .content .data >  .desc div.col-sm-3 > div > img {
-    max-height: 78px;
+    max-height: 4.875em;
     width: auto;
-    margin-bottom: 34px;
+    margin-bottom: 2.125em;
 }
 
 .home.front .content .data >  .desc div.col-sm-3 > .title {
-    font-size: 20px;
+    font-size: 1.25em;
     font-weight: bold;
     color: #2c3e50;
 }
 
 .home.front .content .data >  .desc div.col-sm-3 > .desc {
-    font-size: 16px;
+    font-size: 1em;
     color: #2c3e50;
 }
 
 .home.front .content .data >  .desc div > div.col-sm-3 {
-    border-right: 2px solid rgba(52,73,94,.26);
-    padding: 25px 25px;
+    border-right: 0.125em solid rgba(52,73,94,.26);
+    padding: 1.5625em 1.5625em;
 }
 
 .home.front .content .data >  .desc div > div.col-sm-3:last-child {
@@ -49,18 +49,18 @@
 }
 
 .home.front .content .data >  .desc div .text.info {
-    margin-bottom: 30px;
+    margin-bottom: 1.875rem;
     font-family: "Malgun Gothic", "AppleGothic", "Gulim", serif;
-    font-size: 22px;
+    font-size: 1.375em;
     color: #2c3e50;
 }
 
 .home.front .content .data >  .desc > div img {
-    margin-bottom: 30px;
+    margin-bottom: 1.875em;
 }
 
 .home.front .content .data >  .desc > .row .inner.row {
-    margin: 0 0 100px;
+    margin: 0 0 6.25em;
 }
 
 

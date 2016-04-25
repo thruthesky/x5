@@ -28,44 +28,44 @@
 .home.front .content .data > .book div .text.info {
     display: inline-block;
     color: #334353;
-    font-size: 35px;
-    margin: 100px 0 30px;
-    padding: 23px 75px;
-    border-radius: 5px;
+    font-size: 2.1875em;
+    margin: 6.25rem 0 1.875rem;
+    padding: 0.5rem 2.8125rem 0.8125rem;
+    border-radius: 0.3125rem;
     background-color: rgba(255,255,255,.75);
 }
 
 .home.front .content .data > .book .more.text {
     display: inline-block;
-    padding: 14px 20px;
-    font-size: 16px;
+    padding: 0.875em 1.25em;
+    font-size: 1em;
     font-weight: bold;
-    letter-spacing: 3px;
-    border-radius: 5px;
-    margin-bottom: 50px;
+    letter-spacing: 0.1875em;
+    border-radius: 0.1875em;
+    margin-bottom: 3.125em;
+    cursor: pointer;
     background-color: #F46516;
 }
 
 .home.front .content .data > .book .load-more {
     display: block;
-    padding: 14px 20px;
-    font-size: 16px;
-    font-weight: bold;
-    letter-spacing: 3px;
-    border-radius: 5px;
+    padding: 0.875em 1.25em;
+    font-size: 1em;
+    letter-spacing: 0.1875em;
+    border-radius: 0.1875em;
     color: #FFFFFF;
     background-color: #3498db;
 }
 
 .home.front .content .data > .book .collection {
-    padding: 10px 10px 0;
-    border-radius: 5px;
+    padding: 0.625em 0.625em 0;
+    border-radius: 0.1875em;
     background-color: #ededed;
 }
 
 .home.front .content .data > .book .collection .row {
-    margin: 10px 10px 20px;
-    border-radius: 5px;
+    margin: 0.625em 0.625em 1.25em;
+    border-radius: 0.1875em;
 }
 
 .home.front .content .data > .book .collection .row > .col-sm-3 {
@@ -73,7 +73,7 @@
 }
 
 .home.front .content .data > .book .collection .row > .col-sm-3 .inner.row {
-    height: 400px;
+    height: 25em;
     overflow-y: hidden;
     background-color: #fff;
     text-align: left;
@@ -82,21 +82,21 @@
 .home.front .content .data > .book .collection .inner.row img {
     width: 100%;
     height: auto;
-    margin-bottom: 26px;
+    margin-bottom: 1.625em;
 }
 
 .home.front .content .data > .book .collection .row > .col-sm-3 .inner.row > .title {
-    padding: 0 13px;
-    margin-bottom: 17px;
-    font-size: 18px;
+    padding: 0 0.8125rem;
+    margin-bottom: 1.0625em;
+    font-size: 1.125em;
     color: #2b2b2b;
 }
 .home.front .content .data > .book .collection .row > .col-sm-3 .inner.row > .desc {
-    height: 155px;
+    height: 9.6875rem;
     overflow-y: hidden;
-    padding: 0 13px;
+    padding: 0 0.8125em;
     margin-bottom: 1.5em;
-    font-size: 15px;
+    font-size: 0.9375em;
     color: #838383;
 }
 

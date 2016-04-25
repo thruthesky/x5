@@ -12,9 +12,9 @@
 }
 .home.front .content .data > .gallery  h2 {
     display: inline-block;
-    margin: 100px 0 45px;
+    margin: 7.6875rem 0 2.5625rem;
     font-family: "Malgun Gothic", "AppleGothic", "Gulim", serif;
-    font-size: 35px;
+    font-size: 2.1875em;
     color: #2D292C;
 }
 
@@ -24,13 +24,13 @@
 
 .home.front .content .data > .gallery div .text.info {
     font-family: "Malgun Gothic", "AppleGothic", "Gulim", serif;
-    font-size: 22px;
-    margin-bottom: 68px;
+    font-size: 1.375em;
+    margin-bottom: 4.125rem;
     color: #4F5D5D;
 }
 
 .home.front .content .data > .gallery > div img {
-    padding: 0 45px;
-    margin-bottom: 100px;
+    padding: 0 2.8125em;
+    margin-bottom: 6.25em;
 }
 
