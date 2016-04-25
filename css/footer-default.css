@@ -12,17 +12,18 @@
 }
 
 .default-footer .logo-picture {
-    margin-left: 93px;
+    margin-left: 5.8125em;
 }
 
 
 .default-footer .logo-picture {
-    padding-top: 23px;
+    padding-top: 1.4375em;
     text-align: right;
 }
 
 .default-footer .logo-picture .logo,
 .default-footer .logo-picture .title {
+    float: left;
     display: inline-block;
 }
 
@@ -32,9 +33,11 @@
 
 
 .default-footer .footer-content {
+    padding-left: 1.5rem;
     text-align: left;
-    padding-left: 24px;
-    border-left: 2px solid #898989;
+    font-size: 0.875em;
+    line-height: 1.5625rem;
+    border-left: 0.125rem solid #898989;
 }
 
 .default-footer .footer-content {
@@ -47,10 +50,47 @@
 
 
 .default-footer .logo-picture .title {
-    padding: 0 20px;
-    margin-right: 20px;
+    padding: 0 1.25rem;
+    margin-right: 1.1875rem;
     font-family: "Malgun Gothic", "AppleGothic", "Gulim", serif;
     font-weight: 700;
-    font-size: 33px;
+    font-size: 2.0625em;
     color: #2d3e52;
+}
+
+
+@media all and (max-width: 940px) {
+    .default-footer .logo-picture {
+        padding: 0;
+        margin: 0;
+        float: none;
+    }
+
+    .default-footer .logo-picture .title {
+        margin: 0;
+    }
+
+    .default-footer .footer-content {
+        display: block;
+        margin: 0;
+        padding: 0;
+        border: 0;
+        float: none;
+        text-align: center;
+    }
+}
+
+@media all and (max-width: 427px) {
+    .default-footer .logo-picture {
+        text-align: center;
+    }
+
+    .default-footer .logo-picture .logo {
+        float: none;
+    }
+
+    .default-footer .logo-picture .title {
+        float: none;
+    }
+    
 }
