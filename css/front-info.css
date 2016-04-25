@@ -3,7 +3,7 @@
     padding-left: 0;
     padding-right: 0;
     max-width: 100% !important;
-    background-color: #2980b9;
+    background-color: #F3E4B9;
 }
 .front .info .col-sm-6 {
     padding-left: 0;
@@ -30,11 +30,11 @@
 }
 .home.front .content .data >  .info h2 {
     display: inline-block;
-    margin: 100px 0 45px;
-    color: #fff;
+    margin: 6.5rem 0 3.375rem;
+    color: #16747B;
     font-family: "Malgun Gothic", "AppleGothic", "Gulim", serif;
-    font-size: 40px;
-    font-weight: bold;
+    font-size: 2.2em;
+    font-weight: 200;
 }
 
 .home.front .content .data >  .info.container {
@@ -42,14 +42,14 @@
 }
 
 .home.front .content .data >  .info div .text.info {
-    margin-bottom: 68px;
+    margin-bottom: 4.25rem;
     font-family: "Malgun Gothic", "AppleGothic", "Gulim", serif;
-    font-size: 22px;
-    color: #fff;
+    font-size: 1.375em;
+    color: #655E53;
 }
 
 .home.front .content .data >  .info > div img {
-    padding: 0 45px;
-    margin-bottom: 100px;
+    padding: 0 2.8125em;
+    margin-bottom: 6.25em;
 }
 

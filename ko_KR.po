@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: X5 Withcenter LMS Theme\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: Tue Apr 12 2016 22:17:24 GMT+0900 (Korea Standard Time)\n"
-"PO-Revision-Date: Tue Apr 12 2016 22:35:05 GMT+0900 (Korea Standard Time)\n"
+"PO-Revision-Date: Wed Apr 20 2016 21:55:44 GMT+0900 (Korea Standard Time)\n"
 "Last-Translator: admin <thruthesky@gmail.com>\n"
 "Language-Team: \n"
 "Language: Korean\n"
@@ -41,9 +41,98 @@ msgstr[1] ""
 msgid "Comments are closed."
 msgstr ""
 
+#: menu-all.php:4
+msgid "Discussion"
+msgstr ""
+
 #: past.php:25
 msgid "Teachers"
 msgstr ""
+
+#: part/front-info.php:6
+msgid "Welcome to Our Company"
+msgstr "위즈잉글리쉬에 오신 것을 환영합니다."
+
+#: part/front-info.php:8
+msgid "Let us introduce our call center."
+msgstr "위즈잉글리쉬를 소개합니다."
+
+#: part/front-info.php:10
+msgid ""
+"Mr. Song had published Withcenter, inc. on 2007. Since then, the company "
+"grew every year and now it is located in Angeles city, Pampanga, Philippines."
+" We have 40 Englisg teachers."
+msgstr ""
+"위즈잉글리쉬는 2007년 마닐라 마카티의 헤레라 타워에서 화상영어 콜센터를 설립하여 많은 강사와 학생들이 저희 위즈 잉글리시 홈페이지에서 "
+"화상영어 수업을 진행하였습니다."
+
+#. Name of the theme
+msgid "X5 Withcenter LMS Theme"
+msgstr ""
+
+#: header.php:44
+msgid "ADMIN"
+msgstr "관리자"
+
+#: header.php:48
+msgid "PROFILE UPDATE"
+msgstr "회원정보 수정"
+
+#: header.php:53
+msgid "LOGIN"
+msgstr "로그인"
+
+#: header.php:60
+msgid "LOGOUT"
+msgstr "로그아웃"
+
+#: header.php:64
+msgid "REGISTER"
+msgstr "회원가입"
+
+#: header.php:70
+msgid "ALL MENU"
+msgstr "전체메뉴"
+
+#: header.php:78
+msgid "About  Us"
+msgstr "인사말"
+
+#: header.php:81
+msgid "Level Test"
+msgstr "레벨테스트"
+
+#: header.php:84
+msgid "Enrollment"
+msgstr "수업신청"
+
+#: header.php:87
+msgid "Curriculum"
+msgstr "수업과정"
+
+#: header.php:90
+msgid "Reservation"
+msgstr "예약"
+
+#: header.php:93 /menu-all.php:3
+msgid "QnA"
+msgstr "질문과답변"
+
+#: header.php:96
+msgid "Close"
+msgstr "닫기"
+
+#: past.php:11
+msgid "You have no past classes"
+msgstr "수업이 없습니다."
+
+#: past.php:15
+msgid "No. of Past classes : "
+msgstr "지난 수업 수 :"
+
+#: past.php:23
+msgid "Class No."
+msgstr "번호"
 
 #: past.php:26
 msgid "Date"
@@ -57,36 +146,25 @@ msgstr "수업시간"
 msgid "Class Comment"
 msgstr "코멘트"
 
-#: reservation.php:17
+#: reservation.php:18
 msgid "Class Reservation"
 msgstr "수업 예약"
 
-#: reservation.php:20
+#: reservation.php:21
 msgid "You have no reservations"
 msgstr "예약된 수업이 없습니다."
 
-#: reservation.php:23
+#: reservation.php:24
 msgid "No. of Reservations"
 msgstr "예약 된 수업 수"
 
-#: user-log-in.php:10
+#: user-log-in.php:11
 msgid "Password reset link has been sent to your email."
 msgstr "비밀번호 변경 주소가 이메일로 전송되었습니다."
 
 #: user-password-lost.php:11
 msgid "Password reset link has been sent to your email. Please check your email."
 msgstr "비밀번호 변경 주소가 이메일로 전송되었습니다. 메일 함을 확인해 주십시오."
-
-#: forum/template/biography.php:28 /x-korean-style-forum-
-#: template/template/biography.php:28
-msgid "Author:"
-msgstr "작성자:"
-
-#: forum/template/biography.php:33 /x-korean-style-forum-
-#: template/template/biography.php:33
-#, php-format
-msgid "View all posts by %s"
-msgstr ""
 
 #: part/aside.php:3
 msgid "Skype"
@@ -123,71 +201,3 @@ msgstr "수강료"
 #: part/front-icon-menu.php:40
 msgid "Q & A"
 msgstr "질문과답변"
-
-#. Name of the theme
-msgid "X5 Withcenter LMS Theme"
-msgstr ""
-
-#: header.php:36
-msgid "ADMIN"
-msgstr "관리자"
-
-#: header.php:40
-msgid "PROFILE UPDATE"
-msgstr "회원정보 수정"
-
-#: header.php:45
-msgid "LOGIN"
-msgstr "로그인"
-
-#: header.php:52
-msgid "LOGOUT"
-msgstr "로그아웃"
-
-#: header.php:56
-msgid "REGISTER"
-msgstr "회원가입"
-
-#: header.php:62
-msgid "ALL MENU"
-msgstr "전체메뉴"
-
-#: header.php:70
-msgid "About  Us"
-msgstr "인사말"
-
-#: header.php:73
-msgid "Level Test"
-msgstr "레벨테스트"
-
-#: header.php:76
-msgid "Enrollment"
-msgstr "수업신청"
-
-#: header.php:79
-msgid "Curriculum"
-msgstr "수업과정"
-
-#: header.php:82
-msgid "Reservation"
-msgstr "예약"
-
-#: header.php:85
-msgid "QnA"
-msgstr "질문과답변"
-
-#: header.php:88
-msgid "Close"
-msgstr "닫기"
-
-#: past.php:11
-msgid "You have no past classes"
-msgstr "수업이 없습니다."
-
-#: past.php:15
-msgid "No. of Past classes : "
-msgstr "지난 수업 수 :"
-
-#: past.php:23
-msgid "Class No."
-msgstr "번호"

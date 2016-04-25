@@ -4,7 +4,7 @@
 }
 
 .home.front .content .data > .testimonial {
-    background-color: #f6cd47;
+    background-color: #F7CD47;
 }
 
 .home.front .content .data > .testimonial .text {
@@ -20,11 +20,16 @@
 
 .home.front .content .data > .testimonial .collection {
     text-align: left;
-    padding-bottom: 100px;
+}
+
+.home.front .content .data > .testimonial .collection .row {
+    margin: 0;
 }
 
 .home.front .content .data > .testimonial .collection .inner {
-    margin-bottom: 35px;
+    height: 190px;
+    overflow-y: hidden;
+    margin-bottom: 25px;
 }
 
 .home.front .content .data > .testimonial .collection .inner .picture {

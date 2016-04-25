@@ -1,9 +1,13 @@
 <?php
 wp_enqueue_style('front-slider', td() . '/css/front-slider.css');
-wp_enqueue_script('front-slider', td() . '/js/front-slider.js');
+//wp_enqueue_script('front-slider', td() . '/js/front-slider.js');
 ?>
-<section class="my-slider">
-    <nav>
+
+<section class="my-slider" xmlns="http://www.w3.org/1999/html">
+    <span class="static">
+        <img src="<?php img_e()?>/banner/home_slider1.jpg">
+    </span>
+    <!--nav>
         <img src="<?php img_e()?>/banner/top_arrow_left.png">
         <img src="<?php img_e()?>/banner/top_arrow_right.png">
     </nav>
@@ -70,7 +74,7 @@ wp_enqueue_script('front-slider', td() . '/js/front-slider.js');
                 </div>
             </div>
         </li>
-    </ul>
+    </ul-->
 </section>
 
 
