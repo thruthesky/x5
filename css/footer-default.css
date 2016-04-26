@@ -81,6 +81,10 @@
 }
 
 @media all and (max-width: 427px) {
+
+    .default-footer .logo-picture .title {
+        padding: 0;
+    }
     .default-footer .logo-picture {
         text-align: center;
     }

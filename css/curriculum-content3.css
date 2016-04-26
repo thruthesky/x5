@@ -6,12 +6,10 @@ section .curriculum.content-three {
 }
 
 section .curriculum.content-three h2 {
-    float: right;
-    position: relative;
     font-size: 46px;
     color: #FFFFFF;
-    text-align: right;
+    text-align: center;
     line-height: 50px;
     margin: 0;
-    padding: 75px 34px 0 0;
+    padding: 111px 34px 0 0;
 }

@@ -3,7 +3,12 @@ wp_enqueue_style('curriculum-content2', td() . '/css/curriculum-content2.css');
 ?>
 <section class="curriculum content-two">
     <div>
-        <h2>저희는 화상영어 학습을 위해서 필리핀 현지에서 2006년 부터 2016년 현재까지 직접 화상 영어 콜센터를 운영하고 있습니다.</h2>
+        <h2>일반 화상 영어</h2>
+        <div class="desc">수준별 다양한 주제로 일상생활 뿐만 아니라 사회, 문화적 이슈를 다뤄 다양한 분야별
+            광범위한 어휘 향상을 도모하도록 구성되어 있습니다.
+            <br><br>
+            총 12개월 과정의 본 코스를 이수하시게 되면, 언제 어디에서라도 영어로 자신감 있게 자기 의사를 표현하는
+            자신을 발견하게 될 것입니다. </div>
         <div class="container container-level">
             <div class="row">
                 <div class="beginner col-xs-12 col-sm-4">

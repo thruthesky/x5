@@ -5,104 +5,110 @@ section .curriculum.content-two {
 }
 
 section .curriculum.content-two h2 {
-    margin: 100px 20px 80px;
+    margin: 60px 20px 42px;
     font-size: 32px;
     text-align: center;
-    line-height: 45px;
 }
 
-section .curriculum img {
+section .curriculum.content-two .desc {
+    margin-bottom: 45px;
+    padding: 0 20px;
+    font-size: 18px;
+    text-align: center;
+}
+
+section .curriculum.content-two img {
     width: 100%;
     height: auto;
     padding: 0 50px;
     margin-bottom: 100px;
 }
 
-section .curriculum .content.row .cover .desc {
+section .curriculum.content-two .content.row .cover .desc {
     text-align: center;
     padding: 0 10px;
 }
 
 
 /* Test Style */
-.container-level {
+section .curriculum.content-two .container-level {
     padding: 0;
 }
-.container-level .row {
+section .curriculum.content-two .container-level .row {
     margin: 0;
 }
-.container-level .row div {
+section .curriculum.content-two .row div {
     padding: 0;
 }
-.container-level .row div img {
+section .curriculum.content-two .container-level .row div img {
     width: 100%;
     margin: 0;
     padding: 0;
 }
 
-.container.container-level {
+section .curriculum.content-two .container.container-level {
     margin-bottom: 100px;
 }
 
-.container-level .row .beginner .title,
-.container-level .row .intermediate .title,
-.container-level .row .advanced .title {
+section .curriculum.content-two .container-level .row .beginner .title,
+section .curriculum.content-two .container-level .row .intermediate .title,
+section .curriculum.content-two .container-level .row .advanced .title {
     padding: 20px;
     color: #FFFFFF;
     font-size: 21px;
     font-weight: bold;
 }
 
-.beg.title {
+section .curriculum.content-two .beg.title {
     background: orange;
     text-align: center;
 }
-.inter.title {
+section .curriculum.content-two .inter.title {
     background-color: darkorange;
     text-align: center;
 }
-.adv.title {
+section .curriculum.content-two .adv.title {
     background-color: orangered;
     text-align: center;
 }
 
-.curriculum .container .level.one {
+section .curriculum.content-two  .container .level.one {
     background-color: #1C8B73;
 }
-.curriculum .container .level.two {
+section .curriculum.content-two .container .level.two {
     background-color: #177269;
 }
-.curriculum .container .level.three {
+section .curriculum.content-two .container .level.three {
     background-color: #005A5B;
 }
-.curriculum .container .level.four {
+section .curriculum.content-two .container .level.four {
     background-color: #268BAF;
 }
-.curriculum .container .level.five {
+section .curriculum.content-two .container .level.five {
     background-color: #1E647D;
 }
-.curriculum .container .level.six {
+section .curriculum.content-two .container .level.six {
     background-color: #153F4D;
 }
-.curriculum .container .level.seven {
+section .curriculum.content-two .container .level.seven {
     background-color: #5DA6A6;
 }
-.curriculum .container .level.eight {
+section .curriculum.content-two .container .level.eight {
     background-color: #4A8282;
 }
-.curriculum .container .level.nine {
+section .curriculum.content-two .container .level.nine {
     background-color: #315858;
 }
 
-.curriculum .container .level {
+section .curriculum.content-two .container .level {
     padding: 15px;
     text-align: center;
     color: #FFFFFF;
     background-color: #d1ccc7;
 }
 
-.curriculum .container .title-desc,
-.curriculum .container .level-desc {
+section .curriculum.content-two .container .title-desc,
+section .curriculum.content-two .container .level-desc {
     padding: 20px 25px 30px;
     margin-bottom: 5px;
     text-align: center;
@@ -111,38 +117,38 @@ section .curriculum .content.row .cover .desc {
     background-color: #FFFFFF;
 }
 
-.curriculum .container .beginner .level,
-.curriculum .container .beginner .title-desc,
-.curriculum .container .beginner .level-desc {
+section .curriculum.content-two .container .beginner .level,
+section .curriculum.content-two .container .beginner .title-desc,
+section .curriculum.content-two .container .beginner .level-desc {
     margin-right: 2px;
 }
 
-.curriculum .container .intermediate .level,
-.curriculum .container .intermediate .title-desc,
-.curriculum .container .intermediate .level-desc {
+section .curriculum.content-two .container .intermediate .level,
+section .curriculum.content-two .container .intermediate .title-desc,
+section .curriculum.content-two .container .intermediate .level-desc {
     margin-left: 3px;
     margin-right: 1px;
 }
 
-.curriculum .container .advanced .level,
-.curriculum .container .advanced .title-desc,
-.curriculum .container .advanced .level-desc {
+section .curriculum.content-two .container .advanced .level,
+section .curriculum.content-two .container .advanced .title-desc,
+section .curriculum.content-two .container .advanced .level-desc {
     margin-left: 3px;
 }
 
 @media all and ( max-width: 543px ) {
-    .curriculum .container.container-level div.level,
-    .curriculum .container.container-level div.title-desc,
-    .curriculum .container.container-level div.level-desc {
+    section .curriculum.content-two .container.container-level div.level,
+    section .curriculum.content-two .container.container-level div.title-desc,
+    section .curriculum.content-two .container.container-level div.level-desc {
         margin-left: 5px;
         margin-right: 5px;
     }
 }
 
 @media all and ( max-width: 1199px ) {
-    .curriculum .container.container-level div.level,
-    .curriculum .container.container-level div.title-desc,
-    .curriculum .container.container-level div.level-desc {
+    section .curriculum.content-two .container.container-level div.level,
+    section .curriculum.content-two .container.container-level div.title-desc,
+    section .curriculum.content-two .container.container-level div.level-desc {
         margin-right: 0;
     }
 }
@@ -150,15 +156,15 @@ section .curriculum .content.row .cover .desc {
 
 @media all and ( min-width: 34em ) {
 
-    .beg.title {
+    section .curriculum.content-two .beg.title {
         background: transparent url('../img/curriculum_begginer.png') no-repeat;
         background-size: cover;
     }
-    .inter.title {
+    section .curriculum.content-two .inter.title {
         background: transparent url('../img/curriculum_intermediate.png') no-repeat;
         background-size: cover;
     }
-    .adv.title {
+    section .curriculum.content-two .adv.title {
         background: transparent url('../img/curriculum_advanced.png') no-repeat;
         background-size: cover;
     }
