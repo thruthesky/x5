@@ -61,12 +61,11 @@ aside.sidebar {
     .sidebar {
         position: absolute;
         top: 100px;
-        left: -100px;
+        left: 50px;
         right: auto;
         bottom: auto;
     }
     .sidebar ul {
-
         position:relative;
     }
     .sidebar ul li {

@@ -66,7 +66,8 @@ abc()->registerRoute(
         'reservation',
         'teacher-list',
         'reservation',
-        'past'
+        'past',
+        'help'
     ]
 );
 

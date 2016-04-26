@@ -18,22 +18,22 @@ wp_enqueue_style('desc', td() . '/css/front-desc.css');
             <div class="col-sm-3">
                 <div><img src="<?php img_e() ?>device.png" ></div>
                 <div class="title"><?php _e('Any Device', 'x5')?></div>
-                <div class="desc">You can use any device for the video class.</div>
+                <div class="desc"><?php _e('You can use any device for the video class.', 'x5')?></div>
             </div>
             <div class="col-sm-3">
                 <div><img src="<?php img_e() ?>time.png" ></div>
-                <div class="title">Any Time</div>
-                <div class="desc">You can choose class time on your convenience.</div>
+                <div class="title"><?php _e('Any Time<', 'x5')?>/div>
+                <div class="desc"><?php _e('You can choose class time on your convenience.', 'x5')?></div>
             </div>
             <div class="col-sm-3">
                 <div><img src="<?php img_e() ?>location.png" ></div>
-                <div class="title">Any Where</div>
-                <div class="desc">With your mobile device, you can get your class from any where.</div>
+                <div class="title"><?php _e('Any Where', 'x5')?></div>
+                <div class="desc"><?php _e('With your mobile device, you can get your class from any where.', 'x5')?></div>
             </div>
             <div class="col-sm-3">
                 <div><img src="<?php img_e() ?>option.png" ></div>
-                <div class="title">Any Option</div>
-                <div class="desc">You can have MWF, TTH or M~F class.</div>
+                <div class="title"><?php _e('Any Option<', 'x5')?>/div>
+                <div class="desc"><?php _e('You can have MWF, TTH or M~F class.', 'x5')?></div>
             </div>
         </div>
     </div>
