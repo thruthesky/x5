@@ -8,12 +8,12 @@ section .about-us.content-one {
 section .about-us.content-one h2 {
     position: relative;
     display: inline-block;
-    margin: 100px 125px;
-    padding: 27px 46px 30px;
+    margin: 6.25rem 7.8125rem;
+    padding: 0.8125rem 2.875rem 1.5625rem;
     border-radius: 3px;
     color: #FFFFFF;
-    font-size: 38px;
+    font-size: 2.375em;
     text-align: center;
-    line-height: 54px;
+    line-height: 3.4375rem;
     background-color: rgba(0, 0, 0,.4);
 }

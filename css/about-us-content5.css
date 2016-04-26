@@ -9,10 +9,11 @@ section .about-us.content-five h2 {
     position: relative;
     display: inline-block;
     float: left;
-    top: 480px;
-    color: #FFFFFF;
-    font-size: 56px;
-    text-align: left;
-    line-height: 76px;
+    padding: 0;
     margin: 0;
+    top: 431px;
+    color: #FFFFFF;
+    font-size: 3.5em;
+    text-align: left;
+    line-height: 4.75rem;
 }

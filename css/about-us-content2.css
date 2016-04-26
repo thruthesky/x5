@@ -4,29 +4,30 @@ section .about-us.content-two {
 }
 
 section .about-us.content-two hr {
-    border:  2px solid #a3c2c9;
+    border: 0.125rem solid #a3c2c9;
 }
 
 section .about-us.content-two h2 {
-    margin: 0 20px 65px;
-    padding: 100px 22px 0;
-    font-size: 26px;
+    display: inline-block;
+    margin: 5.6875rem 1.25rem 3.375rem;
+    padding: 0 1.375rem 0;
+    font-size: 1.625em;
     text-align: center;
-    line-height: 36px;
     font-weight: 500;
+    line-height: 2.125rem;
 }
 
 section .about-us.content-two h3 {
-    padding: 0 30px;
-    margin-bottom: 60px;
-    font-size: 32px;
+    padding: 0 1.875rem;
+    margin-bottom: 3.5rem;
+    font-size: 2em;
     text-align: center;
-    line-height: 48px;
+    line-height: 3rem;
     font-weight: 500;
 }
 
 section .about-us .content.row .cover .picture {
-    margin-bottom: 30px;
+    margin-bottom: 1.375rem;
 }
 
 section .about-us .content.row .cover .picture img {
@@ -36,27 +37,26 @@ section .about-us .content.row .cover .picture img {
 
 section .about-us .content.row .cover .desc {
     text-align: center;
-    padding: 0 10px;
+    padding: 0 0.625rem;
     font-size: 21px;
 }
 
 section .about-us .bot-desc {
     text-align: left;
-    padding: 50px 10px 20px;
-    font-size: 21px;
+    padding: 3.125rem 0.625rem 1.25rem;
+    font-size: 1.3125em;
     font-weight: 400;
 }
 
 section .about-us .content.row {
-    margin: 0 0 50px;
+    margin: 0 0 3.75rem;
 }
 
 section .about-us .bot.row {
     margin: 0;
-    padding-bottom: 100px;
+    padding-bottom: 5.0625em;
 }
 
 section .about-us .content.row > div.col-sm-4 {
-    padding: 0 20px;
-
+    padding: 0 1.25rem;
 }
