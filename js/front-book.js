@@ -8,7 +8,7 @@ jQuery( function( $ ) {
                 'display': 'block'
             });
             $x = false;
-            $more.text('SHOW LESS');
+            $more.text('SHOW LESS','x5');
         }else {
             $sub.css({
                 'display': 'none'
