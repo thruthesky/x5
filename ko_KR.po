@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: X5 Withcenter LMS Theme\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: Tue Apr 12 2016 22:17:24 GMT+0900 (Korea Standard Time)\n"
-"PO-Revision-Date: Wed Apr 20 2016 21:55:44 GMT+0900 (Korea Standard Time)\n"
+"PO-Revision-Date: Tue Apr 26 2016 20:14:00 GMT+0900 (Korea Standard Time)\n"
 "Last-Translator: admin <thruthesky@gmail.com>\n"
 "Language-Team: \n"
 "Language: Korean\n"
@@ -41,6 +41,14 @@ msgstr[1] ""
 msgid "Comments are closed."
 msgstr ""
 
+#: header.php:75
+msgid "HELP"
+msgstr ""
+
+#: header.php:80
+msgid "SITEMAP"
+msgstr ""
+
 #: menu-all.php:4
 msgid "Discussion"
 msgstr ""
@@ -49,76 +57,741 @@ msgstr ""
 msgid "Teachers"
 msgstr ""
 
-#: part/front-info.php:6
-msgid "Welcome to Our Company"
-msgstr "위즈잉글리쉬에 오신 것을 환영합니다."
+#: part/about-us-content1.php:6
+msgid ""
+"우리는 영어 학습의 두려움없이<br>\n"
+"            학생들이 배우고 즐길 수있는 공간을<br>\n"
+"            제공합니다."
+msgstr ""
 
-#: part/front-info.php:8
-msgid "Let us introduce our call center."
-msgstr "위즈잉글리쉬를 소개합니다."
+#: part/about-us-content2.php:6
+msgid ""
+"\n"
+"        저희 잉글리쉬 월드 원격영어교육은 화상, 전화영어 및 영어캠프 를 진행하고 있습니다.\n"
+"        학생들이 영어를 두렵고 어려워하지 않고 재미있고 즐기며 학습하고 배울\n"
+"         수 있는 공간을 제공하고 있습니다."
+msgstr ""
+
+#: part/about-us-content2.php:10
+msgid ""
+"\n"
+"        저희는 화상영어 학습을 위해서 필리핀 현지에서 2006년 부터 2016년\n"
+"        현재까지 직접 화상 영어 콜센터를 운영하고 있습니다."
+msgstr ""
+
+#: part/about-us-content2.php:20
+msgid "교사 역 깔끔하게 개인 정보 보호에 대한 높은 벽에 나란히 위치."
+msgstr ""
+
+#: part/about-us-content2.php:30
+msgid "교사의 역 내부에는 중단하지 않습니다."
+msgstr ""
+
+#: part/about-us-content2.php:40
+msgid "상수 통신은 새로운 언어를 학습의 핵심입니다."
+msgstr ""
+
+#: part/about-us-content2.php:49
+msgid ""
+"되려니와, 사랑의 온갖 따뜻한 공자는 용기가 피가 피고 것이다.\n"
+"                     얼마나 고행을 두손을 것이다. 이상을 있는 그와 그리하였는가?\n"
+"                     것은 모래뿐일 찾아다녀도, 간에 피다."
+msgstr ""
+
+#: part/about-us-content2.php:56
+msgid ""
+"과실이 있으며, 따뜻한 사막이다. 할지니, 못할 생의 보내는 따뜻한 우는 황금시대다.\n"
+"                    천지는 우리 이 산야에 위하여서. 유소년에게서 없으면 이상 끓는 없는\n"
+"                    무엇을 붙잡아 교향악이다."
+msgstr ""
+
+#: part/about-us-content3.php:7
+msgid "Claim your free trial<br> or enroll now"
+msgstr ""
+
+#: part/about-us-content3.php:10
+msgid "Start Trial"
+msgstr ""
+
+#: part/about-us-content3.php:13
+msgid "Enroll Now"
+msgstr ""
+
+#: part/about-us-content5.php:6
+msgid ""
+"원어민강사와의 거리감을<br>\n"
+"            느낄 수 없는 화질과<br>\n"
+"            음질을 제공합니다."
+msgstr ""
+
+#: part/curriculum-content2.php:6
+msgid "Video English Curriculum"
+msgstr ""
+
+#: part/curriculum-content2.php:7
+msgid ""
+"This is the first paragraph of the Curriculum page. You can use HTML to "
+"decorate on the text. Try to use p, br, b, i tags. You can also input CSS "
+"and Javascript on this paragraph."
+msgstr ""
+
+#: part/curriculum-content2.php:11
+msgid "Beginner"
+msgstr ""
+
+#: part/curriculum-content2.php:12
+msgid "Description on Beginner 1"
+msgstr ""
+"영어를 막 시작하는 초급자 코스<br>\n"
+"기초 단어와 표현에 집중합니다."
+
+#: part/curriculum-content2.php:13
+msgid "Level 1"
+msgstr ""
+
+#: part/curriculum-content2.php:14 /part/curriculum-content2.php:16
+#: part/curriculum-content2.php:18 /part/curriculum-content2.php:24
+#: part/curriculum-content2.php:26 /part/curriculum-content2.php:28
+#: part/curriculum-content2.php:34 /part/curriculum-content2.php:36
+#: part/curriculum-content2.php:38
+msgid "Topic 토론, Cartoon Story Making,원어민 Idiom 표현, 영어 대화의 논리력 연습"
+msgstr ""
+
+#: part/curriculum-content2.php:15
+msgid "Level 2"
+msgstr ""
+
+#: part/curriculum-content2.php:17
+msgid "Level 3"
+msgstr ""
+
+#: part/curriculum-content2.php:21
+msgid "Intermediate"
+msgstr ""
+
+#: part/curriculum-content2.php:22
+msgid "Description on Intermediate 1"
+msgstr ""
+
+#: part/curriculum-content2.php:23
+msgid "Level 4"
+msgstr ""
+
+#: part/curriculum-content2.php:25
+msgid "Level 5"
+msgstr ""
+
+#: part/curriculum-content2.php:27
+msgid "Level 6"
+msgstr ""
+
+#: part/curriculum-content2.php:31
+msgid "Advanced"
+msgstr ""
+
+#: part/curriculum-content2.php:32
+msgid "Description on Advanced 1"
+msgstr ""
+
+#: part/curriculum-content2.php:33
+msgid "Level 7"
+msgstr ""
+
+#: part/curriculum-content2.php:35
+msgid "Level 8"
+msgstr ""
+
+#: part/curriculum-content2.php:37
+msgid "Level 9"
+msgstr ""
+
+#: part/curriculum-content3.php:6
+msgid "교육이 핵심입니다"
+msgstr ""
+
+#: part/curriculum-content4.php:6
+msgid "Curriculum Key"
+msgstr ""
+
+#: part/curriculum-content4.php:8
+msgid ""
+"취업 실현의 대세 및 관건은 영어입니다. 사회에 첫발을 내딛는 관문인 Job<br>\n"
+"            Interview, 영어 사회 및 직장 생활. Company엣 본인의 이상과 Vision을<br>\n"
+"            실현하고자 하는 분들에게 실용가지가 없는 단순 독해, 문법위주의 본 면접영어<br>\n"
+"            커리큘럼은 이력서 작성, 영어 면접 전후의 전략, 가상 인터뷰, 회사."
+msgstr ""
+
+#: part/curriculum-content4.php:19
+msgid "Career"
+msgstr ""
+
+#: part/curriculum-content4.php:20
+msgid "Description on Career"
+msgstr ""
+
+#: part/curriculum-content4.php:23
+msgid "Resume"
+msgstr ""
+
+#: part/curriculum-content4.php:24
+msgid "Description on Resume"
+msgstr ""
+
+#: part/curriculum-content4.php:27
+msgid "Preparation"
+msgstr ""
+
+#: part/curriculum-content4.php:28
+msgid "Description on Preparation"
+msgstr ""
+
+#: part/curriculum-content4.php:31
+msgid "Interview"
+msgstr ""
+
+#: part/curriculum-content4.php:32
+msgid "Description on Interview"
+msgstr ""
+
+#: part/curriculum-content4.php:35
+msgid "Role Play"
+msgstr ""
+
+#: part/curriculum-content4.php:36
+msgid "Description on Role Play"
+msgstr ""
+
+#: part/curriculum-content4.php:39
+msgid "Organization"
+msgstr ""
+
+#: part/curriculum-content4.php:40
+msgid "Description on Organization"
+msgstr ""
+
+#: part/curriculum-content5.php:8
+msgid ""
+"전 세계적으로 가장 많이 쓰이는 교재는 렛츠고, 사이드 바이 사이드, 그리고 뉴<br>\n"
+"            인터체인지가 있는데 이러한 교재는 대한민국 뿐만아니라 전 세계 어느 나라에서든"
+msgstr ""
+
+#: part/enrollment-content2.php:9 /part/level-test-content2.php:9
+msgid "오늘 등록하고 무료 평가판을 얻을!"
+msgstr ""
+
+#: part/enrollment-content2.php:17
+msgid "Minutes"
+msgstr ""
+
+#: part/enrollment-content2.php:20 /part/enrollment-content2.php:62
+msgid "20mins"
+msgstr ""
+
+#: part/enrollment-content2.php:21
+#, php-format
+msgid "30mins (5% discount)"
+msgstr ""
+
+#: part/enrollment-content2.php:22
+#, php-format
+msgid "40mins (10% discount)"
+msgstr ""
+
+#: part/enrollment-content2.php:23
+#, php-format
+msgid "50mins (15% discount)"
+msgstr ""
+
+#: part/enrollment-content2.php:33
+msgid "Months"
+msgstr ""
+
+#: part/enrollment-content2.php:36 /part/enrollment-content2.php:66
+msgid "1month"
+msgstr ""
+
+#: part/enrollment-content2.php:37
+#, php-format
+msgid "2months (5% discount)"
+msgstr ""
+
+#: part/enrollment-content2.php:38
+#, php-format
+msgid "3months (10% discount)"
+msgstr ""
+
+#: part/enrollment-content2.php:48
+msgid "Days"
+msgstr ""
+
+#: part/enrollment-content2.php:51
+msgid "Monday - Friday"
+msgstr ""
+
+#: part/enrollment-content2.php:52
+msgid "Mon Wed Fri only"
+msgstr ""
+
+#: part/enrollment-content2.php:53
+msgid "Tue Thu only"
+msgstr ""
+
+#: part/enrollment-content2.php:61 /part/enrollment-content2.php:65
+#: part/enrollment-content2.php:69
+msgid "오늘 등록하고"
+msgstr ""
+
+#: part/enrollment-content2.php:70
+msgid "Monday-Friday"
+msgstr ""
+
+#: part/enrollment-content2.php:75
+msgid "Total: 1,188,000"
+msgstr ""
+
+#: part/enrollment-content2.php:76
+msgid "ENROLL NOW"
+msgstr ""
+
+#: part/front-book.php:8
+msgid "Our Books"
+msgstr ""
+
+#: part/front-book.php:12
+msgid "LEARN MORE"
+msgstr ""
+
+#: part/front-book.php:19
+msgid "English Time"
+msgstr ""
+
+#: part/front-book.php:21 /part/front-book.php:42 /part/front-book.php:52
+#: part/front-book.php:62 /part/front-book.php:107 /part/front-book.php:117
+#: part/front-book.php:153 /part/front-book.php:163 /part/front-book.php:173
+#: part/front-book.php:185 /part/front-book.php:195 /part/front-book.php:205
+#: part/front-book.php:215 /part/front-book.php:225
+msgid ""
+"English Time develops your students' speaking, listening, reading,\n"
+"                                 and writing skills through art, stories, "
+"conversation, and games."
+msgstr ""
+
+#: part/front-book.php:29
+msgid "Lets"
+msgstr ""
+
+#: part/front-book.php:31
+msgid ""
+"Maximise children’s talking time in class through dialogues, pair work and\n"
+"                                communicative games. This combined with the "
+"rhythm and melody of the acclaimed\n"
+"                                Carolyn Graham songs makes the language "
+"memorable."
+msgstr ""
+
+#: part/front-book.php:40
+msgid "Lets Go"
+msgstr ""
+
+#: part/front-book.php:50
+msgid "Super Kids"
+msgstr ""
+
+#: part/front-book.php:60
+msgid "Reading Cue Plus+"
+msgstr ""
+
+#: part/front-book.php:72
+msgid "Reading Cue"
+msgstr ""
+
+#: part/front-book.php:74
+msgid ""
+"This series helps student to build their vocabulary and to develop their "
+"reading\n"
+"                                skills and strategies, while they read level-"
+"appropriate reading passages."
+msgstr ""
+
+#: part/front-book.php:82
+msgid "Bricks Reading"
+msgstr ""
+
+#: part/front-book.php:84
+msgid ""
+"Offers interesting and informative theme-based\n"
+"                                units with various format and genres: "
+"fiction, nonfiction, letters, news articles,\n"
+"                                journals, plus more. The formats are "
+"designed to optimize understanding of the reading\n"
+"                                contents."
+msgstr ""
+
+#: part/front-book.php:94
+msgid "Bricks Reading Beginner"
+msgstr ""
+
+#: part/front-book.php:96
+msgid ""
+"Is a three-leveled reading program that enables beginner learns to build "
+"their\n"
+"                                vocabulary and reading comprehension skill. "
+"It is design for upper-beginner to\n"
+"                                low-intermediate young learners who wants to "
+"be successful readers."
+msgstr ""
+
+#: part/front-book.php:105
+msgid "Grammar in use"
+msgstr ""
+
+#: part/front-book.php:115
+msgid "Bricks Reading+"
+msgstr ""
+
+#: part/front-book.php:127
+msgid "Chat room for teens"
+msgstr ""
+
+#: part/front-book.php:129
+msgid ""
+"English learners are encourage to express themselves freely on a wide range\n"
+"                                 of relevant topics. Many thought-provoking "
+"question and examples are given\n"
+"                                 to spur independent language usage."
+msgstr ""
+
+#: part/front-book.php:138
+msgid "Can You Beleive It"
+msgstr ""
+
+#: part/front-book.php:140
+msgid ""
+"Is a three-level reading series that combines highly unusual news stories "
+"with\n"
+"                                high-frequency idioms, phrasal verbs, and "
+"fixed expressions.\n"
+"                                Students read and listen to a story (which "
+"progresses in length and difficulty\n"
+"                                throughout each text) as they look at a "
+"sequence of comic-strip\n"
+"                                style illustrations. "
+msgstr ""
+
+#: part/front-book.php:151
+msgid "What a World"
+msgstr ""
+
+#: part/front-book.php:161
+msgid "Side by Side"
+msgstr ""
+
+#: part/front-book.php:171
+msgid "Super Reading Training Book"
+msgstr ""
+
+#: part/front-book.php:183
+msgid "NEAT"
+msgstr ""
+
+#: part/front-book.php:193
+msgid "Thoughts & Notions"
+msgstr ""
+
+#: part/front-book.php:203
+msgid "Communication in Business"
+msgstr ""
+
+#: part/front-book.php:213
+msgid "Smart Phonics"
+msgstr ""
+
+#: part/front-book.php:223
+msgid "Discover Debate"
+msgstr ""
+
+#: part/front-book.php:236
+msgid "LOAD MORE"
+msgstr ""
+
+#: part/front-desc.php:6
+msgid "Why Choose Us?"
+msgstr ""
+
+#: part/front-desc.php:8
+msgid ""
+"We provides the best quality service on Online Video English Tutorial.\n"
+"                 Practice your listening, reading, speaking and writing "
+"skills and interact with\n"
+"                  our international community of native speakers."
+msgstr ""
+
+#: part/front-desc.php:20
+msgid "Any Device"
+msgstr ""
+
+#: part/front-desc.php:21
+msgid "You can use any device for the video class."
+msgstr ""
+
+#: part/front-desc.php:25
+msgid "Any Time<"
+msgstr ""
+
+#: part/front-desc.php:26
+msgid "You can choose class time on your convenience."
+msgstr ""
+
+#: part/front-desc.php:30
+msgid "Any Where"
+msgstr ""
+
+#: part/front-desc.php:31
+msgid "With your mobile device, you can get your class from any where."
+msgstr ""
+
+#: part/front-desc.php:35
+msgid "Any Option<"
+msgstr ""
+
+#: part/front-desc.php:36
+msgid "You can have MWF, TTH or M~F class."
+msgstr ""
+
+#: part/front-gallery.php:6
+msgid "Gallery"
+msgstr ""
+
+#: part/front-gallery.php:8
+msgid ""
+"\n"
+"            Please meet our office staffs. Teachers, Managers and "
+"Technicians.\n"
+"            With our qualified service, you will be statisfied with the "
+"lesson.\n"
+"            If you want to see more about us, feel free to ask us more "
+"photos.\n"
+"            "
+msgstr ""
 
 #: part/front-info.php:10
 msgid ""
-"Mr. Song had published Withcenter, inc. on 2007. Since then, the company "
-"grew every year and now it is located in Angeles city, Pampanga, Philippines."
-" We have 40 Englisg teachers."
+"Mr. Song had published Withcenter, inc. on 2007.\n"
+"                 Since then, the company grew every year and now it is "
+"located in Angeles City, Pampanga,\n"
+"                  Philippines. We have 40 English teachers."
 msgstr ""
-"위즈잉글리쉬는 2007년 마닐라 마카티의 헤레라 타워에서 화상영어 콜센터를 설립하여 많은 강사와 학생들이 저희 위즈 잉글리시 홈페이지에서 "
-"화상영어 수업을 진행하였습니다."
+
+#: part/front-testimonial.php:7
+msgid "Testimonial"
+msgstr ""
+
+#: part/front-testimonial.php:17
+msgid "Antonia"
+msgstr ""
+
+#: part/front-testimonial.php:19
+msgid ""
+"I'd been studying English in LSE for almost four months.\n"
+"                                For me the time spent in this school turned "
+"into an unforgettable experience.\n"
+"                                I'd like to say an enormous THANKS to all "
+"members of LSE as well as my teachers: Daragh, Andy, Sarah,\n"
+"                                Fiona and especially Mary who is an "
+"extraordinary teacher and one of the most patient,\n"
+"                                enthusiastic and energetic people I've ever "
+"met."
+msgstr ""
+
+#: part/front-testimonial.php:30
+msgid "Tatiana"
+msgstr ""
+
+#: part/front-testimonial.php:32
+msgid ""
+"I would like to thank the whole team of LSE for the great English for "
+"University\n"
+"                                course you have provided. Now that I've "
+"started the Masters degree programme in\n"
+"                                English here in Germany, I’ve realised all "
+"the things I learnt with you.\n"
+"                                It was a brilliant learning experience. "
+"Thank you, again."
+msgstr ""
+
+#: part/front-testimonial.php:42
+msgid "Asli"
+msgstr ""
+
+#: part/front-testimonial.php:44
+msgid ""
+"My name is Asli and I am from Turkey. When I came to London,\n"
+"                                I was too nervous about my IELTS exam but "
+"after my 10-week course at London School of English,\n"
+"                                I became more confident about both my exam "
+"and also my ability in English.\n"
+"                                Finally I got 6.5 in IELTS which is a great "
+"result for me."
+msgstr ""
+
+#: part/front-testimonial.php:56
+msgid "Jaime"
+msgstr ""
+
+#: part/front-testimonial.php:58
+msgid ""
+"I really appreciated the IELTS course that I prepared at the London School "
+"of English.\n"
+"                                My classmates, the teachers and all the "
+"members of the staff, were amazing and I learnt a lot.\n"
+"                                I highly recommended this school if you want "
+"to improve your English and want to achieve\n"
+"                                your aspirations and aims."
+msgstr ""
+
+#: part/front-testimonial.php:68
+msgid "Pierre Alain"
+msgstr ""
+
+#: part/front-testimonial.php:70
+msgid ""
+"Exactly what I expected, challenging on the weak points to improve my "
+"English.\n"
+"                                Well organised school and a good mix of the "
+"international students.\n"
+"                                Cross-cultural exchange is a plus to my stay "
+"here."
+msgstr ""
+
+#: part/front-testimonial.php:79
+msgid "Kieran"
+msgstr ""
+
+#: part/front-testimonial.php:81
+msgid ""
+"The teaching, making people speak as much as possible,\n"
+"                                making people self-confident, making people "
+"feel as if they were at home,\n"
+"                                being friendly and open-minded, making "
+"people meet,\n"
+"                                encouraging cultural mix between students."
+msgstr ""
+
+#: part/help-content1.php:6
+msgid "Help"
+msgstr ""
+
+#: part/help-content2.php:6
+msgid "Company Information"
+msgstr ""
+
+#: part/help-content3.php:6
+msgid "Send an Inquiry"
+msgstr ""
+
+#: part/help-content4.php:6
+msgid "FAQs"
+msgstr ""
+
+#: part/level-test-content1.php:6
+msgid "무료 체험 수업"
+msgstr ""
+
+#: part/level-test-content1.php:7
+msgid ""
+"은 모든 학생들이 처음 화상 영어 수업을 할 때 한번 또는 두번 하는 것으로\n"
+"            <br>레벨테스트의 성격이 강하. 자세한 내용을 알고 062-576-5010로 문의."
+msgstr ""
+
+#: part/level-test-content1.php:10
+msgid "Start Free Trial Now"
+msgstr ""
+
+#: part/level-test-content2.php:15 /part/level-test-content2.php:31 /part/level-
+#: test-content2.php:47
+msgid "Step"
+msgstr ""
+
+#: part/level-test-content2.php:16
+msgid "1"
+msgstr ""
+
+#: part/level-test-content2.php:20
+msgid "것은 모래뿐일 찾아다녀도, 간에 피다."
+msgstr ""
+
+#: part/level-test-content2.php:32
+msgid "2"
+msgstr ""
+
+#: part/level-test-content2.php:36
+msgid "싸인 얼마나 우는 보라. 이상의 소리다."
+msgstr ""
+
+#: part/level-test-content2.php:48
+msgid "3"
+msgstr ""
+
+#: part/level-test-content2.php:52
+msgid "못할 생의 보내는 따뜻한 우는."
+msgstr ""
+
+#: part/level-test-content3.php:6
+msgid ""
+"청춘을 우리 이상은 몸이 쓸쓸한 위하여서,<br>\n"
+"            자신과 미묘한 것이다. 이상은 노래하며<br>\n"
+"            가치를 구하지 할지니, 인생에 방황하여도"
+msgstr ""
 
 #. Name of the theme
 msgid "X5 Withcenter LMS Theme"
 msgstr ""
 
-#: header.php:44
+#: header.php:49
 msgid "ADMIN"
 msgstr "관리자"
 
-#: header.php:48
+#: header.php:53
 msgid "PROFILE UPDATE"
 msgstr "회원정보 수정"
 
-#: header.php:53
+#: header.php:58
 msgid "LOGIN"
 msgstr "로그인"
 
-#: header.php:60
+#: header.php:65
 msgid "LOGOUT"
 msgstr "로그아웃"
 
-#: header.php:64
+#: header.php:69
 msgid "REGISTER"
 msgstr "회원가입"
 
-#: header.php:70
-msgid "ALL MENU"
-msgstr "전체메뉴"
-
-#: header.php:78
+#: header.php:88
 msgid "About  Us"
 msgstr "인사말"
 
-#: header.php:81
+#: header.php:91
 msgid "Level Test"
 msgstr "레벨테스트"
 
-#: header.php:84
+#: header.php:94
 msgid "Enrollment"
 msgstr "수업신청"
 
-#: header.php:87
+#: header.php:97
 msgid "Curriculum"
 msgstr "수업과정"
 
-#: header.php:90
+#: header.php:100
 msgid "Reservation"
 msgstr "예약"
 
-#: header.php:93 /menu-all.php:3
+#: header.php:103 /menu-all.php:3
 msgid "QnA"
 msgstr "질문과답변"
 
-#: header.php:96
+#: header.php:106
 msgid "Close"
 msgstr "닫기"
 
@@ -201,3 +874,11 @@ msgstr "수강료"
 #: part/front-icon-menu.php:40
 msgid "Q & A"
 msgstr "질문과답변"
+
+#: part/front-info.php:6
+msgid "Welcome to Our Company"
+msgstr "위즈잉글리쉬에 오신 것을 환영합니다."
+
+#: part/front-info.php:8
+msgid "Let us introduce our call center."
+msgstr "위즈잉글리쉬를 소개합니다."

@@ -1,0 +1,11 @@
+section .help.content-one {
+    height: 200px;
+    background-color: #4298b5;
+}
+
+section .help.content-one h2 {
+    display: inline-block;
+    margin-top: 43px;
+    font-size: 53px;
+    color: #FFFFFF;
+}
