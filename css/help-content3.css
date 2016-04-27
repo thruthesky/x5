@@ -1,8 +1,72 @@
 section .help.content-three {
-    height: 200px;
     background-color: #a7dbdb;
 }
 
 section .help.content-three h2 {
+    display: inline-block;
+    margin-top: 72px;
+    margin-bottom: 26px;
+    font-size: 34px;
+    color: #897562;
+}
 
+section .help.content-three form {
+    max-width: 685px;
+}
+
+section .help.content-three .line {
+    display: inline-block;
+    clear: both;
+}
+
+section .help.content-three .line:last-child {
+    margin-bottom: 85px;
+}
+
+section .help.content-three .line label {
+    float: left;
+    padding: 3px;
+    width: 175px;
+    font-size: 18px;
+    font-weight: 600;
+    color: #2d2d2d;
+}
+
+section .help.content-three .line .text {
+    float: left;
+    padding: 3px;
+    width: 510px;
+    font-size: 18px;
+    color: #2d2d2d;
+}
+
+
+section .help.content-three .line span {
+    color: red;
+}
+
+section .help.content-three textarea,
+section .help.content-three input[tabindex="101"] {
+    outline: 0;
+    padding: 7px;
+    width: 100%;
+    border-radius: 5px;
+    border: 1px solid #c6c6c6;
+}
+
+section .help.content-three .submit input {
+    float: right;
+    display:block;
+    padding: 12px 45px;
+    border: 0;
+    border-radius: 5px;
+    color: #FFFFFF;
+    font-weight: bold;
+    background-color: #3598dc;
+    margin-right: 5px;
+}
+
+
+section .help.content-three .line.submit {
+    width: 100%;
 }

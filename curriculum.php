@@ -8,8 +8,9 @@ get_header();
     #nav-link {
         position: fixed;
         top: 120px;
-        height: 120px;
-        background-color:white;
+        height: 126px;
+        width: 276px;
+        background-color: #ff9999;
         z-Index: 12345;
     }
     #nav-link .active {
