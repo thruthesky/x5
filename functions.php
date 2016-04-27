@@ -14,7 +14,7 @@ if ( ! defined('ABC_LIBRARY') ) {
 
 /*
 
-add_action('init', function() {
+add_action('init', function() {``
     add_rewrite_rule(
         '^forum/([a-zA-Z0-9\-]+)/?$',
         'index.php?category_name=$matches[1]',

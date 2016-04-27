@@ -84,22 +84,22 @@
             </nav>
             <nav class="menu">
                 <ul>
-                    <li>
+                    <li class="<?php if ( seg(0) == 'about-us' ) echo 'active'; ?>">
                         <div><a href="<?php hd()?>about-us"><?php _e('About  Us', 'x5')?></a></div>
                     </li>
-                    <li>
+                    <li class="<?php if ( seg(0) == 'level-test' ) echo 'active'; ?>">
                         <div><a href="<?php hd()?>level-test"><?php _e('Level Test', 'x5')?></a></div>
                     </li>
-                    <li>
+                    <li class="<?php if ( seg(0) == 'enrollment' ) echo 'active'; ?>">
                         <div><a href="<?php hd()?>enrollment"><?php _e('Enrollment', 'x5')?></a></div>
                     </li>
-                    <li>
+                    <li class="<?php if ( seg(0) == 'curriculum' ) echo 'active'; ?>">
                         <div><a href="<?php hd()?>curriculum"><?php _e('Curriculum', 'x5')?></a></div>
                     </li>
-                    <li>
+                    <li class="<?php if ( seg(0) == 'reservation' ) echo 'active'; ?>">
                         <div><a href="<?php hd()?>reservation"><?php _e('Reservation', 'x5')?></a></div>
                     </li>
-                    <li>
+                    <li class="<?php if ( seg(1) == 'qna' ) echo 'active'; ?>">
                         <div><a href="<?php hd()?>forum/qna"><?php _e('QnA', 'x5')?></a></div>
                     </li>
                     <li class="close">
