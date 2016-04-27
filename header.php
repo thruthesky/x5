@@ -18,7 +18,7 @@
 
 <body
     <?php body_class( is_front_page() ? 'front' : '' ); ?>
-    <?php if ( segment(0) == 'curriculum' ) echo 'data-spy="scroll" data-target="#nav-link"'; ?>
+    <?php if ( segment(0) == 'help' ) echo 'data-spy="scroll" data-target="#nav-link"'; ?>
 >
 
 

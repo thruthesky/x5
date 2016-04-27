@@ -6,6 +6,7 @@ section .help.content-one {
 section .help.content-one h2 {
     display: inline-block;
     margin-top: 43px;
+    margin-left: 5px;
     font-size: 53px;
     color: #FFFFFF;
 }

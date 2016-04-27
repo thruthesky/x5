@@ -1,8 +1,52 @@
 section .help.content-two {
-    height: 200px;
     background-color: #d8f1e4;
 }
 
 section .help.content-two h2 {
-
+    display: inline-block;
+    margin-top: 72px;
+    margin-bottom: 26px;
+    font-size: 34px;
+    color: #897562;
 }
+
+section .help.content-two .company-picture {
+    position: relative;
+    display: inline-block;
+    margin-bottom: 45px;
+    max-height: 244px;
+    max-width: 684px;
+    border: 2px solid #cde5d8;
+}
+
+section .help.content-two .company-picture img {
+    width: 100%;
+    height: auto;
+}
+
+section .help.content-two .line {
+    display: inline-block;
+    clear: both;
+}
+
+section .help.content-two .line:last-child {
+    margin-bottom: 85px;
+}
+
+section .help.content-two .line .title {
+    float: left;
+    padding: 3px;
+    width: 175px;
+    font-size: 18px;
+    font-weight: 600;
+    color: #2d2d2d;
+}
+
+section .help.content-two .line .desc {
+    float: left;
+    padding: 3px;
+    width: 510px;
+    font-size: 18px;
+    color: #2d2d2d;
+}
+

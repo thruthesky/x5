@@ -6,7 +6,7 @@ section .register > div {
 section h2 {
     padding-top: 20px;
 }
-.register .submit input {
+section .register .submit input {
     display:block;
     padding: 12px 45px;
     border: 0;
@@ -17,12 +17,12 @@ section h2 {
     margin-left: 150px;
 }
 
-.register .line {
+section .register .line {
     padding: 10px;
     clear: both;
 }
 
-.register .line label {
+section .register .line label {
     float: left;
     padding: 7px;
     width: 150px;
@@ -31,7 +31,7 @@ section h2 {
     font-family: "Arial", "Open Sans", sans-serif;
 }
 
-input[tabindex="101"] {
+section .register input[tabindex="101"] {
     outline: 0;
     padding: 7px;
     min-width: 200px;
@@ -39,16 +39,15 @@ input[tabindex="101"] {
     border: 1px solid #c6c6c6;
     font-family: "Arial", "Open Sans", sans-serif;
 }
-
-input#user_email {
+section .register input#user_email {
     min-width: 340px;
 }
 
-input#address {
+section .register input#address {
     min-width: 450px;
 }
 
-input[tabindex="101"]:focus {
+section .register input[tabindex="101"]:focus {
     border: 1px solid #419df2;
 }
 
