@@ -176,6 +176,15 @@ header .menu ul li a:hover {
     border-radius: 0.1875em;
 }
 
+header .menu ul li.active a {
+    color: orangered;
+}
+header .menu ul li.active a:hover {
+    background-color: transparent;
+}
+
+
+
 @media all and ( min-width: 600px ) {
     header .menu {
         position: absolute;
