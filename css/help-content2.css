@@ -50,3 +50,30 @@ section .help.content-two .line .desc {
     color: #2d2d2d;
 }
 
+/* Spy Scroll */
+body {
+    position: relative;
+}
+#nav-link {
+    position: absolute;
+    top: 155px;
+    right: 0;
+    /*top: 150px;
+    right: 13%;
+    z-Index: 12345;*/
+    height: 126px;
+    width: 276px;
+    border-radius: 3px;
+    background-color: #ff9999;
+
+}
+
+.nav-item a {
+    margin: 14px 0 0 20px;
+    color: #FFFFFF;
+}
+
+#nav-link .active {
+    font-weight: 600;
+}
+/* EO Spy Scroll */
