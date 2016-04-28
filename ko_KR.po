@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: X5 Withcenter LMS Theme\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: Tue Apr 12 2016 22:17:24 GMT+0900 (Korea Standard Time)\n"
-"PO-Revision-Date: Thu Apr 28 2016 00:25:17 GMT+0900 (Japan Standard Time)\n"
+"PO-Revision-Date: Thu Apr 28 2016 00:55:54 GMT+0900 (Japan Standard Time)\n"
 "Last-Translator: admin <gkoeca@gkoeca.org>\n"
 "Language-Team: \n"
 "Language: Korean\n"
@@ -375,85 +375,85 @@ msgstr ""
 
 #: part/enrollment-content2.php:9 /part/level-test-content2.php:9
 msgid "오늘 등록하고 무료 평가판을 얻을!"
-msgstr ""
+msgstr "수업 진행 순서"
 
 #: part/enrollment-content2.php:17
 msgid "Minutes"
-msgstr ""
+msgstr "수업 시간"
 
 #: part/enrollment-content2.php:20 /part/enrollment-content2.php:62
 msgid "20mins"
-msgstr ""
+msgstr "20분"
 
 #: part/enrollment-content2.php:21
 #, php-format
 msgid "30mins (5% discount)"
-msgstr ""
+msgstr "30분"
 
 #: part/enrollment-content2.php:22
 #, php-format
 msgid "40mins (10% discount)"
-msgstr ""
+msgstr "40분"
 
 #: part/enrollment-content2.php:23
 #, php-format
 msgid "50mins (15% discount)"
-msgstr ""
+msgstr "50분"
 
 #: part/enrollment-content2.php:33
 msgid "Months"
-msgstr ""
+msgstr "수업 기간"
 
 #: part/enrollment-content2.php:36 /part/enrollment-content2.php:66
 msgid "1month"
-msgstr ""
+msgstr "1개월"
 
 #: part/enrollment-content2.php:37
 #, php-format
 msgid "2months (5% discount)"
-msgstr ""
+msgstr "2개월"
 
 #: part/enrollment-content2.php:38
 #, php-format
 msgid "3months (10% discount)"
-msgstr ""
+msgstr "3개월"
 
 #: part/enrollment-content2.php:48
 msgid "Days"
-msgstr ""
+msgstr "수업일"
 
 #: part/enrollment-content2.php:51
 msgid "Monday - Friday"
-msgstr ""
+msgstr "월요일 ~ 금요일"
 
 #: part/enrollment-content2.php:52
 msgid "Mon Wed Fri only"
-msgstr ""
+msgstr "월/수/금요일"
 
 #: part/enrollment-content2.php:53
 msgid "Tue Thu only"
-msgstr ""
+msgstr "화/목요일"
 
 #: part/enrollment-content2.php:61 /part/enrollment-content2.php:65
 #: part/enrollment-content2.php:69
 msgid "오늘 등록하고"
-msgstr ""
+msgstr "수업 선택 예시"
 
 #: part/enrollment-content2.php:70
 msgid "Monday-Friday"
-msgstr ""
+msgstr "월요일 ~ 금요일"
 
 #: part/enrollment-content2.php:75
 msgid "Total: 1,188,000"
-msgstr ""
+msgstr "수업료 : 150,000원"
 
 #: part/enrollment-content2.php:76
 msgid "ENROLL NOW"
-msgstr ""
+msgstr "수업 신청하기"
 
 #: part/front-desc.php:6
 msgid "Why Choose Us?"
-msgstr ""
+msgstr "왜 위즈잉글리쉬인가?"
 
 #: part/front-desc.php:20
 msgid "Any Device"
@@ -507,18 +507,18 @@ msgstr ""
 msgid "무료 체험 수업"
 msgstr "수업 전 영어 능력 테스트"
 
+# ㅂㅈ
 #: part/level-test-content1.php:7
 msgid ""
 "은 모든 학생들이 처음 화상 영어 수업을 할 때 한번 또는 두번 하는 것으로\n"
 "            <br>레벨테스트의 성격이 강하. 자세한 내용을 알고 062-576-5010로 문의."
 msgstr ""
-"화상영어 수업을 듣기 위해서는 학생의 영어 능력을 판단하여 학생에게 적합한<br>\n"
-"교재 및 수업 방법(Teaching method)을 선생님들이 학생에 대해서 선정하게 됩니다.<br>\n"
-"학생에게 가장 적합한 교육 방법과 교재로 학생들의 영어 능력을 향상 시킬 수 있습니다.<br>"
+"수업 전 영어 테스트는 선생님이 학생의 영어 능력을 판단하여 학생에게 적합한<br>\n"
+"교재 및 수업 방법(Teaching method)을 선정하게 됩니다.<br>\n"
 
 #: part/level-test-content1.php:10
 msgid "Start Free Trial Now"
-msgstr ""
+msgstr "영어 테스트 신청"
 
 #: part/level-test-content2.php:15 /part/level-test-content2.php:31 /part/level-
 #: test-content2.php:47
@@ -531,7 +531,7 @@ msgstr ""
 
 #: part/level-test-content2.php:20
 msgid "것은 모래뿐일 찾아다녀도, 간에 피다."
-msgstr ""
+msgstr "로그인 후 강의실 입장"
 
 #: part/level-test-content2.php:32
 msgid "2"
@@ -539,7 +539,7 @@ msgstr ""
 
 #: part/level-test-content2.php:36
 msgid "싸인 얼마나 우는 보라. 이상의 소리다."
-msgstr ""
+msgstr "자동으로 화상 영어 수업 프로그램 실행 / 다운로드"
 
 #: part/level-test-content2.php:48
 msgid "3"
@@ -547,7 +547,7 @@ msgstr ""
 
 #: part/level-test-content2.php:52
 msgid "못할 생의 보내는 따뜻한 우는."
-msgstr ""
+msgstr "영어 선생님과 수업 시작"
 
 #: part/level-test-content3.php:6
 msgid ""
@@ -555,6 +555,8 @@ msgid ""
 "            자신과 미묘한 것이다. 이상은 노래하며<br>\n"
 "            가치를 구하지 할지니, 인생에 방황하여도"
 msgstr ""
+"<font size=8>비록 화면 뿐이지만 학생의 곁에서 학생들 향한 관심으로 영어를 가르치겠습니다.<br>\n"
+"위즈잉글리쉬 전 직원은 학생을 향한 관심과 응원을 아끼지 않겠습니다.</font>"
 
 #: part/front-book.php:8
 msgid "Our Books"
