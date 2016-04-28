@@ -22,17 +22,15 @@ section .help.content-four .line:last-child {
 
 section .help.content-four .line .icon {
     float: left;
-    margin-left: 10px;
+    margin: 5px 10px 5px 5px;
     padding: 0;
     width: 26px;
     height: 26px;
-    font-size: 28px;
-    color: #FFFFFF;
 }
 
 section .help.content-four .line .title {
     float: left;
-    padding-top: 10px;
+    padding-top: 5px;
     width: 638px;
     font-size: 18px;
     color: #ffffff;
