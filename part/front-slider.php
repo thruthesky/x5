@@ -21,7 +21,8 @@ wp_enqueue_style('front-slider', td() . '/css/front-slider.css');
         padding: 1em;
     }
 </style>
-<nav class="scroll-menu">
+
+<!--nav class="scroll-menu">
     <ul>
         <li>Section 1</li>
         <li>Section 2</li>
@@ -30,7 +31,7 @@ wp_enqueue_style('front-slider', td() . '/css/front-slider.css');
         <li>Section 5</li>
         <li>Section 6</li>
     </ul>
-</nav>
+</nav-->
 <section class="my-slider" xmlns="http://www.w3.org/1999/html">
     <span class="static">
         <img src="<?php img_e()?>/banner/home_slider1.jpg">
