@@ -1,6 +1,7 @@
 /* Overrides Bootstrap*/
 .home .my-slider {
     /*margin-bottom: .3em;*/
+    z-index: 500;
 }
 .home .my-slider nav img:first-child {
     left: 10vw;

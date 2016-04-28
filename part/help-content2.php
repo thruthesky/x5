@@ -1,8 +1,20 @@
 <?php
 wp_enqueue_style('help-content2', td() . '/css/help-content2.css');
+wp_enqueue_script('help-content2', td() . '/js/help-content2.js');
 ?>
 <section class="help content-two" >
     <div>
+        <ul id="nav-link" class="nav">
+            <li class="nav-item">
+                <a class="nav-link" href="#content-two"><i class="fa fa-angle-right nav-link" aria-hidden="true"></i> <?php _e('Company Information', 'x5')?></a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#content-three"><i class="fa fa-angle-right nav-link" aria-hidden="true"></i> <?php _e('Send an Inquiry', 'x5')?></a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#content-four"><i class="fa fa-angle-right nav-link" aria-hidden="true"></i> <?php _e('FAQs', 'x5')?></a>
+            </li>
+        </ul>
         <h2><?php _e('Company Information', 'x5')?></h2>
         <div class="company-picture">
             <img src="<?php img_e()?>/banner/home_slider1.jpg">
