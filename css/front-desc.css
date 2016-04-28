@@ -23,8 +23,9 @@
 }
 
 .home.front .content .data >  .desc div.col-sm-3 > div > img {
-    max-height: 4.875em;
-    width: auto;
+    height: auto;
+    width: 100%;
+    max-width: 120px;
     margin-bottom: 2.125em;
 }
 

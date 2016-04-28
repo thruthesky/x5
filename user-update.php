@@ -1,8 +1,9 @@
 <?php
 wp_enqueue_script( 'user-update', td() . '/js/user-update.js', array('jquery') );
 ?>
-<h2>Profile Update</h2>
 <section class="user-update">
+    <div>
+        <h2>Profile Update</h2>
     <form action="<?php echo home_url('/user/updateSubmit')?>" method="POST">
         <?php wp_nonce_field('register'); ?>
 
@@ -75,4 +76,5 @@ wp_enqueue_script( 'user-update', td() . '/js/user-update.js', array('jquery') )
             <div class="text"><input type="submit" tabindex="121"></div>
         </div>
     </form>
+    </div>
 </section>

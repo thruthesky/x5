@@ -3,8 +3,8 @@ msgstr ""
 "Project-Id-Version: X5 Withcenter LMS Theme\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: Tue Apr 12 2016 22:17:24 GMT+0900 (Korea Standard Time)\n"
-"PO-Revision-Date: Tue Apr 26 2016 20:13:04 GMT+0900 (Korea Standard Time)\n"
-"Last-Translator: admin <thruthesky@gmail.com>\n"
+"PO-Revision-Date: Thu Apr 28 2016 21:15:25 GMT+0800 (Taipei Standard Time)\n"
+"Last-Translator: lancelynyrd <pinedaclp@gmail.com>\n"
 "Language-Team: \n"
 "Language: English\n"
 "Plural-Forms: nplurals=2; plural=n != 1\n"
@@ -21,6 +21,62 @@ msgstr ""
 "esc_html_x:1,2c;comments_number_link:2,3;t:1;st:1;trans:1;transChoice:1,2\n"
 "X-Generator: Loco - https://localise.biz/\n"
 "X-Loco-Target-Locale: en_US"
+
+#: menu-all.php:3 /header.php:103
+msgid "QnA"
+msgstr ""
+
+#: menu-all.php:4
+msgid "Discussion"
+msgstr ""
+
+#: past.php:11
+msgid "You have no past classes"
+msgstr ""
+
+#: past.php:15
+msgid "No. of Past classes : "
+msgstr ""
+
+#: past.php:23
+msgid "Class No."
+msgstr ""
+
+#: past.php:25
+msgid "Teachers"
+msgstr ""
+
+#: past.php:26
+msgid "Date"
+msgstr ""
+
+#: past.php:27
+msgid "Class Begin"
+msgstr ""
+
+#: past.php:28 /part/front-icon-menu.php:47
+msgid "Class Comment"
+msgstr ""
+
+#: reservation.php:18
+msgid "Class Reservation"
+msgstr ""
+
+#: reservation.php:21
+msgid "You have no reservations"
+msgstr ""
+
+#: reservation.php:24
+msgid "No. of Reservations"
+msgstr ""
+
+#: user-log-in.php:11
+msgid "Password reset link has been sent to your email."
+msgstr ""
+
+#: user-password-lost.php:11
+msgid "Password reset link has been sent to your email. Please check your email."
+msgstr ""
 
 #: comments.php:31
 #, php-format
@@ -89,71 +145,171 @@ msgstr ""
 msgid "Reservation"
 msgstr ""
 
-#: header.php:103 /menu-all.php:3
-msgid "QnA"
-msgstr ""
-
 #: header.php:106
 msgid "Close"
 msgstr ""
 
-#: menu-all.php:4
-msgid "Discussion"
+#: part/aside.php:3
+msgid "Skype"
 msgstr ""
 
-#: past.php:11
-msgid "You have no past classes"
+#: part/aside.php:4
+msgid "VE Testing"
 msgstr ""
 
-#: past.php:15
-msgid "No. of Past classes : "
+#: part/aside.php:5
+msgid "Team Viewer"
 msgstr ""
 
-#: past.php:23
-msgid "Class No."
+#: part/aside.php:6
+msgid "Video English"
 msgstr ""
 
-#: past.php:25
-msgid "Teachers"
+#: part/front-icon-menu.php:12
+msgid "Enter Class Room"
 msgstr ""
 
-#: past.php:26
-msgid "Date"
+#: part/front-icon-menu.php:19
+msgid "Reservations"
 msgstr ""
 
-#: past.php:27
-msgid "Class Begin"
+#: part/front-icon-menu.php:26
+msgid "Past Classes"
 msgstr ""
 
-#: past.php:28 /part/front-icon-menu.php:47
-msgid "Class Comment"
+#: part/front-icon-menu.php:33
+msgid "Enrollment Fee"
 msgstr ""
 
-#: reservation.php:18
-msgid "Class Reservation"
+#: part/front-icon-menu.php:40
+msgid "Q & A"
 msgstr ""
 
-#: reservation.php:21
-msgid "You have no reservations"
+#: part/front-gallery.php:6
+msgid "Gallery"
 msgstr ""
 
-#: reservation.php:24
-msgid "No. of Reservations"
-msgstr ""
-
-#: user-log-in.php:11
-msgid "Password reset link has been sent to your email."
-msgstr ""
-
-#: user-password-lost.php:11
-msgid "Password reset link has been sent to your email. Please check your email."
-msgstr ""
-
-#: part/about-us-content1.php:6
+#: part/front-gallery.php:8
 msgid ""
-"우리는 영어 학습의 두려움없이<br>\n"
-"            학생들이 배우고 즐길 수있는 공간을<br>\n"
-"            제공합니다."
+"\n"
+"            Please meet our office staffs. Teachers, Managers and "
+"Technicians.\n"
+"            With our qualified service, you will be statisfied with the "
+"lesson.\n"
+"            If you want to see more about us, feel free to ask us more "
+"photos.\n"
+"            "
+msgstr ""
+
+#: part/front-info.php:6
+msgid "Welcome to Our Company"
+msgstr ""
+
+#: part/front-info.php:8
+msgid "Let us introduce our call center."
+msgstr ""
+
+#: part/front-info.php:10
+msgid ""
+"Mr. Song had published Withcenter, inc. on 2007.\n"
+"                 Since then, the company grew every year and now it is "
+"located in Angeles City, Pampanga,\n"
+"                  Philippines. We have 40 English teachers."
+msgstr ""
+
+#: part/front-testimonial.php:7
+msgid "Testimonial"
+msgstr ""
+
+#: part/front-testimonial.php:17
+msgid "Antonia"
+msgstr ""
+
+#: part/front-testimonial.php:19
+msgid ""
+"I'd been studying English in LSE for almost four months.\n"
+"                                For me the time spent in this school turned "
+"into an unforgettable experience.\n"
+"                                I'd like to say an enormous THANKS to all "
+"members of LSE as well as my teachers: Daragh, Andy, Sarah,\n"
+"                                Fiona and especially Mary who is an "
+"extraordinary teacher and one of the most patient,\n"
+"                                enthusiastic and energetic people I've ever "
+"met."
+msgstr ""
+
+#: part/front-testimonial.php:30
+msgid "Tatiana"
+msgstr ""
+
+#: part/front-testimonial.php:32
+msgid ""
+"I would like to thank the whole team of LSE for the great English for "
+"University\n"
+"                                course you have provided. Now that I've "
+"started the Masters degree programme in\n"
+"                                English here in Germany, I’ve realised all "
+"the things I learnt with you.\n"
+"                                It was a brilliant learning experience. "
+"Thank you, again."
+msgstr ""
+
+#: part/front-testimonial.php:42
+msgid "Asli"
+msgstr ""
+
+#: part/front-testimonial.php:44
+msgid ""
+"My name is Asli and I am from Turkey. When I came to London,\n"
+"                                I was too nervous about my IELTS exam but "
+"after my 10-week course at London School of English,\n"
+"                                I became more confident about both my exam "
+"and also my ability in English.\n"
+"                                Finally I got 6.5 in IELTS which is a great "
+"result for me."
+msgstr ""
+
+#: part/front-testimonial.php:56
+msgid "Jaime"
+msgstr ""
+
+#: part/front-testimonial.php:58
+msgid ""
+"I really appreciated the IELTS course that I prepared at the London School "
+"of English.\n"
+"                                My classmates, the teachers and all the "
+"members of the staff, were amazing and I learnt a lot.\n"
+"                                I highly recommended this school if you want "
+"to improve your English and want to achieve\n"
+"                                your aspirations and aims."
+msgstr ""
+
+#: part/front-testimonial.php:68
+msgid "Pierre Alain"
+msgstr ""
+
+#: part/front-testimonial.php:70
+msgid ""
+"Exactly what I expected, challenging on the weak points to improve my "
+"English.\n"
+"                                Well organised school and a good mix of the "
+"international students.\n"
+"                                Cross-cultural exchange is a plus to my stay "
+"here."
+msgstr ""
+
+#: part/front-testimonial.php:79
+msgid "Kieran"
+msgstr ""
+
+#: part/front-testimonial.php:81
+msgid ""
+"The teaching, making people speak as much as possible,\n"
+"                                making people self-confident, making people "
+"feel as if they were at home,\n"
+"                                being friendly and open-minded, making "
+"people meet,\n"
+"                                encouraging cultural mix between students."
 msgstr ""
 
 #: part/about-us-content2.php:6
@@ -197,6 +353,13 @@ msgid ""
 "                    무엇을 붙잡아 교향악이다."
 msgstr ""
 
+#: part/about-us-content5.php:6
+msgid ""
+"원어민강사와의 거리감을<br>\n"
+"            느낄 수 없는 화질과<br>\n"
+"            음질을 제공합니다."
+msgstr ""
+
 #: part/about-us-content3.php:7
 msgid "Claim your free trial<br> or enroll now"
 msgstr ""
@@ -209,27 +372,11 @@ msgstr ""
 msgid "Enroll Now"
 msgstr ""
 
-#: part/about-us-content5.php:6
+#: part/about-us-content1.php:6
 msgid ""
-"원어민강사와의 거리감을<br>\n"
-"            느낄 수 없는 화질과<br>\n"
-"            음질을 제공합니다."
-msgstr ""
-
-#: part/aside.php:3
-msgid "Skype"
-msgstr ""
-
-#: part/aside.php:4
-msgid "VE Testing"
-msgstr ""
-
-#: part/aside.php:5
-msgid "Team Viewer"
-msgstr ""
-
-#: part/aside.php:6
-msgid "Video English"
+"우리는 영어 학습의 두려움없이<br>\n"
+"            학생들이 배우고 즐길 수있는 공간을<br>\n"
+"            제공합니다."
 msgstr ""
 
 #: part/curriculum-content2.php:6
@@ -246,12 +393,6 @@ msgstr ""
 #: part/curriculum-content2.php:11
 msgid "Beginner"
 msgstr ""
-
-#: part/curriculum-content2.php:12
-msgid "Description on Beginner 1"
-msgstr ""
-"English Beginner Course<br>\n"
-"Focused on Phonics and Expression."
 
 #: part/curriculum-content2.php:13
 msgid "Level 1"
@@ -461,167 +602,6 @@ msgstr ""
 msgid "ENROLL NOW"
 msgstr ""
 
-#: part/front-book.php:8
-msgid "Our Books"
-msgstr ""
-
-#: part/front-book.php:12
-msgid "LEARN MORE"
-msgstr ""
-
-#: part/front-book.php:19
-msgid "English Time"
-msgstr ""
-
-#: part/front-book.php:21 /part/front-book.php:42 /part/front-book.php:52
-#: part/front-book.php:62 /part/front-book.php:107 /part/front-book.php:117
-#: part/front-book.php:153 /part/front-book.php:163 /part/front-book.php:173
-#: part/front-book.php:185 /part/front-book.php:195 /part/front-book.php:205
-#: part/front-book.php:215 /part/front-book.php:225
-msgid ""
-"English Time develops your students' speaking, listening, reading,\n"
-"                                 and writing skills through art, stories, "
-"conversation, and games."
-msgstr ""
-
-#: part/front-book.php:29
-msgid "Lets"
-msgstr ""
-
-#: part/front-book.php:31
-msgid ""
-"Maximise children’s talking time in class through dialogues, pair work and\n"
-"                                communicative games. This combined with the "
-"rhythm and melody of the acclaimed\n"
-"                                Carolyn Graham songs makes the language "
-"memorable."
-msgstr ""
-
-#: part/front-book.php:40
-msgid "Lets Go"
-msgstr ""
-
-#: part/front-book.php:50
-msgid "Super Kids"
-msgstr ""
-
-#: part/front-book.php:60
-msgid "Reading Cue Plus+"
-msgstr ""
-
-#: part/front-book.php:72
-msgid "Reading Cue"
-msgstr ""
-
-#: part/front-book.php:74
-msgid ""
-"This series helps student to build their vocabulary and to develop their "
-"reading\n"
-"                                skills and strategies, while they read level-"
-"appropriate reading passages."
-msgstr ""
-
-#: part/front-book.php:82
-msgid "Bricks Reading"
-msgstr ""
-
-#: part/front-book.php:84
-msgid ""
-"Offers interesting and informative theme-based\n"
-"                                units with various format and genres: "
-"fiction, nonfiction, letters, news articles,\n"
-"                                journals, plus more. The formats are "
-"designed to optimize understanding of the reading\n"
-"                                contents."
-msgstr ""
-
-#: part/front-book.php:94
-msgid "Bricks Reading Beginner"
-msgstr ""
-
-#: part/front-book.php:96
-msgid ""
-"Is a three-leveled reading program that enables beginner learns to build "
-"their\n"
-"                                vocabulary and reading comprehension skill. "
-"It is design for upper-beginner to\n"
-"                                low-intermediate young learners who wants to "
-"be successful readers."
-msgstr ""
-
-#: part/front-book.php:105
-msgid "Grammar in use"
-msgstr ""
-
-#: part/front-book.php:115
-msgid "Bricks Reading+"
-msgstr ""
-
-#: part/front-book.php:127
-msgid "Chat room for teens"
-msgstr ""
-
-#: part/front-book.php:129
-msgid ""
-"English learners are encourage to express themselves freely on a wide range\n"
-"                                 of relevant topics. Many thought-provoking "
-"question and examples are given\n"
-"                                 to spur independent language usage."
-msgstr ""
-
-#: part/front-book.php:138
-msgid "Can You Beleive It"
-msgstr ""
-
-#: part/front-book.php:140
-msgid ""
-"Is a three-level reading series that combines highly unusual news stories "
-"with\n"
-"                                high-frequency idioms, phrasal verbs, and "
-"fixed expressions.\n"
-"                                Students read and listen to a story (which "
-"progresses in length and difficulty\n"
-"                                throughout each text) as they look at a "
-"sequence of comic-strip\n"
-"                                style illustrations. "
-msgstr ""
-
-#: part/front-book.php:151
-msgid "What a World"
-msgstr ""
-
-#: part/front-book.php:161
-msgid "Side by Side"
-msgstr ""
-
-#: part/front-book.php:171
-msgid "Super Reading Training Book"
-msgstr ""
-
-#: part/front-book.php:183
-msgid "NEAT"
-msgstr ""
-
-#: part/front-book.php:193
-msgid "Thoughts & Notions"
-msgstr ""
-
-#: part/front-book.php:203
-msgid "Communication in Business"
-msgstr ""
-
-#: part/front-book.php:213
-msgid "Smart Phonics"
-msgstr ""
-
-#: part/front-book.php:223
-msgid "Discover Debate"
-msgstr ""
-
-#: part/front-book.php:236
-msgid "LOAD MORE"
-msgstr ""
-
 #: part/front-desc.php:6
 msgid "Why Choose Us?"
 msgstr ""
@@ -664,153 +644,6 @@ msgstr ""
 
 #: part/front-desc.php:36
 msgid "You can have MWF, TTH or M~F class."
-msgstr ""
-
-#: part/front-gallery.php:6
-msgid "Gallery"
-msgstr ""
-
-#: part/front-gallery.php:8
-msgid ""
-"\n"
-"            Please meet our office staffs. Teachers, Managers and "
-"Technicians.\n"
-"            With our qualified service, you will be statisfied with the "
-"lesson.\n"
-"            If you want to see more about us, feel free to ask us more "
-"photos.\n"
-"            "
-msgstr ""
-
-#: part/front-icon-menu.php:12
-msgid "Enter Class Room"
-msgstr ""
-
-#: part/front-icon-menu.php:19
-msgid "Reservations"
-msgstr ""
-
-#: part/front-icon-menu.php:26
-msgid "Past Classes"
-msgstr ""
-
-#: part/front-icon-menu.php:33
-msgid "Enrollment Fee"
-msgstr ""
-
-#: part/front-icon-menu.php:40
-msgid "Q & A"
-msgstr ""
-
-#: part/front-info.php:6
-msgid "Welcome to Our Company"
-msgstr ""
-
-#: part/front-info.php:8
-msgid "Let us introduce our call center."
-msgstr ""
-
-#: part/front-info.php:10
-msgid ""
-"Mr. Song had published Withcenter, inc. on 2007.\n"
-"                 Since then, the company grew every year and now it is "
-"located in Angeles City, Pampanga,\n"
-"                  Philippines. We have 40 English teachers."
-msgstr ""
-
-#: part/front-testimonial.php:7
-msgid "Testimonial"
-msgstr ""
-
-#: part/front-testimonial.php:17
-msgid "Antonia"
-msgstr ""
-
-#: part/front-testimonial.php:19
-msgid ""
-"I'd been studying English in LSE for almost four months.\n"
-"                                For me the time spent in this school turned "
-"into an unforgettable experience.\n"
-"                                I'd like to say an enormous THANKS to all "
-"members of LSE as well as my teachers: Daragh, Andy, Sarah,\n"
-"                                Fiona and especially Mary who is an "
-"extraordinary teacher and one of the most patient,\n"
-"                                enthusiastic and energetic people I've ever "
-"met."
-msgstr ""
-
-#: part/front-testimonial.php:30
-msgid "Tatiana"
-msgstr ""
-
-#: part/front-testimonial.php:32
-msgid ""
-"I would like to thank the whole team of LSE for the great English for "
-"University\n"
-"                                course you have provided. Now that I've "
-"started the Masters degree programme in\n"
-"                                English here in Germany, I’ve realised all "
-"the things I learnt with you.\n"
-"                                It was a brilliant learning experience. "
-"Thank you, again."
-msgstr ""
-
-#: part/front-testimonial.php:42
-msgid "Asli"
-msgstr ""
-
-#: part/front-testimonial.php:44
-msgid ""
-"My name is Asli and I am from Turkey. When I came to London,\n"
-"                                I was too nervous about my IELTS exam but "
-"after my 10-week course at London School of English,\n"
-"                                I became more confident about both my exam "
-"and also my ability in English.\n"
-"                                Finally I got 6.5 in IELTS which is a great "
-"result for me."
-msgstr ""
-
-#: part/front-testimonial.php:56
-msgid "Jaime"
-msgstr ""
-
-#: part/front-testimonial.php:58
-msgid ""
-"I really appreciated the IELTS course that I prepared at the London School "
-"of English.\n"
-"                                My classmates, the teachers and all the "
-"members of the staff, were amazing and I learnt a lot.\n"
-"                                I highly recommended this school if you want "
-"to improve your English and want to achieve\n"
-"                                your aspirations and aims."
-msgstr ""
-
-#: part/front-testimonial.php:68
-msgid "Pierre Alain"
-msgstr ""
-
-#: part/front-testimonial.php:70
-msgid ""
-"Exactly what I expected, challenging on the weak points to improve my "
-"English.\n"
-"                                Well organised school and a good mix of the "
-"international students.\n"
-"                                Cross-cultural exchange is a plus to my stay "
-"here."
-msgstr ""
-
-#: part/front-testimonial.php:79
-msgid "Kieran"
-msgstr ""
-
-#: part/front-testimonial.php:81
-msgid ""
-"The teaching, making people speak as much as possible,\n"
-"                                making people self-confident, making people "
-"feel as if they were at home,\n"
-"                                being friendly and open-minded, making "
-"people meet,\n"
-"                                encouraging cultural mix between students."
 msgstr ""
 
 #: part/help-content1.php:6
@@ -879,6 +712,178 @@ msgid ""
 "            가치를 구하지 할지니, 인생에 방황하여도"
 msgstr ""
 
+#: part/front-book.php:8
+msgid "Our Books"
+msgstr ""
+
+#: part/front-book.php:12
+msgid "LEARN MORE"
+msgstr ""
+
+#: part/front-book.php:19
+msgid "English Time"
+msgstr ""
+
+#: part/front-book.php:21
+msgid "English Time Book Description"
+msgstr ""
+
+#: part/front-book.php:28
+msgid "Lets"
+msgstr ""
+
+#: part/front-book.php:30
+msgid "Lets Book Description"
+msgstr ""
+
+#: part/front-book.php:37
+msgid "Lets Go"
+msgstr ""
+
+#: part/front-book.php:39
+msgid "Lets Go Book Description"
+msgstr ""
+
+#: part/front-book.php:46
+msgid "Super Kids"
+msgstr ""
+
+#: part/front-book.php:48
+msgid "Super Kids Book Description"
+msgstr ""
+
+#: part/front-book.php:55
+msgid "Reading Cue Plus+"
+msgstr ""
+
+#: part/front-book.php:57
+msgid "Reading Cue Plus+ Book Description"
+msgstr ""
+
+#: part/front-book.php:66
+msgid "Reading Cue"
+msgstr ""
+
+#: part/front-book.php:68
+msgid "Reading Cue Book Description"
+msgstr ""
+
+#: part/front-book.php:75
+msgid "Bricks Reading"
+msgstr ""
+
+#: part/front-book.php:77
+msgid "Bricks Reading Book Description"
+msgstr ""
+
+#: part/front-book.php:84
+msgid "Bricks Reading Beginner"
+msgstr ""
+
+#: part/front-book.php:86
+msgid "Bricks Reading Beginner Book Description"
+msgstr ""
+
+#: part/front-book.php:93
+msgid "Grammar in use"
+msgstr ""
+
+#: part/front-book.php:95
+msgid "Grammar in use Book Description"
+msgstr ""
+
+#: part/front-book.php:102
+msgid "Bricks Reading+"
+msgstr ""
+
+#: part/front-book.php:104
+msgid "Bricks Reading+ Book Description"
+msgstr ""
+
+#: part/front-book.php:113
+msgid "Chat room for teens"
+msgstr ""
+
+#: part/front-book.php:115
+msgid "Chat room for teens Book Description"
+msgstr ""
+
+#: part/front-book.php:122
+msgid "Can You Believe It"
+msgstr ""
+
+#: part/front-book.php:124
+msgid "Can You Believe It Book Description"
+msgstr ""
+
+#: part/front-book.php:131
+msgid "What a World"
+msgstr ""
+
+#: part/front-book.php:133
+msgid "What a World Book Description"
+msgstr ""
+
+#: part/front-book.php:140
+msgid "Side by Side"
+msgstr ""
+
+#: part/front-book.php:142
+msgid "Side by Side Book Description"
+msgstr ""
+
+#: part/front-book.php:149
+msgid "Super Reading Training Book"
+msgstr ""
+
+#: part/front-book.php:151
+msgid "Super Reading Training Book Book Description"
+msgstr ""
+
+#: part/front-book.php:160
+msgid "NEAT"
+msgstr ""
+
+#: part/front-book.php:162
+msgid "NEAT Book Description."
+msgstr ""
+
+#: part/front-book.php:169
+msgid "Thoughts & Notions"
+msgstr ""
+
+#: part/front-book.php:171
+msgid "Thoughts & Notions Book Description"
+msgstr ""
+
+#: part/front-book.php:178
+msgid "Communication in Business"
+msgstr ""
+
+#: part/front-book.php:180
+msgid "Communication in Business Book Description"
+msgstr ""
+
+#: part/front-book.php:187
+msgid "Smart Phonics"
+msgstr ""
+
+#: part/front-book.php:189
+msgid "Smart Phonics Book Description"
+msgstr ""
+
+#: part/front-book.php:196 /part/front-book.php:198
+msgid "Discover Debate"
+msgstr ""
+
+#: part/front-book.php:208
+msgid "LOAD MORE"
+msgstr ""
+
 #. Name of the theme
 msgid "X5 Withcenter LMS Theme"
+msgstr ""
+
+#: part/curriculum-content2.php:12
+msgid "Description on Beginner 1"
 msgstr ""

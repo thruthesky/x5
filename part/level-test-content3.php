@@ -3,9 +3,9 @@ wp_enqueue_style('level-test-content3', td() . '/css/level-test-content3.css');
 ?>
 <section class="level-test content-three">
     <div>
-        <h2><?php _e('청춘을 우리 이상은 몸이 쓸쓸한 위하여서,<br>
-            자신과 미묘한 것이다. 이상은 노래하며<br>
-            가치를 구하지 할지니, 인생에 방황하여도', 'x5')?>
+        <h2><?php _e('Lvl-C3 Banner Description will be place here.
+         You can use HTML to decorate on the text. Try to use p, br, b, i tags.
+         You can also input CSS and Javascript on this paragraph.', 'x5')?>
         </h2>
     </div>
 </section>

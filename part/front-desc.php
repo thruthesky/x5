@@ -22,7 +22,7 @@ wp_enqueue_style('desc', td() . '/css/front-desc.css');
             </div>
             <div class="col-sm-3">
                 <div><img src="<?php img_e() ?>time.png" ></div>
-                <div class="title"><?php _e('Any Time<', 'x5')?>/div>
+                <div class="title"><?php _e('Any Time', 'x5')?></div>
                 <div class="desc"><?php _e('You can choose class time on your convenience.', 'x5')?></div>
             </div>
             <div class="col-sm-3">
@@ -32,7 +32,7 @@ wp_enqueue_style('desc', td() . '/css/front-desc.css');
             </div>
             <div class="col-sm-3">
                 <div><img src="<?php img_e() ?>option.png" ></div>
-                <div class="title"><?php _e('Any Option<', 'x5')?>/div>
+                <div class="title"><?php _e('Any Option', 'x5')?></div>
                 <div class="desc"><?php _e('You can have MWF, TTH or M~F class.', 'x5')?></div>
             </div>
         </div>
