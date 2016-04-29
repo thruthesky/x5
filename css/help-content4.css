@@ -10,17 +10,17 @@ section .help.content-four h2 {
     color: #f7eac8;
 }
 
-section .help.content-four .line {
+section .help.content-four .line-faq {
     display: inline-block;
     border-bottom: 1px solid #b4c3d2;
     clear: both;
 }
 
-section .help.content-four .line:last-child {
+section .help.content-four .line-faq:last-child {
     margin-bottom: 85px;
 }
 
-section .help.content-four .line .icon {
+section .help.content-four .line-faq .icon {
     float: left;
     margin: 5px 10px 5px 5px;
     padding: 0;
@@ -28,7 +28,7 @@ section .help.content-four .line .icon {
     height: 26px;
 }
 
-section .help.content-four .line .title {
+section .help.content-four .line-faq .title {
     float: left;
     padding-top: 5px;
     width: 638px;
@@ -36,7 +36,7 @@ section .help.content-four .line .title {
     color: #ffffff;
 }
 
-section .help.content-four .line .desc {
+section .help.content-four .line-faq .desc {
     display: none;
     float: left;
     padding: 10px 0;
@@ -45,7 +45,7 @@ section .help.content-four .line .desc {
     color: #ffffff;
 }
 
-section .help.content-four .line:hover {
+section .help.content-four .line-faq:hover {
     background-color: #73aadc;
     cursor: pointer;
 }

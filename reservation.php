@@ -15,6 +15,7 @@ if ( $re['code'] ) { // error from server
 $books = $re['data'];
 $data = $books ? prepare_books_by_date( $books ) : [];
 
+include 'part/reservation-content1.php';
 ?>
 
 
