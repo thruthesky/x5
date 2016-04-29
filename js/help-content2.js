@@ -7,13 +7,13 @@ jQuery(function($) {
         if (scroll_top >= offset_val) { // the detection!
             $nav_header.css({
                 'position' : 'absolute',
-                'top': scroll_top - 198 + 'px',
+                'top': scroll_top - 218 + 'px',
                 'z-index': '12345'
             });
         } else {
             $nav_header.css({
                 'position': 'absolute',
-                'top' : '155px',
+                'top' : '135px',
                 'z-index': '0'
             });
         }

@@ -2,9 +2,48 @@ section .curriculum.content-one {
     background: url("../img/curriculum_banner1.png") no-repeat;
     background-size: cover;
     background-position: center center;
-    height: 260px;
+    height: 240px;
 }
 
 section .curriculum.content-one h2 {
+    font-size: 53px;
+    color: #FFFFFF;
+}
+
+section .curriculum.content-one .desc {
+    font-size: 24px;
+    color: #FFFFFF;
+}
+
+section .curriculum.content-one .banner.img1 {
+    position: relative;
+    float: left;
+    display: inline-block;
+    margin-top: 18px;
+    max-width: 369px;
+    width: 100%;
+    height: auto;
+}
+
+section .curriculum.content-one .banner.text {
+    position: absolute;
+    float: right;
+    display: inline-block;
+    margin-top: 37px;
+    width: 290px;
+    right: 230px;
+}
+
+section .curriculum.content-one .img2 {
+    position: absolute;
+    right: 5px;
+    float: right;
+    height: 240px;
+}
+
+section .curriculum.content-one .img2 img{
+    position: absolute;
+    bottom: 0;
+    right: 0;
 
 }

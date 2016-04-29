@@ -1,12 +1,80 @@
 section .help.content-one {
-    height: 200px;
-    background-color: #4298b5;
+    background: url("../img/help-banner1.jpg") no-repeat;
+    background-size: cover;
+    background-position: center center;
+    height: 240px;
 }
 
 section .help.content-one h2 {
     display: inline-block;
-    margin-top: 43px;
-    margin-left: 5px;
     font-size: 53px;
+    border-right: 6px solid #FFFFFF;
+    color: #FFFFFF;
+    height: 121px;
+    width: 126px;
+}
+
+section .help.content-one .desc {
+    display: inline-block;
+    position: absolute;
+    bottom: 5px;
+    padding-left: 8px;
+    width: 308px;
+    font-size: 24px;
     color: #FFFFFF;
 }
+
+section .help.content-one .text {
+    position: absolute;
+    display: inline-block;
+    float: right;
+    font-size: 28px;
+    color: #FFFFFF;
+}
+
+section .help.content-one .banner {
+    position: absolute;
+    display: inline-block;
+    float: left;
+    width: 440px;
+    height: 121px;
+    margin-top: 60px;
+}
+
+section .help.content-one .img1 {
+    position: absolute;
+    display: inline-block;
+    width: 100%;
+    right: 5px;
+    float: right;
+    height: 240px;
+}
+
+section .help.content-one .img1 img{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+
+}
+
+section .help.content-one .how {
+    right: 405px;
+    top: 135px;
+}
+
+section .help.content-one .what {
+    right: 320px;
+    top: 25px;
+
+}
+
+section .help.content-one .why {
+    right: 65px;
+    top: 45px;
+}
+
+section .help.content-one .who {
+    right: 30px;
+    top: 150px;
+}
+
