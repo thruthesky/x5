@@ -3,13 +3,8 @@ msgstr ""
 "Project-Id-Version: X5 Withcenter LMS Theme\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: Tue Apr 12 2016 22:17:24 GMT+0900 (Korea Standard Time)\n"
-<<<<<<< HEAD
-"PO-Revision-Date: Thu Apr 28 2016 22:30:07 GMT+0800 (Taipei Standard Time)\n"
-"Last-Translator: lancelynyrd <pinedaclp@gmail.com>\n"
-=======
-"PO-Revision-Date: Thu Apr 28 2016 22:20:19 GMT+0900 (Japan Standard Time)\n"
+"PO-Revision-Date: Thu Apr 28 2016 22:55:19 GMT+0800 (Taipei Standard Time)\n"
 "Last-Translator: admin <gkoeca@gkoeca.org>\n"
->>>>>>> 5fb5d42bb67ae28941db47cf52f5900c811db463
 "Language-Team: \n"
 "Language: Korean\n"
 "Plural-Forms: nplurals=1; plural=0\n"
@@ -26,6 +21,14 @@ msgstr ""
 "esc_html_x:1,2c;comments_number_link:2,3;t:1;st:1;trans:1;transChoice:1,2\n"
 "X-Generator: Loco - https://localise.biz/\n"
 "X-Loco-Target-Locale: ko_KR"
+
+#: menu-all.php:4
+msgid "Discussion"
+msgstr ""
+
+#: past.php:25
+msgid "Teachers"
+msgstr ""
 
 #: comments.php:31
 #, php-format
@@ -50,10 +53,14 @@ msgstr ""
 msgid "HELP"
 msgstr ""
 
-<<<<<<< HEAD
 #: header.php:80
 msgid "SITEMAP"
-=======
+msgstr ""
+
+#: reservation.php:31
+msgid "Please login to see your reservation"
+msgstr ""
+
 #: part/front-testimonial.php:7
 msgid "Testimonial"
 msgstr ""
@@ -137,31 +144,16 @@ msgstr ""
 
 #: part/front-testimonial.php:79
 msgid "Kieran"
->>>>>>> 5fb5d42bb67ae28941db47cf52f5900c811db463
 msgstr ""
 
-#: menu-all.php:4
-msgid "Discussion"
-msgstr ""
-
-<<<<<<< HEAD
-#: past.php:25
-msgid "Teachers"
-msgstr ""
-
-#: reservation.php:31
-msgid "Please login to see your reservation"
-msgstr ""
-
-#: part/about-us-content1.php:6
-msgid "Abt-C1 Banner Description will be place here"
-=======
-#: part/about-us-content5.php:6
+#: part/front-testimonial.php:81
 msgid ""
-"원어민강사와의 거리감을<br>\n"
-"            느낄 수 없는 화질과<br>\n"
-"            음질을 제공합니다."
->>>>>>> 5fb5d42bb67ae28941db47cf52f5900c811db463
+"The teaching, making people speak as much as possible,\n"
+"                                making people self-confident, making people "
+"feel as if they were at home,\n"
+"                                being friendly and open-minded, making "
+"people meet,\n"
+"                                encouraging cultural mix between students."
 msgstr ""
 
 #: part/about-us-content3.php:7
@@ -174,6 +166,318 @@ msgstr ""
 
 #: part/about-us-content3.php:13
 msgid "Enroll Now"
+msgstr ""
+
+#: part/front-book.php:8
+msgid "Our Books"
+msgstr ""
+
+#: part/front-book.php:12
+msgid "LEARN MORE"
+msgstr ""
+
+#: part/front-book.php:19
+msgid "English Time"
+msgstr ""
+
+#: part/front-book.php:21
+msgid "English Time Book Description"
+msgstr ""
+
+#: part/front-book.php:28
+msgid "Lets"
+msgstr ""
+
+#: part/front-book.php:30
+msgid "Lets Book Description"
+msgstr ""
+
+#: part/front-book.php:37
+msgid "Lets Go"
+msgstr ""
+
+#: part/front-book.php:39
+msgid "Lets Go Book Description"
+msgstr ""
+
+#: part/front-book.php:46
+msgid "Super Kids"
+msgstr ""
+
+#: part/front-book.php:48
+msgid "Super Kids Book Description"
+msgstr ""
+
+#: part/front-book.php:55
+msgid "Reading Cue Plus+"
+msgstr ""
+
+#: part/front-book.php:57
+msgid "Reading Cue Plus+ Book Description"
+msgstr ""
+
+#: part/front-book.php:66
+msgid "Reading Cue"
+msgstr ""
+
+#: part/front-book.php:68
+msgid "Reading Cue Book Description"
+msgstr ""
+
+#: part/front-book.php:75
+msgid "Bricks Reading"
+msgstr ""
+
+#: part/front-book.php:77
+msgid "Bricks Reading Book Description"
+msgstr ""
+
+#: part/front-book.php:84
+msgid "Bricks Reading Beginner"
+msgstr ""
+
+#: part/front-book.php:86
+msgid "Bricks Reading Beginner Book Description"
+msgstr ""
+
+#: part/front-book.php:93
+msgid "Grammar in use"
+msgstr ""
+
+#: part/front-book.php:95
+msgid "Grammar in use Book Description"
+msgstr ""
+
+#: part/front-book.php:102
+msgid "Bricks Reading+"
+msgstr ""
+
+#: part/front-book.php:104
+msgid "Bricks Reading+ Book Description"
+msgstr ""
+
+#: part/front-book.php:113
+msgid "Chat room for teens"
+msgstr ""
+
+#: part/front-book.php:115
+msgid "Chat room for teens Book Description"
+msgstr ""
+
+#: part/front-book.php:122
+msgid "Can You Believe It"
+msgstr ""
+
+#: part/front-book.php:124
+msgid "Can You Believe It Book Description"
+msgstr ""
+
+#: part/front-book.php:131
+msgid "What a World"
+msgstr ""
+
+#: part/front-book.php:133
+msgid "What a World Book Description"
+msgstr ""
+
+#: part/front-book.php:140
+msgid "Side by Side"
+msgstr ""
+
+#: part/front-book.php:142
+msgid "Side by Side Book Description"
+msgstr ""
+
+#: part/front-book.php:149
+msgid "Super Reading Training Book"
+msgstr ""
+
+#: part/front-book.php:151
+msgid "Super Reading Training Book Book Description"
+msgstr ""
+
+#: part/front-book.php:160
+msgid "NEAT"
+msgstr ""
+
+#: part/front-book.php:162
+msgid "NEAT Book Description."
+msgstr ""
+
+#: part/front-book.php:169
+msgid "Thoughts & Notions"
+msgstr ""
+
+#: part/front-book.php:171
+msgid "Thoughts & Notions Book Description"
+msgstr ""
+
+#: part/front-book.php:178
+msgid "Communication in Business"
+msgstr ""
+
+#: part/front-book.php:180
+msgid "Communication in Business Book Description"
+msgstr ""
+
+#: part/front-book.php:187
+msgid "Smart Phonics"
+msgstr ""
+
+#: part/front-book.php:189
+msgid "Smart Phonics Book Description"
+msgstr ""
+
+#: part/front-book.php:196 /part/front-book.php:198
+msgid "Discover Debate"
+msgstr ""
+
+#: part/front-book.php:208
+msgid "LOAD MORE"
+msgstr ""
+
+#: part/help-content1.php:7
+msgid "Help"
+msgstr ""
+
+#: part/help-content3.php:6 /part/help-content2.php:12
+msgid "Send an Inquiry"
+msgstr ""
+
+#: part/help-content3.php:9
+msgid "Name"
+msgstr ""
+
+#: part/help-content3.php:11
+msgid "Name..."
+msgstr ""
+
+#: part/help-content3.php:15
+msgid "Email"
+msgstr ""
+
+#: part/help-content3.php:17
+msgid "Email Address..."
+msgstr ""
+
+#: part/help-content3.php:21
+msgid "Phone"
+msgstr ""
+
+#: part/help-content3.php:23
+msgid "Phone Number..."
+msgstr ""
+
+#: part/help-content3.php:27
+msgid "Message"
+msgstr ""
+
+#: part/help-content3.php:29
+msgid "Enter your inquiry here..."
+msgstr ""
+
+#: part/help-content3.php:34
+msgid "Send"
+msgstr ""
+
+#: part/help-content2.php:9 /part/help-content2.php:18
+msgid "Company Information"
+msgstr ""
+
+#: part/help-content2.php:15 /part/help-content4.php:7
+msgid "FAQs"
+msgstr ""
+
+#: part/help-content2.php:23
+msgid "Address:"
+msgstr ""
+
+#: part/help-content2.php:24
+msgid "hlpC2-Address will be place here"
+msgstr ""
+
+#: part/help-content2.php:27
+msgid "Office Tel. No.:"
+msgstr ""
+
+#: part/help-content2.php:28
+msgid "hlpC2-Tel. No. will be place here"
+msgstr ""
+
+#: part/help-content2.php:31
+msgid "Email:"
+msgstr ""
+
+#: part/help-content2.php:32
+msgid "hlpC2-Email will be place here"
+msgstr ""
+
+#: part/help-content2.php:35
+msgid "Skype:"
+msgstr ""
+
+#: part/help-content2.php:36
+msgid "hlpC2-Skype ID will be place here"
+msgstr ""
+
+#: part/help-content2.php:39
+msgid "Kakao Talk:"
+msgstr ""
+
+#: part/help-content2.php:40
+msgid "hlpC2-Kakao ID will be place here"
+msgstr ""
+
+#: part/help-content2.php:44
+msgid "Manager's Name"
+msgstr ""
+
+#: part/help-content2.php:45
+msgid "hlpC2-Manager's Name will be place here"
+msgstr ""
+
+#: part/help-content4.php:11
+msgid "hlpC4-FAQ1 will be place here"
+msgstr ""
+
+#: part/help-content4.php:12
+msgid "hlpC4-FAQ1 Answer will be place here"
+msgstr ""
+
+#: part/help-content4.php:17
+msgid "hlpC4-FAQ2 will be place here"
+msgstr ""
+
+#: part/help-content4.php:18
+msgid "hlpC4-FAQ2 Answer will be place here"
+msgstr ""
+
+#: part/help-content4.php:23
+msgid "hlpC4-FAQ3 will be place here"
+msgstr ""
+
+#: part/help-content4.php:24
+msgid "hlpC4-FAQ3 Answer will be place here"
+msgstr ""
+
+#: part/help-content4.php:29
+msgid "hlpC4-FAQ4 will be place here"
+msgstr ""
+
+#: part/help-content4.php:30
+msgid "hlpC4-FAQ4 Answer will be place here"
+msgstr ""
+
+#: part/help-content4.php:35
+msgid "hlpC4-FAQ5 will be place here"
+msgstr ""
+
+#: part/help-content4.php:36
+msgid "hlpC4-FAQ5 Answer will be place here"
+msgstr ""
+
+#: part/about-us-content1.php:6
+msgid "Abt-C1 Banner Description will be place here"
 msgstr ""
 
 #: part/about-us-content5.php:6
@@ -360,7 +664,6 @@ msgid ""
 "Javascript on this paragraph."
 msgstr ""
 
-<<<<<<< HEAD
 #: part/enrollment-content2.php:61
 msgid "Enr-C2 Selected Minutes"
 msgstr ""
@@ -373,223 +676,6 @@ msgstr ""
 msgid "Enr-C2 Selected Day"
 msgstr ""
 
-#: part/front-book.php:8
-msgid "Our Books"
-msgstr ""
-
-#: part/front-book.php:12
-msgid "LEARN MORE"
-msgstr ""
-
-#: part/front-book.php:19
-msgid "English Time"
-msgstr ""
-
-#: part/front-book.php:21
-msgid "English Time Book Description"
-msgstr ""
-
-#: part/front-book.php:28
-msgid "Lets"
-msgstr ""
-
-#: part/front-book.php:30
-msgid "Lets Book Description"
-=======
-#: part/front-desc.php:20
-msgid "Any Device"
-msgstr ""
-
-#: part/front-desc.php:25
-msgid "Any Time<"
-msgstr ""
-
-#: part/front-desc.php:30
-msgid "Any Where"
-msgstr ""
-
-#: part/front-desc.php:35
-msgid "Any Option<"
-msgstr ""
-
-#: part/help-content1.php:6
-msgid "Help"
-msgstr ""
-
-#: part/help-content2.php:6
-msgid "Company Information"
-msgstr ""
-
-#: part/help-content3.php:6
-msgid "Send an Inquiry"
-msgstr ""
-
-#: part/help-content4.php:6
-msgid "FAQs"
-msgstr ""
-
-#: part/level-test-content2.php:15 /part/level-test-content2.php:31 /part/level-
-#: test-content2.php:47
-msgid "Step"
-msgstr ""
-
-#: part/level-test-content2.php:16
-msgid "1"
-msgstr ""
-
-#: part/level-test-content2.php:32
-msgid "2"
-msgstr ""
-
-#: part/level-test-content2.php:48
-msgid "3"
->>>>>>> 5fb5d42bb67ae28941db47cf52f5900c811db463
-msgstr ""
-
-#: part/front-book.php:37
-msgid "Lets Go"
-msgstr ""
-
-#: part/front-book.php:39
-msgid "Lets Go Book Description"
-msgstr ""
-
-#: part/front-book.php:46
-msgid "Super Kids"
-msgstr ""
-
-#: part/front-book.php:48
-msgid "Super Kids Book Description"
-msgstr ""
-
-#: part/front-book.php:55
-msgid "Reading Cue Plus+"
-msgstr ""
-
-#: part/front-book.php:57
-msgid "Reading Cue Plus+ Book Description"
-msgstr ""
-
-#: part/front-book.php:66
-msgid "Reading Cue"
-msgstr ""
-
-#: part/front-book.php:68
-msgid "Reading Cue Book Description"
-msgstr ""
-
-#: part/front-book.php:75
-msgid "Bricks Reading"
-msgstr ""
-
-#: part/front-book.php:77
-msgid "Bricks Reading Book Description"
-msgstr ""
-
-#: part/front-book.php:84
-msgid "Bricks Reading Beginner"
-msgstr ""
-
-#: part/front-book.php:86
-msgid "Bricks Reading Beginner Book Description"
-msgstr ""
-
-#: part/front-book.php:93
-msgid "Grammar in use"
-msgstr ""
-
-#: part/front-book.php:95
-msgid "Grammar in use Book Description"
-msgstr ""
-
-#: part/front-book.php:102
-msgid "Bricks Reading+"
-msgstr ""
-
-#: part/front-book.php:104
-msgid "Bricks Reading+ Book Description"
-msgstr ""
-
-#: part/front-book.php:113
-msgid "Chat room for teens"
-msgstr ""
-
-#: part/front-book.php:115
-msgid "Chat room for teens Book Description"
-msgstr ""
-
-#: part/front-book.php:122
-msgid "Can You Believe It"
-msgstr ""
-
-#: part/front-book.php:124
-msgid "Can You Believe It Book Description"
-msgstr ""
-
-#: part/front-book.php:131
-msgid "What a World"
-msgstr ""
-
-#: part/front-book.php:133
-msgid "What a World Book Description"
-msgstr ""
-
-#: part/front-book.php:140
-msgid "Side by Side"
-msgstr ""
-
-#: part/front-book.php:142
-msgid "Side by Side Book Description"
-msgstr ""
-
-#: part/front-book.php:149
-msgid "Super Reading Training Book"
-msgstr ""
-
-#: part/front-book.php:151
-msgid "Super Reading Training Book Book Description"
-msgstr ""
-
-#: part/front-book.php:160
-msgid "NEAT"
-msgstr ""
-
-#: part/front-book.php:162
-msgid "NEAT Book Description."
-msgstr ""
-
-#: part/front-book.php:169
-msgid "Thoughts & Notions"
-msgstr ""
-
-#: part/front-book.php:171
-msgid "Thoughts & Notions Book Description"
-msgstr ""
-
-#: part/front-book.php:178
-msgid "Communication in Business"
-msgstr ""
-
-#: part/front-book.php:180
-msgid "Communication in Business Book Description"
-msgstr ""
-
-#: part/front-book.php:187
-msgid "Smart Phonics"
-msgstr ""
-
-#: part/front-book.php:189
-msgid "Smart Phonics Book Description"
-msgstr ""
-
-#: part/front-book.php:196 /part/front-book.php:198
-msgid "Discover Debate"
-msgstr ""
-
-#: part/front-book.php:208
-msgid "LOAD MORE"
-msgstr ""
-
 #: part/front-desc.php:20
 msgid "Any Device"
 msgstr ""
@@ -600,452 +686,6 @@ msgstr ""
 
 #: part/front-desc.php:30
 msgid "Any Where"
-msgstr ""
-
-#: part/front-desc.php:35
-msgid "Any Option"
-msgstr ""
-"Uses multiple intelligence strategies\n"
-"New vocabulary is introduced through colourful full-page scenes\n"
-"Units' themes provide a context for the language e.g. at home\n"
-"Short units build students' confidence\n"
-"Wide range of exciting resources such as colourful Wall Charts (enlarged "
-"versions of Conversation Time and Word Time pages) and Storybooks\n"
-"Continuing characters maintain student interest and involvement\n"
-"Conversation Time creates 'real-life' communication"
-
-#: part/front-testimonial.php:7
-msgid "Testimonial"
-msgstr ""
-
-#: part/front-testimonial.php:17
-msgid "Antonia"
-msgstr ""
-
-#: part/front-testimonial.php:19
-msgid ""
-"I'd been studying English in LSE for almost four months.\n"
-"                                For me the time spent in this school turned "
-"into an unforgettable experience.\n"
-"                                I'd like to say an enormous THANKS to all "
-"members of LSE as well as my teachers: Daragh, Andy, Sarah,\n"
-"                                Fiona and especially Mary who is an "
-"extraordinary teacher and one of the most patient,\n"
-"                                enthusiastic and energetic people I've ever "
-"met."
-msgstr ""
-
-#: part/front-testimonial.php:30
-msgid "Tatiana"
-msgstr ""
-
-<<<<<<< HEAD
-#: part/front-testimonial.php:32
-=======
-#: part/front-gallery.php:6
-msgid "Gallery"
-msgstr "우리 위즈잉글리쉬 콜센터를 보여드릴께요"
-
-#: part/front-gallery.php:8
-msgid ""
-"\n"
-"            Please meet our office staffs. Teachers, Managers and "
-"Technicians.\n"
-"            With our qualified service, you will be statisfied with the "
-"lesson.\n"
-"            If you want to see more about us, feel free to ask us more "
-"photos.\n"
-"            "
-msgstr "위즈잉글리쉬 원어민 선생님들이 여러분들을 기다리고 있습니다."
-
-#: part/about-us-content2.php:10
-msgid ""
-"\n"
-"        저희는 화상영어 학습을 위해서 필리핀 현지에서 2006년 부터 2016년\n"
-"        현재까지 직접 화상 영어 콜센터를 운영하고 있습니다."
-msgstr ""
-"<font size=\"5\">위즈잉글리쉬 콜센터에는 원어민 영어 선생님들 한 분, 한 분이 <br>한 명, 한 명의 학생들에 대한 관심과 "
-"배려로 <br>수업에 집중하고 있습니다. <br>이 것이 10년 된 위즈잉글리쉬의 노하우와 원칙입니다.</font>"
-
-#: part/about-us-content2.php:20
-msgid "교사 역 깔끔하게 개인 정보 보호에 대한 높은 벽에 나란히 위치."
-msgstr "영어 선생님들의 <br>온라인 교실"
-
-#: part/about-us-content2.php:30
-msgid "교사의 역 내부에는 중단하지 않습니다."
-msgstr "수업에 집중하고 있는 모습"
-
-#: part/about-us-content2.php:40
-msgid "상수 통신은 새로운 언어를 학습의 핵심입니다."
-msgstr "학생들 수업 화면"
-
-#: part/about-us-content2.php:49
-msgid ""
-"되려니와, 사랑의 온갖 따뜻한 공자는 용기가 피가 피고 것이다.\n"
-"                     얼마나 고행을 두손을 것이다. 이상을 있는 그와 그리하였는가?\n"
-"                     것은 모래뿐일 찾아다녀도, 간에 피다."
-msgstr ""
-"지금 부모님을 찾아뵙는 선생님들이 권해주는 위즈잉글리쉬 화상영어는 아이를 직접 가르치고 있는, 가르친 선생님들의 학생에 대한 관심과 "
-"사랑입니다. "
-
-#: part/about-us-content2.php:56
-msgid ""
-"과실이 있으며, 따뜻한 사막이다. 할지니, 못할 생의 보내는 따뜻한 우는 황금시대다.\n"
-"                    천지는 우리 이 산야에 위하여서. 유소년에게서 없으면 이상 끓는 없는\n"
-"                    무엇을 붙잡아 교향악이다."
-msgstr "정부의 영어 교육 방침이 아무리 자주 바뀌어도 영어를 모국어처럼 사용하는 위즈잉글리쉬 학생들에게는 영어 시험이 장벽이 될 수 없습니다. "
-
-#: part/enrollment-content2.php:9 /part/level-test-content2.php:9
-msgid "오늘 등록하고 무료 평가판을 얻을!"
-msgstr "수업 진행 순서"
-
-#: part/enrollment-content2.php:17
-msgid "Minutes"
-msgstr "수업 시간"
-
-#: part/enrollment-content2.php:20 /part/enrollment-content2.php:62
-msgid "20mins"
-msgstr "20분"
-
-#: part/enrollment-content2.php:21
-#, php-format
-msgid "30mins (5% discount)"
-msgstr "30분"
-
-#: part/enrollment-content2.php:22
-#, php-format
-msgid "40mins (10% discount)"
-msgstr "40분"
-
-#: part/enrollment-content2.php:23
-#, php-format
-msgid "50mins (15% discount)"
-msgstr "50분"
-
-#: part/enrollment-content2.php:33
-msgid "Months"
-msgstr "수업 기간"
-
-#: part/enrollment-content2.php:36 /part/enrollment-content2.php:66
-msgid "1month"
-msgstr "1개월"
-
-#: part/enrollment-content2.php:37
-#, php-format
-msgid "2months (5% discount)"
-msgstr "2개월"
-
-#: part/enrollment-content2.php:38
-#, php-format
-msgid "3months (10% discount)"
-msgstr "3개월"
-
-#: part/enrollment-content2.php:48
-msgid "Days"
-msgstr "수업일"
-
-#: part/enrollment-content2.php:51
-msgid "Monday - Friday"
-msgstr "월요일 ~ 금요일"
-
-#: part/enrollment-content2.php:52
-msgid "Mon Wed Fri only"
-msgstr "월/수/금요일"
-
-#: part/enrollment-content2.php:53
-msgid "Tue Thu only"
-msgstr "화/목요일"
-
-#: part/enrollment-content2.php:61 /part/enrollment-content2.php:65
-#: part/enrollment-content2.php:69
-msgid "오늘 등록하고"
-msgstr "수업 선택 예시"
-
-#: part/enrollment-content2.php:70
-msgid "Monday-Friday"
-msgstr "월요일 ~ 금요일"
-
-#: part/enrollment-content2.php:75
-msgid "Total: 1,188,000"
-msgstr "수업료 : 150,000원"
-
-#: part/enrollment-content2.php:76
-msgid "ENROLL NOW"
-msgstr "수업 신청하기"
-
-#: part/front-desc.php:6
-msgid "Why Choose Us?"
-msgstr "왜 위즈잉글리쉬인가?"
-
-#: part/front-desc.php:21
-msgid "You can use any device for the video class."
-msgstr "어떤 디바이스에서도 "
-
-#: part/front-desc.php:26
-msgid "You can choose class time on your convenience."
-msgstr "원하는 시간에 "
-
-#: part/front-desc.php:31
-msgid "With your mobile device, you can get your class from any where."
-msgstr "어디서든"
-
-#: part/front-desc.php:36
-msgid "You can have MWF, TTH or M~F class."
-msgstr "매일 만나는 위즈잉글리쉬"
-
-#: part/level-test-content1.php:6
-msgid "무료 체험 수업"
-msgstr "수업 전 영어 능력 테스트"
-
-# ㅂㅈ
-#: part/level-test-content1.php:7
-msgid ""
-"은 모든 학생들이 처음 화상 영어 수업을 할 때 한번 또는 두번 하는 것으로\n"
-"            <br>레벨테스트의 성격이 강하. 자세한 내용을 알고 062-576-5010로 문의."
-msgstr ""
-"수업 전 영어 테스트는 선생님이 학생의 영어 능력을 판단하여 학생에게 적합한<br>\n"
-"교재 및 수업 방법(Teaching method)을 선정하게 됩니다.<br>\n"
-
-#: part/level-test-content1.php:10
-msgid "Start Free Trial Now"
-msgstr "영어 테스트 신청"
-
-#: part/level-test-content2.php:20
-msgid "것은 모래뿐일 찾아다녀도, 간에 피다."
-msgstr "로그인 후 강의실 입장"
-
-#: part/level-test-content2.php:36
-msgid "싸인 얼마나 우는 보라. 이상의 소리다."
-msgstr "자동으로 화상 영어 수업 프로그램 실행 / 다운로드"
-
-#: part/level-test-content2.php:52
-msgid "못할 생의 보내는 따뜻한 우는."
-msgstr "영어 선생님과 수업 시작"
-
-#: part/level-test-content3.php:6
-msgid ""
-"청춘을 우리 이상은 몸이 쓸쓸한 위하여서,<br>\n"
-"            자신과 미묘한 것이다. 이상은 노래하며<br>\n"
-"            가치를 구하지 할지니, 인생에 방황하여도"
-msgstr "위즈잉글리쉬 전 직원은 학생을 향한 관심과 <br>응원을 아끼지 않겠습니다.</font>"
-
-#: part/front-book.php:8
-msgid "Our Books"
-msgstr "수업 교재"
-
-#: part/front-book.php:12
-msgid "LEARN MORE"
-msgstr "열공!! 영어 선생님이 함께합니다."
-
-#: part/about-us-content2.php:6
->>>>>>> 5fb5d42bb67ae28941db47cf52f5900c811db463
-msgid ""
-"I would like to thank the whole team of LSE for the great English for "
-"University\n"
-"                                course you have provided. Now that I've "
-"started the Masters degree programme in\n"
-"                                English here in Germany, I’ve realised all "
-"the things I learnt with you.\n"
-"                                It was a brilliant learning experience. "
-"Thank you, again."
-msgstr ""
-
-#: part/front-testimonial.php:42
-msgid "Asli"
-msgstr ""
-
-#: part/front-testimonial.php:44
-msgid ""
-"My name is Asli and I am from Turkey. When I came to London,\n"
-"                                I was too nervous about my IELTS exam but "
-"after my 10-week course at London School of English,\n"
-"                                I became more confident about both my exam "
-"and also my ability in English.\n"
-"                                Finally I got 6.5 in IELTS which is a great "
-"result for me."
-msgstr ""
-
-#: part/front-testimonial.php:56
-msgid "Jaime"
-msgstr ""
-
-#: part/front-testimonial.php:58
-msgid ""
-"I really appreciated the IELTS course that I prepared at the London School "
-"of English.\n"
-"                                My classmates, the teachers and all the "
-"members of the staff, were amazing and I learnt a lot.\n"
-"                                I highly recommended this school if you want "
-"to improve your English and want to achieve\n"
-"                                your aspirations and aims."
-msgstr ""
-
-#: part/front-testimonial.php:68
-msgid "Pierre Alain"
-msgstr ""
-
-#: part/front-testimonial.php:70
-msgid ""
-"Exactly what I expected, challenging on the weak points to improve my "
-"English.\n"
-"                                Well organised school and a good mix of the "
-"international students.\n"
-"                                Cross-cultural exchange is a plus to my stay "
-"here."
-msgstr ""
-
-#: part/front-testimonial.php:79
-msgid "Kieran"
-msgstr ""
-
-#: part/front-testimonial.php:81
-msgid ""
-"The teaching, making people speak as much as possible,\n"
-"                                making people self-confident, making people "
-"feel as if they were at home,\n"
-"                                being friendly and open-minded, making "
-"people meet,\n"
-"                                encouraging cultural mix between students."
-msgstr ""
-
-#: part/help-content1.php:7
-msgid "Help"
-msgstr ""
-
-#: part/help-content2.php:9 /part/help-content2.php:18
-msgid "Company Information"
-msgstr ""
-
-#: part/help-content2.php:12 /part/help-content3.php:6
-msgid "Send an Inquiry"
-msgstr ""
-
-#: part/help-content2.php:15 /part/help-content4.php:7
-msgid "FAQs"
-msgstr ""
-
-#: part/help-content2.php:23
-msgid "Address:"
-msgstr ""
-
-#: part/help-content2.php:24
-msgid "hlpC2-Address will be place here"
-msgstr ""
-
-#: part/help-content2.php:27
-msgid "Office Tel. No.:"
-msgstr ""
-
-#: part/help-content2.php:28
-msgid "hlpC2-Tel. No. will be place here"
-msgstr ""
-
-#: part/help-content2.php:31
-msgid "Email:"
-msgstr ""
-
-#: part/help-content2.php:32
-msgid "hlpC2-Email will be place here"
-msgstr ""
-
-#: part/help-content2.php:35
-msgid "Skype:"
-msgstr ""
-
-#: part/help-content2.php:36
-msgid "hlpC2-Skype ID will be place here"
-msgstr ""
-
-#: part/help-content2.php:39
-msgid "Kakao Talk:"
-msgstr ""
-
-#: part/help-content2.php:40
-msgid "hlpC2-Kakao ID will be place here"
-msgstr ""
-
-#: part/help-content2.php:44
-msgid "Manager's Name"
-msgstr ""
-
-#: part/help-content2.php:45
-msgid "hlpC2-Manager's Name will be place here"
-msgstr ""
-
-#: part/help-content3.php:9
-msgid "Name"
-msgstr ""
-
-#: part/help-content3.php:11
-msgid "Name..."
-msgstr ""
-
-#: part/help-content3.php:15
-msgid "Email"
-msgstr ""
-
-#: part/help-content3.php:17
-msgid "Email Address..."
-msgstr ""
-
-#: part/help-content3.php:21
-msgid "Phone"
-msgstr ""
-
-#: part/help-content3.php:23
-msgid "Phone Number..."
-msgstr ""
-
-#: part/help-content3.php:27
-msgid "Message"
-msgstr ""
-
-#: part/help-content3.php:29
-msgid "Enter your inquiry here..."
-msgstr ""
-
-#: part/help-content3.php:34
-msgid "Send"
-msgstr ""
-
-#: part/help-content4.php:11
-msgid "hlpC4-FAQ1 will be place here"
-msgstr ""
-
-#: part/help-content4.php:12
-msgid "hlpC4-FAQ1 Answer will be place here"
-msgstr ""
-
-#: part/help-content4.php:17
-msgid "hlpC4-FAQ2 will be place here"
-msgstr ""
-
-#: part/help-content4.php:18
-msgid "hlpC4-FAQ2 Answer will be place here"
-msgstr ""
-
-#: part/help-content4.php:23
-msgid "hlpC4-FAQ3 will be place here"
-msgstr ""
-
-#: part/help-content4.php:24
-msgid "hlpC4-FAQ3 Answer will be place here"
-msgstr ""
-
-#: part/help-content4.php:29
-msgid "hlpC4-FAQ4 will be place here"
-msgstr ""
-
-#: part/help-content4.php:30
-msgid "hlpC4-FAQ4 Answer will be place here"
-msgstr ""
-
-#: part/help-content4.php:35
-msgid "hlpC4-FAQ5 will be place here"
-msgstr ""
-
-#: part/help-content4.php:36
-msgid "hlpC4-FAQ5 Answer will be place here"
 msgstr ""
 
 #: part/level-test-content2.php:15 /part/level-test-content2.php:31 /part/level-
@@ -1068,6 +708,42 @@ msgstr ""
 #. Name of the theme
 msgid "X5 Withcenter LMS Theme"
 msgstr ""
+
+#: menu-all.php:3 /header.php:103
+msgid "QnA"
+msgstr "질문과답변"
+
+#: past.php:11
+msgid "You have no past classes"
+msgstr "수업이 없습니다."
+
+#: past.php:15
+msgid "No. of Past classes : "
+msgstr "지난 수업 수 :"
+
+#: past.php:23
+msgid "Class No."
+msgstr "번호"
+
+#: past.php:26
+msgid "Date"
+msgstr "날짜"
+
+#: past.php:27
+msgid "Class Begin"
+msgstr "수업시간"
+
+#: past.php:28 /part/front-icon-menu.php:47
+msgid "Class Comment"
+msgstr "코멘트"
+
+#: user-log-in.php:11
+msgid "Password reset link has been sent to your email."
+msgstr "비밀번호 변경 주소가 이메일로 전송되었습니다."
+
+#: user-password-lost.php:11
+msgid "Password reset link has been sent to your email. Please check your email."
+msgstr "비밀번호 변경 주소가 이메일로 전송되었습니다. 메일 함을 확인해 주십시오."
 
 #: header.php:49
 msgid "ADMIN"
@@ -1109,37 +785,9 @@ msgstr "수업과정"
 msgid "Reservation"
 msgstr "예약"
 
-#: header.php:103 /menu-all.php:3
-msgid "QnA"
-msgstr "질문과답변"
-
 #: header.php:106
 msgid "Close"
 msgstr "닫기"
-
-#: past.php:11
-msgid "You have no past classes"
-msgstr "수업이 없습니다."
-
-#: past.php:15
-msgid "No. of Past classes : "
-msgstr "지난 수업 수 :"
-
-#: past.php:23
-msgid "Class No."
-msgstr "번호"
-
-#: past.php:26
-msgid "Date"
-msgstr "날짜"
-
-#: past.php:27
-msgid "Class Begin"
-msgstr "수업시간"
-
-#: past.php:28 /part/front-icon-menu.php:47
-msgid "Class Comment"
-msgstr "코멘트"
 
 #: reservation.php:26
 msgid "You have no reservations"
@@ -1153,13 +801,99 @@ msgstr "예약 된 수업 수"
 msgid "Class Reservation"
 msgstr "수업 예약"
 
-#: user-log-in.php:11
-msgid "Password reset link has been sent to your email."
-msgstr "비밀번호 변경 주소가 이메일로 전송되었습니다."
+#: part/aside.php:3
+msgid "Skype"
+msgstr "스카이프"
 
-#: user-password-lost.php:11
-msgid "Password reset link has been sent to your email. Please check your email."
-msgstr "비밀번호 변경 주소가 이메일로 전송되었습니다. 메일 함을 확인해 주십시오."
+#: part/aside.php:4
+msgid "VE Testing"
+msgstr "장치테스트"
+
+#: part/aside.php:5
+msgid "Team Viewer"
+msgstr "원격지원"
+
+#: part/aside.php:6
+msgid "Video English"
+msgstr "강의실입장"
+
+#: part/front-icon-menu.php:12
+msgid "Enter Class Room"
+msgstr "강의실입장"
+
+#: part/front-icon-menu.php:19
+msgid "Reservations"
+msgstr "예약된 수업"
+
+#: part/front-icon-menu.php:26
+msgid "Past Classes"
+msgstr "지난수업"
+
+#: part/front-icon-menu.php:33
+msgid "Enrollment Fee"
+msgstr "수강료"
+
+#: part/front-icon-menu.php:40
+msgid "Q & A"
+msgstr "질문과답변"
+
+#: part/front-gallery.php:6
+msgid "Gallery"
+msgstr "우리 위즈잉글리쉬 콜센터를 보여드릴께요"
+
+#: part/front-gallery.php:8
+msgid ""
+"\n"
+"            Please meet our office staffs. Teachers, Managers and "
+"Technicians.\n"
+"            With our qualified service, you will be statisfied with the "
+"lesson.\n"
+"            If you want to see more about us, feel free to ask us more "
+"photos.\n"
+"            "
+msgstr "위즈잉글리쉬 원어민 선생님들이 여러분들을 기다리고 있습니다."
+
+#: part/front-info.php:6
+msgid "Welcome to Our Company"
+msgstr "위즈잉글리쉬에 오신 것을 환영합니다."
+
+#: part/front-info.php:8
+msgid "Let us introduce our call center."
+msgstr "위즈잉글리쉬를 소개합니다."
+
+#: part/front-info.php:10
+msgid ""
+"Mr. Song had published Withcenter, inc. on 2007.\n"
+"                 Since then, the company grew every year and now it is "
+"located in Angeles City, Pampanga,\n"
+"                  Philippines. We have 40 English teachers."
+msgstr ""
+"<font size=\"3\">위즈잉글리쉬는 2007년부터 필리핀 현지에서 온라인 영어 교육콜센터를 운영했었고, <br>2010년 6월부터 "
+"콜센터협회 커뮤니티를 운영하고 있습니다. <br>10년 동안 수많은 화상영어 업체들과 콜센터들이 위즈잉글리쉬의 컨설팅과 조언을 받았으며,"
+"<br>필리핀의 현지인 K12 학교인 이노센시오 스쿨도 위즈잉글리쉬의 온라인 영어 교육 컨설팅을 받았습니다.<br> 이렇게 화상영어, "
+"전화영업 업계를 리드해 나가는 위즈잉글리쉬가 <strong><font color=\"red\">업계 최초</font></strong>로<u> "
+"매주 한국인 영어 선생님의 주간 평가</u>와,<br> <u>매월 영어능력 향상 평가 시험</u>을 도입하고 <u>장학금, 유학 "
+"지원금</u> 시스템을 지원하여<br> 새로운 학교 지향형 화상영어의 표준이 되고 있습니다.\n"
+"<p></p>\n"
+"<strong>최고의 관리 시스템</strong>\n"
+"<br>\n"
+"1. <font color=\"green\"><strong>매일</strong> 교육</font> : 주 5회 25분, 외국인 강사와 수업을 "
+"진행하고 강사가 매일 수업에 대한 코멘트를 작성.<br>\n"
+"2. <font color=\"Blue\"><strong>매주</strong> 학습 평가</font> : 매주 한국인 담당 선생님이 강사의 "
+"코멘트를 분석하여 학생의 수업 코치.<br>\n"
+"3. <font color=\"Red\"><strong>매월</strong> 영어 능력 향상 평가</font> : 매월 학생의 영어 능력 "
+"향상을 확인할 수 있습니다.<br>\n"
+"<br><br>\n"
+"<strong>장학금 & 유학 지원금</strong><br>\n"
+"<strong><장학금></strong><br>\n"
+"위즈잉글리쉬는 학교 시스템을 지향하고 있습니다. <br>6개월 간 영어 능력 향상이 뛰어난 학생에게는 장학금을 현금으로 지급합니다. "
+"<br>자세한 사항은 상담실로 문의바랍니다. ( 상담전화 : 070-7678-6565 )\n"
+"<p></p>\n"
+"<strong><유학 지원금></strong><br>\n"
+"위즈잉글리쉬에서 온라인 영어수업을 받은 학생이 위즈잉글리쉬 유학센터를 통해서 유학을 간다면<br> 유학 지원금을 현금으로 드립니다. "
+"자세한 사항은 교무실로 문의 바랍니다. ( 상담 전화 : 070-7678-6564 )\n"
+"<br>\n"
+"</font>"
 
 #: part/about-us-content2.php:6
 msgid ""
@@ -1202,22 +936,6 @@ msgstr ""
 #: part/about-us-content2.php:53
 msgid "Abt-C2 Bottom 2 Description will be place here"
 msgstr "정부의 영어 교육 방침이 아무리 자주 바뀌어도 영어를 모국어처럼 사용하는 위즈잉글리쉬 학생들에게는 영어 시험이 장벽이 될 수 없습니다. "
-
-#: part/aside.php:3
-msgid "Skype"
-msgstr "스카이프"
-
-#: part/aside.php:4
-msgid "VE Testing"
-msgstr "장치테스트"
-
-#: part/aside.php:5
-msgid "Team Viewer"
-msgstr "원격지원"
-
-#: part/aside.php:6
-msgid "Video English"
-msgstr "강의실입장"
 
 #: part/curriculum-content2.php:14
 msgid "Description on Beginner 1"
@@ -1328,87 +1046,13 @@ msgstr "원하는 시간에 "
 msgid "With your mobile device, you can get your class from any where."
 msgstr "어디서든"
 
+#: part/front-desc.php:35
+msgid "Any Option"
+msgstr ""
+
 #: part/front-desc.php:36
 msgid "You can have MWF, TTH or M~F class."
 msgstr "매일 만나는 위즈잉글리쉬"
-
-#: part/front-gallery.php:6
-msgid "Gallery"
-msgstr "우리 위즈잉글리쉬 콜센터를 보여드릴께요"
-
-#: part/front-gallery.php:8
-msgid ""
-"\n"
-"            Please meet our office staffs. Teachers, Managers and "
-"Technicians.\n"
-"            With our qualified service, you will be statisfied with the "
-"lesson.\n"
-"            If you want to see more about us, feel free to ask us more "
-"photos.\n"
-"            "
-msgstr "위즈잉글리쉬 원어민 선생님들이 여러분들을 기다리고 있습니다."
-
-#: part/front-icon-menu.php:12
-msgid "Enter Class Room"
-msgstr "강의실입장"
-
-#: part/front-icon-menu.php:19
-msgid "Reservations"
-msgstr "예약된 수업"
-
-#: part/front-icon-menu.php:26
-msgid "Past Classes"
-msgstr "지난수업"
-
-#: part/front-icon-menu.php:33
-msgid "Enrollment Fee"
-msgstr "수강료"
-
-#: part/front-icon-menu.php:40
-msgid "Q & A"
-msgstr "질문과답변"
-
-#: part/front-info.php:6
-msgid "Welcome to Our Company"
-msgstr "위즈잉글리쉬에 오신 것을 환영합니다."
-
-#: part/front-info.php:8
-msgid "Let us introduce our call center."
-msgstr "위즈잉글리쉬를 소개합니다."
-
-#: part/front-info.php:10
-msgid ""
-"Mr. Song had published Withcenter, inc. on 2007.\n"
-"                 Since then, the company grew every year and now it is "
-"located in Angeles City, Pampanga,\n"
-"                  Philippines. We have 40 English teachers."
-msgstr ""
-"<font size=\"3\">위즈잉글리쉬는 2007년부터 필리핀 현지에서 온라인 영어 교육콜센터를 운영했었고, <br>2010년 6월부터 "
-"콜센터협회 커뮤니티를 운영하고 있습니다. <br>10년 동안 수많은 화상영어 업체들과 콜센터들이 위즈잉글리쉬의 컨설팅과 조언을 받았으며,"
-"<br>필리핀의 현지인 K12 학교인 이노센시오 스쿨도 위즈잉글리쉬의 온라인 영어 교육 컨설팅을 받았습니다.<br> 이렇게 화상영어, "
-"전화영업 업계를 리드해 나가는 위즈잉글리쉬가 <strong><font color=\"red\">업계 최초</font></strong>로<u> "
-"매주 한국인 영어 선생님의 주간 평가</u>와,<br> <u>매월 영어능력 향상 평가 시험</u>을 도입하고 <u>장학금, 유학 "
-"지원금</u> 시스템을 지원하여<br> 새로운 학교 지향형 화상영어의 표준이 되고 있습니다.\n"
-"<p></p>\n"
-"<strong>최고의 관리 시스템</strong>\n"
-"<br>\n"
-"1. <font color=\"green\"><strong>매일</strong> 교육</font> : 주 5회 25분, 외국인 강사와 수업을 "
-"진행하고 강사가 매일 수업에 대한 코멘트를 작성.<br>\n"
-"2. <font color=\"Blue\"><strong>매주</strong> 학습 평가</font> : 매주 한국인 담당 선생님이 강사의 "
-"코멘트를 분석하여 학생의 수업 코치.<br>\n"
-"3. <font color=\"Red\"><strong>매월</strong> 영어 능력 향상 평가</font> : 매월 학생의 영어 능력 "
-"향상을 확인할 수 있습니다.<br>\n"
-"<br><br>\n"
-"<strong>장학금 & 유학 지원금</strong><br>\n"
-"<strong><장학금></strong><br>\n"
-"위즈잉글리쉬는 학교 시스템을 지향하고 있습니다. <br>6개월 간 영어 능력 향상이 뛰어난 학생에게는 장학금을 현금으로 지급합니다. "
-"<br>자세한 사항은 상담실로 문의바랍니다. ( 상담전화 : 070-7678-6565 )\n"
-"<p></p>\n"
-"<strong><유학 지원금></strong><br>\n"
-"위즈잉글리쉬에서 온라인 영어수업을 받은 학생이 위즈잉글리쉬 유학센터를 통해서 유학을 간다면<br> 유학 지원금을 현금으로 드립니다. "
-"자세한 사항은 교무실로 문의 바랍니다. ( 상담 전화 : 070-7678-6564 )\n"
-"<br>\n"
-"</font>"
 
 #: part/level-test-content1.php:6
 msgid "Lvl-C1 Banner Title"
