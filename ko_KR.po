@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: X5 Withcenter LMS Theme\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: Tue Apr 12 2016 22:17:24 GMT+0900 (Korea Standard Time)\n"
-"PO-Revision-Date: Fri Apr 29 2016 22:49:53 GMT+0800 (Taipei Standard Time)\n"
+"PO-Revision-Date: Fri Apr 29 2016 23:01:01 GMT+0800 (Taipei Standard Time)\n"
 "Last-Translator: admin <gkoeca@gkoeca.org>\n"
 "Language-Team: \n"
 "Language: Korean\n"
@@ -57,7 +57,7 @@ msgstr ""
 msgid "SITEMAP"
 msgstr ""
 
-#: reservation.php:31
+#: reservation.php:32
 msgid "Please login to see your reservation"
 msgstr ""
 
@@ -302,10 +302,6 @@ msgstr ""
 
 #: part/front-book.php:208
 msgid "LOAD MORE"
-msgstr ""
-
-#: part/help-content1.php:7
-msgid "Help"
 msgstr ""
 
 #: part/help-content3.php:6 /part/help-content2.php:12
@@ -837,15 +833,15 @@ msgstr "예약"
 msgid "Close"
 msgstr "닫기"
 
-#: reservation.php:26
+#: reservation.php:27
 msgid "You have no reservations"
 msgstr "예약된 수업이 없습니다."
 
-#: reservation.php:28
+#: reservation.php:29
 msgid "No. of Reservations"
 msgstr "예약 된 수업 수"
 
-#: reservation.php:35
+#: reservation.php:36
 msgid "Class Reservation"
 msgstr "수업 예약"
 
@@ -925,8 +921,8 @@ msgstr ""
 "<p></p>\n"
 "<strong>최고의 관리 시스템</strong>\n"
 "<br>\n"
-"1. <font color=\"green\"><strong>매일</strong> 교육</font> : 주 5회 25분, 외국인 강사와 수업을 "
-"진행하고 강사가 매일 수업에 대한 코멘트를 작성.<br>\n"
+"1. <font color=\"green\"><strong>매일</strong> 교육</font> : 외국인 강사와 수업을 진행하고 강사가 "
+"매일 수업에 대한 코멘트를 작성.<br>\n"
 "2. <font color=\"Blue\"><strong>매주</strong> 학습 평가</font> : 매주 한국인 담당 선생님이 강사의 "
 "코멘트를 분석하여 학생의 수업 코치.<br>\n"
 "3. <font color=\"Red\"><strong>매월</strong> 영어 능력 향상 평가</font> : 매월 학생의 영어 능력 "
