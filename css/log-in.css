@@ -37,7 +37,7 @@
 .data .log-in .inner .form-group .info .fa.fa-user,
 .data .log-in .inner .form-group .info .fa.fa-key {
     float: left;
-    padding: 10px 10px 10px 16px;
+    padding: 10px 0 10px 16px;
 }
 
 .data .log-in .inner .form-group .info.user .text,
