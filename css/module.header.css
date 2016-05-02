@@ -87,7 +87,8 @@ nav.top-menu ul li:last-child a {
 }
 
 nav.top-menu ul li a:hover {
-   border-bottom: 0.125rem solid #b0acac;
+    color: #0e7ecc;
+   /*border-bottom: 0.125rem solid #b0acac;*/
 }
 
 nav.top-menu ul li a span {
@@ -98,6 +99,17 @@ nav.top-menu ul li a.icon {
     margin: 0;
     padding: 0.1875em 0.625em 0 0;
 }
+
+
+nav.top-menu ul li.active a span {
+    font-weight: 800;
+    color: #0e7ecc;
+}
+
+nav.top-menu ul li.active a:hover {
+    background-color: transparent;
+}
+
 
 @media all and ( max-width: 599px ) {
     nav.top-menu, nav.menu {
@@ -171,13 +183,15 @@ header .menu ul li:nth-child(6) a {
 }
 
 header .menu ul li a:hover {
-    background-color: #b0acac;
+    color: #0e7ecc;
+    /*background-color: #b0acac;
     color: #FFFFFF;
-    border-radius: 0.1875em;
+    border-radius: 0.1875em;*/
 }
 
 header .menu ul li.active a {
-    color: orangered;
+    font-weight: 800;
+    color: #0e7ecc;
 }
 header .menu ul li.active a:hover {
     background-color: transparent;

@@ -3,6 +3,10 @@
 
 }
 
+.home .testimonial > div {
+    text-align: center;
+}
+
 .home.front .content .data > .testimonial {
     background-color: #F7CD47;
 }
@@ -13,8 +17,8 @@
 
 .home.front .content .data > .testimonial div .info.text {
     display: inline-block;
-    font-size: 35px;
-    font-weight: bold;
+    font-size: 41px;
+    color:  #2d2d2d;
     margin: 100px 0 30px;
 }
 

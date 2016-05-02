@@ -14,5 +14,6 @@ wp_enqueue_style('help-content1', td() . '/css/help-content1.css');
             <div class="why text"><?php _e('Why', 'x5')?></div>
             <div class="who text"><?php _e('Who', 'x5')?></div>
         </div>
+        <div id="content-two"></div>
     </div>
 </section>

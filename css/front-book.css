@@ -38,8 +38,7 @@
 .home.front .content .data > .book .more.text {
     display: inline-block;
     padding: 0.875em 1.25em;
-    font-size: 1em;
-    font-weight: bold;
+    font-size: 18px;
     letter-spacing: 0.1875em;
     border-radius: 0.1875em;
     margin-bottom: 3.125em;

@@ -18,7 +18,7 @@ wp_enqueue_style('help-content3', td() . '/css/help-content3.css');
                 </div>
             </div>
             <div class="line">
-                <label for="user_login"><?php _e('Phone', 'x5')?><span>*</span></label>
+                <label for="user_login"><?php _e('Phone', 'x5')?></label>
                 <div class="text">
                     <input type="text" name="phone" maxlength="64" id="phone" tabindex="101" placeholder="<?php _e('Phone Number...', 'x5')?>">
                 </div>
@@ -31,7 +31,7 @@ wp_enqueue_style('help-content3', td() . '/css/help-content3.css');
             </div>
             <div id="content-four"></div>
             <div class="line submit">
-                <input type="submit" tabindex="121" value="<?php _e('Send', 'x5')?>">
+                <input type="submit" tabindex="121" value="<?php _e('Submit', 'x5')?>">
             </div>
         </form>
     </div>

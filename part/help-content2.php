@@ -4,6 +4,7 @@ wp_enqueue_script('help-content2', td() . '/js/help-content2.js');
 ?>
 <section class="help content-two" >
     <div>
+
         <ul id="nav-link" class="nav">
             <li class="nav-item">
                 <a class="nav-link" href="#content-two"><i class="fa fa-angle-right nav-link" aria-hidden="true"></i> <?php _e('Company Information', 'x5')?></a>

@@ -4,7 +4,7 @@ wp_enqueue_style('testimonial', td() . '/css/front-testimonial.css');
 <section class="testimonial">
     <div>
         <div class="info text">
-            <?php _e('Testimonial', 'x5')?>
+            <?php _e('Feedback', 'x5')?>
         </div>
         <div class="collection">
             <div class="row">

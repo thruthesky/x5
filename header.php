@@ -42,7 +42,7 @@
                         <span class="dashicons dashicons-menu menu-icon"></span>
                         </a>
                     </li>
-                    <li>
+                    <li class="<?php if ( seg(0) == 'user-log-in' ) echo 'active'; ?>">
                         <?php if ( user()->login() ) : ?>
                             <?php if ( user()->admin() ) : ?>
                                 <a href="<?php hd()?>wp-admin">
@@ -59,7 +59,7 @@
                             </a>
                         <?php endif ?>
                     </li>
-                    <li>
+                    <li class="<?php if ( seg(0) == 'user-register' ) echo 'active'; ?>">
                         <?php if ( user()->login() ) : ?>
                             <a href="<?php echo wp_logout_url( home_url() ); ?>">
                                 <span><?php _e('LOGOUT', 'x5')?></span>
@@ -70,12 +70,12 @@
                             </a>
                         <?php endif ?>
                     </li>
-                    <li>
+                    <li class="<?php if ( seg(0) == 'help' ) echo 'active'; ?>">
                         <a href="<?php hd()?>help">
                             <span><?php _e('HELP', 'x5')?></span>
                         </a>
                     </li>
-                    <li>
+                    <li class="<?php if ( seg(0) == 'menu-all' ) echo 'active'; ?>">
                         <a href="<?php hd()?>menu-all">
                             <span><?php _e('SITEMAP', 'x5')?></span>
                         </a>
