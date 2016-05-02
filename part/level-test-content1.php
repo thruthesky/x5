@@ -3,11 +3,17 @@ wp_enqueue_style('level-test-content1', td() . '/css/level-test-content1.css');
 ?>
 <section class="level-test content-one">
     <div>
-        <h2><?php _e('Lvl-C1 Banner Title', 'x5')?></h2>
-        <div class="desc"><?php _e('Lvl-C1 Banner Description will be place here.<br>
-         You can use HTML to decorate on the text. Try to use p, br, b, i tags. You can also input<br>
-         CSS and Javascript on this paragraph.', 'x5')?>
+        <div class="img1 banner">
+            <img src="<?php img_e() ?>level-test-banner-image1.png">
         </div>
-        <div class="trial button"><a><?php _e('Start Free Trial Now', 'x5')?></a></div>
+        <div class="text banner">
+            <h2><?php _e('Level Test', 'x5')?></h2>
+            <div class="desc">
+                <?php _e('Lvl-C1 Banner Description will be place here', 'x5')?>
+            </div>
+        </div>
+        <div class="img2">
+            <img src="<?php img_e() ?>level-test-banner-image2.png">
+        </div>
     </div>
 </section>
