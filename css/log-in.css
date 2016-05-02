@@ -23,20 +23,21 @@
 }
 
 .data .log-in .inner .form-group .info.user {
-    width: 203px;
+    width: 215px;
     border: 1px solid #c9c9c9;
     border-radius: 5px 5px 0 0;
 }
 
 .data .log-in .inner .form-group .info.password {
-        border: 1px solid #c9c9c9;
+    width: 215px;
+    border: 1px solid #c9c9c9;
     border-radius: 0 0 5px 5px;
 }
 
 .data .log-in .inner .form-group .info .fa.fa-user,
 .data .log-in .inner .form-group .info .fa.fa-key {
     float: left;
-    padding: 10px;;
+    padding: 10px 10px 10px 16px;
 }
 
 .data .log-in .inner .form-group .info.user .text,
