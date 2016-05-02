@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: X5 Withcenter LMS Theme\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: Tue Apr 12 2016 22:17:24 GMT+0900 (Korea Standard Time)\n"
-"PO-Revision-Date: Fri Apr 29 2016 23:01:01 GMT+0800 (Taipei Standard Time)\n"
+"PO-Revision-Date: Sun May 01 2016 20:32:34 GMT+0900 (Japan Standard Time)\n"
 "Last-Translator: admin <gkoeca@gkoeca.org>\n"
 "Language-Team: \n"
 "Language: Korean\n"
@@ -382,7 +382,7 @@ msgstr ""
 
 #: part/help-content2.php:36
 msgid "hlpC2-Skype ID will be place here"
-msgstr ""
+msgstr "whizenglish1"
 
 #: part/help-content2.php:39
 msgid "Kakao Talk:"
@@ -442,58 +442,10 @@ msgstr ""
 
 #: part/about-us-content1.php:6
 msgid "Abt-C1 Banner Description will be place here"
-msgstr ""
-
-#: part/about-us-content2.php:6
-msgid ""
-"Abt-C2 Content 1 Description will be place here.\n"
-"        You can use HTML to decorate on the text. Try to use p, br, b, i "
-"tags.\n"
-"        You can also input CSS and Javascript on this paragraph."
-msgstr ""
-
-#: part/about-us-content2.php:9
-msgid ""
-"Abt-C2 Content 2 Description will be place here.\n"
-"        You can use HTML to decorate on the text. Try to use p, br, b, i "
-"tags.\n"
-"        You can also input CSS and Javascript on this paragraph."
-msgstr ""
-
-#: part/about-us-content2.php:19
-msgid "Abt-C2 Image 1 Description"
-msgstr ""
-
-#: part/about-us-content2.php:29
-msgid "Abt-C2 Image 2 Description"
-msgstr ""
-
-#: part/about-us-content2.php:39
-msgid "Abt-C2 Image 3 Description"
-msgstr ""
-
-#: part/about-us-content2.php:48
-msgid "Abt-C2 Bottom 1 Description will be place here"
-msgstr ""
-
-#: part/about-us-content2.php:53
-msgid "Abt-C2 Bottom 2 Description will be place here"
-msgstr ""
+msgstr "위즈잉글리쉬의 수업 교재들입니다."
 
 #: part/about-us-content5.php:6
 msgid "Abt-C4 Banner Content<br> will be place here..."
-msgstr ""
-
-#: part/curriculum-content2.php:6
-msgid "Video English Curriculum"
-msgstr ""
-
-#: part/curriculum-content2.php:7
-msgid ""
-"Curr-C2 Video English Curriculum Description will be place here.\n"
-"         You can use HTML to decorate on the text. Try to use p, br, b, i "
-"tags. You can also input\n"
-"         CSS and Javascript on this paragraph."
 msgstr ""
 
 #: part/curriculum-content2.php:13
@@ -504,16 +456,8 @@ msgstr ""
 msgid "Level 1"
 msgstr ""
 
-#: part/curriculum-content2.php:16
-msgid "Curr-C2 Lvl1 Content Here "
-msgstr ""
-
 #: part/curriculum-content2.php:17
 msgid "Level 2"
-msgstr ""
-
-#: part/curriculum-content2.php:18
-msgid "Curr-C2 Lvl2 Content Here"
 msgstr ""
 
 #: part/curriculum-content2.php:19
@@ -588,73 +532,16 @@ msgstr ""
 msgid "Curr-C2 Lvl9 Content Here"
 msgstr ""
 
-#: part/curriculum-content3.php:6
-msgid "Curr-C3 Banner Content"
-msgstr ""
-
-#: part/curriculum-content4.php:6
-msgid "Curriculum Key"
-msgstr ""
-
-#: part/curriculum-content4.php:8
-msgid ""
-"Curr-C4 Description will be place here. You can use HTML to decorate on the "
-"text.\n"
-"             Try to use p, br, b, i tags. You can also input CSS and "
-"Javascript on this paragraph."
-msgstr ""
-
-#: part/curriculum-content4.php:17
-msgid "Career"
-msgstr ""
-
-#: part/curriculum-content4.php:18
-msgid "Curr-C4 Description on Career"
-msgstr ""
-
-#: part/curriculum-content4.php:21
-msgid "Resume"
-msgstr ""
-
-#: part/curriculum-content4.php:22
-msgid "Curr-C4 Description on Resume"
-msgstr ""
-
-#: part/curriculum-content4.php:25
-msgid "Preparation"
-msgstr ""
-
-#: part/curriculum-content4.php:26
-msgid "Curr-C4 Description on Preparation"
-msgstr ""
-
-#: part/curriculum-content4.php:29
-msgid "Interview"
-msgstr ""
-
-#: part/curriculum-content4.php:30
-msgid "Curr-C4 Description on Interview"
-msgstr ""
-
-#: part/curriculum-content4.php:33
-msgid "Role Play"
-msgstr ""
-
-#: part/curriculum-content4.php:34
-msgid "Curr-C4 Description on Role Play"
-msgstr ""
-
-#: part/curriculum-content4.php:37
-msgid "Organization"
-msgstr ""
-
 #: part/curriculum-content4.php:38
 msgid "Curr-C4 Description on Organization"
 msgstr ""
+"3단계 학습 관리 시스템은 학습의 목적에 따라 \" 1단계 : 원어민 강사 - 2단계 : 한국인 선생님 - 3단계 : 평가 시험 \" 을 "
+"통해 학습 효율 뿐만 아니라 개인 성향에 적합한 수업 방법(teaching method)을 채택하여 영어에 대한 거부감 없이 자연스러운 "
+"모국어처럼 영어를 편안하게 받아들이게 됩니다."
 
 #: part/curriculum-content5.php:6
 msgid "Curr-C5 Banner Content"
-msgstr ""
+msgstr "최고로 인정받은 교재들"
 
 #: part/curriculum-content5.php:8
 msgid ""
@@ -662,23 +549,7 @@ msgid ""
 "text.\n"
 "            Try to use p, br, b, i tags. You can also input CSS and "
 "Javascript on this paragraph."
-msgstr ""
-
-#: part/enrollment-content2.php:9
-msgid "Enr-C2 Header Title"
-msgstr ""
-
-#: part/enrollment-content2.php:61
-msgid "Enr-C2 Selected Minutes"
-msgstr ""
-
-#: part/enrollment-content2.php:65
-msgid "Enr-C2 Selected Month"
-msgstr ""
-
-#: part/enrollment-content2.php:69
-msgid "Enr-C2 Selected Day"
-msgstr ""
+msgstr "이미 인정받은 최고의 교재들이 여러분들의 영어를 더욱 풍족하게 만들어 드립니다."
 
 #: part/front-desc.php:20
 msgid "Any Device"
@@ -696,22 +567,6 @@ msgstr ""
 msgid "Any Option"
 msgstr ""
 
-#: part/level-test-content1.php:6
-msgid "Lvl-C1 Banner Title"
-msgstr ""
-
-#: part/level-test-content1.php:7
-msgid ""
-"Lvl-C1 Banner Description will be place here.<br>\n"
-"         You can use HTML to decorate on the text. Try to use p, br, b, i "
-"tags. You can also input<br>\n"
-"         CSS and Javascript on this paragraph."
-msgstr ""
-
-#: part/level-test-content2.php:9
-msgid "Lvl-C2 Content Title"
-msgstr ""
-
 #: part/level-test-content2.php:15 /part/level-test-content2.php:31 /part/level-
 #: test-content2.php:47
 msgid "Step"
@@ -721,25 +576,185 @@ msgstr ""
 msgid "1"
 msgstr ""
 
-#: part/level-test-content2.php:20
-msgid "Lvl-C2 Step 1 Description Here"
-msgstr ""
-
 #: part/level-test-content2.php:32
 msgid "2"
-msgstr ""
-
-#: part/level-test-content2.php:36
-msgid "Lvl-C2 Step 2 Description Here"
 msgstr ""
 
 #: part/level-test-content2.php:48
 msgid "3"
 msgstr ""
 
+#. Name of the theme
+msgid "X5 Withcenter LMS Theme"
+msgstr ""
+
+#: part/curriculum-content4.php:37
+msgid "Organization"
+msgstr "영어 능력 평가"
+
+#: part/curriculum-content2.php:6
+msgid "Video English Curriculum"
+msgstr "커리큘럼"
+
+#: part/curriculum-content2.php:7
+msgid ""
+"Curr-C2 Video English Curriculum Description will be place here.\n"
+"         You can use HTML to decorate on the text. Try to use p, br, b, i "
+"tags. You can also input\n"
+"         CSS and Javascript on this paragraph."
+msgstr "우리 학생들의 영어 능력을 구분하여 개인별 능력과 수업 성향 등에 맞는 수업 방법(teaching method)을 적용합니다."
+
+#: part/curriculum-content2.php:16
+msgid "Curr-C2 Lvl1 Content Here "
+msgstr "기초 파닉스 수준으로 영어에 대한 관심을 가지고 있는 학생"
+
+#: part/curriculum-content2.php:18
+msgid "Curr-C2 Lvl2 Content Here"
+msgstr "영어 발음을 따라하며 알파벳의 발성 조합을 읽어낼 수 있는 수준"
+
+#: part/curriculum-content3.php:6
+msgid "Curr-C3 Banner Content"
+msgstr "<span style=\"background-color:#00FF00\"><strong>3단계 학습 관리 시스템</strong></span>"
+
+#: part/curriculum-content4.php:6
+msgid "Curriculum Key"
+msgstr "3단계 학습 관리 시스템의 키포인트"
+
+#: part/curriculum-content4.php:8
+msgid ""
+"Curr-C4 Description will be place here. You can use HTML to decorate on the "
+"text.\n"
+"             Try to use p, br, b, i tags. You can also input CSS and "
+"Javascript on this paragraph."
+msgstr "회사가 원하는 객관식이 평가가 아닌 학생의 영어 능력을 객관적으로 평가할 수 있는 확인할 수 있는 주관식 평가"
+
+#: part/curriculum-content4.php:17
+msgid "Career"
+msgstr "주5회 매일학습"
+
+#: part/curriculum-content4.php:18
+msgid "Curr-C4 Description on Career"
+msgstr "매일 원어민 강사와 수업을 진행하면서 자연스럽게 영어를 말하게 됩니다."
+
+#: part/curriculum-content4.php:21
+msgid "Resume"
+msgstr "매일 수업 평가"
+
+#: part/curriculum-content4.php:22
+msgid "Curr-C4 Description on Resume"
+msgstr "매일 수업 결과를 원어민 강사가 기록합니다."
+
+#: part/curriculum-content4.php:25
+msgid "Preparation"
+msgstr "한국인 선생님"
+
+#: part/curriculum-content4.php:26
+msgid "Curr-C4 Description on Preparation"
+msgstr "일주일 동안 학생의 수업 결과를 보고 학생의 영어 수업 목표에 적합한 지도 사항을 기록 합니다."
+
+#: part/curriculum-content4.php:29
+msgid "Interview"
+msgstr "주간 수업 평가"
+
+#: part/curriculum-content4.php:30
+msgid "Curr-C4 Description on Interview"
+msgstr "외국인의 관점이 아니라 한국인의 관점에서 학생의 수업을 평가합니다. "
+
+#: part/curriculum-content4.php:33
+msgid "Role Play"
+msgstr ""
+
+#: part/curriculum-content4.php:34
+msgid "Curr-C4 Description on Role Play"
+msgstr "학생의 영어 향상 능력을 매월 평가합니다."
+
+#: part/enrollment-content2.php:61
+msgid "Enr-C2 Selected Minutes"
+msgstr "시간 선택"
+
+#: part/enrollment-content2.php:65
+msgid "Enr-C2 Selected Month"
+msgstr "수업기간 선택"
+
+#: part/enrollment-content2.php:69
+msgid "Enr-C2 Selected Day"
+msgstr "수업일 선택"
+
+#: part/about-us-content2.php:6
+msgid ""
+"Abt-C2 Content 1 Description will be place here.\n"
+"        You can use HTML to decorate on the text. Try to use p, br, b, i "
+"tags.\n"
+"        You can also input CSS and Javascript on this paragraph."
+msgstr ""
+"<font size=\"4\">위즈잉글리쉬는 외국인 원격 화상 영어 교육과 함께 영어 캠프 그리고 유학 서비스를 진행하고 있습니다.<br>\n"
+"학생들 화면 가까이에서, 깊은 관심과 배려로 올바른 영어 교육을 실천해 나가겠습니다.</font>"
+
+#: part/about-us-content2.php:9
+msgid ""
+"Abt-C2 Content 2 Description will be place here.\n"
+"        You can use HTML to decorate on the text. Try to use p, br, b, i "
+"tags.\n"
+"        You can also input CSS and Javascript on this paragraph."
+msgstr ""
+"<font size=\"5\">위즈잉글리쉬 콜센터에는 원어민 영어 선생님들 한 분, 한 분이 <br>한 명, 한 명의 학생들에 대한 관심과 "
+"배려로 <br>수업에 집중하고 있습니다. <br>이 것이 10년 된 위즈잉글리쉬의 노하우와 원칙입니다.</font>"
+
+#: part/about-us-content2.php:19
+msgid "Abt-C2 Image 1 Description"
+msgstr "영어 선생님들의 <br>온라인 교실"
+
+#: part/about-us-content2.php:29
+msgid "Abt-C2 Image 2 Description"
+msgstr "수업에 집중하고 있는 모습"
+
+#: part/about-us-content2.php:39
+msgid "Abt-C2 Image 3 Description"
+msgstr "학생들 수업 화면"
+
+#: part/about-us-content2.php:48
+msgid "Abt-C2 Bottom 1 Description will be place here"
+msgstr ""
+"지금 부모님을 찾아뵙는 선생님들이 권해주는 위즈잉글리쉬 화상영어는 아이를 직접 가르치고 있는, 가르친 선생님들의 학생에 대한 관심과 "
+"사랑입니다. "
+
+#: part/about-us-content2.php:53
+msgid "Abt-C2 Bottom 2 Description will be place here"
+msgstr "정부의 영어 교육 방침이 아무리 자주 바뀌어도 영어를 모국어처럼 사용하는 위즈잉글리쉬 학생들에게는 영어 시험이 장벽이 될 수 없습니다. "
+
+#: part/enrollment-content2.php:9
+msgid "Enr-C2 Header Title"
+msgstr "수업 진행 예시"
+
+#: part/level-test-content1.php:6
+msgid "Lvl-C1 Banner Title"
+msgstr "수업 전 영어 능력 테스트"
+
+#: part/level-test-content1.php:7
+msgid ""
+"Lvl-C1 Banner Description will be place here.<br>\n"
+"         You can use HTML to decorate on the text. Try to use p, br, b, i "
+"tags. You can also input<br>\n"
+"         CSS and Javascript on this paragraph."
+msgstr ""
+"수업 전 영어 테스트는 선생님이 학생의 영어 능력을 판단하여 학생에게 적합한<br>\n"
+"교재 및 수업 방법(Teaching method)을 선정하게 됩니다.<br>"
+
+#: part/level-test-content2.php:9
+msgid "Lvl-C2 Content Title"
+msgstr "수업 진행 순서"
+
+#: part/level-test-content2.php:20
+msgid "Lvl-C2 Step 1 Description Here"
+msgstr "로그인 후 강의실 입장"
+
+#: part/level-test-content2.php:36
+msgid "Lvl-C2 Step 2 Description Here"
+msgstr "수업 프로그램 자동 실행"
+
 #: part/level-test-content2.php:52
 msgid "Lvl-C2 Step 3 Description Here"
-msgstr ""
+msgstr "영어 선생님과 수업 시작"
 
 #: part/level-test-content3.php:6
 msgid ""
@@ -747,11 +762,7 @@ msgid ""
 "         You can use HTML to decorate on the text. Try to use p, br, b, i "
 "tags.\n"
 "         You can also input CSS and Javascript on this paragraph."
-msgstr ""
-
-#. Name of the theme
-msgid "X5 Withcenter LMS Theme"
-msgstr ""
+msgstr "위즈잉글리쉬 전 직원은 학생을 향한 관심과 <br>응원을 아끼지 않겠습니다.</font>"
 
 #: menu-all.php:3 /header.php:103
 msgid "QnA"
@@ -989,22 +1000,22 @@ msgstr "수업 시간"
 
 #: part/enrollment-content2.php:20 /part/enrollment-content2.php:62
 msgid "20mins"
-msgstr "20분"
+msgstr "25분"
 
 #: part/enrollment-content2.php:21
 #, php-format
 msgid "30mins (5% discount)"
-msgstr "30분"
+msgstr "50분"
 
 #: part/enrollment-content2.php:22
 #, php-format
 msgid "40mins (10% discount)"
-msgstr "40분"
+msgstr "75분"
 
 #: part/enrollment-content2.php:23
 #, php-format
 msgid "50mins (15% discount)"
-msgstr "50분"
+msgstr "100분"
 
 #: part/enrollment-content2.php:33
 msgid "Months"
