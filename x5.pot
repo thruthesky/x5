@@ -5,7 +5,7 @@ msgstr ""
 "Project-Id-Version: X5 Withcenter LMS Theme\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: Tue Apr 12 2016 22:17:24 GMT+0900 (Korea Standard Time)\n"
-"POT-Revision-Date: Fri Apr 29 2016 23:00:53 GMT+0800 (Taipei Standard Time)\n"
+"POT-Revision-Date: Mon May 02 2016 17:22:48 GMT+0800 (Taipei Standard Time)\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: \n"
 "Language-Team: \n"
@@ -23,14 +23,6 @@ msgstr ""
 "esc_attr__:1;esc_html__:1;esc_attr_e:1;esc_html_e:1;esc_attr_x:1,2c;"
 "esc_html_x:1,2c;comments_number_link:2,3;t:1;st:1;trans:1;transChoice:1,2\n"
 "X-Generator: Loco - https://localise.biz/"
-
-#: /menu-all.php:3 /header.php:103
-msgid "QnA"
-msgstr ""
-
-#: /menu-all.php:4
-msgid "Discussion"
-msgstr ""
 
 #: /past.php:11
 msgid "You have no past classes"
@@ -119,20 +111,24 @@ msgstr ""
 msgid "About  Us"
 msgstr ""
 
-#: /header.php:91
+#: /header.php:91 /part/level-test-content1.php:10
 msgid "Level Test"
 msgstr ""
 
-#: /header.php:94
+#: /header.php:94 /part/enrollment-content1.php:10
 msgid "Enrollment"
 msgstr ""
 
-#: /header.php:97
+#: /header.php:97 /part/curriculum-content1.php:10
 msgid "Curriculum"
 msgstr ""
 
 #: /header.php:100
 msgid "Reservation"
+msgstr ""
+
+#: /header.php:103 /menu-all.php:5
+msgid "QnA"
 msgstr ""
 
 #: /header.php:106
@@ -153,6 +149,10 @@ msgstr ""
 
 #: /reservation.php:36
 msgid "Class Reservation"
+msgstr ""
+
+#: /menu-all.php:6
+msgid "Discussion"
 msgstr ""
 
 #: /part/aside.php:3
@@ -328,6 +328,34 @@ msgstr ""
 
 #: /part/about-us-content3.php:13
 msgid "Enroll Now"
+msgstr ""
+
+#: /part/curriculum-content1.php:12
+msgid "Curr-C1 Banner Description will be place here"
+msgstr ""
+
+#: /part/help-content1.php:7
+msgid "Help"
+msgstr ""
+
+#: /part/help-content1.php:8
+msgid "Hlp-C1 Banner Description will be place here"
+msgstr ""
+
+#: /part/help-content1.php:12
+msgid "How"
+msgstr ""
+
+#: /part/help-content1.php:13
+msgid "What"
+msgstr ""
+
+#: /part/help-content1.php:14
+msgid "Why"
+msgstr ""
+
+#: /part/help-content1.php:15
+msgid "Who"
 msgstr ""
 
 #: /part/front-book.php:8
@@ -632,10 +660,6 @@ msgstr ""
 
 #: /part/help-content4.php:36
 msgid "hlpC4-FAQ5 Answer will be place here"
-msgstr ""
-
-#: /part/about-us-content1.php:6
-msgid "Abt-C1 Banner Description will be place here"
 msgstr ""
 
 #: /part/about-us-content2.php:6
@@ -991,22 +1015,6 @@ msgstr ""
 msgid "You can have MWF, TTH or M~F class."
 msgstr ""
 
-#: /part/level-test-content1.php:6
-msgid "Lvl-C1 Banner Title"
-msgstr ""
-
-#: /part/level-test-content1.php:7
-msgid ""
-"Lvl-C1 Banner Description will be place here.<br>\n"
-"         You can use HTML to decorate on the text. Try to use p, br, b, i "
-"tags. You can also input<br>\n"
-"         CSS and Javascript on this paragraph."
-msgstr ""
-
-#: /part/level-test-content1.php:11
-msgid "Start Free Trial Now"
-msgstr ""
-
 #: /part/level-test-content2.php:9
 msgid "Lvl-C2 Content Title"
 msgstr ""
@@ -1046,6 +1054,22 @@ msgid ""
 "         You can use HTML to decorate on the text. Try to use p, br, b, i "
 "tags.\n"
 "         You can also input CSS and Javascript on this paragraph."
+msgstr ""
+
+#: /part/about-us-content1.php:7
+msgid "About us"
+msgstr ""
+
+#: /part/about-us-content1.php:8
+msgid "Abt-C1 Banner Description will be place here"
+msgstr ""
+
+#: /part/level-test-content1.php:12
+msgid "Lvl-C1 Banner Description will be place here"
+msgstr ""
+
+#: /part/enrollment-content1.php:11
+msgid "Enr-C1 Banner Description will be place here"
 msgstr ""
 
 #. Name of the theme
