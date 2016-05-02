@@ -1,19 +1,44 @@
 section .about-us.content-one {
-    background: url("../img/about_us_banner1.png") no-repeat;
+    background: url("../img/about-us-banner1.jpg") no-repeat;
     background-size: cover;
     background-position: center center;
-    height: 420px;
+    height: 240px;
 }
 
+
 section .about-us.content-one h2 {
-    position: relative;
     display: inline-block;
-    margin: 6.25rem 7.8125rem;
-    padding: 0.8125rem 2.875rem 1.5625rem;
-    border-radius: 3px;
+    margin-bottom: 18px;
+    font-size: 53px;
     color: #FFFFFF;
-    font-size: 2.375em;
-    text-align: center;
-    line-height: 3.4375rem;
-    background-color: rgba(0, 0, 0,.4);
+    width: 300px;
+}
+
+
+section .about-us.content-one .desc {
+    display: inline-block;
+    padding-left: 7px;
+    font-size: 24px;
+    color: #FFFFFF;
+}
+
+section .about-us.content-one .banner {
+    position: absolute;
+    display: inline-block;
+    float: left;
+    width: 300px;
+    margin-top: 50px;
+}
+
+section .about-us.content-one .img1 {
+    position: absolute;
+    right: 5px;
+    float: right;
+    height: 240px;
+}
+
+section .about-us.content-one .img1 img{
+    position: absolute;
+    bottom: 0;
+    right: 0;
 }
