@@ -30,10 +30,8 @@
 
             ?>
             <div class="logo">
-                <a href="<?php echo home_url()?>">
-                    <img src="<?php opt('lms[logo]', img() . 'logo.jpg')?>">
-                    <div class="title"><?php opt('lms[company_name]')?></div>
-                </a>
+                <a href="<?php echo home_url()?>"><img src="<?php opt('lms[logo]', img() . 'logo.jpg')?>"></a>
+                <div class="title"><a href="<?php echo home_url()?>"><?php _text('Company Name')?></a></div>
             </div>
             <nav class="top-menu">
                 <ul>
@@ -46,7 +44,7 @@
 
                     <?php if ( user()->login() ) : ?>
                         <?php if ( user()->admin() ) : ?>
-                    <li class="<?php if ( seg(0) == 'user-log-in' ) echo 'active'; ?>">
+                            <li class="<?php if ( seg(0) == 'user-log-in' ) echo 'active'; ?>">
 
                                 <a href="<?php hd()?>wp-admin">
                                     <span><?php _e('ADMIN', 'x5')?></span>
@@ -60,10 +58,10 @@
                             </li>
                         <?php endif ?>
                     <?php else : ?>
-                        <li>
-                            <a href="<?php hd()?>user-log-in">
-                                <span><?php _e('LOGIN', 'x5')?></span>
-                            </a>
+                    <li>
+                        <a href="<?php hd()?>user-log-in">
+                            <span><?php _e('LOGIN', 'x5')?></span>
+                        </a>
 
                         <?php endif ?>
                     </li>

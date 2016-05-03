@@ -58,11 +58,17 @@ jQuery(function($) {
     }
 
 
-    $('.translate-text').click(function(){
+    $('.translate-text').click(function(event){
+
+
         var $this = $(this);
         console.log( $this.attr('original-text'));
-
-        if ( $this.find('.edit').length ) return;
+        if ( $this.find('.edit').length ) {
+            return;
+        }
+        else {
+            event.preventDefault();
+        }
 
         var original_text = $this.attr('original-text');
         console.log(original_text);
@@ -80,6 +86,7 @@ jQuery(function($) {
             '</div>' +
             '';
         $this.append(m);
+        $this.find('textarea').focus();
     });
 
 

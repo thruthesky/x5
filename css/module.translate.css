@@ -6,7 +6,7 @@
 }
 .translate-text {
     position: relative;
-    display: block;
+    display: inline;
     margin: 0;
     padding: 0;
     border: 0;
@@ -29,6 +29,13 @@
 
 .translate-text:hover .dashicons-welcome-write-blog {
     display: block;
+}
+
+.translate-text .edit {
+    position: absolute;
+    z-index: 987654321;
+    left: 0;
+    right: 0;
 }
 
 .translate-text .edit textarea {
@@ -55,4 +62,8 @@
     color: black;
     font-size: 1rem;
     text-align: left;
+}
+
+.translate-text .html-content {
+    display: inline;
 }
