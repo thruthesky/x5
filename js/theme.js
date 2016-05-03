@@ -29,5 +29,18 @@ jQuery(function($) {
     }
 
 
+    var $site_edit = $('.site-edit');
+    $site_edit.click(function(){
+        if ( Cookies.get('site-edit') == 'Y' ) {
+            $site_edit.removeClass('site-edit-enabled');
+            Cookies.set('site-edit', 'N');
+        }
+        else {
+            Cookies.set('site-edit', 'Y');
+            $(this).addClass('site-edit-enabled');
+        }
+    });
+    if ( Cookies.get('site-edit') == 'Y' ) $site_edit.addClass('site-edit-enabled');
+
 
 });

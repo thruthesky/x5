@@ -41,6 +41,8 @@ add_action( 'wp_enqueue_scripts', function () {
     wp_enqueue_style( 'module.aside', td() . '/css/module.aside.css' );
     wp_enqueue_style( 'module.data', td() . '/css/module.data.css' );
     wp_enqueue_style( 'module.footer', td() . '/css/module.footer.css' );
+    wp_enqueue_style( 'module.translate', td() . '/css/module.translate.css' );
+
     wp_enqueue_style( 'state', td() . '/css/state.css' );
     wp_enqueue_style( 'state.header', td() . '/css/state.header.css' );
     wp_enqueue_style( 'theme', td() . '/css/theme.css' );
@@ -48,6 +50,7 @@ add_action( 'wp_enqueue_scripts', function () {
     wp_enqueue_script( 'theme', td() . '/js/theme.js', array('jquery') );
     wp_enqueue_style( 'my-slider-v3', td() . '/css/my-slider-v3.css' );
     wp_enqueue_script( 'my-slider-v3', td() . '/js/my-slider-v3.js', array('jquery') );
+    wp_enqueue_script( 'cookie',            td() . '/js/js.cookie.min.js', array('jquery') );
 });
 
 
@@ -87,4 +90,13 @@ function trim_greeting( $str ) {
     $str = stripslashes($str);
     $str = strip_tags($str);
     return $str;
+}
+
+function _text($str) {
+    echo "
+<div class='translate-text'><span class='dashicons dashicons-welcome-write-blog'></span>
+$str
+</div>
+";
+
 }

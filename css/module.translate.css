@@ -1,0 +1,24 @@
+.translate-text {
+    position: relative;
+    display: block;
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+
+.translate-text:hover {
+    border: 1px solid red;
+    cursor: pointer;
+}
+
+.translate-text .dashicons-welcome-write-blog {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.translate-text:hover .dashicons-welcome-write-blog {
+    display: block;
+}

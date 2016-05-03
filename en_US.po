@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: X5 Withcenter LMS Theme\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: Tue Apr 12 2016 22:17:24 GMT+0900 (Korea Standard Time)\n"
-"PO-Revision-Date: Tue Apr 26 2016 20:13:04 GMT+0900 (Korea Standard Time)\n"
+"PO-Revision-Date: Tue May 03 2016 17:27:59 GMT+0900 (Korea Standard Time)\n"
 "Last-Translator: admin <thruthesky@gmail.com>\n"
 "Language-Team: \n"
 "Language: English\n"
@@ -46,8 +46,9 @@ msgid "ADMIN"
 msgstr ""
 
 #: header.php:53
-msgid "PROFILE UPDATE"
-msgstr ""
+#, php-format
+msgid "%s PROFILE UPDATE"
+msgstr "Welcome, %s ( Profile update )"
 
 #: header.php:58
 msgid "LOGIN"
@@ -97,6 +98,18 @@ msgstr ""
 msgid "Close"
 msgstr ""
 
+#: help.php:32 /part/help-content2.php:6
+msgid "Company Information"
+msgstr ""
+
+#: help.php:35 /part/help-content3.php:6
+msgid "Send an Inquiry"
+msgstr ""
+
+#: help.php:38 /part/help-content4.php:7
+msgid "FAQs"
+msgstr ""
+
 #: menu-all.php:4
 msgid "Discussion"
 msgstr ""
@@ -129,16 +142,20 @@ msgstr ""
 msgid "Class Comment"
 msgstr ""
 
-#: reservation.php:18
-msgid "Class Reservation"
-msgstr ""
-
-#: reservation.php:21
+#: reservation.php:26
 msgid "You have no reservations"
 msgstr ""
 
-#: reservation.php:24
+#: reservation.php:28
 msgid "No. of Reservations"
+msgstr ""
+
+#: reservation.php:31
+msgid "Please login to see your reservation"
+msgstr ""
+
+#: reservation.php:35
+msgid "Class Reservation"
 msgstr ""
 
 #: user-log-in.php:11
@@ -246,12 +263,6 @@ msgstr ""
 #: part/curriculum-content2.php:11
 msgid "Beginner"
 msgstr ""
-
-#: part/curriculum-content2.php:12
-msgid "Description on Beginner 1"
-msgstr ""
-"English Beginner Course<br>\n"
-"Focused on Phonics and Expression."
 
 #: part/curriculum-content2.php:13
 msgid "Level 1"
@@ -473,152 +484,159 @@ msgstr ""
 msgid "English Time"
 msgstr ""
 
-#: part/front-book.php:21 /part/front-book.php:42 /part/front-book.php:52
-#: part/front-book.php:62 /part/front-book.php:107 /part/front-book.php:117
-#: part/front-book.php:153 /part/front-book.php:163 /part/front-book.php:173
-#: part/front-book.php:185 /part/front-book.php:195 /part/front-book.php:205
-#: part/front-book.php:215 /part/front-book.php:225
-msgid ""
-"English Time develops your students' speaking, listening, reading,\n"
-"                                 and writing skills through art, stories, "
-"conversation, and games."
+#: part/front-book.php:21
+msgid "English Time Book Description"
 msgstr ""
 
-#: part/front-book.php:29
+#: part/front-book.php:28
 msgid "Lets"
 msgstr ""
 
-#: part/front-book.php:31
-msgid ""
-"Maximise children’s talking time in class through dialogues, pair work and\n"
-"                                communicative games. This combined with the "
-"rhythm and melody of the acclaimed\n"
-"                                Carolyn Graham songs makes the language "
-"memorable."
+#: part/front-book.php:30
+msgid "Lets Book Description"
 msgstr ""
 
-#: part/front-book.php:40
+#: part/front-book.php:37
 msgid "Lets Go"
 msgstr ""
 
-#: part/front-book.php:50
+#: part/front-book.php:39
+msgid "Lets Go Book Description"
+msgstr ""
+
+#: part/front-book.php:46
 msgid "Super Kids"
 msgstr ""
 
-#: part/front-book.php:60
+#: part/front-book.php:48
+msgid "Super Kids Book Description"
+msgstr ""
+
+#: part/front-book.php:55
 msgid "Reading Cue Plus+"
 msgstr ""
 
-#: part/front-book.php:72
+#: part/front-book.php:57
+msgid "Reading Cue Plus+ Book Description"
+msgstr ""
+
+#: part/front-book.php:66
 msgid "Reading Cue"
 msgstr ""
 
-#: part/front-book.php:74
-msgid ""
-"This series helps student to build their vocabulary and to develop their "
-"reading\n"
-"                                skills and strategies, while they read level-"
-"appropriate reading passages."
+#: part/front-book.php:68
+msgid "Reading Cue Book Description"
 msgstr ""
 
-#: part/front-book.php:82
+#: part/front-book.php:75
 msgid "Bricks Reading"
 msgstr ""
 
-#: part/front-book.php:84
-msgid ""
-"Offers interesting and informative theme-based\n"
-"                                units with various format and genres: "
-"fiction, nonfiction, letters, news articles,\n"
-"                                journals, plus more. The formats are "
-"designed to optimize understanding of the reading\n"
-"                                contents."
+#: part/front-book.php:77
+msgid "Bricks Reading Book Description"
 msgstr ""
 
-#: part/front-book.php:94
+#: part/front-book.php:84
 msgid "Bricks Reading Beginner"
 msgstr ""
 
-#: part/front-book.php:96
-msgid ""
-"Is a three-leveled reading program that enables beginner learns to build "
-"their\n"
-"                                vocabulary and reading comprehension skill. "
-"It is design for upper-beginner to\n"
-"                                low-intermediate young learners who wants to "
-"be successful readers."
+#: part/front-book.php:86
+msgid "Bricks Reading Beginner Book Description"
 msgstr ""
 
-#: part/front-book.php:105
+#: part/front-book.php:93
 msgid "Grammar in use"
 msgstr ""
 
-#: part/front-book.php:115
+#: part/front-book.php:95
+msgid "Grammar in use Book Description"
+msgstr ""
+
+#: part/front-book.php:102
 msgid "Bricks Reading+"
 msgstr ""
 
-#: part/front-book.php:127
+#: part/front-book.php:104
+msgid "Bricks Reading+ Book Description"
+msgstr ""
+
+#: part/front-book.php:113
 msgid "Chat room for teens"
 msgstr ""
 
-#: part/front-book.php:129
-msgid ""
-"English learners are encourage to express themselves freely on a wide range\n"
-"                                 of relevant topics. Many thought-provoking "
-"question and examples are given\n"
-"                                 to spur independent language usage."
+#: part/front-book.php:115
+msgid "Chat room for teens Book Description"
 msgstr ""
 
-#: part/front-book.php:138
-msgid "Can You Beleive It"
+#: part/front-book.php:122
+msgid "Can You Believe It"
 msgstr ""
 
-#: part/front-book.php:140
-msgid ""
-"Is a three-level reading series that combines highly unusual news stories "
-"with\n"
-"                                high-frequency idioms, phrasal verbs, and "
-"fixed expressions.\n"
-"                                Students read and listen to a story (which "
-"progresses in length and difficulty\n"
-"                                throughout each text) as they look at a "
-"sequence of comic-strip\n"
-"                                style illustrations. "
+#: part/front-book.php:124
+msgid "Can You Believe It Book Description"
 msgstr ""
 
-#: part/front-book.php:151
+#: part/front-book.php:131
 msgid "What a World"
 msgstr ""
 
-#: part/front-book.php:161
+#: part/front-book.php:133
+msgid "What a World Book Description"
+msgstr ""
+
+#: part/front-book.php:140
 msgid "Side by Side"
 msgstr ""
 
-#: part/front-book.php:171
+#: part/front-book.php:142
+msgid "Side by Side Book Description"
+msgstr ""
+
+#: part/front-book.php:149
 msgid "Super Reading Training Book"
 msgstr ""
 
-#: part/front-book.php:183
+#: part/front-book.php:151
+msgid "Super Reading Training Book Book Description"
+msgstr ""
+
+#: part/front-book.php:160
 msgid "NEAT"
 msgstr ""
 
-#: part/front-book.php:193
+#: part/front-book.php:162
+msgid "NEAT Book Description."
+msgstr ""
+
+#: part/front-book.php:169
 msgid "Thoughts & Notions"
 msgstr ""
 
-#: part/front-book.php:203
+#: part/front-book.php:171
+msgid "Thoughts & Notions Book Description"
+msgstr ""
+
+#: part/front-book.php:178
 msgid "Communication in Business"
 msgstr ""
 
-#: part/front-book.php:213
+#: part/front-book.php:180
+msgid "Communication in Business Book Description"
+msgstr ""
+
+#: part/front-book.php:187
 msgid "Smart Phonics"
 msgstr ""
 
-#: part/front-book.php:223
+#: part/front-book.php:189
+msgid "Smart Phonics Book Description"
+msgstr ""
+
+#: part/front-book.php:196 /part/front-book.php:198
 msgid "Discover Debate"
 msgstr ""
 
-#: part/front-book.php:236
+#: part/front-book.php:208
 msgid "LOAD MORE"
 msgstr ""
 
@@ -813,20 +831,132 @@ msgid ""
 "                                encouraging cultural mix between students."
 msgstr ""
 
-#: part/help-content1.php:6
+#: part/help-content1.php:7
 msgid "Help"
 msgstr ""
 
-#: part/help-content2.php:6
-msgid "Company Information"
+#: part/help-content2.php:11
+msgid "Address:"
 msgstr ""
 
-#: part/help-content3.php:6
-msgid "Send an Inquiry"
+#: part/help-content2.php:12
+msgid "hlpC2-Address will be place here"
 msgstr ""
 
-#: part/help-content4.php:6
-msgid "FAQs"
+#: part/help-content2.php:15
+msgid "Office Tel. No.:"
+msgstr ""
+
+#: part/help-content2.php:16
+msgid "hlpC2-Tel. No. will be place here"
+msgstr ""
+
+#: part/help-content2.php:19
+msgid "Email:"
+msgstr ""
+
+#: part/help-content2.php:20
+msgid "hlpC2-Email will be place here"
+msgstr ""
+
+#: part/help-content2.php:23
+msgid "Skype:"
+msgstr ""
+
+#: part/help-content2.php:24
+msgid "hlpC2-Skype ID will be place here"
+msgstr ""
+
+#: part/help-content2.php:27
+msgid "Kakao Talk:"
+msgstr ""
+
+#: part/help-content2.php:28
+msgid "hlpC2-Kakao ID will be place here"
+msgstr ""
+
+#: part/help-content2.php:32
+msgid "Manager's Name"
+msgstr ""
+
+#: part/help-content2.php:33
+msgid "hlpC2-Manager's Name will be place here"
+msgstr ""
+
+#: part/help-content3.php:9
+msgid "Name"
+msgstr ""
+
+#: part/help-content3.php:11
+msgid "Name..."
+msgstr ""
+
+#: part/help-content3.php:15
+msgid "Email"
+msgstr ""
+
+#: part/help-content3.php:17
+msgid "Email Address..."
+msgstr ""
+
+#: part/help-content3.php:21
+msgid "Phone"
+msgstr ""
+
+#: part/help-content3.php:23
+msgid "Phone Number..."
+msgstr ""
+
+#: part/help-content3.php:27
+msgid "Message"
+msgstr ""
+
+#: part/help-content3.php:29
+msgid "Enter your inquiry here..."
+msgstr ""
+
+#: part/help-content3.php:34
+msgid "Send"
+msgstr ""
+
+#: part/help-content4.php:11
+msgid "hlpC4-FAQ1 will be place here"
+msgstr ""
+
+#: part/help-content4.php:12
+msgid "hlpC4-FAQ1 Answer will be place here"
+msgstr ""
+
+#: part/help-content4.php:17
+msgid "hlpC4-FAQ2 will be place here"
+msgstr ""
+
+#: part/help-content4.php:18
+msgid "hlpC4-FAQ2 Answer will be place here"
+msgstr ""
+
+#: part/help-content4.php:23
+msgid "hlpC4-FAQ3 will be place here"
+msgstr ""
+
+#: part/help-content4.php:24
+msgid "hlpC4-FAQ3 Answer will be place here"
+msgstr ""
+
+#: part/help-content4.php:29
+msgid "hlpC4-FAQ4 will be place here"
+msgstr ""
+
+#: part/help-content4.php:30
+msgid "hlpC4-FAQ4 Answer will be place here"
+msgstr ""
+
+#: part/help-content4.php:35
+msgid "hlpC4-FAQ5 will be place here"
+msgstr ""
+
+#: part/help-content4.php:36
+msgid "hlpC4-FAQ5 Answer will be place here"
 msgstr ""
 
 #: part/level-test-content1.php:6
@@ -882,3 +1012,9 @@ msgstr ""
 #. Name of the theme
 msgid "X5 Withcenter LMS Theme"
 msgstr ""
+
+#: part/curriculum-content2.php:12
+msgid "Description on Beginner 1"
+msgstr ""
+"English Beginner Course<br>\n"
+"Focused on Phonics and Expression."
