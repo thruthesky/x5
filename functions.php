@@ -117,9 +117,11 @@ function _text($str) {
     $domain = get_opt('lms[domain]', 'default');
     $option_name = $domain . ':' . md5($str);
     $data = get_option( $option_name );
-    if ( empty($data) || empty($data['content']) ) $str = $org;
+    if ( empty($data) ) $str = $org;
     else {
-        $str = $data['content'];
+        $content = trim($data['content']);
+        if ( empty($content) ) $str = $org;
+        else $str = $data['content'];
     }
 
     // Do not strip HTML Tags since admin only can edit the text.
