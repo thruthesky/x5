@@ -30,36 +30,43 @@
 
             ?>
             <div class="logo">
-                <a href="<?php echo home_url()?>">
-                    <img src="<?php opt('lms[logo]', img() . 'logo.jpg')?>">
-                    <div class="title"><?php opt('lms[company_name]')?></div>
-                </a>
+                <a href="<?php echo home_url()?>"><img src="<?php opt('lms[logo]', img() . 'logo.jpg')?>"></a>
+                <div class="title"><a href="<?php echo home_url()?>"><?php _text('Company Name')?></a></div>
             </div>
             <nav class="top-menu">
                 <ul>
                     <li>
                         <a class="icon" >
-                        <span class="dashicons dashicons-menu menu-icon"></span>
+                            <span class="dashicons dashicons-menu menu-icon"></span>
                         </a>
                     </li>
-                    <li class="<?php if ( seg(0) == 'user-log-in' ) echo 'active'; ?>">
-                        <?php if ( user()->login() ) : ?>
-                            <?php if ( user()->admin() ) : ?>
+
+
+                    <?php if ( user()->login() ) : ?>
+                        <?php if ( user()->admin() ) : ?>
+                            <li class="<?php if ( seg(0) == 'user-log-in' ) echo 'active'; ?>">
+
                                 <a href="<?php hd()?>wp-admin">
                                     <span><?php _e('ADMIN', 'x5')?></span>
-                                </a>
-                            <?php else : ?>
-                                <a href="<?php hd()?>user-update">
-                                    <span><?php _e('PROFILE UPDATE', 'x5')?></span>
-                                </a>
-                            <?php endif ?>
+                                </a></li>
+                            <li><span class="site-edit"><?php _e('EDIT', 'x5')?></span></li>
                         <?php else : ?>
-                            <a href="<?php hd()?>user-log-in">
-                                <span><?php _e('LOGIN', 'x5')?></span>
-                            </a>
+                            <li>
+                                <a href="<?php hd()?>user-update">
+                                    <span><?php printf(__('%s PROFILE UPDATE', 'x5'), login('user_login'))?></span>
+                                </a>
+                            </li>
+                        <?php endif ?>
+                    <?php else : ?>
+                    <li>
+                        <a href="<?php hd()?>user-log-in">
+                            <span><?php _e('LOGIN', 'x5')?></span>
+                        </a>
+
                         <?php endif ?>
                     </li>
                     <li class="<?php if ( seg(0) == 'user-register' ) echo 'active'; ?>">
+
                         <?php if ( user()->login() ) : ?>
                             <a href="<?php echo wp_logout_url( home_url() ); ?>">
                                 <span><?php _e('LOGOUT', 'x5')?></span>

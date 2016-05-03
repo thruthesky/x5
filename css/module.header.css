@@ -5,14 +5,14 @@ header {
 }
 
 /** Logo */
-header .logo{
+header .logo {
     display: inline-block;
     height: 100%;
     padding-top: 30px;
 }
 
 header .logo a {
-    display: flex;
+
     text-decoration: none;
 }
 
@@ -22,6 +22,7 @@ header .logo img {
 }
 
 header .logo .title {
+    display: inline;
     padding-left: 1.25rem;
     font-family: "Malgun Gothic", "AppleGothic", "Gulim", serif;
     font-weight: bold;
@@ -91,8 +92,9 @@ nav.top-menu ul li a:hover {
    /*border-bottom: 0.125rem solid #b0acac;*/
 }
 
-nav.top-menu ul li a span {
+nav.top-menu ul li span {
   font-size: 0.8125em;
+    cursor: pointer;
 }
 
 nav.top-menu ul li a.icon {
@@ -222,4 +224,9 @@ header .menu ul li.active a:hover {
 
 
 
+/** site edit */
+.site-edit-enabled {
+    color: orangered;
+    font-weight: 700;
+}
 
