@@ -35,24 +35,24 @@ jQuery(function($) {
     $site_edit.click(function(){
         console.log(Cookies.get('site-edit'));
         if ( Cookies.get('site-edit') == 'Y' ) { // do not edit.
-            $site_edit.removeClass('site-edit-enabled');
+            //$site_edit.removeClass('site-edit-enabled');
             Cookies.set('site-edit', 'N');
-            $('.translate-text').addClass('translate-text-disabled');
-            $('.translate-text').removeClass('translate-text');
-
+            //$('.translate-text').addClass('translate-text-disabled');
+            //$('.translate-text').removeClass('translate-text');
         }
         else { // let's edit now.
             Cookies.set('site-edit', 'Y');
-            $(this).addClass('site-edit-enabled');
-            $('.translate-text-disabled').addClass('translate-text');
-            $('.translate-text-disabled').removeClass('translate-text-disabled');
+            //$(this).addClass('site-edit-enabled');
+            //$('.translate-text-disabled').addClass('translate-text');
+            //$('.translate-text-disabled').removeClass('translate-text-disabled');
+
         }
+        location.reload();
     });
     if ( Cookies.get('site-edit') == 'Y' ) {
         $site_edit.addClass('site-edit-enabled');
     }
     else {
-
         $('.translate-text').addClass('translate-text-disabled');
         $('.translate-text').removeClass('translate-text');
     }
