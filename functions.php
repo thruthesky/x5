@@ -13,9 +13,6 @@ if ( ! defined('ABC_LIBRARY') ) {
 }
 
 
-
-
-
 /*
 
 add_action('init', function() {``
@@ -71,7 +68,8 @@ abc()->registerRoute(
         'teacher-list',
         'reservation',
         'past',
-        'help'
+        'help',
+        'feedback'
     ]
 );
 

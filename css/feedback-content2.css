@@ -1,0 +1,107 @@
+section .feedback.content-two {
+    background-color: #f7f7f7;
+}
+
+section .feedback.content-two .row {
+    position: relative;
+    padding: 100px 0 100px;
+}
+
+
+section .feedback.content-two .inner {
+    height: 200px;
+    overflow-y: hidden;
+    margin-bottom: 25px;
+}
+
+section .feedback.content-two .inner .picture img {
+    border-radius: 100%;
+}
+
+section .feedback.content-two .inner .picture {
+    width: 50px;
+    height: 50px;
+    margin-bottom: 12px;
+}
+
+/* start of inner design 1*/
+section .feedback.content-two .inner.des1 .picture,
+section .feedback.content-two .inner.des1 .name {
+    display: inline-block;
+    border: 0;
+}
+
+section .feedback.content-two .inner.des1 .name {
+    padding-left: 20px;
+    font-size: 18px;
+    font-weight: 700;
+    color: #485869;
+}
+
+section .feedback.content-two .inner.des1 .comment.text {
+    padding-left: 70px;
+    font-size: 18px;
+    color: #2d2d2d;
+}
+/*EO design 1*/
+
+/* start of inner design 2*/
+
+section .feedback.content-two .inner.des2 {
+    border-top: 1px solid #b8b8b8;
+}
+
+section .feedback.content-two .inner.des2 .picture {
+    margin-top: 20px;
+}
+
+section .feedback.content-two .inner.des2 .picture,
+section .feedback.content-two .inner.des2 .name {
+    display: inline-block;
+    border: 0;
+}
+
+
+section .feedback.content-two .inner.des2 .name {
+    padding-left: 20px;
+    font-size: 18px;
+    font-weight: 700;
+    color: #485869;
+}
+
+section .feedback.content-two .inner.des2 .comment.text {
+    padding-left: 70px;
+    color: #2d2d2d;
+}
+/*EO design 2*/
+
+/* start of inner design 6*/
+section .feedback.content-two .inner.des6 {
+    background-color: #edf3f4;
+}
+
+section .feedback.content-two .inner.des6 .cover {
+    margin-bottom: 10px;
+    height: 70px;
+    background-color: #c8efef;
+}
+section .feedback.content-two .inner.des6 .picture,
+section .feedback.content-two .inner.des6 .name {
+    display: inline-block;
+    border: 0;
+}
+
+
+section .feedback.content-two .inner.des6 .name {
+    padding-left: 20px;
+    font-size: 18px;
+    font-weight: 700;
+    color: #485869;
+}
+
+section .feedback.content-two .inner.des6 .comment.text {
+    padding: 0 30px 10px;
+    text-align: center;
+    color: #2d2d2d;
+}
+/*EO design 6*/
