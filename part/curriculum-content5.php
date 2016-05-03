@@ -3,10 +3,10 @@ wp_enqueue_style('curriculum-content5', td() . '/css/curriculum-content5.css');
 ?>
 <section class="curriculum content-five">
     <div>
-        <h2>서적</h2>
+        <h2><?php _e('Curr-C5 Banner Content', 'x5')?></h2>
         <div class="desc">
-            <?php _e('전 세계적으로 가장 많이 쓰이는 교재는 렛츠고, 사이드 바이 사이드, 그리고 뉴<br>
-            인터체인지가 있는데 이러한 교재는 대한민국 뿐만아니라 전 세계 어느 나라에서든', 'x5')?>
+            <?php _e('Curr-C5 Description will be place here. You can use HTML to decorate on the text.
+            Try to use p, br, b, i tags. You can also input CSS and Javascript on this paragraph.', 'x5')?>
         </div>
     </div>
 </section>

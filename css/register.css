@@ -3,7 +3,7 @@ section .register > div {
     margin: 0 auto;
     max-width: 980px;
 }
-section h2 {
+section .register h2 {
     padding-top: 20px;
 }
 section .register .submit input {

@@ -6,7 +6,7 @@ wp_enqueue_style('enrollment-content2', td() . '/css/enrollment-content2.css');
 <section class="enrollment content-two">
     <div>
         <form action="">
-            <h2><?php _e('오늘 등록하고 무료 평가판을 얻을!', 'x5')?></h2>
+            <h2><?php _e('Enr-C2 Header Title', 'x5')?></h2>
             <div class="content row">
                 <div class="col-sm-4">
                     <div class="cover">
@@ -58,15 +58,15 @@ wp_enqueue_style('enrollment-content2', td() . '/css/enrollment-content2.css');
             <div class="summary">
                 <div class="row">
                     <div class="result time col-sm-4">
-                        <label><?php _e('오늘 등록하고', 'x5')?></label>
+                        <label><?php _e('Enr-C2 Selected Minutes', 'x5')?></label>
                         <label><?php _e('20mins', 'x5')?></label>
                     </div>
                     <div class="result month col-sm-4">
-                        <label><?php _e('오늘 등록하고', 'x5')?></label>
+                        <label><?php _e('Enr-C2 Selected Month', 'x5')?></label>
                         <label><?php _e('1month', 'x5')?></label>
                     </div>
                     <div class="result day col-sm-4">
-                        <label><?php _e('오늘 등록하고', 'x5')?></label>
+                        <label><?php _e('Enr-C2 Selected Day', 'x5')?></label>
                         <label><?php _e('Monday-Friday', 'x5')?></label>
                     </div>
                 </div>

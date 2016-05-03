@@ -7,7 +7,7 @@ section .help.content-three h2 {
     margin-top: 72px;
     margin-bottom: 26px;
     font-size: 34px;
-    color: #897562;
+    color: #5a6a62;
 }
 
 section .help.content-three form {
@@ -51,18 +51,19 @@ section .help.content-three input[tabindex="101"] {
     padding: 7px;
     width: 100%;
     border-radius: 5px;
-    border: 1px solid #c6c6c6;
+    border: 0 solid #c6c6c6;
 }
 
 section .help.content-three .submit input {
     float: right;
     display:block;
-    padding: 12px 45px;
+    padding: 9px 34px;
     border: 0;
-    border-radius: 5px;
+    border-radius: 2px;
+    height: 42px;
+    width: 120px;
     color: #FFFFFF;
-    font-weight: bold;
-    background-color: #3598dc;
+    background-color: #ff6633;
     margin-right: 5px;
 }
 

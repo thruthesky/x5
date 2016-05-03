@@ -1,45 +1,49 @@
 section .level-test.content-one {
-    background: url("../img/level_test_banner1.png") no-repeat;
+    background: url("../img/level-test-banner1.jpg") no-repeat;
     background-size: cover;
     background-position: center center;
-    height: 338px;
-}
-
-section .level-test.content-one div {
-    text-align: center;
+    height: 240px;
 }
 
 section .level-test.content-one h2 {
-    position: relative;
-    display: inline-block;
+    font-size: 53px;
     color: #FFFFFF;
-    font-size: 32px;
-    text-align: center;
-    margin: 73px 0 18px;
 }
 
 section .level-test.content-one .desc {
-    position: relative;
+    margin-left: 5px;
+    font-size: 24px;
     color: #FFFFFF;
-    text-align: center;
-    margin: 0;
-    font-size: 18px;
-    line-height: 27px;
-    margin-bottom: 47px;
 }
 
-section .level-test.content-one .button {
+section .level-test.content-one .banner.img1 {
     position: relative;
+    float: left;
     display: inline-block;
-    margin:  0 15px;
-    width: 260px;
-    border-radius: 5px;
-    background-color: #f46515;
+    margin-top: 18px;
+    max-width: 369px;
+    width: 100%;
+    height: auto;
 }
 
-section .level-test.content-one .button a {
-    display: block;
-    color: #fff;
-    font-size: 18px;
-    padding: 10px;
+section .level-test.content-one .banner.text {
+    position: absolute;
+    float: right;
+    display: inline-block;
+    margin-top: 55px;
+    width: 290px;
+    right: 300px;
+}
+
+section .level-test.content-one .img2 {
+    position: absolute;
+    right: 5px;
+    float: right;
+    height: 240px;
+}
+
+section .level-test.content-one .img2 img{
+    position: absolute;
+    bottom: 0;
+    right: 0;
 }
