@@ -55,6 +55,7 @@ add_action( 'wp_enqueue_scripts', function () {
 
 
 
+
 add_action('after_setup_theme', function () {
     if ( function_exists('remove_admin_bar') ) remove_admin_bar(true);
     load_theme_textdomain('x5', get_template_directory());
@@ -92,11 +93,47 @@ function trim_greeting( $str ) {
     return $str;
 }
 
+
+
+if ( user()->admin() ) {
+    if ( isset($_GET['translate_text'] ) && $_GET['translate_text'] == 'Y' ) {
+        $org = $_GET['original_text'];
+        $content = stripslashes($_GET['content']);
+        $option_name = $_GET['code'];
+
+        delete_option( $option_name );
+        add_option( $option_name, ['original_text' => $org, 'content' => $content] );
+
+        wp_send_json_success([
+            'original_text' => $org,
+            'content' => $content,
+        ]);
+    }
+}
+
+
 function _text($str) {
-    echo "
-<div class='translate-text'><span class='dashicons dashicons-welcome-write-blog'></span>
-$str
+    $org = esc_html($str);
+    $domain = get_opt('lms[domain]', 'default');
+    $option_name = $domain . ':' . md5($str);
+    $data = get_option( $option_name );
+    if ( empty($data) || empty($data['content']) ) $str = $org;
+    else {
+        $str = $data['content'];
+    }
+
+    // Do not strip HTML Tags since admin only can edit the text.
+    // $str = strip_tags( $str, '<p><div><br><i><b><table><tr><th><td><a><hr>' );
+
+    if ( ! user()->admin() ) {
+        echo $str;
+    }
+    else {
+        echo "
+<div class='translate-text' original-text='$org' code='$option_name'><span class='dashicons dashicons-welcome-write-blog'></span>
+<div class='html-content'>$str</div>
 </div>
 ";
-
+    }
 }
+
