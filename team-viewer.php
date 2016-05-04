@@ -1,1 +1,5 @@
-<h1>Team Viewer</h1>
+<?php
+get_header();
+include 'part/team-viewer-content1.php';
+include 'part/team-viewer-content2.php';
+get_footer();

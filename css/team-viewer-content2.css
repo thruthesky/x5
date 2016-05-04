@@ -1,0 +1,63 @@
+section .team-viewer.content-two {
+    min-height: 300px;
+    background-color: #FFFFFF;
+}
+
+section .team-viewer.content-two .row {
+    margin: 140px 0 100px;
+}
+
+
+section .team-viewer.content-two .left {
+    font-family: "Arial", "Open Sans", sans-serif;
+    color: #858585;
+    margin-left: 46px;
+}
+
+section .team-viewer.content-two p.left {
+    margin-bottom: 30px;
+    font-family: "Arial", "Open Sans", sans-serif;
+    color: #656565;
+    text-align: justify;
+}
+
+section .team-viewer.content-two .btn.left {
+    margin: 0 0 25px 46px;
+    padding: 0;
+    display: block;
+    text-align: center;
+}
+
+section .team-viewer.content-two .left .download-tv {
+    padding: 15px 20px;
+    border-radius: 5px;
+    font-size: 23px;
+    color: #FFFFFF;
+    background-color: #96c322;
+    font-family: "Arial", "Open Sans", sans-serif;
+}
+
+section .team-viewer.content-two .left.version {
+    font-size: 18px;
+    margin-bottom: 38px;
+}
+
+section .team-viewer.content-two .left.new {
+    font-size: 18px;
+    padding-bottom: 5px;
+    margin-bottom: 30px;
+}
+
+section .team-viewer.content-two .left.log {
+    font-size: 18px;
+}
+
+
+section .team-viewer .row . img {
+    width: 100%;
+    height: auto;
+}
+
+section .team-viewer .content.row > div.col-sm-4 {
+    padding: 0;
+}

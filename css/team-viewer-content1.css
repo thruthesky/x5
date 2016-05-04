@@ -1,0 +1,45 @@
+section .team-viewer.content-one {
+    background: url("../img/team-viewer-banner1.jpg") no-repeat;
+    background-size: cover;
+    background-position: center center;
+    background-color: #0280db;
+    height: 240px;
+}
+
+
+section .team-viewer.content-one h2 {
+    display: inline-block;
+    margin-bottom: 18px;
+    font-size: 53px;
+    color: #FFFFFF;
+    width: 600px;
+}
+
+
+section .team-viewer.content-one .desc {
+    display: inline-block;
+    padding-left: 7px;
+    font-size: 24px;
+    color: #FFFFFF;
+}
+
+section .team-viewer.content-one .banner {
+    position: absolute;
+    display: inline-block;
+    float: left;
+    width: 600px;
+    margin-top: 50px;
+}
+
+section .team-viewer.content-one .img1 {
+    position: absolute;
+    right: 5px;
+    float: right;
+    height: 240px;
+}
+
+section .team-viewer.content-one .img1 img{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}

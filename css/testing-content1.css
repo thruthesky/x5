@@ -1,0 +1,45 @@
+section .testing.content-one {
+    background: url("../img/testing-banner1.jpg") no-repeat;
+    background-size: cover;
+    background-position: center center;
+    background-color: #81d4dc;
+    height: 240px;
+}
+
+
+section .testing.content-one h2 {
+    display: inline-block;
+    margin-bottom: 18px;
+    font-size: 46px;
+    color: #FFFFFF;
+    width: 600px;
+}
+
+
+section .testing.content-one .desc {
+    display: inline-block;
+    padding-left: 7px;
+    font-size: 20px;
+    color: #FFFFFF;
+}
+
+section .testing.content-one .banner {
+    position: absolute;
+    display: inline-block;
+    float: left;
+    width: 600px;
+    margin-top: 50px;
+}
+
+section .testing.content-one .img1 {
+    position: absolute;
+    right: 5px;
+    float: right;
+    height: 240px;
+}
+
+section .testing.content-one .img1 img{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}

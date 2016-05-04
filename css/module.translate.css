@@ -1,6 +1,11 @@
 .translate-text-disabled .edit {
     display: none;
 }
+
+.translate-text-disabled {
+    display: inline-block;
+}
+
 .translate-text-disabled .dashicons-welcome-write-blog {
     display: none;
 }
