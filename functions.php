@@ -73,7 +73,11 @@ abc()->registerRoute(
         'reservation',
         'past',
         'help',
-        'feedback'
+        'feedback',
+        'skype',
+        've',
+        'testing',
+        'team-viewer',
     ]
 );
 

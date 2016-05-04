@@ -6,12 +6,11 @@
 }
 .translate-text {
     position: relative;
-    display: inline;
+    display: inline-block;
     margin: 0;
     padding: 0;
     border: 0;
 }
-
 
 .translate-text:hover {
     border: 1px solid red;
@@ -31,12 +30,14 @@
     display: block;
 }
 
+
 .translate-text .edit {
     position: absolute;
     z-index: 987654321;
     left: 0;
     right: 0;
 }
+
 
 .translate-text .edit textarea {
     display: block;
