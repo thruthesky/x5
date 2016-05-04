@@ -7,43 +7,43 @@ wp_enqueue_style('sitemap-content2', td() . '/css/sitemap-content2.css');
             <div class="col-sm-4">
                 <div class="cover">
                     <img src="<?php img_e() ?>sitemap-icon-login.jpg">
-                    <div class="text login">Login</div>
+                    <div class="text login"><a href="<?php echo home_url()?>/user-log-in">Login</a></div>
                 </div>
                 <div class="cover">
                     <img src="<?php img_e() ?>sitemap-icon-aboutus.jpg">
-                    <div class="text all">About Us</div>
+                    <div class="text all"><a href="<?php echo home_url()?>/about-us">About Us</a></div>
                 </div>
                 <div class="cover">
                     <img src="<?php img_e() ?>sitemap-icon-curriculum.jpg">
-                    <div class="text all">Curriculum</div>
+                    <div class="text all"><a href="<?php echo home_url()?>/curriculum">Curriculum</a></div>
                 </div>
             </div>
             <div class="col-sm-4">
                 <div class="cover">
                     <img src="<?php img_e() ?>sitemap-icon-register.jpg">
-                    <div class="text register">Register</div>
+                    <div class="text register"><a href="<?php echo home_url()?>/user-register">Register</a></div>
                 </div>
                 <div class="cover">
                     <img src="<?php img_e() ?>sitemap-icon-leveltest.jpg">
-                    <div class="text all">Level Test</div>
+                    <div class="text all"><a href="<?php echo home_url()?>/level-test">Level Test</a></div>
                 </div>
                 <div class="cover">
                     <img src="<?php img_e() ?>sitemap-icon-reservation.jpg">
-                    <div class="text all">Reservation</div>
+                    <div class="text all"><a href="<?php echo home_url()?>/reservation">Reservation</a></div>
                 </div>
             </div>
             <div class="col-sm-4">
                 <div class="cover">
                     <img src="<?php img_e() ?>sitemap-icon-help.jpg">
-                    <div class="text help ">Help</div>
+                    <div class="text help "><a href="<?php echo home_url()?>/help">Help</a></div>
                 </div>
                 <div class="cover">
                     <img src="<?php img_e() ?>sitemap-icon-enrollment.jpg">
-                    <div class="text all">Enrollment</div>
+                    <div class="text all"><a href="<?php echo home_url()?>/enrollment">Enrollment</a></div>
                 </div>
                 <div class="cover">
                     <img src="<?php img_e() ?>sitemap-icon-qna.jpg">
-                    <div class="text all">QnA</div>
+                    <div class="text all"><a href="<?php echo home_url()?>/forum/qna">QnA</a></div>
                 </div>
             </div>
         </div>

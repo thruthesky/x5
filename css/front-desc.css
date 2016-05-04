@@ -41,17 +41,12 @@
 }
 
 .home.front .content .data >  .desc div > div.col-sm-3 {
-    border-right: 0.125em solid rgba(52,73,94,.26);
     padding: 1.5625em 1.5625em;
 }
 
-.home.front .content .data >  .desc div > div.col-sm-3:last-child {
-    border-right: none;
-}
 
 .home.front .content .data >  .desc div .text.info {
     margin-bottom: 1.875rem;
-    font-family: "Malgun Gothic", "AppleGothic", "Gulim", serif;
     font-size: 1.375em;
     color: #2c3e50;
 }
