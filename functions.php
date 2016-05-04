@@ -75,7 +75,11 @@ abc()->registerRoute(
         'teacher-list',
         'reservation',
         'past',
-        'help'
+        'help',
+        'skype',
+        've',
+        'testing',
+        'team-viewer',
     ]
 );
 
