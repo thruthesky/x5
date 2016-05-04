@@ -1,0 +1,59 @@
+section .sitemap.content-two {
+
+}
+
+section .sitemap.content-two .row {
+    margin: 50px 0 100px;
+}
+
+
+section .sitemap.content-two .cover {
+    position: relative;
+    height: auto;
+    width: 100px;
+    margin-bottom: 30px;
+}
+
+section .sitemap.content-two .cover img {
+    z-index: 1;
+    position: relative;
+    top: 10px;
+}
+
+section .sitemap.content-two .cover .text {
+    position: absolute;
+    padding: 20px 0 0 60px;
+    top: 0;
+    left: 40px;
+    height: 100px;
+    width: 260px;
+    font-size: 33px;
+    color: #FFFFFF;
+}
+
+section .sitemap.content-two .cover .text.login {
+    background-color: #3498db;
+}
+
+section .sitemap.content-two .cover .text.register {
+    background-color: #1abcb6;
+}
+
+section .sitemap.content-two .cover .text.help {
+    background-color: #2ecc71;
+}
+
+
+section .sitemap.content-two .cover .text.all {
+    color: #454c4d;
+    background-color: #d5e3e6;
+}
+
+
+
+
+
+
+
+
+
