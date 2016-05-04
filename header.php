@@ -27,11 +27,16 @@
     <header>
         <div class="header-inner">
             <?php
-
             ?>
             <div class="logo">
-                <a href="<?php echo home_url()?>"><img src="<?php opt('lms[logo]', img() . 'logo.jpg')?>"></a>
-                <div class="title"><a href="<?php echo home_url()?>"><?php _text('Company Name')?></a></div>
+                <a href="<?php echo home_url()?>">
+                    <img src="<?php opt('lms[logo]', img() . 'logo.jpg')?>">
+                </a>
+                <div class="title">
+                    <a href="<?php echo home_url()?>">
+                        <?php _text('Company Name')?>
+                    </a>
+                </div>
             </div>
             <nav class="top-menu">
                 <ul>
@@ -40,8 +45,6 @@
                             <span class="dashicons dashicons-menu menu-icon"></span>
                         </a>
                     </li>
-
-
                     <?php if ( user()->login() ) : ?>
                         <?php if ( user()->admin() ) : ?>
                             <li class="<?php if ( seg(0) == 'user-log-in' ) echo 'active'; ?>">
