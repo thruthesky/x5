@@ -4,11 +4,8 @@ wp_enqueue_style('level-test-content2', td() . '/css/level-test-content2.css');
 
 
 <section class="level-test content-two">
-    <hr>
     <div>
-
         <h2><?php _text('"Level Test Page" : \'Block 2\' : Title')?></h2>
-
         <div class="content row">
             <div class="col-sm-4">
                 <div class="cover">

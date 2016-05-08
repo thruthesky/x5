@@ -3,14 +3,6 @@ section .level-test.content-two {
     overflow-x: hidden;
 }
 
-section .level-test.content-two hr {
-    position: absolute;
-    top: 625px;
-    left: 0;
-    right: 0;
-    border: 5px solid #dbdbdb;
-}
-
 section .level-test.content-two h2 {
     margin: 100px 20px 66px;
     font-size: 34px;
@@ -48,20 +40,22 @@ section .level-test .content.row .cover .level {
     height: 170px;
     width: 170px;
     border-radius: 100%;
-    border: 10px solid #dbdbdb;
     margin-bottom: 48px;
 }
 
 section .level-test .content.row .cover .level.one {
-    background-color: #37DBD0;
+    border: 2px solid #37a8b3;
+    background-color: #3fc0cc;
 }
 
 section .level-test .content.row .cover .level.two {
-    background-color: #2ECC71;
+    border: 2px solid #29b362;
+    background-color: #2ecc71;
 }
 
 section .level-test .content.row .cover .level.three {
-    background-color: #F75C4C;
+    border: 2px solid #bd483a;
+    background-color: #e74c3c;
 }
 
 
