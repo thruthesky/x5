@@ -17,7 +17,11 @@
 
 
 <body
-    <?php body_class( is_front_page() ? 'front' : '' ); ?>
+    <?php body_class( is_front_page() ? 'front' : '' );
+    if(is_front_page()){
+        echo 'data-spy="scroll" data-target="#nav-link"';
+    }
+    ?>
     <?php if ( segment(0) == 'help' ) echo 'data-spy="scroll" data-target="#nav-link"'; ?>
 >
 
@@ -61,7 +65,7 @@
                             </li>
                         <?php endif ?>
                     <?php else : ?>
-                        <li>
+                        <li class="<?php if ( seg(0) == 'user-log-in' ) echo 'active'; ?>" >
                             <a href="<?php hd()?>user-log-in">
                                 <span><?php _e('LOGIN', 'x5')?></span>
                             </a>

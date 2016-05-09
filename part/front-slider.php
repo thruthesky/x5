@@ -2,36 +2,6 @@
 wp_enqueue_style('front-slider', td() . '/css/front-slider.css');
 //wp_enqueue_script('front-slider', td() . '/js/front-slider.js');
 ?>
-<!-- move this css and html some where appropriate -->
-<style>
-    .scroll-menu {
-        position: fixed;
-        top: 200px;
-        right: 100px;
-        z-index: 200;
-    }
-    .scroll-menu ul {
-        list-style: none;
-        margin: 0;
-        padding: 0;
-        background-color: #c5d3dd;
-        width: 200px;
-    }
-    .scroll-menu ul li {
-        padding: 1em;
-    }
-</style>
-
-<nav class="scroll-menu">
-    <ul>
-        <li>Section 1</li>
-        <li>Section 2</li>
-        <li>Section 3</li>
-        <li>Section 4</li>
-        <li>Section 5</li>
-        <li>Section 6</li>
-    </ul>
-</nav>
 <section class="my-slider">
     <span class="static">
         <img src="<?php img_e()?>/banner/home_slider1.jpg">
