@@ -1,0 +1,36 @@
+section .teachers.content-one {
+    background: url("../img/teacher-list-banner1.png") no-repeat;
+    background-size: cover;
+    background-position: center center;
+    height: 240px;
+}
+
+
+section .teachers.content-one h2 {
+    display: inline-block;
+    margin-bottom: 18px;
+    font-size: 53px;
+    color: #FFFFFF;
+    width: 400px;
+}
+
+section .teachers.content-one .banner {
+    position: absolute;
+    display: inline-block;
+    float: left;
+    width: 400px;
+    margin-top: 75px;
+}
+
+section .teachers.content-one .img1 {
+    position: absolute;
+    right: 5px;
+    float: right;
+    height: 240px;
+}
+
+section .teachers.content-one .img1 img{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}

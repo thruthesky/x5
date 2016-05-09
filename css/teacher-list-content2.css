@@ -1,0 +1,42 @@
+section .teachers.content-two > div {
+    padding: 50px 0;
+}
+section .teachers.content-two .teacher {
+    margin: 1em 0;
+    border: 8px solid #ffffff;
+    background-color: #01d9c1;
+    text-align: center;
+}
+section .teachers.content-two .teacher .photo {
+    overflow: hidden;
+    position: relative;
+    display: inline-block;
+    margin: 30px 0 16px;
+    height: 150px;
+    width: 150px;
+    border: 3px solid #ffffff;
+    border-radius: 100%;
+}
+section .teachers.content-two .teacher .text {
+    text-align: left;
+    font-size: 1em;
+    margin-left: 30px;
+    margin-bottom: 10px;
+}
+
+section .teachers.content-two .teacher .major.text {
+    height: 48px;
+}
+section .teachers.content-two .teacher .photo img {
+    width: 150px;
+    height: auto;
+}
+section .teachers.content-two .teacher .greeting {
+    height: 240px;
+    overflow-y: hidden;
+}
+section .teachers.content-two .teacher .youtube iframe {
+    width: 256px;
+    height: 170px;
+    margin-bottom: 30px;
+}

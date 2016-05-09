@@ -49,8 +49,9 @@ wp_enqueue_style('sitemap-content2', td() . '/css/sitemap-content2.css');
         </div>
 
     </div>
+</section>
 
-    <!--p>Profile Update / Logout<br>
+<!--p>Profile Update / Logout<br>
     About us, Level Test, Enrollment, Curriculum, Reservation,
     <a href="<?php hd()?>forum/qna"><?php _e('QnA', 'x5')?></a>,
     <a href="<?php hd()?>forum/discussion"><?php _e('Discussion', 'x5')?></a>,
@@ -61,4 +62,3 @@ wp_enqueue_style('sitemap-content2', td() . '/css/sitemap-content2.css');
     <a href="<?php hd()?>reservation">Reservation</a><br>
     <a href="<?php hd()?>past">Past Class</a><br>
     </p-->
-</section>

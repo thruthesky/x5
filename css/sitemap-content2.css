@@ -8,8 +8,6 @@ section .sitemap.content-two .row {
 
 section .sitemap.content-two .cover {
     position: relative;
-    height: auto;
-    width: 100px;
     margin-bottom: 50px;
 }
 
@@ -38,19 +36,19 @@ section .sitemap.content-two .cover .text a:hover {
     text-decoration: none;
 }
 
-section .sitemap.content-two .cover .text.login a {
+section .sitemap.content-two .cover .text.login  {
     background-color: #3498db;
 }
 
-section .sitemap.content-two .cover .text.register a {
+section .sitemap.content-two .cover .text.register  {
     background-color: #1abcb6;
 }
 
-section .sitemap.content-two .cover .text.help a {
+section .sitemap.content-two .cover .text.help  {
     background-color: #2ecc71;
 }
 
-section .sitemap.content-two .cover .text.all a {
+section .sitemap.content-two .cover .text.all  {
     color: #454c4d;
     background-color: #d5e3e6;
 }
