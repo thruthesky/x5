@@ -48,6 +48,7 @@ add_action( 'wp_enqueue_scripts', function () {
     wp_enqueue_style( 'my-slider-v3', td() . '/css/my-slider-v3.css' );
     wp_enqueue_script( 'my-slider-v3', td() . '/js/my-slider-v3.js', array('jquery') );
     wp_enqueue_script( 'cookie',            td() . '/js/js.cookie.min.js', array('jquery') );
+    wp_enqueue_script( 'translate',        td() . '/js/translate.js', array('jquery') );
 });
 
 
@@ -98,27 +99,37 @@ function trim_greeting( $str ) {
 
 
 if ( user()->admin() ) {
-    if ( isset($_GET['translate_text'] ) && $_GET['translate_text'] == 'Y' ) {
+    if ( isset($_GET['code'] ) && isset($_GET['original_text']) ) {
         $org = $_GET['original_text'];
         $content = stripslashes($_GET['content']);
         $option_name = $_GET['code'];
+        //di($option_name);
 
         delete_option( $option_name );
         add_option( $option_name, ['original_text' => $org, 'content' => $content] );
 
+        /*
         wp_send_json_success([
             'original_text' => $org,
             'content' => $content,
         ]);
+        exit;
+        */
     }
 }
 
 
+/**
+ * Admin can only edit the text. so it lets the admin to use css and javascript.
+ * @param $str
+ * @return void
+ */
 function _text($str) {
-    $org = esc_html($str);
+    $md5 = md5($str);
     $domain = get_opt('lms[domain]', 'default');
-    $option_name = $domain . ':' . md5($str);
+    $option_name = 'translation-' . $domain . '-' . $md5;
     $data = get_option( $option_name );
+    $org = esc_html($str);
     if ( empty($data) ) $str = $org;
     else {
         $content = trim($data['content']);
@@ -126,18 +137,16 @@ function _text($str) {
         else $str = $data['content'];
     }
 
-    // Do not strip HTML Tags since admin only can edit the text.
-    // $str = strip_tags( $str, '<p><div><br><i><b><table><tr><th><td><a><hr>' );
-
-    if ( ! user()->admin() ) {
+    if ( !isset($_COOKIE['site-edit']) || $_COOKIE['site-edit'] != 'Y' || ! user()->admin() ) {
         echo $str;
     }
     else {
         echo "
-<div class='translate-text' original-text='$org' code='$option_name'><span class='dashicons dashicons-welcome-write-blog'></span>
+<div class='translate-text' md5='$md5' original-text='$org' code='$option_name'><span class='dashicons dashicons-welcome-write-blog'></span>
 <div class='html-content'>$str</div>
 </div>
 ";
     }
+
 }
 

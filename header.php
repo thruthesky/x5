@@ -61,33 +61,33 @@
                             </li>
                         <?php endif ?>
                     <?php else : ?>
-                    <li>
-                        <a href="<?php hd()?>user-log-in">
-                            <span><?php _e('LOGIN', 'x5')?></span>
-                        </a>
+                        <li>
+                            <a href="<?php hd()?>user-log-in">
+                                <span><?php _e('LOGIN', 'x5')?></span>
+                            </a>
 
-                        <?php endif ?>
-                    </li>
+                        </li>
+                    <?php endif ?>
                     <li class="<?php if ( seg(0) == 'user-register' ) echo 'active'; ?>">
 
                         <?php if ( user()->login() ) : ?>
                             <a href="<?php echo wp_logout_url( home_url() ); ?>">
-                                <span><?php _e('LOGOUT', 'x5')?></span>
+                                <span><?php _text('LOGOUT')?></span>
                             </a>
                         <?php else : ?>
                             <a href="<?php hd()?>user-register">
-                                <span><?php _e('REGISTER', 'x5')?></span>
+                                <span><?php _text('REGISTER')?></span>
                             </a>
                         <?php endif ?>
                     </li>
                     <li class="<?php if ( seg(0) == 'help' ) echo 'active'; ?>">
                         <a href="<?php hd()?>help">
-                            <span><?php _e('HELP', 'x5')?></span>
+                            <span><?php _text('HELP')?></span>
                         </a>
                     </li>
                     <li class="<?php if ( seg(0) == 'menu-all' ) echo 'active'; ?>">
                         <a href="<?php hd()?>menu-all">
-                            <span><?php _e('SITEMAP', 'x5')?></span>
+                            <span><?php _text('SITEMAP')?></span>
                         </a>
                     </li>
                 </ul>
@@ -95,25 +95,25 @@
             <nav class="menu">
                 <ul>
                     <li class="<?php if ( seg(0) == 'about-us' ) echo 'active'; ?>">
-                        <div><a href="<?php hd()?>about-us"><?php _e('About  Us', 'x5')?></a></div>
+                        <div><a href="<?php hd()?>about-us"><?php _text('About  Us')?></a></div>
                     </li>
                     <li class="<?php if ( seg(0) == 'level-test' ) echo 'active'; ?>">
-                        <div><a href="<?php hd()?>level-test"><?php _e('Level Test', 'x5')?></a></div>
+                        <div><a href="<?php hd()?>level-test"><?php _text('Level Test')?></a></div>
                     </li>
                     <li class="<?php if ( seg(0) == 'enrollment' ) echo 'active'; ?>">
-                        <div><a href="<?php hd()?>enrollment"><?php _e('Enrollment', 'x5')?></a></div>
+                        <div><a href="<?php hd()?>enrollment"><?php _text('Enrollment')?></a></div>
                     </li>
                     <li class="<?php if ( seg(0) == 'curriculum' ) echo 'active'; ?>">
-                        <div><a href="<?php hd()?>curriculum"><?php _e('Curriculum', 'x5')?></a></div>
+                        <div><a href="<?php hd()?>curriculum"><?php _text('Curriculum')?></a></div>
                     </li>
                     <li class="<?php if ( seg(0) == 'reservation' ) echo 'active'; ?>">
-                        <div><a href="<?php hd()?>reservation"><?php _e('Reservation', 'x5')?></a></div>
+                        <div><a href="<?php hd()?>reservation"><?php _text('Reservation')?></a></div>
                     </li>
                     <li class="<?php if ( seg(1) == 'qna' ) echo 'active'; ?>">
-                        <div><a href="<?php hd()?>forum/qna"><?php _e('QnA', 'x5')?></a></div>
+                        <div><a href="<?php hd()?>forum/qna"><?php _text('QnA')?></a></div>
                     </li>
                     <li class="close">
-                        <div><a href="#"><?php _e('Close', 'x5')?></a></div>
+                        <div><a href="#"><?php _text('Close')?></a></div>
                     </li>
                 </ul>
             </nav>

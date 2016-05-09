@@ -22,7 +22,7 @@ wp_enqueue_style('front-slider', td() . '/css/front-slider.css');
     }
 </style>
 
-<!--nav class="scroll-menu">
+<nav class="scroll-menu">
     <ul>
         <li>Section 1</li>
         <li>Section 2</li>
@@ -31,8 +31,8 @@ wp_enqueue_style('front-slider', td() . '/css/front-slider.css');
         <li>Section 5</li>
         <li>Section 6</li>
     </ul>
-</nav-->
-<section class="my-slider" xmlns="http://www.w3.org/1999/html">
+</nav>
+<section class="my-slider">
     <span class="static">
         <img src="<?php img_e()?>/banner/home_slider1.jpg">
     </span>
