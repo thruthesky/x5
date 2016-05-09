@@ -1,0 +1,46 @@
+section .skype.content-two {
+
+}
+
+section .skype.content-two .container {
+    margin: 70px 0 100px;
+}
+
+section .skype.content-two .line-faq {
+    display: inline-block;
+    margin-bottom: 15px;
+    border-bottom: 1px solid #b4c3d2;
+    width: 100%;
+    clear: both;
+}
+
+section .skype.content-two .line-faq .icon {
+    float: left;
+    margin: 5px 10px 5px 5px;
+    padding: 0;
+    width: 26px;
+    height: 26px;
+}
+
+section .skype.content-two .line-faq .title {
+    width: 100%;
+    padding-top: 10px;
+    font-size: 18px;
+    color: #04a0d3;
+}
+
+section .skype.content-two .line-faq .desc {
+    display: block;
+    margin-top: 10px;
+    padding: 10px 0 20px 10px;
+    font-size: 16px;
+    color: #1b3b46;
+    background-color: #e7f0f5;
+}
+
+section .skype.content-two .line-faq:hover {
+    cursor: pointer;
+}
+
+
+
