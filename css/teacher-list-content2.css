@@ -2,7 +2,7 @@ section .teachers.content-two > div {
     padding: 50px 0;
 }
 section .teachers.content-two .teacher {
-    margin: 1em 0;
+    margin: 0;
     border: 8px solid #ffffff;
     background-color: #01d9c1;
     text-align: center;
@@ -17,11 +17,18 @@ section .teachers.content-two .teacher .photo {
     border: 3px solid #ffffff;
     border-radius: 100%;
 }
+
+section .teachers.content-two .teacher .id {
+    font-size: 22px;
+    color: #FFFFFF;
+    margin-bottom: 5px;
+}
 section .teachers.content-two .teacher .text {
+    margin-left: 13px;
+    margin-bottom: 10px;
     text-align: left;
     font-size: 1em;
-    margin-left: 30px;
-    margin-bottom: 10px;
+    color: #FFFFFF;
 }
 
 section .teachers.content-two .teacher .major.text {
@@ -36,7 +43,7 @@ section .teachers.content-two .teacher .greeting {
     overflow-y: hidden;
 }
 section .teachers.content-two .teacher .youtube iframe {
-    width: 256px;
-    height: 170px;
+    width: 100%;
+    height: auto;
     margin-bottom: 30px;
 }

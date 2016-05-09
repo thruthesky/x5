@@ -13,7 +13,6 @@ if ( $re['code'] ) {
 
 
 $teachers = $re['data'];
-
 if ( empty($teachers)  ) {
     echo "<h2>No teachers</h2>";
     return;
@@ -29,6 +28,7 @@ if ( empty($teachers)  ) {
         <?php foreach ( $teachers as $teacher ) { ?>
             <div class="teacher col-sm-4">
                 <div class="photo"><img src="http://witheng.com/<?php echo $teacher['photo']?>"></div>
+                <div class="id">Teacher <?php echo $teacher['id']?></div>
                 <div class="name text"><?php echo $teacher['name']?></div>
                 <div class="teaching-year text">Teacher Years : <?php echo $teacher['teaching_year']?></div>
                 <div class="birthday text">Birth day : <?php echo $teacher['birthday']?></div>
