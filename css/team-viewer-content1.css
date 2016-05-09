@@ -1,5 +1,5 @@
 section .team-viewer.content-one {
-    background: url("../img/team-viewer-banner1.jpg") no-repeat;
+    background: url("../img/team-viewer-banner1.png") no-repeat;
     background-size: cover;
     background-position: center center;
     background-color: #0280db;
@@ -10,8 +10,8 @@ section .team-viewer.content-one {
 section .team-viewer.content-one h2 {
     display: inline-block;
     margin-bottom: 18px;
-    font-size: 53px;
-    color: #FFFFFF;
+    font-size: 48px;
+    color: #0280db;
     width: 600px;
 }
 
@@ -28,7 +28,7 @@ section .team-viewer.content-one .banner {
     display: inline-block;
     float: left;
     width: 600px;
-    margin-top: 50px;
+    margin-top: 85px;
 }
 
 section .team-viewer.content-one .img1 {
