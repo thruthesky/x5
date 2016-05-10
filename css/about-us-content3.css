@@ -17,6 +17,7 @@ section .about-us.content-three .container{
 
 section .about-us.content-three h2 {
     margin: 130px 0 35px;
+    width: 400px;
     text-align: center;
     line-height: 46px;
     font-size: 39px;
@@ -39,6 +40,8 @@ section .about-us.content-three nav > .button a {
     color: #fff;
     font-size: 18px;
     padding: 10px;
+    text-decoration: none;
+    cursor: pointer;
 }
 
 

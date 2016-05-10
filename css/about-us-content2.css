@@ -3,13 +3,18 @@ section .about-us.content-two {
     background-color: #b8d9e0;
 }
 
+section .about-us.content-two > div {
+    padding-top: 5.6875rem;
+}
+
+
 section .about-us.content-two hr {
     border: 0.125rem solid #a3c2c9;
 }
 
 section .about-us.content-two h2 {
-    display: inline-block;
-    margin: 5.6875rem 1.25rem 3.375rem;
+    display: block;
+    margin: 0 1.25rem 3.375rem;
     padding: 0 1.375rem 0;
     font-size: 1.625em;
     text-align: center;
