@@ -2,7 +2,7 @@ section .help.content-one {
     background: url("../img/help-banner1.jpg") no-repeat;
     background-size: cover;
     background-position: center center;
-    height: 240px;
+    height: 280px;
 }
 
 section .help.content-one h2 {
@@ -44,10 +44,9 @@ section .help.content-one .banner {
 section .help.content-one .img1 {
     position: absolute;
     display: inline-block;
-    width: 100%;
     right: 5px;
     float: right;
-    height: 240px;
+    height: 280px;
 }
 
 section .help.content-one .img1 img{
@@ -59,22 +58,22 @@ section .help.content-one .img1 img{
 
 section .help.content-one .how {
     right: 405px;
-    top: 135px;
+    top: 175px;
 }
 
 section .help.content-one .what {
     right: 320px;
-    top: 25px;
+    top: 65px;
 
 }
 
 section .help.content-one .why {
     right: 65px;
-    top: 45px;
+    top: 85px;
 }
 
 section .help.content-one .who {
     right: 30px;
-    top: 150px;
+    top: 190px;
 }
 

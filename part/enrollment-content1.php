@@ -7,8 +7,8 @@ wp_enqueue_style('enrollment-content1', td() . '/css/enrollment-content1.css');
             <img src="<?php img_e() ?>enrollment-banner-image1.png">
         </div>
         <div class="banner">
-            <h2><?php _e('Enrollment' , 'x5') ?></h2>
-            <div class="desc"><?php _e('Enr-C1 Banner Description will be place here' , 'x5') ?></div>
+            <h2><?php _text('Enr:B1:Enrollment') ?></h2>
+            <div class="desc"><?php _text('Enr:B1:Banner Description will be place here') ?></div>
         </div>
     </div>
 </section>

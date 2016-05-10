@@ -2,7 +2,7 @@ section .sitemap.content-one {
     background: url("../img/sitemap-banner1.jpg") no-repeat;
     background-size: cover;
     background-position: center center;
-    height: 240px;
+    height: 280px;
 }
 
 
@@ -34,7 +34,7 @@ section .sitemap.content-one .img1 {
     position: absolute;
     right: 5px;
     float: right;
-    height: 240px;
+    height: 280px;
 }
 
 section .sitemap.content-one .img1 img{

@@ -7,43 +7,43 @@ wp_enqueue_script('help-content2', td() . '/js/help-content2.js');
 
         <ul id="nav-link" class="nav">
             <li class="nav-item">
-                <a class="nav-link" href="#content-two"><i class="fa fa-angle-right nav-link" aria-hidden="true"></i> <?php _e('Company Information', 'x5')?></a>
+                <a class="nav-link" href="#content-two"><i class="fa fa-angle-right nav-link" aria-hidden="true"></i> <?php _text('Company Information' )?></a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="#content-three"><i class="fa fa-angle-right nav-link" aria-hidden="true"></i> <?php _e('Send an Inquiry', 'x5')?></a>
+                <a class="nav-link" href="#content-three"><i class="fa fa-angle-right nav-link" aria-hidden="true"></i> <?php _text('Send an Inquiry' )?></a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="#content-four"><i class="fa fa-angle-right nav-link" aria-hidden="true"></i> <?php _e('FAQs', 'x5')?></a>
+                <a class="nav-link" href="#content-four"><i class="fa fa-angle-right nav-link" aria-hidden="true"></i> <?php _text('FAQs' )?></a>
             </li>
         </ul>
-        <h2><?php _e('Company Information', 'x5')?></h2>
+        <h2><?php _text('Company Information' )?></h2>
         <div class="company-picture">
             <img src="<?php img_e()?>/banner/home_slider1.jpg">
         </div>
         <div class="line">
-            <div class="title"><?php _e('Address:', 'x5')?></div>
-            <div class="desc"><?php _e('hlpC2-Address will be place here', 'x5')?></div>
+            <div class="title"><?php _text('Address:' )?></div>
+            <div class="desc"><?php _text('Hlp:B2-Address will be place here' )?></div>
         </div>
         <div class="line">
-            <div class="title"><?php _e('Office Tel. No.:', 'x5')?></div>
-            <div class="desc"><?php _e('hlpC2-Tel. No. will be place here', 'x5')?></div>
+            <div class="title"><?php _text('Office Tel. No.:' )?></div>
+            <div class="desc"><?php _text('Hlp:B2-Tel. No. will be place here' )?></div>
         </div>
         <div class="line">
-            <div class="title"><?php _e('Email:', 'x5')?></div>
-            <div class="desc"><?php _e('hlpC2-Email will be place here', 'x5')?></div>
+            <div class="title"><?php _text('Email:' )?></div>
+            <div class="desc"><?php _text('Hlp:B2-Email will be place here' )?></div>
         </div>
         <div class="line">
-            <div class="title"><?php _e('Skype:', 'x5')?></div>
-            <div class="desc"><?php _e('hlpC2-Skype ID will be place here', 'x5')?></div>
+            <div class="title"><?php _text('Skype:' )?></div>
+            <div class="desc"><?php _text('Hlp:B2-Skype ID will be place here' )?></div>
         </div>
         <div class="line">
-            <div class="title"><?php _e('Kakao Talk:', 'x5')?></div>
-            <div class="desc"><?php _e('hlpC2-Kakao ID will be place here', 'x5')?></div>
+            <div class="title"><?php _text('Kakao Talk:' )?></div>
+            <div class="desc"><?php _text('Hlp:B2-Kakao ID will be place here' )?></div>
         </div>
         <div id="content-three"></div>
         <div class="line">
-            <div class="title"><?php _e("Manager's Name", 'x5')?></div>
-            <div class="desc"><?php _e("hlpC2-Manager's Name will be place here", 'x5')?></div>
+            <div class="title"><?php _text("Manager's Name" )?></div>
+            <div class="desc"><?php _text("Hlp:B2-Manager's Name will be place here" )?></div>
         </div>
     </div>
 </section>

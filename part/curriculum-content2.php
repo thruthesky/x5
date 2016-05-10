@@ -3,41 +3,41 @@ wp_enqueue_style('curriculum-content2', td() . '/css/curriculum-content2.css');
 ?>
 <section class="curriculum content-two">
     <div>
-        <h2><?php _e('Video English Curriculum', 'x5')?></h2>
-        <div class="desc"><?php _e('Curr-C2 Video English Curriculum Description will be place here.
+        <h2><?php _text('Cur:B2:Title')?></h2>
+        <div class="desc"><?php _text('Cur:B2:Video English Curriculum Description will be place here.
          You can use HTML to decorate on the text. Try to use p, br, b, i tags. You can also input
-         CSS and Javascript on this paragraph.', 'x5')?></div>
+         CSS and Javascript on this paragraph.')?></div>
         <div class="container container-level">
             <div class="row">
                 <div class="beginner col-xs-12 col-sm-4">
-                    <div class="beg title"><?php _e('Beginner', 'x5')?></div>
-                    <div class="title-desc"><?php _e('Description on Beginner 1', 'x5')?></div>
-                    <div class="level one"><?php _e('Level 1', 'x5')?></div>
-                    <div class="level-desc"><?php _e('Curr-C2 Lvl1 Content Here ', 'x5')?></div>
-                    <div class="level two"><?php _e('Level 2', 'x5')?></div>
-                    <div class="level-desc"><?php _e('Curr-C2 Lvl2 Content Here', 'x5')?></div>
-                    <div class="level three"><?php _e('Level 3', 'x5')?></div>
-                    <div class="level-desc"><?php _e('Curr-C2 Lvl3 Content Here', 'x5')?></div>
+                    <div class="beg title"><?php _text('Beginner')?></div>
+                    <div class="title-desc"><?php _text('Description on Beginner 1')?></div>
+                    <div class="level one"><?php _text('Level 1')?></div>
+                    <div class="level-desc"><?php _text('Cur:B2:Lvl1 Description will be place here.')?></div>
+                    <div class="level two"><?php _text('Level 2')?></div>
+                    <div class="level-desc"><?php _text('Cur:B2:Lvl2 Description will be place here.')?></div>
+                    <div class="level three"><?php _text('Level 3')?></div>
+                    <div class="level-desc"><?php _text('Cur:B2:Lvl3 Description will be place here.')?></div>
                 </div>
                 <div class="intermediate col-xs-12 col-sm-4">
-                    <div class="inter title"><?php _e('Intermediate', 'x5')?></div>
-                    <div class="title-desc"><?php _e('Description on Intermediate 1', 'x5')?></div>
-                    <div class="level four"><?php _e('Level 4', 'x5')?></div>
-                    <div class="level-desc"><?php _e('Curr-C2 Lvl4 Content Here', 'x5')?></div>
-                    <div class="level five"><?php _e('Level 5', 'x5')?></div>
-                    <div class="level-desc"><?php _e('Curr-C2 Lvl5 Content Here', 'x5')?></div>
-                    <div class="level six"><?php _e('Level 6', 'x5')?></div>
-                    <div class="level-desc"><?php _e('Curr-C2 Lvl6 Content Here', 'x5')?></div>
+                    <div class="inter title"><?php _text('Intermediate')?></div>
+                    <div class="title-desc"><?php _text('Description on Intermediate 1')?></div>
+                    <div class="level four"><?php _text('Level 4')?></div>
+                    <div class="level-desc"><?php _text('Cur:B2:Lvl4 Description will be place here.')?></div>
+                    <div class="level five"><?php _text('Level 5')?></div>
+                    <div class="level-desc"><?php _text('Cur:B2:Lvl5 Description will be place here.')?></div>
+                    <div class="level six"><?php _text('Level 6')?></div>
+                    <div class="level-desc"><?php _text('Cur:B2:Lvl6 Description will be place here.')?></div>
                 </div>
                 <div class="advanced col-xs-12 col-sm-4">
-                    <div class="adv title"><?php _e('Advanced', 'x5')?></div>
-                    <div class="title-desc"><?php _e('Description on Advanced 1', 'x5')?></div>
-                    <div class="level seven"><?php _e('Level 7', 'x5')?></div>
-                    <div class="level-desc"><?php _e('Curr-C2 Lvl7 Content Here', 'x5')?></div>
-                    <div class="level eight"><?php _e('Level 8', 'x5')?></div>
-                    <div class="level-desc"><?php _e('Curr-C2 Lvl8 Content Here', 'x5')?></div>
-                    <div class="level nine"><?php _e('Level 9', 'x5')?></div>
-                    <div class="level-desc"><?php _e('Curr-C2 Lvl9 Content Here', 'x5')?></div>
+                    <div class="adv title"><?php _text('Advanced')?></div>
+                    <div class="title-desc"><?php _text('Description on Advanced 1')?></div>
+                    <div class="level seven"><?php _text('Level 7')?></div>
+                    <div class="level-desc"><?php _text('Cur:B2:Lvl7 Description will be place here.')?></div>
+                    <div class="level eight"><?php _text('Level 8')?></div>
+                    <div class="level-desc"><?php _text('Cur:B2:Lvl8 Description will be place here.')?></div>
+                    <div class="level nine"><?php _text('Level 9')?></div>
+                    <div class="level-desc"><?php _text('Cur:B2:Lvl9 Description will be place here.')?></div>
                 </div>
             </div>
         </div>

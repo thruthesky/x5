@@ -6,7 +6,7 @@ section .level-test.content-one {
 }
 
 section .level-test.content-one h2 {
-    font-size: 53px;
+    font-size: 48px;
     color: #FFFFFF;
 }
 
@@ -31,8 +31,8 @@ section .level-test.content-one .banner.text {
     float: right;
     display: inline-block;
     margin-top: 55px;
-    width: 290px;
-    right: 300px;
+    width: 350px;
+    right: 250px;
 }
 
 section .level-test.content-one .img2 {
