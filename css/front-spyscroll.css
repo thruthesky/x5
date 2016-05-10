@@ -1,3 +1,4 @@
+/* Spy Scroll */
 .home .scroll-menu {
     position: fixed;
     top: 200px;
@@ -9,15 +10,14 @@
     margin: 0;
     padding: 0;
     list-style: none;
-    background-color: #bcecf1;
+    background-color: rgba(172, 235, 242, 0.75);
 }
+
 .home .scroll-menu ul li {
     text-align: center;
 
 }
 
-
-/* Spy Scroll */
 body {
     position: relative;
 }
@@ -42,5 +42,17 @@ body {
 
 .home #nav-link::before .active {
 
+}
+
+.home .spy-position {
+    top: -100px;
+}
+
+.home #desc .spy-position {
+    top: -200px;
+}
+
+.home #testimonial .spy-position {
+    top: -250px;
 }
 /* EO Spy Scroll */

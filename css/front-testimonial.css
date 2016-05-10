@@ -1,10 +1,11 @@
 /** */
-.home .testimonial {
-
+.home .testimonial .col-sm-6 {
+    padding-left: 0;
 }
 
 .home .testimonial > div {
     text-align: center;
+    padding: 140px 0 0;
 }
 
 .home.front .content .data > .testimonial {
@@ -19,7 +20,7 @@
     display: inline-block;
     font-size: 41px;
     color:  #2d2d2d;
-    margin: 100px 0 30px;
+    margin-bottom: 8px;
 }
 
 .home.front .content .data > .testimonial .collection {
@@ -31,15 +32,15 @@
 }
 
 .home.front .content .data > .testimonial .collection .inner {
-    height: 190px;
+    height: 175px;
     overflow-y: hidden;
-    margin-bottom: 25px;
+    margin-bottom: 20px;
 }
 
 .home.front .content .data > .testimonial .collection .inner .picture {
     width: 50px;
     height: 50px;
-    margin-bottom: 20px;
+    margin-bottom: 14px;
 }
 
 .home.front .content .data > .testimonial .collection .inner .picture,
