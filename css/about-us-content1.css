@@ -2,7 +2,7 @@ section .about-us.content-one {
     background: url("../img/about-us-banner1.jpg") no-repeat;
     background-size: cover;
     background-position: center center;
-    height: 240px;
+    height: 280px;
 }
 
 
@@ -31,10 +31,10 @@ section .about-us.content-one .banner {
 }
 
 section .about-us.content-one .img1 {
-    position: absolute;
+    position: relative;
     right: 5px;
     float: right;
-    height: 240px;
+    height: 280px;
 }
 
 section .about-us.content-one .img1 img{

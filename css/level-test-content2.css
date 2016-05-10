@@ -66,7 +66,7 @@ section .level-test .content.row .cover .level h4 {
     line-height: 22px;
 }
 
-section .level-test .content.row .cover .level p {
+section .level-test .content.row .cover .level h5 {
     font-size: 50px;
     font-weight: bold;
 }

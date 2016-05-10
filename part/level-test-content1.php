@@ -9,7 +9,7 @@ wp_enqueue_style('level-test-content1', td() . '/css/level-test-content1.css');
         <div class="text banner">
             <h2><?php _text('Lv B1 Title')?></h2>
             <div class="desc">
-                <?php _e('Lvl-C1 Banner Description will be place here', 'x5')?>
+                <?php _text('Lv B1 Banner Description will be place here')?>
             </div>
         </div>
         <div class="img2">
