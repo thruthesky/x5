@@ -35,7 +35,7 @@
     background-color: rgba(255,255,255,.75);
 }
 
-.home.front .content .data > .book .more.text {
+.home.front .content .data > .book .more.text a {
     display: inline-block;
     padding: 0.875em 1.25em;
     font-size: 18px;
@@ -43,7 +43,9 @@
     border-radius: 0.1875em;
     margin-bottom: 3.125em;
     cursor: pointer;
+    color: #FFFFFF;
     background-color: #F46516;
+    text-decoration: none;
 }
 
 .home.front .content .data > .book .load-more {

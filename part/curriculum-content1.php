@@ -7,9 +7,9 @@ wp_enqueue_style('curriculum-content1', td() . '/css/curriculum-content1.css');
             <img src="<?php img_e() ?>curriculum-banner-image1.png">
         </div>
         <div class="text banner">
-            <h2><?php _e('Curriculum', 'x5')?></h2>
+            <h2><?php _text('Cur:B1:Curricumlum')?></h2>
             <div class="desc">
-                <?php _e('Curr-C1 Banner Description will be place here', 'x5')?>
+                <?php _text('Cur:B1:Banner Description will be place here')?>
             </div>
         </div>
         <div class="img2">

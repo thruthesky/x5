@@ -17,6 +17,10 @@ wp_enqueue_style('sitemap-content2', td() . '/css/sitemap-content2.css');
                     <img src="<?php img_e() ?>sitemap-icon-curriculum.jpg">
                     <div class="text all"><a href="<?php echo home_url()?>/curriculum">Curriculum</a></div>
                 </div>
+                <div class="cover">
+                    <img src="<?php img_e() ?>sitemap-icon-feedback.jpg">
+                    <div class="text all"><a href="<?php echo home_url()?>/feedback">Feedback</a></div>
+                </div>
             </div>
             <div class="col-sm-4">
                 <div class="cover">
@@ -30,6 +34,10 @@ wp_enqueue_style('sitemap-content2', td() . '/css/sitemap-content2.css');
                 <div class="cover">
                     <img src="<?php img_e() ?>sitemap-icon-reservation.jpg">
                     <div class="text all"><a href="<?php echo home_url()?>/reservation">Reservation</a></div>
+                </div>
+                <div class="cover">
+                    <img src="<?php img_e() ?>sitemap-icon-teacherslist.jpg">
+                    <div class="text all"><a href="<?php echo home_url()?>/teacher-list">Teachers List</a></div>
                 </div>
             </div>
             <div class="col-sm-4">

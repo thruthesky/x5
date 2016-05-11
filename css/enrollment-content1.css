@@ -2,13 +2,13 @@ section .enrollment.content-one {
     background: url("../img/enrollment-banner1.jpg") no-repeat;
     background-size: cover;
     background-position: center center;
-    height: 240px;
+    height: 280px;
 }
 
 section .enrollment.content-one h2 {
     text-align: right;
     margin-bottom: 16px;
-    font-size: 53px;
+    font-size: 48px;
     color: #FFFFFF;
 }
 
@@ -22,17 +22,17 @@ section .enrollment.content-one .desc {
 
 section .enrollment.content-one .banner {
     position: absolute;
-    margin-top: 49px;
+    margin-top: 64px;
     float: right;
     right: 0;
-    width: 300px;
+    width: 400px;
     display: inline-block;
 }
 
 section .enrollment.content-one .img1 {
     position: absolute;
     float: left;
-    height: 240px;
+    height: 280px;
 }
 
 section .enrollment.content-one .img1 img{

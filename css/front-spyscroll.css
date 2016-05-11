@@ -1,0 +1,55 @@
+/* Spy Scroll */
+.home .scroll-menu {
+    position: fixed;
+    top: 200px;
+    right: 100px;
+    z-index: 200;
+}
+.home .scroll-menu ul {
+    width: 200px;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    background-color: rgba(172, 235, 242, 0.75);
+}
+
+.home .scroll-menu ul li {
+    text-align: center;
+
+}
+
+body {
+    position: relative;
+}
+
+.home #nav-link {
+    padding: 10px 0;
+}
+.home #nav-link a {
+    display: block;
+    padding: 16px;
+    font-size: 18px;
+    color: #4d4d4d;
+}
+
+.home #nav-link .active {
+    position: relative;
+    width: 220px;
+    left: -10px;
+    font-weight: 600;
+    color: #FFFFFF;
+    background-color: #47b89c;
+}
+
+.home .spy-position {
+    top: -100px;
+}
+
+.home #desc .spy-position {
+    top: -200px;
+}
+
+.home #testimonial .spy-position {
+    top: -250px;
+}
+/* EO Spy Scroll */

@@ -19,4 +19,5 @@ jQuery(function($) {
         }
     }
     $(window).scroll(navSlide);
+
 });

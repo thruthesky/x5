@@ -38,7 +38,7 @@ wp_enqueue_style('info', td() . '/css/log-in.css');
                 <fieldset class="form-group">
                     <div class="info keep">
                         <div class="text"><input type="checkbox" name="rememberme" id="rememberme" tabindex="203"></div>
-                        <label class="caption" for="rememberme">Keep me logged in</label>
+                        <label class="caption" for="rememberme">Remember Me</label>
                     </div>
                 </fieldset>
 

@@ -2,11 +2,11 @@ section .level-test.content-one {
     background: url("../img/level-test-banner1.jpg") no-repeat;
     background-size: cover;
     background-position: center center;
-    height: 240px;
+    height: 280px;
 }
 
 section .level-test.content-one h2 {
-    font-size: 53px;
+    font-size: 48px;
     color: #FFFFFF;
 }
 
@@ -20,7 +20,7 @@ section .level-test.content-one .banner.img1 {
     position: relative;
     float: left;
     display: inline-block;
-    margin-top: 18px;
+    margin-top: 36px;
     max-width: 369px;
     width: 100%;
     height: auto;
@@ -31,15 +31,15 @@ section .level-test.content-one .banner.text {
     float: right;
     display: inline-block;
     margin-top: 55px;
-    width: 290px;
-    right: 300px;
+    width: 350px;
+    right: 250px;
 }
 
 section .level-test.content-one .img2 {
     position: absolute;
     right: 5px;
     float: right;
-    height: 240px;
+    height: 280px;
 }
 
 section .level-test.content-one .img2 img{

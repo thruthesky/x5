@@ -2,16 +2,16 @@ section .about-us.content-one {
     background: url("../img/about-us-banner1.jpg") no-repeat;
     background-size: cover;
     background-position: center center;
-    height: 240px;
+    height: 280px;
 }
 
 
 section .about-us.content-one h2 {
     display: inline-block;
     margin-bottom: 18px;
-    font-size: 53px;
+    font-size: 48px;
     color: #FFFFFF;
-    width: 300px;
+    width: 400px;
 }
 
 
@@ -26,15 +26,15 @@ section .about-us.content-one .banner {
     position: absolute;
     display: inline-block;
     float: left;
-    width: 300px;
+    width: 400px;
     margin-top: 50px;
 }
 
 section .about-us.content-one .img1 {
-    position: absolute;
+    position: relative;
     right: 5px;
     float: right;
-    height: 240px;
+    height: 280px;
 }
 
 section .about-us.content-one .img1 img{
