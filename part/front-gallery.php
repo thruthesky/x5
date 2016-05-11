@@ -1,7 +1,8 @@
 <?php
 wp_enqueue_style('gallery', td() . '/css/front-gallery.css');
 ?>
-<section class="gallery">
+<a name="gallery"></a>
+<section class="spy gallery">
     <div>
         <h2><?php _text('Gallery')?></h2>
         <div class="info text">

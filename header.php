@@ -4,7 +4,6 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <?php wp_head();?>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.2/css/bootstrap.min.css" integrity="sha384-y3tfxAZXuh4HwSYylfB+J125MxIs6mR5FOHamPBG064zB+AFeWH94NdvaCBm8qnd" crossorigin="anonymous">
     <script>
         var home_url = "<?php echo home_url()?>";
     </script>
@@ -12,12 +11,14 @@
 
 
 <body
+
     <?php body_class( is_front_page() ? 'front' : '' );
     if(is_front_page()){
-        echo ' data-spy="scroll" data-target="#nav-link"';
+        // echo ' data-spy="scroll" data-target="#nav-link"';
     }
     ?>
     <?php if ( segment(0) == 'help' ) echo 'data-spy="scroll" data-target="#nav-link"'; ?>
+
 >
 
 

@@ -2,7 +2,8 @@
 wp_enqueue_style('book', td() . '/css/front-book.css');
 wp_enqueue_script('front-book', td() . '/js/front-book.js');
 ?>
-<section class="book">
+<a name="book"></a>
+<section class="spy book">
     <div>
         <div class="info text">
             <?php _text('Our Books')?>
