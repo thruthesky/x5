@@ -1,18 +1,15 @@
 <?php
 wp_enqueue_style('front-spyscroll', td() . '/css/front-spyscroll.css');
 ?>
-<script>
-    //$('body').scrollspy({ target: 'nav-link' });
-</script>
 
 <nav class="scroll-menu">
     <ul id="nav-link" class="nav">
-        <li class="nav-item"><a class="nav-link" href="#info">Welcome</a></li>
-        <li class="nav-item"><a class="nav-link" href="#desc">Why Choose Us?</a></li>
-        <li class="nav-item"><a class="nav-link" href="#gallery">Gallery</a></li>
-        <li class="nav-item"><a class="nav-link" href="#book">Books</a></li>
-        <li class="nav-item"><a class="nav-link" href="#testimonial">Feedback</a></li>
-        <li class="nav-item"><a class="nav-link" href="#icon-menu">More</a></li>
+        <li class="nav-item"><a class="nav-link" href="#info"><?php _text("Welcome") ?></a></li>
+        <li class="nav-item"><a class="nav-link" href="#desc"><?php _text("Why Choose Us?") ?></a></li>
+        <li class="nav-item"><a class="nav-link" href="#gallery"><?php _text("Gallery") ?></a></li>
+        <li class="nav-item"><a class="nav-link" href="#book"><?php _text("Books") ?></a></li>
+        <li class="nav-item"><a class="nav-link" href="#testimonial"><?php _text("Feedback") ?></a></li>
+        <li class="nav-item"><a class="nav-link" href="#icon-menu"><?php _text("More") ?></a></li>
     </ul>
 </nav>
 
