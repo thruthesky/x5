@@ -15,6 +15,35 @@ wp_enqueue_style('info', td() . '/css/log-in.css');
 
                 <?php wp_nonce_field('log-in'); ?>
 
+
+                <style scoped>
+                    .user-login {
+                        position: relative;
+                    }
+                    .user-login input {
+                        margin: 0;
+                        padding: 4px;
+                        width: 100%;
+                        border: 1px solid #d3d3d3;
+                        border-left: 36px solid #dfdfdf;
+                        border-top-left-radius: 4px;
+                        border-top-right-radius: 4px;
+                    }
+                    .user-login i {
+                        position: absolute;;
+                        top: 6px;
+                        left: 12px;
+                    }
+                </style>
+                <fieldset class="form-group">
+                    <div class="user-login">
+                        <label class="caption" for="user_login" hidden>User ID</label>
+                        <div class="text"><input type="text" name="user_login" maxlength="64" id="user_login" tabindex="200" placeholder="Username"></div>
+                        <i class="fa fa-user"></i>
+                    </div>
+                </fieldset>
+
+
                 <fieldset class="form-group">
                     <div class="info user">
                         <label class="caption" for="user_login" hidden>User ID</label>
