@@ -1,7 +1,7 @@
 <?php
 wp_enqueue_style('testimonial', td() . '/css/front-testimonial.css');
 ?>
-<section class="testimonial">
+<section id="testimonial" class="spy testimonial">
     <div>
         <div class="collection">
             <div class="row">

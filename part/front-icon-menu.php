@@ -1,8 +1,8 @@
 <?php
 wp_enqueue_style('front-icon-menu', td() . '/css/front-icon-menu.css');
 ?>
-
-<nav class="bottom-icon-menus">
+<a name="icon-menu"></a>
+<nav class="spy icon-menu bottom-icon-menus">
     <div class="inner">
         <div class="item talk">
             <a href="<?php echo home_url()?>/ve"  class="image">

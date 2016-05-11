@@ -1,7 +1,7 @@
 <?php
 wp_enqueue_style('info', td() . '/css/front-info.css');
 ?>
-<section class="info container">
+<section id="info" class="spy info container">
     <div class="row">
         <h2><?php _text('Title: Welcome to Our Company')?></h2>
         <div class="info text">

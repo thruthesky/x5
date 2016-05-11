@@ -1,7 +1,8 @@
 <?php
 wp_enqueue_style('desc', td() . '/css/front-desc.css');
 ?>
-<section class="desc">
+<a name="desc"></a>
+<section class="spy desc">
     <div class="row">
         <h2><?php _text('Why Choose Us?')?></h2>
         <div class="info text">
