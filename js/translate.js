@@ -46,7 +46,7 @@ jQuery( function( $ ) {
                 '</div>' +
                 '';
             $('body').append(m);
-            //$this.find('textarea').focus();
+            $('[md5="'+md5+'"]').find('textarea').focus();
         });
     }
 
