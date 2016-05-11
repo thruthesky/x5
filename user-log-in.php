@@ -13,7 +13,7 @@ wp_enqueue_style('info', td() . '/css/log-in.css');
             <img src="<?php img_e() ?>login_logo.png">
             <form action="<?php echo home_url('/user/loginSubmit')?>" method="POST">
 
-                <?php wp_nonce_field('log-in'); ?>
+                <!--?php wp_nonce_field('log-in'); ?>
 
 
                 <style scoped>
@@ -41,7 +41,7 @@ wp_enqueue_style('info', td() . '/css/log-in.css');
                         <div class="text"><input type="text" name="user_login" maxlength="64" id="user_login" tabindex="200" placeholder="Username"></div>
                         <i class="fa fa-user"></i>
                     </div>
-                </fieldset>
+                </fieldset-->
 
 
                 <fieldset class="form-group">
