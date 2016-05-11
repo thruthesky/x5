@@ -63,4 +63,5 @@ wp_enqueue_style('testimonial', td() . '/css/front-testimonial.css');
                 </div>
             </div>
         </div>
+    </div>
 </section>

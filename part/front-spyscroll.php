@@ -1,6 +1,9 @@
 <?php
 wp_enqueue_style('front-spyscroll', td() . '/css/front-spyscroll.css');
 ?>
+<script>
+    //$('body').scrollspy({ target: 'nav-link' });
+</script>
 
 <nav class="scroll-menu">
     <ul id="nav-link" class="nav">

@@ -26,6 +26,7 @@ body {
     padding: 10px 0;
 }
 .home #nav-link a {
+    display: block;
     padding: 16px;
     font-size: 18px;
     color: #4d4d4d;
@@ -38,10 +39,6 @@ body {
     font-weight: 600;
     color: #FFFFFF;
     background-color: #47b89c;
-}
-
-.home #nav-link::before .active {
-
 }
 
 .home .spy-position {

@@ -1,8 +1,3 @@
-<?php
-
-
-?>
-
 <!DOCTYPE HTML>
 <html>
 <head>
@@ -19,7 +14,7 @@
 <body
     <?php body_class( is_front_page() ? 'front' : '' );
     if(is_front_page()){
-        echo 'data-spy="scroll" data-target="#nav-link"';
+        echo ' data-spy="scroll" data-target="#nav-link"';
     }
     ?>
     <?php if ( segment(0) == 'help' ) echo 'data-spy="scroll" data-target="#nav-link"'; ?>
