@@ -1,0 +1,94 @@
+.data .log-in.content-two {
+    padding: 60px 0 100px;
+    text-align: center;
+}
+
+.data .log-in.content-two h2 {
+    padding: 50px 0 10px;
+}
+
+
+.data .log-in.content-two .inner {
+    display: inline-block;
+    width: 430px;
+}
+
+.data .log-in.content-two .inner img {
+    margin-bottom: 15px;
+}
+
+.data .log-in.content-two .inner .form-group .info {
+    position: relative;
+}
+
+.data .log-in.content-two .inner .form-group .info input[name='user_login'],
+.data .log-in.content-two .inner .form-group .info input[name='user_pass'] {
+    margin-bottom: 15px;
+    padding-left: 10px;
+    height: 50px;
+    width: 100%;
+    border: 1px solid #cfcdcd;
+    border-left: 50px solid #dfdfdf;
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+    font-size: 18px;
+}
+
+.data .log-in.content-two .inner .form-group .info input:-webkit-autofill {
+    -webkit-box-shadow: 0 0 0 1000px #ffffff inset!important;
+}
+
+.data .log-in.content-two .inner .form-group .info .fa.fa-user,
+.data .log-in.content-two .inner .form-group .info .fa.fa-key {
+    position: absolute;;
+    top: 13px;
+    left: 15px;
+    font-size: 24px;
+}
+
+.data .log-in.content-two .inner .form-group .info.keep {
+    display: inline-block;
+    float: left;
+    margin-bottom: 30px;
+}
+
+
+.data .log-in.content-two .inner .form-group .info.keep .text {
+    display: inline-block;
+}
+
+.data .log-in.content-two .inner .form-group .info.keep input[type='checkbox'] {
+    width: 20px;
+    height: 20px;
+}
+
+.data .log-in.content-two .inner .form-group .info.keep label[for='rememberme'] {
+    position: relative;
+    margin: 0;
+    top: -4px;
+}
+
+.data .log-in.content-two .inner .btn.btn-primary {
+    padding: 10px 60px;
+    margin-bottom: 10px;
+    width: 100%;
+    background-color: #2ecc71;
+    border: 0;
+}
+
+.data .log-in.content-two .inner .lost-password-button a {
+    display: inline-block;
+    float: right;
+    color: #ff0000;
+    margin-right: 5px;
+    border: 0;
+}
+
+.data .log-in.content-two .inner .register {
+    font-weight: 700;
+    color: #04a4cc;
+}
+
+section.log-in.content-two .form-group {
+    margin: 5px;
+}
