@@ -1,31 +1,10 @@
-jQuery(function($) {
-    var $nav_header    = $('#nav-link'),
-        offset_val     = 353;
-    function navSlide() {
-        var scroll_top = $(window).scrollTop();
-
-        if (scroll_top >= offset_val) { // the detection!
-            $nav_header.css({
-                'position' : 'absolute',
-                'top': scroll_top - 218 + 'px',
-                'z-index': '12345'
-            });
-        } else {
-            $nav_header.css({
-                'position': 'absolute',
-                'top' : '135px',
-                'z-index': '0'
-            });
-        }
-    }
-    $(window).scroll(navSlide);
-
+jQuery( function( $ ) {
     function activate( id ) {
         //console.log('activate : ' + id);
         $('#nav-link').find('a').removeClass('active');
         $('a[href="#'+id+'"]').addClass( 'active' );
     }
-    var spyElements = ['content-four', 'content-three', 'content-two'];
+    var spyElements = ['icon-menu', 'testimonial', 'book', 'gallery', 'desc', 'info'];
     var spyElementTops = getScrollTops();
     function getScrollTops() {
         var tops = {};
@@ -49,5 +28,4 @@ jQuery(function($) {
             }
         }
     },100));
-
 });
