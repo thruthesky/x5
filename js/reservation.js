@@ -1,14 +1,26 @@
 jQuery(function($){
-    /*
-     $('.book').tooltip({
-     'delay' : { "show" : 300, "hide" : 100 },
-     'placement' : "top"
-     } );
-     */
-    /*
-     $('.book').on('hidden.bs.popover', function () {
-     // do something…
-     })
-     */
+/*
+    $('.book').popover({
+        html: true,
+        placement: 'left'
+    });
 
+    $('.book')
+        .mouseenter(function(){
+            $(this).popover('show');
+        })
+        .mouseleave(function(){
+            $(this).popover('hide');
+        });
+
+    var $book = $('.book[date="<?php echo date('Ymd')?>"]:eq(0)');
+    if ( $book.length ) {
+        $book.popover('show');
+        $('.calendar').bind('mouseenter', on_calendar_mouseenter);
+        function on_calendar_mouseenter() {
+            $book.popover('hide');
+            console.log('mouseenter: calendar');
+            $('.calendar').unbind('mouseenter', on_calendar_mouseenter);
+        }
+    }*/
 });

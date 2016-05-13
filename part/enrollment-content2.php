@@ -17,10 +17,10 @@ wp_enqueue_style('enrollment-content2', td() . '/css/enrollment-content2.css');
                             <?php _text('Minutes')?>
                         </div>
                         <div class="radio">
-                            <input type="radio" name="mins" value="20"> <?php _text('20mins')?><br>
-                            <input type="radio" name="mins" value="30"> <?php _text('30mins (5% discount)')?><br>
-                            <input type="radio" name="mins" value="40"> <?php _text('40mins (10% discount)')?><br>
-                            <input type="radio" name="mins" value="50"> <?php _text('50mins (15% discount)')?>
+                            <input type="radio" name="min" value="20" checked> <?php _text('20mins')?><br>
+                            <input type="radio" name="min" value="30"> <?php _text('30mins (5% discount)')?><br>
+                            <input type="radio" name="min" value="40"> <?php _text('40mins (10% discount)')?><br>
+                            <input type="radio" name="min" value="50"> <?php _text('50mins (15% discount)')?>
                         </div>
                     </div>
                 </div>
@@ -33,7 +33,7 @@ wp_enqueue_style('enrollment-content2', td() . '/css/enrollment-content2.css');
                             <?php _text('Months')?>
                         </div>
                         <div class="radio">
-                            <input type="radio" name="month" value="1"> <?php _text('1month')?><br>
+                            <input type="radio" name="month" value="1" checked> <?php _text('1month')?><br>
                             <input type="radio" name="month" value="2"> <?php _text('2months (5% discount)')?><br>
                             <input type="radio" name="month" value="3"> <?php _text('3months (10% discount)')?>
                         </div>
@@ -48,9 +48,9 @@ wp_enqueue_style('enrollment-content2', td() . '/css/enrollment-content2.css');
                             <?php _text('Days')?>
                         </div>
                         <div class="radio">
-                            <input type="radio" name="mins" value="20"> <?php _text('Monday - Friday')?><br>
-                            <input type="radio" name="mins" value="30"> <?php _text('Mon Wed Fri only')?><br>
-                            <input type="radio" name="mins" value="40"> <?php _text('Tue Thu only')?>
+                            <input type="radio" name="day" value="Monday - Friday" checked> <?php _text('Monday - Friday')?><br>
+                            <input type="radio" name="day" value="Mon Wed Fri only"> <?php _text('Mon Wed Fri only')?><br>
+                            <input type="radio" name="day" value="Tue Thu only"> <?php _text('Tue Thu only')?>
                         </div>
                     </div>
                 </div>

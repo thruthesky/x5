@@ -125,4 +125,5 @@
 
 
         <section class="data">
+            <?php if ( seg(0) == 'forum' ){ include 'part/forum-content1.php';  } ?>
             <?php include 'part/aside.php'; ?>
