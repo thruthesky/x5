@@ -7,19 +7,43 @@
     margin-bottom: 20px;
 }
 
+.reservation.content-two .btn {
+    position: relative;
+    width: 108px;
+    padding: 0;
+    font-size: 18px;
+    font-weight: 800;
+    color: #2d2d2d;
+}
+
+.reservation.content-two nav.month {
+    padding: 10px 20px 0 0;
+    margin-bottom: 20px;
+    text-align: center;
+
+}
+
+.reservation.content-two nav.month i {
+    position: absolute;
+    display: block;
+    padding: 0;
+    margin: 0;
+    width: 0;
+    height: 0;
+    bottom: 0;
+    right: 0;
+    border-style: solid;
+    border-width: 0 0 6px 6px;
+    border-color: transparent transparent #1abc9c transparent;
+}
+
 .reservation.content-two .prev-month,
 .reservation.content-two .next-month {
-    font-size: 21px;
-    color: #28cd8d;
+
 }
 
 .reservation.content-two .prev-month {
     float: left;
-}
-
-.reservation.content-two .this-month {
-    font-size: 26px;
-    color: #fd1e42;
 }
 
 .reservation.content-two .next-month {
@@ -30,7 +54,7 @@
 }
 
 .reservation.content-two .calendar-day {
-    min-width: 40px;
+   width: 190px;
 }
 
 .reservation.content-two .calendar, th, td {
@@ -83,9 +107,9 @@
 }
 
 .reservation.content-two .day-number {
+    position: absolute;
     font-size: 14px;
     font-weight: bold;
-    position: absolute;
     padding: 15px 0 0 10px;
 }
 
@@ -95,7 +119,7 @@
 }
 
 .reservation.content-two .calendar .book {
-    display: inline-block;
+    display: block;
     margin-bottom: 10px;
 }
 
@@ -144,8 +168,9 @@
     line-height: 35px;
 }
 
-.reservation.content-two nav div,
-.reservation.content-two nav i {
+.reservation.content-two nav .fa.fa-th-large,
+.reservation.content-two nav .calendar-view,
+.reservation.content-two nav .list-view {
     float: left;
     display: inline-block;
     font-size: 20px;
@@ -161,28 +186,45 @@
 }
 
 /* Pop over*/
-h3.popover-title {
-    padding: 8px 14px;
-    margin: 0;
-    font-size: 12px;
-    background-color: #e63349;
+div.popover {
     border: 0;
+    padding: 0;
+    width: 240px;
+    max-width: 240px;
 }
 
-h3.popover-title h3 {
-    font-size: 12px;
+h3.popover-title {
+    padding: 18px 14px 16px;
+    margin: 0;
     color: #fff;
+    border: 0;
+    font-size: 12px;
+    background-color: #e63349;
+}
+
+h3.popover-title .text {
+    padding: 2px 0;
 }
 
 div.popover-content {
-    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
     font-size: 12px;
     background-color: #e63349;
     color: #fff;
 }
 
-div.popover-arrow::after {
-    border-left-color: #e63349;
+div.popover-content .text.rate {
+    float: left;
+    width: 50%;
+}
+
+div.popover-content .text.comment {
+    clear: both;
+    display: inline-block;
+    margin-top: 16px;
+}
+
+html body div.popover-arrow::after {
+    border-left-color: #e63349!important;
 }
 
 /* EO Popover*/

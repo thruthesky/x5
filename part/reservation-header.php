@@ -8,19 +8,25 @@ $pY = date('Y', mktime( 0, 0, 0, $m-1, 1, $Y));
 $nY = date('Y', mktime( 0, 0, 0, $m+1, 1, $Y));
 ?>
 <nav class="month">
-    <a href="?m=<?php echo $prev_month_digit?>&Y=<?php echo $pY?>">
-        <span class="prev-month">
-            << <?php echo $pM?> <?php echo $pY?>
-        </span>
-    </a>
-    <strong>
-        <span class="this-month">
-            <?php echo $M?> <?php echo $Y?>
-        </span>
-    </strong>
-    <a href="?m=<?php echo $next_month_digit?>&Y=<?php echo $nY?>">
-        <span class="next-month">
-            <?php echo $nM?> <?php echo $nY?> >>
-        </span>
-    </a>
+
+    <div class="prev-month btn">
+        <a href="?m=<?php echo $prev_month_digit?>&Y=<?php echo $pY?>">
+            <?php echo $pM?> <?php echo $pY?>
+        <i></i>
+        </a>
+    </div>
+
+    <div class="this-month btn">
+        <?php echo $M?> <?php echo $Y?>
+        <i></i>
+    </div>
+
+
+    <div class="next-month btn">
+        <a href="?m=<?php echo $next_month_digit?>&Y=<?php echo $nY?>">
+            <?php echo $nM?> <?php echo $nY?>
+            <i></i>
+        </a>
+    </div>
+
 </nav>
