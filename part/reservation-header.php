@@ -14,6 +14,16 @@ $nY = date('Y', mktime( 0, 0, 0, $m+1, 1, $Y));
             <?php echo $pM?> <?php echo $pY?>
         <i></i>
         </a>
+
+            <!--?php
+            $prev = '<div class="prev-past-month">';
+            for($x = 0; $x < 11; $x++):
+                $prev.= '<div class="calendar-day-np"> </div>';
+                $days_in_this_week++;
+            endfor;
+            $prev .= '</div>';
+            ?-->
+
     </div>
 
     <div class="this-month btn">
