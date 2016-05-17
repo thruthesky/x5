@@ -35,7 +35,7 @@ include 'part/reservation-content1.php';
 
 
         <h2><?php _e("Class Reservation", 'x5')?></h2>
-        <?php include '/part/reservation-header.php'?>
+        <?php include 'part/reservation-header.php'?>
 
         <div class="desc">
             <?php echo draw_calendar($m, $Y, $data); ?>
