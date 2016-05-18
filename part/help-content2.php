@@ -2,7 +2,7 @@
 wp_enqueue_style('help-content2', td() . '/css/help-content2.css');
 wp_enqueue_script('help-content2', td() . '/js/help-content2.js');
 ?>
-<section class="help content-two" >
+<section class="spy help content-two" >
     <div>
 
         <ul id="nav-link" class="nav">

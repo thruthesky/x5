@@ -10,7 +10,7 @@ wp_enqueue_style('testimonial', td() . '/css/front-testimonial.css');
                 </div>
                 <div class="col-sm-8">
                     <div class="title-row info text">
-                        <?php _text('Feedback')?>
+                        <?php _text('Title: Feedback')?>
                     </div>
                     <div class="testimonial-row">
                         <div class="col-sm-6">

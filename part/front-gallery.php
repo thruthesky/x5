@@ -4,7 +4,7 @@ wp_enqueue_style('gallery', td() . '/css/front-gallery.css');
 <a name="gallery"></a>
 <section class="spy gallery">
     <div>
-        <h2><?php _text('Gallery')?></h2>
+        <h2><?php _text('Title: Gallery')?></h2>
         <div class="info text">
             <?php _text('
             Please meet our office staffs. Teachers, Managers and Technicians.

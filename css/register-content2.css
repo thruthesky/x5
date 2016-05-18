@@ -1,0 +1,86 @@
+section .register.content-two > div {
+    position: relative;
+    margin: 0 auto;
+    padding: 100px 0;
+    max-width: 980px;
+}
+
+section .register.content-two > div > form   {
+    position: relative;
+    display: inline-block;
+    width: 100%;
+}
+
+section .register.content-two h2 {
+    padding-top: 20px;
+}
+
+section .register.content-two .button {
+    display: inline-block;
+    padding: 10px;
+    width: 50%;
+    float: left;
+}
+
+section .register.content-two .button input {
+    display:inline-block;
+    padding: 0;
+    width: 100%;
+    height: 50px;
+    border: 0;
+    border-radius: 3px;
+    font-weight: 700;
+}
+
+
+section .register.content-two  input[type='submit'] {
+    color: #FFFFFF;
+    background-color: #2ecc71;
+}
+
+section .register.content-two  input[type='button'] {
+    color: #676767;
+    background-color: #dfdfdf;
+    text-align: center;
+}
+
+section .register.content-two .line {
+    padding: 10px;
+    clear: both;
+}
+
+section .register.content-two .line label {
+    float: left;
+    padding: 13px 0;
+    width: 150px;
+    color: #1e1e1e;
+    border-radius: 3px;
+    font-family: "Arial", "Open Sans", sans-serif;
+}
+
+section .register.content-two input[tabindex="101"] {
+    height: 50px;
+    outline: 0;
+    padding: 7px;
+    width: 280px;
+    border-radius: 3px;
+    border: 1px solid #c6c6c6;
+    font-family: "Arial", "Open Sans", sans-serif;
+}
+
+section .register input#user_email {
+    min-width: 360px;
+}
+
+section .register input#address {
+    min-width: 450px;
+}
+
+
+section .register.content-two input[tabindex="101"]:focus {
+    border: 1px solid #419df2;
+}
+
+section .register.content-two input:-webkit-autofill {
+    -webkit-box-shadow: 0 0 0 1000px #ffffff inset!important;
+}

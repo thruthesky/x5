@@ -2,7 +2,7 @@
 wp_enqueue_style('help-content4', td() . '/css/help-content4.css');
 wp_enqueue_script('help-content4', td() . '/js/help-content4.js');
 ?>
-<section class="help content-four">
+<section class="spy help content-four">
     <div>
         <h2><?php _text('FAQs')?></h2>
         <div class="container">

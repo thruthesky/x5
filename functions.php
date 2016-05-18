@@ -43,7 +43,6 @@ add_action( 'wp_enqueue_scripts', function () {
     wp_enqueue_style( 'state', td() . '/css/state.css' );
     wp_enqueue_style( 'state.header', td() . '/css/state.header.css' );
     wp_enqueue_style( 'theme', td() . '/css/theme.css' );
-    wp_enqueue_style( 'register', td() . '/css/register.css' );
     wp_enqueue_script( 'theme', td() . '/js/theme.js', array('jquery') );
     wp_enqueue_style( 'my-slider-v3', td() . '/css/my-slider-v3.css' );
     wp_enqueue_script( 'my-slider-v3', td() . '/js/my-slider-v3.js', array('jquery') );
@@ -51,7 +50,7 @@ add_action( 'wp_enqueue_scripts', function () {
     wp_enqueue_script( 'translate',        td() . '/js/translate.js', array('jquery') );
 
     wp_enqueue_style( 'bootstrap', 'https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.2/css/bootstrap.min.css' );
-    wp_enqueue_script( 'tether', FORUM_URL . 'js/tether.min.js' );
+    //wp_enqueue_script( 'tether', FORUM_URL . 'js/tether.min.js' );
     wp_enqueue_script( 'bootstrap', 'https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.2/js/bootstrap.min.js' );
 
 });
@@ -106,15 +105,14 @@ if ( user()->admin() ) {
 
 
     if ( isset($_REQUEST['code'] ) && isset($_REQUEST['original_text']) ) {
-
         $_REQUEST['original_text'] = stripslashes($_REQUEST['original_text']);
         $_REQUEST['content'] = stripslashes($_REQUEST['content']);
+        if ( empty( $_REQUEST['original_text'] ) ) $_REQUEST['original_text'] = '&nbsp;';
         $option_name = $_REQUEST['code'];
-        //di($option_name);
 
         delete_option( $option_name );
         add_option( $option_name, ['original_text' => $_REQUEST['original_text'], 'content' => $_REQUEST['content']] );
-        
+
         wp_send_json_success($_REQUEST);
     }
 }

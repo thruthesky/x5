@@ -1,0 +1,40 @@
+section .register.content-one {
+    background-color: #00b4b5;
+    height: 280px;
+}
+
+
+section .register.content-one h2 {
+    display: inline-block;
+    font-size: 48px;
+    color: #FFFFFF;
+    width: 400px;
+}
+
+
+section .register.content-one .desc {
+    display: inline-block;
+    padding-left: 7px;
+    font-size: 24px;
+    color: #FFFFFF;
+}
+
+section .register.content-one .banner {
+    position: absolute;
+    display: inline-block;
+    left: 55px;
+    margin-top: 100px;
+}
+
+section .register.content-one .img1 {
+    position: relative;
+    right: 5px;
+    float: right;
+    height: 280px;
+}
+
+section .register.content-one .img1 img{
+    position: absolute;
+    bottom: 30px;
+    right: 60px;
+}

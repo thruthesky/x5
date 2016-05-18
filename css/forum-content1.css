@@ -1,53 +1,56 @@
-section .forum.content-one {
+section .forum-content-one {
     background: url("../img/forum-banner1.jpg") no-repeat;
     background-size: cover;
     background-position: center center;
-    height: 240px;
+    height: 280px;
 }
 
-section .forum.content-one .title {
+section .forum-content-one h2 {
     display: inline-block;
-    padding: 1px 11px;
-    margin: 23px 0 0 2px;
-    float: left;
-    border-radius: 3px;
-    background-color: #e74c3c;
-    text-align: left;
-    font-size: 14px;
+    font-size: 48px;
     color: #FFFFFF;
+    width: 300px;
 }
 
-section .forum.content-one .level {
-    text-align: right;
-    margin-bottom: 4px;
-    font-size: 41px;
-    color: #FFFFFF;
-}
-
-section .forum.content-one .desc {
-    text-align: right;
-    font-size: 18px;
-    color: #FFFFFF;
-}
-
-
-section .forum.content-one .banner.text {
+section .forum-content-one .desc {
+    display: inline-block;
     position: absolute;
+    bottom: 5px;
+    padding-left: 8px;
+    width: 308px;
+    font-size: 24px;
+    color: #FFFFFF;
+}
+
+section .forum-content-one .text {
+    position: absolute;
+    display: inline-block;
     float: right;
-    right: 0;
-    width: 296px;
-    display: inline-block;
+    font-size: 28px;
+    color: #FFFFFF;
 }
 
-section .forum.content-one .img1 {
+section .forum-content-one .banner {
     position: absolute;
+    display: inline-block;
     float: left;
-    height: 240px;
+    width: 440px;
+    margin-top: 105px;
 }
 
-section .forum.content-one .img1 img{
+section .forum-content-one .img1 {
+    position: absolute;
+    display: inline-block;
+    right: 5px;
+    float: right;
+    height: 280px;
+}
+
+section .forum-content-one .img1 img{
     position: absolute;
     bottom: 0;
-    left: 0;
+    right: 0;
 
 }
+
+

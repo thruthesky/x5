@@ -2,7 +2,7 @@ section .reservation.content-one {
     background: url("../img/reservation-banner1.jpg") no-repeat;
     background-size: cover;
     background-position: center center;
-    height: 240px;
+    height: 280px;
 }
 
 section .reservation.content-one .title {
@@ -35,6 +35,7 @@ section .reservation.content-one .banner.text {
     position: absolute;
     float: right;
     right: 0;
+    top: 20px;
     width: 296px;
     display: inline-block;
 }
@@ -42,7 +43,7 @@ section .reservation.content-one .banner.text {
 section .reservation.content-one .img1 {
     position: absolute;
     float: left;
-    height: 240px;
+    height: 280px;
 }
 
 section .reservation.content-one .img1 img{
