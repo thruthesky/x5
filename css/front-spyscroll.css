@@ -1,9 +1,13 @@
 /* Spy Scroll */
 .home .scroll-menu {
+	display:none;
     position: fixed;
     top: 200px;
     right: 100px;
     z-index: 200;
+}
+@media all and ( min-width: 940px ) {
+	.home .scroll-menu { display: block; }
 }
 .home .scroll-menu ul {
     width: 200px;
@@ -36,7 +40,7 @@ body {
     position: relative;
     width: 220px;
     left: -10px;
-    font-weight: 600;
+    font-weight: 400;
     color: #FFFFFF;
     background-color: #47b89c;
 }

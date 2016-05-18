@@ -4,7 +4,7 @@ wp_enqueue_style('desc', td() . '/css/front-desc.css');
 <a name="desc"></a>
 <section class="spy desc">
     <div class="row">
-        <h2><?php _text('Why Choose Us?')?></h2>
+        <h2><?php _text('Title: Why Choose Us?')?></h2>
         <div class="info text">
             <?php _text(
                 'We provides the best quality service on Online Video English Tutorial.

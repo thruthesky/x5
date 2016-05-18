@@ -50,7 +50,7 @@ add_action( 'wp_enqueue_scripts', function () {
     wp_enqueue_script( 'translate',        td() . '/js/translate.js', array('jquery') );
 
     wp_enqueue_style( 'bootstrap', 'https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.2/css/bootstrap.min.css' );
-    wp_enqueue_script( 'tether', FORUM_URL . 'js/tether.min.js' );
+    //wp_enqueue_script( 'tether', FORUM_URL . 'js/tether.min.js' );
     wp_enqueue_script( 'bootstrap', 'https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.2/js/bootstrap.min.js' );
 
 });
@@ -101,24 +101,19 @@ function trim_greeting( $str ) {
 }
 
 
-
 if ( user()->admin() ) {
-    if ( isset($_GET['code'] ) && isset($_GET['original_text']) ) {
-        $org = $_GET['original_text'];
-        $content = stripslashes($_GET['content']);
-        $option_name = $_GET['code'];
-        //di($option_name);
+
+
+    if ( isset($_REQUEST['code'] ) && isset($_REQUEST['original_text']) ) {
+        $_REQUEST['original_text'] = stripslashes($_REQUEST['original_text']);
+        $_REQUEST['content'] = stripslashes($_REQUEST['content']);
+        if ( empty( $_REQUEST['original_text'] ) ) $_REQUEST['original_text'] = '&nbsp;';
+        $option_name = $_REQUEST['code'];
 
         delete_option( $option_name );
-        add_option( $option_name, ['original_text' => $org, 'content' => $content] );
+        add_option( $option_name, ['original_text' => $_REQUEST['original_text'], 'content' => $_REQUEST['content']] );
 
-        /*
-        wp_send_json_success([
-            'original_text' => $org,
-            'content' => $content,
-        ]);
-        exit;
-        */
+        wp_send_json_success($_REQUEST);
     }
 }
 
