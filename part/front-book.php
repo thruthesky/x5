@@ -6,7 +6,7 @@ wp_enqueue_script('front-book', td() . '/js/front-book.js');
 <section class="spy book">
     <div>
         <div class="info text">
-            <?php _text('Our Books')?>
+            <?php _text('title: Our Books')?>
         </div>
         <br />
         <div class="more text">
