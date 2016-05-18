@@ -107,14 +107,14 @@ if ( user()->admin() ) {
 
     if ( isset($_REQUEST['code'] ) && isset($_REQUEST['original_text']) ) {
 
-        $_REQUEST['original_text'] = $_REQUEST['original_text'];
+        $_REQUEST['original_text'] = stripslashes($_REQUEST['original_text']);
         $_REQUEST['content'] = stripslashes($_REQUEST['content']);
         $option_name = $_REQUEST['code'];
         //di($option_name);
 
         delete_option( $option_name );
         add_option( $option_name, ['original_text' => $_REQUEST['original_text'], 'content' => $_REQUEST['content']] );
-
+        
         wp_send_json_success($_REQUEST);
     }
 }
