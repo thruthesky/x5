@@ -11,6 +11,8 @@
 
 .collection .row > .col-sm-3 {
     padding: 0;
+    width: 50%;
+    float: left;
 }
 
 .collection .row > .col-sm-3 .inner.row {
@@ -67,4 +69,17 @@
 .load .load-more.active,
 .load .load-less.active {
     display: block;
+}
+
+
+@media (min-width: 544px) {
+    .collection .row > .col-sm-3 {
+        width: 33.33%;
+    }
+}
+
+@media (min-width: 768px) {
+    .collection .row > .col-sm-3 {
+        width: 25%;
+    }
 }
