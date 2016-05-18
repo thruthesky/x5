@@ -3,15 +3,28 @@
     /*margin-bottom: .3em;*/
     z-index: 500;
 }
-.home .my-slider nav img:first-child {
-    left: 10vw;
-}
-.home .my-slider nav img:last-child {
-    right: 10vw;
+.home .my-slider .carousel.slide .carousel-inner .carousel-item img {
+    width: 100%;
+    height: auto;
 }
 
-.home .my-slider .text-info.one,
-.home .my-slider .text-info.three,
-.home .my-slider .text-info.five {
-    color: #000!important;
+.home .my-slider .carousel.slide .carousel-indicators {
+    bottom: -15px;
+}
+
+.home .my-slider .carousel.slide .carousel-inner .carousel-item .carousel-caption {
+    background-color: rgba(255,255,255,.6);
+    margin-bottom: 40px;
+    padding-bottom: 0;
+    border-radius: 3px;
+    color: #2b2b2b;
+    text-shadow: none;
+}
+
+.home .my-slider .carousel.slide .carousel-inner .carousel-item .carousel-caption h3 {
+    font-size: 37px;
+}
+
+.home .my-slider .carousel.slide .carousel-inner .carousel-item .carousel-caption p {
+    font-size: 24px;
 }
