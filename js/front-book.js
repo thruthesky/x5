@@ -1,20 +1,24 @@
 jQuery( function( $ ) {
+    var $load = $('.load');
     var $more = $('.load-more');
+    var $less = $('.load-less');
     var $sub = $('.load-sub');
     var $x = true;
-    $more.click(function() {
+    $load.click(function() {
         if ($x) {
             $sub.css({
                 'display': 'block'
             });
             $x = false;
-            $more.text('SHOW LESS','x5');
+            $more.removeClass('active');
+            $less.addClass('active');
         }else {
             $sub.css({
                 'display': 'none'
             });
             $x = true;
-            $more.text('LOAD MORE');
+            $less.removeClass('active');
+            $more.addClass('active');
         }
     });
 });

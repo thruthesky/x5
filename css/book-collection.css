@@ -1,0 +1,70 @@
+.collection {
+    padding: 0.625em;
+    border-radius: 0.1875em;
+    background-color: #ededed;
+}
+
+.collection .row {
+    margin: 0.625em 0.625em 1.25em;
+    border-radius: 0.1875em;
+}
+
+.collection .row > .col-sm-3 {
+    padding: 0;
+}
+
+.collection .row > .col-sm-3 .inner.row {
+    height: 25em;
+    overflow-y: hidden;
+    background-color: #fff;
+    text-align: left;
+}
+
+.collection .inner.row img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 1.625em;
+}
+
+.collection .row > .col-sm-3 .inner.row > .title {
+    padding: 0 0.8125rem;
+    margin-bottom: 1.0625em;
+    font-size: 1.125em;
+    color: #2b2b2b;
+}
+
+.collection .row > .col-sm-3 .inner.row > .desc {
+    height: 9.6875rem;
+    overflow-y: hidden;
+    padding: 0 0.8125em;
+    margin-bottom: 1.5em;
+    font-size: 0.9375em;
+    color: #838383;
+}
+
+.collection .inner.row img {
+    width: 100%;
+    height: auto;
+}
+
+.collection .row > .col-sm-3 .load-sub {
+    display: none;
+}
+
+
+.load .load-more,
+.load .load-less {
+    display: none;
+    padding: 0.875em 1.25em;
+    font-size: 1em;
+    letter-spacing: 0.1875em;
+    border-radius: 0.1875em;
+    color: #FFFFFF;
+    background-color: #3498db;
+    text-align: center;
+}
+
+.load .load-more.active,
+.load .load-less.active {
+    display: block;
+}

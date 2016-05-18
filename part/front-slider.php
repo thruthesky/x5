@@ -10,12 +10,6 @@ wp_enqueue_style('front-slider', td() . '/css/front-slider.css');
             <li data-target="#carousel-banner" data-slide-to="2"></li>
             <li data-target="#carousel-banner" data-slide-to="3"></li>
             <li data-target="#carousel-banner" data-slide-to="4"></li>
-            <li data-target="#carousel-banner" data-slide-to="5"></li>
-            <li data-target="#carousel-banner" data-slide-to="6"></li>
-            <li data-target="#carousel-banner" data-slide-to="7"></li>
-            <li data-target="#carousel-banner" data-slide-to="8"></li>
-            <li data-target="#carousel-banner" data-slide-to="9"></li>
-            <li data-target="#carousel-banner" data-slide-to="10"></li>
         </ol>
         <div class="carousel-inner" role="listbox">
             <div class="carousel-item active">
@@ -51,48 +45,6 @@ wp_enqueue_style('front-slider', td() . '/css/front-slider.css');
                 <div class="carousel-caption">
                     <h3><?php _text('Banner Title 5')?></h3>
                     <p><?php _text('Banner Description 5')?></p>
-                </div>
-            </div>
-            <div class="carousel-item">
-                <img src="<?php img_e()?>/banner/banner_6.jpg" alt="Fifth slide">
-                <div class="carousel-caption">
-                    <h3><?php _text('Banner Title 6')?></h3>
-                    <p><?php _text('Banner Description 6')?></p>
-                </div>
-            </div>
-            <div class="carousel-item">
-                <img src="<?php img_e()?>/banner/banner_7.jpg" alt="Fifth slide">
-                <div class="carousel-caption">
-                    <h3><?php _text('Banner Title 7')?></h3>
-                    <p><?php _text('Banner Description 7')?></p>
-                </div>
-            </div>
-            <div class="carousel-item">
-                <img src="<?php img_e()?>/banner/banner_8.jpg" alt="Fifth slide">
-                <div class="carousel-caption">
-                    <h3><?php _text('Banner Title 8')?></h3>
-                    <p><?php _text('Banner Description 8')?></p>
-                </div>
-            </div>
-            <div class="carousel-item">
-                <img src="<?php img_e()?>/banner/banner_9.jpg" alt="Fifth slide">
-                <div class="carousel-caption">
-                    <h3><?php _text('Banner Title 9')?></h3>
-                    <p><?php _text('Banner Description 9')?></p>
-                </div>
-            </div>
-            <div class="carousel-item">
-                <img src="<?php img_e()?>/banner/banner_10.jpg" alt="Fifth slide">
-                <div class="carousel-caption">
-                    <h3><?php _text('Banner Title 10')?></h3>
-                    <p><?php _text('Banner Description 10')?></p>
-                </div>
-            </div>
-            <div class="carousel-item">
-                <img src="<?php img_e()?>/banner/banner_11.jpg" alt="Fifth slide">
-                <div class="carousel-caption">
-                    <h3><?php _text('Banner Title 11')?></h3>
-                    <p><?php _text('Banner Description 11')?></p>
                 </div>
             </div>
         </div>
