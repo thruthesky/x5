@@ -27,11 +27,10 @@ section .curriculum.content-one .banner.img1 {
 
 section .curriculum.content-one .banner.text {
     position: absolute;
-    float: right;
+    float: left;
     display: inline-block;
     margin-top: 48px;
     width: 400px;
-    right: 200px;
 }
 
 section .curriculum.content-one .img2 {

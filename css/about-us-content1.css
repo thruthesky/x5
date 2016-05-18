@@ -25,9 +25,10 @@ section .about-us.content-one .desc {
 section .about-us.content-one .banner {
     position: absolute;
     display: inline-block;
-    float: left;
+    right: 0;
     width: 400px;
     margin-top: 50px;
+    text-align: right;
 }
 
 section .about-us.content-one .img1 {

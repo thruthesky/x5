@@ -10,3 +10,9 @@ wp_enqueue_style('curriculum-content5', td() . '/css/curriculum-content5.css');
         </div>
     </div>
 </section>
+
+<section class="curriculum extra">
+    <div>
+        <?php include "book-collection.php"; ?>
+    </div>
+</section>

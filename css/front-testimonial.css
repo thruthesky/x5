@@ -25,6 +25,7 @@
 
 .home.front .content .data > .testimonial .collection {
     text-align: left;
+    background-color: transparent;
 }
 
 .home.front .content .data > .testimonial .collection .row {

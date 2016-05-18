@@ -28,11 +28,10 @@ section .level-test.content-one .banner.img1 {
 
 section .level-test.content-one .banner.text {
     position: absolute;
-    float: right;
+    float: left;
     display: inline-block;
     margin-top: 55px;
     width: 350px;
-    right: 250px;
 }
 
 section .level-test.content-one .img2 {
