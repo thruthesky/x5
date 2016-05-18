@@ -7,7 +7,9 @@
         $prefix = get_text_translation_option_name_prefix();
         global $wpdb;
         $results = $wpdb->get_results( "SELECT * FROM $wpdb->options WHERE option_name LIKE '$prefix%'", OBJECT );
-        echo "<textarea>".json_encode($results)."</textarea>";
+
+        echo "<textarea>".base64_encode(json_encode($results))."</textarea>";
+
     }
     ?>
 
@@ -23,7 +25,6 @@
 
     <?php
 
-    $s = 'a:2:{s:13:"original_text";s:12:"Company Name";s:7:"content";s:18:"Company Logo Title";}';
 
 
 
@@ -34,7 +35,7 @@
         // import here.
         $_REQUEST['content'] = stripslashes($_REQUEST['content']);
         if ( ! empty($_REQUEST['content']) ) {
-            $arr = json_decode($_REQUEST['content'], true);
+            $arr = json_decode(base64_decode($_REQUEST['content']), true);
             if ( $arr ) {
                 $pre = get_text_translation_option_name_prefix();
                 foreach ( $arr as $e ) {
