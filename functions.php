@@ -102,24 +102,20 @@ function trim_greeting( $str ) {
 }
 
 
-
 if ( user()->admin() ) {
-    if ( isset($_GET['code'] ) && isset($_GET['original_text']) ) {
-        $org = $_GET['original_text'];
-        $content = stripslashes($_GET['content']);
-        $option_name = $_GET['code'];
+
+
+    if ( isset($_REQUEST['code'] ) && isset($_REQUEST['original_text']) ) {
+
+        $_REQUEST['original_text'] = $_REQUEST['original_text'];
+        $_REQUEST['content'] = stripslashes($_REQUEST['content']);
+        $option_name = $_REQUEST['code'];
         //di($option_name);
 
         delete_option( $option_name );
-        add_option( $option_name, ['original_text' => $org, 'content' => $content] );
+        add_option( $option_name, ['original_text' => $_REQUEST['original_text'], 'content' => $_REQUEST['content']] );
 
-        /*
-        wp_send_json_success([
-            'original_text' => $org,
-            'content' => $content,
-        ]);
-        exit;
-        */
+        wp_send_json_success($_REQUEST);
     }
 }
 

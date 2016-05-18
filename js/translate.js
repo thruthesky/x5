@@ -1,10 +1,7 @@
 jQuery( function( $ ) {
-
-
     /** Translating Text */
     var $site_edit = $('.site-edit');
     var $translate_text = $('.translate-text');
-
 
     $site_edit.click(function(){
         console.log(Cookies.get('site-edit'));
@@ -16,6 +13,7 @@ jQuery( function( $ ) {
         }
         location.reload();
     });
+
     if ( Cookies.get('site-edit') == 'Y' ) {
         $site_edit.css('color', 'orangered');
         $translate_text.click(function(event){
@@ -38,6 +36,7 @@ jQuery( function( $ ) {
                 '<div class="translate-text-edit" md5="'+md5+'">' +
                 '   <form action="?">' +
                 '       <input type="hidden" name="code" value="'+ code +'">' +
+                '       <input type="hidden" name="md5" value="'+ md5 +'">' +
                 '       <input type="hidden" name="original_text" value="'+ _.escape(original_text) +'">' +
                 '       <textarea name="content">'+html_content+'</textarea>' +
                 '       <input type="submit">' +
@@ -49,5 +48,21 @@ jQuery( function( $ ) {
             $('[md5="'+md5+'"]').find('textarea').focus();
         });
     }
+
+    $('body').on('submit', '.translate-text-edit form', function(e) {
+        e.preventDefault();
+        var $form = $(this);
+        var values = $form.serialize();
+        console.log(values);
+        $.post( $form.prop('action'), values, function(re){
+            if ( re['success'] ) {
+                console.log('success', re);
+                var data = re['data'];
+                $('.translate-text-edit').remove();
+                $('[md5="'+data['md5']+'"]').find('.html-content').html(data['content']);
+            }
+        });
+        return false;
+    });
 
 });
