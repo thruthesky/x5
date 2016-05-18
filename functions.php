@@ -118,6 +118,16 @@ if ( user()->admin() ) {
 }
 
 
+function get_text_translation_option_name_prefix() {
+    $domain = get_opt('lms[domain]', 'default');
+    return 'translation-' . $domain . '-';
+}
+
+function get_text_translation_option_name($md5) {
+    return get_text_translation_option_name_prefix() . $md5;
+}
+
+
 /**
  * Admin can only edit the text. so it lets the admin to use css and javascript.
  * @param $str
@@ -125,13 +135,13 @@ if ( user()->admin() ) {
  */
 function _text($str) {
     $md5 = md5($str);
-    $domain = get_opt('lms[domain]', 'default');
-    $option_name = 'translation-' . $domain . '-' . $md5;
+    $option_name = get_text_translation_option_name( $md5 );
     $data = get_option( $option_name );
     $org = esc_html($str);
     if ( empty($data) ) $str = $org;
     else {
-        $content = trim($data['content']);
+        $content = null;
+        if ( isset($data['content']) ) $content = trim($data['content']);
         if ( empty($content) ) $str = $org;
         else $str = $data['content'];
     }
@@ -149,3 +159,25 @@ function _text($str) {
 
 }
 
+
+
+
+add_action('admin_menu', function () {
+    add_menu_page(
+        __('X5 Theme Settings', 'x5'),
+        __('X5 Theme', 'x5'),
+        'manage_options',
+        'x5_theme_settings', // slug id. 메뉴가 클릭되면 /wp-admin/philgo-usage 와 같이 slug 로 URL 경로가 나타남.
+        'x5_admin_menu',
+        'dashicons-text',
+        '23.45'
+    );
+} );
+
+
+function x5_admin_menu() {
+    if ( !current_user_can( 'manage_options' ) )  {
+        wp_die( __( 'You do not have sufficient permissions to access this page.' ) );
+    }
+    include get_stylesheet_directory() . '/settings.php';
+}
