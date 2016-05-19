@@ -50,6 +50,7 @@
     display:block;
     width:100%;
     margin:0 auto 10px auto;
+    border-radius: 100%;
 }
 
 .bottom-icon-menus > .inner > .item  img.active {
