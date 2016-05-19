@@ -12,7 +12,7 @@ wp_enqueue_style('gallery', td() . '/css/front-gallery.css');
             If you want to see more about us, feel free to ask us more photos.') ?>
         </div>
         <div>
-            <img src="<?php img_e() ?>gallery.png" >
+            <img src="<?php img_e() ?>gallery.jpg" >
         </div>
     </div>
 </section>
