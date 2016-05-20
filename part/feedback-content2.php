@@ -6,7 +6,7 @@ wp_enqueue_style('feedback-content2', td() . '/css/feedback-content2.css');
         <div class="row">
             <div class="col-sm-6">
                 <div class="inner des1">
-                    <div class="picture text"><img src="<?php img_e() ?>feedback1.png" ></div>
+                    <div class="picture text"><img src="<?php img_e() ?>feedback1.jpg" ></div>
                     <div class="name text"><?php _e('Antonio', 'x5')?></div>
                     <div class="comment text">
                         <?php _e(
@@ -19,7 +19,7 @@ wp_enqueue_style('feedback-content2', td() . '/css/feedback-content2.css');
                     </div>
                 </div>
                 <div class="inner des1">
-                    <div class="picture text"><img src="<?php img_e() ?>feedback2.png" ></div>
+                    <div class="picture text"><img src="<?php img_e() ?>feedback2.jpg" ></div>
                     <div class="name text"><?php _e('Tatiana', 'x5')?></div>
                     <div class="comment text">
                         <?php _e(
@@ -31,7 +31,7 @@ wp_enqueue_style('feedback-content2', td() . '/css/feedback-content2.css');
                     </div>
                 </div>
                 <div class="inner des1">
-                    <div class="picture text"><img src="<?php img_e() ?>feedback3.png" ></div>
+                    <div class="picture text"><img src="<?php img_e() ?>feedback3.jpg" ></div>
                     <div class="name text"><?php _e('April', 'x5')?></div>
                     <div class="comment text">
                         <?php _e(
@@ -43,7 +43,7 @@ wp_enqueue_style('feedback-content2', td() . '/css/feedback-content2.css');
                     </div>
                 </div>
                 <div class="inner des2">
-                    <div class="picture text"><img src="<?php img_e() ?>feedback4.png" ></div>
+                    <div class="picture text"><img src="<?php img_e() ?>feedback4.jpg" ></div>
                     <div class="name text"><?php _e('Benjamin', 'x5')?></div>
                     <div class="comment text">
                         <?php _e(
@@ -56,7 +56,7 @@ wp_enqueue_style('feedback-content2', td() . '/css/feedback-content2.css');
                     </div>
                 </div>
                 <div class="inner des2">
-                    <div class="picture text"><img src="<?php img_e() ?>feedback5.png" ></div>
+                    <div class="picture text"><img src="<?php img_e() ?>feedback5.jpg" ></div>
                     <div class="name text"><?php _e('Tatiana', 'x5')?></div>
                     <div class="comment text">
                         <?php _e(
@@ -70,7 +70,7 @@ wp_enqueue_style('feedback-content2', td() . '/css/feedback-content2.css');
             </div>
             <div class="col-sm-6">
                 <div class="inner des1">
-                    <div class="picture text"><img src="<?php img_e() ?>feedback6.png" ></div>
+                    <div class="picture text"><img src="<?php img_e() ?>feedback6.jpg" ></div>
                     <div class="name text"><?php _e('Asli', 'x5')?></div>
                     <div class="comment text">
                         <?php _e(
@@ -82,7 +82,7 @@ wp_enqueue_style('feedback-content2', td() . '/css/feedback-content2.css');
                     </div>
                 </div>
                 <div class="inner des1">
-                    <div class="picture text"><img src="<?php img_e() ?>feedback1.png" ></div>
+                    <div class="picture text"><img src="<?php img_e() ?>feedback1.jpg" ></div>
                     <div class="name text"><?php _e('Kieran', 'x5')?></div>
                     <div class="comment text">
                         <?php _e(
@@ -93,7 +93,7 @@ wp_enqueue_style('feedback-content2', td() . '/css/feedback-content2.css');
                     </div>
                 </div>
                 <div class="inner des1">
-                    <div class="picture text"><img src="<?php img_e() ?>feedback2.png" ></div>
+                    <div class="picture text"><img src="<?php img_e() ?>feedback2.jpg" ></div>
                     <div class="name text"><?php _e('Pierre Alain', 'x5')?></div>
                     <div class="comment text">
                         <?php _e(
@@ -106,7 +106,7 @@ wp_enqueue_style('feedback-content2', td() . '/css/feedback-content2.css');
                 </div>
                 <div class="inner des6">
                     <div class="cover">
-                        <div class="picture text"><img src="<?php img_e() ?>feedback3.png" ></div>
+                        <div class="picture text"><img src="<?php img_e() ?>feedback3.jpg" ></div>
                         <div class="name text"><?php _e('Jaime', 'x5')?></div>
                     </div>
                     <div class="comment text">

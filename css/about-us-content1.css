@@ -5,6 +5,16 @@ section .about-us.content-one {
     height: 280px;
 }
 
+section .about-us.content-one > div > img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 100%;
+    height: auto;
+    margin-top: -50%;
+    margin-left: -50%;
+}
+
 
 section .about-us.content-one h2 {
     display: inline-block;

@@ -1,9 +1,8 @@
 section .team-viewer.content-one {
-    background: url("../img/team-viewer-banner1.png") no-repeat;
+    background: url("../img/team-viewer-banner1.jpg") no-repeat;
     background-size: cover;
     background-position: center center;
-    background-color: #0280db;
-    height: 240px;
+    height: 280px;
 }
 
 
