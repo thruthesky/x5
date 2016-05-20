@@ -1,7 +1,6 @@
 section .teachers.content-one {
-    background: url("../img/teacher-list-banner1.jpg") no-repeat;
+    background: url("../img/teacher-list-banner1.jpg") no-repeat center center;
     background-size: cover;
-    background-position: center center;
     height: 280px;
 }
 

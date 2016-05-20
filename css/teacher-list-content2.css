@@ -1,8 +1,9 @@
 section .teachers.content-two > div {
-    padding: 50px 0;
+    padding: 50px 0 50px;
 }
 section .teachers.content-two .teacher {
     margin: 0;
+    padding-bottom: 20px;
     border: 8px solid #ffffff;
     background-color: #01d9c1;
     text-align: center;
@@ -41,9 +42,35 @@ section .teachers.content-two .teacher .photo img {
 section .teachers.content-two .teacher .greeting {
     height: 240px;
     overflow-y: hidden;
+    word-break: break-word;
 }
 section .teachers.content-two .teacher .youtube iframe {
     width: 100%;
     height: auto;
     margin-bottom: 30px;
+}
+
+
+section .teachers.content-two .teacher .youtube {
+    position: relative;
+    display: inline-block;
+    width: 280px;
+    height: 154px;
+    cursor:pointer;
+}
+
+.youtube .play {
+    background: url("../img/play.png") no-repeat center center;
+    background-size: 64px 64px;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    opacity: .5 ;
+    filter: alpha(opacity=80);
+    transition: all 0.2s ease-out;
+}
+
+.youtube .play:hover {
+    opacity: 1;
+
 }

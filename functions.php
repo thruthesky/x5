@@ -91,8 +91,10 @@ function youtube_tag($url, $w=640, $h=390) {
     $arr = explode('/', $url);
     $id = end( $arr );
     return <<<EOH
-    <iframe width="214" height="120" src="http://www.youtube.com/embed/$id?autohide=1&controls=0" border="0" scrolling="no"></iframe>
+    <div class="youtube" id="$id"></div>
 EOH;
+
+    //<iframe width="214" height="120" data-src="http://www.youtube.com/embed/$id?autohide=1&controls=0" border="0" scrolling="no"></iframe>
 }
 function trim_greeting( $str ) {
     $str = stripslashes($str);
