@@ -25,6 +25,10 @@
     font-size: 37px;
 }
 
+.home .carousel-caption p {
+    padding: 1em;
+}
+
 .home .my-slider .carousel.slide .carousel-inner .carousel-item .carousel-caption p {
     font-size: 24px;
 }
