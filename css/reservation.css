@@ -229,3 +229,10 @@ html body div.popover-arrow::after {
 
 /* EO Popover*/
 
+/* dropdown */
+
+nav.month .show-month {
+    display: none;
+}
+/* EO dropdown*/
+

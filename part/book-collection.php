@@ -11,7 +11,7 @@ wp_enqueue_script('front-book', td() . '/js/front-book.js');
         ?>
         <div class="col-sm-3">
             <div class="inner row <?php if($x > 12) { echo 'load-sub'; } ?>">
-                <img src="<?php echo $path .'curric-book'. $x .'.jpg' ?>">
+                <img src="<?php echo $path .'book/curric-book'. $x .'.jpg' ?>">
                 <div class="title"><?php _text("Home Book$x Title")?></div>
                 <div class="desc">
                     <?php _text("Home Book$x Description")?>

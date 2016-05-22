@@ -3,7 +3,7 @@ section .testing.content-two {
 }
 
 section .testing.content-two .container {
-    margin: 70px 0 100px;
+    margin: 70px 20px 100px;
 }
 
 section .testing.content-two .line-faq {
@@ -36,6 +36,14 @@ section .testing.content-two .line-faq .desc {
     font-size: 16px;
     color: #1b3b46;
     background-color: #e7f0f5;
+}
+
+section .testing.content-two .line-faq strong {
+    font-size: 18px;
+}
+
+section .testing.content-two .line-faq .indent {
+    margin-left: 40px
 }
 
 section .testing.content-two .line-faq:hover {
