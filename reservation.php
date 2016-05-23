@@ -24,9 +24,9 @@ include 'part/reservation-content1.php';
     <div>
         <?php if ( is_user_logged_in() ) : ?>
             <?php if ( empty( $books ) ) : ?>
-                <?php _e("You have no reservations", 'x5'); ?>
+                <?php _text("You have no reservations"); ?>
             <?php else : ?>
-                <?php _e("No. of Reservations", 'x5'); ?> : <?php echo  count($books); ?>
+                <?php _text("No. of Reservations"); ?> : <?php echo  count($books); ?>
             <?php endif; ?>
         <?php else : ?>
             <!--?php _e('Please login to see your reservation', 'x5'); ?-->
@@ -35,10 +35,11 @@ include 'part/reservation-content1.php';
 
 
         <h2><?php _e("Class Reservation", 'x5')?></h2>
-        <?php /*if ( is_user_logged_in() )*/ include 'part/reservation-header.php'?>
+        <?php if ( is_user_logged_in() ) include 'part/reservation-header.php' ?>
 
         <div class="desc">
             <?php echo draw_calendar($m, $Y, $data); ?>
+            <?php /*echo draw_calendar_listview($m, $Y, $data); */?>
         </div>
 
         <nav>

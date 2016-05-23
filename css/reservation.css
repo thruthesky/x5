@@ -260,9 +260,35 @@ nav.month .show-month a {
 nav.month .prev-month:hover > .show-month {
     display: block;
 }
+nav.month .this-month:hover > .show-month {
+    display: block;
+}
+nav.month .next-month:hover > .show-month {
+    display: block;
+}
 
 nav.month .show-month a:hover {
     font-weight: bold;
 }
 /* EO dropdown*/
+
+
+/* Calendar listview*/
+.reservation.content-two .listview .day-number {
+    position: relative;
+    display: inline-block;
+    width: 100px;
+    padding: 15px;
+    margin-bottom: 7px;
+    text-align: center;
+    background-color: #7d7d7d;
+}
+
+.reservation.content-two .listview  .calendar-day {
+    width: 100%;
+    text-align: left;
+    margin-left: 25px;
+}
+
+/* EO Calendar listview*/
 
