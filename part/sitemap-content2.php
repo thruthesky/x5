@@ -21,6 +21,10 @@ wp_enqueue_style('sitemap-content2', td() . '/css/sitemap-content2.css');
                     <img src="<?php img_e() ?>sitemap/sitemap-icon-feedback.jpg">
                     <div class="text all"><a href="<?php echo home_url()?>/feedback">Feedback</a></div>
                 </div>
+                <div class="cover">
+                    <img src="<?php img_e() ?>sitemap/sitemap-icon-teamviewer.jpg">
+                    <div class="text all"><a href="<?php echo home_url()?>/team-viewer">Team Viewer</a></div>
+                </div>
             </div>
             <div class="col-sm-4">
                 <div class="cover">
@@ -39,6 +43,10 @@ wp_enqueue_style('sitemap-content2', td() . '/css/sitemap-content2.css');
                     <img src="<?php img_e() ?>sitemap/sitemap-icon-teacherslist.jpg">
                     <div class="text all"><a href="<?php echo home_url()?>/teacher-list">Teachers List</a></div>
                 </div>
+                <div class="cover">
+                    <img src="<?php img_e() ?>sitemap/sitemap-icon-testing.jpg">
+                    <div class="text all"><a href="<?php echo home_url()?>/testing">A/V Testing</a></div>
+                </div>
             </div>
             <div class="col-sm-4">
                 <div class="cover">
@@ -52,6 +60,14 @@ wp_enqueue_style('sitemap-content2', td() . '/css/sitemap-content2.css');
                 <div class="cover">
                     <img src="<?php img_e() ?>sitemap/sitemap-icon-qna.jpg">
                     <div class="text all"><a href="<?php echo home_url()?>/forum/qna">QnA</a></div>
+                </div>
+                <div class="cover">
+                    <img src="<?php img_e() ?>sitemap/sitemap-icon-skype.jpg">
+                    <div class="text all"><a href="<?php echo home_url()?>/skype">Skype</a></div>
+                </div>
+                <div class="cover">
+                    <img src="<?php img_e() ?>sitemap/sitemap-icon-ve.jpg">
+                    <div class="text all"><a href="<?php echo home_url()?>/ve">VE</a></div>
                 </div>
             </div>
         </div>

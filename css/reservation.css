@@ -9,18 +9,28 @@
 
 .reservation.content-two .btn {
     position: relative;
-    width: 108px;
+    width: 150px;
     padding: 0;
     font-size: 18px;
     font-weight: 800;
     color: #2d2d2d;
 }
 
+.reservation.content-two .btn > a {
+    display: block;
+    padding: 10px 0;
+    text-decoration: none;
+}
+
+.reservation.content-two .btn > span {
+    padding: 10px;
+    display: block;
+}
+
 .reservation.content-two nav.month {
     padding: 10px 20px 0 0;
     margin-bottom: 20px;
     text-align: center;
-
 }
 
 .reservation.content-two nav.month i {
@@ -37,10 +47,6 @@
     border-color: transparent transparent #1abc9c transparent;
 }
 
-.reservation.content-two .prev-month,
-.reservation.content-two .next-month {
-
-}
 
 .reservation.content-two .prev-month {
     float: left;
@@ -168,21 +174,25 @@
     line-height: 35px;
 }
 
-.reservation.content-two nav .fa.fa-th-large,
-.reservation.content-two nav .calendar-view,
-.reservation.content-two nav .list-view {
+.reservation.content-two nav .btm-btn {
     float: left;
     display: inline-block;
     font-size: 20px;
     padding-left: 10px;
-    color: #28cd8d;
+    color: #545454;
+    cursor: pointer;
 }
 .reservation.content-two img.reminder {
     position: absolute;
     width: 70%;
-    top: 33%;
+    top: 30%;
     left: 10%;
     z-index: 100;
+}
+
+.reservation.content-two nav .fa.fa-th-large,
+.reservation.content-two nav .calendar-view{
+    color: #e63349;
 }
 
 /* Pop over*/
@@ -232,7 +242,27 @@ html body div.popover-arrow::after {
 /* dropdown */
 
 nav.month .show-month {
+    position: absolute;
     display: none;
+    width: 165px;
+    background-color: #3f5d7c;
+    z-index: 12345;
+ }
+
+nav.month .show-month a {
+    display: block;
+    color: #efefef;
+    padding: 8px;
+    font-weight: normal;
+    text-decoration: none;
+}
+
+nav.month .prev-month:hover > .show-month {
+    display: block;
+}
+
+nav.month .show-month a:hover {
+    font-weight: bold;
 }
 /* EO dropdown*/
 
