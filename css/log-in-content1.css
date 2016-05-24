@@ -1,8 +1,7 @@
 section .log-in.content-one {
-    /*background: url("../img/log-in-banner1.jpg") no-repeat;
+    background: url("../img/log-in-banner1.jpg") no-repeat;
     background-size: cover;
-    background-position: center center;*/
-    background-color: #3e4751;
+    background-position: center center;
     height: 280px;
 }
 

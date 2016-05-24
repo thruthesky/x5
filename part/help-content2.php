@@ -18,7 +18,7 @@ wp_enqueue_script('help-content2', td() . '/js/help-content2.js');
         </ul>
         <h2><?php _text('Company Information' )?></h2>
         <div class="company-picture">
-            <img src="<?php img_e()?>/banner/home_slider1.jpg">
+            <!--img src="<?php img_e()?>/banner/home_slider1.jpg"-->
         </div>
         <div class="line">
             <div class="title"><?php _text('Address:' )?></div>

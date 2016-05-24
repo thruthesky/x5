@@ -6,52 +6,68 @@ wp_enqueue_style('sitemap-content2', td() . '/css/sitemap-content2.css');
         <div class="row">
             <div class="col-sm-4">
                 <div class="cover">
-                    <img src="<?php img_e() ?>sitemap-icon-login.jpg">
+                    <img src="<?php img_e() ?>sitemap/sitemap-icon-login.jpg">
                     <div class="text login"><a href="<?php echo home_url()?>/user-log-in">Login</a></div>
                 </div>
                 <div class="cover">
-                    <img src="<?php img_e() ?>sitemap-icon-aboutus.jpg">
+                    <img src="<?php img_e() ?>sitemap/sitemap-icon-aboutus.jpg">
                     <div class="text all"><a href="<?php echo home_url()?>/about-us">About Us</a></div>
                 </div>
                 <div class="cover">
-                    <img src="<?php img_e() ?>sitemap-icon-curriculum.jpg">
+                    <img src="<?php img_e() ?>sitemap/sitemap-icon-curriculum.jpg">
                     <div class="text all"><a href="<?php echo home_url()?>/curriculum">Curriculum</a></div>
                 </div>
                 <div class="cover">
-                    <img src="<?php img_e() ?>sitemap-icon-feedback.jpg">
+                    <img src="<?php img_e() ?>sitemap/sitemap-icon-feedback.jpg">
                     <div class="text all"><a href="<?php echo home_url()?>/feedback">Feedback</a></div>
+                </div>
+                <div class="cover">
+                    <img src="<?php img_e() ?>sitemap/sitemap-icon-teamviewer.jpg">
+                    <div class="text all"><a href="<?php echo home_url()?>/team-viewer">Team Viewer</a></div>
                 </div>
             </div>
             <div class="col-sm-4">
                 <div class="cover">
-                    <img src="<?php img_e() ?>sitemap-icon-register.jpg">
+                    <img src="<?php img_e() ?>sitemap/sitemap-icon-register.jpg">
                     <div class="text register"><a href="<?php echo home_url()?>/user-register">Register</a></div>
                 </div>
                 <div class="cover">
-                    <img src="<?php img_e() ?>sitemap-icon-leveltest.jpg">
+                    <img src="<?php img_e() ?>sitemap/sitemap-icon-leveltest.jpg">
                     <div class="text all"><a href="<?php echo home_url()?>/level-test">Level Test</a></div>
                 </div>
                 <div class="cover">
-                    <img src="<?php img_e() ?>sitemap-icon-reservation.jpg">
+                    <img src="<?php img_e() ?>sitemap/sitemap-icon-reservation.jpg">
                     <div class="text all"><a href="<?php echo home_url()?>/reservation">Reservation</a></div>
                 </div>
                 <div class="cover">
-                    <img src="<?php img_e() ?>sitemap-icon-teacherslist.jpg">
+                    <img src="<?php img_e() ?>sitemap/sitemap-icon-teacherslist.jpg">
                     <div class="text all"><a href="<?php echo home_url()?>/teacher-list">Teachers List</a></div>
+                </div>
+                <div class="cover">
+                    <img src="<?php img_e() ?>sitemap/sitemap-icon-testing.jpg">
+                    <div class="text all"><a href="<?php echo home_url()?>/testing">A/V Testing</a></div>
                 </div>
             </div>
             <div class="col-sm-4">
                 <div class="cover">
-                    <img src="<?php img_e() ?>sitemap-icon-help.jpg">
+                    <img src="<?php img_e() ?>sitemap/sitemap-icon-help.jpg">
                     <div class="text help "><a href="<?php echo home_url()?>/help">Help</a></div>
                 </div>
                 <div class="cover">
-                    <img src="<?php img_e() ?>sitemap-icon-enrollment.jpg">
+                    <img src="<?php img_e() ?>sitemap/sitemap-icon-enrollment.jpg">
                     <div class="text all"><a href="<?php echo home_url()?>/enrollment">Enrollment</a></div>
                 </div>
                 <div class="cover">
-                    <img src="<?php img_e() ?>sitemap-icon-qna.jpg">
+                    <img src="<?php img_e() ?>sitemap/sitemap-icon-qna.jpg">
                     <div class="text all"><a href="<?php echo home_url()?>/forum/qna">QnA</a></div>
+                </div>
+                <div class="cover">
+                    <img src="<?php img_e() ?>sitemap/sitemap-icon-skype.jpg">
+                    <div class="text all"><a href="<?php echo home_url()?>/skype">Skype</a></div>
+                </div>
+                <div class="cover">
+                    <img src="<?php img_e() ?>sitemap/sitemap-icon-ve.jpg">
+                    <div class="text all"><a href="<?php echo home_url()?>/ve">VE</a></div>
                 </div>
             </div>
         </div>

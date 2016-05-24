@@ -2,8 +2,7 @@ section .skype.content-one {
     background: url("../img/skype-banner1.jpg") no-repeat;
     background-size: cover;
     background-position: center center;
-    background-color: #81d4dc;
-    height: 240px;
+    height: 280px;
 }
 
 

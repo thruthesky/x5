@@ -24,6 +24,7 @@
 }
 
 .home.front .content .data > .testimonial .collection {
+    padding: 0;
     text-align: left;
     background-color: transparent;
 }
@@ -35,7 +36,7 @@
 .home.front .content .data > .testimonial .collection .inner {
     height: 175px;
     overflow-y: hidden;
-    margin-bottom: 20px;
+    margin-bottom: 15px;
 }
 
 .home.front .content .data > .testimonial .collection .inner .picture {

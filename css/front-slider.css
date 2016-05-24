@@ -22,9 +22,15 @@
 }
 
 .home .my-slider .carousel.slide .carousel-inner .carousel-item .carousel-caption h3 {
-    font-size: 37px;
+	margin: 0;
+	padding: 0;
+	font-size: 2rem;
+}
+
+.home .carousel-caption p {
+    padding: 1em;
 }
 
 .home .my-slider .carousel.slide .carousel-inner .carousel-item .carousel-caption p {
-    font-size: 24px;
+    font-size: 1.2rem;
 }

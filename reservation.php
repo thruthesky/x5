@@ -24,9 +24,9 @@ include 'part/reservation-content1.php';
     <div>
         <?php if ( is_user_logged_in() ) : ?>
             <?php if ( empty( $books ) ) : ?>
-                <?php _e("You have no reservations", 'x5'); ?>
+                <?php _text("You have no reservations"); ?>
             <?php else : ?>
-                <?php _e("No. of Reservations", 'x5'); ?> : <?php echo  count($books); ?>
+                <?php _text("No. of Reservations"); ?> : <?php echo  count($books); ?>
             <?php endif; ?>
         <?php else : ?>
             <!--?php _e('Please login to see your reservation', 'x5'); ?-->
@@ -35,16 +35,19 @@ include 'part/reservation-content1.php';
 
 
         <h2><?php _e("Class Reservation", 'x5')?></h2>
-        <?php include 'part/reservation-header.php'?>
+        <?php if ( is_user_logged_in() ) include 'part/reservation-header.php' ?>
 
         <div class="desc">
             <?php echo draw_calendar($m, $Y, $data); ?>
+            <?php /*echo draw_calendar_listview($m, $Y, $data); */?>
         </div>
 
         <nav>
-            <i class="fa fa-th-large" aria-hidden="true"></i>
-            <div class="calendar-view">CALENDAR VIEW</div>
-            <div class="list-view">LIST VIEW</div>
+            <i class="fa fa-th-large btm-btn" aria-hidden="true"></i>
+            <div class="calendar-view btm-btn">CALENDAR VIEW</div>
+            <div class="divider btm-btn"> | </div>
+            <i class="fa fa-bars btm-btn" aria-hidden="true"></i>
+            <div class="list-view btm-btn">LIST VIEW</div>
         </nav>
     </div>
 </section>

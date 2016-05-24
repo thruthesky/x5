@@ -1,5 +1,5 @@
 <?php
-$M = date('M', mktime( 0, 0, 0, $m, 1, $Y));
+$M = $M = date('M', mktime( 0, 0, 0, $m, 1, $Y));
 $pM = date('M', mktime( 0, 0, 0, $m-1, 1, $Y));
 $nM = date('M', mktime( 0, 0, 0, $m+1, 1, $Y));
 $prev_month_digit = date('m', mktime( 0, 0, 0, $m-1, 1, $Y));
@@ -12,23 +12,41 @@ $nY = date('Y', mktime( 0, 0, 0, $m+1, 1, $Y));
     <div class="prev-month btn">
         <a href="?m=<?php echo $prev_month_digit?>&Y=<?php echo $pY?>">
             <?php echo $pM?> <?php echo $pY?>
-        <i></i>
+            <i></i>
         </a>
-
-            <!--?php
-            $prev = '<div class="prev-past-month">';
-            for($x = 0; $x < 11; $x++):
-                $prev.= '<div class="calendar-day-np"> </div>';
-                $days_in_this_week++;
+        <div class="show-month">
+            <?php
+            for($x = 2; $x < 13; $x++):
+                ?>
+                <div class="display-month">
+                <a href="?m=<?php echo date('m', mktime( 0, 0, 0, $m-$x, 1, $Y));?>&Y=<?php echo date('Y', mktime( 0, 0, 0, $m-$x, 1, $Y));?>">
+                    <?php echo date('M Y', mktime( 0, 0, 0, $m-$x, 1, $Y));?>
+                    <i></i>
+                </a>
+                </div>
+                <?php
             endfor;
-            $prev .= '</div>';
-            ?-->
-
+            ?>
+        </div>
     </div>
 
     <div class="this-month btn">
-        <?php echo $M?> <?php echo $Y?>
+        <span><?php echo $M?> <?php echo $Y?></span>
         <i></i>
+        <div class="show-month">
+            <?php
+            for($x = -1; $x < 4; $x++):
+                ?>
+                <div class="display-month">
+                    <a href="?m=<?php echo date('m', mktime( 0, 0, 0, $m, 1, $Y+$x));?>&Y=<?php echo date('Y', mktime( 0, 0, 0, $m, 1, $Y+$x));?>">
+                        <?php echo date('M Y', mktime( 0, 0, 0, $m, 1, $Y+$x));?>
+                        <i></i>
+                    </a>
+                </div>
+                <?php
+            endfor;
+            ?>
+        </div>
     </div>
 
 
@@ -37,6 +55,21 @@ $nY = date('Y', mktime( 0, 0, 0, $m+1, 1, $Y));
             <?php echo $nM?> <?php echo $nY?>
             <i></i>
         </a>
+
+        <div class="show-month">
+            <?php
+            for($x = 2; $x < 13; $x++):
+                ?>
+                <div class="display-month">
+                    <a href="?m=<?php echo date('m', mktime( 0, 0, 0, $m+$x, 1, $Y));?>&Y=<?php echo date('Y', mktime( 0, 0, 0, $m+$x, 1, $Y));?>">
+                        <?php echo date('M Y', mktime( 0, 0, 0, $m+$x, 1, $Y));?>
+                        <i></i>
+                    </a>
+                </div>
+                <?php
+            endfor;
+            ?>
+        </div>
     </div>
 
 </nav>

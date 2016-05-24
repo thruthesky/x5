@@ -30,7 +30,7 @@
 }
 
 .home.front .content .data > .gallery > div img {
-    padding: 0 2.8125em;
-    margin-bottom: 6.25em;
+    margin: 0 1.8125em 6.25em;
+    border-radius: 3px;
 }
 
