@@ -91,7 +91,7 @@ function youtube_tag($url, $w=640, $h=390) {
     $arr = explode('/', $url);
     $id = end( $arr );
     return <<<EOH
-    <div class="youtube" id="$id"></div>
+    <iframe width="214" height="120" src="http://www.youtube.com/embed/$id?autohide=1&controls=0" border="0" scrolling="no"></iframe>
 EOH;
 
     //<iframe width="214" height="120" data-src="http://www.youtube.com/embed/$id?autohide=1&controls=0" border="0" scrolling="no"></iframe>
@@ -104,8 +104,6 @@ function trim_greeting( $str ) {
 
 
 if ( user()->admin() ) {
-
-
     if ( isset($_REQUEST['code'] ) && isset($_REQUEST['original_text']) ) {
         $_REQUEST['original_text'] = stripslashes($_REQUEST['original_text']);
         $_REQUEST['content'] = stripslashes($_REQUEST['content']);
@@ -120,6 +118,7 @@ if ( user()->admin() ) {
 }
 
 
+
 function get_text_translation_option_name_prefix() {
     $domain = get_opt('lms[domain]', 'default');
     return 'translation-' . $domain . '-';
@@ -130,12 +129,7 @@ function get_text_translation_option_name($md5) {
 }
 
 
-/**
- * Admin can only edit the text. so it lets the admin to use css and javascript.
- * @param $str
- * @return void
- */
-function _text($str) {
+function _getText($str) {
     $md5 = md5($str);
     $option_name = get_text_translation_option_name( $md5 );
     $data = get_option( $option_name );
@@ -147,7 +141,19 @@ function _text($str) {
         if ( empty($content) ) $str = $org;
         else $str = $data['content'];
     }
+    return $str;
+}
 
+/**
+ * Admin can only edit the text. so it lets the admin to use css and javascript.
+ * @param $str
+ * @return void
+ */
+function _text($str) {
+    $md5 = md5($str);
+    $option_name = get_text_translation_option_name( $md5 );
+    $org = esc_html($str);
+    $str = _getText($str);
     if ( !isset($_COOKIE['site-edit']) || $_COOKIE['site-edit'] != 'Y' || ! user()->admin() ) {
         echo $str;
     }
