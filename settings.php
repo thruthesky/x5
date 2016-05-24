@@ -26,10 +26,6 @@
     <?php
 
 
-
-
-
-
     if ( isset($_REQUEST['mode']) && $_REQUEST['mode'] == 'import' ) {
         echo "<h2>Import Text Translation</h2>";
         // import here.
@@ -40,14 +36,11 @@
                 $pre = get_text_translation_option_name_prefix();
                 foreach ( $arr as $e ) {
 
-
                     list ( $a, $b, $c ) = explode('-', $e['option_name'], 3);
                     $name = "$pre$c";
                     delete_option( $name );
 
-
                     $value = $e['option_value'];
-
 
                     if ( empty($value) ) {
 

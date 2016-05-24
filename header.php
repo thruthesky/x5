@@ -63,7 +63,7 @@
                     <?php else : ?>
                         <li class="<?php if ( segment(0) == 'user-log-in' ) echo 'active'; ?>" >
                             <a href="<?php hd()?>user-log-in">
-                                <span><?php _e('LOGIN', 'x5')?></span>
+                                <span><?php _text('LOGIN')?></span>
                             </a>
 
                         </li>
