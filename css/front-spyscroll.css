@@ -28,6 +28,7 @@ body {
 
 .home #nav-link {
     padding: 10px 0;
+    border-radius: 3px;
 }
 .home #nav-link a {
     display: block;
@@ -43,6 +44,7 @@ body {
     font-weight: 400;
     color: #FFFFFF;
     background-color: #47b89c;
+    border-radius: 3px;
 }
 
 .home .spy-position {
