@@ -3,7 +3,7 @@ wp_enqueue_style('footer-default', td() . '/css/footer-default.css');
 ?>
 <div class="default-footer">
     <div class="logo-picture">
-        <img class="logo" src="<?php opt('lms[logo]', img() . 'logo.jpg')?>">
+        <img class="logo" src="<?php opt('lms[logo_on_bottom]', img() . 'logo.jpg')?>">
         <div class="title"><?php _text('Company Name')?></div>
     </div>
     <div class="footer-content">

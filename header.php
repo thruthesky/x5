@@ -30,7 +30,7 @@
             ?>
             <div class="logo">
                 <a href="<?php echo home_url()?>">
-                    <img src="<?php opt('lms[logo]', img() . 'logo.jpg')?>">
+                    <img src="<?php opt('lms[logo_on_top]', img() . 'logo.jpg')?>">
                 </a>
                 <div class="title">
                     <a href="<?php echo home_url()?>">
