@@ -38,8 +38,8 @@ include 'part/reservation-content1.php';
         <?php if ( is_user_logged_in() ) include 'part/reservation-header.php' ?>
 
         <div class="desc">
-            <?php echo draw_calendar($m, $Y, $data); ?>
-            <?php /*echo draw_calendar_listview($m, $Y, $data); */?>
+            <?php /*echo draw_calendar($m, $Y, $data); */?>
+            <?php echo draw_calendar_listview($m, $Y, $data); ?>
         </div>
 
         <nav>
