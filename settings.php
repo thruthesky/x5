@@ -73,6 +73,7 @@
         if ( empty( $_REQUEST['original_text'] ) ) $_REQUEST['original_text'] = '&nbsp;';
         $option_name = $_REQUEST['option_name'];
 
+
         delete_option( $option_name );
         add_option( $option_name, ['original_text' => $_REQUEST['original_text'], 'content' => $_REQUEST['content']] );
 
@@ -94,6 +95,7 @@
                 $code = $str = $codes[$i];
                 $md5 = md5($str);
                 $option_name = get_text_translation_option_name( $md5 );
+di($option_name);
                 $org = esc_html($str);
                 $str = _getText($str);
 ?>
