@@ -1,7 +1,7 @@
 /** Follow Strict SMACSS */
 header {
     background-color: #fff;
-    border-bottom: 0.125rem solid #9d9d9d;
+    border-bottom: 1px solid #9d9d9d;
 }
 
 /** Logo */
@@ -87,7 +87,6 @@ nav.top-menu ul li:last-child a {
 
 nav.top-menu ul li a:hover {
     color: #0e7ecc;
-   /*border-bottom: 0.125rem solid #b0acac;*/
 }
 
 nav.top-menu ul li span {

@@ -38,16 +38,18 @@ include 'part/reservation-content1.php';
         <?php if ( is_user_logged_in() ) include 'part/reservation-header.php' ?>
 
         <div class="desc">
-            <?php /*echo draw_calendar($m, $Y, $data); */?>
-            <?php echo draw_calendar_listview($m, $Y, $data); ?>
+            <?php
+            if ( isset($_REQUEST['view']) && $_REQUEST['view'] = 'list')
+            echo draw_calendar_listview($m, $Y, $data);
+            else echo draw_calendar($m, $Y, $data); ?>
         </div>
 
         <nav>
             <i class="fa fa-th-large btm-btn" aria-hidden="true"></i>
-            <div class="calendar-view btm-btn">CALENDAR VIEW</div>
+            <div class="calendar-view btm-btn"><a href="<?php hd()?>reservation?<?php if ( isset($_REQUEST['m'])) echo 'm='.$_REQUEST['m']; if ( isset($_REQUEST['Y'])) echo '&Y='.$_REQUEST['Y'];?>">CALENDAR VIEW</a></div>
             <div class="divider btm-btn"> | </div>
             <i class="fa fa-bars btm-btn" aria-hidden="true"></i>
-            <div class="list-view btm-btn">LIST VIEW</div>
+            <div class="list-view btm-btn"><a href="?view=list<?php if ( isset($_REQUEST['m'])) echo '&m='.$_REQUEST['m']; if ( isset($_REQUEST['Y'])) echo '&Y='.$_REQUEST['Y'];?>">LIST VIEW</a></div>
         </nav>
     </div>
 </section>

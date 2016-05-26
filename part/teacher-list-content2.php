@@ -36,7 +36,7 @@ if ( empty($teachers)  ) {
                 <div class="major text"><?php echo $teacher['major']?></div>
                 <div class="greeting text"><?php echo trim_greeting($teacher['greeting'])?></div>
                 <?php echo youtube_tag($teacher['url_youtube'])?>
-            </div>
+            </div> 
         <?php } ?>
     </div>
 </section>
