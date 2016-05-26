@@ -29,8 +29,8 @@ include 'part/reservation-content1.php';
                 <?php _text("No. of Reservations"); ?> : <?php echo  count($books); ?>
             <?php endif; ?>
         <?php else : ?>
-            <!--?php _e('Please login to see your reservation', 'x5'); ?-->
             <img class="reminder" src="<?php img_e() ?>reservation-content2-image1.png">
+            <div class="reminder-text">Please Login to View Reservation</div>
         <?php endif; ?>
 
 
