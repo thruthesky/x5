@@ -1,6 +1,12 @@
 section .teachers.content-two > div {
     padding: 50px 0 50px;
 }
+
+section .teachers.content-two > div .teacher-row {
+    position: relative;
+    display: inline-block;
+}
+
 section .teachers.content-two .teacher {
     margin: 0;
     padding-bottom: 20px;
@@ -42,7 +48,7 @@ section .teachers.content-two .teacher .photo img {
 section .teachers.content-two .teacher .greeting {
     height: 240px;
     overflow-y: hidden;
-    word-break: break-word;
+    word-break: keep-all;
 }
 section .teachers.content-two .teacher .youtube iframe {
     width: 100%;

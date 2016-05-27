@@ -1,18 +1,37 @@
 <?php
 wp_enqueue_style('about-us-content3', td() . '/css/about-us-content3.css');
 ?>
+
+<?php
+
+$re = teacher_list();
+
+if ( $re['code'] ) {
+    echo "<h2>$re[message]</h2>";
+    return;
+}
+
+
+$teachers = $re['data'];
+if ( empty($teachers)  ) {
+    echo "<h2>No teachers</h2>";
+    return;
+}
+
+
+
+
+?>
 <section class="about-us content-three">
     <div>
-        <div class="container">
-            <h2><?php _text('AU:B3:Claim your free trial or enroll now')?></h2>
-            <nav>
-                <div class="trial button">
-                    <a href="<?php hd()?>level-test"><?php _text('AU:B3:Start Trial')?></a>
+        <div class="teacher-row">
+            <?php foreach ( $teachers as $teacher ) { ?>
+                <div class="teacher col-sm-6">
+                    <div class="photo"><img src="http://witheng.com/<?php echo $teacher['photo']?>"></div>
+                    <div class="id">Teacher <?php echo $teacher['id']?></div>
+                    <div class="greeting text"><?php echo trim_greeting($teacher['greeting'])?></div>
                 </div>
-                <div class="enroll button">
-                    <a href="<?php hd()?>enrollment"><?php _text('AU:B3:Enroll Now')?></a>
-                </div>
-            </nav>
+            <?php } ?>
         </div>
     </div>
 </section>

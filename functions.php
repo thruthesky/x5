@@ -100,6 +100,7 @@ EOH;
 function trim_greeting( $str ) {
     $str = stripslashes($str);
     $str = strip_tags($str);
+    $str = preg_replace("/\s|&nbsp;/",' ',$str);
     return $str;
 }
 
