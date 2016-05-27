@@ -10,7 +10,7 @@ $nY = date('Y', mktime( 0, 0, 0, $m+1, 1, $Y));
 <nav class="month">
 
     <div class="prev-month btn">
-        <a href="?m=<?php echo $prev_month_digit?>&Y=<?php echo $pY?>">
+        <a href="?m=<?php echo $prev_month_digit;?>&Y=<?php echo $pY; if ( isset($_REQUEST['view']) ) echo "&view=list"; ?>">
             <?php echo $pM?> <?php echo $pY?>
             <i></i>
         </a>
@@ -19,7 +19,9 @@ $nY = date('Y', mktime( 0, 0, 0, $m+1, 1, $Y));
             for($x = 2; $x < 13; $x++):
                 ?>
                 <div class="display-month">
-                <a href="?m=<?php echo date('m', mktime( 0, 0, 0, $m-$x, 1, $Y));?>&Y=<?php echo date('Y', mktime( 0, 0, 0, $m-$x, 1, $Y));?>">
+                <a href="?m=<?php echo date('m', mktime( 0, 0, 0, $m-$x, 1, $Y));?>&Y=<?php echo date('Y', mktime( 0, 0, 0, $m-$x, 1, $Y));
+                if ( isset($_REQUEST['view']) ) echo "&view=list";?>
+                ">
                     <?php echo date('M Y', mktime( 0, 0, 0, $m-$x, 1, $Y));?>
                     <i></i>
                 </a>
@@ -38,7 +40,9 @@ $nY = date('Y', mktime( 0, 0, 0, $m+1, 1, $Y));
             for($x = -1; $x < 4; $x++):
                 ?>
                 <div class="display-month">
-                    <a href="?m=<?php echo date('m', mktime( 0, 0, 0, $m, 1, $Y+$x));?>&Y=<?php echo date('Y', mktime( 0, 0, 0, $m, 1, $Y+$x));?>">
+                    <a href="?m=<?php echo date('m', mktime( 0, 0, 0, $m, 1, $Y+$x));?>&Y=<?php echo date('Y', mktime( 0, 0, 0, $m, 1, $Y+$x));
+                    if ( isset($_REQUEST['view']) ) echo "&view=list";?>
+                    ">
                         <?php echo date('M Y', mktime( 0, 0, 0, $m, 1, $Y+$x));?>
                         <i></i>
                     </a>
@@ -51,7 +55,7 @@ $nY = date('Y', mktime( 0, 0, 0, $m+1, 1, $Y));
 
 
     <div class="next-month btn">
-        <a href="?m=<?php echo $next_month_digit?>&Y=<?php echo $nY?>">
+        <a href="?m=<?php echo $next_month_digit;?>&Y=<?php echo $nY; if ( isset($_REQUEST['view']) ) echo "&view=list"; ?>">
             <?php echo $nM?> <?php echo $nY?>
             <i></i>
         </a>
@@ -61,7 +65,9 @@ $nY = date('Y', mktime( 0, 0, 0, $m+1, 1, $Y));
             for($x = 2; $x < 13; $x++):
                 ?>
                 <div class="display-month">
-                    <a href="?m=<?php echo date('m', mktime( 0, 0, 0, $m+$x, 1, $Y));?>&Y=<?php echo date('Y', mktime( 0, 0, 0, $m+$x, 1, $Y));?>">
+                    <a href="?m=<?php echo date('m', mktime( 0, 0, 0, $m+$x, 1, $Y));?>&Y=<?php echo date('Y', mktime( 0, 0, 0, $m+$x, 1, $Y));
+                    if ( isset($_REQUEST['view']) ) echo "&view=list";?>
+                    ">
                         <?php echo date('M Y', mktime( 0, 0, 0, $m+$x, 1, $Y));?>
                         <i></i>
                     </a>
