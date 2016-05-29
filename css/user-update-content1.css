@@ -1,5 +1,5 @@
 section .user-update.content-one {
-    background: url("../img/registration-banner1.jpg") no-repeat;
+    background: url("../img/header/registration-banner1.jpg") no-repeat;
     background-size: cover;
     background-position: center center;
     height: 280px;

@@ -1,5 +1,5 @@
 section .forum-content-one {
-    background: url("../img/forum-banner1.jpg") no-repeat;
+    background: url("../img/header/forum-banner1.jpg") no-repeat;
     background-size: cover;
     background-position: center center;
     height: 280px;

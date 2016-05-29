@@ -1,5 +1,5 @@
 section .feedback.content-one {
-    background: url("../img/feedback-banner1.jpg") no-repeat;
+    background: url("../img/header/feedback-banner1.jpg") no-repeat;
     background-size: cover;
     background-position: center center;
     height: 240px;

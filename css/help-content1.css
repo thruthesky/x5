@@ -1,5 +1,5 @@
 section .help.content-one {
-    background: url("../img/help-banner1.jpg") no-repeat;
+    background: url("../img/header/help-banner1.jpg") no-repeat;
     background-size: cover;
     background-position: center center;
     height: 280px;

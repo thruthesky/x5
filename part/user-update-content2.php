@@ -16,7 +16,8 @@ wp_enqueue_style('user-update-content2', td() . '/css/user-update-content2.css')
 
 
             <div class="line">
-                <label for="user_pass"><i class="fa fa-lock"></i> Do you want to change password?</label>
+                <label for="user_pass"><i class="fa fa-lock"></i> Password</label>
+                <div class="change-pwd">Change Password</div>
                 <div class="text" style="display:none;">
                     <input type="password" name="user_pass" maxlength="64" id="user_pass" tabindex="101" placeholder="Input password ...">
                 </div>

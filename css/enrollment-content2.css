@@ -42,6 +42,14 @@ section .enrollment .content.row .cover .radio {
     margin: 0 0 20px 50px;
 }
 
+section .enrollment .content.row .cover .radio input[type='radio'] {
+    position: relative;
+}
+
+section .enrollment .content.row .cover .radio  .text {
+    display: block;
+}
+
 section .enrollment .content.row {
     min-height: 100%;
     overflow: hidden;

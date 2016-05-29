@@ -60,7 +60,7 @@ section .teachers.content-two .teacher .youtube iframe {
 section .teachers.content-two .teacher .youtube {
     position: relative;
     display: inline-block;
-    width: 280px;
+    width: 100%;
     height: 154px;
     cursor:pointer;
 }
