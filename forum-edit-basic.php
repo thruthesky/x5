@@ -16,7 +16,11 @@ else {
 }
 
 ?>
+<?php
+/* Custom CSS*/
+wp_enqueue_style('edit-basic', td() . '/css/forum/edit-basic.css');
 
+?>
 
 
     <script>
@@ -30,8 +34,8 @@ else {
 
         <div class="post-edit-meta">
             <div class="top">
-                <h1 class="forum-title"><?php echo $category->name?></h1>
-                <div class="forum-description"><?php echo $cat_desc?></div>
+                <!--h1 class="forum-title"><?php echo $category->name?></h1>
+                <div class="forum-description"><?php echo $cat_desc?></div-->
             </div>
         </div>
 
@@ -46,7 +50,7 @@ else {
             <input type="hidden" name="file_ids" value="">
             <label for="title" style="display: none;">Title</label>
             <div class="text">
-                <input type="text" id="title" name="title" value="<?php echo $post ? esc_attr($post->post_title) : ''?>" placeholder="<?php _e('Please input title', 'k-forum')?>">
+                <input type="text" id="title" name="title" value="<?php echo $post ? esc_attr($post->post_title) : ''?>" placeholder="<?php _e('Enter Your Title Here', 'k-forum')?>">
             </div>
 
             <label for="content" style="display: none;">Content</label>
@@ -80,14 +84,14 @@ else {
 
             <div class="buttons">
                 <div class="file-upload">
-                    <i class="fa fa-camera"></i>
-                    <span class="text"><?php _e('Choose File', 'k-forum')?></span>
+                    <i class="fa fa-file-image-o"></i>
+                    <span class="text"><?php _e('Upload a photo', 'k-forum')?></span>
                     <input type="file" name="file" onchange="forum.on_change_file_upload(this);" style="opacity: .001;">
                 </div>
                 <div class="right">
 
 
-                    <label for="post-submit-button"><input id="post-submit-button" class="btn btn-primary btn-sm" type="submit" value="<?php _e('POST SUBMIT', 'k-forum')?>"></label>
+                    <label for="post-submit-button"><input id="post-submit-button" class="btn btn-primary btn-sm" type="submit" value="<?php _e('POST', 'k-forum')?>"></label>
 
                     <label class="begin-pro"><button class="btn btn-secondary btn-sm" type="button"><?php _e('Professional Writing', 'k-forum')?></button></label>
                     <label class="end-pro" style="display:none;"><button class="btn btn-secondary btn-sm" type="button"><?php _e('End Professional Writing', 'k-forum')?></button></label>

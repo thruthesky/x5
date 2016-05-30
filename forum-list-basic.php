@@ -29,7 +29,7 @@ wp_enqueue_style('list-basic', td() . '/css/forum/list-basic.css');
     <main id="post-list" class="forum">
         <div class="post-list-meta">
             <div class="top">
-                <h1 class="forum-title"><?php echo $category->name?></h1>
+                <!--h1 class="forum-title"><?php echo $category->name?></h1-->
                 <div class="forum-description"><?php echo $category->description?></div>
             </div>
             <div class="bottom">
@@ -94,8 +94,8 @@ wp_enqueue_style('list-basic', td() . '/css/forum/list-basic.css');
         // Previous/next page navigation.
         $links = paginate_links( array(
             'mid_size'              => 5, // 현재 글 양 옆으로 보여 줄 글 개수
-            'prev_text'             => __('PREV', 'k-forum'),
-            'next_text'             => __('NEXT', 'k-forum'),
+            'prev_text'             => __('<<', 'k-forum'),
+            'next_text'             => __('>>', 'k-forum'),
             'before_page_number'    => '', // 글 번호 앞에 추가할 markup
             'after_page_number'     => '', // 글 번호 뒤에 추가 할 markup
             'end_size' => 0, //
