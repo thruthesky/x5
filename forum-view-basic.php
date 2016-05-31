@@ -18,6 +18,12 @@ $category = current(get_the_category());
 
 ?>
 
+<?php
+/* Custom CSS*/
+wp_enqueue_style('edit-basic', td() . '/css/forum/view-basic.css');
+
+?>
+
 <div id="primary" class="content-area forum">
 
     <main id="main" class="site-main" role="main">
@@ -72,4 +78,12 @@ $category = current(get_the_category());
 </div><!-- .content-area -->
 
 <?php get_footer(); ?>
+
+<script>
+        $( "div.like" ).prepend( '<i class="fa fa-thumbs-up" aria-hidden="true"></i> ' );
+        $( "div.report" ).prepend( '<i class="fa fa-exclamation-triangle"" aria-hidden="true"></i> ' );
+        $( "div.reply" ).prepend( '<i class="fa fa-reply" aria-hidden="true"></i> ' );
+        $( "div.edit" ).prepend( '<i class="fa fa-pencil-square-o" aria-hidden="true"></i> ' );
+        $( "div.delete" ).prepend( '<i class="fa fa-trash-o" aria-hidden="true"></i> ' );
+</script>
 

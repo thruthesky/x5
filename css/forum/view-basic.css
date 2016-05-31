@@ -1,0 +1,41 @@
+article .content {
+    border-top: 1px solid #dddddd;
+    border-bottom: 1px solid #dddddd;
+    background-color: #ffffff;
+}
+
+.comment-list .comment-text {
+    background-color: #ffffff;
+}
+
+.comment-list .comment-meta {
+    padding: .8em 0 0 .8em;
+}
+
+.comment-list .comment-buttons > div {
+    background-color: #dddddd;
+    margin-right: 5px;
+}
+
+.comment-list .comment-buttons > div:before {
+    padding-right: .4em;
+    content: ' ';
+}
+
+.comment-list  .comment-buttons {
+    border-top: 1px solid #dddddd;
+}
+
+.comment-list .comment-buttons .report {
+    float: right;
+    margin: 0;
+}
+
+.comment-list .comment-body {
+    border: 1px solid #dddddd;
+    border-bottom: 0;
+}
+
+.comment-list hr {
+    border: 0;
+}
