@@ -40,7 +40,8 @@ jQuery( function( $ ) {
     }
 
 
-    $('label[for="user_pass"]').click(function() {
+    $('.change-pwd').click(function() {
+        $(this).hide();
         $(this).next().show();
     });
 

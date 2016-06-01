@@ -1,5 +1,5 @@
 section .team-viewer.content-one {
-    background: url("../img/team-viewer-banner1.jpg") no-repeat;
+    background: url("../img/header/team-viewer-banner1.jpg") no-repeat;
     background-size: cover;
     background-position: center center;
     height: 280px;

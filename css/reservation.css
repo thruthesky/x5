@@ -68,7 +68,7 @@
 }
 
 .reservation.content-two .calendar td {
-    height: 32px;
+    height: 45px;
     text-align: center;
     background-color: #f1f1f1;
 }
@@ -100,7 +100,7 @@
 
 @media all and (  min-width: 600px ) {
     .reservation.content-two .calendar td {
-        height: 64px;
+        height: 75px;
     }
 }
 @media all and (  min-width: 800px ) {
@@ -189,6 +189,19 @@
     left: 10%;
     z-index: 100;
 }
+
+.reservation.content-two .reminder-text {
+    position: absolute;
+    display: block;
+    width: 40%;
+    top: 40%;
+    left: 36%;
+    z-index: 101;
+    color: #FFFFFF;
+    font-size: 2em;
+}
+
+
 
 .reservation.content-two nav .fa.fa-th-large,
 .reservation.content-two nav .calendar-view{

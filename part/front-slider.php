@@ -1,6 +1,6 @@
 <?php
 wp_enqueue_style('front-slider', td() . '/css/front-slider.css');
-//wp_enqueue_script('front-slider', td() . '/js/front-slider.js');
+wp_enqueue_script('front-slider', td() . '/js/front-slider.js');
 ?>
 <section class="my-slider">
     <nav id="carousel-banner" class="carousel slide" data-ride="carousel">
@@ -8,8 +8,8 @@ wp_enqueue_style('front-slider', td() . '/css/front-slider.css');
             <li data-target="#carousel-banner" data-slide-to="0" class="active"></li>
             <li data-target="#carousel-banner" data-slide-to="1"></li>
             <li data-target="#carousel-banner" data-slide-to="2"></li>
-            <li data-target="#carousel-banner" data-slide-to="3"></li>
-            <li data-target="#carousel-banner" data-slide-to="4"></li>
+            <!--li data-target="#carousel-banner" data-slide-to="3"></li>
+            <li data-target="#carousel-banner" data-slide-to="4"></li-->
         </ol>
         <div class="carousel-inner" role="listbox">
             <div class="carousel-item active">
@@ -33,7 +33,7 @@ wp_enqueue_style('front-slider', td() . '/css/front-slider.css');
                     <p><?php _text('Banner Description 3')?></p>
                 </div>
             </div>
-            <div class="carousel-item">
+            <!--div class="carousel-item">
                 <img src="<?php img_e()?>/banner/banner_4.jpg" alt="Fourth slide">
                 <div class="carousel-caption">
                     <h3><?php _text('Banner Title 4')?></h3>
@@ -46,7 +46,7 @@ wp_enqueue_style('front-slider', td() . '/css/front-slider.css');
                     <h3><?php _text('Banner Title 5')?></h3>
                     <p><?php _text('Banner Description 5')?></p>
                 </div>
-            </div>
+            </div-->
         </div>
         <a class="left carousel-control" href="#carousel-banner" role="button" data-slide="prev">
             <span class="icon-prev" aria-hidden="true"></span>
