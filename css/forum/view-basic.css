@@ -4,12 +4,15 @@ article .content {
     background-color: #ffffff;
 }
 
-.comment-list .comment-text {
-    background-color: #ffffff;
-}
-
 .comment-list .comment-meta {
     padding: .8em 0 0 .8em;
+    font-size: 15px;
+}
+
+.comment-list .comment-text {
+    margin-top: 0;
+    background-color: #ffffff;
+    font-size: 15px;
 }
 
 .comment-list .comment-buttons > div {
@@ -38,4 +41,8 @@ article .content {
 
 .comment-list hr {
     border: 0;
+}
+
+.crunchify-social .crunchify-link {
+    text-decoration: none;
 }
