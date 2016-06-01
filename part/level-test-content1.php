@@ -1,7 +1,7 @@
 <?php
 wp_enqueue_style('level-test-content1', td() . '/css/level-test-content1.css');
 ?>
-<section class="level-test content-one" style="background: url('wp-content/themes/x5/img/level-test-banner1.jpg') no-repeat;">
+<section class="level-test content-one"  style="background: url('<?php img_e() ?>/header/level-test-banner1.jpg') no-repeat center center;">
     <div>
         <div class="text banner">
             <h2><?php _text('Lv:B1:Level Test')?></h2>
