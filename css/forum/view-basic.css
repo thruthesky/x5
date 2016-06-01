@@ -1,18 +1,21 @@
 article .content {
-    border-top: 1px solid #dddddd;
-    border-bottom: 1px solid #dddddd;
+    border: 1px solid #dddddd;
     background-color: #ffffff;
 }
 
 .comment-list .comment-meta {
     padding: .8em 0 0 .8em;
+    border-left: 1px solid #dddddd;
+    border-right: 1px solid #dddddd;
     font-size: 15px;
 }
 
 .comment-list .comment-text {
     margin-top: 0;
-    background-color: #ffffff;
+    border-left: 1px solid #dddddd;
+    border-right: 1px solid #dddddd;
     font-size: 15px;
+    background-color: #ffffff;
 }
 
 .comment-list .comment-buttons > div {
@@ -35,7 +38,7 @@ article .content {
 }
 
 .comment-list .comment-body {
-    border: 1px solid #dddddd;
+    border-top: 1px solid #dddddd;
     border-bottom: 0;
 }
 
@@ -45,4 +48,41 @@ article .content {
 
 .crunchify-social .crunchify-link {
     text-decoration: none;
+}
+
+form .buttons .file-upload {
+    height: 38px;
+}
+
+form .file-upload .fa-camera {
+    padding: .45em 0 0 .4em;
+}
+
+.submit #post-submit-button {
+    border: 0;
+    background-color: #4d4d4d;
+    color: #ffffff;
+    height: 38px;
+    padding: 0 30px;
+}
+
+form .buttons .submit {
+    float: left;
+}
+
+form .line.buttons {
+    margin-top: .3em;
+    display: inline-block;
+    float: right;
+}
+
+form .line.buttons .file-upload {
+    width: 135px;
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+form .line.buttons .file-upload input[type='file'] {
+    width: 135px;
+    cursor: pointer;
 }
