@@ -1,3 +1,6 @@
+/**
+ *
+ */
 jQuery( function( $ ) {
     var $load = $('.load');
     var $more = $('.load-more');

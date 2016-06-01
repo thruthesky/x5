@@ -48,9 +48,18 @@ if ( ! is_dir($cache_dir) ) mkdir( $cache_dir );
 
 
 // save only if files ( or css ) has been changed.
-$cache_file = $cache_dir . "/$route.css";
-file_put_contents($cache_file, $css);
-$cache_url = home_url() . "/$cache_path/$route.css";
+//
+$md5 = md5($css);
+$cache_file = $cache_dir . "/$route-$md5.css";
+if ( ! file_exists($cache_file) ) {
+    $files = $cache_dir . "/$route-*.css";
+    foreach( glob($cache_dir . "/$route-*.css" ) as $file ) {
+        @unlink( $file );
+    }
+    file_put_contents($cache_file, $css);
+    //echo 'uncached...';
+}
+$cache_url = home_url() . "/$cache_path/$route-$md5.css";
 
 $html = str_replace("</head>", "<link rel='stylesheet' href='$cache_url'></head>", $html);
 
@@ -67,9 +76,17 @@ if ( $ms[1] ) {
         $html = str_replace( $tag, '', $html );
     }
 }
-$cache_file = $cache_dir . "/$route.js";
-file_put_contents( $cache_file, $js);
-$cache_url = home_url() . "/$cache_path/$route.js";
+$md5 = md5($js);
+$cache_file = $cache_dir . "/$route-$md5.js";
+if ( ! file_exists($cache_file) ) {
+    $files = $cache_dir . "/$route-*.js";
+    foreach( glob($cache_dir . "/$route-*.js" ) as $file ) {
+        @unlink( $file );
+    }
+    file_put_contents( $cache_file, $js);
+    //echo 'uncached...';
+}
+$cache_url = home_url() . "/$cache_path/$route-$md5.js";
 
 $html = str_replace("<!-- JS Holder -->", "<script src='$cache_url'></script></body>", $html);
 
