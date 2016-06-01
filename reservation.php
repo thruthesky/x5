@@ -11,7 +11,6 @@ if ( $re['code'] ) { // error from server
     $re['data'] = [];
 }
 
-
 $books = $re['data'];
 $data = $books ? prepare_books_by_date( $books ) : [];
 //di($books);
