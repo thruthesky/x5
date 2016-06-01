@@ -1,3 +1,6 @@
+<?php
+ob_start();
+?>
 <!DOCTYPE HTML>
 <html>
 <head>
