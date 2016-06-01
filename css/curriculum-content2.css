@@ -155,21 +155,4 @@ section .curriculum.content-two .container .advanced .level-desc {
 }
 
 
-@media all and ( min-width: 34em ) {
-
-    section .curriculum.content-two .beg.title {
-        background: transparent url('../img/curriculum_begginer.png') no-repeat;
-        background-size: cover;
-    }
-    section .curriculum.content-two .inter.title {
-        background: transparent url('../img/curriculum_intermediate.png') no-repeat;
-        background-size: cover;
-    }
-    section .curriculum.content-two .adv.title {
-        background: transparent url('../img/curriculum_advanced.png') no-repeat;
-        background-size: cover;
-    }
-
-
-}
 /* eo Test Style */
