@@ -52,7 +52,7 @@ $cache_file = $cache_dir . "/$route.css";
 file_put_contents($cache_file, $css);
 $cache_url = home_url() . "/$cache_path/$route.css";
 
-$html = str_replace("</body>", "<link rel='stylesheet' href='$cache_url'></body>", $html);
+$html = str_replace("</head>", "<link rel='stylesheet' href='$cache_url'></head>", $html);
 
 
 
