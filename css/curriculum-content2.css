@@ -59,16 +59,9 @@ section .curriculum.content-two .container-level .row .advanced .title {
     font-weight: bold;
 }
 
-section .curriculum.content-two .beg.title {
-    background: orange;
-    text-align: center;
-}
-section .curriculum.content-two .inter.title {
-    background-color: darkorange;
-    text-align: center;
-}
+section .curriculum.content-two .beg.title,
+section .curriculum.content-two .inter.title,
 section .curriculum.content-two .adv.title {
-    background-color: orangered;
     text-align: center;
 }
 
@@ -137,14 +130,6 @@ section .curriculum.content-two .container .advanced .level-desc {
     margin-left: 3px;
 }
 
-@media all and ( max-width: 543px ) {
-    section .curriculum.content-two .container.container-level div.level,
-    section .curriculum.content-two .container.container-level div.title-desc,
-    section .curriculum.content-two .container.container-level div.level-desc {
-        margin-left: 5px;
-        margin-right: 5px;
-    }
-}
 
 @media all and ( max-width: 1199px ) {
     section .curriculum.content-two .container.container-level div.level,
@@ -153,6 +138,26 @@ section .curriculum.content-two .container .advanced .level-desc {
         margin-right: 0;
     }
 }
+@media all and ( max-width: 543px ) {
+    section .curriculum.content-two .container.container-level div.level,
+    section .curriculum.content-two .container.container-level div.title-desc,
+    section .curriculum.content-two .container.container-level div.level-desc {
+        margin-left: 5px;
+        margin-right: 5px;
+
+    }
+
+    section .curriculum.content-two .beg.title {
+        background: none orange!important;
+    }
+    section .curriculum.content-two .inter.title {
+        background: none darkorange!important;
+    }
+    section .curriculum.content-two .adv.title {
+        background: none orangered!important;
+    }
+}
+
 
 
 /* eo Test Style */

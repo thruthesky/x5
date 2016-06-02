@@ -10,7 +10,7 @@ wp_enqueue_style('curriculum-content2', td() . '/css/curriculum-content2.css');
         <div class="container container-level">
             <div class="row">
                 <div class="beginner col-xs-12 col-sm-4">
-                    <div class="beg title" style="background: url('<?php img_e() ?>curriculum_begginer.png') no-repeat cover;"><?php _text('Beginner')?></div>
+                    <div class="beg title" style="background: url('<?php img_e() ?>curriculum_begginer.png') no-repeat; background-size: cover;"><?php _text('Beginner')?></div>
                     <div class="title-desc"><?php _text('Description on Beginner 1')?></div>
                     <div class="level one"><?php _text('Level 1')?></div>
                     <div class="level-desc"><?php _text('Cur:B2:Lvl1 Description will be place here.')?></div>
@@ -20,7 +20,7 @@ wp_enqueue_style('curriculum-content2', td() . '/css/curriculum-content2.css');
                     <div class="level-desc"><?php _text('Cur:B2:Lvl3 Description will be place here.')?></div>
                 </div>
                 <div class="intermediate col-xs-12 col-sm-4">
-                    <div class="inter title" style="background: url('<?php img_e() ?>curriculum_intermediate.png') no-repeat cover;"><?php _text('Intermediate')?></div>
+                    <div class="inter title" style="background: url('<?php img_e() ?>curriculum_intermediate.png') no-repeat; background-size: cover;"><?php _text('Intermediate')?></div>
                     <div class="title-desc"><?php _text('Description on Intermediate 1')?></div>
                     <div class="level four"><?php _text('Level 4')?></div>
                     <div class="level-desc"><?php _text('Cur:B2:Lvl4 Description will be place here.')?></div>
@@ -30,7 +30,7 @@ wp_enqueue_style('curriculum-content2', td() . '/css/curriculum-content2.css');
                     <div class="level-desc"><?php _text('Cur:B2:Lvl6 Description will be place here.')?></div>
                 </div>
                 <div class="advanced col-xs-12 col-sm-4">
-                    <div class="adv title" style="background: url('<?php img_e() ?>curriculum_advanced.png') no-repeat cover;"><?php _text('Advanced')?></div>
+                    <div class="adv title" style="background: url('<?php img_e() ?>curriculum_advanced.png') no-repeat; background-size: cover;"><?php _text('Advanced')?></div>
                     <div class="title-desc"><?php _text('Description on Advanced 1')?></div>
                     <div class="level seven"><?php _text('Level 7')?></div>
                     <div class="level-desc"><?php _text('Cur:B2:Lvl7 Description will be place here.')?></div>
