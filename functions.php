@@ -12,6 +12,18 @@ if ( ! defined('ABC_LIBRARY') ) {
     return;
 }
 
+if ( isset($_REQUEST['ajax']) && $_REQUEST['ajax'] == 'header_top_menu_user' ) {
+
+    ob_start();
+    include 'part/header-top-menu-user.php';
+    $user = ob_get_clean();
+    ob_start();
+    include 'part/header-top-menu-register-logout.php';
+    $register = ob_get_clean();
+
+    wp_send_json_success( ['user' => $user, 'register' => $register ] );
+}
+
 
 /*
 

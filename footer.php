@@ -12,15 +12,11 @@
 </div><!--/layout-->
 <!-- JS Holder -->
 <?php wp_footer(); ?>
-
-
 </body>
 </html>
 <?php
-
 $html = ob_get_clean();
 
-//<link rel='stylesheet' id='forum-basic-css'  href='http://work.org/wordpress/wp-content/plugins/k-forum/css/forum-basic.css?ver=4.4.3' type='text/css' media='all' />
 
 // css
 preg_match_all("/<link.*href=.*(\/wp\-)(.*\.css)[^>]+>/", $html, $ms);
@@ -65,30 +61,34 @@ $html = str_replace("</head>", "<link rel='stylesheet' href='$cache_url'></head>
 
 
 
-preg_match_all("/<script.*src=.*\/(wp\-includes|wp\-content)(.*.js).+>/", $html, $ms);
-if ( $ms[1] ) {
-    $tags = $ms[0];
-    $js = null;
-    for( $i = 0; $i < count( $tags ); $i ++ ) {
-        $tag = $tags[$i];
-        $path = $ms[1][$i] . $ms[2][$i];
-        $js .= file_get_contents($path) . "\n";
-        $html = str_replace( $tag, '', $html );
-    }
-}
-$md5 = md5($js);
-$cache_file = $cache_dir . "/$route-$md5.js";
-if ( ! file_exists($cache_file) ) {
-    $files = $cache_dir . "/$route-*.js";
-    foreach( glob($cache_dir . "/$route-*.js" ) as $file ) {
-        @unlink( $file );
-    }
-    file_put_contents( $cache_file, $js);
-    //echo 'uncached...';
-}
-$cache_url = home_url() . "/$cache_path/$route-$md5.js";
 
-$html = str_replace("<!-- JS Holder -->", "<script src='$cache_url'></script></body>", $html);
+if ( seg(2) != 'edit' ) {
+
+    preg_match_all("/<script.*src=.*\/(wp\-includes|wp\-content)(.*.js).+>/", $html, $ms);
+    if ( $ms[1] ) {
+        $tags = $ms[0];
+        $js = null;
+        for( $i = 0; $i < count( $tags ); $i ++ ) {
+            $tag = $tags[$i];
+            $path = $ms[1][$i] . $ms[2][$i];
+            $js .= file_get_contents($path) . "\n";
+            $html = str_replace( $tag, '', $html );
+        }
+    }
+    $md5 = md5($js);
+    $cache_file = $cache_dir . "/$route-$md5.js";
+    if ( ! file_exists($cache_file) ) {
+        $files = $cache_dir . "/$route-*.js";
+        foreach( glob($cache_dir . "/$route-*.js" ) as $file ) {
+            @unlink( $file );
+        }
+        file_put_contents( $cache_file, $js);
+        //echo 'uncached...';
+    }
+    $cache_url = home_url() . "/$cache_path/$route-$md5.js";
+
+    $html = str_replace("<!-- JS Holder -->", "<script src='$cache_url'></script></body>", $html);
+}
 
 echo $html;
 
