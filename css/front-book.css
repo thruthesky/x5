@@ -1,16 +1,5 @@
-/**
- *
- *
-
-
- *
- */
 .home .book {
 
-}
-
-.home.front .content .data > .book {
-    background: url("../img/book_bg.jpg") #ededed no-repeat;
 }
 
 .home.front .content .data > .book > div {

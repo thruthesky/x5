@@ -1,7 +1,7 @@
 <?php
 wp_enqueue_style('help-content1', td() . '/css/help-content1.css');
 ?>
-<section class="help content-one">
+<section class="help content-one" style="background: url('<?php img_e() ?>/header/help-banner1.jpg') no-repeat center center;">
     <div>
         <div class="banner">
             <h2><?php _text('Help')?></h2>

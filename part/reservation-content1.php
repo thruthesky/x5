@@ -1,7 +1,7 @@
 <?php
 wp_enqueue_style('reservation-content1', td() . '/css/reservation-content1.css');
 ?>
-<section class="reservation content-one">
+<section class="reservation content-one" style="background: url('<?php img_e() ?>/header/reservation-banner1.jpg') no-repeat center center;">
     <div>
         <div class="text banner">
             <div class="title">My English Level</div>

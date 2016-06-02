@@ -80,17 +80,24 @@ wp_enqueue_style('edit-basic', td() . '/css/forum/view-basic.css');
 <?php get_footer(); ?>
 
 <script>
-        $( "div.like" ).prepend( '<i class="fa fa-thumbs-up" aria-hidden="true"></i> ' );
-        $( "div.report" ).prepend( '<i class="fa fa-exclamation-triangle"" aria-hidden="true"></i> ' );
-        $( "div.reply" ).prepend( '<i class="fa fa-reply" aria-hidden="true"></i> ' );
-        $( "div.edit" ).prepend( '<i class="fa fa-pencil-square-o" aria-hidden="true"></i> ' );
-        $( "div.delete" ).prepend( '<i class="fa fa-trash-o" aria-hidden="true"></i> ' );
-        $( ".crunchify-facebook" )
-            .prepend( '<i class="fa fa-facebook-square" aria-hidden="true"></i> ' )
-            .before( "<span> | </span>");
-        $( ".crunchify-googleplus" )
-            .prepend( '<i class="fa fa-google-plus" aria-hidden="true"></i> ' )
-            .before( "<span> | </span>");
-        $( ".dashicons.dashicons-text" ).replaceWith('<i class="fa fa-twitter" aria-hidden="true"></i> ' );
+        $(function() {
+            $( "div.like" ).prepend( '<i class="fa fa-thumbs-up" aria-hidden="true"></i> ' );
+            $( "div.report" ).prepend( '<i class="fa fa-exclamation-triangle"" aria-hidden="true"></i> ' );
+            $( "div.reply" ).prepend( '<i class="fa fa-reply" aria-hidden="true"></i> ' );
+            $( "div.edit" ).prepend( '<i class="fa fa-pencil-square-o" aria-hidden="true"></i> ' );
+            $( "div.delete" ).prepend( '<i class="fa fa-trash-o" aria-hidden="true"></i> ' );
+            $( ".crunchify-facebook" )
+                .prepend( '<i class="fa fa-facebook-square" aria-hidden="true"></i> ' )
+                .before( "<span> | </span>");
+            $( ".crunchify-googleplus" )
+                .prepend( '<i class="fa fa-google-plus" aria-hidden="true"></i> ' )
+                .before( "<span> | </span>");
+            $( ".dashicons.dashicons-text" ).replaceWith('<i class="fa fa-twitter" aria-hidden="true"></i> ' );
+            $("#post-submit-button").attr('value', 'Post');
+
+            $('body').on('click', $('.reply'), function() {
+                $(this).parents().find("#post-submit-button").attr('value', 'Post');
+            });
+        });
 </script>
 
