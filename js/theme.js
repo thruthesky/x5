@@ -30,5 +30,9 @@ jQuery(function($) {
 
 
 
+    $.get('?ajax=header_top_menu_user', function(res) {
+        $('nav.top-menu ul li:eq(0)').after( res.data.user );
+        $('nav.top-menu .register-logout').html( res.data.register );
+    });
 
 });
