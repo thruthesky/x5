@@ -1,4 +1,5 @@
 <?php
+include_once 'forum-job-maid.php';
 get_header();
 wp_enqueue_style( 'forum-edit-basic', FORUM_URL . 'css/forum-edit-basic.css' );
 //wp_enqueue_script( 'forum-edit-basic', FORUM_URL . 'js/forum-edit-basic.js' );
@@ -47,35 +48,35 @@ $post = forum()->getPost( seg(1) );
                 <div class="text">
 
                     <div class="position">
-                        <input type="radio" id="position-housemaid" name="position" value="housemaid">
+                        <input type="radio" id="position-housemaid" name="position" value="housemaid" <?php if ( maid()->position() == 'housemaid' ) echo 'checked=1'; ?>>
                         <label for="position-housemaid">
                             House Maid - All around housemaid ( Ate )
                         </label>
                     </div>
 
                     <div class="position">
-                        <input type="radio" id="position-cook" name="position" value="cook">
+                        <input type="radio" id="position-cook" name="position" value="cook" <?php if ( maid()->position() == 'cook' ) echo 'checked=1'; ?>>
                         <label for="position-cook">
                             Cook
                         </label>
                     </div>
 
                     <div class="position">
-                        <input type="radio" id="position-yaya" name="position" value="yaya">
+                        <input type="radio" id="position-yaya" name="position" value="yaya" <?php if ( maid()->position() == 'yaya' ) echo 'checked=1'; ?>>
                         <label for="position-yaya">
                             Yaya ( Babysitter )
                         </label>
                     </div>
 
                     <div class="position">
-                        <input type="radio" id="position-caregiver" name="position" value="caregiver">
+                        <input type="radio" id="position-caregiver" name="position" value="caregiver" <?php if ( maid()->position() == 'caregiver' ) echo 'checked=1'; ?>>
                         <label for="position-caregiver">
                             Caregiver ( Old sitter )
                         </label>
                     </div>
 
                     <div class="position">
-                        <input type="radio" id="position-cleaner" name="position" value="cleaner">
+                        <input type="radio" id="position-cleaner" name="position" value="cleaner" <?php if ( maid()->position() == 'cleaner' ) echo 'checked=1'; ?>>
                         <label for="position-cleaner">
                             Cleaner ( All around about cleaning, washing )
                         </label>
@@ -91,17 +92,17 @@ $post = forum()->getPost( seg(1) );
                 </div>
                 <div class="text">
                     English
-                    <input type="radio" id="english-speak-1" name="english_speak" value="1">
+                    <input type="radio" id="english-speak-1" name="english_speak" value="no" <?php if ( maid()->english_speak() == 'no' ) echo 'checked=1'; ?>>
                     <label for="english-speak-1">No. I don't speak English.</label>
-                    <input type="radio" id="english-speak-2" name="english_speak" value="2">
+                    <input type="radio" id="english-speak-2" name="english_speak" value="little" <?php if ( maid()->english_speak() == 'little' ) echo 'checked=1'; ?>>
                     <label for="english-speak-2">I speak English a little.</label>
-                    <input type="radio" id="english-speak-3" name="english_speak" value="3">
+                    <input type="radio" id="english-speak-3" name="english_speak" value="good" <?php if ( maid()->english_speak() == 'good' ) echo 'checked=1'; ?>>
                     <label for="english-speak-3">I am fluent in English.</label>
                     <br />
                     Korean
-                    <input type="radio" id="korean-speak-1" name="korean_speak" value="1"><label for="korean-speak-1">No. I don't speak Korean.</label>
-                    <input type="radio" id="korean-speak-2" name="korean_speak" value="2"><label for="korean-speak-2">I speak Korean a little.</label>
-                    <input type="radio" id="korean-speak-3" name="korean_speak" value="3"><label for="korean-speak-3">I am fluent in Korean.</label>
+                    <input type="radio" id="korean-speak-1" name="korean_speak" value="no" <?php if ( maid()->korean_speak() == 'no' ) echo 'checked=1'; ?>><label for="korean-speak-1">No. I don't speak Korean.</label>
+                    <input type="radio" id="korean-speak-2" name="korean_speak" value="little" <?php if ( maid()->korean_speak() == 'little' ) echo 'checked=1'; ?>><label for="korean-speak-2">I speak Korean a little.</label>
+                    <input type="radio" id="korean-speak-3" name="korean_speak" value="good" <?php if ( maid()->korean_speak() == 'good' ) echo 'checked=1'; ?>><label for="korean-speak-3">I am fluent in Korean.</label>
                 </div>
             </div>
 
@@ -110,8 +111,8 @@ $post = forum()->getPost( seg(1) );
             <div class="line">
                 <div class="caption">Stay in</div>
                 <div class="text">
-                    <input type="radio" id="stay-in" name="stay_in" value="yes"><label for="stay-in">Yes, I stay in.</label>
-                    <input type="radio" id="stay-out" name="stay_in" value="no"><label for="stay-out">No, I stay out.</label>
+                    <input type="radio" id="stay-in" name="stay_in" value="yes" <?php if ( maid()->stay_in() == 'yes' ) echo 'checked=1'; ?>><label for="stay-in">Yes, I stay in.</label>
+                    <input type="radio" id="stay-out" name="stay_in" value="no" <?php if ( maid()->stay_in() == 'no' ) echo 'checked=1'; ?>><label for="stay-out">No, I stay out.</label>
                 </div>
             </div>
 
@@ -121,7 +122,7 @@ $post = forum()->getPost( seg(1) );
                     <label for="name">Name</label>
                 </div>
                 <div class="text">
-                    <input type="text" id="name" name="name" value="" placeholder="<?php _e('Please input your full name', 'k-forum')?>">
+                    <input type="text" id="name" name="name" value="<?php echo maid()->name()?>" placeholder="<?php _e('Please input your full name', 'k-forum')?>">
                 </div>
             </div>
 
@@ -131,7 +132,7 @@ $post = forum()->getPost( seg(1) );
                     <label for="number">Phone number</label>
                 </div>
                 <div class="text">
-                    <input type="text" id="number" name="number" value="" placeholder="<?php _e('Please input your phone number', 'k-forum')?>">
+                    <input type="text" id="number" name="mobile" value="<?php echo maid()->mobile()?>" placeholder="<?php _e('Please input your phone number', 'k-forum')?>">
                 </div>
             </div>
 
@@ -143,7 +144,7 @@ $post = forum()->getPost( seg(1) );
                     <label for="email">Email</label>
                 </div>
                 <div class="text">
-                    <input type="email" id="email" name="email" value="" placeholder="<?php _e('Please input your email', 'k-forum')?>">
+                    <input type="email" id="email" name="email" value="<?php echo maid()->email()?>" placeholder="<?php _e('Please input your email', 'k-forum')?>">
                 </div>
             </div>
 
@@ -163,8 +164,8 @@ $post = forum()->getPost( seg(1) );
             <div class="line">
                 <div class="caption">Gender</div>
                 <div class="text">
-                    <input type="radio" id="gender-male" name="gender" value="M"> <label for="gender-male">Male</label>,
-                    <input type="radio" id="gender-female" name="gender" value="F"> <label for="gender-female">Female</label>
+                    <input type="radio" id="gender-male" name="gender" value="M" <?php if ( maid()->gender() == 'M' ) echo 'checked=1'; ?>> <label for="gender-male">Male</label>,
+                    <input type="radio" id="gender-female" name="gender" value="F" <?php if ( maid()->gender() == 'F' ) echo 'checked=1'; ?>> <label for="gender-female">Female</label>
                 </div>
             </div>
 
