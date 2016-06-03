@@ -84,7 +84,7 @@ wp_enqueue_style('edit-basic', td() . '/css/forum/edit-basic.css');
 
             <div class="buttons">
                 <div class="file-upload">
-                    <i class="fa fa-file-image-o"></i>
+                    <span class="dashicons dashicons-camera"></span>
                     <span class="text"><?php _e('Upload a photo', 'k-forum')?></span>
                     <input type="file" name="file" onchange="forum.on_change_file_upload(this);" style="opacity: .001;">
                 </div>

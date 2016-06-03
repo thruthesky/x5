@@ -48,39 +48,13 @@ include 'part/reservation-content1.php';
         </div>
 
         <nav>
-            <i class="fa fa-th-large btm-btn" aria-hidden="true"></i>
+            <span class="dashicons dashicons-grid-view btm-btn"></span>
             <div class="calendar-view btm-btn"><a href="<?php hd()?>reservation<?php if( isset( $MnY ) ) echo '?'.$MnY; ?>">CALENDAR VIEW</a></div>
             <div class="divider btm-btn"> | </div>
-            <i class="fa fa-bars btm-btn" aria-hidden="true"></i>
+            <span class="dashicons dashicons-list-view btm-btn"></span>
             <div class="list-view btm-btn"><a href="?view=list<?php if( isset( $MnY ) ) echo '&'.$MnY; ?>">LIST VIEW</a></div>
         </nav>
     </div>
 </section>
-
-<script>
-    jQuery(function($){
-        $('.book').popover({
-            html: true,
-            placement: 'left'
-        });
-        $('.book')
-            .mouseenter(function(){
-                $(this).popover('show');
-            })
-            .mouseleave(function(){
-                $(this).popover('hide');
-            });
-        var $book = $('.book[date="<?php echo date('Ymd')?>"]:eq(0)');
-        if ( $book.length ) {
-            $book.popover('show');
-            $('.calendar').bind('mouseenter', on_calendar_mouseenter);
-            function on_calendar_mouseenter() {
-                $book.popover('hide');
-                console.log('mouseenter: calendar');
-                $('.calendar').unbind('mouseenter', on_calendar_mouseenter);
-            }
-        }
-    });
-</script>
 
 

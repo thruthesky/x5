@@ -86,3 +86,7 @@ form .line.buttons .file-upload input[type='file'] {
     width: 135px;
     cursor: pointer;
 }
+
+.dashicons {
+    vertical-align: text-bottom;
+}
