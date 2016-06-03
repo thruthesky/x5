@@ -74,7 +74,7 @@ body {
     font-weight: 600;
 }
 
-#nav-link::before .active {
-
+#nav-link .active::before {
+    content: "> ";
 }
 /* EO Spy Scroll */
