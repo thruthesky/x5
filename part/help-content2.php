@@ -7,13 +7,13 @@ wp_enqueue_script('help-content2', td() . '/js/help-content2.js');
 
         <ul id="nav-link" class="nav">
             <li class="nav-item">
-                <a class="nav-link" href="#content-two"><i class="fa fa-angle-right nav-link" aria-hidden="true"></i> <?php _text('Company Information' )?></a>
+                <a class="nav-link" href="#content-two"> <?php _text('Company Information' )?></a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="#content-three"><i class="fa fa-angle-right nav-link" aria-hidden="true"></i> <?php _text('Send an Inquiry' )?></a>
+                <a class="nav-link" href="#content-three"> <?php _text('Send an Inquiry' )?></a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="#content-four"><i class="fa fa-angle-right nav-link" aria-hidden="true"></i> <?php _text('FAQs' )?></a>
+                <a class="nav-link" href="#content-four"> <?php _text('FAQs' )?></a>
             </li>
         </ul>
         <h2><?php _text('Company Information' )?></h2>
