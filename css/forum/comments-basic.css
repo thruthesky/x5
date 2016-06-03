@@ -1,0 +1,15 @@
+form .line.buttons .file-upload {
+    padding: 8px 0 0 12px;
+    width: 135px;
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+form .line.buttons .dashicons-camera {
+    font-size: 25px;
+}
+
+.comment-edit form textarea {
+    width: 100%;
+    height: 20em;
+}

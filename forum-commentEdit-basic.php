@@ -9,7 +9,13 @@ else {
     wp_die("Error: wrong comment number");
 }
 ?>
-    <h2><?php _e('Comment Edit', 'k-forum')?></h2>
+
+<?php
+/* Custom CSS*/
+wp_enqueue_style('commentEdit-basic', td() . '/css/forum/commentEdit-basic.css');
+
+?>
+
 
     <script>
         var url_endpoint = "<?php echo home_url("forum/submit")?>";
@@ -18,8 +24,9 @@ else {
 
 
     <section class="comment-new comment-edit">
-        <form action="<?php echo home_url("forum/submit")?>" method="post" enctype="multipart/form-data">
 
+        <form action="<?php echo home_url("forum/submit")?>" method="post" enctype="multipart/form-data">
+            <h2><?php _e('Comment Edit', 'k-forum')?></h2>
             <input type="hidden" name="do" value="comment_create">
             <?php if ( $comment ) : ?>
                 <input type="hidden" name="comment_ID" value="<?php echo $comment->comment_ID?>">
@@ -42,7 +49,7 @@ else {
 
             <div class="buttons">
                 <div class="file-upload">
-                    <i class="fa fa-camera"></i>
+                    <span class="dashicons dashicons-camera"></span>
                     <span class="text"><?php _e('Choose File', 'k-forum')?></span>
                     <input type="file" name="file" onchange="forum.on_change_file_upload(this);" style="opacity: .001;">
                 </div>

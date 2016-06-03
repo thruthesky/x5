@@ -38,11 +38,11 @@
     -webkit-box-shadow: 0 0 0 1000px #ffffff inset!important;
 }
 
-.data .log-in.content-two .inner .form-group .info .fa.fa-user,
-.data .log-in.content-two .inner .form-group .info .fa.fa-key {
+.data .log-in.content-two .inner .form-group .info .dashicons-admin-users,
+.data .log-in.content-two .inner .form-group .info .dashicons-admin-network {
     position: absolute;;
-    top: 13px;
-    left: 15px;
+    top: 14px;
+    left: 14px;
     font-size: 24px;
 }
 

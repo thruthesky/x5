@@ -16,7 +16,7 @@ wp_enqueue_style('log-in-content2', td() . '/css/log-in-content2.css');
                 <fieldset class="form-group">
                     <div class="info user">
                         <label class="caption" for="user_login" hidden>User ID</label>
-                        <i class="fa fa-user"></i>
+                        <span class="dashicons dashicons-admin-users"></span>
                         <div class="text"><input type="text" name="user_login" maxlength="64" id="user_login" tabindex="200" placeholder="Username"></div>
                     </div>
                 </fieldset>
@@ -24,7 +24,7 @@ wp_enqueue_style('log-in-content2', td() . '/css/log-in-content2.css');
                 <fieldset class="form-group">
                     <div class="info password">
                         <label class="caption" for="user_pass" hidden>Password</label>
-                        <i class="fa fa-key"></i>
+                        <span class="dashicons dashicons-admin-network"></span>
                         <div class="text"><input type="password" name="user_pass" maxlength="64" id="user_pass" tabindex="201" placeholder="Password"></div>
                     </div>
                 </fieldset>

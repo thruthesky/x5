@@ -81,18 +81,18 @@ wp_enqueue_style('edit-basic', td() . '/css/forum/view-basic.css');
 
 <script>
         $(function() {
-            $( "div.like" ).prepend( '<i class="fa fa-thumbs-up" aria-hidden="true"></i> ' );
-            $( "div.report" ).prepend( '<i class="fa fa-exclamation-triangle"" aria-hidden="true"></i> ' );
-            $( "div.reply" ).prepend( '<i class="fa fa-reply" aria-hidden="true"></i> ' );
-            $( "div.edit" ).prepend( '<i class="fa fa-pencil-square-o" aria-hidden="true"></i> ' );
-            $( "div.delete" ).prepend( '<i class="fa fa-trash-o" aria-hidden="true"></i> ' );
+            $( "div.like" ).prepend( '<span class="dashicons dashicons-thumbs-up"></span> ' );
+            $( "div.report" ).prepend( '<span class="dashicons dashicons-warning"></span> ' );
+            $( "div.reply" ).prepend( '<span class="dashicons dashicons-undo"></span> ' );
+            $( "div.edit" ).prepend( '<span class="dashicons dashicons-edit"></span> ' );
+            $( "div.delete" ).prepend( '<span class="dashicons dashicons-trash"></span> ' );
             $( ".crunchify-facebook" )
-                .prepend( '<i class="fa fa-facebook-square" aria-hidden="true"></i> ' )
+                .prepend( '<span class="dashicons dashicons-facebook"></span> ' )
                 .before( "<span> | </span>");
             $( ".crunchify-googleplus" )
-                .prepend( '<i class="fa fa-google-plus" aria-hidden="true"></i> ' )
+                .prepend( '<span class="dashicons dashicons-googleplus"></span> ' )
                 .before( "<span> | </span>");
-            $( ".dashicons.dashicons-text" ).replaceWith('<i class="fa fa-twitter" aria-hidden="true"></i> ' );
+            $( ".dashicons.dashicons-text" ).replaceWith('<span class="dashicons dashicons-twitter"></span> ' );
             $("#post-submit-button").attr('value', 'Post');
 
             $('body').on('click', $('.reply'), function() {

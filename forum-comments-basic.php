@@ -18,6 +18,12 @@ if ( post_password_required() ) {
 }
 wp_enqueue_style( 'forum-comments-basic', FORUM_URL . 'css/forum-comments-basic.css' );
 ?>
+
+<?php
+/* Custom CSS*/
+wp_enqueue_style('comments-basic', td() . '/css/forum/comments-basic.css');
+
+?>
 <!--suppress ALL -->
 <script>
     var url_endpoint = "<?php echo home_url("forum/submit")?>";
@@ -92,7 +98,7 @@ if ( $comment->comment_parent ) $parent_comment = get_comment($comment->comment_
                     <div class="files"></div>
                     <div class="line buttons">
                         <div class="file-upload">
-                            <i class="fa fa-camera"></i>
+                            <span class="dashicons dashicons-camera"></span>
                             <span class="text"><?php _e('Choose File', 'k-forum')?></span>
                             <input type="file" name="file" onchange="forum.on_change_file_upload(this);" style="opacity: .001;">
                         </div>

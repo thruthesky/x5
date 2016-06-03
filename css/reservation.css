@@ -182,6 +182,12 @@
     color: #545454;
     cursor: pointer;
 }
+
+.reservation.content-two nav .dashicons.btm-btn  {
+    padding-top: 6px;
+    padding-right: 15px;
+}
+
 .reservation.content-two img.reminder {
     position: absolute;
     width: 70%;

@@ -36,7 +36,7 @@ wp_enqueue_style('list-basic', td() . '/css/forum/list-basic.css');
                 <div class="post-count"><?php printf( __('Page: %1$d / No. of Post: %2$d', 'k-forum'), $paged, $category->count ); ?></div>
                 <div class="post-new-button">
                     <a href="<?php echo home_url()?>/forum/<?php echo seg('1')?>/edit">
-                    <i class="fa fa-file-text-o " aria-hidden="true"></i>
+                    <span class="dashicons dashicons-welcome-write-blog"></span>
                     <?php _e('Post', 'k-forum')?></a>
                 </div>
             </div>
