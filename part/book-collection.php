@@ -7,7 +7,7 @@ wp_enqueue_script('front-book', td() . '/js/front-book.js');
     <?php
     $path = img();
     $collection = '';
-    for($x = 1; $x <= 44 ; $x++):
+    for($x = 1; $x <= 42 ; $x++):
         ?>
         <div class="col-sm-3">
             <div class="inner row <?php if($x > 12) { echo 'load-sub'; } ?>">
