@@ -3,7 +3,7 @@ jQuery( function( $ ) {
     var $site_edit = $('.site-edit');
     var $translate_text = $('.translate-text');
 
-    $site_edit.click(function(){
+    $('body').on('click', $site_edit, function(){
         console.log(Cookies.get('site-edit'));
         if ( Cookies.get('site-edit') == 'Y' ) { // do not edit.
             Cookies.set('site-edit', 'N');
