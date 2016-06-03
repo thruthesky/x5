@@ -1,52 +1,60 @@
-section .about-us.content-one {
-    height: 280px;
-}
-
-section .about-us.content-one > div > img {
-    position: absolute;
-    top: 50%;
-    left: 50%;
+section .about-us.content-one div > img {
     width: 100%;
     height: auto;
-    margin-top: -50%;
-    margin-left: -50%;
-}
-
-
-section .about-us.content-one h2 {
-    display: inline-block;
-    margin-bottom: 18px;
-    font-size: 48px;
-    color: #FFFFFF;
-    width: 400px;
-}
-
-
-section .about-us.content-one .desc {
-    display: inline-block;
-    padding-left: 7px;
-    font-size: 24px;
-    color: #FFFFFF;
 }
 
 section .about-us.content-one .banner {
     position: absolute;
     display: inline-block;
-    right: 0;
-    width: 400px;
-    margin-top: 50px;
+    width: 36%;
+    right: 5px;
+    top: 0;
+    margin-top: 5%;
     text-align: right;
 }
-
-section .about-us.content-one .img1 {
-    position: relative;
-    right: 5px;
-    float: right;
-    height: 280px;
+section .about-us.content-one h2 {
+    display: inline-block;
+    margin-bottom: 8px;
+    font-size: 18px;
+    color: #FFFFFF;
+}
+section .about-us.content-one .desc {
+    display: inline-block;
+    font-size: 14px;
+    color: #FFFFFF;
 }
 
-section .about-us.content-one .img1 img{
-    position: absolute;
-    bottom: 0;
-    right: 0;
+@media all and (min-width: 600px ) {
+    section .about-us.content-one h2 {
+        font-size: 28px;
+    }
+    section .about-us.content-one .desc {
+        font-size: 20px;
+    }
+}
+
+@media all and (min-width: 800px ) {
+    section .about-us.content-one h2 {
+        font-size: 36px;
+    }
+    section .about-us.content-one .desc {
+        font-size: 24px;
+    }
+}
+
+@media all and (min-width: 980px ) {
+    section .about-us.content-one {
+        background: url('../../themes/x5/img/header/about-us-banner1.jpg') no-repeat center center;
+        height: 280px;
+    }
+    section .about-us.content-one .banner {
+        right: 0;
+    }
+    section .about-us.content-one h2 {
+        margin-bottom: 18px;
+        font-size: 48px;
+    }
+    section .about-us.content-one .desc {
+        font-size: 24px;
+    }
 }
