@@ -145,7 +145,7 @@ function get_text_translation_option_name($md5) {
 }
 
 
-function _getText($str) {
+function _getText($str, $convert=false) {
     $md5 = md5($str);
     $option_name = get_text_translation_option_name( $md5 );
     $data = get_option( $option_name );
@@ -157,6 +157,20 @@ function _getText($str) {
         if ( empty($content) ) $str = $org;
         else $str = $data['content'];
     }
+
+    if ( $convert ) {
+        if ( stripos( $str, '(company name)') !== false ) {
+            $company_name = get_opt('lms[company_name]');
+            $str = str_ireplace('(company name)', $company_name, $str);
+        }
+
+        if ( stripos( $str, '(phone number)') !== false ) {
+            $v = get_opt('lms[phone_number]');
+            $str = str_ireplace('(phone number)', $v, $str);
+        }
+    }
+
+
     return $str;
 }
 
@@ -169,11 +183,13 @@ function _text($str) {
     $md5 = md5($str);
     $option_name = get_text_translation_option_name( $md5 );
     $org = esc_html($str);
-    $str = _getText($str);
+
     if ( !isset($_COOKIE['site-edit']) || $_COOKIE['site-edit'] != 'Y' || ! user()->admin() ) {
+        $str = _getText($str, true);
         echo $str;
     }
     else {
+        $str = _getText($str);
         echo "
 <div class='translate-text' md5='$md5' original-text='$org' code='$option_name'><span class='dashicons dashicons-welcome-write-blog'></span>
 <div class='html-content'>$str</div>
