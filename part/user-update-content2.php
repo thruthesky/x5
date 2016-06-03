@@ -8,7 +8,7 @@ wp_enqueue_style('user-update-content2', td() . '/css/user-update-content2.css')
             <?php wp_nonce_field('register'); ?>
 
             <div class="line">
-                <label for="user_login">User ID</label>
+                <label for="user_login"><?php _text('User ID')?></label>
                 <div class="text user-login">
                     <?php echo user()->user_login?>
                 </div>
@@ -16,50 +16,50 @@ wp_enqueue_style('user-update-content2', td() . '/css/user-update-content2.css')
 
 
             <div class="line">
-                <label for="user_pass"><i class="fa fa-lock"></i> Password</label>
-                <div class="change-pwd">Change Password</div>
+                <label for="user_pass"><?php _text('Password')?></label>
+                <div class="change-pwd"><span class="dashicons dashicons-admin-network"></span> <?php _text('Change Password...')?></div>
                 <div class="text" style="display:none;">
                     <input type="password" name="user_pass" maxlength="64" id="user_pass" tabindex="101" placeholder="Input password ...">
                 </div>
             </div>
 
             <div class="line">
-                <label for="user_email">Email</label>
+                <label for="user_email"><?php _text('Email')?></label>
                 <div class="text"><input type="email" name="user_email" maxlength="64" id="user_email" tabindex="101" value="<?php echo user()->user_email?>"></div>
             </div>
 
 
             <div class="line">
-                <label for="nickname">Nickname</label>
+                <label for="nickname"><?php _text('Nickname')?></label>
                 <div class="text"><input type="text" name="nickname" maxlength="64" id="nickname" tabindex="101" value="<?php echo user()->nickname?>"></div>
             </div>
 
 
 
             <div class="line">
-                <label for="name">Name</label>
+                <label for="name"><?php _text('Name')?></label>
                 <div class="text"><input type="text" name="name" maxlength="64" id="name" tabindex="101" value="<?php echo user()->name?>"></div>
             </div>
 
 
             <div class="line">
-                <label for="mobile">Mobile No.</label>
+                <label for="mobile"><?php _text('Mobile No.')?></label>
                 <div class="text"><input type="number" name="mobile" maxlength="64" id="mobile" tabindex="101" value="<?php echo user()->mobile?>"></div>
             </div>
 
             <div class="line">
-                <label for="landline">Landline No.</label>
+                <label for="landline"><?php _text('Landline No.')?></label>
                 <div class="text"><input type="number" name="landline" maxlength="64" id="landline" tabindex="101" value="<?php echo user()->landline?>"></div>
             </div>
 
             <div class="line">
-                <label for="address">Address</label>
+                <label for="address"><?php _text('Address')?></label>
                 <div class="text"><input type="text" name="address" maxlength="64" id="address" tabindex="101" value="<?php echo user()->address?>"></div>
             </div>
 
 
             <div class="line">
-                <label for="skype">skype</label>
+                <label for="skype"><?php _text('Skype')?></label>
                 <div class="text"><input type="text" name="skype" maxlength="64" id="skype" tabindex="101" value="<?php echo user()->skype?>"></div>
             </div>
 

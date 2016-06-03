@@ -30,13 +30,13 @@ wp_enqueue_style('log-in-content2', td() . '/css/log-in-content2.css');
                 </fieldset>
 
                 <div class="lost-password-button">
-                    <a href="<?php echo home_url('/user-password-lost')?>">Lost Password?</a>
+                    <a href="<?php echo home_url('/user-password-lost')?>"><?php _text('Lost Password?')?></a>
                 </div>
 
                 <fieldset class="form-group">
                     <div class="info keep">
                         <div class="text"><input type="checkbox" name="rememberme" id="rememberme" tabindex="203">
-                            <label class="caption" for="rememberme">Remember Me</label>
+                            <label class="caption" for="rememberme"><?php _text('Remember Me')?></label>
                         </div>
                     </div>
                 </fieldset>
@@ -52,7 +52,7 @@ wp_enqueue_style('log-in-content2', td() . '/css/log-in-content2.css');
 
             </form>
 
-            <a class="register" href="<?php echo home_url('/user-register')?>">Create an Account</a>
+            <a class="register" href="<?php echo home_url('/user-register')?>"><?php _text('Create an Account')?></a>
         </div>
     </div>
 </section>
