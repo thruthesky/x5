@@ -11,14 +11,15 @@
     <?php else : ?>
         <li>
             <a href="<?php hd()?>user-update">
-                <span><?php printf(__('%s PROFILE UPDATE', 'x5'), login('user_login'))?></span>
+                <span><?php echo login('user_login');?>
+			<?php _text("PROFILE UPDATE")?></span>
             </a>
         </li>
     <?php endif ?>
 <?php else : ?>
     <li class="<?php if ( segment(0) == 'user-log-in' ) echo 'active'; ?>" >
         <a href="<?php hd()?>user-log-in">
-            <span><?php _text('LOGIN')?></span>
+            <span><?php _text("LOGIN")?></span>
         </a>
     </li>
 <?php endif ?>

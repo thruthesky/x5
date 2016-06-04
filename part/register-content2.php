@@ -70,10 +70,10 @@ wp_enqueue_script( 'register', td() . '/js/register.js', array('jquery') );
                 <div class="line error alert alert-warning" role="alert" style="display:none;">
                 </div>
                 <div class="button">
-                    <div class="text submit"><input type="submit" tabindex="121" value="REGISTER"></div>
+                    <div class="text submit"><input type="submit" tabindex="121" value="<?php _text('REGISTER')?>"></div>
                 </div>
                 <div class="button right">
-                    <div class="text cancel"><input type="button" onClick="location.href='<?php echo home_url()?>'" tabindex="121" value="Cancel"></div>
+                    <div class="text cancel"><input type="button" onClick="location.href='<?php echo home_url()?>'" tabindex="121" value="<?php _text('Cancel')?>"></div>
                 </div>
             </div>
 

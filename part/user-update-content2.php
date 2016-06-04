@@ -69,7 +69,7 @@ wp_enqueue_style('user-update-content2', td() . '/css/user-update-content2.css')
             <div class="line error" style="display:none;">
             </div>
             <div class="line submit">
-                <div class="text"><input type="submit" tabindex="121"></div>
+                <div class="text"><input type="submit" tabindex="121" value="<?php _text('MEMBER UPDATE')?>"></div>
             </div>
         </form>
     </div>
