@@ -35,15 +35,7 @@ wp_enqueue_style('skype-content2', td() . '/css/skype-content2.css');
                             <br />
                             <?php _text('4. Read the Skype<strong> Click to Call </strong>info. If you don&rsquo;t want to install it, uncheck <strong>Install Skype Click to Call </strong>before you click<strong> Continue.</strong><br />')?>
                             <br />
-                            <br />
-                            <br />
-<?php _text('5. Read the Microsoft Service Agreement and Privacy Policy.<br />')?>
-                            <br />
-                            <br />
-<?php _text('If you don&rsquo;t want to set Bing as your internet search engine, or MSN as your home page, uncheck the boxes. Click <strong>Continue.</strong><br />')?>
-                            <br />
-                            <br />
-                            <br />
+
 <?php _text('6. Skype installs. When the installation is finished, you&rsquo;ll see the sign-in screen.<br />')?>
                             <br />
                             <img src="<?php img_e() ?>skype/4.png"><br />
