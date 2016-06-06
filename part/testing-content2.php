@@ -25,7 +25,7 @@ wp_enqueue_style('testing-content2', td() . '/css/testing-content2.css');
                                     ")?>
                                     </div>
                                     <div><img src="<?php img_e() ?>testing/1.png"></div>
-                                    
+
                                     <div>
                                     <?php _text("
                                     3. Under <strong>General</strong>, select <strong>Video Settings</strong>. If you have a webcam connected, you should see live video of whatever your webcam is pointed at. If you can see the video stream, your webcam is working correctly.<br>
@@ -61,7 +61,7 @@ wp_enqueue_style('testing-content2', td() . '/css/testing-content2.css');
                             <div><?php _text("xAlso, if your camera isn't integrated into your computer, try to plug the camera to another USB slot or unplug other unused devices that share the same USB slot as your camera. If you are trying to change your camera during the call and experience an error message, try to end the call, change the camera and restart the call.")?>
 
 
-                                <strong>Is there a problem with your webcam drivers?</strong>
+                                <strong><?php _text("Is there a problem with your webcam drivers?")?></strong>
                                 <div><?php _text("Check that your webcam is listed in Device Manager.")?></div>
                                 <div><?php _text("1. Depending on your version of Windows:")?></div>
 
