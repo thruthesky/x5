@@ -63,19 +63,12 @@ wp_enqueue_style('testing-content2', td() . '/css/testing-content2.css');
 
                                 <strong><?php _text("Is there a problem with your webcam drivers?")?></strong>
                                 <div><?php _text("Check that your webcam is listed in Device Manager.")?></div>
-                                <div><?php _text("1. Depending on your version of Windows:")?></div>
+                                <div><?php _text("Click windows button and type 'Device Manager'")?></div>
 
 
                                 <div class="indent">
-                                    <div>• <strong><?php _text("Windows 7")?></strong>: <?php _text("Click the Windows button and select <strong>Control Panel</strong>. Make sure that <strong>Category</strong> is selected in the top right corner, next to View by:. Click <strong>Hardware</strong> <strong>and Sound</strong>. Under Devices and Printers, select <strong>Device Manager</strong>. Click the little arrow beside <strong>Imaging Devices</strong>.")?></div>
 
-
-                                    <div>• <strong><?php _text("Windows Vista")?></strong>: <?php _text("Open the <strong>Start</strong> menu and select <strong>Control Panel</strong>. Open <strong>System and Maintenance</strong> and click <strong>Device Manager</strong>.")?></div>
-
-                                    <div>• <strong><?php _text("Windows XP")?></strong>: <?php _text("Open the <strong>Start</strong> menu and select <strong>Control Panel</strong>. Open <strong>System</strong> and, in the <strong>Hardware</strong> tab, click <strong>Device Manager</strong>.")?></div>
-
-
-                                <div><?php _text("2. Check that your webcam is listed under <strong>Imaging devices</strong>.")?></div>
+                                <div><?php _text("Check that your webcam is listed under <strong>Imaging devices</strong>.")?></div>
 
                                 <img src="<?php img_e() ?>testing/6.png"><br>
 
