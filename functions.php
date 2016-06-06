@@ -159,19 +159,25 @@ function _getText($str, $convert=false) {
     }
 
     if ( $convert ) {
-        if ( stripos( $str, '(company name)') !== false ) {
-            $company_name = get_opt('lms[company_name]');
-            $str = str_ireplace('(company name)', $company_name, $str);
-        }
-
-        if ( stripos( $str, '(phone number)') !== false ) {
-            $v = get_opt('lms[phone_number]');
-            $str = str_ireplace('(phone number)', $v, $str);
-        }
+	$str = convert_text_var( 'company name', 'company_name', $str );
+	$str = convert_text_var( 'company address', 'company_address', $str );
+	$str = convert_text_var( 'phone number', 'phone_number', $str );
+	$str = convert_text_var( 'manager name', 'manager_name', $str );
+	$str = convert_text_var( 'email', 'email', $str );
+	$str = convert_text_var( 'skype', 'skype', $str );
+	$str = convert_text_var( 'kakaotalk', 'kakaotalk', $str );
+	$str = convert_text_var( 'bank', 'bank', $str );
     }
 
 
     return $str;
+}
+function convert_text_var($text_var, $option_name, $str) {
+        if ( stripos( $str, "($text_var)") !== false ) {
+            $v = get_opt("lms[$option_name]");
+            $str = str_ireplace("($text_var)", $v, $str);
+        }
+	return $str;
 }
 
 /**
