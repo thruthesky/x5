@@ -48,7 +48,7 @@ wp_enqueue_style('log-in-content2', td() . '/css/log-in-content2.css');
 
                 <div class="line error" style="display:none;"></div>
 
-                <input class="btn btn-primary" type="submit" value="LOGIN" tabindex="121">
+                <input class="btn btn-primary" type="submit" value="<?php _text('LOGIN')?>" tabindex="121">
 
             </form>
 
