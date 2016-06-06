@@ -19,12 +19,13 @@ wp_enqueue_style('testing-content2', td() . '/css/testing-content2.css');
                                 <div><?php _text("To make sure that your webcam is working correctly with Skype:")?></div>
 
                                 <div class="indent">
-                                    <?php _text("
+                                    <div><?php _text("
                                     1. Sign into Skype.
                                     2. In the menu bar, click <strong>Tools</strong> &gt; <strong>Options</strong>...
                                     ")?>
-                                    <img src="<?php img_e() ?>testing/1.png">
-                                    <br>
+                                    </div>
+                                    <div><img src="<?php img_e() ?>testing/1.png"></div>
+                                    
                                     <div>
                                     <?php _text("
                                     3. Under <strong>General</strong>, select <strong>Video Settings</strong>. If you have a webcam connected, you should see live video of whatever your webcam is pointed at. If you can see the video stream, your webcam is working correctly.<br>
