@@ -10,7 +10,7 @@ wp_enqueue_style('skype-content2', td() . '/css/skype-content2.css');
                     <div class="contents">
                         <?php _text('Using Skype Installation')?>
                         <div class="indent">
-                            T<?php _text('o get started with Skype, simply download and install it.<br />
+                            <?php _text('To get started with Skype, simply download and install it.<br />
                             <br />
                             1. Go to the Daesung Skype website and click <strong>Get Skype for Windows desktop.</strong><br />
                                 <br />
