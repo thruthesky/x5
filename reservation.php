@@ -37,7 +37,7 @@ include 'part/reservation-content1.php';
         <?php endif; ?>
 
 
-        <h2><?php _e("Class Reservation", 'x5')?></h2>
+        <h2><?php _text("Class Reservation")?></h2>
         <?php if ( is_user_logged_in() ) include 'part/reservation-header.php' ?>
 
         <div class="desc">
@@ -49,10 +49,10 @@ include 'part/reservation-content1.php';
 
         <nav>
             <span class="dashicons dashicons-grid-view btm-btn"></span>
-            <div class="calendar-view btm-btn"><a href="<?php hd()?>reservation<?php if( isset( $MnY ) ) echo '?'.$MnY; ?>">CALENDAR VIEW</a></div>
+            <div class="calendar-view btm-btn"><a href="<?php hd()?>reservation<?php if( isset( $MnY ) ) echo '?'.$MnY; ?>"><?php _text('CALENDAR VIEW')?></a></div>
             <div class="divider btm-btn"> | </div>
             <span class="dashicons dashicons-list-view btm-btn"></span>
-            <div class="list-view btm-btn"><a href="?view=list<?php if( isset( $MnY ) ) echo '&'.$MnY; ?>">LIST VIEW</a></div>
+            <div class="list-view btm-btn"><a href="?view=list<?php if( isset( $MnY ) ) echo '&'.$MnY; ?>"><?php _text('LIST VIEW')?></a></div>
         </nav>
     </div>
 </section>
