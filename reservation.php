@@ -33,7 +33,7 @@ include 'part/reservation-content1.php';
             <?php endif; ?>
         <?php else : ?>
             <img class="reminder" src="<?php img_e() ?>reservation-content2-image1.png">
-            <div class="reminder-text">Please Login to View Reservation</div>
+            <div class="reminder-text"><?php _text('Please Login to View Reservation')?></div>
         <?php endif; ?>
 
 
