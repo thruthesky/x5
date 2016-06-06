@@ -14,7 +14,7 @@ wp_enqueue_style('testing-content2', td() . '/css/testing-content2.css');
                                 <strong><?php _text('Skype for Windows Desktop')?></strong>
                                 <div><?php _text("Before proceeding with the troubleshooting steps below, first ensure that you are in a room with proper lighting (bad lighting can make your video too dark to be seen by the people you're calling.")?></div>
 
-                                <strong>Is your webcam working properly with Skype?</strong>
+                                <strong><?php _text("Is your webcam working properly with Skype?")?></strong>
 
                                 <div><?php _text("To make sure that your webcam is working correctly with Skype:")?></div>
 
