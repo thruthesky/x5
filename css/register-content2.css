@@ -1,7 +1,7 @@
 section .register.content-two > div {
     position: relative;
     margin: 0 auto;
-    padding: 100px 0;
+    padding: 30px 0;
     max-width: 980px;
 }
 
@@ -9,10 +9,6 @@ section .register.content-two > div > form   {
     position: relative;
     display: inline-block;
     width: 100%;
-}
-
-section .register.content-two h2 {
-    padding-top: 20px;
 }
 
 section .register.content-two .button {
@@ -26,12 +22,11 @@ section .register.content-two .button input {
     display:inline-block;
     padding: 0;
     width: 100%;
-    height: 50px;
+    height: 30px;
     border: 0;
     border-radius: 3px;
     font-weight: 700;
 }
-
 
 section .register.content-two  input[type='submit'] {
     color: #FFFFFF;
@@ -51,36 +46,86 @@ section .register.content-two .line {
 
 section .register.content-two .line label {
     float: left;
-    padding: 13px 0;
-    width: 150px;
+    padding: 6px 0;
+    width: 100px;
     color: #1e1e1e;
     border-radius: 3px;
+    font-size: 12px;
     font-family: "Arial", "Open Sans", sans-serif;
 }
 
 section .register.content-two input[tabindex="101"] {
-    height: 50px;
+    height: 30px;
     outline: 0;
     padding: 7px;
-    width: 280px;
+    width: 200px;
     border-radius: 3px;
     border: 1px solid #c6c6c6;
+    font-size: 12px;
     font-family: "Arial", "Open Sans", sans-serif;
 }
-
-section .register input#user_email {
-    min-width: 360px;
-}
-
-section .register input#address {
-    min-width: 450px;
-}
-
 
 section .register.content-two input[tabindex="101"]:focus {
     border: 1px solid #419df2;
 }
 
 section .register.content-two input:-webkit-autofill {
-    -webkit-box-shadow: 0 0 0 1000px #ffffff inset!important;
+    -webkit-box-shadow: 0 0 0 1000px #ffffff inset !important;
+}
+
+@media all and (min-width: 380px ) {
+    section .register.content-two input[tabindex="101"] {
+        width: 250px;
+    }
+}
+
+@media all and (min-width: 480px ) {
+    section .register.content-two .line label {
+        width: 120px;
+    }
+}
+
+@media all and (min-width: 600px ) {
+    section .register.content-two > div {
+        padding: 50px 0;
+    }
+    section .register.content-two input[tabindex="101"] {
+        width: 280px;
+        height: 40px;
+        font-size: 14px;
+    }
+    section .register.content-two .button input {
+        height: 40px;
+    }
+    section .register.content-two .line label {
+        padding: 10px 0;
+        width: 140px;
+        font-size: 14px;
+    }
+}
+
+@media all and (min-width: 800px ) {
+    section .register.content-two > div {
+        padding: 100px 0;
+    }
+    section .register.content-two input[tabindex="101"] {
+        height: 50px;
+        font-size: 16px;
+    }
+    section .register.content-two .button input {
+        height: 50px;
+    }
+
+    section .register input#user_email {
+        min-width: 360px;
+    }
+
+    section .register input#address {
+        min-width: 450px;
+    }
+    section .register.content-two .line label {
+        padding: 13px 0;
+        width: 150px;
+        font-size: 16px;
+    }
 }

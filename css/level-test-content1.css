@@ -1,50 +1,60 @@
-/**
- * ...
- */
-section .level-test.content-one {
-    background-size: cover;
-    background-position: center center;
-    height: 280px;
-}
-
-section .level-test.content-one h2 {
-    font-size: 48px;
-    color: #FFFFFF;
-}
-
-section .level-test.content-one .desc {
-    margin-left: 5px;
-    font-size: 24px;
-    color: #FFFFFF;
-}
-
-section .level-test.content-one .banner.img1 {
-    position: relative;
-    float: left;
-    display: inline-block;
-    margin-top: 36px;
-    max-width: 369px;
+section .level-test.content-one div > img {
     width: 100%;
     height: auto;
 }
 
-section .level-test.content-one .banner.text {
+section .level-test.content-one .banner {
     position: absolute;
-    float: left;
     display: inline-block;
-    margin-top: 55px;
-    width: 350px;
+    width: 36%;
+    float: left;
+    left: 5px;
+    top: 0;
+    margin-top: 5%;
 }
 
-section .level-test.content-one .img2 {
-    position: absolute;
-    right: 5px;
-    float: right;
-    height: 280px;
+section .level-test.content-one h2 {
+    font-size: 16px;
+    color: #FFFFFF;
 }
 
-section .level-test.content-one .img2 img{
-    position: absolute;
-    bottom: 0;
-    right: 0;
+section .level-test.content-one .desc {
+    font-size: 12px;
+    color: #FFFFFF;
+}
+
+@media all and (min-width: 600px ) {
+    section .level-test.content-one h2 {
+        font-size: 28px;
+    }
+    section .level-test.content-one .desc {
+        font-size: 20px;
+    }
+}
+
+@media all and (min-width: 800px ) {
+    section .level-test.content-one h2 {
+        font-size: 36px;
+    }
+    section .level-test.content-one .desc {
+        font-size: 24px;
+    }
+}
+
+@media all and (min-width: 980px ) {
+    section .level-test.content-one {
+        background: url('../../themes/x5/img/header/level-test-banner1.jpg') no-repeat center center;
+        height: 280px;
+    }
+    section .level-test.content-one .banner {
+        left: 0;
+    }
+    section .level-test.content-one h2 {
+        margin-bottom: 18px;
+        font-size: 48px;
+    }
+    section .level-test.content-one .desc {
+        margin-left: 3px;
+        font-size: 24px;
+    }
 }

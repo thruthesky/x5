@@ -1,41 +1,41 @@
-section .team-viewer.content-one {
-    height: 280px;
-}
-
-
-section .team-viewer.content-one h2 {
-    display: inline-block;
-    margin-bottom: 18px;
-    font-size: 48px;
-    color: #0280db;
-    width: 600px;
-}
-
-
-section .team-viewer.content-one .desc {
-    display: inline-block;
-    padding-left: 7px;
-    font-size: 24px;
-    color: #FFFFFF;
+section .team-viewer.content-one div > img {
+    width: 100%;
+    height: auto;
 }
 
 section .team-viewer.content-one .banner {
     position: absolute;
     display: inline-block;
-    float: left;
-    width: 600px;
-    margin-top: 85px;
+    top: 0;
+    left: 5%;
+    margin-top: 10%;
 }
 
-section .team-viewer.content-one .img1 {
-    position: absolute;
-    right: 5px;
-    float: right;
-    height: 240px;
+section .team-viewer.content-one h2 {
+    display: inline-block;
+    font-size: 16px;
+    color: #FFFFFF;
 }
 
-section .team-viewer.content-one .img1 img{
-    position: absolute;
-    bottom: 0;
-    right: 0;
+@media all and (min-width: 600px ) {
+    section .team-viewer.content-one h2 {
+        font-size: 28px;
+    }
+}
+
+@media all and (min-width: 800px ) {
+    section .team-viewer.content-one h2 {
+        font-size: 36px;
+    }
+}
+
+@media all and (min-width: 980px ) {
+    section .team-viewer.content-one {
+        background: url('../../themes/x5/img/header/registration-banner1.jpg') no-repeat center center;
+        height: 280px;
+    }
+    section .team-viewer.content-one h2 {
+        margin-bottom: 18px;
+        font-size: 48px;
+    }
 }

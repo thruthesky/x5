@@ -1,40 +1,60 @@
-section .enrollment.content-one {
-    height: 280px;
+section .enrollment.content-one div > img {
+    width: 100%;
+    height: auto;
 }
-
-section .enrollment.content-one h2 {
-    text-align: right;
-    margin-bottom: 16px;
-    font-size: 48px;
-    color: #FFFFFF;
-}
-
-
-section .enrollment.content-one .desc {
-    text-align: right;
-    font-size: 24px;
-    color: #FFFFFF;
-}
-
 
 section .enrollment.content-one .banner {
     position: absolute;
-    margin-top: 64px;
-    float: right;
-    right: 0;
-    width: 400px;
     display: inline-block;
+    width: 40%;
+    right: 5px;
+    top: 0;
+    margin-top: 4%;
+    text-align: right;
+}
+section .enrollment.content-one h2 {
+    display: inline-block;
+    margin-bottom: 8px;
+    font-size: 18px;
+    color: #FFFFFF;
+}
+section .enrollment.content-one .desc {
+    display: inline-block;
+    font-size: 14px;
+    color: #FFFFFF;
 }
 
-section .enrollment.content-one .img1 {
-    position: absolute;
-    float: left;
-    height: 280px;
+@media all and (min-width: 600px ) {
+    section .enrollment.content-one h2 {
+        font-size: 28px;
+    }
+    section .enrollment.content-one .desc {
+        font-size: 20px;
+    }
 }
 
-section .enrollment.content-one .img1 img{
-    position: absolute;
-    bottom: 0;
-    left: 0;
+@media all and (min-width: 800px ) {
+    section .enrollment.content-one h2 {
+        font-size: 36px;
+    }
+    section .enrollment.content-one .desc {
+        font-size: 24px;
+    }
+}
 
+@media all and (min-width: 980px ) {
+    section .enrollment.content-one {
+        background: url('../../themes/x5/img/header/enrollment-banner1.jpg') no-repeat center center;
+        height: 280px;
+    }
+    section .enrollment.content-one .banner {
+        right: 0;
+    }
+    section .enrollment.content-one h2 {
+        margin-bottom: 18px;
+        font-size: 48px;
+    }
+    section .enrollment.content-one .desc {
+        font-size: 24px;
+    }
 }

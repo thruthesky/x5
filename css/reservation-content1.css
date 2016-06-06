@@ -1,51 +1,95 @@
-section .reservation.content-one {
-    height: 280px;
-}
-
-section .reservation.content-one .title {
-    display: inline-block;
-    padding: 1px 11px;
-    margin: 23px 0 0 2px;
-    float: left;
-    border-radius: 3px;
-    background-color: #e74c3c;
-    text-align: left;
-    font-size: 14px;
-    color: #FFFFFF;
-}
-
-section .reservation.content-one .level {
-    text-align: right;
-    margin-bottom: 4px;
-    font-size: 41px;
-    color: #FFFFFF;
-}
-
-section .reservation.content-one .desc {
-    text-align: right;
-    font-size: 18px;
-    color: #FFFFFF;
+section .reservation.content-one div > img {
+    width: 100%;
+    height: auto;
 }
 
 
 section .reservation.content-one .banner.text {
     position: absolute;
-    float: right;
-    right: 0;
-    top: 20px;
-    width: 296px;
     display: inline-block;
+    width: 40%;
+    right: 5px;
+    top: 0;
+    margin-top: 2%;
+    text-align: right;
 }
 
-section .reservation.content-one .img1 {
-    position: absolute;
-    float: left;
-    height: 280px;
+section .reservation.content-one .title {
+    display: inline-block;
+    padding: 0 11px;
+    margin-right: 40%;
+    float: right;
+    border-radius: 3px;
+    background-color: #e74c3c;
+    text-align: left;
+    font-size: 8px;
+    color: #FFFFFF;
 }
 
-section .reservation.content-one .img1 img{
-    position: absolute;
-    bottom: 0;
-    left: 0;
+section .reservation.content-one .level {
+    text-align: right;
+    font-size: 16px;
+    color: #FFFFFF;
+}
 
+section .reservation.content-one .desc {
+    text-align: right;
+    font-size: 9px;
+    color: #FFFFFF;
+}
+@media all and (min-width: 480px ) {
+    section .reservation.content-one .title {
+        font-size: 10px;
+    }
+
+    section .reservation.content-one .level {
+        font-size: 18px;
+    }
+    section .reservation.content-one .desc {
+        font-size: 11px;
+    }
+}
+
+
+@media all and (min-width: 600px ) {
+    section .reservation.content-one .title {
+        font-size: 12px;
+    }
+
+    section .reservation.content-one .level {
+        font-size: 24px;
+    }
+    section .reservation.content-one .desc {
+        font-size: 14px;
+    }
+}
+
+@media all and (min-width: 800px ) {
+    section .reservation.content-one .title {
+        margin-right: 50%;
+    }
+    section .reservation.content-one .level {
+        font-size: 32px;
+    }
+    section .reservation.content-one .desc {
+        font-size: 18px;
+    }
+}
+
+@media all and (min-width: 980px ) {
+    section .reservation.content-one {
+        background: url('../../themes/x5/img/header/reservation-banner1.jpg') no-repeat center center;
+        height: 280px;
+    }
+    section .reservation.content-one .title {
+        margin-right: 50%;
+        font-size: 14px;
+    }
+
+    section .reservation.content-one .level {
+        font-size: 48px;
+    }
+    section .reservation.content-one .desc {
+        font-size: 22px;
+    }
 }

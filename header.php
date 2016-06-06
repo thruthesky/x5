@@ -73,11 +73,11 @@ ob_start();
                     <li class="<?php if ( segment(0) == 'level-test' ) echo 'active'; ?>">
                         <div><a href="<?php hd()?>level-test"><?php _text('Level Test')?></a></div>
                     </li>
-                    <li class="<?php if ( segment(0) == 'enrollment' ) echo 'active'; ?>">
-                        <div><a href="<?php hd()?>enrollment"><?php _text('Enrollment')?></a></div>
-                    </li>
                     <li class="<?php if ( segment(0) == 'curriculum' ) echo 'active'; ?>">
                         <div><a href="<?php hd()?>curriculum"><?php _text('Curriculum')?></a></div>
+                    </li>
+                    <li class="<?php if ( segment(0) == 'enrollment' ) echo 'active'; ?>">
+                        <div><a href="<?php hd()?>enrollment"><?php _text('Enrollment')?></a></div>
                     </li>
                     <li class="<?php if ( segment(0) == 'reservation' ) echo 'active'; ?>">
                         <div><a href="<?php hd()?>reservation"><?php _text('Reservation')?></a></div>

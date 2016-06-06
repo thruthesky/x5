@@ -24,6 +24,7 @@ if ( empty($teachers)  ) {
 ?>
 <section class="about-us content-three">
     <div>
+        <h2><?php _text('Teachers Greeting') ?></h2>
         <div class="teacher-row">
             <?php foreach ( $teachers as $teacher ) { ?>
                 <div class="teacher col-sm-6">

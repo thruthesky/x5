@@ -1,33 +1,41 @@
-section .teachers.content-one {
-    height: 280px;
-}
-
-
-section .teachers.content-one h2 {
-    display: inline-block;
-    margin-bottom: 18px;
-    font-size: 53px;
-    color: #FFFFFF;
-    width: 400px;
+section .teachers.content-one div > img {
+    width: 100%;
+    height: auto;
 }
 
 section .teachers.content-one .banner {
     position: absolute;
     display: inline-block;
-    float: left;
-    width: 400px;
-    margin-top: 75px;
+    top: 0;
+    left: 5%;
+    margin-top: 10%;
 }
 
-section .teachers.content-one .img1 {
-    position: absolute;
-    right: 5px;
-    float: right;
-    height: 240px;
+section .teachers.content-one h2 {
+    display: inline-block;
+    font-size: 24px;
+    color: #FFFFFF;
 }
 
-section .teachers.content-one .img1 img{
-    position: absolute;
-    bottom: 0;
-    right: 0;
+@media all and (min-width: 600px ) {
+    section .teachers.content-one h2 {
+        font-size: 28px;
+    }
+}
+
+@media all and (min-width: 800px ) {
+    section .teachers.content-one h2 {
+        font-size: 36px;
+    }
+}
+
+@media all and (min-width: 980px ) {
+    section .teachers.content-one {
+        background: url('../../themes/x5/img/header/teachers-banner1.jpg') no-repeat center center;
+        height: 280px;
+    }
+    section .teachers.content-one h2 {
+        margin-bottom: 18px;
+        font-size: 48px;
+    }
 }

@@ -1,18 +1,19 @@
-section .about-us.content-three {
-    //background: url("../img/about_us_banner2.jpg") #ededed no-repeat;
-    //background-size: cover;
-    //background-position: center center;
-
-}
-
 section .about-us.content-three > div {
     padding: 100px 0;
+}
+
+section .about-us.content-three > div > h2 {
+    text-align: center;
+    margin-bottom: 50px;
+    font-size: 36px;
 }
 
 section .about-us.content-three > div .teacher-row {
     position: relative;
     display: inline-block;
 }
+
+
 
 /* Teachers List */
 section .about-us.content-three .teacher {

@@ -1,7 +1,7 @@
 section .user-update.content-two > div {
     position: relative;
     margin: 0 auto;
-    padding: 100px 0;
+    padding: 30px 0;
     max-width: 980px;
 }
 
@@ -11,12 +11,8 @@ section .user-update.content-two > div > form   {
     width: 100%;
 }
 
-section .user-update.content-two h2 {
-    padding-top: 20px;
-}
-
 section .user-update.content-two .text.user-login {
-    padding-top: 13px;
+    padding-top: 14px;
 }
 
 section .user-update.content-two .button {
@@ -30,7 +26,7 @@ section .user-update.content-two .button input {
     display:inline-block;
     padding: 0;
     width: 100%;
-    height: 50px;
+    height: 30px;
     border: 0;
     border-radius: 3px;
     font-weight: 700;
@@ -43,7 +39,7 @@ section .user-update.content-two  input[type='submit'] {
     background-color: #2ecc71;
     padding: 0;
     width: 100%;
-    height: 50px;
+    height: 30px;
     border: 0;
     border-radius: 3px;
     font-weight: 700;
@@ -52,10 +48,11 @@ section .user-update.content-two  input[type='submit'] {
 section .user-update.content-two .change-pwd {
     position: relative;
     display: inline-block;
-    padding: 13px 40px;
+    padding: 5px 20px;
     border-radius: 3px;
     background-color: #2ecc71;
     color: #FFFFFF;
+    font-size: 12px;
     font-weight: 700;
     cursor: pointer;
 }
@@ -73,31 +70,24 @@ section .user-update.content-two .line {
 
 section .user-update.content-two .line label {
     float: left;
-    padding: 13px 0;
-    width: 150px;
+    padding: 6px 0;
+    width: 100px;
     color: #1e1e1e;
     border-radius: 3px;
+    font-size: 12px;
     font-family: "Arial", "Open Sans", sans-serif;
 }
 
 section .user-update.content-two input[tabindex="101"] {
-    height: 50px;
+    height: 30px;
     outline: 0;
     padding: 7px;
-    width: 280px;
+    width: 200px;
     border-radius: 3px;
     border: 1px solid #c6c6c6;
+    font-size: 12px;
     font-family: "Arial", "Open Sans", sans-serif;
 }
-
-section .user-update input#user_email {
-    min-width: 360px;
-}
-
-section .user-update input#address {
-    min-width: 450px;
-}
-
 
 section .user-update.content-two input[tabindex="101"]:focus {
     border: 1px solid #419df2;
@@ -105,4 +95,72 @@ section .user-update.content-two input[tabindex="101"]:focus {
 
 section .user-update.content-two input:-webkit-autofill {
     -webkit-box-shadow: 0 0 0 1000px #ffffff inset!important;
+}
+
+@media all and (min-width: 380px ) {
+    section .user-update.content-two input[tabindex="101"] {
+        width: 250px;
+    }
+}
+
+@media all and (min-width: 480px ) {
+    section .user-update.content-two .line label {
+        width: 120px;
+    }
+}
+
+@media all and (min-width: 600px ) {
+    section .user-update.content-two > div {
+        padding: 50px 0;
+    }
+    section .user-update.content-two input[tabindex="101"] {
+        width: 280px;
+        height: 40px;
+        font-size: 14px;
+    }
+    section .user-update.content-two .button input {
+        height: 40px;
+    }
+    section .user-update.content-two .line label {
+        padding: 10px 0;
+        width: 140px;
+        font-size: 14px;
+    }
+    section .user-update.content-two .change-pwd {
+        padding: 8px 30px;
+        font-size: 14px;
+    }
+    section .user-update.content-two input[type='submit'] {
+        height: 40px;
+    }
+}
+
+@media all and (min-width: 800px ) {
+    section .user-update.content-two > div {
+        padding: 100px 0;
+    }
+    section .user-update.content-two input[tabindex="101"] {
+        height: 50px;
+        font-size: 16px;
+    }
+    section .user-update.content-two .button input {
+        height: 50px;
+    }
+
+    section .user-update input#user_email {
+        min-width: 360px;
+    }
+
+    section .user-update input#address {
+        min-width: 450px;
+    }
+    section .user-update.content-two .line label {
+        padding: 14px 0;
+        width: 150px;
+        font-size: 16px;
+    }
+    section .user-update.content-two .change-pwd {
+        padding: 13px 40px;
+        font-size: 16px;
+    }
 }
