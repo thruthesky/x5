@@ -15,7 +15,11 @@ if ( $re['code'] ) { // error from server
     $re['data'] = [];
 }
 
-$books = $re['data'];
+$books = $re['data']['books'];
+$no_of_past = $re['data']['no_of_past'];
+$no_of_reservation = $re['data']['no_of_reservation'];
+$next_class = $re['data']['next_class'];
+$first_class = $re['data']['first_class'];
 $data = $books ? prepare_books_by_date( $books ) : [];
 //di($books);
 include 'part/reservation-content1.php';
