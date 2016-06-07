@@ -17,12 +17,8 @@ wp_enqueue_style('enrollment-content2', td() . '/css/enrollment-content2.css');
                             <?php _text('Minutes')?>
                         </div>
                         <div class="radio">
-                            <div class="text"><input type="radio" name="min" value="20" checked> <?php _text('20mins')?></div>
-                            <div class="text"><input type="radio" name="min" value="30"> <?php _text('30mins (5% discount)')?></div>
-
-                            <div class="text"><input type="checkbox" name="min" value="40"> <?php _text('40mins (10% discount)')?></div>
-                            <div class="text"><input type="checkbox" name="min" value="50"> <?php _text('50mins (15% discount)')?></div>
-
+                            <div class="text"><input type="radio" name="min" value="25" checked> <?php _text('25mins')?></div>
+                            <div class="text"><input type="radio" name="min" value="50"> <?php _text('50mins (5% discount)')?></div>
                         </div>
                     </div>
                 </div>

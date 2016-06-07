@@ -87,7 +87,7 @@ if ( seg(2) != 'edit' ) {
     }
     $cache_url = home_url() . "/$cache_path/$route-$md5.js";
 
-    $html = str_replace("<!-- JS Holder -->", "<script src='$cache_url'></script></body>", $html);
+    $html = str_replace("<!-- JS Holder -->", "<script src='$cache_url'></script>", $html);
 }
 
 echo $html;
