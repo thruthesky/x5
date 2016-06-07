@@ -11,7 +11,7 @@ wp_enqueue_style('info', td() . '/css/front-info.css');
             Try to use p, br, b, i tags. You can also input CSS and Javascript on this paragraph.')?>
         </div>
         <div>
-            <img src="<?php img_e() ?>info.png" >
+            <img src="<?php img_e() ?>info.jpg" >
         </div>
     </div>
 </section>

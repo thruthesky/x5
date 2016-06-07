@@ -31,7 +31,7 @@ section .teachers.content-one h2 {
 
 @media all and (min-width: 980px ) {
     section .teachers.content-one {
-        background: url('../../themes/x5/img/header/teachers-banner1.jpg') no-repeat center center;
+        background: url('../../themes/x5/img/header/teacher-list-banner1.jpg') no-repeat center center;
         height: 280px;
     }
     section .teachers.content-one h2 {
