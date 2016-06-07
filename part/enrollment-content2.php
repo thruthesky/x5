@@ -69,7 +69,7 @@ wp_enqueue_style('enrollment-content2', td() . '/css/enrollment-content2.css');
                 </div>
             </div>
             <nav>
-                <div class="total"><?php _text('Total: 1,188,000')?></div>
+                <div class="total"><?php _text('Total')?>: 1,188,000</div>
                 <div class="submit"><?php _text('Enr:B2:ENROLL NOW')?></div>
             </nav>
         </form>
