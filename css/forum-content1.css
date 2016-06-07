@@ -37,7 +37,7 @@ section .forum-content-one h2 {
 
 @media all and (min-width: 980px ) {
     section .forum-content-one {
-        background: url('../../themes/x5/img/header/forumbanner1.jpg') no-repeat center center;
+        background: url('../../themes/x5/img/header/forum-banner1.jpg') no-repeat center center;
         height: 280px;
     }
     section .forum-content-one .banner {

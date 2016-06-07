@@ -11,7 +11,6 @@ header .logo {
 }
 
 header .logo a {
-
     text-decoration: none;
 }
 
@@ -97,6 +96,7 @@ nav.top-menu ul li span {
 nav.top-menu ul li a.icon {
     margin: 0;
     padding: 0.1875em 0.625em 0 0;
+    color: #ffffff;
 }
 
 
@@ -113,7 +113,7 @@ nav.top-menu ul li.active a:hover {
     nav.top-menu, nav.menu {
         border-radius: 0;
         background-color: #2980b9;
-        color: #fff;
+        color: #FFFFFF;
         border: 0;
     }
     nav.top-menu ul li a {
@@ -122,6 +122,10 @@ nav.top-menu ul li.active a:hover {
         padding: 0.5em 0.625em;
         text-decoration: none;
         border-bottom: 0.0625em hidden;
+    }
+
+    nav.menu ul li a {
+        color: inherit;
     }
 
     header .menu ul li a,
@@ -155,6 +159,9 @@ nav.top-menu ul li.active a:hover {
     .top-menu .menu-icon {
         display:none;
     }
+    header .menu ul li.active a {
+        color: #0e7ecc;
+    }
 }
 
 
@@ -185,20 +192,11 @@ header .menu ul li a {
     color: #2d3e52;
 }
 
-header .menu ul li:nth-child(6) a {
-    /*padding-right: 0;*/
-}
-
 header .menu ul li a:hover {
     color: #0e7ecc;
-    /*background-color: #b0acac;
-    color: #FFFFFF;
-    border-radius: 0.1875em;*/
 }
 
-header .menu ul li.active a {
-    color: #0e7ecc;
-}
+
 header .menu ul li.active a:hover {
     background-color: transparent;
 }

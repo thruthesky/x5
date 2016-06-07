@@ -1,15 +1,16 @@
 .feedback.content-one div > img {
     width: 100%;
     height: auto;
-    padding: 100px;
 }
 
 section .feedback.content-one .banner {
     position: absolute;
     display: inline-block;
+    width: 58%;
+    float: left;
+    left: 5px;
     top: 0;
-    left: 5%;
-    margin-top: 10%;
+    margin-top: 5%;
 }
 
 section .feedback.content-one h2 {
@@ -18,15 +19,26 @@ section .feedback.content-one h2 {
     color: #FFFFFF;
 }
 
+section .feedback.content-one .desc {
+    font-size: 12px;
+    color: #FFFFFF;
+}
+
 @media all and (min-width: 600px ) {
     section .feedback.content-one h2 {
         font-size: 28px;
+    }
+    section .feedback.content-one .desc {
+        font-size: 20px;
     }
 }
 
 @media all and (min-width: 800px ) {
     section .feedback.content-one h2 {
         font-size: 36px;
+    }
+    section .feedback.content-one .desc {
+        font-size: 24px;
     }
 }
 
@@ -38,5 +50,9 @@ section .feedback.content-one h2 {
     section .feedback.content-one h2 {
         margin-bottom: 18px;
         font-size: 48px;
+    }
+    section .level-test.content-one .desc {
+        margin-left: 3px;
+        font-size: 24px;
     }
 }
