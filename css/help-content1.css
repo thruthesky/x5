@@ -1,23 +1,25 @@
-section .help.content-one {
-    height: 280px;
+section .help.content-one div > img {
+    width: 100%;
+    height: auto;
+}
+
+section .help.content-one .banner {
+    position: absolute;
+    display: inline-block;
+    width: 36%;
+    float: left;
+    left: 5px;
+    top: 0;
+    margin-top: 5%;
 }
 
 section .help.content-one h2 {
-    display: inline-block;
-    font-size: 53px;
-    border-right: 6px solid #FFFFFF;
+    font-size: 16px;
     color: #FFFFFF;
-    height: 121px;
-    width: 200px;
 }
 
 section .help.content-one .desc {
-    display: inline-block;
-    position: absolute;
-    bottom: 5px;
-    padding-left: 8px;
-    width: 308px;
-    font-size: 24px;
+    font-size: 12px;
     color: #FFFFFF;
 }
 
@@ -25,52 +27,79 @@ section .help.content-one .text {
     position: absolute;
     display: inline-block;
     float: right;
-    font-size: 28px;
+    font-size: 12px;
     color: #FFFFFF;
 }
 
-section .help.content-one .banner {
-    position: absolute;
-    display: inline-block;
-    float: left;
-    width: 440px;
-    height: 121px;
-    margin-top: 60px;
-}
-
-section .help.content-one .img1 {
-    position: absolute;
-    display: inline-block;
-    right: 5px;
-    float: right;
-    height: 280px;
-}
-
-section .help.content-one .img1 img{
-    position: absolute;
-    bottom: 0;
-    right: 0;
-
-}
-
 section .help.content-one .how {
-    right: 405px;
-    top: 145px;
+    right: 41%;
+    top: 51%;
 }
 
 section .help.content-one .what {
-    right: 320px;
-    top: 35px;
+    right: 33%;
+    top: 12%;
 
 }
 
 section .help.content-one .why {
-    right: 65px;
-    top: 55px;
+    right: 7%;
+    top: 20%;
 }
 
 section .help.content-one .who {
-    right: 30px;
-    top: 160px;
+    right: 3%;
+    top: 57%;
+}
+
+@media all and (min-width: 600px ) {
+    section .help.content-one .text {
+        font-size: 14px;
+    }
+}
+
+@media all and (min-width: 600px ) {
+    section .help.content-one h2 {
+        font-size: 28px;
+    }
+    section .help.content-one .desc {
+        font-size: 20px;
+    }
+    section .help.content-one .text {
+        font-size: 16px;
+    }
+}
+
+@media all and (min-width: 800px ) {
+    section .help.content-one h2 {
+        font-size: 36px;
+    }
+    section .help.content-one .desc {
+        font-size: 24px;
+    }
+    section .help.content-one .text {
+        font-size: 22px;
+    }
+}
+
+@media all and (min-width: 980px ) {
+    section .help.content-one {
+        background: url('../../themes/x5/img/header/help-banner1.jpg') no-repeat center center;
+        height: 280px;
+    }
+    section .help.content-one .banner {
+        left: 0;
+    }
+    section .help.content-one h2 {
+        margin-bottom: 18px;
+        font-size: 48px;
+    }
+    section .help.content-one .desc {
+        margin-left: 3px;
+        font-size: 24px;
+    }
+    section .help.content-one .text {
+        font-size: 28px;
+    }
 }
 
