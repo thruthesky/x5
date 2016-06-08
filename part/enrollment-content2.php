@@ -8,7 +8,7 @@ wp_enqueue_style('enrollment-content2', td() . '/css/enrollment-content2.css');
         <form action="">
             <h2><?php _text('Enr:B2:Title')?></h2>
             <div class="content row">
-                <div class="col-sm-4">
+                <div class="col-sm-3">
                     <div class="cover">
                         <div class="picture">
                             <img src="<?php img_e() ?>enrollment-icon1.png">
@@ -22,7 +22,7 @@ wp_enqueue_style('enrollment-content2', td() . '/css/enrollment-content2.css');
                         </div>
                     </div>
                 </div>
-                <div class="col-sm-4">
+                <div class="col-sm-3">
                     <div class="cover">
                         <div class="picture">
                             <img src="<?php img_e() ?>enrollment-icon2.png">
@@ -37,7 +37,7 @@ wp_enqueue_style('enrollment-content2', td() . '/css/enrollment-content2.css');
                         </div>
                     </div>
                 </div>
-                <div class="col-sm-4">
+                <div class="col-sm-3">
                     <div class="cover">
                         <div class="picture">
                             <img src="<?php img_e() ?>enrollment-icon3.png">
@@ -49,6 +49,21 @@ wp_enqueue_style('enrollment-content2', td() . '/css/enrollment-content2.css');
                             <div class="text"><input type="radio" name="day" value="Monday - Friday" checked> <?php _text('Monday - Friday')?></div>
                             <div class="text"><input type="radio" name="day" value="Mon Wed Fri only"> <?php _text('Mon Wed Fri only')?></div>
                             <div class="text"><input type="radio" name="day" value="Tue Thu only"> <?php _text('Tue Thu only')?></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-3">
+                    <div class="cover">
+                        <div class="picture">
+                            <img src="<?php img_e() ?>enrollment-icon4.png">
+                        </div>
+                        <div class="desc">
+                            <?php _text('Curriculum')?>
+                        </div>
+                        <div class="radio">
+                            <div class="text"><input type="radio" name="day" value="1" checked> <?php _text('Curriculum1')?></div>
+                            <div class="text"><input type="radio" name="day" value="2"> <?php _text('Curriculum2')?></div>
+                            <div class="text"><input type="radio" name="day" value="3"> <?php _text('Curriculum3')?></div>
                         </div>
                     </div>
                 </div>
