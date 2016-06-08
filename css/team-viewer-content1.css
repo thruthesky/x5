@@ -31,7 +31,7 @@ section .team-viewer.content-one h2 {
 
 @media all and (min-width: 980px ) {
     section .team-viewer.content-one {
-        background: url('../../themes/x5/img/header/registration-banner1.jpg') no-repeat center center;
+        background: url('../../themes/x5/img/header/team-viewer-banner1.jpg') no-repeat center center;
         height: 280px;
     }
     section .team-viewer.content-one h2 {

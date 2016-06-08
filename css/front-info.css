@@ -51,5 +51,6 @@
 .home.front .content .data >  .info > div img {
     padding: 0 2.8125em;
     margin-bottom: 6.25em;
+    border-radius: 3px;
 }
 

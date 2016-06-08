@@ -85,27 +85,27 @@ section .enrollment nav {
 
 section .enrollment .total {
     display: block;
-    background-image: url(../img/enrollment-icon14.png);
     width: 315px;
     height: 60px;
-    text-align: right;
     font-size: 24px;
-    color: #FFFFFF;
     padding: 10px 20px;
     border-radius: 5px;
     margin-bottom: 10px;
+    background-color: #00a0d2;
+    color: #FFFFFF;
+    text-align: center;
 }
 
 section .enrollment .submit {
-    background-color: orange;
     display: block;
     width: 315px;
     height: 60px;
-    text-align: center;
     font-size: 24px;
-    color: #FFFFFF;
     padding: 10px 20px;
     border-radius: 5px;
     margin-bottom: 10px;
+    color: #FFFFFF;
+    background-color: orange;
+    text-align: center;
     cursor: pointer;
 }

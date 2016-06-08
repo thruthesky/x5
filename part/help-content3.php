@@ -31,7 +31,7 @@ wp_enqueue_style('help-content3', td() . '/css/help-content3.css');
             </div>
             <div id="content-four"></div>
             <div class="line submit">
-                <input type="submit" tabindex="121" value="<?php _text('Inquery Submit')?>">
+                <input type="submit" tabindex="121" value="<?php _text('Inquiry Submit')?>">
             </div>
         </form>
     </div>
