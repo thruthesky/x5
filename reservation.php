@@ -20,7 +20,8 @@ $no_of_past = $re['data']['no_of_past'];
 $no_of_reservation = $re['data']['no_of_reservation'];
 $next_class = $re['data']['next_class'];
 $first_class = $re['data']['first_class'];
-$data = $books ? prepare_books_by_date( $books ) : [];
+$no_of_absence = 0;
+$data = $books ? prepare_books_by_date( $books, $no_of_absence ) : [];
 //di($books);
 include 'part/reservation-content1.php';
 ?>
@@ -33,7 +34,8 @@ include 'part/reservation-content1.php';
             <?php if ( empty( $books ) ) : ?>
                 <?php _text("You have no reservations"); ?>
             <?php else : ?>
-                <?php _text("No. of Reservations"); ?> : <?php echo  count($books); ?>
+                <div><?php _text("No. of Reservations of this month:"); ?><?php echo  count($books); ?></div>
+                <div><?php _text("No. of Absence of this month:"); ?> : <?php echo  $no_of_absence ?></div>
             <?php endif; ?>
         <?php else : ?>
             <img class="reminder" src="<?php img_e() ?>reservation-content2-image1.png">
