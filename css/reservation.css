@@ -129,6 +129,13 @@
     margin-bottom: 10px;
 }
 
+/* Updated by Mr. Song on June 8, 2106. */
+.reservation.content-two .calendar .book.absence {
+    text-decoration: line-through;
+    color: #0f75ac;
+}
+
+
 .reservation.content-two .calendar .books .book .icon {
     float: left;
     display:inline-block;
@@ -137,6 +144,7 @@
     overflow: hidden;
     border-radius: 50%;
 }
+
 
 .reservation.content-two .calendar .books .book .icon img {
     width: 100%;
@@ -158,6 +166,12 @@
     padding-left: 10px;
     font-size: 13px;
 }
+
+/* Updated by Mr. Song on June 8, 2106. */
+.reservation.content-two .calendar .books .book.absence .time {
+    text-decoration: line-through;
+}
+
 
 .reservation.content-two .tooltip-inner {
     padding: 6px 12px;
