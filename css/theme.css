@@ -4,3 +4,23 @@
 }
 
 
+/** overriding bootstrap */
+.register .modal-header {
+    border-bottom: 0;
+}
+.register .modal-body {
+    padding: 0 15px;
+    box-sizing: border-box;
+}
+.register .modal .btn {
+    border-radius: 0;
+}
+.register .modal-content { border-radius: 0;  }
+.register .modal-footer {
+    border-top: 0;
+}
+@media all and (min-width: 544px) {
+    .register .modal-dialog {
+        margin: 140px auto;
+    }
+}

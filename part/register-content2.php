@@ -53,9 +53,64 @@ wp_enqueue_script( 'register', td() . '/js/register.js', array('jquery') );
                 <div class="text"><input type="text" name="skype" maxlength="64" id="skype" tabindex="101"  placeholder="<?php _text('Skype ID')?>" value="<?php echo user()->skype?>"></div>
             </div>
 
-            <div class="line spinner" style="display:none;">
-                <i class="fa fa-spinner fa-spin"></i> Connecting to server ...
+
+            <div class="agree-line">
+
+                <label for="agree">
+                <input type="checkbox" id="agree" name="agree" value="Y" message="<?php _text("agree terms of service if you want to register")?>">
+                <?php _text('If you agree to the terms of our service, check this box.')?>
+                </label>
+                <span class="agree-detail" data-toggle="modal" data-target="#myModal">
+                <?php _text("For more detail of terms of service")?>
+                </span>
+
+                <?php /* 회원 가입 시 회원 약관 및 개인정보 수집·이용·서비스 제공을 위한 개인정보 취급 위탁에 대하여 동의하신 것으로 간주됩니다. 내용 상세보기 */ ?>
+
+
+
+
+                <!-- Modal -->
+                <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                    <div class="modal-dialog modal-lg" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                                <h4 class="modal-title" id="myModalLabel">Terms of Service</h4>
+                            </div>
+                            <div class="modal-body">
+                                <div class="title"><?php _text("Membership of Condition: title")?></div>
+                                <div style="padding: 1em; box-sizing:border-box; border: 1px solid #dfdfdf; height: 10em; overflow-y: scroll;">
+                                    <?php _text("membership of condition: description")?>
+                                </div>
+
+                                <div class="title"><?php _text("Privacy: title")?></div>
+                                <div style="padding: 1em; box-sizing:border-box; border: 1px solid #dfdfdf; height: 10em; overflow-y: scroll;">
+                                    <?php _text("privacy: description")?>
+                                </div>
+
+
+
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
             </div>
+
+
+            <div class="line spinner" style="display:none;">
+                <img src="<?php echo td() . '/img/gif-loader'?>/loader1.gif">
+                <?php _text('Connecting to server ...')?>
+            </div>
+
+
+
+
             <div class="line error alert alert-warning" role="alert" style="display:none;">
             </div>
             <div class="button">

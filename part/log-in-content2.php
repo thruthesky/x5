@@ -43,7 +43,7 @@ wp_enqueue_style('log-in-content2', td() . '/css/log-in-content2.css');
 
 
                 <div class="line spinner" style="display:none;">
-                    <i class="fa fa-spinner fa-spin"></i> Connecting to server ...
+                    <i class="fa fa-spinner fa-spin"></i> <?php _text('Connecting to server ...')?>
                 </div>
 
                 <div class="line error" style="display:none;"></div>
