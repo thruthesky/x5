@@ -60,7 +60,7 @@ wp_enqueue_script( 'register', td() . '/js/register.js', array('jquery') );
             </div>
 
             <div class="line spinner" style="display:none;">
-                <i class="fa fa-spinner fa-spin"></i> Connecting to server ...
+                <i class="fa fa-spinner fa-spin"></i> <?php _text('Connecting to server ...')?>
             </div>
             <div class="line error alert alert-warning" role="alert" style="display:none;">
             </div>
