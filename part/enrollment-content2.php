@@ -17,8 +17,8 @@ wp_enqueue_style('enrollment-content2', td() . '/css/enrollment-content2.css');
                             <?php _text('Minutes')?>
                         </div>
                         <div class="radio">
-                            <div class="text"><input type="radio" name="min" value="25" checked> <?php _text('25mins')?></div>
-                            <div class="text"><input type="radio" name="min" value="50"> <?php _text('50mins (5% discount)')?></div>
+                            <div class="text"><input type="radio" name="min" value="25" checked> <?php _text('25mins 120,000 won')?></div>
+                            <div class="text"><input type="radio" name="min" value="50"> <?php _text('50mins (5% discount) 230,000 won')?></div>
                         </div>
                     </div>
                 </div>
@@ -28,12 +28,14 @@ wp_enqueue_style('enrollment-content2', td() . '/css/enrollment-content2.css');
                             <img src="<?php img_e() ?>enrollment-icon2.png">
                         </div>
                         <div class="desc">
-                            <?php _text('Months')?>
+                            <?php _text('How To Pay')?>
                         </div>
                         <div class="radio">
-                            <div class="text"><input type="radio" name="month" value="1" checked> <?php _text('1month')?></div>
-                            <div class="text"><input type="radio" name="month" value="2"> <?php _text('2months (5% discount)')?></div>
-                            <div class="text"><input type="radio" name="month" value="3"> <?php _text('3months (10% discount)')?></div>
+                            <div class="text"><input type="radio" name="month" value="1" checked> <?php _text('credit card')?></div>
+                            <div class="text"><input type="radio" name="month" value="1" checked> <?php _text('online banking')?></div>
+                            <div class="text"><input type="radio" name="month" value="1" checked> <?php _text('offline banking')?></div>
+                            <div class="text"><input type="radio" name="month" value="1" checked> <?php _text('paypal')?></div>
+                            <div class="text"><input type="radio" name="month" value="1" checked> <?php _text('auto credit ( 20% discount )')?></div>
                         </div>
                     </div>
                 </div>
@@ -46,12 +48,15 @@ wp_enqueue_style('enrollment-content2', td() . '/css/enrollment-content2.css');
                             <?php _text('Days')?>
                         </div>
                         <div class="radio">
-                            <div class="text"><input type="radio" name="day" value="Monday - Friday" checked> <?php _text('Monday - Friday')?></div>
-                            <div class="text"><input type="radio" name="day" value="Mon Wed Fri only"> <?php _text('Mon Wed Fri only')?></div>
-                            <div class="text"><input type="radio" name="day" value="Tue Thu only"> <?php _text('Tue Thu only')?></div>
+                            <div class="text"><input type="radio" name="day" value="Monday - Friday" checked> <?php _text('5 days')?></div>
+                            <div class="text"><input type="radio" name="day" value="Mon Wed Fri only"> <?php _text('4 days ( 5% discount )')?></div>
+                            <div class="text"><input type="radio" name="day" value="Tue Thu only"> <?php _text('3 days ( 10% discount )')?></div>
                         </div>
                     </div>
                 </div>
+            </div>
+            <div>
+                Notice: When auto credit selected, discounted amount will be returned after a month. Detail description.
             </div>
             <div class="summary">
                 <div class="row">

@@ -12,6 +12,19 @@ if ( ! defined('ABC_LIBRARY') ) {
     return;
 }
 
+
+add_action( 'init', function() {
+
+    // add_theme_support('menus'); // how ticks do you waste by adding this line?
+
+    if ( current_user_can('manage_options') ) {
+        register_nav_menu('primary', 'Primary Header Navigation');
+        register_nav_menu('secondary', 'Footer Navigation');
+    }
+
+
+});
+
 if ( isset($_REQUEST['ajax']) && $_REQUEST['ajax'] == 'header_top_menu_user' ) {
 
     ob_start();
@@ -54,7 +67,6 @@ add_action( 'wp_enqueue_scripts', function () {
 
     wp_enqueue_style( 'state', td() . '/css/state.css' );
     wp_enqueue_style( 'state.header', td() . '/css/state.header.css' );
-    wp_enqueue_style( 'theme', td() . '/css/theme.css' );
     wp_enqueue_script( 'theme', td() . '/js/theme.js', array('jquery') );
     wp_enqueue_style( 'my-slider-v3', td() . '/css/my-slider-v3.css' );
     wp_enqueue_script( 'my-slider-v3', td() . '/js/my-slider-v3.js', array('jquery') );
@@ -63,12 +75,13 @@ add_action( 'wp_enqueue_scripts', function () {
 
 
     /** Pages that use bootstrap */
-    if ( is_front_page() || seg(0) == 'reservation' || seg(0) == 'enrollment' || seg(0) == 'user-log-in' ) {
-        wp_enqueue_style( 'bootstrap', 'https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.2/css/bootstrap.min.css' );
-        wp_enqueue_script( 'tether', FORUM_URL . 'js/tether.min.js' );
-        wp_enqueue_script( 'bootstrap', 'https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.2/js/bootstrap.min.js', array(), false, true );
+    if ( is_front_page() || seg(0) == 'reservation' || seg(0) == 'enrollment' || seg(0) == 'user-log-in' || seg(0) == 'user-register') {
+        wp_enqueue_style( 'bootstrap', td() . '/css/bootstrap/css/bootstrap.min.css' );
+        wp_enqueue_script( 'tether', td() . '/css/bootstrap/js/tether.min.js' );
+        wp_enqueue_script( 'bootstrap', td() . '/css/bootstrap/js/bootstrap.min.js', array(), false, true );
     }
 
+    wp_enqueue_style( 'theme', td() . '/css/theme.css' );
 });
 
 
