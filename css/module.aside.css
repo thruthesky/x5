@@ -1,7 +1,7 @@
 aside.sidebar {
     overflow: auto;
     z-index: 1234;
-    /*margin-bottom: .3em;*/
+    margin-bottom: .3em;
 }
 
 .sidebar ul {
@@ -44,6 +44,7 @@ aside.sidebar {
     .sidebar ul li a > span {
         font-size: 12px;
     }
+
 }
 
 @media all and ( min-width: 600px ) {

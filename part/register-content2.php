@@ -49,12 +49,6 @@ wp_enqueue_script( 'register', td() . '/js/register.js', array('jquery') );
             </div>
 
             <div class="line">
-                <label for="address"><?php _text('Address')?></label>
-                <div class="text"><input type="text" name="address" maxlength="64" id="address" tabindex="101" placeholder="<?php _text('Address')?>" value="<?php echo user()->address?>"></div>
-            </div>
-
-
-            <div class="line">
                 <label for="skype"><?php _text('Skype ID')?></label>
                 <div class="text"><input type="text" name="skype" maxlength="64" id="skype" tabindex="101"  placeholder="<?php _text('Skype ID')?>" value="<?php echo user()->skype?>"></div>
             </div>
