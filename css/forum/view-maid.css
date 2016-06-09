@@ -1,0 +1,10 @@
+.comment-new .comment-content textarea{
+	border-radius: 5px;
+}
+.submit #post-submit-button{
+	padding-top: 5px;
+	border: none;
+	border-radius: 3px;
+	background-color: #006dcc;
+	color: #fff;
+}
