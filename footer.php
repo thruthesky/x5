@@ -21,9 +21,9 @@ $html = ob_get_clean();
 // css
 preg_match_all("/<link.*href=.*(\/wp\-)(.*\.css)[^>]+>/", $html, $ms);
 
+$css = null;
 if ( $ms[2] ) {
     $styles = $ms[2];
-    $css = null;
     for( $i = 0; $i < count($styles); $i ++ ) {
         $path = 'wp-' . $styles[$i];
         $tag = $ms[0][$i];
@@ -47,6 +47,7 @@ if ( ! is_dir($cache_dir) ) mkdir( $cache_dir );
 //
 $md5 = md5($css);
 $cache_file = $cache_dir . "/$route-$md5.css";
+
 if ( ! file_exists($cache_file) ) {
     $files = $cache_dir . "/$route-*.css";
     foreach( glob($cache_dir . "/$route-*.css" ) as $file ) {

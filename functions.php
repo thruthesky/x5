@@ -81,6 +81,9 @@ add_action( 'wp_enqueue_scripts', function () {
         wp_enqueue_script( 'bootstrap', td() . '/css/bootstrap/js/bootstrap.min.js', array(), false, true );
     }
 
+    wp_deregister_style('font-awesome');
+    wp_enqueue_style( 'font-awesome', td() . '/css/font-awesome/css/font-awesome.min.css' );
+
     wp_enqueue_style( 'theme', td() . '/css/theme.css' );
 });
 
