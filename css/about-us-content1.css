@@ -1,11 +1,3 @@
-/**
- *
- */
-section .about-us.content-one div > img {
-    width: 100%;
-    height: auto;
-}
-
 section .about-us.content-one .banner {
     position: absolute;
     display: inline-block;
@@ -46,10 +38,6 @@ section .about-us.content-one .desc {
 }
 
 @media all and (min-width: 980px ) {
-    section .about-us.content-one {
-        background: url('../../themes/x5/img/header/about-us-banner1.jpg') no-repeat center center;
-        height: 280px;
-    }
     section .about-us.content-one .banner {
         right: 0;
     }

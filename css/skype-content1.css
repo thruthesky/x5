@@ -1,8 +1,3 @@
-section .skype.content-one div > img {
-    width: 100%;
-    height: auto;
-}
-
 section .skype.content-one .banner {
     position: absolute;
     display: inline-block;
@@ -30,10 +25,6 @@ section .skype.content-one h2 {
 }
 
 @media all and (min-width: 980px ) {
-    section .skype.content-one {
-        background: url('../../themes/x5/img/header/skype-banner1.jpg') no-repeat center center;
-        height: 280px;
-    }
     section .skype.content-one h2 {
         margin-bottom: 18px;
         font-size: 48px;

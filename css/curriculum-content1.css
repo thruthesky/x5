@@ -1,8 +1,3 @@
-section .curriculum.content-one div > img {
-    width: 100%;
-    height: auto;
-}
-
 section .curriculum.content-one .banner {
     position: absolute;
     display: inline-block;
@@ -42,10 +37,6 @@ section .curriculum.content-one .desc {
 }
 
 @media all and (min-width: 980px ) {
-    section .curriculum.content-one {
-        background: url('../../themes/x5/img/header/curriculum-banner1.jpg') no-repeat center center;
-        height: 280px;
-    }
     section .curriculum.content-one .banner {
         left: 0;
     }

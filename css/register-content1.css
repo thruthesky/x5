@@ -30,10 +30,6 @@ section .register.content-one h2 {
 }
 
 @media all and (min-width: 980px ) {
-    section .register.content-one {
-        background: url('../../themes/x5/img/header/registration-banner1.jpg') no-repeat center center;
-        height: 280px;
-    }
     section .register.content-one h2 {
         margin-bottom: 18px;
         font-size: 48px;

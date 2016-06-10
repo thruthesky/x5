@@ -1,8 +1,3 @@
-section .teachers.content-one div > img {
-    width: 100%;
-    height: auto;
-}
-
 section .teachers.content-one .banner {
     position: absolute;
     display: inline-block;
@@ -30,10 +25,6 @@ section .teachers.content-one h2 {
 }
 
 @media all and (min-width: 980px ) {
-    section .teachers.content-one {
-        background: url('../../themes/x5/img/header/teacher-list-banner1.jpg') no-repeat center center;
-        height: 280px;
-    }
     section .teachers.content-one h2 {
         margin-bottom: 18px;
         font-size: 48px;

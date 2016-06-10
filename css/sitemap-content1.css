@@ -1,9 +1,3 @@
-section .sitemap.content-one div > img {
-    width: 100%;
-    height: auto;
-}
-
-
 section .sitemap.content-one .banner {
     position: absolute;
     display: inline-block;
@@ -31,10 +25,6 @@ section .sitemap.content-one h2 {
 }
 
 @media all and (min-width: 980px ) {
-    section .sitemap.content-one {
-        background: url('../../themes/x5/img/header/sitemap-banner1.jpg') no-repeat center center;
-        height: 280px;
-    }
     section .sitemap.content-one h2 {
         margin-bottom: 18px;
         font-size: 48px;

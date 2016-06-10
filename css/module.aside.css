@@ -1,7 +1,6 @@
 aside.sidebar {
     overflow: auto;
     z-index: 1234;
-    margin-bottom: .3em;
 }
 
 .sidebar ul {

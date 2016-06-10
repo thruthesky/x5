@@ -1,9 +1,3 @@
-section .reservation.content-one div > img {
-    width: 100%;
-    height: auto;
-}
-
-
 section .reservation.content-one .banner.text {
     position: absolute;
     display: inline-block;
@@ -77,10 +71,6 @@ section .reservation.content-one .desc {
 }
 
 @media all and (min-width: 980px ) {
-    section .reservation.content-one {
-        background: url('../../themes/x5/img/header/reservation-banner1.jpg') no-repeat center center;
-        height: 280px;
-    }
     section .reservation.content-one .title {
         margin-right: 50%;
         font-size: 14px;
