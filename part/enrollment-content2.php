@@ -9,19 +9,21 @@ function _check_value($n, $v) {
 }
 ?>
 <script>
-    var form_action = "<?php echo home_url()?>/enrollment?mode=form_elements_submit";
+
+    //var form_action = "<?php echo home_url()?>/enrollment?mode=form_elements_submit";
     function form_elements_submit() {
-        $("form[name='frmAGS_pay']").prop('action', form_action);
+      //  $("form[name='frmAGS_pay']").prop('action', form_action);
         document.forms['frmAGS_pay'].submit();
     }
+
 </script>
 <section class="enrollment content-two">
     <div>
-        <form name=frmAGS_pay method=post action="<?php echo home_url()?>/enrollment?mode=AGS_pay_ing">
+        <form name=frmAGS_pay method=post action="<?php echo home_url()?>/enrollment?mode=AGS_pay">
             <h2><?php _text('Enr:B2:Title')?></h2>
 
             <?php
-            if ( isset($_REQUEST['mode']) && $_REQUEST['mode'] == 'form_elements_submit' ) include __LMS_PATH__ . 'payment-gateway/allthegate/form_elements_submit.php';
+            //if ( isset($_REQUEST['mode']) && $_REQUEST['mode'] == 'form_elements_submit' ) include __LMS_PATH__ . 'payment-gateway/allthegate/form_elements_submit.php';
             ?>
             <div class="content row">
                 <div class="col-sm-3">
