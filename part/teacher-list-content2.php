@@ -46,7 +46,7 @@ if ( empty($teachers)  ) {
 
 <script>
 
-    $(function() {
+    window.addEventListener( 'load', function() {
         $(".youtube").each(function() {
             // Based on the YouTube ID, we can easily find the thumbnail image
             $(this).css('background-image', 'url(http://i.ytimg.com/vi/' + this.id + '/mqdefault.jpg)');
