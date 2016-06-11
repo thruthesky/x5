@@ -1,7 +1,3 @@
-section .testing.content-one div > img {
-    width: 100%;
-    height: auto;
-}
 section .testing.content-one .banner {
     position: absolute;
     display: inline-block;
@@ -35,10 +31,6 @@ section .testing.content-one .desc {
 }
 
 @media all and (min-width: 980px ) {
-    section .testing.content-one {
-        background: url('../../themes/x5/img/header/testing-banner1.jpg') no-repeat center center;
-        height: 280px;
-    }
     section .testing.content-one h2 {
         margin-bottom: 18px;
         font-size: 48px;

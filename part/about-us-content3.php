@@ -18,9 +18,6 @@ if ( empty($teachers)  ) {
     return;
 }
 
-
-
-
 ?>
 <section class="about-us content-three">
     <div>
@@ -29,7 +26,7 @@ if ( empty($teachers)  ) {
             <?php foreach ( $teachers as $teacher ) { ?>
                 <div class="teacher col-sm-6">
                     <div class="photo"><img src="http://witheng.com/<?php echo $teacher['photo']?>"></div>
-                    <div class="id">Teacher <?php echo $teacher['id']?></div>
+                    <div class="id">Teacher <?php echo $teacher['nickname']?></div>
                     <div class="greeting text"><?php echo trim_greeting($teacher['greeting'])?></div>
                 </div>
             <?php } ?>

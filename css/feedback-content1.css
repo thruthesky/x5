@@ -1,8 +1,3 @@
-.feedback.content-one div > img {
-    width: 100%;
-    height: auto;
-}
-
 section .feedback.content-one .banner {
     position: absolute;
     display: inline-block;
@@ -43,10 +38,6 @@ section .feedback.content-one .desc {
 }
 
 @media all and (min-width: 980px ) {
-    section .feedback.content-one {
-        background: url('../../themes/x5/img/header/feedback-banner1.jpg') no-repeat center center;
-        height: 280px;
-    }
     section .feedback.content-one h2 {
         margin-bottom: 18px;
         font-size: 48px;

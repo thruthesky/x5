@@ -1,9 +1,10 @@
 <?php
 wp_enqueue_style('reservation-content1', td() . '/css/reservation-content1.css');
+wp_enqueue_style('banner-header', td() . '/css/banner-header.css');
 ?>
-<section class="reservation content-one" style="background: url('<?php img_e() ?>/header/reservation-banner1.jpg') no-repeat center center;">
+<section class="reservation content-one">
+    <img src="<?php img_e() ?>header/reservation-banner1.jpg">
     <div>
-        <img src="<?php img_e() ?>header-980/reservation-banner1.jpg">
         <div class="text banner">
             <div class="title"><?php _text('Title: English Level')?></div>
             <div class="level"><?php _text('English Level')?></div>
