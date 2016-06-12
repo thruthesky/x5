@@ -74,11 +74,11 @@ add_action( 'wp_enqueue_scripts', function () {
 
     wp_enqueue_style( 'state', td() . '/css/state.css' );
     wp_enqueue_style( 'state.header', td() . '/css/state.header.css' );
-    wp_enqueue_script( 'theme', td() . '/js/theme.js', array('jquery') );
     wp_enqueue_style( 'my-slider-v3', td() . '/css/my-slider-v3.css' );
-    wp_enqueue_script( 'my-slider-v3', td() . '/js/my-slider-v3.js', array('jquery') );
-    wp_enqueue_script( 'cookie',            td() . '/js/js.cookie.min.js', array('jquery') );
-    wp_enqueue_script( 'translate',        td() . '/js/translate.js', array('jquery') );
+
+
+    wp_enqueue_script( 'wp-util' );
+
 
 
     /** Pages that use bootstrap */
@@ -92,6 +92,18 @@ add_action( 'wp_enqueue_scripts', function () {
     wp_enqueue_style( 'font-awesome', td() . '/css/font-awesome/css/font-awesome.min.css' );
 
     wp_enqueue_style( 'theme', td() . '/css/theme.css' );
+
+
+
+
+
+    wp_enqueue_script( 'cookie',            td() . '/js/js.cookie.min.js', array('jquery') );
+    wp_enqueue_script( 'my-slider-v3', td() . '/js/my-slider-v3.js', array('jquery') );
+    wp_enqueue_script( 'translate',        td() . '/js/translate.js', array('jquery') );
+    wp_enqueue_script( 'theme', td() . '/js/theme.js', array('jquery', 'underscore') );
+
+
+
 });
 
 
