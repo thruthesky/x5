@@ -1,5 +1,5 @@
 .data .log-in.content-two {
-    padding: 60px 0 100px;
+    padding: 40px 0 40px;
     text-align: center;
 }
 
@@ -10,7 +10,7 @@
 
 .data .log-in.content-two .inner {
     display: inline-block;
-    width: 430px;
+    width: 300px;
 }
 
 .data .log-in.content-two .inner img {
@@ -91,4 +91,34 @@
 
 section.log-in.content-two .form-group {
     margin: 5px;
+}
+@media all and (min-width: 380px ) {
+    .data .log-in.content-two .inner {
+        width: 360px;
+    }
+}
+
+
+@media all and (min-width: 600px ) {
+    .data .log-in.content-two {
+        padding: 40px 0 50px;
+    }
+}
+
+@media all and (min-width: 800px ) {
+    .data .log-in.content-two {
+        padding: 40px 0 80px;
+    }
+    .data .log-in.content-two .inner {
+        width: 400px;
+    }
+}
+
+@media all and (min-width: 980px ) {
+    .data .log-in.content-two {
+        padding: 60px 0 100px;
+    }
+    .data .log-in.content-two .inner {
+        width: 430px;
+    }
 }
