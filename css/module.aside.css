@@ -1,6 +1,7 @@
 aside.sidebar {
     overflow: auto;
     z-index: 1234;
+    margin-bottom: 5px;
 }
 
 .sidebar ul {
@@ -47,6 +48,9 @@ aside.sidebar {
 }
 
 @media all and ( min-width: 600px ) {
+    aside.sidebar {
+        margin-bottom: 0;
+    }
     .sidebar ul {
         position:fixed;
         right: 0;
