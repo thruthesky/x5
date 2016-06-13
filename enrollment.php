@@ -6,11 +6,7 @@
  */
 if ( ! PAYMENT_DEBUG ) include ALLTHEGATE_DIR . 'allthegate-javascript.php';
 if ( isset( $_REQUEST['mode'] ) ) {
-    if ( $_REQUEST['mode'] == "AGS_pay" ) {
-        include ALLTHEGATE_DIR . 'AGS_pay.php';
-        return;
-    }
-    else if ( $_REQUEST['mode'] == "AGS_pay_ing" ) {
+    if ( $_REQUEST['mode'] == "AGS_pay_ing" ) {
         include ALLTHEGATE_DIR . 'AGS_pay_ing.php';
         return;
     }
@@ -25,3 +21,9 @@ include 'part/enrollment-content1.php';
 include 'part/enrollment-content2.php';
 
 
+if ( isset( $_REQUEST['mode'] ) ) {
+    if ($_REQUEST['mode'] == "AGS_pay") {
+        include ALLTHEGATE_DIR . 'AGS_pay.php';
+        return;
+    }
+}
