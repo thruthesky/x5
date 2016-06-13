@@ -1,12 +1,12 @@
 .collection {
-    padding: 0.625em;
+    padding: 0;
     border-radius: 0.1875em;
     background-color: #ededed;
 }
 
 .collection .row {
-    margin: 0.625em 0.625em 1.25em;
-    border-radius: 0.1875em;
+    margin: 0.625rem 5px 1.25rem;
+    border-radius: 0.1875rem;
 }
 
 .collection .row > .col-sm-3 {
@@ -73,14 +73,20 @@
 }
 
 
-@media (min-width: 544px) {
+@media all and (min-width: 544px) {
     .collection .row > .col-sm-3 {
         width: 33.33%;
     }
 }
 
-@media (min-width: 768px) {
+@media all and (min-width: 768px) {
+    .collection {
+        padding: 0.625em;
+    }
     .collection .row > .col-sm-3 {
         width: 25%;
+    }
+    .collection .row {
+        margin: 0.625rem 0.625rem 1.25rem;
     }
 }

@@ -1,15 +1,89 @@
 section .level-test.content-three {
-    background-size: cover;
-    background-position: center center;
-    height: 787px;
+    position: relative;
+    overflow: hidden;
+    height: 128px;
+}
+section .level-test.content-three img {
+    position: absolute;
+    width: 100%;
+    height: auto;
 }
 
+
 section .level-test.content-three h2 {
-    position: relative;
+    position: absolute;
     display: inline-block;
-    margin-top: 280px;
+    margin: 10px 5px;
     color: #FFFFFF;
-    font-size: 44px;
+    font-size: 18px;
     text-align: center;
-    line-height: 68px;
 }
+
+
+/* @media */
+@media all and (min-width: 380px ) {
+    section .level-test.content-three {
+        height: 150px;
+    }
+    section .level-test.content-three h2 {
+        margin: 20px 5px 0;
+        font-size: 20px;
+    }
+}
+@media all and (min-width: 480px ) {
+    section .level-test.content-three {
+        height: 190px;
+    }
+    section .level-test.content-three h2 {
+        margin: 40px 5px 0;
+        font-size: 22px;
+    }
+}
+
+@media all and (min-width: 600px ) {
+    section .level-test.content-three {
+        height: 240px;
+    }
+    section .level-test.content-three h2 {
+        font-size: 28px;
+        margin: 55px 5px 0;
+    }
+}
+
+@media all and (min-width: 800px ) {
+    section .level-test.content-three {
+        height: 325px;
+    }
+    section .level-test.content-three h2 {
+        font-size: 34px;
+        margin: 70px 5px 0;
+    }
+}
+@media all and (min-width: 980px ) {
+    section .level-test.content-three {
+        height: 400px;
+    }
+    section .level-test.content-three h2 {
+        font-size: 44px;
+        margin: 90px 5px 0;
+    }
+}
+
+@media all and (min-width: 1024px ) {
+    section .level-test.content-three {
+        height: 420px;
+    }
+    section .level-test.content-three h2 {
+        margin: 110px 5px 0;
+    }
+}
+
+@media all and (min-width: 1440px ) {
+    section .level-test.content-three {
+        height: 500px;
+    }
+    section .level-test.content-three h2 {
+        margin: 130px 5px 0;
+    }
+}
+/* EO @media*/
