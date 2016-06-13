@@ -1,15 +1,13 @@
-section .level-test.content-two {
-    min-height: 300px;
-    overflow-x: hidden;
+section .level-test.content-two > div {
+    padding: 30px 0;
 }
 
 section .level-test.content-two h2 {
-    margin: 100px 20px 66px;
-    font-size: 34px;
+    font-size: 24px;
     text-align: center;
     line-height: 38px;
+    margin-bottom: 30px;
 }
-
 
 
 section .level-test .content.row .cover {
@@ -40,7 +38,7 @@ section .level-test .content.row .cover .level {
     height: 170px;
     width: 170px;
     border-radius: 100%;
-    margin-bottom: 48px;
+    margin-bottom: 30px;
 }
 
 section .level-test .content.row .cover .level.one {
@@ -72,10 +70,63 @@ section .level-test .content.row .cover .level h5 {
 }
 
 section .level-test .content.row {
-    margin-bottom: 100px;
+    margin: 0;
 }
 
 section .level-test .content.row > div.col-sm-4 {
-    padding: 0 20px;
+    padding: 0 10px;
+}
+
+/* @media */
+
+@media all and (min-width: 480px ) {
 
 }
+
+@media all and (min-width: 600px ) {
+    section .level-test.content-two > div {
+        padding: 50px 0;
+    }
+    section .level-test.content-two h2 {
+        font-size: 28px;
+        margin-bottom: 40px;
+    }
+    section .level-test .content.row .cover .desc {
+        font-size: 20px;
+        min-height: 260px;
+    }
+}
+
+@media all and (min-width: 800px ) {
+    section .level-test.content-two > div {
+        padding: 70px 0;
+    }
+    section .level-test.content-two h2 {
+        font-size: 32px;
+        margin-bottom: 40px;
+    }
+    section .level-test .content.row .cover .desc {
+        font-size: 20px;
+        min-height: inherit;
+    }
+
+}
+
+@media all and (min-width: 980px ) {
+    section .level-test.content-two > div {
+        padding: 100px 0;
+    }
+    section .level-test.content-two h2 {
+        font-size: 38px;
+        margin-bottom: 40px;
+    }
+    section .level-test .content.row .cover .desc {
+        font-size: 24px;
+        min-height: inherit;
+    }
+    section .level-test .content.row > div.col-sm-4 {
+        padding: 0 20px;
+    }
+}
+/* EO @media */
+
