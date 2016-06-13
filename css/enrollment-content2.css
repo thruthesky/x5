@@ -1,10 +1,9 @@
-section .enrollment.content-two {
-    min-height: 300px;
-    overflow-x: hidden;
+section .enrollment.content-two > div {
+    padding: 50px 0;
 }
 
 section .enrollment.content-two h2 {
-    margin: 100px 20px 66px;
+    margin-bottom: 66px;
     font-size: 34px;
     text-align: center;
     line-height: 38px;
@@ -43,7 +42,7 @@ section .enrollment .content.row .cover .radio {
     position: relative;
     display: block;
     text-align: left;
-    margin: 0 0 20px 50px;
+    padding: 0 0 20px 25px;
 }
 
 section .enrollment .content.row .cover .radio input[type='radio'] {
@@ -71,8 +70,12 @@ section .enrollment .summary {
     border-radius: 5px;
 }
 
+section .enrollment .summary .row {
+    margin: 0;
+}
+
 section .enrollment .summary .result {
-    padding: 20px;
+    padding: 20px 0;
 }
 
 section .enrollment .summary label {
@@ -82,14 +85,13 @@ section .enrollment .summary label {
 }
 
 section .enrollment nav {
-    display: inline-block;
+    display: block;
     margin: 20px 0;
-    float: right;
 }
 
 section .enrollment .total {
     display: block;
-    width: 315px;
+    width: 100%;
     height: 60px;
     font-size: 24px;
     padding: 10px 20px;
@@ -102,7 +104,7 @@ section .enrollment .total {
 
 section .enrollment .submit {
     display: block;
-    width: 315px;
+    width: 100%;
     height: 60px;
     font-size: 24px;
     padding: 10px 20px;
@@ -113,3 +115,53 @@ section .enrollment .submit {
     text-align: center;
     cursor: pointer;
 }
+
+
+
+/* @media */
+@media all and (min-width: 480px ) {
+    section .enrollment.content-two > div {
+        padding: 50px 0;
+    }
+}
+
+@media all and (min-width: 544px ) {
+    section .enrollment .content.row > div.col-sm-3 {
+        width: 50%;
+    }
+    section .enrollment .content.row .cover {
+        min-height: 415px;
+    }
+    section .enrollment .content.row .cover .radio {
+        padding: 0 0 20px 15px;
+    }
+}
+
+@media all and (min-width: 800px ) {
+    section .enrollment.content-two > div {
+        padding: 70px 0;
+    }
+    section .enrollment .content.row > div.col-sm-3 {
+        width: 25%;
+    }
+    section .enrollment .content.row .cover {
+        min-height: 420px;
+    }
+    section .enrollment .submit,
+    section .enrollment .total {
+        width: 310px;
+    }
+    section .enrollment nav {
+        display: inline-block;
+        margin: 20px 0;
+        float: right;
+    }
+}
+
+@media all and (min-width: 980px ) {
+    section .enrollment-us.content-two > div {
+        padding: 100px 0;
+    }
+}
+
+/* EO @media */
