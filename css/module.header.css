@@ -42,7 +42,8 @@ header .logo .title:hover {
 
 
 /** Nav.Top-Menu module */
-header nav.menu, nav.top-menu {
+header nav.menu,
+nav.top-menu {
     overflow:auto;
     overflow-y: hidden;
 }
@@ -65,7 +66,7 @@ nav.top-menu ul {
 nav.top-menu ul li {
     float: left;
     display:block;
-    margin-left: 0.8125em;
+    margin-left: 0;
 }
 
 nav.top-menu ul li:last-child {
@@ -75,21 +76,18 @@ nav.top-menu ul li:last-child {
 
 nav.top-menu ul li a {
     display:inline-block;
-    padding: 0 0.125em 0;
     color: inherit;
+    padding: 8px;
     text-decoration: none;
+    border-bottom: 0.0625em hidden;
 }
 
 nav.top-menu ul li:last-child a {
     margin-right: 0.5em;
 }
 
-nav.top-menu ul li a:hover {
-    color: #0e7ecc;
-}
-
 nav.top-menu ul li span {
-  font-size: 0.8125em;
+    font-size: 0.8125em;
     cursor: pointer;
 }
 
@@ -99,71 +97,39 @@ nav.top-menu ul li a.icon {
     color: #ffffff;
 }
 
-
+header .menu ul li.active a,
 nav.top-menu ul li.active a span {
-    color: #0e7ecc;
+    color: #2900cc;
 }
 
 nav.top-menu ul li.active a:hover {
     background-color: transparent;
 }
 
-
-@media all and ( max-width: 599px ) {
-    nav.top-menu, nav.menu {
-        border-radius: 0;
-        background-color: #2980b9;
-        color: #FFFFFF;
-        border: 0;
-    }
-    nav.top-menu ul li a {
-        display:inline-block;
-        color: inherit;
-        padding: 0.5em 0.625em;
-        text-decoration: none;
-        border-bottom: 0.0625em hidden;
-    }
-
-    nav.menu ul li a {
-        color: inherit;
-    }
-
-    header .menu ul li a,
-    nav.top-menu ul li a:hover {
-        border: none!important;
-    }
-    nav.top-menu ul li > span {
-        display:inline-block;
-        color: inherit;
-        padding: 0.5em 0.625em;
-        font-size: 0.9375em;
-        text-decoration: none;
-        border-bottom: 0.0625em hidden;
-    }
-
-
-    nav.top-menu ul li a span {
-        font-size: 0.9375em;
-    }
-    div.collection div.row div.col-sm-4:first-child img {
-        display: none;
-    }
+nav.top-menu,
+nav.menu {
+    border-radius: 0;
+    background-color: #2980b9;
+    color: #FFFFFF;
+    border: 0;
 }
 
-@media all and ( min-width: 600px ) {
-    .top-menu {
-        position: absolute;
-        top: 0;
-        right: 0;
-    }
-    .top-menu .menu-icon {
-        display:none;
-    }
-    header .menu ul li.active a {
-        color: #0e7ecc;
-    }
+header .menu ul li a,
+nav.top-menu ul li a:hover {
+    border: none!important;
+}
+nav.top-menu ul li > span {
+    display:inline-block;
+    color: inherit;
+    padding: 0.5em 0.625em;
+    font-size: 0.9375em;
+    text-decoration: none;
+    border-bottom: 0.0625em hidden;
 }
 
+nav.top-menu ul li a span {
+    font-size: 0.9375em;
+}
 
 /** EO ( End Of ) top menu module */
 
@@ -189,21 +155,42 @@ header .menu ul li a {
     display: block;
     padding: 0.25em 0.5625em 0.1875em;
     text-decoration: none;
-    color: #2d3e52;
+    color: #FFFFFF;
 }
 
 header .menu ul li a:hover {
-    color: #0e7ecc;
+    color: #0060cc;
 }
-
 
 header .menu ul li.active a:hover {
     background-color: transparent;
 }
 
-
-
+.menu .close-btn {
+    float: right;
+}
+@media all and ( min-width: 380px ) {
+    nav.top-menu ul li {
+        margin-left: 0.8125em;
+    }
+}
 @media all and ( min-width: 600px ) {
+    .top-menu {
+        position: absolute;
+        top: 0;
+        right: 0;
+    }
+    .top-menu .menu-icon {
+        display:none;
+    }
+    header .menu ul li.active a,
+    nav.top-menu ul li.active a span {
+        color: #0e7ecc;
+    }
+    nav.top-menu,
+    nav.menu {
+        background-color: transparent;
+    }
     header .menu {
         position: absolute;
         display: block !important;
@@ -213,11 +200,17 @@ header .menu ul li.active a:hover {
     header .menu ul li {
         float: left;
     }
-    .menu .close {
+    nav.top-menu ul li span,
+    header .menu ul li a {
+        color: #2d3e52;
+    }
+    header .menu ul li a:hover {
+        color: #0e7ecc;
+    }
+    .menu .close-btn {
         display:none;
     }
 }
-
 
 
 

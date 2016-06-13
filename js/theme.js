@@ -11,7 +11,7 @@ jQuery(function($) {
         else el.menu().slideDown();
     });
 
-    $('.menu .close a').click(function() {
+    $('.menu .close-btn a').click(function() {
         el.menu().slideUp();
     });
 
