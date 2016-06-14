@@ -1,5 +1,6 @@
 <?php
-abc()->header();
+if ( isset($_REQUEST['layout']) && $_REQUEST['layout'] == 'no' ) ;
+else abc()->header();
 
 
 
@@ -10,4 +11,6 @@ else if ( have_posts() ) {
         get_template_part( 'content', get_post_format() );
     }
 }
-abc()->footer();
+
+if ( isset($_REQUEST['layout']) && $_REQUEST['layout'] == 'no' ) ;
+else abc()->footer();
