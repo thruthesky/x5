@@ -129,6 +129,7 @@ abc()->registerRoute(
         've',
         'testing',
         'team-viewer',
+        'kakao',
     ]
 );
 

@@ -32,23 +32,18 @@ function _check_value($n, $v) {
                             <?php _text('Minutes')?>
                         </div>
                         <div class="radio">
-
-                            <div class="text">
-                                <label for="min_25">
+                            <label for="min_25" class="text">
                                     <input id="min_25" type="radio" name="amount" value="120000"<?php _check_value('amount', '120000'); ?>>
                                     <?php _text('25mins 120,000 won')?>
-                                </label>
-                            </div>
-                            <div class="text">
+                            </label>
+                            <label for="min_50" class="text">
                                 <input id="min_50" type="radio" name="amount" value="230000"<?php _check_value('amount', '230000'); ?>>
-                                <label for="min_50"><?php _text('50mins (5% discount) 230,000 won')?></label>
-                            </div>
-
-                            <div class="text">
+                                <?php _text('50mins (5% discount) 230,000 won')?>
+                            </label>
+                            <label for="input-amount" class="text">
                                 <input id="input-amount" type="text" name="amount_input" value="1000" size="6">
-                                <label for="input-amount"><?php _text('Input amount')?></label>
-                            </div>
-
+                                <?php _text('Input amount')?>
+                            </label>
                         </div>
                     </div>
                 </div>

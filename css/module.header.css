@@ -16,6 +16,7 @@ header .logo a {
 
 header .logo img {
     height: auto;
+    vertical-align: top;
 }
 
 header .logo .title {

@@ -1,0 +1,32 @@
+section .kakao-talk.content-one .banner {
+    position: absolute;
+    display: inline-block;
+    top: 0;
+    left: 5%;
+    margin-top: 10%;
+}
+
+section .kakao-talk.content-one h2 {
+    display: inline-block;
+    font-size: 16px;
+    color: #3f3035;
+}
+
+@media all and (min-width: 600px ) {
+    section .kakao-talk.content-one h2 {
+        font-size: 28px;
+    }
+}
+
+@media all and (min-width: 800px ) {
+    section .kakao-talk.content-one h2 {
+        font-size: 36px;
+    }
+}
+
+@media all and (min-width: 980px ) {
+    section .kakao-talk.content-one h2 {
+        margin-bottom: 18px;
+        font-size: 48px;
+    }
+}
