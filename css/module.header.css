@@ -212,6 +212,9 @@ nav.top-menu ul li.active a span {
     header nav.menu {
         background-color: transparent;
     }
+    header nav.menu ul li:hover {
+        background-color: transparent;
+    }
 }
 
 
