@@ -12,13 +12,8 @@
 }
 
 .default-footer .logo-picture {
-    margin-left: 5.8125em;
-}
-
-
-.default-footer .logo-picture {
-    padding-top: 1.4375em;
     text-align: right;
+    margin-left: 5.8125em;
 }
 
 .default-footer .logo-picture .logo,

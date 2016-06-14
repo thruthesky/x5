@@ -1,0 +1,36 @@
+section .kakao-talk.content-two > div {
+    padding: 100px 0;
+}
+
+section .kakao-talk.content-two > div .row {
+    margin: 0;
+}
+
+section .kakao-talk.content-two > div .row > h2 {
+    font-size: 46px;
+    text-align: center;
+    margin-bottom: 50px;
+    font-weight: 600;
+}
+
+section .kakao-talk.content-two .left {
+    font-family: "Arial", "Open Sans", sans-serif;
+    color: #858585;
+    padding: 30px 30px 0 50px;
+}
+
+section .kakao-talk.content-two p.left {
+    margin-bottom: 30px;
+    font-family: "Arial", "Open Sans", sans-serif;
+    color: #656565;
+    text-align: justify;
+}
+
+section .kakao-talk .row img {
+    width: 100%;
+    height: auto;
+}
+
+section .kakao-talk .content.row > div.col-sm-4 {
+    padding: 0;
+}
