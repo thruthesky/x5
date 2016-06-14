@@ -26,7 +26,7 @@ section .sitemap.content-two .cover .text {
     /*left: 40px;*/
 }
 
-section .sitemap.content-two .cover .text a {
+section .sitemap.content-two .cover .text span {
     display: block;
     height: 100px;
     padding: 20px 0 0 60px;
@@ -38,19 +38,19 @@ section .sitemap.content-two .cover .text a:hover {
     text-decoration: none;
 }
 
-section .sitemap.content-two .cover .text.login a {
+section .sitemap.content-two .cover .text.login span {
     background-color: #3498db;
 }
 
-section .sitemap.content-two .cover .text.register a {
+section .sitemap.content-two .cover .text.register span {
     background-color: #1abcb6;
 }
 
-section .sitemap.content-two .cover .text.help a {
+section .sitemap.content-two .cover .text.help span {
     background-color: #2ecc71;
 }
 
-section .sitemap.content-two .cover .text.all a {
+section .sitemap.content-two .cover .text.all span {
     color: #454c4d;
     background-color: #d5e3e6;
 }
