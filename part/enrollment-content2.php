@@ -33,20 +33,23 @@ function _check_value($n, $v) {
                         </div>
                         <div class="radio">
                             <label for="min_25" class="text">
-                                    <input id="min_25" type="radio" name="amount" value="120000"<?php _check_value('amount', '120000'); ?>>
-                                    <?php _text('25mins 120,000 won')?>
+                                <input id="min_25" type="radio" name="amount" value="120000"<?php _check_value('amount', '120000'); ?>>
+                                <?php _text('25mins 120,000 won')?>
                             </label>
                             <label for="min_50" class="text">
                                 <input id="min_50" type="radio" name="amount" value="230000"<?php _check_value('amount', '230000'); ?>>
+
                                 <?php _text('50mins (5% discount) 230,000 won')?>
                             </label>
-                            <label for="input-amount" class="text">
-                                <input id="input-amount" type="text" name="amount_input" value="1000" size="6">
+
+                            <label for="input-amount">
+                                <input id="input-amount" type="text" name="amount_input" value="6000" size="6">
                                 <?php _text('Input amount')?>
                             </label>
                         </div>
                     </div>
                 </div>
+
                 <div class="col-sm-3">
                     <div class="cover">
                         <div class="picture">
@@ -56,16 +59,16 @@ function _check_value($n, $v) {
                             <?php _text('How To Pay')?>
                         </div>
                         <div class="radio">
-                            <label for="onlycardselfnormal" class="text">
-                                <input id="onlycardselfnormal" type="radio" name="method" value="onlycardselfnormal"<?php _check_value('method', 'onlycardselfnormal'); ?>>
+                            <label for="onlycard" class="text">
+                                <input id="onlycard" type="radio" name="method" value="onlycard"<?php _check_value('method', 'onlycard'); ?>>
                                 <?php _text('credit card')?>
                             </label>
-                            <label for="onlyicheselfnormal" class="text">
-                                <input id="onlyicheselfnormal" type="radio" name="method" value="onlyicheselfnormal"<?php _check_value('method', 'onlyicheselfnormal'); ?>>
+                            <label for="onlyiche" class="text">
+                                <input id="onlyiche" type="radio" name="method" value="onlyiche"<?php _check_value('method', 'onlyiche'); ?>>
                                 <?php _text('online banking')?>
                             </label>
-                            <label for="onlyvirtualselfnormal" class="text">
-                                <input id="onlyvirtualselfnormal" type="radio" name="method" value="onlyvirtualselfnormal"<?php _check_value('method', 'onlyvirtualselfnormal'); ?>>
+                            <label for="onlyvirtual" class="text">
+                                <input id="onlyvirtual" type="radio" name="method" value="onlyvirtual"<?php _check_value('method', 'onlyvirtual'); ?>>
                                 <?php _text('offline banking')?>
                             </label>
                             <label for="auto_credit" class="text">

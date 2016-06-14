@@ -14,6 +14,11 @@ if ( isset( $_REQUEST['mode'] ) ) {
         include ALLTHEGATE_DIR . 'AGS_pay_result.php';
         return;
     }
+    else if ( $_REQUEST['mode'] == "payment-list" ) {
+        include ALLTHEGATE_DIR . 'payment-list.php';
+        return;
+    }
+
 }
 
 
