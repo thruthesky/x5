@@ -64,6 +64,7 @@ section .about-us .content.row > div.col-sm-4 {
     padding: 0;
 }
 
+/* @media */
 @media all and (min-width: 480px ) {
     section .about-us.content-two h2,
     section .about-us.content-two h3 {
@@ -139,5 +140,6 @@ section .about-us .content.row > div.col-sm-4 {
         font-size: 1.3125em;
         font-weight: 400;
     }
-
 }
+
+/* EO @media */

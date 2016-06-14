@@ -39,7 +39,8 @@ section .register.content-two  input[type='button'] {
     text-align: center;
 }
 
-section .register.content-two .line {
+section .register.content-two .line,
+section .register.content-two .agree-line {
     padding: 10px;
     clear: both;
 }

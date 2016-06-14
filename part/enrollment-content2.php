@@ -12,19 +12,16 @@ function _check_value($n, $v) {
 
     //var form_action = "<?php echo home_url()?>/enrollment?mode=form_elements_submit";
     function form_elements_submit() {
-      //  $("form[name='frmAGS_pay']").prop('action', form_action);
-        document.forms['frmAGS_pay'].submit();
+        //  $("form[name='frmAGS_pay']").prop('action', form_action);
+        document.forms['payment'].submit();
     }
 
 </script>
 <section class="enrollment content-two">
     <div>
-        <form name=frmAGS_pay method=post action="<?php echo home_url()?>/enrollment?mode=AGS_pay">
+        <form name="payment" action="<?php echo home_url()?>/enrollment">
+            <input type="hidden" name="mode" value="AGS_pay">
             <h2><?php _text('Enr:B2:Title')?></h2>
-
-            <?php
-            //if ( isset($_REQUEST['mode']) && $_REQUEST['mode'] == 'form_elements_submit' ) include __LMS_PATH__ . 'payment-gateway/allthegate/form_elements_submit.php';
-            ?>
             <div class="content row">
                 <div class="col-sm-3">
                     <div class="cover">
@@ -35,16 +32,18 @@ function _check_value($n, $v) {
                             <?php _text('Minutes')?>
                         </div>
                         <div class="radio">
-                            <div class="text">
-                                <label for="min_25">
-                                    <input id="min_25" type="radio" name="min" value="25"<?php _check_value('min', '25'); ?>>
+                            <label for="min_25" class="text">
+                                    <input id="min_25" type="radio" name="amount" value="120000"<?php _check_value('amount', '120000'); ?>>
                                     <?php _text('25mins 120,000 won')?>
-                                </label>
-                            </div>
-                            <div class="text">
-                                <input id="min_50" type="radio" name="min" value="50"<?php _check_value('min', '50'); ?>>
-                                <label for="min_50"><?php _text('50mins (5% discount) 230,000 won')?></label>
-                            </div>
+                            </label>
+                            <label for="min_50" class="text">
+                                <input id="min_50" type="radio" name="amount" value="230000"<?php _check_value('amount', '230000'); ?>>
+                                <?php _text('50mins (5% discount) 230,000 won')?>
+                            </label>
+                            <label for="input-amount" class="text">
+                                <input id="input-amount" type="text" name="amount_input" value="1000" size="6">
+                                <?php _text('Input amount')?>
+                            </label>
                         </div>
                     </div>
                 </div>
@@ -57,10 +56,22 @@ function _check_value($n, $v) {
                             <?php _text('How To Pay')?>
                         </div>
                         <div class="radio">
-                            <div class="text"><input type="radio" name="method" value="onlycardselfnormal"<?php _check_value('method', 'onlycardselfnormal'); ?>> <?php _text('credit card')?></div>
-                            <div class="text"><input type="radio" name="method" value="onlyicheselfnormal"<?php _check_value('method', 'onlyicheselfnormal'); ?>> <?php _text('online banking')?></div>
-                            <div class="text"><input type="radio" name="method" value="onlyvirtualselfnormal"<?php _check_value('method', 'onlyvirtualselfnormal'); ?>> <?php _text('offline banking')?></div>
-                            <div class="text"><input type="radio" name="method" value="auto_credit"<?php _check_value('method', 'auto_credit'); ?>> <?php _text('auto credit ( 20% discount )')?></div>
+                            <label for="onlycardselfnormal" class="text">
+                                <input id="onlycardselfnormal" type="radio" name="method" value="onlycardselfnormal"<?php _check_value('method', 'onlycardselfnormal'); ?>>
+                                <?php _text('credit card')?>
+                            </label>
+                            <label for="onlyicheselfnormal" class="text">
+                                <input id="onlyicheselfnormal" type="radio" name="method" value="onlyicheselfnormal"<?php _check_value('method', 'onlyicheselfnormal'); ?>>
+                                <?php _text('online banking')?>
+                            </label>
+                            <label for="onlyvirtualselfnormal" class="text">
+                                <input id="onlyvirtualselfnormal" type="radio" name="method" value="onlyvirtualselfnormal"<?php _check_value('method', 'onlyvirtualselfnormal'); ?>>
+                                <?php _text('offline banking')?>
+                            </label>
+                            <label for="auto_credit" class="text">
+                                <input id="auto_credit" type="radio" name="method" value="auto_credit"<?php _check_value('method', 'auto_credit'); ?>>
+                                <?php _text('auto credit ( 20% discount )')?>
+                            </label>
                         </div>
                     </div>
                 </div>
@@ -73,9 +84,18 @@ function _check_value($n, $v) {
                             <?php _text('Days')?>
                         </div>
                         <div class="radio">
-                            <div class="text"><input type="radio" name="days" value="1" checked> <?php _text('5 days')?></div>
-                            <div class="text"><input type="radio" name="days" value="2"> <?php _text('4 days ( 5% discount )')?></div>
-                            <div class="text"><input type="radio" name="days" value="3"> <?php _text('3 days ( 10% discount )')?></div>
+                            <label for="day_5" class="text">
+                                <input id="day_5" type="radio" name="days" value="1" checked>
+                                <?php _text('5 days')?>
+                            </label>
+                            <label for="day_4" class="text">
+                                <input id="day_4" type="radio" name="days" value="2">
+                                <?php _text('4 days ( 5% discount )')?>
+                            </label>
+                            <label for="day_3" class="text">
+                                <input id="day_3" type="radio" name="days" value="3">
+                                <?php _text('3 days ( 10% discount )')?>
+                            </label>
                         </div>
                     </div>
                 </div>
@@ -88,15 +108,42 @@ function _check_value($n, $v) {
                             <?php _text('Curriculum')?>
                         </div>
                         <div class="radio">
-                            <div class="text"><input type="radio" name="curriculum" value="1" checked> <?php _text('Curriculum1')?></div>
-                            <div class="text"><input type="radio" name="curriculum" value="2"> <?php _text('Curriculum2')?></div>
-                            <div class="text"><input type="radio" name="curriculum" value="3"> <?php _text('Curriculum3')?></div>
-                            <div class="text"><input type="radio" name="curriculum" value="4"> <?php _text('Curriculum4')?></div>
-                            <div class="text"><input type="radio" name="curriculum" value="5"> <?php _text('Curriculum5')?></div>
-                            <div class="text"><input type="radio" name="curriculum" value="6"> <?php _text('Curriculum6')?></div>
-                            <div class="text"><input type="radio" name="curriculum" value="7"> <?php _text('Curriculum7')?></div>
-                            <div class="text"><input type="radio" name="curriculum" value="8"> <?php _text('Curriculum8')?></div>
-                            <div class="text"><input type="radio" name="curriculum" value="9"> <?php _text('Curriculum9')?></div>
+                            <label for="Curriculum1" class="text">
+                                <input id="Curriculum1" type="radio" name="curriculum" value="1" checked>
+                                <?php _text('Curriculum1')?>
+                            </label>
+                            <label for="Curriculum2" class="text">
+                                <input id="Curriculum2" type="radio" name="curriculum" value="2">
+                                <?php _text('Curriculum2')?>
+                            </label>
+                            <label for="Curriculum3" class="text">
+                                <input id="Curriculum3" type="radio" name="curriculum" value="3">
+                                <?php _text('Curriculum3')?>
+                            </label>
+                            <label for="Curriculum4" class="text">
+                                <input id="Curriculum4" type="radio" name="curriculum" value="4">
+                                <?php _text('Curriculum4')?>
+                            </label>
+                            <label for="Curriculum5" class="text">
+                                <input id="Curriculum5" type="radio" name="curriculum" value="5">
+                                <?php _text('Curriculum5')?>
+                            </label>
+                            <label for="Curriculum6" class="text">
+                                <input id="Curriculum6" type="radio" name="curriculum" value="6">
+                                <?php _text('Curriculum6')?>
+                            </label>
+                            <label  for="Curriculum7" class="text">
+                                <input id="Curriculum7" type="radio" name="curriculum" value="7">
+                                <?php _text('Curriculum7')?>
+                            </label>
+                            <label for="Curriculum8" class="text">
+                                <input id="Curriculum8" type="radio" name="curriculum" value="8">
+                                <?php _text('Curriculum8')?>
+                            </label>
+                            <label for="Curriculum9" class="text">
+                                <input id="Curriculum9" type="radio" name="curriculum" value="9">
+                                <?php _text('Curriculum9')?>
+                            </label>
                         </div>
 
                     </div>
@@ -108,7 +155,7 @@ function _check_value($n, $v) {
             <div class="summary">
                 <div class="row">
                     <div class="result time col-sm-4">
-			time select result and price
+                        time select result and price
                     </div>
                     <div class="result month col-sm-4">
                         <label><?php _text('Enr:B2:Selected Month')?></label>

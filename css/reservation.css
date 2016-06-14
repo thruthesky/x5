@@ -138,7 +138,7 @@
 
 .reservation.content-two .calendar .books .book .icon {
     float: left;
-    display:inline-block;
+    display:block;
     width: 35px;
     height: 35px;
     overflow: hidden;
@@ -152,19 +152,21 @@
 }
 
 .reservation.content-two .calendar .books .book .name {
-    display: table-cell;
+    display: block;
     margin: 0;
-    padding-left: 10px;
+    padding-left: 45px;
     font-size: 13px;
     line-height: 10px;
     font-weight: bold;
+    text-align: left;
 }
 
 .reservation.content-two .calendar .books .book .time {
-    display: inline-block;
+    display: block;
     margin: 0;
-    padding-left: 10px;
+    padding-left: 45px;
     font-size: 13px;
+    text-align: left;
 }
 
 /* Updated by Mr. Song on June 8, 2106. */
@@ -258,6 +260,14 @@ div.popover-content {
 div.popover-content .text.rate {
     float: left;
     width: 50%;
+}
+div.popover-content .text.rate {
+    float: left;
+    width: 50%;
+}
+
+div.popover-content .text.book {
+    clear: both;
 }
 
 div.popover-content .text.comment {
@@ -354,7 +364,10 @@ nav.month .show-month a:hover {
 }
 
 .reservation.content-two .listview.calendar .books .book .name {
-    padding: 8px 0 0 10px;
+    padding: 10px 0 0 60px;
+}
+.reservation.content-two .listview.calendar .books .book .time {
+    padding: 4px 0 0 60px;
 }
 
 

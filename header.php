@@ -76,7 +76,7 @@ ob_start();
                     <li class="<?php if ( segment(1) == 'qna' ) echo 'active'; ?>">
                         <div><a href="<?php hd()?>forum/qna"><?php _text('QnA')?></a></div>
                     </li>
-                    <li class="close">
+                    <li class="close-btn">
                         <div><a href="#"><?php _text('Close')?></a></div>
                     </li>
                 </ul>

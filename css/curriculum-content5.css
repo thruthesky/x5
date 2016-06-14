@@ -4,15 +4,15 @@ section .curriculum.content-five {
 }
 
 section .curriculum.content-five > div {
-    padding: 100px 0;
+    padding: 30px 0;
 }
 
 section .curriculum.content-five h2 {
     display: inline-block;
     color: #FFFFFF;
-    font-size: 46px;
+    font-size: 30px;
     text-align: center;
-    margin: 0 0 44px;
+    margin-bottom: 25px;
 }
 
 section .curriculum.content-five .desc {
@@ -25,20 +25,44 @@ section .curriculum.content-five .desc {
 
 section .curriculum.extra .collection {
     position: relative;
-    top: -100px;
+    top: -25px;
 }
 
-@media  all and (max-width: 700px) {
+@media  all and (min-width: 380px) {
+    section .curriculum.content-five > div {
+        padding: 40px 0;
+    }
     section .curriculum.content-five h2 {
-        margin: 44px 0 44px;
+        font-size: 36px;
     }
 
 }
-
-@media  all and (max-width: 380px) {
+@media  all and (min-width: 480px) {
+    section .curriculum.content-five > div {
+        padding: 60px 0;
+    }
+}
+@media  all and (min-width: 600px) {
+    section .curriculum.content-five > div {
+        padding: 80px 0;
+    }
     section .curriculum.content-five h2 {
-        margin: 33px 0 22px;
-        font-size: 36px;
+        margin-bottom: 35px;
+        font-size: 40px;
+    }
+
+}
+@media  all and (min-width: 800px) {
+    section .curriculum.content-five > div {
+        padding: 80px 0;
+    }
+    section .curriculum.content-five h2 {
+        margin-bottom: 30px;
+        font-size: 46px;
+    }
+    section .curriculum.extra .collection {
+        position: relative;
+        top: -80px;
     }
 
 }
