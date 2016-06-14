@@ -59,6 +59,10 @@ class JobMaid {
     {
         return get_post_meta( $this->ID, 'gender', true);
     }
+    public function year_of_experience()
+    {
+        return get_post_meta( $this->ID, 'year_of_experience', true);
+    }
 }
 $_jobMaid = new JobMaid();
 function maid() {
