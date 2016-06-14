@@ -129,18 +129,35 @@ function _check_value($n, $v) {
                             <?php _text('Discounted Curriculum')?>
                         </div>
                         <div class="items">
+
                             <label for="Curriculum1" class="text">
                                 <input id="Curriculum1" type="radio" name="curriculum" value="0" checked>
                                 <?php _text('Curriculum1')?>
                             </label>
+
+
                             <label for="Curriculum2" class="text">
-                                <input id="Curriculum2" type="radio" name="curriculum" value="15">
+                                <input id="Curriculum2" type="radio" name="curriculum" value="0">
                                 <?php _text('Curriculum2')?>
                             </label>
                             <label for="Curriculum3" class="text">
-                                <input id="Curriculum3" type="radio" name="curriculum" value="5">
+                                <input id="Curriculum3" type="radio" name="curriculum" value="0">
                                 <?php _text('Curriculum3')?>
                             </label>
+
+                            <label for="Curriculum4" class="text">
+                                <input id="Curriculum4" type="radio" name="curriculum" value="0" checked>
+                                <?php _text('Curriculum4')?>
+                            </label>
+                            <label for="Curriculum5" class="text">
+                                <input id="Curriculum5" type="radio" name="curriculum" value="0" checked>
+                                <?php _text('Curriculum5')?>
+                            </label>
+                            <label for="Curriculum6" class="text">
+                                <input id="Curriculum6" type="radio" name="curriculum" value="10" checked>
+                                <?php _text('10% OFF')?>
+                            </label>
+
                         </div>
 
                     </div>
