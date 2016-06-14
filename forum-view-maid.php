@@ -31,16 +31,16 @@ $category = current(get_the_category());
         <?php include FORUM_PATH . '/template/social-buttons.php';?>
 
         <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
-            <div class="title">
-                <?php the_title( '<h1 class="entry-title">', '</h1>' ); ?>
-            </div>
 
-            <div class="forum-title">
+            <!--  <div class="title">
+                <?php //the_title( '<h1 class="entry-title">', '</h1>' ); ?>
+            </div> -->
+
+             <div class="forum-title">
                 <a href="<?php echo home_url()?>/forum/<?php echo $category->slug?>">
                     <?php echo $category->name?>
                 </a>
             </div>
-
             <div class="meta container">
                 <div class="row">
                     <div class="col-xs-12 col-sm-6">
@@ -51,14 +51,17 @@ $category = current(get_the_category());
                     </div>
                     <div class="buttons col-xs-12 col-sm-6">
                         <a class="btn btn-secondary btn-sm" href="<?php echo forum()->editURL( get_the_ID() ) ?>">글 수정</a>
-                        <a class="btn btn-secondary btn-sm"href="<?php echo home_url()?>/forum/<?php echo $category->slug?>">글 목록</a>
-                        <a class="btn btn-secondary btn-sm"href="<?php echo forum()->doURL('post_delete&id=' . get_the_ID() )?>">글 삭제</a>
+                        <a class="btn btn-secondary btn-sm" href="<?php echo home_url()?>/forum/<?php echo $category->slug?>">글 목록</a>
+                        <a class="btn btn-secondary btn-sm" href="<?php echo forum()->doURL('post_delete&id=' . get_the_ID() )?>">글 삭제</a>
                     </div>
                 </div>
             </div>
 
-            <div class="col-md-6 content">
+            <div class="col-md-6 maid-image">
+                 <img src="<?php echo forum()->get_first_image(get_the_ID()); ?>">
+            </div>
 
+            <div class="col-md-6">
                 <table class="table table-striped">
                     <tbody>
                         <tr>
@@ -105,14 +108,16 @@ $category = current(get_the_category());
                 //if ( '' !== get_the_author_meta( 'description' ) ) include 'biography.php';
                 ?>
             </div>
-
-            <div class="col-md-6">
-            <?php
-            // If comments are open or we have at least one comment, load up the comment template.
-            if ( comments_open() || get_comments_number() ) {
-                comments_template();
-            }
-            ?>
+            <div class="col-xs-12 col-md-12 col-lg-12">
+                <div class="col-xs-12 col-md-12 col-lg-12 experience-text">
+                    Year/s of Experience: <?php echo maid()->year_of_experience();?>
+                </div>
+                <div class="col-xs-12 col-md-12 col-lg-12 description-title">
+                    Short Description:
+                </div>
+                <div class="col-xs-12 col-md-12 col-lg-12 description-content">
+                    <?php the_title( '<p class="entry-title">', '</p>' ); ?>
+                </div>
             </div>
 
 

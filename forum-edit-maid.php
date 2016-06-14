@@ -196,7 +196,7 @@ $post = forum()->getPost( seg(1) );
                     <label for="no-of-children">No. of children</label>
                 </div>
                 <div class="text">
-                    <input type="number" id="no-of-children" name="no_of_children" class="form-control" value="" placeholder="<?php _e('Please input how many child you have', 'k-forum')?>">
+                    <input type="number" id="no-of-children" name="no_of_children" class="form-control" value="" placeholder="">
                 </div>
             </div>
 
@@ -206,7 +206,7 @@ $post = forum()->getPost( seg(1) );
                     <label for="year-of-experience">Year of experience</label>
                 </div>
                 <div class="text">
-                    <input type="number" id="year-of-experience" name="year_of_experience" class="form-control" value="" placeholder="<?php _e('Please input how many years you have worked.', 'k-forum')?>">
+                    <input type="number" id="year_of_experience" name="year_of_experience" class="form-control" value="" >
                 </div>
             </div>
 
@@ -237,12 +237,6 @@ $post = forum()->getPost( seg(1) );
                     <textarea type="text" id="title" name="title" class="form-control" rows="3" value="<?php echo $post ? esc_attr($post->post_title) : ''?>" placeholder="<?php _e('Please input short description', 'k-forum')?>"></textarea> 
                 </div>
             </div>
-
-
-
-
-            Picture
-
 
 
             <?php
