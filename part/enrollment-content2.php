@@ -16,10 +16,24 @@ function _check_value($n, $v) {
         document.forms['payment'].submit();
     }
 
+    window.addEventListener('load',function(){
+        $(function(){
+            document.forms['payment'].submit();
+        });
+        $('form[name="payment"]').change(function(){
+            $(this).submit();
+        });
+        $('form [name="amount_input"]').keyup(function(){
+            $('form[name="payment"]').submit();
+        });
+    });
+
+
 </script>
 <section class="enrollment content-two">
     <div>
-        <form name="payment" action="<?php echo home_url()?>/enrollment">
+        <form name="payment" action="<?php echo home_url()?>/enrollment" target="hiframe_payment">
+            <input type="hidden" name="layout" value="no">
             <input type="hidden" name="mode" value="AGS_pay">
             <h2><?php _text('Enr:B2:Title')?></h2>
             <div class="content row">
@@ -59,16 +73,16 @@ function _check_value($n, $v) {
                             <?php _text('How To Pay')?>
                         </div>
                         <div class="radio">
-                            <label for="onlycard" class="text">
-                                <input id="onlycard" type="radio" name="method" value="onlycard"<?php _check_value('method', 'onlycard'); ?>>
+                            <label for="onlycardselfnormal" class="text">
+                                <input id="onlycardselfnormal" type="radio" name="method" value="onlycardselfnormal"<?php _check_value('method', 'onlycardselfnormal'); ?>>
                                 <?php _text('credit card')?>
                             </label>
-                            <label for="onlyiche" class="text">
-                                <input id="onlyiche" type="radio" name="method" value="onlyiche"<?php _check_value('method', 'onlyiche'); ?>>
+                            <label for="onlyicheselfnormal" class="text">
+                                <input id="onlyicheselfnormal" type="radio" name="method" value="onlyicheselfnormal"<?php _check_value('method', 'onlyicheselfnormal'); ?>>
                                 <?php _text('online banking')?>
                             </label>
-                            <label for="onlyvirtual" class="text">
-                                <input id="onlyvirtual" type="radio" name="method" value="onlyvirtual"<?php _check_value('method', 'onlyvirtual'); ?>>
+                            <label for="onlyvirtualselfnormal" class="text">
+                                <input id="onlyvirtualselfnormal" type="radio" name="method" value="onlyvirtualselfnormal"<?php _check_value('method', 'onlyvirtualselfnormal'); ?>>
                                 <?php _text('offline banking')?>
                             </label>
                             <label for="auto_credit" class="text">
@@ -172,7 +186,9 @@ function _check_value($n, $v) {
             </div>
             <nav>
                 <div class="total"><?php _text('Total')?>: 1,188,000</div>
-                <div class="submit" onclick="form_elements_submit();"><?php _text('Enr:B2:ENROLL NOW')?></div>
+
+                <iframe name="hiframe_payment" width="100%" height="500" src="javascript:'';" border="0" frameborder="0" scrolling="no"></iframe>
+
             </nav>
         </form>
     </div>
