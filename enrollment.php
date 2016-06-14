@@ -22,8 +22,8 @@ if ( isset( $_REQUEST['mode'] ) ) {
         include ALLTHEGATE_DIR . 'AGS_pay.php';
         return;
     }
-    else if ($_REQUEST['mode'] == "AGS_VirAccResult") {
-        include ALLTHEGATE_DIR . 'AGS_VirAccResult.php';
+    else if ($_REQUEST['mode'] == "AGS_VirtAccResult") {
+        include ALLTHEGATE_DIR . 'AGS_VirAcctResult.php';
         return;
     }
 
