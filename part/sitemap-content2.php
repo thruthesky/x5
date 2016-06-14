@@ -3,6 +3,7 @@ wp_enqueue_style('sitemap-content2', td() . '/css/sitemap-content2.css');
 ?>
 <section class="sitemap content-two">
     <div>
+
         <div class="row">
             <div class="col-sm-4">
                 <div class="cover">
@@ -26,6 +27,7 @@ wp_enqueue_style('sitemap-content2', td() . '/css/sitemap-content2.css');
                     <div class="text all"><a href="<?php echo home_url()?>/team-viewer"><?php _text('Team Viewer')?></a></div>
                 </div>
             </div>
+
             <div class="col-sm-4">
                 <div class="cover">
                     <img src="<?php img_e() ?>sitemap/sitemap-icon-register.jpg">
@@ -57,6 +59,12 @@ wp_enqueue_style('sitemap-content2', td() . '/css/sitemap-content2.css');
                     <img src="<?php img_e() ?>sitemap/sitemap-icon-enrollment.jpg">
                     <div class="text all"><a href="<?php echo home_url()?>/enrollment"><?php _text('Enrollment')?></a></div>
                 </div>
+
+                <div class="cover">
+                    <img src="<?php img_e() ?>sitemap/sitemap-icon-enrollment.jpg">
+                    <div class="text all"><a href="<?php echo home_url()?>/enrollment?mode=payment-list"><?php _text('Payment List')?></a></div>
+                </div>
+
                 <div class="cover">
                     <img src="<?php img_e() ?>sitemap/sitemap-icon-qna.jpg">
                     <div class="text all"><a href="<?php echo home_url()?>/forum/qna"><?php _text('QnA')?></a></div>
