@@ -1,8 +1,8 @@
 <?php
 /**
- * 참고 : Center9 에서 "/enrollment" 라우트는 현재 페이지인 "enrollment.php" 가 로드되는데,
- *      이미 get_header() 가 호출 된 상태이다.
- *
+ * @file enrollment.php
+ * @note The route "/enrollment" has get_header() and get_footer() already.
+ * 		So, if you are going to use (load) script here,  it will have header.php / footer.php
  */
 if ( ! PAYMENT_DEBUG ) include ALLTHEGATE_DIR . 'allthegate-javascript.php';
 if ( isset( $_REQUEST['mode'] ) ) {
@@ -18,11 +18,16 @@ if ( isset( $_REQUEST['mode'] ) ) {
         include ALLTHEGATE_DIR . 'payment-list.php';
         return;
     }
-
     else if ($_REQUEST['mode'] == "AGS_pay") {
         include ALLTHEGATE_DIR . 'AGS_pay.php';
         return;
     }
+    else if ($_REQUEST['mode'] == "AGS_VirAccResult") {
+        include ALLTHEGATE_DIR . 'AGS_VirAccResult.php';
+        return;
+    }
+
+
 
 }
 
