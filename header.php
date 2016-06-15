@@ -19,7 +19,7 @@ ob_start();
 
 <div class="layout">
     <header>
-        <?php include get_header_location(); ?>
+        <?php include get_part_location( 'header' ); ?>
     </header>
 
     <section class="content">

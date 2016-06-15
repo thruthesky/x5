@@ -40,6 +40,7 @@ section .enrollment .content.row .cover .items {
 
 section .enrollment .content.row .curriculum .cover .items label {
     margin-bottom: .1em;
+    cursor: pointer;
 }
 
 
@@ -49,6 +50,7 @@ section .enrollment .content.row .cover .items input[type='radio'] {
 
 section .enrollment .content.row .cover .items  .text {
     display: block;
+    cursor: pointer;
 }
 
 section .enrollment .content.row {
@@ -66,9 +68,11 @@ section .enrollment .content.row > div.col-sm-3 {
     display: block;
     margin: 0;
     padding: 0;
+    cursor: pointer;
 }
 #input-amount {
     width: 160px;
+    padding: .1em 0 0 .4em;
     border: 1px solid grey;
 }
 object {

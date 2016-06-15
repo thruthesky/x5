@@ -265,9 +265,9 @@ function x5_admin_menu() {
 /**
  * @return string
  */
-function get_header_location() {
+function get_part_location( $part, $ext = 'php' ) {
     $domain = get_domain_name();
-    $domain_header_path = get_template_directory() . "/part-domain/header-$domain.php";
+    $domain_header_path = get_template_directory() . "/part-domain/$part-$domain.$ext";
     if ( file_exists( $domain_header_path ) ) return $domain_header_path;
-    return 'part/header.php';
+    return get_template_directory() . "/part/$part.$ext";
 }

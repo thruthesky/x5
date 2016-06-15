@@ -32,6 +32,18 @@ function _check_value($n, $v) {
         $('form [name="amount_input"]').keyup(function(){
             $('form[name="payment"]').submit();
         });
+
+        $('.input-amount-text').click(function() {
+            $('form [name="amount_input"]').show();
+            $('form [name="amount"]').prop('checked', false);
+        });
+
+        $('form [name="amount"]').change(function() {
+            $('form [name="amount_input"]')
+                .val('0')
+                .hide();
+        });
+
     });
 
 
@@ -57,7 +69,6 @@ function _check_value($n, $v) {
                             </label>
                             <label for="min_50" class="text">
                                 <input id="min_50" type="radio" name="amount" value="230000"<?php _check_value('amount', '230000'); ?>>
-
                                 <?php _text('50mins (5% discount) 230,000 won')?>
                             </label>
 
@@ -68,7 +79,7 @@ function _check_value($n, $v) {
                                 <?php _text('Input payment amount')?>
                             </label>
 
-                            <input id="input-amount" type="text" name="amount_input" value="6000" size="6">
+                            <input id="input-amount" type="text" name="amount_input" value="0" size="" style="display:none;">
                         </div>
                     </div>
                 </div>
@@ -94,10 +105,16 @@ function _check_value($n, $v) {
                                 <input id="onlyvirtualselfnormal" type="radio" name="method" value="onlyvirtualselfnormal"<?php _check_value('method', 'onlyvirtualselfnormal'); ?>>
                                 <?php _text('offline banking')?>
                             </label>
+                            <?php
+                            /*
+                            ?>
                             <label for="auto_credit" class="text">
                                 <input id="auto_credit" type="radio" name="method" value="auto_credit"<?php _check_value('method', 'auto_credit'); ?>>
                                 <?php _text('auto credit ( 20% discount )')?>
                             </label>
+                            <?php
+                            */
+                            ?>
                         </div>
                     </div>
                 </div>
@@ -111,11 +128,11 @@ function _check_value($n, $v) {
                         </div>
                         <div class="items">
                             <label for="day_5" class="text">
-                                <input id="day_5" type="radio" name="days" value="1" checked>
+                                <input id="day_5" type="radio" name="days" value="5" checked>
                                 <?php _text('5 days')?>
                             </label>
                             <label for="day_4" class="text">
-                                <input id="day_4" type="radio" name="days" value="2">
+                                <input id="day_4" type="radio" name="days" value="4">
                                 <?php _text('4 days ( 5% discount )')?>
                             </label>
                             <label for="day_3" class="text">
@@ -135,45 +152,30 @@ function _check_value($n, $v) {
                         </div>
                         <div class="items">
 
-                            <label for="Curriculum1" class="text">
-                                <input id="Curriculum1" type="radio" name="curriculum" value="0" checked>
-                                <?php _text('Curriculum1')?>
-                            </label>
 
 
-                            <label for="Curriculum2" class="text">
-                                <input id="Curriculum2" type="radio" name="curriculum" value="0">
-                                <?php _text('Curriculum2')?>
-                            </label>
-                            <label for="Curriculum3" class="text">
-                                <input id="Curriculum3" type="radio" name="curriculum" value="0">
-                                <?php _text('Curriculum3')?>
-                            </label>
+                            <?php
+                            $data = yaml_load_file( get_part_location( 'curriculum', 'yml' ) );
 
-                            <label for="Curriculum4" class="text">
-                                <input id="Curriculum4" type="radio" name="curriculum" value="0" checked>
-                                <?php _text('Curriculum4')?>
-                            </label>
-                            <label for="Curriculum5" class="text">
-                                <input id="Curriculum5" type="radio" name="curriculum" value="0" checked>
-                                <?php _text('Curriculum5')?>
-                            </label>
-                            <label for="Curriculum6" class="text">
-                                <input id="Curriculum6" type="radio" name="curriculum" value="0" checked>
-                                <?php _text('Curriculum6')?>
-                            </label>
-                            <label for="Curriculum7" class="text">
-                                <input id="Curriculum7" type="radio" name="curriculum" value="0" checked>
-                                <?php _text('Curriculum7')?>
-                            </label>
-                            <label for="Curriculum8" class="text">
-                                <input id="Curriculum8" type="radio" name="curriculum" value="0" checked>
-                                <?php _text('Curriculum8')?>
-                            </label>
-                            <label for="Curriculum9" class="text">
-                                <input id="Curriculum9" type="radio" name="curriculum" value="10" checked>
-                                <?php _text('10% OFF')?>
-                            </label>
+                            $k = 0;
+                            foreach( $data as $name => $off ) {
+                                $k ++;
+                                if ( strpos($off,'*') ) {
+                                    $off = trim($off,' *');
+                                    $checked = ' checked=1';
+                                }
+                                else {
+                                    $checked = null;
+                                }
+                                ?>
+                                <label for="Curriculum<?php echo $k?>" class="text">
+                                    <input id="Curriculum<?php echo $k?>" type="radio" name="curriculum" value="<?php echo "$off:$name"?>"<?php echo $checked?>>
+                                    <?php _text($name)?>
+                                </label>
+                            <?php
+                            }
+                            ?>
+
                         </div>
                     </div>
                 </div>
