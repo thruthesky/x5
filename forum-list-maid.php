@@ -1,4 +1,5 @@
 <?php
+
 get_header();
 wp_enqueue_style( 'forum-list-basic', FORUM_URL . 'css/forum-list-basic.css' );
 $categories = get_the_category();
@@ -42,6 +43,54 @@ wp_enqueue_style('list-basic', td() . '/css/forum/list-basic.css');
             </div>
         </div>
 
+        <!-- SEARCH FORM -->
+        <div class="col-md-12">
+            <!-- Search by title/content -->
+            <div class="col-md-4">
+                <?php get_search_form(); ?> 
+            </div>
+            <!-- Search by Name -->
+            <form method="post" action="<?php echo home_url( '/forum/maid' ); ?>"> 
+                <div class="col-md-2 form-group">
+                    <select name="name" class="form-control" onchange='this.form.submit()'>
+                    <option value="" selected disabled>Name:</option>
+                        <?php 
+                            $posts = get_posts();
+                            foreach($posts as $key => $post){
+                                $post_id = $post->ID;
+                                $result = get_post_meta( $post_id, 'name', true); ?>
+                                <option value="<?php echo $post_id; ?> "><?php echo $result; ?></option>
+                                <?php
+                            }
+                        ?>
+                    </select>
+                </div>
+                <!-- Search by post date -->
+                <div class="col-md-2">
+                    <select name="date" class="form-control" onchange='this.form.submit()'>
+                    <option value="" selected disabled>Date:</option>
+                        <?php 
+                            $posts = get_posts();
+                            foreach($posts as $key => $post){
+                                $post_date = get_the_date( 'Y-m-d' ); 
+                                $post_id = $post->ID;
+                                ?>
+                                <option value="<?php echo $post_id; ?> "><?php echo $post_date; ?></option>
+                                <?php
+                            }
+                        ?>
+                    </select>
+                </div>
+            </form>
+            <!-- Search by Age -->
+            <div class="col-md-2">
+            </div>
+            <!-- Search by Year of Experience -->
+            <div class="col-md-2">
+            </div>
+        </div>
+        <!-- END OF SEARCH FORM -->
+
         <div class="container post-list-container">
             <div class="row header">
                 <div class="col-xs-12 col-sm-2 col-lg-2">
@@ -53,24 +102,30 @@ wp_enqueue_style('list-basic', td() . '/css/forum/list-basic.css');
                 <div class="col-xs-4 col-sm-2 col-lg-1 no-of-view" title="<?php _e('No. of Views', 'k-forum')?>"><?php _e('Views', 'k-forum')?></div>
             </div>
             <?php
-            if ( have_posts() ) : while( have_posts() ) : the_post();
-                ?>
-                <div class="row post" data-post-id="<?php the_ID()?>">
+            if(!empty($_POST['name'])){
+                 $id = (int) $_POST['name'];
+            }else if(!empty($_POST['date'])){
+                $id = (int) $_POST['date'];
+            }
+           
+            if(!empty($id)){ ?>
+                <!-- IF YOU CHOSE APPLICANT/DATE ON SELECT -->
+                <div class="row post" data-post-id="<?php echo $id;?>">
                     <div class="col-xs-12 col-sm-2 col-lg-2">
-                        <img src="<?php echo forum()->get_first_image(get_the_ID()); ?>" style="height:100px;width:100px;">
+                        <img src="<?php echo forum()->get_first_image($id);?>" style="height:100px;width:100px;">
                     </div>
                     <div class="col-xs-12 col-sm-4 col-lg-6  title">
                         <h2>
-                            <a href="<?php echo esc_url( get_permalink() )?>">
+                            <a href="<?php echo esc_url( get_permalink($id) )?>">
                                 <?php
-                                $content = get_the_title();
+                                $content = get_the_title($id);
                                 if ( strlen( $content ) > 100 ) {
                                     $content = mb_strcut( $content, 0, 100 );
                                 }
                                 echo $content;
                                 ?>
                                 <span class="title-no-of-view"><?php
-                                    $count = wp_count_comments( get_the_ID() );
+                                    $count = wp_count_comments( $id );
                                     if ( $count->approved )  echo "({$count->approved})";
                                     ?></span>
                                 <?php
@@ -82,16 +137,53 @@ wp_enqueue_style('list-basic', td() . '/css/forum/list-basic.css');
                         </h2>
                     </div>
                     <div class="col-xs-4 col-sm-2 col-lg-2 author"><?php the_author()?></div>
-                    <div class="col-xs-4 col-sm-2 col-lg-1 date" title="<?php echo get_the_date()?>"><?php post()->the_date()?></div>
-                    <div class="col-xs-4 col-sm-2 col-lg-1 no-of-view"><?php echo number_format(post()->getNoOfView( get_the_ID() ) )?></div>
+                    <div class="col-xs-4 col-sm-2 col-lg-1 date" title="<?php echo get_the_date($id)?>"><?php post()->the_date()?></div>
+                    <div class="col-xs-4 col-sm-2 col-lg-1 no-of-view"><?php echo number_format(post()->getNoOfView( $id ) )?></div>
                 </div>
-            <?php endwhile; else : ?>
+            <?php
+            }else{
+                //echo "NO DATA RECEIVED";
+                if ( have_posts() ) : while( have_posts() ) : the_post();
+                    ?>
+                    <div class="row post" data-post-id="<?php the_ID()?>">
+                        <div class="col-xs-12 col-sm-2 col-lg-2">
+                            <img src="<?php echo forum()->get_first_image(get_the_ID()); ?>" style="height:100px;width:100px;">
+                        </div>
+                        <div class="col-xs-12 col-sm-4 col-lg-6  title">
+                            <h2>
+                                <a href="<?php echo esc_url( get_permalink() )?>">
+                                    <?php
+                                    $content = get_the_title();
+                                    if ( strlen( $content ) > 100 ) {
+                                        $content = mb_strcut( $content, 0, 100 );
+                                    }
+                                    echo $content;
+                                    ?>
+                                    <span class="title-no-of-view"><?php
+                                        $count = wp_count_comments( get_the_ID() );
+                                        if ( $count->approved )  echo "({$count->approved})";
+                                        ?></span>
+                                    <?php
+                                    if ( post()->getNoOfImg( get_the_content() ) ) {
+                                        echo '<span class="dashicons dashicons-format-gallery"></span>';
+                                    }
+                                    ?>
+                                </a>
+                            </h2>
+                        </div>
+                        <div class="col-xs-4 col-sm-2 col-lg-2 author"><?php the_author()?></div>
+                        <div class="col-xs-4 col-sm-2 col-lg-1 date" title="<?php echo get_the_date()?>"><?php post()->the_date()?></div>
+                        <div class="col-xs-4 col-sm-2 col-lg-1 no-of-view"><?php echo number_format(post()->getNoOfView( get_the_ID() ) )?></div>
+                    </div>
+                <?php endwhile; else : ?>
 
-                <div class="no-post">
-                    <?php _e('There is no post under this forum.', 'k-forum')?>
-                </div>
+                    <div class="no-post">
+                        <?php _e('There is no post under this forum.', 'k-forum')?>
+                    </div>
 
-            <?php endif; ?>
+                <?php endif; 
+            }
+            ?>
         </div>
 
 
