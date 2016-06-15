@@ -1,6 +1,5 @@
 /* Overrides Bootstrap*/
 .home .my-slider {
-    /*margin-bottom: .3em;*/
     z-index: 500;
 }
 .home .my-slider .carousel.slide .carousel-inner .carousel-item img {
@@ -8,30 +7,105 @@
     height: auto;
 }
 
-.home .my-slider .carousel.slide .carousel-indicators {
-    bottom: -15px;
-}
-
 .home .my-slider .carousel.slide .carousel-inner .carousel-item .carousel-caption {
-    background-color: rgba(255,255,255,.8); /* updated by Mr. Song */
-    line-height: 220%; /* updated by Mr. Song */
-    margin-bottom: 40px;
     padding-bottom: 0;
     border-radius: 3px;
+    right: 6%;
+    left: 6%;
+    bottom: 15px;
+    padding-top: 5px;
     color: #2b2b2b;
     text-shadow: none;
+    background-color: rgba(255,255,255,.8); /* updated by Mr. Song */
 }
 
 .home .my-slider .carousel.slide .carousel-inner .carousel-item .carousel-caption h3 {
 	margin: 0;
 	padding: 0;
-	font-size: 2rem;
-}
-
-.home .carousel-caption p {
-    padding: 1em;
+	font-size: 13px;
+    font-weight: 600;
 }
 
 .home .my-slider .carousel.slide .carousel-inner .carousel-item .carousel-caption p {
-    font-size: 1.2rem;
+    font-size: 12px;
+    margin-bottom: 5px;
 }
+
+.home .my-slider .carousel.slide .carousel-indicators {
+    bottom: -20px;
+}
+
+.home .my-slider .carousel.slide .carousel-control {
+    width: 9%;
+}
+
+
+
+
+/* @media */
+
+@media all and (min-width: 380px ) {
+    .home .my-slider .carousel.slide .carousel-inner .carousel-item .carousel-caption h3 {
+        font-size: 15px;
+    }
+
+    .home .my-slider .carousel.slide .carousel-inner .carousel-item .carousel-caption p {
+        font-size: 14px;
+    }
+}
+@media all and (min-width: 480px ) {
+    .home .my-slider .carousel.slide .carousel-inner .carousel-item .carousel-caption {
+        bottom: 25px;
+    }
+}
+
+@media all and (min-width: 600px ) {
+    .home .my-slider .carousel.slide .carousel-inner .carousel-item .carousel-caption h3 {
+        font-size: 18px;
+        padding: 8px;
+    }
+
+    .home .my-slider .carousel.slide .carousel-inner .carousel-item .carousel-caption p {
+        font-size: 16px;
+    }
+}
+
+@media all and (min-width: 800px ) {
+    .home .my-slider .carousel.slide .carousel-inner .carousel-item .carousel-caption {
+        margin-bottom: 20px;
+        right: 15%;
+        left: 15%;
+    }
+    .home .my-slider .carousel.slide .carousel-inner .carousel-item .carousel-caption h3 {
+        font-size: 22px;
+    }
+    .home .my-slider .carousel.slide .carousel-inner .carousel-item .carousel-caption p {
+        font-size: 18px;
+        padding: .5rem;
+    }
+    .home .my-slider .carousel.slide .carousel-indicators {
+        bottom: -10px;
+    }
+}
+
+@media all and (min-width: 980px ) {
+    .home .my-slider .carousel.slide .carousel-inner .carousel-item .carousel-caption {
+        line-height: 220%;
+        margin-bottom: 40px;
+        padding-bottom: 0;
+        padding-top: 20px;
+        right: 15%;
+        left: 15%;
+    }
+    .home .my-slider .carousel.slide .carousel-inner .carousel-item .carousel-caption p {
+        font-size: 18px;
+        padding: 1em;
+    }
+
+    .home .my-slider .carousel.slide .carousel-control {
+        width: 15%;
+    }
+
+}
+
+/* EO @media */

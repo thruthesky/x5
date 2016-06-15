@@ -17,11 +17,12 @@ header .logo a {
 header .logo img {
     height: auto;
     vertical-align: top;
+    padding: 0 1rem 1rem;
 }
 
 header .logo .title {
     display: inline-block;
-    padding-left: 1.25rem;
+    padding: 0 1rem 1rem;
     font-family: "Malgun Gothic", "AppleGothic", "Gulim", serif;
     font-weight: bold;
     font-size: 2.0625em;
@@ -171,6 +172,12 @@ nav.top-menu ul li.active a span {
 @media all and ( min-width: 380px ) {
     nav.top-menu ul li {
         margin-left: 0.8125em;
+    }
+
+}
+@media all and ( min-width: 480px ) {
+    header .logo img {
+        padding: 0 0 1rem 1rem;
     }
 }
 @media all and ( min-width: 600px ) {
