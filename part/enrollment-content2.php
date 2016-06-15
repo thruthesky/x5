@@ -22,6 +22,12 @@ function _check_value($n, $v) {
         });
         $('form[name="payment"]').change(function(){
             $(this).submit();
+            if ( $('#auto_credit').prop('checked') ) {
+                $('.auto-credit-desc').show();
+            }
+            else {
+                $('.auto-credit-desc').hide();
+            }
         });
         $('form [name="amount_input"]').keyup(function(){
             $('form[name="payment"]').submit();
@@ -35,7 +41,6 @@ function _check_value($n, $v) {
         <form name="payment" action="<?php echo home_url()?>/enrollment" target="hiframe_payment">
             <input type="hidden" name="layout" value="no">
             <input type="hidden" name="mode" value="AGS_pay">
-            <h2><?php _text('Enr:B2:Title')?></h2>
             <div class="content row">
                 <div class="col-sm-3">
                     <div class="cover">
@@ -120,7 +125,7 @@ function _check_value($n, $v) {
                         </div>
                     </div>
                 </div>
-                <div class="col-sm-3">
+                <div class="col-sm-3 curriculum">
                     <div class="cover">
                         <div class="picture">
                             <img src="<?php img_e() ?>enrollment-icon4.png">
@@ -154,16 +159,27 @@ function _check_value($n, $v) {
                                 <?php _text('Curriculum5')?>
                             </label>
                             <label for="Curriculum6" class="text">
-                                <input id="Curriculum6" type="radio" name="curriculum" value="10" checked>
+                                <input id="Curriculum6" type="radio" name="curriculum" value="0" checked>
+                                <?php _text('Curriculum6')?>
+                            </label>
+                            <label for="Curriculum7" class="text">
+                                <input id="Curriculum7" type="radio" name="curriculum" value="0" checked>
+                                <?php _text('Curriculum7')?>
+                            </label>
+                            <label for="Curriculum8" class="text">
+                                <input id="Curriculum8" type="radio" name="curriculum" value="0" checked>
+                                <?php _text('Curriculum8')?>
+                            </label>
+                            <label for="Curriculum9" class="text">
+                                <input id="Curriculum9" type="radio" name="curriculum" value="10" checked>
                                 <?php _text('10% OFF')?>
                             </label>
-
                         </div>
-
                     </div>
                 </div>
             </div>
-            <div>
+
+            <div class="auto-credit-desc" style="display:none;">
                 <?php _text('Notice: When auto credit selected, discounted amount will be returned after a month.')?>
             </div>
 
