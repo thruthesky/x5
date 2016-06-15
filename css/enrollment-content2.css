@@ -1,12 +1,5 @@
 section .enrollment.content-two > div {
-    padding: 50px 0;
-}
-
-section .enrollment.content-two h2 {
-    margin-bottom: 66px;
-    font-size: 34px;
-    text-align: center;
-    line-height: 38px;
+    padding: 20px 0;
 }
 
 section .enrollment .content.row {
@@ -38,19 +31,26 @@ section .enrollment .content.row .cover .desc {
     margin-bottom: 36px;
 }
 
-section .enrollment .content.row .cover .radio {
+section .enrollment .content.row .cover .items {
     position: relative;
     display: block;
     text-align: left;
-    padding: 0 0 20px 25px;
+    padding: 0 0 6px 25px;
 }
 
-section .enrollment .content.row .cover .radio input[type='radio'] {
+section .enrollment .content.row .curriculum .cover .items label {
+    margin-bottom: .1em;
+    cursor: pointer;
+}
+
+
+section .enrollment .content.row .cover .items input[type='radio'] {
     position: relative;
 }
 
-section .enrollment .content.row .cover .radio  .text {
+section .enrollment .content.row .cover .items  .text {
     display: block;
+    cursor: pointer;
 }
 
 section .enrollment .content.row {
@@ -63,65 +63,30 @@ section .enrollment .content.row > div.col-sm-3 {
     padding: 0 10px;
 }
 
-section .enrollment .summary {
-    background-color: #00a0d2;
-    text-align: center;
-    color: #FFFFFF;
-    border-radius: 5px;
-}
-
-section .enrollment .summary .row {
+/** by Mr. Song */
+.input-amount-text {
+    display: block;
     margin: 0;
-}
-
-section .enrollment .summary .result {
-    padding: 20px 0;
-}
-
-section .enrollment .summary label {
-    display: block;
-    font-size: 24px;
-    font-weight: bold;
-}
-
-section .enrollment nav {
-    display: block;
-    margin: 20px 0;
-}
-
-section .enrollment .total {
-    display: block;
-    width: 100%;
-    height: 60px;
-    font-size: 24px;
-    padding: 10px 20px;
-    border-radius: 5px;
-    margin-bottom: 10px;
-    background-color: #00a0d2;
-    color: #FFFFFF;
-    text-align: center;
-}
-
-section .enrollment .submit {
-    display: block;
-    width: 100%;
-    height: 60px;
-    font-size: 24px;
-    padding: 10px 20px;
-    border-radius: 5px;
-    margin-bottom: 10px;
-    color: #FFFFFF;
-    background-color: orange;
-    text-align: center;
+    padding: 0;
     cursor: pointer;
 }
+#input-amount {
+    width: 160px;
+    padding: .1em 0 0 .4em;
+    border: 1px solid grey;
+}
+object {
+    position: absolute; /* removing space for payment module object */
+}
+/** eo */
+
 
 
 
 /* @media */
 @media all and (min-width: 480px ) {
     section .enrollment.content-two > div {
-        padding: 50px 0;
+        padding: 20px 0;
     }
 }
 
@@ -132,14 +97,14 @@ section .enrollment .submit {
     section .enrollment .content.row .cover {
         min-height: 415px;
     }
-    section .enrollment .content.row .cover .radio {
-        padding: 0 0 20px 15px;
+    section .enrollment .content.row .cover .items {
+        padding: 0 0 6px 15px;
     }
 }
 
 @media all and (min-width: 800px ) {
     section .enrollment.content-two > div {
-        padding: 70px 0;
+        padding: 20px 0;
     }
     section .enrollment .content.row > div.col-sm-3 {
         width: 25%;
