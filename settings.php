@@ -113,6 +113,9 @@
     }
 
     $files = getFiles( get_stylesheet_directory(), true, '/php/' );
+    $files2 = getFiles( __LMS_PATH__, true, '/php/' );
+    $files = array_merge( $files2, $files );
+
 
     foreach( $files as $file ) {
 
