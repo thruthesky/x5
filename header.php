@@ -10,8 +10,8 @@ ob_start();
     <script>
         var home_url = "<?php echo home_url()?>";
     </script>
-	<title>굿톡</title>
-<meta name="description" content="굿톡 www.igoodtalk.com - 세상에서 가장 쉬운 화상영어. 굿톡!" />
+	<title><?php echo get_option('site_title')?></title>
+    <meta name="description" content="<?php echo get_option('site_description')?>" />
 </head>
 
 

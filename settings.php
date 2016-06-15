@@ -1,4 +1,37 @@
 <div class="wrap x5-settings">
+    <h2>Center 9 Theme Settings</h2>
+    <hr>
+
+
+
+    <?php
+    if ( isset($_REQUEST['mode']) && $_REQUEST['mode'] == 'update-theme-info' ) {
+        delete_option('site_title');
+        delete_option('site_description');
+        add_option('site_title', $_REQUEST['site_title']);
+        add_option('site_description', $_REQUEST['site_description']);
+    }
+    ?>
+    <form action="admin.php?page=x5_theme_settings" method="POST">
+        <input type="hidden" name="mode" value="update-theme-info">
+        <div><input name="site_title" value="<?php echo get_option('site_title')?>"></div>
+
+        * HEAD 의 description 메타. 사이트의 설명보다는, 키워드 위주로 입력.
+        <div><textarea name="site_description"><?php echo get_option('site_description')?></textarea></div>
+        <input type="submit">
+    </form>
+
+
+
+
+
+
+
+
+
+
+
+    <hr>
     <a href="./admin.php?page=x5_theme_settings&mode=export-text-translation">Export Text Translation</a>
 
     <?php
