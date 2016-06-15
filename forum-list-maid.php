@@ -1,4 +1,5 @@
 <?php
+
 get_header();
 wp_enqueue_style( 'forum-list-basic', FORUM_URL . 'css/forum-list-basic.css' );
 $categories = get_the_category();
@@ -42,6 +43,32 @@ wp_enqueue_style('list-basic', td() . '/css/forum/list-basic.css');
             </div>
         </div>
 
+        <!-- SEARCH FORM -->
+        <div class="col-md-12">
+
+            <!-- Search by Name -->
+            <form method="get" action="<?php echo home_url( '/forum/maid' ); ?>">
+                <div class="col-md-2 form-group">
+                    <input name="name" value="" placeholder="Input name like 'Mari*'">
+                </div>
+                <!-- Search by post date -->
+                <div class="col-md-6">
+                    <input name="date_from">~<input name="date_to">
+                </div>
+                <div class="col-md-2">
+                    <input name="no_of_children" value="<?php echo $_REQUEST['no_of_children']?>" placeholder="No. of Children">
+                </div>
+                <input type="submit">
+            </form>
+            <!-- Search by Age -->
+            <div class="col-md-2">
+            </div>
+            <!-- Search by Year of Experience -->
+            <div class="col-md-2">
+            </div>
+        </div>
+        <!-- END OF SEARCH FORM -->
+
         <div class="container post-list-container">
             <div class="row header">
                 <div class="col-xs-12 col-sm-2 col-lg-2">
@@ -53,24 +80,30 @@ wp_enqueue_style('list-basic', td() . '/css/forum/list-basic.css');
                 <div class="col-xs-4 col-sm-2 col-lg-1 no-of-view" title="<?php _e('No. of Views', 'k-forum')?>"><?php _e('Views', 'k-forum')?></div>
             </div>
             <?php
-            if ( have_posts() ) : while( have_posts() ) : the_post();
-                ?>
-                <div class="row post" data-post-id="<?php the_ID()?>">
+            if(!empty($_POST['name'])){
+                 $id = (int) $_POST['name'];
+            }else if(!empty($_POST['date'])){
+                $id = (int) $_POST['date'];
+            }
+           
+            if(!empty($id)){ ?>
+                <!-- IF YOU CHOSE APPLICANT/DATE ON SELECT -->
+                <div class="row post" data-post-id="<?php echo $id;?>">
                     <div class="col-xs-12 col-sm-2 col-lg-2">
-                        <img src="<?php echo forum()->get_first_image(get_the_ID()); ?>" style="height:100px;width:100px;">
+                        <img src="<?php echo forum()->get_first_image($id);?>" style="height:100px;width:100px;">
                     </div>
                     <div class="col-xs-12 col-sm-4 col-lg-6  title">
                         <h2>
-                            <a href="<?php echo esc_url( get_permalink() )?>">
+                            <a href="<?php echo esc_url( get_permalink($id) )?>">
                                 <?php
-                                $content = get_the_title();
+                                $content = get_the_title($id);
                                 if ( strlen( $content ) > 100 ) {
                                     $content = mb_strcut( $content, 0, 100 );
                                 }
                                 echo $content;
                                 ?>
                                 <span class="title-no-of-view"><?php
-                                    $count = wp_count_comments( get_the_ID() );
+                                    $count = wp_count_comments( $id );
                                     if ( $count->approved )  echo "({$count->approved})";
                                     ?></span>
                                 <?php
@@ -82,16 +115,32 @@ wp_enqueue_style('list-basic', td() . '/css/forum/list-basic.css');
                         </h2>
                     </div>
                     <div class="col-xs-4 col-sm-2 col-lg-2 author"><?php the_author()?></div>
-                    <div class="col-xs-4 col-sm-2 col-lg-1 date" title="<?php echo get_the_date()?>"><?php post()->the_date()?></div>
-                    <div class="col-xs-4 col-sm-2 col-lg-1 no-of-view"><?php echo number_format(post()->getNoOfView( get_the_ID() ) )?></div>
+                    <div class="col-xs-4 col-sm-2 col-lg-1 date" title="<?php echo get_the_date($id)?>"><?php post()->the_date()?></div>
+                    <div class="col-xs-4 col-sm-2 col-lg-1 no-of-view"><?php echo number_format(post()->getNoOfView( $id ) )?></div>
                 </div>
-            <?php endwhile; else : ?>
+            <?php
+            }else{
 
-                <div class="no-post">
-                    <?php _e('There is no post under this forum.', 'k-forum')?>
-                </div>
 
-            <?php endif; ?>
+
+
+                $the_query = new WP_Query( array( 'meta_key' => 'no_of_children', 'meta_value' => $_REQUEST['no_of_children'] ) );
+
+                // The Loop
+                if ( $the_query->have_posts() ) {
+                    echo '<ul>';
+                    while ( $the_query->have_posts() ) {
+                        $the_query->the_post();
+                        $url = get_permalink();
+                        echo "<li><a href='$url'>" . get_the_title() . '</a></li>';
+                    }
+                    echo '</ul>';
+                }
+
+
+
+                            }
+            ?>
         </div>
 
 

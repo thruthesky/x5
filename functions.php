@@ -60,7 +60,7 @@ add_action( 'wp_enqueue_scripts', function () {
     wp_enqueue_style( 'base', td() . '/css/base.css' );
     wp_enqueue_style( 'layout', td() . '/css/layout.css' );
     wp_enqueue_style( 'module', td() . '/css/module.css' );
-    wp_enqueue_style( 'module.header', td() . '/css/module.header.css' );
+
     wp_enqueue_style( 'module.content', td() . '/css/module.content.css' );
     wp_enqueue_style( 'module.aside', td() . '/css/module.aside.css' );
     wp_enqueue_style( 'module.data', td() . '/css/module.data.css' );
@@ -251,4 +251,15 @@ function x5_admin_menu() {
         wp_die( __( 'You do not have sufficient permissions to access this page.' ) );
     }
     include get_stylesheet_directory() . '/settings.php';
+}
+
+
+/**
+ * @return string
+ */
+function get_part_location( $part, $ext = 'php' ) {
+    $domain = get_domain_name();
+    $domain_header_path = get_template_directory() . "/part-domain/$part-$domain.$ext";
+    if ( file_exists( $domain_header_path ) ) return $domain_header_path;
+    return get_template_directory() . "/part/$part.$ext";
 }
