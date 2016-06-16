@@ -3,12 +3,10 @@
 	display:none;
     position: fixed;
     top: 200px;
-    right: 100px;
+    right: 50px;
     z-index: 200;
 }
-@media all and ( min-width: 940px ) {
-	.home .scroll-menu { display: block; }
-}
+
 .home .scroll-menu ul {
     width: 200px;
     margin: 0;
@@ -19,7 +17,6 @@
 
 .home .scroll-menu ul li {
     text-align: center;
-
 }
 
 body {
@@ -32,8 +29,8 @@ body {
 }
 .home #nav-link a {
     display: block;
-    padding: 16px;
-    font-size: 18px;
+    padding: 12px;
+    font-size: 16px;
     color: #4d4d4d;
 }
 
@@ -57,5 +54,25 @@ body {
 
 .home #testimonial .spy-position {
     top: -250px;
+}
+
+@media all and ( min-width: 940px ) {
+    .home .scroll-menu { display: block; }
+}
+@media all and ( min-width: 1024px ) {
+    .home #nav-link a {
+        padding: 14px;
+        font-size: 18px;
+    }
+}
+
+@media all and ( min-width: 1280px ) {
+    .home .scroll-menu {
+        right: 100px;
+    }
+    .home #nav-link a {
+        padding: 16px;
+        font-size: 18px;
+    }
 }
 /* EO Spy Scroll */

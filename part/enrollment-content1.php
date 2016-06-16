@@ -1,6 +1,5 @@
 <?php
 wp_enqueue_style('enrollment-content1', td() . '/css/enrollment-content1.css');
-wp_enqueue_style('banner-header', td() . '/css/banner-header.css');
 ?>
 <section class="enrollment content-one">
     <img src="<?php img_e() ?>header/enrollment-banner1.jpg">

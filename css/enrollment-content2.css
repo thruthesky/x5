@@ -1,5 +1,5 @@
 section .enrollment.content-two > div {
-    padding: 20px 0;
+    padding: 30px 0;
 }
 
 section .enrollment .content.row {
@@ -8,14 +8,14 @@ section .enrollment .content.row {
 
 section .enrollment .content.row .cover {
     text-align: center;
-    background-color: #f5f5f5;
     min-height: 300px;
     border-radius: 5px;
+    background-color: #f5f5f5;
 }
 
 section .enrollment .content.row .cover .picture {
     display: inline-block;
-    padding: 20px;
+    padding: 15px;
 }
 
 section .enrollment .content.row .cover .picture img {
@@ -25,17 +25,17 @@ section .enrollment .content.row .cover .picture img {
 
 section .enrollment .content.row .cover .desc {
     font-size: 24px;
-    line-height: 38px;
     text-align: center;
     padding: 0 10px;
-    margin-bottom: 36px;
+    margin-bottom: 5px;
+    height: 45px;
 }
 
 section .enrollment .content.row .cover .items {
     position: relative;
     display: block;
     text-align: left;
-    padding: 0 0 6px 25px;
+    padding: 0 0 25px 25px;
 }
 
 section .enrollment .content.row .curriculum .cover .items label {
@@ -61,6 +61,7 @@ section .enrollment .content.row {
 
 section .enrollment .content.row > div.col-sm-3 {
     padding: 0 10px;
+    margin-bottom: 25px;
 }
 
 /** by Mr. Song */
@@ -84,33 +85,33 @@ object {
 
 
 /* @media */
-@media all and (min-width: 480px ) {
-    section .enrollment.content-two > div {
-        padding: 20px 0;
-    }
-}
-
 @media all and (min-width: 544px ) {
+    section .enrollment.content-two > div {
+        padding: 30px 0;
+    }
     section .enrollment .content.row > div.col-sm-3 {
         width: 50%;
     }
     section .enrollment .content.row .cover {
-        min-height: 415px;
+        min-height: 440px;
     }
     section .enrollment .content.row .cover .items {
-        padding: 0 0 6px 15px;
+        padding: 0 0 15px 15px;
+    }
+    section .enrollment .content.row .cover .desc {
+        height: 72px;
     }
 }
 
 @media all and (min-width: 800px ) {
     section .enrollment.content-two > div {
-        padding: 20px 0;
+        padding: 30px 0;
     }
     section .enrollment .content.row > div.col-sm-3 {
         width: 25%;
     }
     section .enrollment .content.row .cover {
-        min-height: 420px;
+        min-height: 440px;
     }
     section .enrollment .submit,
     section .enrollment .total {
@@ -123,10 +124,14 @@ object {
     }
 }
 
-@media all and (min-width: 980px ) {
+@media all and (min-width: 960px ) {
     section .enrollment-us.content-two > div {
-        padding: 100px 0;
+        padding: 50px 0;
+    }
+    section .enrollment .content.row .cover {
+        min-height: 415px;
     }
 }
 
 /* EO @media */
+
