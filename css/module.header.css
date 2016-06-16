@@ -168,6 +168,7 @@ nav.top-menu ul li.active a span {
 
 .menu .close-btn {
     float: right;
+    padding: 10px;
 }
 @media all and ( min-width: 380px ) {
     nav.top-menu ul li {
