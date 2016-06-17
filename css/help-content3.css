@@ -2,41 +2,43 @@ section .help.content-three {
     background-color: #a7dbdb;
 }
 
+section .help.content-three > div {
+    padding: 50px 0;
+}
+
 section .help.content-three h2 {
-    display: inline-block;
-    margin-top: 72px;
+    display: block;
     margin-bottom: 26px;
-    font-size: 34px;
+    font-size: 28px;
     color: #5a6a62;
+    text-align: center;
 }
 
 section .help.content-three form {
-    max-width: 685px;
+
 }
 
 section .help.content-three .line {
     display: inline-block;
+    width: 100%;
     clear: both;
-}
-
-section .help.content-three .line:last-child {
-    margin-bottom: 85px;
 }
 
 section .help.content-three .line label {
     float: left;
     padding: 3px;
-    width: 175px;
-    font-size: 18px;
-    font-weight: 600;
+    width: 100px;
+    margin-bottom: 0    ;
+    font-size: 16px;
     color: #2d2d2d;
 }
+
 
 section .help.content-three .line .text {
     float: left;
     padding: 3px;
-    width: 510px;
-    font-size: 18px;
+    width: 100%;
+    font-size: 16px;
     color: #2d2d2d;
 }
 
@@ -48,7 +50,7 @@ section .help.content-three .line span {
 section .help.content-three textarea,
 section .help.content-three input[tabindex="101"] {
     outline: 0;
-    padding: 7px;
+    padding: 5px;
     width: 100%;
     border-radius: 5px;
     border: 0 solid #c6c6c6;
@@ -67,6 +69,100 @@ section .help.content-three .submit input {
 }
 
 
+
 section .help.content-three .line.submit {
     width: 100%;
 }
+
+
+/* @media */
+
+@media all and (min-width: 380px ) {
+    section .help.content-three .line {
+        padding: 0 20px;
+    }
+    section .help.content-three .line .text {
+        width: 69%;
+    }
+    section .help.content-three .line.submit {
+        width: 69%;
+        margin-left: 115px;
+    }
+}
+
+@media all and (min-width: 480px ) {
+    section .help.content-three textarea,
+    section .help.content-three input[tabindex="101"] {
+        padding: 6px;
+    }
+    section .help.content-three .line.submit,
+    section .help.content-three .line .text {
+        width: 76%;
+    }
+}
+
+@media all and (min-width: 600px ) {
+    section .help.content-three > div {
+        padding: 70px 0;
+    }
+    section .help.content-three form {
+        width: 590px;
+    }
+    section .help.content-three h2 {
+        font-size: 32px;
+        text-align: left;
+        padding-left: 20px;
+    }
+    section .help.content-three .line label {
+        font-size: 18px;
+        padding: 10px 3px;
+        width: 150px;
+    }
+
+    section .help.content-three .line .text {
+        font-size: 18px;
+        width: 72%;
+    }
+    section .help.content-three .line.submit{
+        width: 72%;
+        margin-left: 165px;
+    }
+    section .help.content-three textarea,
+    section .help.content-three input[tabindex="101"] {
+        padding: 7px;
+    }
+}
+
+@media all and (min-width: 800px ) {
+    section .help.content-three form {
+        width: 685px;
+    }
+    section .help.content-three h2 {
+        font-size: 36px;
+    }
+    section .help.content-three .line label {
+        width: 175px;
+    }
+    section .help.content-three .line.submit{
+        margin-left: 190px;
+    }
+}
+
+@media all and (min-width: 980px ) {
+    section .help.content-three > div {
+        padding: 100px 0;
+    }
+}
+@media all and (min-width: 1024px ) {
+    section .help.content-three h2 {
+        padding-left: 0;
+    }
+    section .help.content-three .line {
+        padding: 0;
+    }
+    section .help.content-three .submit input {
+        margin-right: 15px;
+    }
+}
+
+/* EO @media*/

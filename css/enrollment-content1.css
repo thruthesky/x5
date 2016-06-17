@@ -60,40 +60,38 @@ section.content-one {
 }
 section.content-one img {
     position: absolute;
-    left: -149px;
+    left: -230px;
     width: auto;
     height: 100%;
 }
 @media all and ( min-width: 380px) {
     section.content-one { height: 100px; }
-    section.content-one img { left: -165px; }
+    section.content-one img { left: -255px; }
 }
 @media all and ( min-width: 480px) {
     section.content-one { height: 125px; }
-    section.content-one img { left: -205px; }
+    section.content-one img { left: -310px; }
 }
 @media all and ( min-width: 560px) {
     section.content-one { height: 140px; }
-    section.content-one img { left: -230px; }
+    section.content-one img { left: -350px; }
 }
 @media all and ( min-width: 600px) {
     section.content-one { height: 160px; }
-    section.content-one img { left: -265px; }
+    section.content-one img { left: -400px; }
 }
 @media all and ( min-width: 760px) {
     section.content-one { height: 200px; }
-    section.content-one img { left: -330px; }
+    section.content-one img { left: -510px; }
 }
 @media all and ( min-width: 860px) {
-    section.content-one { height: 225px; }
-    section.content-one img { left: -370px; }
+    section.content-one img { left: -510px; }
 }
 @media all and ( min-width: 980px) {
-    section.content-one { height: 280px; }
-    section.content-one img { left: -470px; }
+    section.content-one img { left: -510px; }
 }
 @media all and ( min-width: 1024px) {
-    section.content-one img { left: -445px; }
+    section.content-one img { left: -470px; }
 }
 @media all and ( min-width: 1280px) {
     section.content-one img { left: -320px; }

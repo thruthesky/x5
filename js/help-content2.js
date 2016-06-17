@@ -12,7 +12,7 @@
         } else {
             $nav_header.css({
                 'position': 'absolute',
-                'top' : '135px'
+                'top' : '165px'
             });
         }
     }
