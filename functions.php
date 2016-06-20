@@ -122,6 +122,7 @@ abc()->registerRoute(
         'testing',
         'team-viewer',
         'kakao',
+        'manpower-register'
     ]
 );
 
@@ -263,3 +264,8 @@ function get_part_location( $part, $ext = 'php' ) {
     if ( file_exists( $domain_header_path ) ) return $domain_header_path;
     return get_template_directory() . "/part/$part.$ext";
 }
+
+function my_function_admin_bar(){
+    return true;
+}
+add_filter( 'show_admin_bar' , 'my_function_admin_bar');

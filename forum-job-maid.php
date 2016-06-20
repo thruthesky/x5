@@ -63,6 +63,14 @@ class JobMaid {
     {
         return get_post_meta( $this->ID, 'year_of_experience', true);
     }
+    public function no_of_children()
+    {
+        return get_post_meta( $this->ID, 'no_of_children', true);
+    }
+    public function education()
+    {
+        return get_post_meta( $this->ID, 'education_attainment', true);
+    }
 }
 $_jobMaid = new JobMaid();
 function maid() {

@@ -185,7 +185,7 @@ $post = forum()->getPost( seg(1) );
                     <label for="birthday">Birth Day</label>
                 </div>
                 <div class="text">
-                    <input type="date" id="birthday" name="birthday" class="btn btn-secondary" value="">
+                    <input type="date" id="birthday" name="birthday" class="btn btn-secondary" value="<?php echo maid()->birthday()?>">
                 </div>
             </div>
 
@@ -196,7 +196,7 @@ $post = forum()->getPost( seg(1) );
                     <label for="no-of-children">No. of children</label>
                 </div>
                 <div class="text">
-                    <input type="number" id="no-of-children" name="no_of_children" class="form-control" value="" placeholder="">
+                    <input type="number" id="no-of-children" name="no_of_children" class="form-control" value="<?php echo maid()->no_of_children()?>" placeholder="">
                 </div>
             </div>
 
@@ -206,7 +206,7 @@ $post = forum()->getPost( seg(1) );
                     <label for="year-of-experience">Year of experience</label>
                 </div>
                 <div class="text">
-                    <input type="number" id="year_of_experience" name="year_of_experience" class="form-control" value="" >
+                    <input type="number" id="year_of_experience" name="year_of_experience" class="form-control" value="<?php echo maid()->year_of_experience()?>" >
                 </div>
             </div>
 
@@ -218,11 +218,11 @@ $post = forum()->getPost( seg(1) );
                 <div class="text">
                     <select id="education-attainment" name="education_attainment" class="btn btn-secondary">
                         <option value="">Select</option>
-                        <option value="elementary">Elementary</option>
-                        <option value="under_graduate_of_high_school">Under graduate of High school</option>
-                        <option value="high_school">High  school</option>
-                        <option value="under_graduate_of_college">Under graduate of College</option>
-                        <option value="college">College</option>
+                        <option value="elementary" <?php if ( maid()->education() == 'elementary' ) echo 'checked=1'; ?>>Elementary</option>
+                        <option value="under_graduate_of_high_school" <?php if ( maid()->education() == 'highschool_undergraduate' ) echo 'checked=1'; ?>>Under graduate of High school</option>
+                        <option value="high_school" <?php if ( maid()->education() == 'highschool' ) echo 'checked=1'; ?>>High  school</option>
+                        <option value="under_graduate_of_college" <?php if ( maid()->education() == 'college_undergraduate' ) echo 'checked=1'; ?>>Under graduate of College</option>
+                        <option value="college" <?php if ( maid()->education() == 'college' ) echo 'checked=1'; ?>>College</option>
                     </select>
 
                 </div>

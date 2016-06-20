@@ -90,14 +90,30 @@ $category = current(get_the_category());
                         </tr>
 
                         <tr>
+                            <td>Age</td>
+                            <td><?php echo maid()->age();?></td>
+                        </tr>
+
+                        <tr>
                             <td>Mobile Number</td>
                             <td><?php echo maid()->mobile();?></td>
                         </tr>
 
-                        <tr>
-                            <td>Age</td>
-                            <td><?php echo maid()->age();?></td>
+                         <tr>
+                            <td>Email Address</td>
+                            <td><?php echo maid()->email();?></td>
                         </tr>
+
+                         <tr>
+                            <td>Number of Children</td>
+                            <td><?php echo maid()->no_of_children();?></td>
+                        </tr>
+
+                        <tr>
+                            <td>Educational Attainment</td>
+                            <td><?php echo maid()->education();?></td>
+                        </tr>
+
                     </tbody>
                 </table>
                 
