@@ -353,25 +353,28 @@ wp_enqueue_script('list-maid', td() . '/js/list-maid.js', array('jquery'));
                             <img src="<?php echo forum()->get_first_image(get_the_ID()); ?>">
                         </div>
                         <div class="col-xs-12 col-sm-4 col-lg-5 content-info">
-                            <div class="name-text">
+                            <div class="name-text text-capitalize">
                                 <h1><?php echo get_post_meta( get_the_ID(), 'name', true ); ?></h1>
                             </div>
-                            <div class="position-text">
+                            <div class="position-text text-capitalize">
                                 Application Field:
                                 <?php echo get_post_meta( get_the_ID(), 'position', true ); ?> 
                             </div>
-                            <div class="inline-text">
-                                <?php echo get_post_meta( get_the_ID(), 'gender', true ); ?> |
+                            <div class="inline-text text-capitalize">
+                                <?php $gender = get_post_meta( get_the_ID(), 'gender', true );
+                                    if($gender == 'F'){echo "Female";}
+                                    else{ echo "Male"; }
+                                ?> |
                                 <?php echo get_post_meta( get_the_ID(), 'age', true ); ?> years old |
                                 Lives in: <?php echo get_post_meta( get_the_ID(), 'location', true ); ?> |
                             </div>
-                            <div class="education-text">
+                            <div class="text-capitalize">
                                 Education:
                                 <?php
                                 $education = get_post_meta( get_the_ID(), 'education_attainment', true ); 
                                 echo str_replace("_"," ", $education); ?>
                             </div>
-                            <div class="description-text">
+                            <div class="description-text ">
                                 <?php                                  
                                 $content = get_the_title();
                                 if ( strlen( $content ) > 100 ) {
@@ -390,9 +393,9 @@ wp_enqueue_script('list-maid', td() . '/js/list-maid.js', array('jquery'));
                             </div>
                         </div>
 
-                        <div class="col-xs-4 col-sm-2 col-lg-2 author"><?php the_author()?></div>
-                        <div class="col-xs-4 col-sm-2 col-lg-1 date" title="<?php echo get_the_date()?>"><?php post()->the_date()?></div>
-                        <div class="col-xs-4 col-sm-2 col-lg-1 no-of-view"><?php echo number_format(post()->getNoOfView( get_the_ID() ) )?></div>
+                        <div class="col-xs-4 col-sm-2 col-lg-2 author text-center"><?php the_author()?></div>
+                        <div class="col-xs-4 col-sm-2 col-lg-1 date text-center" title="<?php echo get_the_date()?>"><?php echo get_the_date('Y/m/d')?></div>
+                        <div class="col-xs-4 col-sm-2 col-lg-1 no-of-view text-center"><?php echo number_format(post()->getNoOfView( get_the_ID() ) )?></div>
 
                     </div>
                 <?php endwhile; ?>
