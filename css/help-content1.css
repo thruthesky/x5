@@ -151,4 +151,38 @@ section .help.content-one .who {
         font-size: 26px;
     }
 }
-
+@media all and (min-width: 1024px ) {
+    section .help.content-one .img1 {
+        left: 25px;
+    }
+}
+@media all and (min-width: 1280px ) {
+    section .help.content-one .img1 {
+        left: 150px;
+    }
+}
+@media all and (min-width: 1366px ) {
+    section .help.content-one .img1 {
+        left: 190px;
+    }
+}
+@media all and (min-width: 1440px ) {
+    section .help.content-one .img1 {
+        left: 230px;
+    }
+}
+@media all and (min-width: 1680px ) {
+    section .help.content-one .img1 {
+        left: 350px;
+    }
+}
+@media all and (min-width: 1800px ) {
+    section .help.content-one .img1 {
+        left: 440px;
+    }
+}
+@media all and (min-width: 1920px ) {
+    section .help.content-one .img1 {
+        left: 470px;
+    }
+}
