@@ -52,7 +52,7 @@ section .help.content-three input[tabindex="101"] {
     outline: 0;
     padding: 5px;
     width: 100%;
-    border-radius: 5px;
+    border-radius: 3px;
     border: 0 solid #c6c6c6;
 }
 

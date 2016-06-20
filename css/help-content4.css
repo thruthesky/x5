@@ -8,7 +8,7 @@ section .help.content-four > div {
 
 section .help.content-four h2 {
     display: block;
-    margin-bottom: 36px;
+    margin-bottom: 46px;
     font-size: 28px;
     color: #f7eac8;
     text-align: center;
@@ -89,7 +89,7 @@ section .help.content-four .line-faq:hover {
 
 @media all and (min-width: 980px ) {
     section .help.content-four > div {
-        padding: 100px 0;
+        padding: 100px 0 140px;
     }
 }
 @media all and (min-width: 1024px ) {

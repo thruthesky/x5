@@ -1,12 +1,12 @@
 .collection {
     padding: 0;
-    border-radius: 0.1875em;
+    border-radius: 3px;
     background-color: #ededed;
 }
 
 .collection .row {
     margin: 0.625rem 5px 1.25rem;
-    border-radius: 0.1875rem;
+    border-radius: 3px;
 }
 
 .collection .row > .col-sm-3 {
