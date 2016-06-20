@@ -61,7 +61,7 @@ $category = current(get_the_category());
                  <img src="<?php echo forum()->get_first_image(get_the_ID()); ?>">
             </div>
 
-            <div class="col-md-6">
+            <div class="col-md-6 text-capitalize">
                 <table class="table table-striped">
                     <tbody>
                         <tr>
@@ -111,7 +111,9 @@ $category = current(get_the_category());
 
                         <tr>
                             <td>Educational Attainment</td>
-                            <td><?php echo maid()->education();?></td>
+                            <td><?php $education = maid()->education();
+                                echo str_replace("_"," ", $education); ?>
+                                </td>
                         </tr>
 
                     </tbody>

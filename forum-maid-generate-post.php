@@ -1,5 +1,5 @@
 <?php 
-    $numberofposts = 2; 
+    $numberofposts = 4;
     $author_id = 1;
     $content = "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do aliqua.";
 
@@ -19,9 +19,24 @@
     $end =  strtotime("1994-12-31");
     $randomDate = date("Y-m-d H:i:s", rand($start, $end));
 
-    $categories = array( 20,16 );
+
+
+
+
+$category = get_category_by_slug( 'maid'  );
+
+$categories  = $category->cat_ID;
+
+
+
+
+
+
+
+
     for($i=0; $i < $numberofposts; $i++) {  
         $title = "Maid Applicant ". $i;
+        di("Title: $title<br>");
         // $post_title = get_page_by_title( $title );
         // var_dump($post_title->ID);
             // if( is_null($post_title) ) {
@@ -33,12 +48,12 @@
                     'post_status'   => 'publish',
                     'post_date'     => date('Y-m-d H:i:s'),
                     'post_author'   => wp_get_current_user()->ID,
-                    'post_category' => $categories
+                    'post_category' => [ $categories ]
                     )
                 );
             // if(isset($post_id)){
                 // di("REACHED");   
-                add_post_meta($post_id, 'name', $name[$rand_name]);
+                add_post_meta($post_id, 'name', $name[$rand_name] . " - B $i");
                 add_post_meta($post_id, 'no_of_children', $number_small);
                 add_post_meta($post_id, 'year_of_experience', $number_small);
                 add_post_meta($post_id, 'age', $number_big);

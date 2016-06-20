@@ -10,7 +10,7 @@ ob_start();
     <script>
         var home_url = "<?php echo home_url()?>";
     </script>
-	<title><?php echo get_option('site_title')?></title>
+    <title><?php echo get_option('site_title')?></title>
     <meta name="description" content="<?php echo get_option('site_description')?>" />
 </head>
 
@@ -19,7 +19,10 @@ ob_start();
 
 <div class="layout">
     <header>
-        <?php include get_part_location( 'header' ); ?>
+        <?php
+        $header_location = get_header_location();
+        include $header_location;
+        ?>
     </header>
 
     <section class="content">

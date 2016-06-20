@@ -17,7 +17,7 @@ if ( isset( $_REQUEST['mode'] ) ) {
         include ALLTHEGATE_DIR . 'AGS_pay_result.php';
     }
     else if ( $_REQUEST['mode'] == "payment-list" ) {
-        include ALLTHEGATE_DIR . 'payment-list.php';
+        include get_template_directory() . '/pg/payment-list.php';
     }
     else if ($_REQUEST['mode'] == "AGS_pay") {
         if ( ! PAYMENT_DEBUG ) include ALLTHEGATE_DIR . 'allthegate-javascript.php';
