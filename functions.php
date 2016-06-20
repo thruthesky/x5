@@ -122,6 +122,7 @@ abc()->registerRoute(
         'testing',
         'team-viewer',
         'kakao',
+        'manpower-register'
     ]
 );
 
@@ -262,4 +263,14 @@ function get_part_location( $part, $ext = 'php' ) {
     $domain_header_path = get_template_directory() . "/part-domain/$part-$domain.$ext";
     if ( file_exists( $domain_header_path ) ) return $domain_header_path;
     return get_template_directory() . "/part/$part.$ext";
+}
+/**
+ * @param string $username
+ * @param string $roomname
+ */
+function vc_url( $username = '', $roomname = 'VC TEST Room' ) {
+    $roomname = urlencode($roomname);
+    if ( empty($username) ) $username = 'User' . date('is');
+    $url = "https://www.onfis.com:10443/0.0.11/index.html?joinRoom=Y&username=$username&roomname=$roomname";
+    echo $url;
 }

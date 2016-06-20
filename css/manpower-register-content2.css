@@ -1,0 +1,13 @@
+
+.btn-no-radius{
+    border-radius: 1px;
+    margin: 10px 0px 20px 0px;
+}
+.input-no-radius{
+    margin: 10px 0px 10px 0px;
+    border-radius: 1px;
+}
+.no-padding{
+    padding-right: 3px;
+    padding-left: 0px;
+}
