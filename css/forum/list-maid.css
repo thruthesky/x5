@@ -1,3 +1,53 @@
 #searchform #searchsubmit{
 	border: none;
 }
+#content{
+	padding:10px 0px 10px 0px;
+}
+.hideable{
+	display: none;
+}
+.img-list{
+	height:180px;
+	width: 200px; 
+    background-color:#FFFFFF;
+    overflow: hidden;
+}
+.img-list img{
+	height: 100%;
+}
+.content-info{
+	padding: 20px 0px 20px 20px;
+}
+.position-text{
+	font-size: 18px;
+	color: #3E332F;
+}
+.name-text{
+	padding-bottom: 10px;
+	font-size: 28px;
+	font-weight: bold;
+}
+.inline-text{
+	display: inline-block;
+}
+
+.description-text{
+	padding-top: 10px;
+/*	font-style: italic;*/
+	color: #3E332F;
+	font-weight: bold;
+}
+.padding-top{
+	padding-top: 20px;
+}
+.content-btn{
+	display: inline-block;
+}
+.post-list-container .post a{
+	line-height: 0px;
+	color: #800000;
+}
+.img-list{
+	padding-top: 20px;
+}

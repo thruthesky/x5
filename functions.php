@@ -122,6 +122,7 @@ abc()->registerRoute(
         'testing',
         'team-viewer',
         'kakao',
+        'manpower-register'
     ]
 );
 
@@ -268,6 +269,7 @@ function get_part_location( $part, $ext = 'php' ) {
     if ( $path ) return $path;
     else return get_template_directory() . "/part/$part.$ext";
 }
+
 function get_header_location() {
     $path = get_domain_part_location( 'header' );
     if ( $path ) return $path;
@@ -275,6 +277,7 @@ function get_header_location() {
     $path = get_template_directory() . "/part/header-$menu_type.php";
     return $path;
 }
+
 
 
 /**
