@@ -2,23 +2,24 @@ section .help.content-four {
     background-color: #6799cb;
 }
 
+section .help.content-four > div {
+    padding: 50px 0;
+}
+
 section .help.content-four h2 {
-    display: inline-block;
-    margin-top: 72px;
-    margin-bottom: 26px;
-    font-size: 34px;
+    display: block;
+    margin-bottom: 46px;
+    font-size: 28px;
     color: #f7eac8;
+    text-align: center;
 }
 
 section .help.content-four .line-faq {
     display: inline-table;
     padding: 6px 0 8px;
+    width: 100%;
     border-bottom: 1px solid #b4c3d2;
     clear: both;
-}
-
-section .help.content-four .line-faq:last-child {
-    margin-bottom: 85px;
 }
 
 section .help.content-four .line-faq .icon {
@@ -32,7 +33,7 @@ section .help.content-four .line-faq .icon {
 section .help.content-four .line-faq .title {
     float: left;
     padding-top: 5px;
-    width: 638px;
+    width: 85%;
     font-size: 18px;
     color: #ffffff;
 }
@@ -41,7 +42,7 @@ section .help.content-four .line-faq .desc {
     display: none;
     float: left;
     padding: 10px 0;
-    width: 638px;
+    width: 100%;
     font-size: 16px;
     color: #ffffff;
 }
@@ -50,6 +51,52 @@ section .help.content-four .line-faq:hover {
     background-color: #73aadc;
     cursor: pointer;
 }
+
+
+
+/* @media */
+
+@media all and (min-width: 380px ) {
+
+}
+
+@media all and (min-width: 480px ) {
+
+}
+
+@media all and (min-width: 600px ) {
+    section .help.content-four > div {
+        padding: 70px 0;
+    }
+    section .help.content-four h2 {
+        font-size: 32px;
+        text-align: left;
+        padding-left: 20px;
+    }
+
+}
+
+@media all and (min-width: 800px ) {
+    section .help.content-four .line-faq {
+        width: 638px;
+    }
+    section .help.content-four h2 {
+        font-size: 32px;
+        text-align: left;
+        padding-left: 20px;
+    }
+}
+
+@media all and (min-width: 980px ) {
+    section .help.content-four > div {
+        padding: 100px 0 140px;
+    }
+}
+@media all and (min-width: 1024px ) {
+
+}
+
+/* EO @media*/
 
 
 

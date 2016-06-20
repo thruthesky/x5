@@ -1,5 +1,5 @@
 section .help.content-two > div {
-    padding: 30px 0;
+    padding: 50px 0;
 }
 
 section .help.content-two {
@@ -9,14 +9,15 @@ section .help.content-two {
 section .help.content-two h2 {
     display: block;
     margin-bottom: 26px;
-    font-size: 34px;
+    font-size: 28px;
     color: #897562;
+    text-align: center;
 }
 
 section .help.content-two .company-picture {
     position: relative;
-    display: block;
-    margin-bottom: 45px;
+    display: inline-block;
+    margin-bottom: 20px;
     max-width: 684px;
     border: 2px solid #cde5d8;
 }
@@ -25,26 +26,24 @@ section .help.content-two .company-picture img {
     width: 100%;
     height: auto;
 }
-
 section .help.content-two .line {
     display: inline-block;
+    width: 100%;
     clear: both;
 }
 
 section .help.content-two .line .title {
     float: left;
     padding: 3px;
-    width: 175px;
-    font-size: 18px;
-    font-weight: 600;
+    width: 150px;
+    font-size: 16px;
     color: #2d2d2d;
 }
 
 section .help.content-two .line .desc {
     float: left;
     padding: 3px;
-    width: 510px;
-    font-size: 18px;
+    font-size: 16px;
     color: #2d2d2d;
 }
 
@@ -55,12 +54,14 @@ body {
 
 #nav-link {
     position: absolute;
-    top: 135px;
+    display: none;
+    top: 165px;
     right: 0;
     height: 126px;
     width: 276px;
     border-radius: 3px;
     background-color: #ff9999;
+    z-index: 200;
 }
 
 .nav-item a {
@@ -77,39 +78,60 @@ body {
 }
 /* EO Spy Scroll */
 
-
+@media all and (min-width: 380px ) {
+    section .help.content-two .line {
+        padding: 0 20px;
+    }
+}
 
 @media all and (min-width: 600px ) {
-    section .help.content-one h2 {
-        font-size: 28px;
+    section .help.content-two > div {
+        padding: 70px 0;
     }
-    section .help.content-one .desc {
-        font-size: 20px;
+    section .help.content-two h2 {
+        font-size: 32px;
+        text-align: left;
+        padding-left: 20px;
+    }
+    section .help.content-two .company-picture {
+        margin-bottom: 45px;
+    }
+    section .help.content-two .line .title {
+        font-size: 18px;
+    }
+    section .help.content-two .line .desc {
+        font-size: 18px;
     }
 }
 
 @media all and (min-width: 800px ) {
-    section .help.content-one h2 {
+    section .help.content-two h2 {
         font-size: 36px;
     }
-    section .help.content-one .desc {
-        font-size: 24px;
+    section .help.content-two .company-picture {
+       margin-left: 20px;
+    }
+    section .help.content-two .line .title {
+        width: 175px;
     }
 }
 
 @media all and (min-width: 980px ) {
     section .help.content-two > div {
-        padding: 70px 0;
+        padding: 100px 0;
     }
-
-    section .help.content-one .banner {
-        right: 0;
+    #nav-link {
+        display: block;
     }
-    section .help.content-one h2 {
-        margin-bottom: 18px;
-        font-size: 48px;
+}
+@media all and (min-width: 1024px ) {
+    section .help.content-two h2 {
+        padding-left: 0;
     }
-    section .help.content-one .desc {
-        font-size: 24px;
+    section .help.content-two .company-picture {
+        margin-left: 0;
+    }
+    section .help.content-two .line {
+        padding: 0;
     }
 }

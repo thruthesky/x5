@@ -2,15 +2,26 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="794ad5a4-b383-48d4-8ccf-ddebf69387d6" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/search.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/searchform.php" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/forum/list-maid.css" afterPath="$PROJECT_DIR$/css/forum/list-maid.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/forum/view-maid.css" afterPath="$PROJECT_DIR$/css/forum/view-maid.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/forum-edit-maid.php" afterPath="$PROJECT_DIR$/forum-edit-maid.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/forum-job-maid.php" afterPath="$PROJECT_DIR$/forum-job-maid.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/forum-list-maid.php" afterPath="$PROJECT_DIR$/forum-list-maid.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/forum-view-maid.php" afterPath="$PROJECT_DIR$/forum-view-maid.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/sitemap/sitemap-icont-payment-list.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/img/header/enrollment-banner1.jpg" afterPath="$PROJECT_DIR$/img/header/enrollment-banner1.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/book-collection.css" afterPath="$PROJECT_DIR$/css/book-collection.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/enrollment-content1.css" afterPath="$PROJECT_DIR$/css/enrollment-content1.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/enrollment-content2.css" afterPath="$PROJECT_DIR$/css/enrollment-content2.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/footer-default.css" afterPath="$PROJECT_DIR$/css/footer-default.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/front-spyscroll.css" afterPath="$PROJECT_DIR$/css/front-spyscroll.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/help-content1.css" afterPath="$PROJECT_DIR$/css/help-content1.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/help-content2.css" afterPath="$PROJECT_DIR$/css/help-content2.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/help-content3.css" afterPath="$PROJECT_DIR$/css/help-content3.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/help-content4.css" afterPath="$PROJECT_DIR$/css/help-content4.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/module.footer.css" afterPath="$PROJECT_DIR$/css/module.footer.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/module.header.css" afterPath="$PROJECT_DIR$/css/module.header.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/sitemap-content2.css" afterPath="$PROJECT_DIR$/css/sitemap-content2.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/functions.php" afterPath="$PROJECT_DIR$/functions.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/help-content2.js" afterPath="$PROJECT_DIR$/js/help-content2.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/part/aside.php" afterPath="$PROJECT_DIR$/part/aside.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/part/enrollment-content1.php" afterPath="$PROJECT_DIR$/part/enrollment-content1.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/part/help-content1.php" afterPath="$PROJECT_DIR$/part/help-content1.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/part/sitemap-content2.php" afterPath="$PROJECT_DIR$/part/sitemap-content2.php" />
     </list>
     <ignored path="x5.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -42,12 +53,24 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="forum-list-maid.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="forum-list-maid.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/forum-list-maid.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="51">
               <caret line="52" column="32" selection-start-line="52" selection-start-column="32" selection-end-line="52" selection-end-column="32" />
               <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="functions.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/functions.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="310">
+              <caret line="265" column="1" selection-start-line="265" selection-start-column="1" selection-end-line="265" selection-end-column="1" />
+              <folding>
+                <marker date="1466423698852" expanded="true" signature="6629:6733" placeholder="..." />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -115,6 +138,7 @@
         <option value="$PROJECT_DIR$/js/list-maid.js" />
         <option value="$PROJECT_DIR$/css/forum/list-maid.css" />
         <option value="$PROJECT_DIR$/forum-list-maid.php" />
+        <option value="$PROJECT_DIR$/functions.php" />
       </list>
     </option>
   </component>
@@ -253,15 +277,15 @@
       <option name="presentableId" value="Default" />
       <updated>1466413020513</updated>
       <workItem from="1466413027180" duration="8000" />
-      <workItem from="1466413039222" duration="11177000" />
+      <workItem from="1466413039222" duration="11379000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="11185000" />
+    <option name="totallyTimeSpent" value="11387000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1296" height="776" extended-state="7" />
+    <frame x="-8" y="-8" width="1296" height="776" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.1875" sideWeight="0.5" order="1" side_tool="false" content_ui="combo" />
@@ -411,6 +435,26 @@
         <state relative-caret-position="51">
           <caret line="52" column="32" selection-start-line="52" selection-start-column="32" selection-end-line="52" selection-end-column="32" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/functions.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="1" column="0" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
+          <folding>
+            <marker date="1466423698852" expanded="true" signature="6629:6733" placeholder="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/functions.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="310">
+          <caret line="265" column="1" selection-start-line="265" selection-start-column="1" selection-end-line="265" selection-end-column="1" />
+          <folding>
+            <marker date="1466423698852" expanded="true" signature="6629:6733" placeholder="..." />
+          </folding>
         </state>
       </provider>
     </entry>
