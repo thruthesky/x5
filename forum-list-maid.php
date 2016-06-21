@@ -49,9 +49,21 @@ wp_enqueue_style('list-maid', td() . '/css/forum/list-maid.css');
 
             <form method="post" action="<?php echo home_url( '/forum/maid' ); ?>">
                 <!-- Search by position -->
-                <div class="col-lg-4">
+                <!-- <div class="col-lg-4">
                     <label for="position">Position</label>
                     <input type="text" name="position" id="position" value="" class="form-control" placeholder="Position"/>
+                </div> -->
+                <div class="col-lg-4">
+                    <label for="position">Position Applied for:</label>
+                    <select name="position" id="position" class="col-lg-12 c-select">
+                        <option selected disabled>Position: </option>
+                        <option value="housemaid">Housemaid (All around Housemaid)</option>
+                        <option value="cook">Cook</option>
+                        <option value="yaya">Yaya (Babysitter)</option>
+                        <option value="caregiver">Caregiver (Oldsitter)</option>
+                        <option value="cleaner">Cleaner</option>
+                    </select>
+
                 </div>
                 <!-- Search by Name -->
                 <div class="col-lg-4">
@@ -158,6 +170,7 @@ wp_enqueue_style('list-maid', td() . '/css/forum/list-maid.css');
             </div>
 
                 <?php
+               
                 $meta_query = array();
                 if ( isset( $_REQUEST['name'] ) && ! empty( $_REQUEST['name']) ) {
                      $meta_query[] = array(
@@ -188,7 +201,7 @@ wp_enqueue_style('list-maid', td() . '/css/forum/list-maid.css');
                          'value' => $_REQUEST['position']
                     );
                 }
-                if( isset( $_REQUEST['age'] ) && ! empty( $_REQUEST['age']) ){
+                if( isset( $age ) && ! empty( $age ) ){
                     $meta_query[] = array(
                         'key' => 'age',
                         'value' => $_REQUEST['age']
@@ -226,7 +239,7 @@ wp_enqueue_style('list-maid', td() . '/css/forum/list-maid.css');
                         // get all attachment IDs and their parent post IDs.
                         $images = new WP_Query( $image_args );
                         if ( $images->have_posts() ){
-                            // get attachments parent post IDs
+                            // get/pluck attachments parent post IDs
                             $parents = wp_list_pluck( $images->posts, 'post_parent' );
                             // remove duplicates and non attached images (zero values)
                             $parents = array_filter( array_unique( $parents ) );
@@ -254,9 +267,10 @@ wp_enqueue_style('list-maid', td() . '/css/forum/list-maid.css');
                 }
 
 
-                /* If $args is not empty, it will execute the WP Query
+                /* If $args is not empty, it will execute the WP Query. 
+                * Because some data aren't meta-data & meta_query only accepts key, value, compare and type as arguments
                 * Whereas, if the $meta_query is not empty, it will put the $meta_query to $args
-                * then execute the WP Query.
+                * then execute the WP Query. 
                 * I there's no $args/$meta_query sent, it will display all posts
                 */
                 if( isset($args) ){
