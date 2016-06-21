@@ -201,10 +201,10 @@ wp_enqueue_style('list-maid', td() . '/css/forum/list-maid.css');
                          'value' => $_REQUEST['position']
                     );
                 }
-                if( isset( $age ) && ! empty( $age ) ){
-                    $meta_query[] = array(
-                        'key' => 'age',
-                        'value' => $_REQUEST['age']
+                if( isset( $_REQUEST['age']  ) && ! empty( $_REQUEST['age']  ) ){
+                    $args = array(
+                        'meta_key' => 'age',
+                        'meta_value' => $_REQUEST['age']
                     );
                 }
                 if( isset( $_REQUEST['korean-speak'] ) && ! empty( $_REQUEST['korean-speak']) ){
