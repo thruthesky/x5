@@ -1,7 +1,7 @@
 <?php 
     $numberofposts = 4;
     $author_id = 1;
-    $content = "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do aliqua.";
+//    $content = "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do aliqua.";
 
     $name = array('Jack Doe', 'Shay Harper', 'Jae Parker', 'Alex Hayfried');
     $rand_name = array_rand($name, 1);
@@ -19,27 +19,12 @@
     $end =  strtotime("1994-12-31");
     $randomDate = date("Y-m-d H:i:s", rand($start, $end));
 
-<<<<<<< HEAD
-=======
+    $category = get_category_by_slug( 'maid'  );
+    $categories  = $category->cat_ID;
 
-
-
-
-$category = get_category_by_slug( 'maid'  );
-
-$categories  = $category->cat_ID;
-
-
-
-
-
-
-
-
->>>>>>> 56c87d08216b359885b6cef3d1de50901acf2c83
     for($i=0; $i < $numberofposts; $i++) {  
         $title = "Maid Applicant ". $i;
-        di("Title: $title<br>");
+//        di("Title: $title<br>");
         // $post_title = get_page_by_title( $title );
         // var_dump($post_title->ID);
             // if( is_null($post_title) ) {
@@ -47,15 +32,12 @@ $categories  = $category->cat_ID;
             $post_id = wp_insert_post(
                 array(
                     'post_title'    => $title,
-                    'post_content'  => $content,
+//                    'post_content'  => $content,
                     'post_status'   => 'publish',
                     'post_date'     => date('Y-m-d H:i:s'),
                     'post_author'   => wp_get_current_user()->ID,
-<<<<<<< HEAD
 //                    'post_category' => $categories
-=======
                     'post_category' => [ $categories ]
->>>>>>> 56c87d08216b359885b6cef3d1de50901acf2c83
                     )
                 );
             // if(isset($post_id)){
