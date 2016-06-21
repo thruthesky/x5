@@ -7,7 +7,7 @@
     $rand_name = array_rand($name, 1);
     $number_small = mt_rand(1,10);
     $number_big = mt_rand(20,50);
-    $speak = array('yes', 'no', 'little');
+    $speak = array('no', 'little', 'good');
     $rand_speak = array_rand($speak, 1);
     $gender = array('M', 'F');
     $rand_gender = array_rand($gender, 1);
