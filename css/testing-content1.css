@@ -22,11 +22,19 @@ section .testing.content-one .desc {
     section .testing.content-one h2 {
         font-size: 28px;
     }
+    section .testing.content-one .desc {
+        font-size: 20px;
+        color: #FFFFFF;
+    }
 }
 
 @media all and (min-width: 800px ) {
     section .testing.content-one h2 {
         font-size: 36px;
+    }
+    section .testing.content-one .desc {
+        font-size: 24px;
+        color: #FFFFFF;
     }
 }
 

@@ -3,7 +3,7 @@ section .testing.content-two > div {
 }
 
 section .testing.content-two .line-faq {
-    padding: 0 20px;
+    padding: 20px;
     width: 100%;
     clear: both;
 }
@@ -11,7 +11,7 @@ section .testing.content-two .line-faq {
 section .testing.content-two .line-faq .title {
     width: 100%;
     padding-top: 10px;
-    font-size: 18px;
+    font-size: 24px;
     color: #04a0d3;
 }
 
@@ -23,10 +23,14 @@ section .testing.content-two .line-faq h2 {
 section .testing.content-two .line-faq .desc {
     display: block;
     margin-top: 10px;
-    padding: 10px 0 20px 10px;
+    padding: 20px;
     font-size: 16px;
     color: #1b3b46;
     background-color: #e7f0f5;
+}
+
+section .testing.content-two .line-faq .text {
+    margin: 20px 0 30px
 }
 
 section .testing.content-two .line-faq .indent {
