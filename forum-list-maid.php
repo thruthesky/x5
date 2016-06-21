@@ -1,5 +1,6 @@
 <?php
 //  include_once 'forum-maid-generate-post.php';
+include_once 'forum-job-maid.php';
 get_header();
 wp_enqueue_style( 'forum-list-basic', FORUM_URL . 'css/forum-list-basic.css' );
 $categories = get_the_category();
@@ -49,9 +50,21 @@ wp_enqueue_style('list-maid', td() . '/css/forum/list-maid.css');
 
             <form method="post" action="<?php echo home_url( '/forum/maid' ); ?>">
                 <!-- Search by position -->
-                <div class="col-lg-4">
+                <!-- <div class="col-lg-4">
                     <label for="position">Position</label>
                     <input type="text" name="position" id="position" value="" class="form-control" placeholder="Position"/>
+                </div> -->
+                <div class="col-lg-4">
+                    <label for="position">Position Applied for:</label>
+                    <select name="position" id="position" class="col-lg-12 c-select">
+                        <option selected disabled>Position: </option>
+                        <option value="housemaid">Housemaid (All around Housemaid)</option>
+                        <option value="cook">Cook</option>
+                        <option value="yaya">Yaya (Babysitter)</option>
+                        <option value="caregiver">Caregiver (Oldsitter)</option>
+                        <option value="cleaner">Cleaner</option>
+                    </select>
+
                 </div>
                 <!-- Search by Name -->
                 <div class="col-lg-4">
@@ -158,6 +171,7 @@ wp_enqueue_style('list-maid', td() . '/css/forum/list-maid.css');
             </div>
 
                 <?php
+               
                 $meta_query = array();
                 if ( isset( $_REQUEST['name'] ) && ! empty( $_REQUEST['name']) ) {
                      $meta_query[] = array(
@@ -188,9 +202,10 @@ wp_enqueue_style('list-maid', td() . '/css/forum/list-maid.css');
                          'value' => $_REQUEST['position']
                     );
                 }
-                if( isset( $_REQUEST['age'] ) && ! empty( $_REQUEST['age']) ){
+                if( isset( $_REQUEST['age']  ) && ! empty( $_REQUEST['age']  ) ){
                     $meta_query[] = array(
                         'key' => 'age',
+                        'compare' => '=',
                         'value' => $_REQUEST['age']
                     );
                 }
@@ -213,8 +228,17 @@ wp_enqueue_style('list-maid', td() . '/css/forum/list-maid.css');
                         'key' => 'stay_in',
                         'value' => $_REQUEST['stay-in']
                     );
-                }
-                if( isset( $_REQUEST['photo'] ) && ! empty( $_REQUEST['photo']) ){
+                }if(!empty( $start = $_REQUEST['date-start']) && !empty($end = $_REQUEST['date-end'])){
+                    $args = array(
+                        'date_query' => array(
+                            array(
+                                'after'     => $start,
+                                'before'    => $end,
+                                'inclusive' => true,
+                            ),
+                        ),
+                    );
+                }if( isset( $_REQUEST['photo'] ) && ! empty( $_REQUEST['photo']) ){
                     $image_args = array(
                         'post_type' => 'attachment',
                         'post_status' => 'inherit',
@@ -226,7 +250,7 @@ wp_enqueue_style('list-maid', td() . '/css/forum/list-maid.css');
                         // get all attachment IDs and their parent post IDs.
                         $images = new WP_Query( $image_args );
                         if ( $images->have_posts() ){
-                            // get attachments parent post IDs
+                            // get/pluck attachments parent post IDs
                             $parents = wp_list_pluck( $images->posts, 'post_parent' );
                             // remove duplicates and non attached images (zero values)
                             $parents = array_filter( array_unique( $parents ) );
@@ -254,13 +278,24 @@ wp_enqueue_style('list-maid', td() . '/css/forum/list-maid.css');
                 }
 
 
-                /* If $args is not empty, it will execute the WP Query
-                * Whereas, if the $meta_query is not empty, it will put the $meta_query to $args
-                * then execute the WP Query.
-                * I there's no $args/$meta_query sent, it will display all posts
+                /* If $args and $meta_query are not empty, it will merge both arrays as $args
+                * Whereas, if only the $meta_query is not empty, it will put the $meta_query to $args
+                * then execute the WP Query. 
+                * If there's no $args/$meta_query sent, it will display all posts
                 */
-                if( isset($args) ){
-                    $query = new WP_Query( $args );
+
+                if( isset($meta_query) && isset($args) ){
+                    $query_data = array(
+                            'post_type' => 'post',
+                            'relation' => 'AND',
+                            'meta_query' => $meta_query
+                    );
+                    $args = array_merge($query_data, $args);
+                    /* NOTE: If both arrays have the same array key,
+                     * the second array will overwrite the first array.
+                     * Therefore, arrays with 'meta_query' is impossible to merge
+                     * to array with 'meta_key' and 'meta_value'.
+                    */ 
 
                 }else if( isset($meta_query) ){
                     $args = array(
@@ -268,7 +303,8 @@ wp_enqueue_style('list-maid', td() . '/css/forum/list-maid.css');
                             'relation' => 'AND',
                             'meta_query' => $meta_query
                     );
-                }else{
+                }
+                else{
                    $args = array(
                         'posts_per_page' => 10
                     );
