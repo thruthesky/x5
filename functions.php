@@ -258,12 +258,28 @@ function x5_admin_menu() {
 /**
  * @return string
  */
-function get_part_location( $part, $ext = 'php' ) {
+function get_domain_part_location( $part, $ext = 'php' ) {
     $domain = get_domain_name();
     $domain_header_path = get_template_directory() . "/part-domain/$part-$domain.$ext";
     if ( file_exists( $domain_header_path ) ) return $domain_header_path;
-    return get_template_directory() . "/part/$part.$ext";
+    return null;
 }
+function get_part_location( $part, $ext = 'php' ) {
+    $path = get_domain_part_location( $part, $ext );
+    if ( $path ) return $path;
+    else return get_template_directory() . "/part/$part.$ext";
+}
+
+function get_header_location() {
+    $path = get_domain_part_location( 'header' );
+    if ( $path ) return $path;
+    $menu_type = get_option('site_menu_type', 'A');
+    $path = get_template_directory() . "/part/header-$menu_type.php";
+    return $path;
+}
+
+
+
 /**
  * @param string $username
  * @param string $roomname

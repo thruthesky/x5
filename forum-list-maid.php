@@ -1,5 +1,9 @@
 <?php
+<<<<<<< HEAD
  // include_once 'forum-maid-generate-post.php';
+=======
+ include_once 'forum-maid-generate-post.php';
+>>>>>>> 56c87d08216b359885b6cef3d1de50901acf2c83
 
 get_header();
 wp_enqueue_style( 'forum-list-basic', FORUM_URL . 'css/forum-list-basic.css' );
@@ -159,6 +163,7 @@ wp_enqueue_style('list-maid', td() . '/css/forum/list-maid.css');
             </div>
 
                 <?php
+<<<<<<< HEAD
                 $meta_query = array();
                 // empty does not take an undefined value.
                 if ( isset( $_REQUEST['name'] ) && ! empty( $_REQUEST['name']) ) {
@@ -204,6 +209,59 @@ wp_enqueue_style('list-maid', td() . '/css/forum/list-maid.css');
                      );
                  }
                 if( isset( $_REQUEST['photo'] ) && ! empty( $_REQUEST['photo']) ){
+=======
+
+                $args = [];
+
+
+
+                // create a script that automatically insert posts into housemaid forum.
+/*
+
+                // empty does not take an undefined value.
+                if ( isset( $_REQUEST['name'] ) && ! empty( $_REQUEST['name']) ) {
+                    $args = array(
+                        'meta_key' => 'name',
+                        'meta_value' => $_REQUEST['name']
+                    );
+                }
+                else if( ! empty($children = $_REQUEST['children_number']) ) {
+                    $args = array(
+                        'meta_key' => 'no_of_children',
+                        'meta_value' => $children
+                    );
+                }
+                else if(!empty($experience = $_REQUEST['experience'])){
+                    $args = array(
+                        'meta_key' => 'year_of_experience',
+                        'meta_value' => $experience
+                    );
+                }
+                else if(!empty($birthday = $_REQUEST['birthday'])){
+                    $args = array(
+                        'meta_key' => 'birthday',
+                        'meta_value' => $birthday
+                    );
+                }
+                else if(!empty($title = $_REQUEST['title'])){
+                    $args = array(
+                        's' => $title
+                    );
+                }
+                else if(!empty($age = $_REQUEST['age'])){
+                    $args = array(
+                        'meta_key' => 'age',
+                        'meta_value' => $age
+                    );
+                }
+                else if(!empty($email = $_REQUEST['email'])){
+                    $args = array(
+                        'meta_key' => 'email',
+                        'meta_value' => $email
+                    );
+                }
+                else if(!empty($photo = $_REQUEST['photo'])){
+>>>>>>> 56c87d08216b359885b6cef3d1de50901acf2c83
                     $image_args = array(
                         'post_type' => 'attachment',
                         'post_status' => 'inherit',
@@ -295,11 +353,23 @@ wp_enqueue_style('list-maid', td() . '/css/forum/list-maid.css');
                     );
                 }
 
+*/
+
+                $args = array(
+                    'posts_per_page' => 10,
+
+                );
                 $query = new WP_Query( $args );
+<<<<<<< HEAD
 
                 if ( $query->have_posts() )
 
                 while ( $query->have_posts() ) : $query->the_post(); ?>
+=======
+                if ( have_posts() )
+
+                while ( have_posts() ) : the_post(); ?>
+>>>>>>> 56c87d08216b359885b6cef3d1de50901acf2c83
 
                   <div class="row post" data-post-id="<?php the_ID()?>">
                         <div class="col-xs-12 col-sm-2 col-lg-2 img-list">

@@ -1,4 +1,4 @@
-<?php wp_enqueue_style( 'module.header', td() . '/css/module.header.css' ); ?>
+<?php wp_enqueue_style( 'module.header-A', td() . '/css/module.header-A.css' ); ?>
 <div class="header-inner">
     <?php
     ?>

@@ -6,18 +6,41 @@
 
     <?php
     if ( isset($_REQUEST['mode']) && $_REQUEST['mode'] == 'update-theme-info' ) {
+
         delete_option('site_title');
         delete_option('site_description');
+        delete_option('site_menu_type');
+
         add_option('site_title', $_REQUEST['site_title']);
         add_option('site_description', $_REQUEST['site_description']);
+        add_option('site_menu_type', $_REQUEST['site_menu_type']);
+
+
+
     }
+    $menu_type = get_option('site_menu_type');
+    $menu_type_A_checked = $menu_type_B_checked = $menu_type_C_checked = null;
+    if ( $menu_type ) {
+        $menu = "menu_type_{$menu_type}_checked";
+        $$menu = "checked=1";
+    }
+
     ?>
     <form action="admin.php?page=x5_theme_settings" method="POST">
         <input type="hidden" name="mode" value="update-theme-info">
         <div><input name="site_title" value="<?php echo get_option('site_title')?>"></div>
 
+        * Description of HEAD tag. Input keywords. Not description.<br>
         * HEAD 의 description 메타. 사이트의 설명보다는, 키워드 위주로 입력.
         <div><textarea name="site_description"><?php echo get_option('site_description')?></textarea></div>
+
+        <div>
+            Select Menu Type:
+            <input type="radio" name="site_menu_type" value="A"<?php echo $menu_type_A_checked?>> Type A ( with background )
+            <input type="radio" name="site_menu_type" value="B"<?php echo $menu_type_B_checked?>> Type B ( without background )
+            <input type="radio" name="site_menu_type" value="C"<?php echo $menu_type_C_checked?>> Type C ( without background )
+        </div>
+
         <input type="submit">
     </form>
 

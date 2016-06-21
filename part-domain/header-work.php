@@ -1,2 +1,2 @@
 <?php
-include get_template_directory() . '/part/header.php';
+include get_template_directory() . '/part/header-A.php';
