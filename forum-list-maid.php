@@ -1,6 +1,5 @@
 <?php
- include_once 'forum-maid-generate-post.php';
-
+ // include_once 'forum-maid-generate-post.php';
 get_header();
 wp_enqueue_style( 'forum-list-basic', FORUM_URL . 'css/forum-list-basic.css' );
 $categories = get_the_category();
@@ -26,12 +25,10 @@ $paged = isset($GLOBALS['wp_query']->query['paged']) ? $GLOBALS['wp_query']->que
 /* Custom CSS*/
 wp_enqueue_style('list-basic', td() . '/css/forum/list-basic.css');
 wp_enqueue_style('list-maid', td() . '/css/forum/list-maid.css');
-// Custom JS for Drop Down
-wp_enqueue_script('list-maid', td() . '/js/list-maid.js', array('jquery'));
 
 ?>
 
-    <main id="post-list" class="forum">
+    <main id="post-list" class="forum" xmlns="http://www.w3.org/1999/html">
         <div class="post-list-meta">
             <div class="top">
                 <!--h1 class="forum-title"><?php echo $category->name?></h1-->
@@ -48,158 +45,71 @@ wp_enqueue_script('list-maid', td() . '/js/list-maid.js', array('jquery'));
         </div>
 
         <!-- SEARCH FORM TEXTBOXES-->
-        <div class="col-lg-10 inline" id="content">
-            <!-- DROPDOWN BOX -->
-            <div class="col-lg-6">
-                <select name="filter" id="filter" class="btn btn-secondary">
-                    <option selected>Search Filters</option>
-                    <option value="1">Search by Title/Content</option>
-                    <option value="2">Search by Name</option>
-                    <option value="3">Search by Number of Children</option>
-                    <option value="4">Search by Age</option>
-                    <option value="5">Search by Years of Experience</option>
-                    <option value="6">Search by Location</option>
-                    <option value="7">Search by Birthday</option>
-                    <option value="8">Search by Email Address</option>
-                    <option value="9">Search by Post Date</option>
-                    <option value="10">With/Without Photo</option>
-                    <option value="11">Search by Gender</option>
-                    <option value="12">Stay In/ Stay Out</option>
-                    <option value="13">Korean Speaking</option>
-                    <option value="14">English Speaking</option>
-                </select>
-            </div>
+        <div class="col-lg-12" id="content">
 
             <form method="post" action="<?php echo home_url( '/forum/maid' ); ?>">
-                <!-- Search by title/content -->
-                <div class="col-lg-4 hideable" id="div1">
-                    <div class="input-group">
-                        <input type="text" name="title" id="title" value="" class="form-control" placeholder="Title/Content"/>
-                        <span class="input-group-btn">
-                            <input type="submit" value="Go!" class="btn btn-danger" />
-                        </span>
-                    </div>
+                <!-- Search by position -->
+                <div class="col-lg-4">
+                    <label for="position">Position</label>
+                    <input type="text" name="position" id="position" value="" class="form-control" placeholder="Position"/>
                 </div>
                 <!-- Search by Name -->
-                <div class="col-lg-4 hideable" id="div2">
-                    <div class="input-group">
-                        <input type="text" name="name" id="name" value="" class="form-control" placeholder="Name"/>
-                        <span class="input-group-btn">
-                            <input type="submit" value="Go!" class="btn btn-danger" />
-                        </span>
-                    </div>
+                <div class="col-lg-4">
+                    <label for="name">Name</label>
+                    <input type="text" name="name" id="name" value="" class="form-control" placeholder="Name"/>
                 </div>
-                <!-- Search by date -->
-                <!-- <div class="col-md-2">
-                    <div class="input-group">
-                        <input type="text" name="start-date" id="start-date" value="" class="form-control" placeholder="Start Date"/>
-                        -
-                        <input type="text" name="end-date" id="end-date" value="" class="form-control" placeholder="End Date"/>
-                        <span class="input-group-btn">
-                            <input type="submit" value="Go!" class="btn btn-danger" />
-                        </span>
-                    </div>
-                </div> -->
                 <!-- Search by number of children -->
-                <div class="col-lg-4 hideable" id="div3">
-                    <div class="input-group">
-                        <input type="text" name="children_number" id="children_number" value="" class="form-control" placeholder="Children"/>
-                        <span class="input-group-btn">
-                            <input type="submit" value="Go!" class="btn btn-danger" />
-                        </span>
-                    </div>
+                <div class="col-lg-4">
+                    <label for="children_number">Number of Children</label>
+                    <input type="text" name="children_number" id="children_number" value="" class="form-control" placeholder="Children"/>
                 </div>
                 <!-- Search by Age -->
-                <div class="col-lg-4 hideable" id="div4">
-                    <div class="input-group">
-                        <input type="text" name="age" id="age" value="" class="form-control" placeholder="Age"/>
-                        <span class="input-group-btn">
-                            <input type="submit" value="Go!" class="btn btn-danger" />
-                        </span>
-                    </div>
+                <div class="col-lg-4">
+                    <label for="age">Age</label>
+                    <input type="text" name="age" id="age" value="" class="form-control" placeholder="Age"/>
                 </div>
                 <!-- Search by Year of Experience -->
-                <div class="col-lg-4 hideable" id="div5">
-                    <div class="input-group">
-                        <input type="text" name="experience" id="experience" value="" class="form-control" placeholder="Experience"/>
-                        <span class="input-group-btn">
-                            <input type="submit" value="Go!" class="btn btn-danger" />
-                        </span>
-                    </div>
-                </div>
-                <!-- Search by Location -->
-                <div class="col-lg-4 hideable" id="div6">
-                    <div class="input-group">
-                        <input type="text" name="location" id="location" value="" class="form-control" placeholder="Location"/>
-                        <span class="input-group-btn">
-                            <input type="submit" value="Go!" class="btn btn-danger" />
-                        </span>
-                    </div>
-                </div>
-                <!-- Search by Birthday -->
-                <div class="col-lg-4 hideable" id="div7">
-                    <div class="input-group">
-                    <input type="date" id="birthday" name="birthday" class="btn btn-secondary" value="">
-                        <span class="input-group-btn">
-                            <input type="submit" value="Go!" class="btn btn-danger" />
-                        </span>
-                    </div>
+                <div class="col-lg-4">
+                    <label for="experience">Experience</label>
+                    <input type="text" name="experience" id="experience" value="" class="form-control" placeholder="Experience"/>
                 </div>
 
-                <!-- Search by Email -->
-                <div class="col-lg-4 hideable" id="div8">
-                    <div class="input-group">
-                        <input type="text" id="email" name="email" class="form-control" value="" placeholder="Email Address" />
-                        <span class="input-group-btn">
-                            <input type="submit" value="Go!" class="btn btn-danger" />
-                        </span>
-                    </div>
-                </div>
-                
-                 <!-- Search by Post Date -->
-                <div class="col-lg-10 hideable inline" id="div9">
-                    <div class="col-lg-4">
-                        <input type="date" id="date-start" name="date-start" class="form-control" value=""/>
-                        </div>
-                    <div class="col-lg-4">
-                        <input type="date" id="date-end" name="date-end" class="form-control" value=""/>
-                        </div>
-                    <div class="col-lg-2">
-                        <input type="submit" value="Go!" class="btn btn-danger" />
-                    </div>
-                </div>
 
-                <!-- Search by With/Without Photo-->
-                <div class="col-lg-4 hideable" id="div10">
-                    <select name="photo" onchange='this.form.submit()' class="btn btn-secondary">
-                        <option value="" selected="selected">Image: </option>
-                        <option value="yes">With Photo</option>
-                        <option value="no">Without Photo</option>
-                    </select> 
-                </div>                
-                
                 <!-- Search by Gender -->
-                <div class="col-lg-4 hideable" id="div11">
-                    <select name="gender" onchange='this.form.submit()' class="btn btn-secondary">
+                <div class="col-lg-4">
+                    <label for="gender">Gender</label>
+                    <select name="gender" id="gender" class="col-lg-12 c-select">
                         <option selected disabled="">Gender:</option>
                         <option value="M">Male </option>
                         <option value="F">Female</option>
-                    </select> 
+                    </select>
+                </div>
+
+                <!-- Search by With/Without Photo-->
+                <div class="col-lg-4">
+                    <label for="photo">Image</label>
+                    <select name="photo" id="photo" class="col-lg-12 c-select">
+                        <option selected disabled>Image: </option>
+                        <option value="yes">With Photo</option>
+                        <option value="no">Without Photo</option>
+                    </select>
                 </div>
 
                 <!-- Search by Stay-in/out  -->
-                <div class="col-lg-4 hideable" id="div12">
-                    <select name="stay-in" onchange='this.form.submit()' class="btn btn-secondary">
-                        <option selected disabled="">House Staying:</option>
+                <div class="col-lg-4">
+                    <label for="stay-in">House Staying</label>
+                    <select name="stay-in" id="stay-in" class="col-lg-12 c-select">
+                        <option selected disabled>House Staying:</option>
                         <option value="yes">Stay-In </option>
                         <option value="no">Stay-Out</option>
                     </select> 
                 </div>
 
                 <!-- Search by Korean Speaking -->
-                <div class="col-lg-4 hideable" id="div13">
-                    <select name="korean-speak" onchange='this.form.submit()' class="btn btn-secondary">
-                        <option selected disabled="">Korean Speaking:</option>
+                <div class="col-lg-4">
+                    <label for="korean-speak">Korean Speaking</label>
+                    <select name="korean-speak" id="korean-speak" class="col-lg-12 c-select">
+                        <option selected disabled>Korean Speaking:</option>
                         <option value="no"> Can't Speak Korean </option>
                         <option value="little">Can Speak Korean a little</option>
                         <option value="good">Can Speak Korean fluently</option>
@@ -207,13 +117,29 @@ wp_enqueue_script('list-maid', td() . '/js/list-maid.js', array('jquery'));
                 </div>
 
                  <!-- Search by English Speaking -->
-                <div class="col-lg-4 hideable" id="div14">
-                    <select name="english-speak" onchange='this.form.submit()' class="btn btn-secondary">
-                        <option selected disabled="">English Speaking:</option>
+                <div class="col-lg-4">
+                    <label for="english-speak">English Speaking</label>
+                    <select name="english-speak" id="english-speak" class="col-lg-12 c-select">
+                        <option selected disabled>English Speaking:</option>
                         <option value="no"> Can't Speak English </option>
                         <option value="little">Can Speak English a little</option>
                         <option value="good">Can Speak English fluently</option>
                     </select> 
+                </div>
+
+                <!-- Search by Post Date -->
+                <label for="post-date">Post Date Range:</label>
+                <div id="post-date">
+                    <div class="col-lg-4">
+                        <input type="date" id="date-start" name="date-start" class="form-control" value=""/>
+                    </div>
+                    <div class="col-lg-4">
+                        <input type="date" id="date-end" name="date-end" class="form-control" value=""/>
+                    </div>
+                </div>
+
+                <div class="col-lg-12">
+                    <input type="submit" value="Search!" class="btn btn-danger pull-lg-right btn-search" />
                 </div>
 
             </form>
@@ -232,143 +158,114 @@ wp_enqueue_script('list-maid', td() . '/js/list-maid.js', array('jquery'));
             </div>
 
                 <?php
-
-                $args = [];
-
-
-
-                // create a script that automatically insert posts into housemaid forum.
-/*
-
+                $meta_query = array();
                 // empty does not take an undefined value.
                 if ( isset( $_REQUEST['name'] ) && ! empty( $_REQUEST['name']) ) {
-                    $args = array(
-                        'meta_key' => 'name',
-                        'meta_value' => $_REQUEST['name']
+                     $meta_query[] = array(
+                        'key' => 'name',
+                        'value' => $_REQUEST['name'],
+                        'compare' => 'LIKE'
                     );
                 }
-                else if( ! empty($children = $_REQUEST['children_number']) ) {
-                    $args = array(
-                        'meta_key' => 'no_of_children',
-                        'meta_value' => $children
+                if( isset( $_REQUEST['children_number'] ) && ! empty( $_REQUEST['children_number']) ) {
+                     $meta_query[] = array(
+                        'key' => 'no_of_children',
+                         'compare' => '=',
+                        'value' => $_REQUEST['children_number']
                     );
                 }
-                else if(!empty($experience = $_REQUEST['experience'])){
-                    $args = array(
-                        'meta_key' => 'year_of_experience',
-                        'meta_value' => $experience
+                if( isset( $_REQUEST['experience'] ) && ! empty( $_REQUEST['experience']) ){
+                     $meta_query[] = array(
+                        'key' => 'year_of_experience',
+                         'compare' => '=',
+                        'value' => $_REQUEST['experience']
                     );
                 }
-                else if(!empty($birthday = $_REQUEST['birthday'])){
-                    $args = array(
-                        'meta_key' => 'birthday',
-                        'meta_value' => $birthday
+                if( isset( $_REQUEST['position'] ) && ! empty( $_REQUEST['position']) ){
+                    $meta_query[] = array(
+//                        's' => 'title',
+//                         'compare' => 'LIKE',
+                        'key' => 'position',
+                        'compare' => 'LIKE',
+                         'value' => $_REQUEST['position']
                     );
                 }
-                else if(!empty($title = $_REQUEST['title'])){
-                    $args = array(
-                        's' => $title
+                if( isset( $_REQUEST['age'] ) && ! empty( $_REQUEST['age']) ){
+                    $meta_query[] = array(
+                        'key' => 'age',
+                        'value' => $_REQUEST['age']
                     );
                 }
-                else if(!empty($age = $_REQUEST['age'])){
-                    $args = array(
-                        'meta_key' => 'age',
-                        'meta_value' => $age
-                    );
-                }
-                else if(!empty($email = $_REQUEST['email'])){
-                    $args = array(
-                        'meta_key' => 'email',
-                        'meta_value' => $email
-                    );
-                }
-                else if(!empty($photo = $_REQUEST['photo'])){
+                 if( isset( $_REQUEST['email'] ) && ! empty( $_REQUEST['email']) ){
+                      $meta_query[] = array(
+                         'meta_key' => 'email',
+                         'meta_value' => $_REQUEST['email']
+                     );
+                 }
+                if( isset( $_REQUEST['photo'] ) && ! empty( $_REQUEST['photo']) ){
                     $image_args = array(
                         'post_type' => 'attachment',
                         'post_status' => 'inherit',
                         'post_mime_type' => 'image/jpeg',
                         'fields' => 'id=>parent'
                     );
-                    if($photo == yes){
+                    if($_REQUEST['photo'] == yes){
 
-                    // get all attachment IDs and their parent post IDs.
+                        // get all attachment IDs and their parent post IDs.
                         $images = new WP_Query( $image_args );
                         if ( $images->have_posts() ){
                             // get attachments parent post IDs
                             $parents = wp_list_pluck( $images->posts, 'post_parent' );
                             // remove duplicates and non attached images (zero values)
-                            $parents = array_filter( array_unique( $parents ) ); 
+                            $parents = array_filter( array_unique( $parents ) );
                             // query for posts with images
                             $args = array(
-//                                'posts_per_page' => -1,
                                 'post__in' => $parents
                             );
                         }
 
                     }
-                    else{
-                    // get all attachment IDs and their parent post IDs.
-                        $images = new WP_Query( $image_args );
-                        if ( $images->have_posts() ){
+                    else {
+                        // get all attachment IDs and their parent post IDs.
+                        $images = new WP_Query($image_args);
+                        if ($images->have_posts()) {
                             // get attachments parent post IDs: wp_list_pluck(list,field);
-                            $parents = wp_list_pluck( $images->posts, 'post_parent' );
+                            $parents = wp_list_pluck($images->posts, 'post_parent');
                             // remove duplicates and non attached images (parent == 0)
-                            $parents = array_filter( array_unique( $parents ) );
+                            $parents = array_filter(array_unique($parents));
                             // query for posts without images
                             $args = array(
-//                                'posts_per_page' => -1,
                                 'post__not_in' => $parents
                             );
                         }
                     }
-
-                }else if(!empty( $start = $_REQUEST['date-start']) && !empty($end = $_REQUEST['date-end'])){
-                    $args = array(
-                        'date_query' => array(
-                            array(
-                                'after'     => $start,
-                                'before'    => $end,
-                                'inclusive' => true,
-                            ),
-                        ),
-                    );
-                }else if(!empty($korean_speak = $_REQUEST['korean-speak'])){
-                    $args = array(
-                        'meta_key' => 'korean_speak',
-                        'meta_value' => $korean_speak
-                    );
-                }else if(!empty($english_speak = $_REQUEST['english-speak'])){
-                    $args = array(
-                        'meta_key' => 'english_speak',
-                        'meta_value' => $english_speak
-                    );
-                }else if(!empty($stay = $_REQUEST['stay-in'])){
-                    $args = array(
-                        'meta_key' => 'stay_in',
-                        'meta_value' => $stay
-                    );
-                }else if(!empty($gender = $_REQUEST['gender'])){
-                    $args = array(
-                        'meta_key' => 'gender',
-                        'meta_value' => $gender
-                    );
                 }
-                else{ //If there's no value/data received from any textbox
+
+
+                /* If $args is not empty, it will execute the WP Query
+                * Whereas, if the $meta_query is not empty, it will put the $meta_query to $args
+                * then execute the WP Query.
+                * I there's no $args/$meta_query sent, it will display all posts
+                */
+                if( isset($args) ){
+                    $query = new WP_Query( $args );
+
+                }else if( isset($meta_query) ){
                     $args = array(
+                            'post_type' => 'post',
+                            'relation' => 'AND',
+                            'meta_query' => $meta_query
+                    );
+                }else{
+                   $args = array(
                         'posts_per_page' => 10
                     );
                 }
-
-*/
-
-                $args = array(
-                    'posts_per_page' => 10,
-
-                );
                 $query = new WP_Query( $args );
-                if ( have_posts() )
 
-                while ( have_posts() ) : the_post(); ?>
+                if ( $query->have_posts() )
+
+                while ( $query->have_posts() ) : $query->the_post(); ?>
 
                   <div class="row post" data-post-id="<?php the_ID()?>">
                         <div class="col-xs-12 col-sm-2 col-lg-2 img-list">
