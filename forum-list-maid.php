@@ -1,5 +1,5 @@
 <?php
- // include_once 'forum-maid-generate-post.php';
+//  include_once 'forum-maid-generate-post.php';
 get_header();
 wp_enqueue_style( 'forum-list-basic', FORUM_URL . 'css/forum-list-basic.css' );
 $categories = get_the_category();
@@ -159,7 +159,6 @@ wp_enqueue_style('list-maid', td() . '/css/forum/list-maid.css');
 
                 <?php
                 $meta_query = array();
-                // empty does not take an undefined value.
                 if ( isset( $_REQUEST['name'] ) && ! empty( $_REQUEST['name']) ) {
                      $meta_query[] = array(
                         'key' => 'name',
@@ -184,7 +183,6 @@ wp_enqueue_style('list-maid', td() . '/css/forum/list-maid.css');
                 if( isset( $_REQUEST['position'] ) && ! empty( $_REQUEST['position']) ){
                     $meta_query[] = array(
 //                        's' => 'title',
-//                         'compare' => 'LIKE',
                         'key' => 'position',
                         'compare' => 'LIKE',
                          'value' => $_REQUEST['position']
@@ -196,12 +194,26 @@ wp_enqueue_style('list-maid', td() . '/css/forum/list-maid.css');
                         'value' => $_REQUEST['age']
                     );
                 }
-                 if( isset( $_REQUEST['email'] ) && ! empty( $_REQUEST['email']) ){
-                      $meta_query[] = array(
-                         'meta_key' => 'email',
-                         'meta_value' => $_REQUEST['email']
-                     );
-                 }
+                if( isset( $_REQUEST['korean-speak'] ) && ! empty( $_REQUEST['korean-speak']) ){
+                    $meta_query[] = array(
+                        'key' => 'korean_speak',
+                        'compare' => '=',
+                        'value' => $_REQUEST['korean-speak']
+                    );
+                }
+                if( isset( $_REQUEST['english-speak'] ) && ! empty( $_REQUEST['english-speak']) ){
+                    $meta_query[] = array(
+                        'key' => 'english_speak',
+                        'compare' => '=',
+                        'value' => $_REQUEST['english-speak']
+                    );
+                }
+                if( isset( $_REQUEST['stay-in'] ) && ! empty( $_REQUEST['stay-in']) ){
+                    $meta_query[] = array(
+                        'key' => 'stay_in',
+                        'value' => $_REQUEST['stay-in']
+                    );
+                }
                 if( isset( $_REQUEST['photo'] ) && ! empty( $_REQUEST['photo']) ){
                     $image_args = array(
                         'post_type' => 'attachment',
