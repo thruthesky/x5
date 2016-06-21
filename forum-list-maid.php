@@ -226,8 +226,17 @@ wp_enqueue_style('list-maid', td() . '/css/forum/list-maid.css');
                         'key' => 'stay_in',
                         'value' => $_REQUEST['stay-in']
                     );
-                }
-                if( isset( $_REQUEST['photo'] ) && ! empty( $_REQUEST['photo']) ){
+                }if(!empty( $start = $_REQUEST['date-start']) && !empty($end = $_REQUEST['date-end'])){
+                    $args = array(
+                        'date_query' => array(
+                            array(
+                                'after'     => $start,
+                                'before'    => $end,
+                                'inclusive' => true,
+                            ),
+                        ),
+                    );
+                }if( isset( $_REQUEST['photo'] ) && ! empty( $_REQUEST['photo']) ){
                     $image_args = array(
                         'post_type' => 'attachment',
                         'post_status' => 'inherit',
