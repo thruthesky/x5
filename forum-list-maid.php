@@ -1,5 +1,6 @@
 <?php
 //  include_once 'forum-maid-generate-post.php';
+include_once 'forum-job-maid.php';
 get_header();
 wp_enqueue_style( 'forum-list-basic', FORUM_URL . 'css/forum-list-basic.css' );
 $categories = get_the_category();
@@ -202,9 +203,10 @@ wp_enqueue_style('list-maid', td() . '/css/forum/list-maid.css');
                     );
                 }
                 if( isset( $_REQUEST['age']  ) && ! empty( $_REQUEST['age']  ) ){
-                    $args = array(
-                        'meta_key' => 'age',
-                        'meta_value' => $_REQUEST['age']
+                    $meta_query[] = array(
+                        'key' => 'age',
+                        'compare' => '=',
+                        'value' => $_REQUEST['age']
                     );
                 }
                 if( isset( $_REQUEST['korean-speak'] ) && ! empty( $_REQUEST['korean-speak']) ){
@@ -282,8 +284,6 @@ wp_enqueue_style('list-maid', td() . '/css/forum/list-maid.css');
                 * If there's no $args/$meta_query sent, it will display all posts
                 */
 
-
-
                 if( isset($meta_query) && isset($args) ){
                     $query_data = array(
                             'post_type' => 'post',
@@ -291,6 +291,11 @@ wp_enqueue_style('list-maid', td() . '/css/forum/list-maid.css');
                             'meta_query' => $meta_query
                     );
                     $args = array_merge($query_data, $args);
+                    /* NOTE: If both arrays have the same array key,
+                     * the second array will overwrite the first array.
+                     * Therefore, arrays with 'meta_query' is impossible to merge
+                     * to array with 'meta_key' and 'meta_value'.
+                    */ 
 
                 }else if( isset($meta_query) ){
                     $args = array(
