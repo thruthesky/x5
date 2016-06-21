@@ -276,14 +276,21 @@ wp_enqueue_style('list-maid', td() . '/css/forum/list-maid.css');
                 }
 
 
-                /* If $args is not empty, it will execute the WP Query. 
-                * Because some data aren't meta-data & meta_query only accepts key, value, compare and type as arguments
-                * Whereas, if the $meta_query is not empty, it will put the $meta_query to $args
+                /* If $args and $meta_query are not empty, it will merge both arrays as $args
+                * Whereas, if only the $meta_query is not empty, it will put the $meta_query to $args
                 * then execute the WP Query. 
-                * I there's no $args/$meta_query sent, it will display all posts
+                * If there's no $args/$meta_query sent, it will display all posts
                 */
-                if( isset($args) ){
-                    $query = new WP_Query( $args );
+
+
+
+                if( isset($meta_query) && isset($args) ){
+                    $query_data = array(
+                            'post_type' => 'post',
+                            'relation' => 'AND',
+                            'meta_query' => $meta_query
+                    );
+                    $args = array_merge($query_data, $args);
 
                 }else if( isset($meta_query) ){
                     $args = array(
@@ -291,7 +298,8 @@ wp_enqueue_style('list-maid', td() . '/css/forum/list-maid.css');
                             'relation' => 'AND',
                             'meta_query' => $meta_query
                     );
-                }else{
+                }
+                else{
                    $args = array(
                         'posts_per_page' => 10
                     );
