@@ -57,7 +57,7 @@ body {
 }
 
 @media all and ( min-width: 940px ) {
-    .home .scroll-menu { display: block; }
+
 }
 @media all and ( min-width: 1024px ) {
     .home #nav-link a {
