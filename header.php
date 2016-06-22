@@ -30,5 +30,6 @@ ob_start();
 
 
         <section class="data">
-            <?php if ( segment(0) == 'forum' ){ include 'part/forum-content1.php';  } ?>
             <?php include 'part/aside.php'; ?>
+            <?php if ( segment(0) == 'forum' ){ include 'part/forum-content1.php';  } ?>
+

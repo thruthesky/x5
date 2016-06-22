@@ -4,9 +4,7 @@
 #content{
 	padding:10px 0px 10px 0px;
 }
-.hideable{
-	display: none;
-}
+
 .img-list{
 	height:180px;
 	width: 200px; 
@@ -50,4 +48,9 @@
 }
 .img-list{
 	padding-top: 20px;
+}
+.btn-search{
+	margin-top: 10px;
+	border-radius: 1px;
+	width: 20%;
 }

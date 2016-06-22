@@ -18,8 +18,17 @@ jQuery( function( $ ) {
     setTimeout(function() {
         spyElementTops = getScrollTops();
     }, 5000);
+
     $(document).scroll(_.debounce( function () {
         var st = $(window).scrollTop();
+        var window_width = $(window).width();
+        var slider_height = $('.my-slider').height();
+        if( st >= slider_height && window_width >= 940){
+            $('.scroll-menu').css('display', 'block');
+        }
+        else{
+            $('.scroll-menu').css('display', 'none');
+        }
         for ( var e in spyElementTops ) {
             var top = spyElementTops[e];
             if ( st > top ) {

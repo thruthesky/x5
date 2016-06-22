@@ -1,54 +1,42 @@
-section .testing.content-two {
-
-}
-
-section .testing.content-two .container {
-    margin: 70px 20px 100px;
+section .testing.content-two > div {
+    padding: 70px 0;
 }
 
 section .testing.content-two .line-faq {
-    display: inline-block;
-    margin-bottom: 15px;
-    border-bottom: 1px solid #b4c3d2;
+    padding: 20px;
     width: 100%;
     clear: both;
-}
-
-section .testing.content-two .line-faq .icon {
-    float: left;
-    margin: 5px 10px 5px 5px;
-    padding: 0;
-    width: 26px;
-    height: 26px;
 }
 
 section .testing.content-two .line-faq .title {
     width: 100%;
     padding-top: 10px;
-    font-size: 18px;
+    font-size: 24px;
     color: #04a0d3;
+}
+
+section .testing.content-two .line-faq h2 {
+    font-size: 24px;
+    margin-bottom: 30px;
 }
 
 section .testing.content-two .line-faq .desc {
     display: block;
     margin-top: 10px;
-    padding: 10px 0 20px 10px;
+    padding: 20px;
     font-size: 16px;
     color: #1b3b46;
     background-color: #e7f0f5;
 }
 
-section .testing.content-two .line-faq strong {
-    font-size: 18px;
+section .testing.content-two .line-faq .text {
+    margin: 20px 0 30px
 }
 
 section .testing.content-two .line-faq .indent {
     margin-left: 40px
 }
 
-section .testing.content-two .line-faq:hover {
-    cursor: pointer;
-}
 
 
 

@@ -1,0 +1,57 @@
+section .under_construction {
+
+}
+
+section .under_construction > div {
+    padding: 100px 0 150px;
+}
+
+
+section .under_construction h2 {
+    width: 100%;
+    font-size: 72px;
+    font-weight: 600;
+    color: #2a80b9;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+section .under_construction .desc {
+    padding: 0 120px;
+    width: 100%;
+    font-size: 24px;
+    color: #939393;
+    text-align: center;
+    margin-bottom: 70px;
+}
+
+section .under_construction .row {
+    margin: 0;
+    padding: 0 30px;
+}
+
+
+section .under_construction .col-sm-4 {
+    position: relative;
+    margin: 0;
+    padding: 0 20px 0 90px;
+    height: 70px;
+}
+
+section .under_construction img {
+    position: absolute;
+    left: 0;
+}
+
+section .under_construction .title {
+    display: block;
+    margin-top: 10px;
+    font-size: 20px;
+    color: #000000;
+}
+
+section .under_construction .sub-title {
+    display: block;
+    font-size: 16px;
+    color: #d31717;
+}
