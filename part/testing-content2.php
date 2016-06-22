@@ -69,7 +69,7 @@ wp_enqueue_style('testing-content2', td() . '/css/testing-content2.css');
                         <a href='http://windowsupdate.microsoft.com/' target='_blank'><?php _text("service packs and updates") ?></a>
                     </div>
                     <div class="text"><?php _text("For Windows XP, you can download it") ?>
-                        <a href='http://www.microsoft.com/downloads/en/details.aspx?FamilyID=2da43d38-db71-4c1b-bc6a-9b6652cd92a3' target='_blank'><?php _text("here") ?></a>.")?>
+                        <a href='http://www.microsoft.com/downloads/en/details.aspx?FamilyID=2da43d38-db71-4c1b-bc6a-9b6652cd92a3' target='_blank'><?php _text("HERE") ?></a>
                     </div>
                 </div>
             </div>
