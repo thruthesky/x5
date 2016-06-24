@@ -5,6 +5,9 @@ header {
 }
 
 /** Logo */
+.header-inner {
+    text-align: center;
+}
 header .logo {
     display: inline-block;
     padding-top: 30px;
@@ -200,7 +203,7 @@ nav.top-menu ul li.active a span {
     }
     header .menu {
         position: absolute;
-        display: block !important;
+        display: inline-block !important;
         bottom: 0.9375em;
         right: 0;
     }
@@ -222,6 +225,36 @@ nav.top-menu ul li.active a span {
     }
     header nav.menu ul li:hover {
         background-color: transparent;
+    }
+}
+
+@media ( min-width:600px ) and ( max-width: 850px ) {
+    .header-inner {
+        text-align: center;
+        height: 150px;
+    }
+    nav.top-menu {
+        top: 0;
+    }
+    nav.top-menu ul li a,
+    nav.top-menu ul li > span {
+        padding: 0 5px;
+    }
+    header .logo {
+        width: 100%;
+    }
+    header nav.menu {
+        position: relative;
+        display: inline-block;
+        text-align: center;
+    }
+    section.content {
+        margin: 150px auto 0;
+    }
+}
+@media all and ( min-width: 850px ) {
+    .header-inner {
+        text-align: left;
     }
 }
 
