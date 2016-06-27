@@ -1,0 +1,39 @@
+section .payment-list.content-two > div {
+    padding: 70px 0;
+}
+
+
+section .payment-list.content-two .row {
+    margin: 0 0 35px;
+}
+
+section .payment-list.content-two .left {
+    margin-bottom: 30px;
+}
+
+section .payment-list.content-two .table {
+    font-size: 12px;
+
+}
+
+@media all and (min-width: 380px) {
+
+}
+
+@media all and (min-width: 544px) {
+    section .payment-list.content-two .right {
+        text-align: right;
+    }
+    section .payment-list.content-two .left {
+        margin-bottom: 0;
+    }
+    section .payment-list.content-two .table {
+        font-size: 14px;
+    }
+}
+
+@media all and (min-width: 786px) {
+    section .payment-list.content-two .table {
+        font-size: 16px;
+    }
+}
