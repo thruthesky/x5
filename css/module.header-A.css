@@ -139,6 +139,7 @@ header nav.menu {
     background-color: #2980b9;
     color: #FFFFFF;
     border: 0;
+    text-align: left;
 }
 
 header nav.menu ul li:hover {
