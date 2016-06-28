@@ -1,0 +1,62 @@
+section.AGS_pay.content-two > div {
+    padding: 70px 0;
+}
+
+.payment .row {
+    margin: 0 0 3rem;
+}
+.payment .header {
+    padding: 0 1em;
+}
+
+.payment .header .title {
+    margin-bottom: .4em;
+    font-size: 1.5em;
+}
+
+.payment .header-summary img {
+    vertical-align: bottom;
+}
+
+.payment .header-summary .title {
+    display: inline-block;
+    font-size: 44px;
+}
+
+.payment .header-summary .title > span {
+    font-size: 20px;
+    padding-left: 5px;
+}
+
+.payment .line {
+    overflow: auto;
+    overflow-y: hidden;
+}
+
+.payment .line:nth-child(even) {
+    background-color: #efefef;
+}
+
+.payment .line > div {
+    margin: .2em 0;
+    padding: .6em .8em;
+    float: left;
+}
+
+.payment .line .caption {
+    width: 20%;
+}
+
+.payment .line .text {
+    min-width: 240px;
+}
+
+
+.payment .line .text .print-receipt {
+    margin: 0;
+    padding: 1em;
+    background-color: #9a9ea9;
+    box-sizing: border-box;
+    color: white;
+    cursor: pointer;
+}

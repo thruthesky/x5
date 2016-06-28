@@ -1,0 +1,32 @@
+section .AGS_pay_result.content-one .banner {
+    position: absolute;
+    display: inline-block;
+    top: 0;
+    left: 5%;
+    margin-top: 10%;
+}
+
+section .AGS_pay_result.content-one h2 {
+    display: inline-block;
+    font-size: 24px;
+    color: #0272c2;
+}
+
+@media all and (min-width: 600px ) {
+    section .AGS_pay_result.content-one h2 {
+        font-size: 28px;
+    }
+}
+
+@media all and (min-width: 800px ) {
+    section .AGS_pay_result.content-one h2 {
+        font-size: 36px;
+    }
+}
+
+@media all and (min-width: 980px ) {
+    section .AGS_pay_result.content-one h2 {
+        margin-bottom: 18px;
+        font-size: 48px;
+    }
+}
