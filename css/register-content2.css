@@ -22,11 +22,30 @@ section .register.content-two .button input {
     display:inline-block;
     padding: 0;
     width: 100%;
-    height: 30px;
+    height: 50px;
     border: 0;
     border-radius: 3px;
     font-weight: 700;
 }
+
+section .register.content-two .header-detail {
+    position: relative;
+    margin: 10px 25px;
+    font-size: 12px;
+    overflow: hidden;
+}
+
+section .register.content-two .header-detail:after {
+    display: inline-block;
+    content: "";
+    height: 1px;
+    background: #bbb;
+    position: absolute;
+    width: 100%;
+    top: 50%;
+    margin-left: 10px;
+}
+
 
 section .register.content-two  input[type='submit'] {
     color: #FFFFFF;
@@ -39,30 +58,37 @@ section .register.content-two  input[type='button'] {
     text-align: center;
 }
 
-section .register.content-two .line,
-section .register.content-two .agree-line {
+section .register.content-two .line {
+    position: relative;
     padding: 10px;
     clear: both;
 }
 
+section .register.content-two .agree-line {
+    padding: 22px;
+    clear: both;
+}
+
 section .register.content-two .line label {
-    float: left;
-    padding: 6px 0;
-    width: 100px;
-    color: #1e1e1e;
-    border-radius: 3px;
+    position: absolute;
+    margin: 0;
+    padding: 0;
+    top: 15px;
+    left: 25px;
+    color: #bbbbbb;
     font-size: 12px;
     font-family: "Arial", "Open Sans", sans-serif;
 }
 
 section .register.content-two input[tabindex="101"] {
-    height: 30px;
+    height: 50px;
     outline: 0;
-    padding: 7px;
-    width: 200px;
+    padding: 18px 0 0 14px;
+    width: 100%;
     border-radius: 3px;
     border: 1px solid #c6c6c6;
-    font-size: 12px;
+    color: #545454;
+    font-size: 16px;
     font-family: "Arial", "Open Sans", sans-serif;
 }
 
@@ -75,58 +101,21 @@ section .register.content-two input:-webkit-autofill {
 }
 
 @media all and (min-width: 380px ) {
-    section .register.content-two input[tabindex="101"] {
-        width: 250px;
-    }
+
 }
 
 @media all and (min-width: 480px ) {
-    section .register.content-two .line label {
-        width: 120px;
-    }
+
 }
 
 @media all and (min-width: 600px ) {
     section .register.content-two > div {
         padding: 50px 0;
     }
-    section .register.content-two input[tabindex="101"] {
-        width: 280px;
-        height: 40px;
-        font-size: 14px;
-    }
-    section .register.content-two .button input {
-        height: 40px;
-    }
-    section .register.content-two .line label {
-        padding: 10px 0;
-        width: 140px;
-        font-size: 14px;
-    }
 }
 
 @media all and (min-width: 800px ) {
     section .register.content-two > div {
         padding: 100px 0;
-    }
-    section .register.content-two input[tabindex="101"] {
-        height: 50px;
-        font-size: 16px;
-    }
-    section .register.content-two .button input {
-        height: 50px;
-    }
-
-    section .register input#user_email {
-        min-width: 360px;
-    }
-
-    section .register input#address {
-        min-width: 450px;
-    }
-    section .register.content-two .line label {
-        padding: 13px 0;
-        width: 150px;
-        font-size: 16px;
     }
 }
