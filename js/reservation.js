@@ -9,6 +9,7 @@ jQuery(function($){
 
     d = new Date();
     var $now = d.yyyymmdd();
+        $('.teacher_icon').tooltip();
 
         $('.book').popover({
             html: true,

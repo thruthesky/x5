@@ -116,6 +116,6 @@ section .register.content-two input:-webkit-autofill {
 
 @media all and (min-width: 800px ) {
     section .register.content-two > div {
-        padding: 100px 0;
+        padding: 70px 0;
     }
 }

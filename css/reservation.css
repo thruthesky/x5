@@ -1,6 +1,22 @@
 .reservation.content-two > div {
-    padding: 100px 0;
+    padding: 40px 0;
     text-align: center;
+}
+.reservation.content-two .row {
+    margin: 0;
+
+}
+
+.reservation.content-two .row .left {
+    text-align: left;
+}
+
+.reservation.content-two .row .right {
+    text-align: right;
+}
+
+.reservation.content-two .row .title {
+    margin: 1rem 0 1rem;
 }
 
 .reservation.content-two .desc {
@@ -9,54 +25,51 @@
 
 .reservation.content-two .btn {
     position: relative;
-    width: 150px;
     padding: 0;
+    height: 47px;
     font-size: 18px;
-    font-weight: 800;
-    color: #2d2d2d;
 }
 
+.reservation.content-two .my-teacher .teacher_icon {
+    float: right;
+    display:block;
+    width: 45px;
+    height: 45px;
+    overflow: hidden;
+    border-radius: 50%;
+}
+
+.reservation.content-two .my-teacher .teacher_icon img {
+    width: 100%;
+    height: auto;
+}
+
+.reservation.content-two .btn > span,
 .reservation.content-two .btn > a {
+    position: absolute;
     display: block;
-    padding: 10px 0;
     text-decoration: none;
-}
-
-.reservation.content-two .btn > span {
-    padding: 10px;
-    display: block;
+    width: 100%;
+    top: 2px;
+    color: #ffffff;
 }
 
 .reservation.content-two nav.month {
-    padding: 10px 20px 0 0;
-    margin-bottom: 20px;
+    padding: 2rem 0 0;
     text-align: center;
 }
-
-.reservation.content-two nav.month i {
-    position: absolute;
-    display: block;
-    padding: 0;
-    margin: 0;
-    width: 0;
-    height: 0;
-    bottom: 0;
-    right: 0;
-    border-style: solid;
-    border-width: 0 0 6px 6px;
-    border-color: transparent transparent #1abc9c transparent;
-}
-
 
 .reservation.content-two .prev-month {
     float: left;
 }
 
+.reservation.content-two .prev-month:before {
+    float: left;
+
+}
+
 .reservation.content-two .next-month {
     float: right;
-}
-.reservation.content-two .calendar {
-    width: 100%;
 }
 
 .reservation.content-two .calendar-day {
@@ -68,7 +81,7 @@
 }
 
 .reservation.content-two .calendar td {
-    height: 45px;
+    height: 60px;
     text-align: center;
     background-color: #f1f1f1;
 }
@@ -101,6 +114,12 @@
 @media all and (  min-width: 600px ) {
     .reservation.content-two .calendar td {
         height: 75px;
+    }
+}
+
+@media all and (  min-width: 750px ) {
+    .reservation.content-two .calendar td {
+        height: 85px;
     }
 }
 @media all and (  min-width: 800px ) {
@@ -207,7 +226,7 @@
 .reservation.content-two img.reminder {
     position: absolute;
     width: 70%;
-    top: 30%;
+    top: 45%;
     left: 10%;
     z-index: 100;
 }
@@ -216,11 +235,11 @@
     position: absolute;
     display: block;
     width: 40%;
-    top: 40%;
+    top: 50%;
     left: 36%;
     z-index: 101;
     color: #FFFFFF;
-    font-size: 2em;
+    font-size: 12px;
 }
 
 
@@ -287,10 +306,25 @@ html body div.popover-arrow::after {
 nav.month .show-month {
     position: absolute;
     display: none;
-    width: 165px;
-    background-color: #3f5d7c;
+    padding: 5px 0;
+    width: 130px;
+    top: 45px;
+    background-color: #1abc9c;
     z-index: 12345;
  }
+
+nav.month .show-month:before {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 0;
+    top: -8px;
+    left: 50%;
+    margin-left: -5px;
+    border-style: solid;
+    border-width: 0 5px 8.7px 5px;
+    border-color: transparent transparent #1abc9c transparent;
+}
 
 nav.month .show-month a {
     display: block;
@@ -304,6 +338,7 @@ nav.month .prev-month:hover > .show-month {
     display: block;
 }
 nav.month .this-month:hover > .show-month {
+    width: 144px;
     display: block;
 }
 nav.month .next-month:hover > .show-month {
@@ -369,7 +404,59 @@ nav.month .show-month a:hover {
 .reservation.content-two .listview.calendar .books .book .time {
     padding: 4px 0 0 60px;
 }
-
-
 /* EO Calendar listview*/
+
+@media all and (min-width: 380px) {
+    .reservation.content-two .reminder-text {
+        font-size: 14px;
+    }
+}
+
+@media all and (min-width: 420px) {
+    .reservation.content-two > div {
+        padding: 60px 0;
+    }
+    .reservation.content-two .reminder-text {
+        top: 47%;
+        font-size: 18px;
+    }
+    .reservation.content-two img.reminder {
+        top: 40%;
+    }
+
+}
+
+@media all and (min-width: 544px) {
+    .reservation.content-two .reminder-text {
+        font-size: 20px;
+    }
+}
+
+@media all and (min-width: 600px) {
+    .reservation.content-two .reminder-text {
+        font-size: 22px;
+        top: 45%;
+    }
+    .reservation.content-two img.reminder {
+        top: 35%;
+    }
+}
+
+@media all and (min-width: 800px) {
+    .reservation.content-two > div {
+        padding: 80px 0;
+    }
+    .reservation.content-two .reminder-text {
+        width: 40%;
+        top: 40%;
+        left: 36%;
+        font-size: 2em;
+    }
+    .reservation.content-two img.reminder {
+        width: 70%;
+        top: 30%;
+        left: 10%;
+    }
+
+}
 
