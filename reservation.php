@@ -50,7 +50,6 @@ include 'part/reservation-content1.php';
         <div class="row">
             <div class="col-sm-6 left">
                 <h2 class="title"><?php _text("Class Reservation")?></h2>
-
                 <?php if ( is_user_logged_in() ) : ?>
                     <?php if ( empty( $books ) ) : ?>
                         <?php _text("You have no reservations"); ?>
@@ -58,20 +57,21 @@ include 'part/reservation-content1.php';
                         <div><?php _text("No. of Reservations of this month:"); ?><?php echo  count($books); ?></div>
                         <div><?php _text("No. of Absence of this month:"); ?> : <?php echo  $no_of_absence ?></div>
                     <?php endif; ?>
-                <?php else : ?>
-                    <img class="reminder" src="<?php img_e() ?>reservation-content2-image1.png">
-                    <div class="reminder-text"><?php _text('Please Login to View Reservation')?></div>
                 <?php endif; ?>
             </div>
             <div class="col-sm-6 right">
                 <h2 class="title"><?php _text("My Teachers"); ?></h2>
                 <div class="my-teacher">
-                    <?php echo $myTeacher; ?>
+                    <?php echo isset($myTeacher) ? $myTeacher : ''; ?>
                 </div>
             </div>
         </div>
-        <?php if ( is_user_logged_in() ) include 'part/reservation-header.php' ?>
-
+        <?php if ( is_user_logged_in() ) : ?>
+            <?php include 'part/reservation-header.php' ?>
+        <?php else : ?>
+            <img class="reminder" src="<?php img_e() ?>reservation-content2-image1.png">
+            <div class="reminder-text"><?php _text('Please Login to View Reservation')?></div>
+        <?php endif; ?>
         <div class="desc">
             <?php
             if ( isset($_REQUEST[ 'view' ] ) && $_REQUEST[ 'view' ] = 'list' ) echo draw_calendar_listview( $m, $Y, $data );

@@ -45,7 +45,6 @@ wp_enqueue_style('edit-basic', td() . '/css/forum/view-basic.css');
                 <div class="row">
                     <div class="col-xs-12 col-sm-6">
                         <?php printf(__('By %s', 'k-forum'), get_the_author())?>
-                        /
                         <?php printf( __('No. : %s', 'k-forum'), get_the_ID()); ?>
                         Count of Viewers : <?php  echo post()->increaseNoOfView( get_the_ID() )?>
                     </div>
