@@ -22,20 +22,23 @@ else {
     $first_class = $re['data']['first_class'];
     $no_of_absence = 0;
     $data = $books ? prepare_books_by_date( $books, $no_of_absence ) : [];
-}
-//di($books);
-$tmp = array();
-$unique = array();
-$myTeacher = '';
-foreach ($books as $item) {
-    if (!in_array($item['idx_teacher'], $tmp)) {
-        $icon = str_replace('./data/', 'http://onlineenglish.kr/data/', $item['icon']);
-        $teacherName = $item['teacher']['mb_nick'];
-        $myTeacher .="<span class='teacher_icon' data-toggle='tooltip' data-placement='bottom' title='$teacherName'> $icon </span>";
-        $unique[] = $item;
-        $tmp[] = $item['idx_teacher'];
+
+
+    //getting the unique list of teachers
+    $tmp = array();
+    $unique = array();
+    $myTeacher = '';
+    foreach ($books as $item) {
+        if (!in_array($item['idx_teacher'], $tmp)) {
+            $icon = str_replace('./data/', 'http://onlineenglish.kr/data/', $item['icon']);
+            $teacherName = $item['teacher']['mb_nick'];
+            $myTeacher .="<span class='teacher_icon' data-toggle='tooltip' data-placement='bottom' title='$teacherName'> $icon </span>";
+            $unique[] = $item;
+            $tmp[] = $item['idx_teacher'];
+        }
     }
 }
+//di($books);
 //di($unique);
 include 'part/reservation-content1.php';
 ?>

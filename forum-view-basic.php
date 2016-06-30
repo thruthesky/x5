@@ -51,8 +51,8 @@ wp_enqueue_style('edit-basic', td() . '/css/forum/view-basic.css');
                     </div>
                     <div class="buttons col-xs-12 col-sm-6">
                         <a class="btn btn-secondary btn-sm" href="<?php echo forum()->editURL( get_the_ID() ) ?>">글 수정</a>
-                        <a class="btn btn-secondary btn-sm"href="<?php echo home_url()?>/forum/<?php echo $category->slug?>">글 목록</a>
-                        <a class="btn btn-secondary btn-sm"href="<?php echo forum()->doURL('post_delete&id=' . get_the_ID() )?>">글 삭제</a>
+                        <a class="btn btn-secondary btn-sm" href="<?php echo home_url()?>/forum/<?php echo $category->slug?>">글 목록</a>
+                        <a class="btn btn-secondary btn-sm" href="<?php echo forum()->doURL('post_delete&id=' . get_the_ID() )?>">글 삭제</a>
                     </div>
                 </div>
             </div>
