@@ -222,7 +222,7 @@ nav.top-menu ul li:last-child {
     header nav.menu {
         position: absolute;
         display: inline-block !important;
-        bottom: 20px;
+        bottom: 15px;
         right: 0;
     }
     header .menu ul li {
