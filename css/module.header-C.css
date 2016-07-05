@@ -87,13 +87,13 @@ nav.top-menu ul li:before {
 }
 nav.top-menu ul li:nth-child(1):before,
 nav.top-menu ul li:nth-child(2):before{
-    content: initial;
+    content: none;
 }
 nav.top-menu ul li:nth-child(5){
     float:right;
 }
 nav.top-menu ul li:nth-child(5):before {
-    content: initial;
+    content: none;
 }
 nav.top-menu ul li a {
     display:inline-block;
@@ -234,7 +234,7 @@ nav.top-menu ul li:last-child {
         float:left;
     }
     nav.top-menu ul li:last-child:before {
-        content: initial;
+        content: none;
     }
     nav.top-menu ul li span{
         color: #f1f9fc;
@@ -267,9 +267,6 @@ nav.top-menu ul li:last-child {
         height: 100%;
         color: inherit;
         text-decoration: none;
-    }
-    nav.top-menu ul li:nth-child(1) {
-        border-bottom-left-radius: 5px;
     }
     nav.top-menu ul li a > span {
         padding: 0 8px;
