@@ -34,6 +34,7 @@
                     <span><?php _text('SITEMAP')?></span>
                 </a>
             </li>
+            <li></li>
         </ul>
     </nav>
     <nav class="menu">
