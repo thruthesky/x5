@@ -49,6 +49,7 @@ header .logo .title:hover {
 
 nav.menu ul li a .menu-img {
     padding-right: 10px;
+    margin-bottom: 4px;
 }
 
 /* EO Header B design */
@@ -314,6 +315,9 @@ nav.top-menu ul li:last-child {
     }
     section.content {
         margin: 180px auto 0;
+    }
+    header nav.menu {
+        bottom: 5px;
     }
 }
 @media all and ( min-width: 850px ) {
