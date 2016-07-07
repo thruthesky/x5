@@ -10,9 +10,9 @@ $nY = date('Y', mktime( 0, 0, 0, $m+1, 1, $Y));
 <nav class="month">
 
     <div class="prev-month btn">
+        <img src="<?php img_e() ?>reservation/left.png">
         <a href="?m=<?php echo $prev_month_digit;?>&Y=<?php echo $pY; if ( isset($_REQUEST['view']) ) echo "&view=list"; ?>">
             <?php echo $pM?> <?php echo $pY?>
-            <i></i>
         </a>
         <div class="show-month">
             <?php
@@ -23,7 +23,6 @@ $nY = date('Y', mktime( 0, 0, 0, $m+1, 1, $Y));
                 if ( isset($_REQUEST['view']) ) echo "&view=list";?>
                 ">
                     <?php echo date('M Y', mktime( 0, 0, 0, $m-$x, 1, $Y));?>
-                    <i></i>
                 </a>
                 </div>
                 <?php
@@ -33,8 +32,8 @@ $nY = date('Y', mktime( 0, 0, 0, $m+1, 1, $Y));
     </div>
 
     <div class="this-month btn">
+        <img src="<?php img_e() ?>reservation/center.png">
         <span><?php echo $M?> <?php echo $Y?></span>
-        <i></i>
         <div class="show-month">
             <?php
             for($x = -1; $x < 4; $x++):
@@ -44,7 +43,6 @@ $nY = date('Y', mktime( 0, 0, 0, $m+1, 1, $Y));
                     if ( isset($_REQUEST['view']) ) echo "&view=list";?>
                     ">
                         <?php echo date('M Y', mktime( 0, 0, 0, $m, 1, $Y+$x));?>
-                        <i></i>
                     </a>
                 </div>
                 <?php
@@ -55,9 +53,9 @@ $nY = date('Y', mktime( 0, 0, 0, $m+1, 1, $Y));
 
 
     <div class="next-month btn">
+        <img src="<?php img_e() ?>reservation/right.png">
         <a href="?m=<?php echo $next_month_digit;?>&Y=<?php echo $nY; if ( isset($_REQUEST['view']) ) echo "&view=list"; ?>">
             <?php echo $nM?> <?php echo $nY?>
-            <i></i>
         </a>
 
         <div class="show-month">
@@ -69,7 +67,6 @@ $nY = date('Y', mktime( 0, 0, 0, $m+1, 1, $Y));
                     if ( isset($_REQUEST['view']) ) echo "&view=list";?>
                     ">
                         <?php echo date('M Y', mktime( 0, 0, 0, $m+$x, 1, $Y));?>
-                        <i></i>
                     </a>
                 </div>
                 <?php

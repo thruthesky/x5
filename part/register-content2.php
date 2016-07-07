@@ -9,6 +9,8 @@ wp_enqueue_script( 'register', td() . '/js/register.js', array('jquery') );
             <?php wp_nonce_field('register'); ?>
 
             <input type="hidden" name="login" value="1">
+            <div class="header-detail"><?php _text("YOUR DETAILS") ?></div>
+            <div class="col-sm-6 left">
             <div class="line">
                 <label for="user_login"><?php _text('User ID')?></label>
                 <div class="text">
@@ -32,7 +34,8 @@ wp_enqueue_script( 'register', td() . '/js/register.js', array('jquery') );
                 <label for="nickname"><?php _text('Nickname')?></label>
                 <div class="text"><input type="text" name="nickname" maxlength="64" id="nickname" tabindex="101" placeholder="<?php _text('Nickname')?>" value="<?php echo user()->nickname?>"></div>
             </div>
-
+            </div>
+            <div class="col-sm-6 right">
             <div class="line">
                 <label for="name"><?php _text('Name')?></label>
                 <div class="text"><input type="text" name="name" maxlength="64" id="name" tabindex="101" placeholder="<?php _text('Name')?>" value="<?php echo user()->name?>"></div>
@@ -53,7 +56,7 @@ wp_enqueue_script( 'register', td() . '/js/register.js', array('jquery') );
                 <div class="text"><input type="text" name="skype" maxlength="64" id="skype" tabindex="101"  placeholder="<?php _text('Skype ID')?>" value="<?php echo user()->skype?>"></div>
             </div>
 
-
+            </div>
             <div class="agree-line">
 
                 <label for="agree">

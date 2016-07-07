@@ -45,14 +45,13 @@ wp_enqueue_style('edit-basic', td() . '/css/forum/view-basic.css');
                 <div class="row">
                     <div class="col-xs-12 col-sm-6">
                         <?php printf(__('By %s', 'k-forum'), get_the_author())?>
-                        /
                         <?php printf( __('No. : %s', 'k-forum'), get_the_ID()); ?>
                         Count of Viewers : <?php  echo post()->increaseNoOfView( get_the_ID() )?>
                     </div>
                     <div class="buttons col-xs-12 col-sm-6">
                         <a class="btn btn-secondary btn-sm" href="<?php echo forum()->editURL( get_the_ID() ) ?>">글 수정</a>
-                        <a class="btn btn-secondary btn-sm"href="<?php echo home_url()?>/forum/<?php echo $category->slug?>">글 목록</a>
-                        <a class="btn btn-secondary btn-sm"href="<?php echo forum()->doURL('post_delete&id=' . get_the_ID() )?>">글 삭제</a>
+                        <a class="btn btn-secondary btn-sm" href="<?php echo home_url()?>/forum/<?php echo $category->slug?>">글 목록</a>
+                        <a class="btn btn-secondary btn-sm" href="<?php echo forum()->doURL('post_delete&id=' . get_the_ID() )?>">글 삭제</a>
                     </div>
                 </div>
             </div>

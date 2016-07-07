@@ -1,6 +1,6 @@
 /** Follow Strict SMACSS */
 header {
-    background-color: #fff;
+    background: url("../../themes/x5/img/header-menu/C/headup.png") #ffffff repeat-x;
     border-bottom: 1px solid #9d9d9d;
 }
 
@@ -45,12 +45,20 @@ header .logo .title:hover {
 /** EO Logo */
 
 
+/* EO Header B design */
+
+nav.menu ul li a .menu-img {
+    padding-right: 10px;
+    margin-bottom: 7px;
+}
+
+/* EO Header B design */
 
 /** Nav.Top-Menu module */
 nav.top-menu {
     overflow:auto;
     overflow-y: hidden;
-    top: 1.1875em;
+    top: 0;
     border: 0;
     border-radius: 0;
     color: #ffffff;
@@ -72,18 +80,26 @@ nav.top-menu ul li {
     display:block;
     margin-left: 0;
 }
-
-nav.top-menu ul li:last-child {
-    float:right;
-
+nav.top-menu ul li:before {
+    content: '|';
+    font-size: 10pt;
+    color: #7cd1e9;
 }
-
+nav.top-menu ul li:nth-child(1):before,
+nav.top-menu ul li:nth-child(2):before{
+    content: none;
+}
+nav.top-menu ul li:nth-child(5){
+    float:right;
+}
+nav.top-menu ul li:nth-child(5):before {
+    content: none;
+}
 nav.top-menu ul li a {
     display:inline-block;
+    padding: 8px 8px;
     color: inherit;
-    padding: 8px;
     text-decoration: none;
-    border-bottom: 0.0625em hidden;
 }
 
 nav.top-menu ul li:last-child a {
@@ -117,7 +133,7 @@ nav.top-menu ul li a:hover {
 nav.top-menu ul li > span {
     display:inline-block;
     color: inherit;
-    padding: 0.5em 0.625em;
+    padding: 9px 5px;
     font-size: 0.9375em;
     text-decoration: none;
     border-bottom: 0.0625em hidden;
@@ -153,7 +169,7 @@ header .menu ul {
 }
 
 header .menu ul li a {
-    font-size: 1.1em;
+    font-size: 14px;
     display: block;
     padding: 0.5em 0.5625em 0.1875em;
     text-decoration: none;
@@ -169,15 +185,16 @@ nav.top-menu ul li.active a span {
     color: #0bcc00;
 }
 
+nav.top-menu ul li:last-child {
+    display: none;
+}
+
 
 .menu .close-btn {
     float: right;
     padding: 10px;
 }
 @media all and ( min-width: 380px ) {
-    nav.top-menu ul li {
-        margin-left: 0.8125em;
-    }
 
 }
 @media all and ( min-width: 480px ) {
@@ -196,24 +213,37 @@ nav.top-menu ul li.active a span {
     }
     header .menu ul li.active a,
     nav.top-menu ul li.active a span {
-        color: #0e7ecc;
+        color: #d35400;
+        font-weight: 600;
     }
     nav.top-menu,
     nav.menu {
         background-color: transparent;
     }
-    header .menu {
+    header nav.menu {
         position: absolute;
         display: inline-block !important;
-        bottom: 0.9375em;
+        bottom: 15px;
         right: 0;
     }
     header .menu ul li {
         float: left;
+        width: 95px;
     }
-    nav.top-menu ul li span,
+    nav.top-menu ul li:nth-child(5){
+        float:left;
+    }
+    nav.top-menu ul li:last-child:before {
+        content: none;
+    }
+    nav.top-menu ul li span{
+        color: #f1f9fc;
+    }
     header .menu ul li a {
-        color: #2d3e52;
+        margin: 0;
+        padding: 0;
+        color: #045f9c;
+        text-align: center;
     }
     header .menu ul li a:hover {
         color: #0e7ecc;
@@ -227,19 +257,49 @@ nav.top-menu ul li.active a span {
     header nav.menu ul li:hover {
         background-color: transparent;
     }
+    nav.top-menu ul li {
+        background: url("../../themes/x5/img/header-menu/C/headmid.png") #ffffff repeat-x;
+        height: 27px;
+    }
+    nav.top-menu ul li a {
+        display:inline-block;
+        padding: 1px 12px 0;
+        height: 100%;
+        color: inherit;
+        text-decoration: none;
+    }
+    nav.top-menu ul li a > span {
+        padding: 0 8px;
+        font-size: 12px;
+        font-family: Gulim;
+    }
+    nav.menu ul li a .menu-img {
+        display: block;
+        text-align: center;
+        padding-right: 0;
+    }
+    nav.top-menu ul li:last-child {
+        display: block;
+        background: url("../../themes/x5/img/header-menu/C/headright.png") #ffffff no-repeat;
+        height: 27px;
+        padding-right: 9px;
+    }
+    nav.top-menu ul li:first-child {
+        background: url("../../themes/x5/img/header-menu/C/headleft.png") #ffffff no-repeat;
+        height: 27px;
+        padding-right: 9px;
+    }
+    nav.top-menu ul li a.icon {
+        display: none;
+    }
+    nav.top-menu ul li:nth-child(5):before {
+        content: '|';
+    }
 }
-
-@media ( min-width:600px ) and ( max-width: 850px ) {
+@media ( min-width:600px ) and ( max-width: 849px ) {
     .header-inner {
         text-align: center;
-        height: 150px;
-    }
-    nav.top-menu {
-        top: 0;
-    }
-    nav.top-menu ul li a,
-    nav.top-menu ul li > span {
-        padding: 0 5px;
+        height: 180px;
     }
     header .logo {
         width: 100%;
@@ -250,20 +310,26 @@ nav.top-menu ul li.active a span {
         text-align: center;
     }
     section.content {
-        margin: 150px auto 0;
+        margin: 180px auto 0;
+    }
+    header nav.menu {
+        bottom: 5px;
     }
 }
 @media all and ( min-width: 850px ) {
     .header-inner {
         text-align: left;
     }
+    header .menu ul li:nth-child(6) {
+        margin-right: 0;
+    }
 }
 
+@media all and ( min-width: 980px ) {
 
+}
 
 /** eo nav.menu */
-
-
 
 
 /** site edit */

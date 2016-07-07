@@ -17,6 +17,7 @@ section .level-test.content-three h2 {
     color: #FFFFFF;
     font-size: 18px;
     text-align: center;
+    line-height: 1.2;
 }
 
 
