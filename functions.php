@@ -287,6 +287,6 @@ function get_header_location() {
 function vc_url( $username = '', $roomname = 'VC TEST Room' ) {
     $roomname = urlencode($roomname);
     if ( empty($username) ) $username = 'User' . date('is');
-    $url = "https://www.videocenter.co.kr/0.0.12/index.php?joinRoom=Y&username=$username&roomname=$roomname";
+    $url = "https://www.videocenter.co.kr/0.0.14/index.php?joinRoom=Y&username=$username&roomname=$roomname";
     echo $url;
 }
