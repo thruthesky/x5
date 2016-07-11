@@ -14,6 +14,10 @@ ob_start();
     <meta name="description" content="<?php echo get_option('site_description')?>" />
 
     <?php
+    $title = "";
+    $og_sitename = "";
+    $permalink = "";
+    $description = "";
     if ( is_front_page() ) {
         echo <<<EOH
 
@@ -49,7 +53,7 @@ EOH;
         <meta property="og:title" content="About Us! - $sitename" />
         <meta property="og:url" content="$url" />
         <meta property="og:type" content="website" />
-        <meta property="og:description" content="We are video English tutorial Company.." />
+        <meta property="og:description" content="$og_description_about_us" />
         <meta property="og:site_name" content="$sitename" />
         <meta property="og:image" content="http://www.withcenter.kr/wp-content/themes/x5/img/header/about-us-banner1.jpg" />
 

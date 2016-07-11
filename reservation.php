@@ -28,13 +28,15 @@ else {
     $tmp = array();
     $unique = array();
     $myTeacher = '';
-    foreach ($books as $item) {
-        if (!in_array($item['idx_teacher'], $tmp)) {
-            $icon = str_replace('./data/', 'http://onlineenglish.kr/data/', $item['icon']);
-            $teacherName = $item['teacher']['mb_nick'];
-            $myTeacher .="<span class='teacher_icon' data-toggle='tooltip' data-placement='bottom' title='$teacherName'> $icon </span>";
-            $unique[] = $item;
-            $tmp[] = $item['idx_teacher'];
+    if ( !empty( $books ) ) {
+        foreach ($books as $item) {
+            if (!in_array($item['idx_teacher'], $tmp)) {
+                $icon = str_replace('./data/', 'http://onlineenglish.kr/data/', $item['icon']);
+                $teacherName = $item['teacher']['mb_nick'];
+                $myTeacher .="<span class='teacher_icon' data-toggle='tooltip' data-placement='bottom' title='$teacherName'> $icon </span>";
+                $unique[] = $item;
+                $tmp[] = $item['idx_teacher'];
+            }
         }
     }
 }
