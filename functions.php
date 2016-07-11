@@ -299,3 +299,4 @@ function vc_url( $roomname = 'VC TEST Room' ) {
     $url = "https://www.videocenter.co.kr/0.0.14/index.php?joinRoom=Y&username=$username&roomname=$roomname&show_header=Y";
     echo $url;
 }
+
