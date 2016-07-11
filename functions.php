@@ -284,9 +284,18 @@ function get_header_location() {
  * @param string $username
  * @param string $roomname
  */
-function vc_url( $username = '', $roomname = 'VC TEST Room' ) {
+function vc_url( $roomname = 'VC TEST Room' ) {
+	if ( is_user_logged_in() ) {
+		$domain = get_opt('lms[domain]', 'default');
+		$user = wp_get_current_user();
+		$username = $user->user_login;
+		$roomname = "$username@$domain";
+	}
+	else {
+	    if ( empty($username) ) $username = 'User' . date('is');
+	}
+
     $roomname = urlencode($roomname);
-    if ( empty($username) ) $username = 'User' . date('is');
-    $url = "https://www.videocenter.co.kr/0.0.14/index.php?joinRoom=Y&username=$username&roomname=$roomname";
+    $url = "https://www.videocenter.co.kr/0.0.14/index.php?joinRoom=Y&username=$username&roomname=$roomname&show_header=Y";
     echo $url;
 }
