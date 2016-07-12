@@ -406,6 +406,12 @@ EOH;
         <meta property="og:image" content="$og_image" />
 EOH;
         }
+        else {
+            $og_image = get_stylesheet_directory_uri() . '/img/opengraph_default.jpg';
+            echo<<<EOH
+        <meta property="og:image" content="$og_image" />
+EOH;
+        }
     }
 }
 
