@@ -14,10 +14,7 @@ ob_start();
     <meta name="description" content="<?php echo get_option('site_description')?>" />
 
     <?php
-    
-    echo get_og_tags_custom_page();
-
-
+    get_og_tags_custom_page();
     ?>
 
 </head>

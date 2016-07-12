@@ -307,7 +307,7 @@ function get_og_tags_custom_page() {
     $og_image = null;
 
     if ( is_front_page() ) {
-        $og_permalink = $home_url = home_url();
+        $og_permalink = home_url();
         ob_start(); _text('Front Page OG Title -'); $og_title = ob_get_clean();
         ob_start(); _text('Front Page OG Description.'); $og_description = ob_get_clean();
         ob_start(); _text("http://localhost/wordpress/wp-content/themes/x5/img/info.jpg"); $og_image = ob_get_clean();
