@@ -113,7 +113,6 @@ abc()->registerRoute(
         'curriculum',
         'reservation',
         'teacher-list',
-        'reservation',
         'past',
         'help',
         'feedback',
@@ -289,5 +288,115 @@ function vc_url( $username = '', $roomname = 'VC TEST Room' ) {
     if ( empty($username) ) $username = 'User' . date('is');
     $url = "https://www.videocenter.co.kr/0.0.14/index.php?joinRoom=Y&username=$username&roomname=$roomname";
     echo $url;
+}
+
+function get_og_tags_custom_page() {
+    $og_siteName = get_bloginfo('name');
+    $og_title = null;
+    $og_permalink = null;
+    $og_description = null;
+    $og_image = null;
+
+    if ( is_front_page() ) {
+        $og_permalink = $home_url = home_url();
+        ob_start(); _text('Front Page OG Title -'); $og_title = ob_get_clean();
+        ob_start(); _text('Front Page OG Description.'); $og_description = ob_get_clean();
+        ob_start(); _text("http://localhost/wordpress/wp-content/themes/x5/img/info.jpg"); $og_image = ob_get_clean();
+    }
+    else if ( is_single() ) {
+        $og_title = esc_attr(get_the_title());
+        $og_permalink = get_the_permalink();
+        $og_description = esc_attr( forum()->getCategory()->description) ;
+        $og_image = '';
+    }
+    else if ( seg(0)  == 'about-us') {
+        $og_permalink = home_url('about-us');
+        ob_start(); _text('About Us OG Title -'); $og_title = ob_get_clean();
+        ob_start(); _text('About Us OG Description.'); $og_description = ob_get_clean();
+        ob_start(); _text("http://www.withcenter.kr/wp-content/themes/x5/img/header/about-us-banner1.jpg"); $og_image = ob_get_clean();
+    }
+    else if ( seg(0)  == 'level-test') {
+        $og_permalink = home_url('level-test');
+        ob_start(); _text('Level Test OG Title -'); $og_title = ob_get_clean();
+        ob_start(); _text('Level Test OG Description.'); $og_description = ob_get_clean();
+        ob_start(); _text("http://www.withcenter.kr/wp-content/themes/x5/img/header/level-test-banner1.jpg"); $og_image = ob_get_clean();
+    }
+    else if ( seg(0)  == 'enrollment') {
+        $og_permalink = home_url('enrollment');
+        ob_start(); _text('Enrollment OG Title -'); $og_title = ob_get_clean();
+        ob_start(); _text('Enrollment OG Description.'); $og_description = ob_get_clean();
+        ob_start(); _text("http://www.withcenter.kr/wp-content/themes/x5/img/header/enrollment-banner1.jpg"); $og_image = ob_get_clean();
+    }
+    else if ( seg(0)  == 'curriculum') {
+        $og_permalink = home_url('curriculum');
+        ob_start(); _text('Curriculum OG Title -'); $og_title = ob_get_clean();
+        ob_start(); _text('Curriculum OG Description.'); $og_description = ob_get_clean();
+        ob_start(); _text("http://www.withcenter.kr/wp-content/themes/x5/img/header/curriculum-banner1.jpg"); $og_image = ob_get_clean();
+    }
+    else if ( seg(0)  == 'reservation') {
+        $og_permalink = home_url('reservation');
+        ob_start(); _text('Reservation OG Title -'); $og_title = ob_get_clean();
+        ob_start(); _text('Reservation OG Description.'); $og_description = ob_get_clean();
+        ob_start(); _text("http://www.withcenter.kr/wp-content/themes/x5/img/header/reservation-banner1.jpg"); $og_image = ob_get_clean();
+    }
+    else if ( seg(0)  == 'teacher-list') {
+        $og_permalink = home_url('teacher-list');
+        ob_start(); _text('Teacher List OG Title -'); $og_title = ob_get_clean();
+        ob_start(); _text('Teacher List OG Description.'); $og_description = ob_get_clean();
+        ob_start(); _text("http://www.withcenter.kr/wp-content/themes/x5/img/header/teacher-list-banner1.jpg"); $og_image = ob_get_clean();
+    }
+    else if ( seg(0)  == 'help') {
+        $og_permalink = home_url('help');
+        ob_start(); _text('Help OG Title -'); $og_title = ob_get_clean();
+        ob_start(); _text('Help OG Description.'); $og_description = ob_get_clean();
+        ob_start(); _text("http://www.withcenter.kr/wp-content/themes/x5/img/header/help-banner1.jpg"); $og_image = ob_get_clean();
+    }
+    else if ( seg(0)  == 'feedback') {
+        $og_permalink = home_url('feedback');
+        ob_start(); _text('Feedback OG Title -'); $og_title = ob_get_clean();
+        ob_start(); _text('Feedback OG Description.'); $og_description = ob_get_clean();
+        ob_start(); _text("http://www.withcenter.kr/wp-content/themes/x5/img/header/feedback-banner1.jpg"); $og_image = ob_get_clean();
+    }
+    else if ( seg(0)  == 'skype') {
+        $og_permalink = home_url('skype');
+        ob_start(); _text('Skype OG Title -'); $og_title = ob_get_clean();
+        ob_start(); _text('Skype OG Description.'); $og_description = ob_get_clean();
+        ob_start(); _text("http://www.withcenter.kr/wp-content/themes/x5/img/header/skype-banner1.jpg"); $og_image = ob_get_clean();
+    }
+    else if ( seg(0)  == 'testing') {
+        $og_permalink = home_url('testing');
+        ob_start(); _text('Testing OG Title -'); $og_title = ob_get_clean();
+        ob_start(); _text('Testing OG Description.'); $og_description = ob_get_clean();
+        ob_start(); _text("http://www.withcenter.kr/wp-content/themes/x5/img/header/testing-banner1.jpg"); $og_image = ob_get_clean();
+    }
+    else if ( seg(0)  == 'team-viewer') {
+        $og_permalink = home_url('team-viewer');
+        ob_start(); _text('Team Viewer OG Title -'); $og_title = ob_get_clean();
+        ob_start(); _text('Team Viewer OG Description.'); $og_description = ob_get_clean();
+        ob_start(); _text("http://www.withcenter.kr/wp-content/themes/x5/img/header/team-viewer-banner1.jpg"); $og_image = ob_get_clean();
+    }
+    else if ( seg(0)  == 'kakao') {
+        $og_permalink = home_url('kakao');
+        ob_start(); _text('Kakao OG Title -'); $og_title = ob_get_clean();
+        ob_start(); _text('Kakao OG Description.'); $og_description = ob_get_clean();
+        ob_start(); _text("http://www.withcenter.kr/wp-content/themes/x5/img/header/kakao-banner1.jpg"); $og_image = ob_get_clean();
+    }
+    else {
+        
+    }
+    if ( $og_title ) {
+        echo <<<EOH
+        <meta property="og:title" content="$og_title $og_siteName" />
+        <meta property="og:url" content="$og_permalink" />
+        <meta property="og:type" content="website" />
+        <meta property="og:description" content="$og_description" />
+        <meta property="og:site_name" content="$og_siteName" />
+EOH;
+        if ( $og_image ) {
+            echo<<<EOH
+        <meta property="og:image" content="$og_image" />
+EOH;
+        }
+    }
 }
 

@@ -14,52 +14,9 @@ ob_start();
     <meta name="description" content="<?php echo get_option('site_description')?>" />
 
     <?php
-    $title = "";
-    $og_sitename = "";
-    $permalink = "";
-    $description = "";
-    if ( is_front_page() ) {
-        echo <<<EOH
+    
+    echo get_og_tags_custom_page();
 
-        <meta property="og:title" content="$title" />
-        <meta property="og:url" content="$permalink" />
-        <meta property="og:type" content="website" />
-        <meta property="og:description" content="$description" />
-        <meta property="og:site_name" content="$og_sitename" />
-
-EOH;
-    }
-    else if ( is_single() ) {
-
-        echo <<<EOH
-
-        <meta property="og:title" content="$title" />
-        <meta property="og:url" content="$permalink" />
-        <meta property="og:type" content="website" />
-        <meta property="og:description" content="$description" />
-        <meta property="og:site_name" content="$og_sitename" />
-
-EOH;
-
-    }
-    else if ( seg(0) == 'about-us' ) {
-        $sitename = get_bloginfo('name');
-        $url = home_url('about-us');
-        ob_start();
-        _text('og_description_about_us');
-        $og_description_about_us = ob_get_clean();
-        echo <<<EOH
-
-        <meta property="og:title" content="About Us! - $sitename" />
-        <meta property="og:url" content="$url" />
-        <meta property="og:type" content="website" />
-        <meta property="og:description" content="$og_description_about_us" />
-        <meta property="og:site_name" content="$sitename" />
-        <meta property="og:image" content="http://www.withcenter.kr/wp-content/themes/x5/img/header/about-us-banner1.jpg" />
-
-EOH;
-
-    }
 
     ?>
 
