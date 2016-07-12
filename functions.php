@@ -320,8 +320,8 @@ function get_og_tags_custom_page() {
     }
     else if ( seg(0)  == 'about-us') {
         $og_permalink = home_url('about-us');
-        ob_start(); _text('About Us OG Title -'); $og_title = ob_get_clean();
-        ob_start(); _text('About Us OG Description.'); $og_description = ob_get_clean();
+        ob_start(); _text('About Us -'); $og_title = ob_get_clean();
+        ob_start(); _text('About Us. We educate English Online.'); $og_description = ob_get_clean();
         ob_start(); _text("http://www.withcenter.kr/wp-content/themes/x5/img/header/about-us-banner1.jpg"); $og_image = ob_get_clean();
     }
     else if ( seg(0)  == 'level-test') {
