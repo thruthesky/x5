@@ -308,86 +308,83 @@ function get_og_tags_custom_page() {
 
     if ( is_front_page() ) {
         $og_permalink = home_url();
-        ob_start(); _text('Front Page OG Title -'); $og_title = ob_get_clean();
-        ob_start(); _text('Front Page OG Description.'); $og_description = ob_get_clean();
+        ob_start(); _text('- Welcome to our home page -'); $og_title = ob_get_clean();
+        ob_start(); _text('- We are teaching English language that will surely enhance your english skills. -'); $og_description = ob_get_clean();
         ob_start(); _text("http://localhost/wordpress/wp-content/themes/x5/img/info.jpg"); $og_image = ob_get_clean();
     }
     else if ( is_single() ) {
-        $og_title = esc_attr(get_the_title());
-        $og_permalink = get_the_permalink();
-        $og_description = esc_attr( forum()->getCategory()->description) ;
-        $og_image = '';
+        $og_title = null;
     }
     else if ( seg(0)  == 'about-us') {
         $og_permalink = home_url('about-us');
-        ob_start(); _text('About Us OG Title -'); $og_title = ob_get_clean();
-        ob_start(); _text('About Us OG Description.'); $og_description = ob_get_clean();
+        ob_start(); _text('- About Us -'); $og_title = ob_get_clean();
+        ob_start(); _text('- We aim to help you on your English skills and Guide you in developing your english knowledge. -'); $og_description = ob_get_clean();
         ob_start(); _text("http://www.withcenter.kr/wp-content/themes/x5/img/header/about-us-banner1.jpg"); $og_image = ob_get_clean();
     }
     else if ( seg(0)  == 'level-test') {
         $og_permalink = home_url('level-test');
-        ob_start(); _text('Level Test OG Title -'); $og_title = ob_get_clean();
-        ob_start(); _text('Level Test OG Description.'); $og_description = ob_get_clean();
+        ob_start(); _text('- Level Test -'); $og_title = ob_get_clean();
+        ob_start(); _text('- Lets Test your English skills and see will teach you what you still need. -'); $og_description = ob_get_clean();
         ob_start(); _text("http://www.withcenter.kr/wp-content/themes/x5/img/header/level-test-banner1.jpg"); $og_image = ob_get_clean();
     }
     else if ( seg(0)  == 'enrollment') {
         $og_permalink = home_url('enrollment');
-        ob_start(); _text('Enrollment OG Title -'); $og_title = ob_get_clean();
-        ob_start(); _text('Enrollment OG Description.'); $og_description = ob_get_clean();
+        ob_start(); _text('- Enrollment -'); $og_title = ob_get_clean();
+        ob_start(); _text('- Enroll now and meet our best teachers that will help you develop your english skills. -'); $og_description = ob_get_clean();
         ob_start(); _text("http://www.withcenter.kr/wp-content/themes/x5/img/header/enrollment-banner1.jpg"); $og_image = ob_get_clean();
     }
     else if ( seg(0)  == 'curriculum') {
         $og_permalink = home_url('curriculum');
-        ob_start(); _text('Curriculum OG Title -'); $og_title = ob_get_clean();
-        ob_start(); _text('Curriculum OG Description.'); $og_description = ob_get_clean();
+        ob_start(); _text('- Curriculum -'); $og_title = ob_get_clean();
+        ob_start(); _text('- In our curriculum we provide different selection of books that will help you learn and develop your english skill. -'); $og_description = ob_get_clean();
         ob_start(); _text("http://www.withcenter.kr/wp-content/themes/x5/img/header/curriculum-banner1.jpg"); $og_image = ob_get_clean();
     }
     else if ( seg(0)  == 'reservation') {
         $og_permalink = home_url('reservation');
-        ob_start(); _text('Reservation OG Title -'); $og_title = ob_get_clean();
-        ob_start(); _text('Reservation OG Description.'); $og_description = ob_get_clean();
+        ob_start(); _text('- Reservation -'); $og_title = ob_get_clean();
+        ob_start(); _text('- View your reservations and see your next class. -'); $og_description = ob_get_clean();
         ob_start(); _text("http://www.withcenter.kr/wp-content/themes/x5/img/header/reservation-banner1.jpg"); $og_image = ob_get_clean();
     }
     else if ( seg(0)  == 'teacher-list') {
         $og_permalink = home_url('teacher-list');
-        ob_start(); _text('Teacher List OG Title -'); $og_title = ob_get_clean();
-        ob_start(); _text('Teacher List OG Description.'); $og_description = ob_get_clean();
+        ob_start(); _text('- Teacher -'); $og_title = ob_get_clean();
+        ob_start(); _text('- Greetings, All the teaching are here to greet you. -'); $og_description = ob_get_clean();
         ob_start(); _text("http://www.withcenter.kr/wp-content/themes/x5/img/header/teacher-list-banner1.jpg"); $og_image = ob_get_clean();
     }
     else if ( seg(0)  == 'help') {
         $og_permalink = home_url('help');
-        ob_start(); _text('Help OG Title -'); $og_title = ob_get_clean();
-        ob_start(); _text('Help OG Description.'); $og_description = ob_get_clean();
+        ob_start(); _text('- Help -'); $og_title = ob_get_clean();
+        ob_start(); _text('- Looking for something? Check our help guide. -'); $og_description = ob_get_clean();
         ob_start(); _text("http://www.withcenter.kr/wp-content/themes/x5/img/header/help-banner1.jpg"); $og_image = ob_get_clean();
     }
     else if ( seg(0)  == 'feedback') {
         $og_permalink = home_url('feedback');
-        ob_start(); _text('Feedback OG Title -'); $og_title = ob_get_clean();
-        ob_start(); _text('Feedback OG Description.'); $og_description = ob_get_clean();
+        ob_start(); _text('- Feedback -'); $og_title = ob_get_clean();
+        ob_start(); _text('- Testimonials of our students that have learn from us -'); $og_description = ob_get_clean();
         ob_start(); _text("http://www.withcenter.kr/wp-content/themes/x5/img/header/feedback-banner1.jpg"); $og_image = ob_get_clean();
     }
     else if ( seg(0)  == 'skype') {
         $og_permalink = home_url('skype');
-        ob_start(); _text('Skype OG Title -'); $og_title = ob_get_clean();
-        ob_start(); _text('Skype OG Description.'); $og_description = ob_get_clean();
+        ob_start(); _text('- Skype -'); $og_title = ob_get_clean();
+        ob_start(); _text('- Skype help guide. -'); $og_description = ob_get_clean();
         ob_start(); _text("http://www.withcenter.kr/wp-content/themes/x5/img/header/skype-banner1.jpg"); $og_image = ob_get_clean();
     }
     else if ( seg(0)  == 'testing') {
         $og_permalink = home_url('testing');
-        ob_start(); _text('Testing OG Title -'); $og_title = ob_get_clean();
-        ob_start(); _text('Testing OG Description.'); $og_description = ob_get_clean();
+        ob_start(); _text('- Testing -'); $og_title = ob_get_clean();
+        ob_start(); _text('- Test and check your video and audio Settings. -'); $og_description = ob_get_clean();
         ob_start(); _text("http://www.withcenter.kr/wp-content/themes/x5/img/header/testing-banner1.jpg"); $og_image = ob_get_clean();
     }
     else if ( seg(0)  == 'team-viewer') {
         $og_permalink = home_url('team-viewer');
-        ob_start(); _text('Team Viewer OG Title -'); $og_title = ob_get_clean();
-        ob_start(); _text('Team Viewer OG Description.'); $og_description = ob_get_clean();
+        ob_start(); _text('- Team Viewer -'); $og_title = ob_get_clean();
+        ob_start(); _text('- Team Viewer help guide. -'); $og_description = ob_get_clean();
         ob_start(); _text("http://www.withcenter.kr/wp-content/themes/x5/img/header/team-viewer-banner1.jpg"); $og_image = ob_get_clean();
     }
     else if ( seg(0)  == 'kakao') {
         $og_permalink = home_url('kakao');
-        ob_start(); _text('Kakao OG Title -'); $og_title = ob_get_clean();
-        ob_start(); _text('Kakao OG Description.'); $og_description = ob_get_clean();
+        ob_start(); _text('- Kakao Talk -'); $og_title = ob_get_clean();
+        ob_start(); _text('- Kakao Talk help guide. -'); $og_description = ob_get_clean();
         ob_start(); _text("http://www.withcenter.kr/wp-content/themes/x5/img/header/kakao-banner1.jpg"); $og_image = ob_get_clean();
     }
     else {
