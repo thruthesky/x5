@@ -1,4 +1,5 @@
 <?php
+wp_enqueue_script( 'fb-api', td() . '/js/fb-api.js', array('jquery'), false, true );
 wp_enqueue_script( 'log-in-content2', td() . '/js/log-in-content2.js', array('jquery'), false, true );
 wp_enqueue_style('log-in-content2', td() . '/css/log-in-content2.css');
 
@@ -9,6 +10,8 @@ wp_enqueue_style('log-in-content2', td() . '/css/log-in-content2.css');
             <?php if ( in('action') == 'lostpassword' ) { ?>
                 <?php _e('Password reset link has been sent to your email.') ?>
             <?php } ?>
+
+
             <form action="<?php echo home_url('/user/loginSubmit')?>" method="POST">
 
                 <?php wp_nonce_field('log-in'); ?>
@@ -53,6 +56,14 @@ wp_enqueue_style('log-in-content2', td() . '/css/log-in-content2.css');
             </form>
 
             <a class="register" href="<?php echo home_url('/user-register')?>"><?php _text('Create an Account')?></a>
+            <div>or</div>
+            <div class="login-api">
+                <div>
+<?php include "fb-login.php" ?>
+
+                </div>
+
+            </div>
         </div>
     </div>
 </section>

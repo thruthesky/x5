@@ -1,5 +1,8 @@
 <?php
 ob_start();
+if ( seg(0) == 'user-log-in' ) {
+    require_once __DIR__ . '/src/fbapi/autoload.php';
+}
 ?>
 <!DOCTYPE HTML>
 <html>
