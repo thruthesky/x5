@@ -2,11 +2,19 @@
 
 
 # Set the default parameter
+/*
 ob_start(); opt('lms[facebook_app_id]'); $app_id = ob_get_clean();
 ob_start(); opt('lms[facebook_app_secret]'); $app_secret = ob_get_clean();
 ob_start(); opt('lms[facebook_api_version]'); $default_graph_version = ob_get_clean();
+*/
 
-if( ( !empty( $app_id ) ) && ( !empty( $app_secret ) ) && ( !empty( $default_graph_version ) ) ) {
+$app_id = get_opt( 'lms[facebook_app_id]' );
+$app_secret = get_opt('lms[facebook_app_secret]');
+$default_graph_version = get_opt('lms[facebook_api_version]');
+
+
+if ( empty( $app_id ) || empty( $app_secret ) || empty( $default_graph_version ) ) return;
+
 
 # Start the session
 session_start();
@@ -94,5 +102,4 @@ session_start();
         echo '<a class="btn btn-secondary" href="' . $loginUrl . '">Log in with Facebook!</a>';
         echo '</div>';
     }
-}
 
