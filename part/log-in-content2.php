@@ -56,14 +56,7 @@ wp_enqueue_style('log-in-content2', td() . '/css/log-in-content2.css');
             </form>
 
             <a class="register" href="<?php echo home_url('/user-register')?>"><?php _text('Create an Account')?></a>
-            <div>or</div>
-            <div class="login-api">
-                <div>
-<?php include "fb-login.php" ?>
-
-                </div>
-
-            </div>
+            <?php include "fb-login.php" ?>
         </div>
     </div>
 </section>
