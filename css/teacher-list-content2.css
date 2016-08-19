@@ -9,7 +9,7 @@ section .teachers.content-two > div .teacher-row {
 
 section .teachers.content-two .teacher {
     margin: 0;
-    padding-bottom: 20px;
+    padding: 0 0 20px 0;
     border: 8px solid #ffffff;
     background-color: #01d9c1;
     text-align: center;
@@ -29,9 +29,10 @@ section .teachers.content-two .teacher .id {
     font-size: 22px;
     color: #FFFFFF;
     margin-bottom: 5px;
+    min-height: 70px;
 }
 section .teachers.content-two .teacher .text {
-    margin-left: 13px;
+    padding: 0 20px;
     margin-bottom: 10px;
     text-align: left;
     font-size: 1em;
@@ -39,7 +40,7 @@ section .teachers.content-two .teacher .text {
 }
 
 section .teachers.content-two .teacher .major.text {
-    height: 48px;
+    height: 60px;
 }
 section .teachers.content-two .teacher .photo img {
     width: 150px;
@@ -47,7 +48,7 @@ section .teachers.content-two .teacher .photo img {
 }
 section .teachers.content-two .teacher .greeting {
     height: 240px;
-    overflow-y: hidden;
+    overflow-y: auto;
     word-break: keep-all;
 }
 section .teachers.content-two .teacher .youtube iframe {

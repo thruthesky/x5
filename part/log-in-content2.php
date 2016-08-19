@@ -1,5 +1,4 @@
 <?php
-wp_enqueue_script( 'fb-api', td() . '/js/fb-api.js', array('jquery'), false, true );
 wp_enqueue_script( 'log-in-content2', td() . '/js/log-in-content2.js', array('jquery'), false, true );
 wp_enqueue_style('log-in-content2', td() . '/css/log-in-content2.css');
 

@@ -38,7 +38,7 @@
             Select Menu Type:
             <input type="radio" name="site_menu_type" value="A"<?php echo $menu_type_A_checked?>> Type A ( default )
             <input type="radio" name="site_menu_type" value="B"<?php echo $menu_type_B_checked?>> Type B ( without background )
-            <input type="radio" name="site_menu_type" value="C"<?php echo $menu_type_C_checked?>> Type C ( without background )
+            <input type="radio" name="site_menu_type" value="C"<?php echo $menu_type_C_checked?>> Type C ( with background )
         </div>
 
         <input type="submit">

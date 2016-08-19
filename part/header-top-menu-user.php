@@ -7,7 +7,7 @@
             <a href="<?php hd()?>wp-admin">
                 <span><?php _e('ADMIN', 'x5')?></span>
             </a></li>
-        <li><span class="site-edit"><?php _e('EDIT', 'x5')?></span></li>
+        <li><span class="site-edit"><?php _text('EDIT')?></span></li>
     <?php else : ?>
         <li>
             <a href="<?php hd()?>user-update">

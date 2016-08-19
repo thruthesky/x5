@@ -33,7 +33,7 @@ if ( empty($teachers)  ) {
                     <div class="name text"><?php echo $teacher['name']?></div>
                     <div class="teaching-year text">Teacher Years : <?php echo $teacher['teaching_year']?></div>
                     <div class="birthday text">Birth day : <?php echo $teacher['birthday']?></div>
-                    <div class="gender text"><?php echo $teacher['gender']?></div>
+                    <div class="gender text">Gender: <?php echo $teacher['gender']== 'F' ? 'Female' : 'Male'; ?></div>
                     <div class="major text"><?php echo $teacher['major']?></div>
                     <div class="greeting text"><?php echo trim_greeting($teacher['greeting'])?></div>
                     <?php echo youtube_tag($teacher['url_youtube'])?>

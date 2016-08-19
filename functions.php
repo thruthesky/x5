@@ -271,6 +271,7 @@ function get_part_location( $part, $ext = 'php' ) {
 
 function get_header_location() {
     $path = get_domain_part_location( 'header' );
+    di($path);
     if ( $path ) return $path;
     $menu_type = get_option('site_menu_type', 'A');
     $path = get_template_directory() . "/part/header-$menu_type.php";
