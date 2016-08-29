@@ -18,9 +18,10 @@ header .logo a {
 }
 
 header .logo img {
+    max-width: 260px;
     height: auto;
     vertical-align: top;
-    padding: 0 1rem 1rem;
+    padding: 0 0.5rem 0.5rem;
 }
 
 header .logo .title {
@@ -182,7 +183,7 @@ nav.top-menu ul li.active a span {
 }
 @media all and ( min-width: 480px ) {
     header .logo img {
-        padding: 0 0 1rem 1rem;
+        padding: 0 0 0.5rem 0.5rem;
     }
 }
 @media all and ( min-width: 600px ) {
