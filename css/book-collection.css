@@ -9,13 +9,13 @@
     border-radius: 3px;
 }
 
-.collection .row > .col-sm-3 {
+.collection .row .col-sm-3 {
     padding: 0;
     width: 50%;
     float: left;
 }
 
-.collection .row > .col-sm-3 .inner.row {
+.collection .row .col-sm-3 .inner.row {
     height: 25em;
     overflow-y: hidden;
     background-color: #fff;
@@ -29,14 +29,14 @@
     margin-bottom: 1.625em;
 }
 
-.collection .row > .col-sm-3 .inner.row > .title {
+.collection .row  .col-sm-3 .inner.row .title {
     padding: 0 0.8125rem;
     margin-bottom: 1.0625em;
     font-size: 1.125em;
     color: #2b2b2b;
 }
 
-.collection .row > .col-sm-3 .inner.row > .desc {
+.collection .row .col-sm-3 .inner.row .desc {
     height: 9.6875rem;
     overflow-y: hidden;
     padding: 0 0.8125em;
@@ -50,7 +50,7 @@
     height: auto;
 }
 
-.collection .row > .col-sm-3 .load-sub {
+.collection .row .col-sm-3 .load-sub {
     display: none;
 }
 
@@ -74,7 +74,7 @@
 
 
 @media all and (min-width: 544px) {
-    .collection .row > .col-sm-3 {
+    .collection .row .col-sm-3 {
         width: 33.33%;
     }
 }
@@ -83,7 +83,7 @@
     .collection {
         padding: 0.625em;
     }
-    .collection .row > .col-sm-3 {
+    .collection .row .col-sm-3 {
         width: 25%;
     }
     .collection .row {
