@@ -48,15 +48,15 @@ wp_enqueue_style('user-update-content2', td() . '/css/user-update-content2.css')
             </div>
 
             <div class="line">
-                <label for="landline"><?php _text('Landline No.')?></label>
-                <div class="text"><input type="number" name="landline" maxlength="64" id="landline" tabindex="101" placeholder="<?php _text('Landline No.')?>" value="<?php echo user()->landline?>"></div>
+                <label for="landline"><?php _text('Skype')?></label>
+                <div class="text"><input type="text" name="landline" maxlength="64" id="landline" tabindex="101" placeholder="<?php _text('Skype ID')?>" value="<?php echo user()->landline?>"></div>
             </div>
-            
-            <div class="line">
+            <?php
+            /*<div class="line">
                 <label for="skype"><?php _text('Skype')?></label>
                 <div class="text"><input type="text" name="skype" maxlength="64" id="skype" tabindex="101" placeholder="<?php _text('Skype ID')?>" value="<?php echo user()->skype?>"></div>
-            </div>
-
+            </div>*/
+            ?>
             <div class="line spinner" style="display:none;">
                 <i class="fa fa-spinner fa-spin"></i> <?php _text('Connecting to server ...') ?>
             </div>
