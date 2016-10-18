@@ -1,0 +1,171 @@
+section .level-test.content-form {
+    background-color: #a7dbdb;
+}
+
+section .level-test.content-form > div {
+    padding: 50px 0;
+}
+
+section .level-test.content-form h2 {
+    display: block;
+    margin-bottom: 26px;
+    font-size: 28px;
+    color: #5a6a62;
+    text-align: center;
+}
+
+section .level-test.content-form form {
+
+}
+
+section .level-test.content-form .line {
+    display: inline-block;
+    width: 100%;
+    clear: both;
+}
+
+section .level-test.content-form .line label {
+    float: left;
+    padding: 3px;
+    width: 100px;
+    margin-bottom: 0    ;
+    font-size: 16px;
+    color: #2d2d2d;
+}
+
+
+section .level-test.content-form .line .text {
+    float: left;
+    padding: 3px;
+    width: 100%;
+    font-size: 16px;
+    color: #2d2d2d;
+}
+
+
+section .level-test.content-form .line span {
+    color: red;
+}
+
+section .level-test.content-form textarea,
+section .level-test.content-form select,
+section .level-test.content-form input[tabindex="101"] {
+    outline: 0;
+    padding: 5px;
+    width: 100%;
+    border-radius: 3px;
+    border: 0 solid #c6c6c6;
+}
+
+section .level-test.content-form .submit input {
+    float: right;
+    display:block;
+    padding: 9px 34px;
+    border: 0;
+    border-radius: 2px;
+    height: 42px;
+    color: #FFFFFF;
+    background-color: #ff6633;
+    margin-right: 5px;
+}
+
+
+
+section .level-test.content-form .line.submit {
+    width: 100%;
+}
+
+
+/* @media */
+
+@media all and (min-width: 380px ) {
+    section .level-test.content-form .line {
+        padding: 0 20px;
+    }
+    section .level-test.content-form .line .text {
+        width: 69%;
+    }
+    section .level-test.content-form .line.submit {
+        width: 69%;
+        margin-left: 115px;
+    }
+}
+
+@media all and (min-width: 480px ) {
+    section .level-test.content-form textarea,
+    section .level-test.content-form select,
+    section .level-test.content-form input[tabindex="101"] {
+        padding: 6px;
+    }
+    section .level-test.content-form .line.submit,
+    section .level-test.content-form .line .text {
+        width: 76%;
+    }
+}
+
+@media all and (min-width: 600px ) {
+    section .level-test.content-form > div {
+        padding: 70px 0;
+    }
+    section .level-test.content-form form {
+        width: 590px;
+    }
+    section .level-test.content-form h2 {
+        font-size: 32px;
+        text-align: left;
+        padding-left: 20px;
+    }
+    section .level-test.content-form .line label {
+        font-size: 18px;
+        padding: 10px 3px;
+        width: 150px;
+    }
+
+    section .level-test.content-form .line .text {
+        font-size: 18px;
+        width: 72%;
+    }
+    section .level-test.content-form .line.submit{
+        width: 72%;
+        margin-left: 165px;
+    }
+    section .level-test.content-form textarea,
+    section .level-test.content-form select,
+    section .level-test.content-form input[tabindex="101"] {
+        padding: 7px;
+    }
+}
+
+@media all and (min-width: 800px ) {
+    section .level-test.content-form form {
+        width: 685px;
+    }
+    section .level-test.content-form h2 {
+        font-size: 36px;
+    }
+    section .level-test.content-form .line label {
+        width: 175px;
+    }
+    section .level-test.content-form .line.submit{
+        margin-left: 190px;
+    }
+}
+
+@media all and (min-width: 980px ) {
+    section .level-test.content-form > div {
+        padding: 100px 0;
+    }
+}
+@media all and (min-width: 1024px ) {
+    section .level-test.content-form h2 {
+        padding-left: 0;
+    }
+    section .level-test.content-form .line {
+        padding: 0;
+    }
+    section .level-test.content-form .submit input {
+        margin-right: 15px;
+    }
+}
+
+/* EO @media*/
