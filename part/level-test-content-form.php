@@ -2,6 +2,11 @@
 wp_enqueue_style( 'jquery-ui', td() . '/css/jquery-ui/css/jquery-ui.min.css' );
 wp_enqueue_script( 'jquery-ui', td() . '/css/jquery-ui/js/jquery-ui.min.js' );
 wp_enqueue_style('level-test-content-form', td() . '/css/level-test-content-form.css');
+
+
+$category = forum()->getCategory( 'level-test-inquiry' );
+$category_id = $category->term_id;
+
 ?>
 <script>
     window.addEventListener('load',function(){
@@ -43,17 +48,16 @@ wp_enqueue_style('level-test-content-form', td() . '/css/level-test-content-form
     <div>
         <h2><?php _text('Lv:Frm:Level Test Form')?></h2>
         <div class="container">
-            <form>
+            <form action="<?php echo home_url("forum/submit")?>" method="post" enctype="multipart/form-data">
+
+                <input type="hidden" name="do" value="post_create">
+                <input type="hidden" name="category_id" value="<?php echo $category_id?>">
+                <input type="hidden" name="title" value="post_inquiry">
+
                 <div class="line">
-                    <label for="from"><?php _text('Date from ')?><span>*</span></label>
+                    <label for="from"><?php _text('Select Date')?><span>*</span></label>
                     <div class="text">
-                        <input type="text" name="from" id="from" maxlength="64"  tabindex="101" placeholder="<?php _text('Date From')?>">
-                    </div>
-                </div>
-                <div class="line">
-                    <label for="to"><?php _text('Date to ')?><span>*</span></label>
-                    <div class="text">
-                        <input type="text" name="to" id="to" maxlength="64"  tabindex="101" placeholder="<?php _text('Date to')?>">
+                        <input type="text" name="from" id="from" maxlength="64"  tabindex="101" placeholder="<?php _text('Select Date...')?>">
                     </div>
                 </div>
                 <div class="line">
@@ -62,7 +66,7 @@ wp_enqueue_style('level-test-content-form', td() . '/css/level-test-content-form
                         <select name="time">
                             <?php
                             for($x=2;$x<=11;$x++) {
-                                echo "<option value='$x'>$x pm</option>";
+                                echo "<option value='$x:30pm'>$x:30pm</option>";
                             }
                             ?>
                         </select>
@@ -77,7 +81,7 @@ wp_enqueue_style('level-test-content-form', td() . '/css/level-test-content-form
                 <div class="line">
                     <label for="user_login"><?php _text('Message')?><span>*</span></label>
                     <div class="text">
-                        <textarea name="message" id="message" tabindex="101" rows="5" placeholder="<?php _text('Enter your comment here...')?>"></textarea>
+                        <textarea name="message" id="message" tabindex="101" rows="5" placeholder="<?php _text('Your comment here...')?>"></textarea>
                     </div>
                 </div>
                 <div id="content-four"></div>
