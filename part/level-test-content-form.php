@@ -40,7 +40,21 @@ $category_id = $category->term_id;
 
                 return date;
             }
+
         } );
+
+        $('#ajax-contact-form').submit(function(e){
+            var name = $("#name").val();
+            $.ajax({
+                data: {action: 'contact_form', name:name},
+                type: 'post',
+                url: ajaxurl,
+                success: function(data) {
+                    alert(data); //should print out the name since you sent it along
+
+                }
+            });
+        });
     });
 </script>
 
@@ -48,9 +62,10 @@ $category_id = $category->term_id;
     <div>
         <h2><?php _text('Lv:Frm:Level Test Form')?></h2>
         <div class="container">
-            <form action="<?php echo home_url("forum/submit")?>" method="post" enctype="multipart/form-data">
-
-                <input type="hidden" name="do" value="post_create">
+            <!--form action="<?php echo home_url("level-test")?>" method="post" enctype="multipart/form-data"-->
+            <form class="form" id="ajax-contact-form" action="#">
+                <input type="hidden" name="name" value="selrahc">
+                <!--input type="hidden" name="ajax" value="level_test_inquiry"-->
                 <input type="hidden" name="category_id" value="<?php echo $category_id?>">
                 <input type="hidden" name="title" value="post_inquiry">
 
@@ -88,7 +103,7 @@ $category_id = $category->term_id;
                 <div class="line submit">
                     <input type="submit" tabindex="121" value="<?php _text('Submit')?>">
                 </div>
-            </form>
+            </-form>
         </div>
     </div>
 </section>
