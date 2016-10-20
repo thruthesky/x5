@@ -60,6 +60,10 @@ wp_enqueue_style('level-test-content-form', td() . '/css/level-test-content-form
                     //alert("User Profile Update Success !")
                     $submit.show();
                     $submit.after('<div class="alert alert-success" role="alert"><strong>Message</strong> Sent</div>');
+                    $('#date').val("");
+                    $('#phone').val("");
+                    $('#kakao').val("");
+                    $('#post_content').val("");
                 }
             }, 500);
         }
