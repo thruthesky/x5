@@ -32,7 +32,7 @@ foreach( $_posts as $post ) {
                 <th><?php _text("Date"); ?></th>
                 <th><?php _text("Time"); ?></th>
                 <th><?php _text("Phone"); ?></th>
-                <th><?php _text("Telephone"); ?></th>
+                <th><?php _text("Kakao"); ?></th>
                 <th><?php _text("Message"); ?></th>
             </tr>
             </thead>
