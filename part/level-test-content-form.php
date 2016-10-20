@@ -3,31 +3,20 @@ wp_enqueue_style( 'jquery-ui', td() . '/css/jquery-ui/css/jquery-ui.min.css' );
 wp_enqueue_script( 'jquery-ui', td() . '/css/jquery-ui/js/jquery-ui.min.js' );
 wp_enqueue_style('level-test-content-form', td() . '/css/level-test-content-form.css');
 
-
-$category = forum()->getCategory( 'level-test-inquiry' );
-$category_id = $category->term_id;
-
 ?>
 <script>
     window.addEventListener('load',function(){
+        var $spinner = $('.line.spinner');
+        var $submit = $('.line.submit');
+        var $error = $('.line.error');
+
         $( function() {
             var dateFormat = "mm/dd/yy",
-                from = $( "#from" )
+                date = $( "#date" )
                     .datepicker({
                         defaultDate: "+1w",
                         changeMonth: true,
                         numberOfMonths: 1
-                    })
-                    .on( "change", function() {
-                        to.datepicker( "option", "minDate", getDate( this ) );
-                    }),
-                to = $( "#to" ).datepicker({
-                    defaultDate: "+1w",
-                    changeMonth: true,
-                    numberOfMonths: 1
-                })
-                    .on( "change", function() {
-                        from.datepicker( "option", "maxDate", getDate( this ) );
                     });
 
             function getDate( element ) {
@@ -41,69 +30,96 @@ $category_id = $category->term_id;
                 return date;
             }
 
-        } );
-
-        $('#ajax-contact-form').submit(function(e){
-            var name = $("#name").val();
-            $.ajax({
-                data: {action: 'contact_form', name:name},
-                type: 'post',
-                url: ajaxurl,
-                success: function(data) {
-                    alert(data); //should print out the name since you sent it along
-
-                }
-            });
         });
+        jQuery(document).ready(function($) {
+
+            $('.wordpress-ajax-form').on('submit', function(e) {
+                e.preventDefault();
+
+                var $form = $(this);
+
+                $.post($form.attr('action'), $form.serialize(), function(re) {
+                        console.log(re);
+                        on_result(re.data);
+                }, 'json');
+            });
+
+        });
+
+        function on_result(re) {
+            setTimeout(function(){
+                $spinner.hide();
+                $error.hide();
+                if ( re['code'] ) {
+                    $submit.show();
+                    $error.html( '<i class="fa fa-exclamation-triangle"></i> ' + re['message'] );
+                    $error.show();
+                }
+                else {
+                    //location.href = home_url;
+                    //alert("User Profile Update Success !")
+                    $submit.show();
+                    $submit.after('<div class="alert alert-success" role="alert"><strong>Message</strong> Sent</div>');
+                }
+            }, 500);
+        }
     });
+
 </script>
 
 <section class="level-test content-form">
     <div>
         <h2><?php _text('Lv:Frm:Level Test Form')?></h2>
         <div class="container">
-            <!--form action="<?php echo home_url("level-test")?>" method="post" enctype="multipart/form-data"-->
-            <form class="form" id="ajax-contact-form" action="#">
-                <input type="hidden" name="name" value="selrahc">
-                <!--input type="hidden" name="ajax" value="level_test_inquiry"-->
-                <input type="hidden" name="category_id" value="<?php echo $category_id?>">
-                <input type="hidden" name="title" value="post_inquiry">
+            <form id="form" class="wordpress-ajax-form" action="<?php echo admin_url('admin-ajax.php'); ?>" method="post">
+                <input type="hidden" name="action" value="level_test_inquiry"/>
+                <input type="hidden" name="post_title" value="post_inquiry">
 
                 <div class="line">
-                    <label for="from"><?php _text('Select Date')?><span>*</span></label>
+                    <label for="date"><?php _text('Select Date')?><span>*</span></label>
                     <div class="text">
-                        <input type="text" name="from" id="from" maxlength="64"  tabindex="101" placeholder="<?php _text('Select Date...')?>">
+                        <input type="text" name="date" id="date" maxlength="64"  tabindex="101" placeholder="<?php _text('Select Date...')?>">
                     </div>
                 </div>
                 <div class="line">
                     <label for="time"><?php _text('Time')?><span>*</span></label>
                     <div class="text">
-                        <select name="time">
+                        <select name="time" >
                             <?php
-                            for($x=2;$x<=11;$x++) {
-                                echo "<option value='$x:30pm'>$x:30pm</option>";
+                            for($x=3;$x<=11;$x++) {
+                                echo "<option value='$x'>$x PM</option>";
+                                echo "<option value='$x:30pm'>$x:30 PM</option>";
                             }
                             ?>
                         </select>
                     </div>
                 </div>
                 <div class="line">
-                    <label for="user_login"><?php _text('Phone')?></label>
+                    <label for="phone"><?php _text('Phone')?></label>
                     <div class="text">
-                        <input type="text" name="phone" maxlength="64" id="phone" tabindex="101" placeholder="<?php _text('Phone Number...')?>">
+                        <input type="number" name="phone" maxlength="64" id="phone" tabindex="101" placeholder="<?php _text('Phone Number...')?>">
                     </div>
                 </div>
                 <div class="line">
-                    <label for="user_login"><?php _text('Message')?><span>*</span></label>
+                    <label for="telephone"><?php _text('Telephone')?></label>
                     <div class="text">
-                        <textarea name="message" id="message" tabindex="101" rows="5" placeholder="<?php _text('Your comment here...')?>"></textarea>
+                        <input type="number" name="telephone" maxlength="64" id="telephone" tabindex="101" placeholder="<?php _text('Telephone Number...')?>">
                     </div>
                 </div>
-                <div id="content-four"></div>
+                <div class="line">
+                    <label for="post_content"><?php _text('Message')?><span>*</span></label>
+                    <div class="text">
+                        <textarea name="post_content" id="post_content" tabindex="101" rows="5" placeholder="<?php _text('Your comment here...')?>"></textarea>
+                    </div>
+                </div>
+                <div class="line spinner" style="display:none;">
+                    <i class="fa fa-spinner fa-spin"></i> <?php _text('Connecting to server ...') ?>
+                </div>
+                <div class="line error alert alert-warning" role="alert" style="display:none;"></div>
                 <div class="line submit">
                     <input type="submit" tabindex="121" value="<?php _text('Submit')?>">
                 </div>
-            </-form>
+            </form>
         </div>
     </div>
 </section>

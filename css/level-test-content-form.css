@@ -75,6 +75,11 @@ section .level-test.content-form .line.submit {
     width: 100%;
 }
 
+div.line.error.alert.alert-warning {
+    padding: 8px;
+    width: 100%;
+}
+
 
 /* @media */
 

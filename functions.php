@@ -121,7 +121,8 @@ abc()->registerRoute(
         'testing',
         'team-viewer',
         'kakao',
-        'manpower-register'
+        'manpower-register',
+        'level-test-inquiry'
     ]
 );
 
@@ -423,10 +424,156 @@ if ( isset($_REQUEST['ajax']) && $_REQUEST['ajax'] == 'level_test_inquiry' ) {
 }
 
 
-add_action('wp_ajax_contact_form', 'contact_form');
-add_action('wp_ajax_nopriv_contact_form', 'contact_form');
+add_action('wp_ajax_level_test_inquiry', 'level_test_inquiry');
+add_action('wp_ajax_nopriv_level_test_inquiry', 'level_test_inquiry');
 
-function contact_form()
+
+function level_test_inquiry()
 {
-    echo $_POST['name'];
+
+    if ( ! isset($_REQUEST['date']) || $_REQUEST['date'] == '' )
+        wp_send_json_error(json_error( -12001, "Please Select Date"));
+    if (( ! isset($_REQUEST['phone']) || $_REQUEST['phone'] == '' ) &&
+        ( ! isset($_REQUEST['telephone']) || $_REQUEST['telephone'] == '' ))
+        wp_send_json_error(json_error( -12002, "Please provide either phone number or telephone number"));
+
+    $category = forum()->getCategory( 'level-test-inquiry' );
+    $category_id = $category->term_id;
+    
+    if ( empty($post_arr) ) {
+        $post_arr = array(
+            'post_title'    => $_REQUEST['post_title'],
+            'post_content'  => $_REQUEST['post_content'],
+            'phone'  => $_REQUEST['phone'],
+            'telephone'  => $_REQUEST['telephone'],
+            'post_status'   => 'private',
+            'post_author'   => wp_get_current_user()->ID,
+            'post_category' => array( $category_id )
+        );
+    }
+    $post_ID = wp_insert_post( $post_arr );
+    if ( is_wp_error( $post_ID ) )wp_send_json_error(json_error( -12701, $post_ID->get_error_message() ));
+    if ( $post_ID  == 0 ) wp_send_json_error(json_error( -12702, "Post may be empty."));
+
+    /**
+     * Save extra data
+     * @note saves any data that was sent by web browser.
+     * @warning Saving any data can cause a serious problem.
+     */
+    $meta = getPostMeta($_REQUEST);
+    savePostMeta($post_ID, $meta);
+
+    
+    $p = get_post($post_ID);
+    unset(
+        $p->comment_status,
+        $p->filter,
+        $p->pinged,
+        $p->menu_order,
+        $p->ping_status,
+        $p->post_content_filtered,
+        $p->post_date_gmt,
+        $p->post_excerpt,
+        $p->post_mime_type,
+        $p->post_modified,
+        $p->post_modified_gmt,
+        $p->post_name,
+        $p->post_password,
+        $p->post_status,
+        $p->post_type,
+        $p->to_ping
+    );
+    $p->meta = array_map( function( $a ){ return $a[0]; }, get_post_meta( $p->ID ) );
+    
+    wp_send_json_success([$p]);
 }
+
+
+/**
+ * Returns an array of meta data after un-setting all the post fields.
+ * @param $_req
+ * @return mixed
+ */
+function getPostMeta( $_req )
+{
+    $m = $_req;
+    unset( $m['ID'], $m['post_author'], $m['post_date'], $m['post_date_gmt'], $m['post_title'], $m['post_content'] );
+    unset( $m['post_excerpt'], $m['post_status'], $m['post_comment_status'], $m['ping_status'], $m['post_password'] );
+    unset( $m['post_name'], $m['to_ping'], $m['pinged'], $m['post_modified'], $m['post_modified_gmt'] );
+    unset( $m['post_content_filtered'], $m['post_parent'], $m['guid'], $m['menu_order'], $m['post_type']);
+    unset( $m['post_mime_type'], $m['comment_count']);
+    return $m;
+}
+
+function savePostMeta($post_ID, $meta)
+{
+    foreach( $meta as $k => $v ) {
+        add_post_meta( $post_ID, $k, $v, true);
+    }
+}
+
+
+/**
+ *
+ * Unsets data that are not needed by client.
+ *
+ * @param $p
+ * @return mixed
+ */
+function jsonPost( $p ) {
+    unset(
+        $p->comment_status,
+        $p->filter,
+        $p->pinged,
+        $p->menu_order,
+        $p->ping_status,
+        $p->post_content_filtered,
+        $p->post_date_gmt,
+        $p->post_excerpt,
+        $p->post_mime_type,
+        $p->post_modified,
+        $p->post_modified_gmt,
+        $p->post_name,
+        $p->post_password,
+        $p->post_status,
+        $p->post_type,
+        $p->to_ping
+    );
+    $p->meta = array_map( function( $a ){ return $a[0]; }, get_post_meta( $p->ID ) );
+    return $p;
+}
+
+
+function human_datetime( $date ) {
+    $time = strtotime( $date );
+    if ( date('Ymd') == date('Ymd', $time) ) return date("h:i a", $time);
+    else return date("Y-m-d");
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
