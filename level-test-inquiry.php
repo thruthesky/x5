@@ -8,7 +8,7 @@ $_posts = get_posts($args);
 foreach( $_posts as $post ) {
     $posts[] = jsonPost( $post );
 }
-print_r($posts);
+/*print_r($posts);*/
 ?>
 
 <section>
