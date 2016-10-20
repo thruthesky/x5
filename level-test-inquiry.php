@@ -11,17 +11,26 @@ foreach( $_posts as $post ) {
 /*print_r($posts);*/
 ?>
 
-<section>
+<style>
+    .level-test-inquiry > div {
+        padding: 30px 0;
+    }
+    .level-test-inquiry > div h2.title {
+        padding: 20px 0;
+    }
+</style>
+<section class="level-test-inquiry">
     <div>
+        <h2 class="title"><?php _text("List of Inquiry"); ?></h2>
         <table class="table table-striped">
-            <thead>
+            <thead class="thead-inverse">
             <tr>
-                <th>#</th>
-                <th>Date</th>
-                <th>Time</th>
-                <th>Phone</th>
-                <th>Telephone</th>
-                <th>Message</th>
+                <th><?php _text("#"); ?></th>
+                <th><?php _text("Date"); ?></th>
+                <th><?php _text("Time"); ?></th>
+                <th><?php _text("Phone"); ?></th>
+                <th><?php _text("Telephone"); ?></th>
+                <th><?php _text("Message"); ?></th>
             </tr>
             </thead>
             <tbody>
