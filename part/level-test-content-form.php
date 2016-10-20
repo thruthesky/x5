@@ -101,9 +101,9 @@ wp_enqueue_style('level-test-content-form', td() . '/css/level-test-content-form
                     </div>
                 </div>
                 <div class="line">
-                    <label for="telephone"><?php _text('Telephone')?></label>
+                    <label for="kakao"><?php _text('Kakao')?></label>
                     <div class="text">
-                        <input type="number" name="telephone" maxlength="64" id="telephone" tabindex="101" placeholder="<?php _text('Telephone Number...')?>">
+                        <input type="text" name="kakao" maxlength="64" id="kakao" tabindex="101" placeholder="<?php _text('Kakao ID')?>">
                     </div>
                 </div>
                 <div class="line">

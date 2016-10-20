@@ -18,6 +18,9 @@ foreach( $_posts as $post ) {
     .level-test-inquiry > div h2.title {
         padding: 20px 0;
     }
+    .level-test-inquiry > div .thead-inverse th {
+        font-weight: normal;
+    }
 </style>
 <section class="level-test-inquiry">
     <div>
@@ -36,11 +39,11 @@ foreach( $_posts as $post ) {
             <tbody>
             <?php foreach ( $posts as $key=>$post ){ ?>
             <tr>
-                <th scope="row"><?php echo $key+1 ?></th>
+                <td scope="row"><?php echo $key+1 ?></td>
                 <td><?php echo $post->date ?></td>
                 <td><?php echo $post->time ?></td>
                 <td><?php echo $post->phone ?></td>
-                <td><?php echo $post->telephone ?></td>
+                <td><?php echo $post->kakao ?></td>
                 <td><?php echo $post->post_content ?></td>
             </tr>
             <?php } ?>
