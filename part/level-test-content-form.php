@@ -87,7 +87,7 @@ wp_enqueue_style('level-test-content-form', td() . '/css/level-test-content-form
                         <select name="time" >
                             <?php
                             for($x=3;$x<=11;$x++) {
-                                echo "<option value='$x'>$x PM</option>";
+                                echo "<option value='$x:00pm'>$x:00 PM</option>";
                                 echo "<option value='$x:30pm'>$x:30 PM</option>";
                             }
                             ?>
