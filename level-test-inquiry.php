@@ -34,9 +34,9 @@ foreach( $_posts as $post ) {
             </tr>
             </thead>
             <tbody>
-            <?php foreach ( $posts as $post ){ ?>
+            <?php foreach ( $posts as $key=>$post ){ ?>
             <tr>
-                <th scope="row"><?php echo $post->ID ?></th>
+                <th scope="row"><?php echo $key+1 ?></th>
                 <td><?php echo $post->date ?></td>
                 <td><?php echo $post->time ?></td>
                 <td><?php echo $post->phone ?></td>
