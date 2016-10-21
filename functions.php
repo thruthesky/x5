@@ -430,12 +430,13 @@ add_action('wp_ajax_nopriv_level_test_inquiry', 'level_test_inquiry');
 
 function level_test_inquiry()
 {
-
+    if ( ! isset($_REQUEST['student_name']) || $_REQUEST['student_name'] == '' )
+        wp_send_json_error(json_error( -12001, "Please provide Name"));
     if ( ! isset($_REQUEST['date']) || $_REQUEST['date'] == '' )
-        wp_send_json_error(json_error( -12001, "Please Select Date"));
+        wp_send_json_error(json_error( -12002, "Please Select Date"));
     if (( ! isset($_REQUEST['phone']) || $_REQUEST['phone'] == '' ) &&
         ( ! isset($_REQUEST['telephone']) || $_REQUEST['telephone'] == '' ))
-        wp_send_json_error(json_error( -12002, "Please provide either phone number or telephone number"));
+        wp_send_json_error(json_error( -12003, "Please provide either phone number or telephone number"));
 
     $category = forum()->getCategory( 'level-test-inquiry' );
     $category_id = $category->term_id;
@@ -444,6 +445,8 @@ function level_test_inquiry()
         $post_arr = array(
             'post_title'    => $_REQUEST['post_title'],
             'post_content'  => $_REQUEST['post_content'],
+            'student_id'  => $_REQUEST['student_id'],
+            'student_name'  => $_REQUEST['student_name'],
             'phone'  => $_REQUEST['phone'],
             'telephone'  => $_REQUEST['telephone'],
             'post_status'   => 'private',

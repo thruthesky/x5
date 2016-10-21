@@ -29,6 +29,8 @@ foreach( $_posts as $post ) {
             <thead class="thead-inverse">
             <tr>
                 <th><?php _text("#"); ?></th>
+                <th><?php _text("SID"); ?></th>
+                <th><?php _text("Name"); ?></th>
                 <th><?php _text("Date"); ?></th>
                 <th><?php _text("Time"); ?></th>
                 <th><?php _text("Phone"); ?></th>
@@ -40,6 +42,8 @@ foreach( $_posts as $post ) {
             <?php foreach ( $posts as $key=>$post ){ ?>
             <tr>
                 <td scope="row"><?php echo $key+1 ?></td>
+                <td><?php echo $post->student_id ?></td>
+                <td><?php echo $post->student_name ?></td>
                 <td><?php echo $post->date ?></td>
                 <td><?php echo $post->time ?></td>
                 <td><?php echo $post->phone ?></td>

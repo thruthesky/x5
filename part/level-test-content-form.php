@@ -79,6 +79,20 @@ wp_enqueue_style('level-test-content-form', td() . '/css/level-test-content-form
                 <input type="hidden" name="action" value="level_test_inquiry"/>
                 <input type="hidden" name="post_title" value="post_inquiry">
 
+
+                <div class="line">
+                    <label for="student_id"><?php _text('Student ID')?></label>
+                    <div class="text">
+                        <input type="text" name="student_id" maxlength="64" id="student_id" tabindex="101" placeholder="<?php _text('Student ID')?>">
+                    </div>
+                </div>
+                <div class="line">
+                    <label for="student_name"><?php _text('Name')?></label>
+                    <div class="text">
+                        <input type="text" name="student_name" maxlength="64" id="student_name" tabindex="101" placeholder="<?php _text('Name')?>">
+                    </div>
+                </div>
+
                 <div class="line">
                     <label for="date"><?php _text('Select Date')?><span>*</span></label>
                     <div class="text">
