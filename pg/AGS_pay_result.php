@@ -28,7 +28,7 @@
  *
  **********************************************************************************************/
 
-include "/../part/AGS_pay_result_content1.php";
+include "AGS_pay_result_content1.php";
 wp_enqueue_style('AGS_pay_result_content2', td() . '/css/AGS_pay_result_content2.css');
 
 
