@@ -37,7 +37,7 @@ wp_enqueue_style('level-test-content-form', td() . '/css/level-test-content-form
             $('.wordpress-ajax-form').on('submit', function(e) {
                 e.preventDefault();
                 console.log('user is ' + $is_online);
-                if( ! $is_online ) return alert('You must be logged-in to submit this form...');
+                if( ! $is_online ) return alert('레벨테스트 신청은 로그인시에만 가능합니다');
 
                 var $form = $(this);
 
