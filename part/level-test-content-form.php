@@ -6,6 +6,7 @@ wp_enqueue_style('level-test-content-form', td() . '/css/level-test-content-form
 ?>
 <script>
     window.addEventListener('load',function(){
+        var $is_online = "<?php echo ( user()->login() ) ? true : false;  ?>";
         var $spinner = $('.line.spinner');
         var $submit = $('.line.submit');
         var $error = $('.line.error');
@@ -35,12 +36,14 @@ wp_enqueue_style('level-test-content-form', td() . '/css/level-test-content-form
 
             $('.wordpress-ajax-form').on('submit', function(e) {
                 e.preventDefault();
+                console.log('user is ' + $is_online);
+                if( ! $is_online ) return alert('You must be logged-in to submit this form...');
 
                 var $form = $(this);
 
                 $.post($form.attr('action'), $form.serialize(), function(re) {
-                        console.log(re);
-                        on_result(re.data);
+                    console.log(re);
+                    on_result(re.data);
                 }, 'json');
             });
 
@@ -78,8 +81,9 @@ wp_enqueue_style('level-test-content-form', td() . '/css/level-test-content-form
             <form id="form" class="wordpress-ajax-form" action="<?php echo admin_url('admin-ajax.php'); ?>" method="post">
                 <input type="hidden" name="action" value="level_test_inquiry"/>
                 <input type="hidden" name="post_title" value="post_inquiry">
-
-
+                <?php if ( ! user()->login() ) {
+                    _text('* You must be logged-in to submit this form...');
+                } ?>
                 <div class="line">
                     <label for="student_id"><?php _text('Student ID')?></label>
                     <div class="text">
