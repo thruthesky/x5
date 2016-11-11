@@ -81,6 +81,7 @@ wp_enqueue_style('level-test-content-form', td() . '/css/level-test-content-form
             <form id="form" class="wordpress-ajax-form" action="<?php echo admin_url('admin-ajax.php'); ?>" method="post">
                 <input type="hidden" name="action" value="level_test_inquiry"/>
                 <input type="hidden" name="post_title" value="post_inquiry">
+                <input type="hidden" name="post_inquiry_seen" value="true">
                 <?php if ( ! user()->login() ) {
                     _text('* You must be logged-in to submit this form...');
                 } ?>

@@ -15,6 +15,7 @@ ob_start();
 
     <?php
     get_og_tags_custom_page();
+
     ?>
 
 </head>
@@ -28,11 +29,17 @@ ob_start();
         $header_location = get_header_location();
         include $header_location;
         ?>
+        <?php
+        if ( user()->admin() ) {
+            $notification = get_meta_values('post_inquiry_seen', 'post', 'private');
+            if($notification){
+                echo "<div id='nobar' >You have $notification Inquiry... </div>";
+            }
+        }
+        ?>
     </header>
 
     <section class="content">
-
-
 
         <section class="data">
             <?php include 'part/aside.php'; ?>

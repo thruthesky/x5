@@ -9,6 +9,8 @@ foreach( $_posts as $post ) {
     $posts[] = jsonPost( $post );
 }
 /*print_r($posts);*/
+
+delete_post_meta_by_key( 'post_inquiry_seen' );
 ?>
 
 <style>

@@ -24,3 +24,16 @@
         margin: 140px auto;
     }
 }
+
+
+#nobar{
+    position: fixed;
+    background: #2c3644;
+    color: #fff;
+    font-size:16px;
+    top: 0;
+    left: 0;
+    width: 100% !important;
+    padding: 2px 0;
+    text-align: center;
+}

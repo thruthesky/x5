@@ -1,6 +1,3 @@
-
-
-
 <?php if ( user()->login() ) : ?>
     <?php if ( user()->admin() ) : ?>
         <li class="<?php if ( segment(0) == 'user-log-in' ) echo 'active'; ?>">
