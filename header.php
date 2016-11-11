@@ -33,7 +33,11 @@ ob_start();
         if ( user()->admin() && segment(0) != 'level-test-inquiry' ) {
             $notification = get_meta_values('post_inquiry_seen', 'post', 'private');
             if($notification){
-                echo "<div id='nobar' >You have $notification Inquiry... </div>";
+                echo "<div id='nobar' >";
+                _text('You have');
+                echo ' '.$notification.' ';
+                _text('Inquiry...');
+                echo "</div>";
             }
         }
         ?>
