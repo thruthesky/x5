@@ -30,7 +30,7 @@ ob_start();
         include $header_location;
         ?>
         <?php
-        if ( user()->admin() ) {
+        if ( user()->admin() && segment(0) != 'level-test-inquiry' ) {
             $notification = get_meta_values('post_inquiry_seen', 'post', 'private');
             if($notification){
                 echo "<div id='nobar' >You have $notification Inquiry... </div>";
