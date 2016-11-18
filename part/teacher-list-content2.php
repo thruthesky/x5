@@ -17,7 +17,7 @@ if ( empty($teachers)  ) {
     echo "<h2>No teachers</h2>";
     return;
 }
-
+//print_r($teachers);
 
 
 
@@ -26,7 +26,9 @@ if ( empty($teachers)  ) {
 <section class="teachers content-two">
     <div>
         <div class="teacher-row">
-            <?php foreach ( $teachers as $teacher ) { ?>
+            <?php foreach ( $teachers as $teacher ) {
+                if($teacher['url_youtube']) {
+                ?>
                 <div class="teacher col-sm-4">
                     <div class="photo"><img src="http://witheng.com/<?php echo $teacher['photo']?>"></div>
                     <div class="id">Teacher <?php echo $teacher['id']?></div>
@@ -38,7 +40,7 @@ if ( empty($teachers)  ) {
                     <div class="greeting text"><?php echo trim_greeting($teacher['greeting'])?></div>
                     <?php echo youtube_tag($teacher['url_youtube'])?>
                 </div>
-            <?php } ?>
+            <?php }} ?>
         </div>
     </div>
 </section>
