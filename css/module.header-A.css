@@ -20,6 +20,7 @@ header .logo a {
 header .logo img {
     max-width: 260px;
     height: auto;
+    max-height: 90px;
     vertical-align: top;
     padding: 0 0.5rem 0.5rem;
 }
