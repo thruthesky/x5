@@ -26,6 +26,9 @@
 
 .default-footer .logo-picture .logo {
     vertical-align: top;
+    max-width: 260px;
+    height: auto;
+    max-height: 100px;
 }
 
 
