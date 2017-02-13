@@ -298,7 +298,7 @@ function vc_url( $roomname = 'VC TEST Room' ) {
 
     $roomname = str_replace('@', '.', $roomname);
     $roomname = urlencode($roomname);
-    $url = "https://www.videocenter.co.kr/0.0.14/index.php?joinRoom=Y&username=$username&roomname=$roomname&show_header=Y";
+    $url = "https://video.withcenter.com/room/$username/$roomname";
     echo $url;
 }
 
