@@ -1,4 +1,4 @@
-<?php
+    <?php
 wp_enqueue_style('log-in-content2', td() . '/css/user-password-lost-content2.css');
 include 'part/log-in-content1.php';
 ?>

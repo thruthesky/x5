@@ -302,6 +302,9 @@ function vc_url( $roomname = 'VC TEST Room' ) {
     echo $url;
 }
 
+
+
+
 function get_og_tags_custom_page() {
     $og_siteName = get_bloginfo('name');
     $og_title = null;
