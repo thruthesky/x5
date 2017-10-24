@@ -322,6 +322,8 @@ function saeha_url() {
 //              print_r($data);
 //              echo "</pre>";
 
+	    if ( ! $data || ! $data['idx'] ) return "javascript:alert('you have no reservation')";
+
         $teacher_classid = $data['teacher']['classid'];
         $teacher_name = $data['teacher']['name'];
         $ve = "http://onlineenglish.kr/~witheng/etc/ve_open.php?confcode=" . $teacher_classid . "&teacher_id="
