@@ -302,6 +302,39 @@ function vc_url( $roomname = 'VC TEST Room' ) {
     echo $url;
 }
 
+function saeha_url() {
+
+    if ( is_user_logged_in() ) {
+
+        $domain = get_opt('lms[domain]', 'default');
+        $user = wp_get_current_user();
+        $username = $user->user_login;
+
+
+        if( $username != 'testman999' ) return;
+
+        $userdomain = "$username@$domain";
+        $url = API_ENDPOINT . '?function=api_next_class&id_member=' . $userdomain;
+        $response = wp_remote_get( $url );
+        $body = ajax_ex_body($response);
+        $data = $body['data'];
+//              echo "<pre>";
+//              print_r($data);
+//              echo "</pre>";
+
+        $teacher_classid = $data['teacher']['classid'];
+        $teacher_name = $data['teacher']['name'];
+        $ve = "http://onlineenglish.kr/~witheng/etc/ve_open.php?confcode=" . $teacher_classid . "&teacher_id="
+            . $teacher_classid . "&student_id=" . $userdomain . "&teacher_nickname="
+            . $teacher_name . "&conftype=2&usertype=0&class_no=" . $data['idx'] . "&class_date="
+            . $data['date'] . "&class_begin=" . $data['class_begin'] . "&class_end=" . $data['class_end'];
+
+        echo $ve;
+    }
+
+}
+
+
 
 
 
