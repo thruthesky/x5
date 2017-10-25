@@ -1,5 +1,9 @@
 <?php
-if ( strpos( $_SERVER['REMOTE_HOST'], 'thetalktalk' ) !== false ) return include 'enrollment-content2-thetalktalk.php';
+
+
+//print_r("###");
+//print_r($_SERVER['HTTP_HOST'] );
+//if ( strpos( $_SERVER['HTTP_HOST'], 'thetalktalk' ) !== false ) return include 'enrollment-content2-thetalktalk.php';
 
 wp_enqueue_style('enrollment-content2', td() . '/css/enrollment-content2.css');
 function _check_value($n, $v) {

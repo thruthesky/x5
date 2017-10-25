@@ -1,5 +1,6 @@
 <?php
 wp_enqueue_style('enrollment-content2', td() . '/css/enrollment-content2.css');
+
 function _check_value($n, $v) {
 	if ( isset($_REQUEST[$n]) ) {
 		if ( $_REQUEST[$n] == $v ) {
@@ -30,7 +31,7 @@ function _check_value($n, $v) {
 
 
             var selected_mins = $('.times input[type="radio"]:checked').val();
-            var selected_days = $('.times input[type="radio"]:checked').val();
+            var selected_days = $('.days input[type="radio"]:checked').val();
 
             var amount = prices[ selected_mins ][ selected_days ];
 
