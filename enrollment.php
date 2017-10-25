@@ -30,6 +30,7 @@ if ( isset( $_REQUEST['mode'] ) ) {
 }
 else {
     include 'part/enrollment-content1.php';
-    include 'part/enrollment-content2.php';
+    if ( strpos( $_SERVER['HTTP_HOST'], 'thetalktalk' ) !== false ) include 'part/enrollment-content2-thetalktalk.php';
+    else include 'part/enrollment-content2.php';
 }
 
