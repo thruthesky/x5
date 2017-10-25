@@ -82,11 +82,11 @@ function _check_value($n, $v) {
 						</div>
 						<div class="items times">
 							<label for="min_25" class="text">
-								<input id="min_25" type="radio" name="time" value="25">
+								<input id="min_25" type="radio" name="time" value="25" <?php _check_value('time', '25'); ?>>
 								<?php _text('25mins')?>
 							</label>
 							<label for="min_50" class="text">
-								<input id="min_50" type="radio" name="time" value="50">
+								<input id="min_50" type="radio" name="time" value="50" <?php _check_value('time', '50'); ?>>
 								<?php _text('50mins')?>
 							</label>
 
