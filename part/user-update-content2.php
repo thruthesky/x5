@@ -6,7 +6,7 @@ wp_enqueue_style('user-update-content2', td() . '/css/user-update-content2.css')
     <div>
         <form action="<?php echo home_url('/user/updateSubmit')?>" method="POST">
             <?php wp_nonce_field('register'); ?>
-            <input type="hidden" name="skype" value="ve">
+            <input type="hidden" name="skype" value="solution">
             <div class="line">
                 <label for="user_login"><?php _text('User ID')?></label>
                 <div class="text user-login">

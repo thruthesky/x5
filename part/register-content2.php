@@ -9,7 +9,7 @@ wp_enqueue_script( 'register', td() . '/js/register.js', array('jquery') );
             <?php wp_nonce_field('register'); ?>
 
             <input type="hidden" name="login" value="1">
-            <input type="hidden" name="skype" value="ve">
+            <input type="hidden" name="skype" value="solution">
             <div class="header-detail"><?php _text("YOUR DETAILS") ?></div>
             <div class="col-sm-6 left">
                 <div class="line">
