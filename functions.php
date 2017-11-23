@@ -331,7 +331,7 @@ function saeha_url() {
             . $teacher_name . "&conftype=2&usertype=0&class_no=" . $data['idx'] . "&class_date="
             . $data['date'] . "&class_begin=" . $data['class_begin'] . "&class_end=" . $data['class_end'];
 
-        echo $ve;
+        return $ve;
     }
 
 }
