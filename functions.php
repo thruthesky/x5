@@ -310,17 +310,11 @@ function saeha_url() {
         $user = wp_get_current_user();
         $username = $user->user_login;
 
-
-        if( $username != 'testman999' ) return;
-
         $userdomain = "$username@$domain";
         $url = API_ENDPOINT . '?function=api_next_class&id_member=' . $userdomain;
         $response = wp_remote_get( $url );
         $body = ajax_ex_body($response);
         $data = $body['data'];
-//              echo "<pre>";
-//              print_r($data);
-//              echo "</pre>";
 
 	    if ( ! $data || ! $data['idx'] ) return "javascript:alert('you have no reservation')";
 
@@ -333,6 +327,10 @@ function saeha_url() {
 
         return $ve;
     }
+    else {
+        return "javascript:alert('앗! 회원 로그인을 해 주세요.')";
+    }
+
 
 }
 
