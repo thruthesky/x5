@@ -24,11 +24,11 @@ function _check_value($n, $v) {
         $('form[name="payment"]').change(function(){
 
             var prices = {
-                '25': [ 0, 0, 79000, 95000, 120000, 135000 ],
-                '50' : [ 0, 0, 130000, 150000, 170000, 230000 ]
+                '25': [ 0, 0, 64000, 75000, 90000, 100000 ],
             };
 
 
+//            '50' : [ 0, 0, 130000, 150000, 170000, 230000 ]
 
             var selected_mins = $('.times input[type="radio"]:checked').val();
             var selected_days = $('.days input[type="radio"]:checked').val();
